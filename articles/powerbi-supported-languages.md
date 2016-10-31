@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Supported languages and countries/regions for Power BI"
-   description="Supported languages and countries/regions for Power BI"
+   pageTitle="Idiomas admitidos y los países o regiones para Power BI"
+   description="Idiomas admitidos y los países o regiones para Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,150 +19,150 @@
    ms.workload="powerbi"
    ms.date="10/14/2016"
    ms.author="maggies"/>
-# <a name="supported-languages-and-countries/regions-for-power-bi"></a>Supported languages and countries/regions for Power BI
+# <a name="supported-languages-and-countries/regions-for-power-bi"></a>Idiomas admitidos y los países o regiones para Power BI
 
-For countries and regions where Power BI is available, see this <bpt id="p1">[</bpt>international availability list<ept id="p1">](https://products.office.com/business/international-availability)</ept>. 
+Para los países y regiones donde no está disponible, Power BI, consulte este [lista disponibilidad internacional](https://products.office.com/business/international-availability). 
 
-## <a name="languages-for-the-power-bi-service"></a>Languages for the Power BI service
+## <a name="languages-for-the-power-bi-service"></a>Idiomas para el servicio Power BI
 
-The Power BI service (in the browser) is available in the following 42 languages:
+El servicio Power BI (en el explorador) está disponible en los siguientes 42 idiomas:
 
 -   Árabe
--   Basque - Basque
--   Bulgarian - Български
--   Catalan - català
--   Chinese (Simplified) - 中文(简体)
--   Chinese (Traditional) - 中文(繁體)
--   Croatian - hrvatski
--   Czech - čeština
--   Danish - dansk
--   Dutch - Nederlands
--   English - English
--   Estonian - eesti
--   Finnish - suomi
--   French - français
--   Galician - galego
--   German - Deutsch
--   Greek - Ελληνικά
+-   Vasco - Vasco
+-   Búlgaro - Български
+-   Catalán - català
+-   Chino (simplificado): 中文(简体)
+-   Chino (tradicional) - 中文(繁體)
+-   Croata - hrvatski
+-   Checo - čeština
+-   Danés - dansk
+-   Neerlandés - Países Bajos
+-   Inglés - inglés
+-   Estonio - eesti
+-   Finés - suomi
+-   Francés - français
+-   Gallego - galego
+-   Alemán - Deutsch
+-   Griego - Ελληνικά
 -   Hebreo
 -   Hindi - हिंदी
--   Hungarian - magyar
--   Indonesian - Bahasa Indonesia
--   Italian - italiano
--   Japanese - 日本語
--   Kazakh - Қазақ
--   Korean - 한국어
--   Latvian - latviešu
--   Lithuanian - lietuvių
--   Malay - Bahasa Melayu
--   Norwegian (Bokmål) - norsk (bokmål)
--   Polish - Polski
--   Portuguese (Brazil) - Português
--   Portuguese (Portugal) - português
--   Romanian - română
--   Russian - Русский
--   Serbian (Cyrillic) - српски
--   Serbian (Latin) - srpski
--   Slovak - slovenčina
--   Slovenian - slovenski
--   Spanish - español
--   Swedish - svenska
+-   Húngaro - Magiar
+-   Indonesio - Indonesio
+-   Italiano - italiano
+-   Japonés - 日本語
+-   Kazaj - Қазақ
+-   Coreano - 한국어
+-   Letón - latviešu
+-   Lituano - lietuvių
+-   Malayo - Bahasa Melayu
+-   Noruego (Bokmal) - versión Noruega (bokmål)
+-   Polaco - Polski
+-   Portugués (Brasil) - Português
+-   Portugués (Portugal) - português
+-   Rumano - română
+-   Ruso - Русский
+-   Serbio (cirílico) - српски
+-   Serbio (latino) - srpski
+-   Eslovaco - slovenčina
+-   Esloveno - slovenski
+-   Español - español
+-   Sueco - versión sueca
 -   Thai - ไทย
--   Turkish - Türkçe
--   Ukrainian - українська
--   Vietnamese - Tiếng Việt
+-   Turco - Türkçe
+-   Ucraniano - українська
+-   Vietnamita - Tiếng Việt
 
-## <a name="what's-translated"></a>What's translated
+## <a name="what's-translated"></a>Lo que se traduce.
 
-Menus, buttons, messages, and other elements of the experience are translated into your language, making it easier to navigate and interact with Power BI.
+Menús, botones, mensajes y otros elementos de la experiencia se traducen a su idioma, facilitando la navegue e interactúe con Power BI.
 
-At this time, a few features are available in English only:
+En este momento, algunas características sólo están disponibles en inglés:
 
--   Dashboards and reports that Power BI creates for you when you connect to services such as Microsoft Dynamics CRM, Google Analytics, Salesforce, and so on. (You can still create your own dashboards and reports in your own language.)
+-   Paneles e informes que Power BI crea automáticamente cuando se conecta a servicios como Microsoft Dynamics CRM, Google Analytics, Salesforce y así sucesivamente. (Puede seguir crear sus propios informes y paneles en su propio idioma.)
 
--   Exploring your data with Q&amp;A.
+-   Explorar los datos con preguntas y respuestas.
 
-Stay tuned as we work to bring additional features to other languages. 
+Permanezca atento a medida que trabajamos para poner características adicionales en otros idiomas. 
 
-## <a name="choose-your-language-in-the-power-bi-service"></a>Choose your language in the Power BI service
+## <a name="choose-your-language-in-the-power-bi-service"></a>Elija el idioma en el servicio Power BI
 
-1. In the Power BI service, select the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-supported-languages/pbi_settings_icon.png)</ph><ph id="ph2"> &gt; </ph><bpt id="p2">**</bpt>Settings<ept id="p2">**</ept>.
+1. En el servicio Power BI, seleccione la **configuración** icono ![](media/powerbi-supported-languages/pbi_settings_icon.png) > **configuración**.
 
-2. On the <bpt id="p1">**</bpt>General<ept id="p1">**</ept> tab &gt; <bpt id="p2">**</bpt>Language<ept id="p2">**</ept>.
+2. En la **General** ficha > **lenguaje**.
 
-3. Select your language &gt; <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.
+3. Seleccione su idioma > **aplicar**.
 
-## <a name="choose-your-language-in-the-browser"></a>Choose your language in the browser
+## <a name="choose-your-language-in-the-browser"></a>Elija el idioma en el explorador
 
-Power BI detects your language based on the language preferences on your computer. The way you access and change these preferences may vary depending on your operating system and browser. Here's how to access these preferences from Internet Explorer and Google Chrome.
+Power BI detecta el idioma basándose en las preferencias de idioma en el equipo. La forma de obtener acceso y cambiar estas preferencias puede variar según el sistema operativo y el explorador. A continuación le mostramos cómo obtener acceso a estas preferencias de Internet Explorer y Google Chrome.
 
-### <a name="internet-explorer-(version-11)"></a>Internet Explorer (version 11)
+### <a name="internet-explorer-(version-11)"></a>Internet Explorer (versión 11)
 
-1.  Click the Tools button in the top-right corner of your browser window:
+1.  Haga clic en el botón herramientas en la esquina superior derecha de la ventana del explorador:
 
     ![](media/powerbi-supported-languages/languages1.png)
 
-2.  Click <bpt id="p1">**</bpt>Internet Options<ept id="p1">**</ept>.
+2.  Haga clic en **Opciones de Internet**.
 
-3.  In the Internet Options dialog, on the General tab under Appearance, click the <bpt id="p1">**</bpt>Languages<ept id="p1">**</ept> button.
+3.  En el cuadro de diálogo Opciones de Internet, en la ficha General, en apariencia, haga clic en el **idiomas** botón.
 
-### <a name="google-chrome-(version-42)"></a>Google Chrome (version 42)
+### <a name="google-chrome-(version-42)"></a>Google Chrome (versión 42)
 
-1.  Click the menu button in the top-right corner of your browser window:
+1.  Haga clic en el botón de menú en la esquina superior derecha de la ventana del explorador:
 
     ![](media/powerbi-supported-languages/languages2.png)
 
 2.  Haga clic en **Configuración**.
 
-3.  Click <bpt id="p1">**</bpt>Show advanced settings<ept id="p1">**</ept>.
+3.  Haga clic en **Mostrar configuración avanzada**.
 
-4.  Under Languages, click the <bpt id="p1">**</bpt>Language and input settings<ept id="p1">**</ept> button.
+4.  En los idiomas, haga clic en la **idioma y la configuración de entrada** botón.
 
-5.  Click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>, select a language, and click <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>.
+5.  Haga clic en **Agregar**, seleccione un idioma y haga clic en **Aceptar**.
 
     ![](media/powerbi-supported-languages/pbi_langs_enus.png)
 
-    The new language is at the end of the list. 
+    El nuevo lenguaje está al final de la lista. 
 
-6.  Drag the new language to the top of the list, and click <bpt id="p1">**</bpt>Display Google Chrome in this language<ept id="p1">**</ept>.
+6.  Arrastre el nuevo idioma a la parte superior de la lista y haga clic en **Mostrar Google Chrome en este idioma**.
 
     ![](media/powerbi-supported-languages/pbi_langs_eses.png)
 
-    You may need to close and reopen your browser to see the change.
+    Debe cerrar y volver a abrir el explorador para ver el cambio.
 
-## <a name="choose-your-language-when-you-download-power-bi-desktop"></a>Choose your language when you download Power BI Desktop
+## <a name="choose-your-language-when-you-download-power-bi-desktop"></a>Elija su idioma cuando descargue Power BI Desktop
 
-You have the option to select a language when you download Power BI Desktop. 
+Tiene la opción de seleccionar un idioma al descargar Power BI Desktop. 
 
--  Go to the <bpt id="p1">[</bpt>Power BI Desktop download page<ept id="p1">](https://www.microsoft.com/download/details.aspx?id=45331)</ept>.
+-  Vaya a la [página de descarga de Power BI Desktop](https://www.microsoft.com/download/details.aspx?id=45331).
 
-The only way to change the language in Power BI Desktop is to go back to the download page and download it in a different language.
+La única manera de cambiar el idioma en Power BI Desktop es volver a la página de descarga y descargar en un idioma diferente.
 
-## <a name="choose-the-locale-of-a-report-in-power-bi-desktop"></a>Choose the locale of a report in Power BI Desktop
+## <a name="choose-the-locale-of-a-report-in-power-bi-desktop"></a>Elija la configuración regional de un informe en Power BI Desktop
 
-You can set the locale (the date and number formats) for a specific report to be something other than the locale in your version of Power BI Desktop. 
+Puede establecer la configuración regional (los formatos de fecha y número) de un informe específico sea distinto de la configuración regional de la versión de Power BI Desktop. 
 
-1.  Go to <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Options and settings<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Options<ept id="p3">**</ept>.
-2.  Under <bpt id="p1">**</bpt>Current file<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Data load<ept id="p2">**</ept>.
-3.  In the <bpt id="p1">**</bpt>Locale<ept id="p1">**</ept> box, select a different locale. 
+1.  Vaya a **archivo** > **Opciones y configuración** > **opciones**.
+2.  Bajo **archivo actual**, seleccione **de carga de datos**.
+3.  En el **Configuración regional** seleccione una configuración regional diferente. 
 
     ![](media/powerbi-supported-languages/pbi_supptdlangs_locale.png)
 
-## <a name="languages-for-the-help-documentation"></a>Languages for the help documentation
+## <a name="languages-for-the-help-documentation"></a>Idiomas para la documentación de ayuda
 
-Help is localized in these 10 languages: 
+Ayuda está traducida a estos 10 idiomas: 
 
--   Chinese (Simplified) - 中文(简体)
--   Chinese (Traditional) - 中文(繁體)
--   French - français
--   German - Deutsch
--   Italian - italiano
--   Japanese - 日本語
--   Korean - 한국어
--   Portuguese (Brazil) - Português
--   Russian - Русский
--   Spanish - español
+-   Chino (simplificado): 中文(简体)
+-   Chino (tradicional) - 中文(繁體)
+-   Francés - français
+-   Alemán - Deutsch
+-   Italiano - italiano
+-   Japonés - 日本語
+-   Coreano - 한국어
+-   Portugués (Brasil) - Português
+-   Ruso - Русский
+-   Español - español
 
 ### <a name="see-also"></a>Consulte también 
-Try asking the <bpt id="p1">[</bpt>Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>.
+Pruebe a formular la [Power BI Comunidad](http://community.powerbi.com/).
 

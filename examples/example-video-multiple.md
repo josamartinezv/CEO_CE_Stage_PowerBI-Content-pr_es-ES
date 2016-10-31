@@ -1,24 +1,24 @@
-<properties pageTitle="Documentation Example - Video" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Video" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación: vídeo" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Video" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - AZURE.VIDEO Markdown Extension #
+# Por ejemplo, AZURE. Extensión de VÍDEO de descuento #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.
 
-The content between the lines below demonstrates the use of a Video.
+El contenido entre las líneas siguientes muestra el uso de un vídeo.
 
 
 ---
-Video!!!!!
+¡Vídeo!
 
-Some text goes here...
+Parte del texto va aquí...
 
 > [AZURE.VIDEO azure-storage-queues-batch-processing]
 
-Some other text here ...
+Otro texto aquí...
 
 > [AZURE.VIDEO introduction-to-hdinsight-service]
 
-More video
+Más de vídeo
 
 > [AZURE.VIDEO what-is-active-directory]
 

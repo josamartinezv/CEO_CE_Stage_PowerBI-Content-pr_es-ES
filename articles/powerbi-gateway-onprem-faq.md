@@ -1,6 +1,6 @@
 <properties
-pageTitle="On-premises data gateway FAQ"
-description="This is the on-premises data gateway FAQ. This collects frequently asked questions into one spot for the gateway."
+pageTitle="Preguntas más frecuentes de puerta de enlace de datos local"
+description="Se trata de la puerta de enlace de datos local preguntas más frecuentes. Éste reúne las preguntas más frecuentes en un solo lugar para la puerta de enlace."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,73 +19,109 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/12/2016"
 ms.author="asaxton"/>
-# On-Premises Data Gateway FAQ
+# Preguntas más frecuentes de puerta de enlace de datos local
 
 <!-- Shared FAQ shared Include -->
 [AZURE.INCLUDE [gateway-onprem-faq-shared-include](../includes/gateway-onprem-faq-shared-include.md)]
 
 ## Analysis Services
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I use msdmpump.dll to create custom effective username mappings for Analysis Services?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. This is not supported at this time.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I use the gateway to connect to a multidimensional (OLAP) instance.  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes! The enterprise gateway supports live connections to both Analysis Services Tabular and Multidimensional models.
+            **Pregunta:** puedo usar msdmpump.dll para crear asignaciones de nombre de usuario efectivo personalizado para Analysis Services?  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What if I install the gateway on a computer in a different domain from my on-premises server that uses Windows authentication?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No guarantees here. It all depends on the trust relationship between the two domains. If the two different domains are in a trusted domain model, then the gateway might be able to connect to the Analysis Services server and the effective user name can be resolved. If not, you may encounter a login failure. 
+            **Respuesta:** no. Esto no se admite en este momento.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> How can I find out what effective username is being passed to my on-premises Analysis Services server?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> We answer this in the <bpt id="p2">[</bpt>troubleshooting article<ept id="p2">](powerbi-gateway-onprem-tshoot.md)</ept>.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> I have 25 databases in Analysis Services, is there a way to have them all enabled for the gateway at once?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. This is on the roadmap, but we don’t have a timeframe.
+            **Pregunta:** puedo usar la puerta de enlace para conectarse a una instancia multidimensional (OLAP).  
+
+            **Respuesta:** Sí! La puerta de enlace de enterprise admite conexiones directas a los modelos tabulares de Analysis Services y multidimensionales.
+
+
+            **Pregunta:** ¿Qué ocurre si instalo la puerta de enlace en un equipo en un dominio distinto de mi servidor local que usa la autenticación de Windows?  
+
+            **Respuesta:** garantías aquí. Todo depende de la relación de confianza entre los dos dominios. Si los dos dominios diferentes están en un modelo de dominio de confianza, a continuación, la puerta de enlace pueden conectarse al servidor de Analysis Services y se puede resolver el nombre de usuario efectivo. Si no es así, se puede producir un error de inicio de sesión. 
+
+
+            **Pregunta:** ¿Cómo puedo encontrar a qué nombre de usuario efectivo se pasa a mi servidor de Analysis Services local?  
+
+            **Respuesta:** respondemos en el [artículo de solución de problemas](powerbi-gateway-onprem-tshoot.md).
+
+
+            **Pregunta:** tener 25 bases de datos en Analysis Services, allí es una manera escribirlos habilitado para la puerta de enlace a la vez?  
+
+            **Respuesta:** no. Se trata de la guía, pero no tenemos un período de tiempo.
 
 ## Administration
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I have more than one admin for a gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes! When you manage a gateway, you can go to the administrator’s tab to add additional admins.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Does the gateway admin need to be an admin on the machine where the gateway is installed?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. The gateway admin is used to manage the gateway from within the service. 
+            **Pregunta:** ¿puedo tener más de un administrador de una puerta de enlace?  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I prevent users in my organization from creating a gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. This is on the roadmap, but we don’t have a timeframe.
+            **Respuesta:** Sí! Al administrar una puerta de enlace, puede ir a la pestaña del administrador para agregar administradores adicionales.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I get usage and statistics information of the gateways in my organization?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. This is on the roadmap, but we don’t have a timeframe.
+
+            **Pregunta:** el Administrador de puerta de enlace debe ser un administrador en el equipo donde está instalada la puerta de enlace?  
+
+            **Respuesta:** no. El Administrador de puerta de enlace se utiliza para administrar la puerta de enlace desde el servicio. 
+
+
+            **Pregunta:** puedo evitar que los usuarios de mi organización desde la creación de una puerta de enlace?  
+
+            **Respuesta:** no. Se trata de la guía, pero no tenemos un período de tiempo.
+
+
+            **Pregunta:** puedo obtener información de uso y las estadísticas de las puertas de enlace de mi organización?  
+
+            **Respuesta:** no. Se trata de la guía, pero no tenemos un período de tiempo.
 
 ## Power BI
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> If I'm using the current Power BI gateway for enterprise deployments, do I need to upgrade?
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes, but it is simple to do so as it just works the same way you upgraded to the latest enterprise gateway. Simple install the new on-premises data gateway to upgrade your existing gateway.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Do i need to upgrade the personal gateway?
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No, you can keep using the personal gateway for Power BI.
+            **Pregunta:** Si utilizo la puerta de enlace de Power BI actual para las implementaciones empresariales, ¿necesito actualizar?
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> How often are tiles in a dashboard, in Power BI, refreshed when connected through the enterprise gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> About ten minutes. DirectQuery connections are just that. This doesn’t mean that a tile issues a query to your on-premises server, and shows new data, every ten minutes.
+            **Respuesta:** Sí, pero es sencillo hacerlo ya que sólo funciona del mismo modo se actualizó a la puerta de enlace empresarial más reciente. Puerta de enlace de datos simple las instalaciones nuevas de instalación para actualizar la puerta de enlace existente.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I upload Excel workbooks with Power Pivot data models that connect to on-premises data sources? Do I need a gateway for this scenario?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes, you can upload the workbook. And, no, you don’t need a gateway. But, because the data will reside in the Excel data model, reports in Power BI based on the Excel workbook will not be live. In order to refresh reports in Power BI, you’d have to re-upload an updated workbook each time. Or, use the gateway with scheduled refresh.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> If users share dashboards that has a DirectQuery connection, will those other users be able to see the data even though they might not have the same permissions.  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> For a dashboard connected to Analysis Services, users will only see the data they have access to. If the users do not have the same permissions, they will not be able to see any data. For other data sources, all users will share the credentials entered by the admin for that data source.
+            **Pregunta:** Necesito actualizar la puerta de enlace personal?
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Is a Pro license required to use the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes.
+            **Respuesta:** No, puede seguir usando la puerta de enlace personal de Power BI.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Is a Pro license required for users when interacting with a dashboard or report that makes use of the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Why can't I connect to my Oracle server?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> You may need to install the Oracle client and configure the tnsnames.ora file with the proper server information in order to connect to your Oracle server. This is a separate install outside of the Gateway. For more information, see <bpt id="p1">[</bpt>Installing the Oracle Client<ept id="p1">](powerbi-gateway-onprem-manage-oracle.md#installing-the-oracle-client)</ept>.
+            **Pregunta:** con qué frecuencia se actualizan cuando se conecta a través de la puerta de enlace empresarial de mosaicos en un panel en Power BI,?  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Will the gateway work with ExpressRoute?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes. For more information about ExpressRoute and Power BI, see <bpt id="p1">[</bpt>Power BI and ExpressRoute<ept id="p1">](powerbi-admin-power-bi-expressroute.md)</ept>.
+            **Respuesta:** unos diez minutos. Conexiones de DirectQuery son precisamente eso. Esto no significa que un mosaico emite una consulta a su servidor local y nuevos datos, muestra cada diez minutos.
+
+
+            **Pregunta:** ¿Puedo cargar libros de Excel con modelos de datos de PowerPivot que se conectan a orígenes de datos locales? ¿Necesita una puerta de enlace para este escenario?  
+
+            **Respuesta:** Sí, puede cargar el libro. Y no, no necesita una puerta de enlace. Pero, dado que los datos residen en el modelo de datos de Excel, informes de Power BI basadas en el libro de Excel no serán dinámicos. Para actualizar los informes en Power BI, se tendría que volver a cargar un libro actualizado cada vez. O bien, utilizar la puerta de enlace con la actualización programada.
+
+
+            **Pregunta:** si los usuarios comparten paneles que tiene una conexión de DirectQuery, los otros usuarios podrán ver los datos, aunque quizás no tengan los mismos permisos.  
+
+            **Respuesta:** para un panel conectado a Analysis Services, los usuarios sólo verán los datos que tienen acceso. Si los usuarios no tienen los mismos permisos, no podrá ver ningún dato. Para otros orígenes de datos, todos los usuarios comparten las credenciales especificadas por el administrador para ese origen de datos.
+
+
+            **Pregunta:** requerido utilizar la puerta de enlace de una licencia de Pro?  
+
+            **Respuesta:** Sí.
+
+
+            **Pregunta:** Pro requerido una licencia para los usuarios al interactuar con un panel o informe que hace uso de la puerta de enlace?  
+
+            **Respuesta:** Sí.
+
+
+            **Pregunta:** ¿por qué no puedo conectarme a mi servidor Oracle?  
+
+            **Respuesta:** debe instalar el cliente de Oracle y configurar el archivo tnsnames.ora con la información del servidor correcta para poder conectarse al servidor de Oracle. Se trata de una instalación independiente fuera de la puerta de enlace. Para obtener más información, consulte [instalar el cliente de Oracle](powerbi-gateway-onprem-manage-oracle.md#installing-the-oracle-client).
+
+
+            **Pregunta:** funcionará la puerta de enlace con ExpressRoute?  
+
+            **Respuesta:** Sí. Para obtener más información acerca de ExpressRoute y Power BI, consulte [Power BI y ExpressRoute](powerbi-admin-power-bi-expressroute.md).
 
 ## Consulte también
-[On-premises data gateway](powerbi-gateway-onprem.md)  
-[On-premises data gateway in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Puerta de enlace de datos local](powerbi-gateway-onprem.md)  
+[Puerta de enlace de datos a local detallada](powerbi-gateway-onprem-indepth.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

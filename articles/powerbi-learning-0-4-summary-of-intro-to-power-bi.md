@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Review and What's Next"
-   description="Review what you learned in this introduction to Power BI"
+   pageTitle="Revisión y próxima Novedades"
+   description="Revise lo aprendido en esta introducción a Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,46 +22,54 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Review this first section of Guided Learning
+# Revise esta primera sección de aprendizaje guiada
 
-Let’s do a quick review of what we covered in this first section.
+Vamos a hacer una revisión rápida de lo que hemos tratado en esta primera sección.
 
-<bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> is a collection of software services, apps, and connectors that work together to turn your data into interactive insights. You can use data from single basic sources, such as an Excel workbook, or pull data in from multiple databases and cloud sources to create complex datasets and reports. Power BI can be as straightforward as you want, or as enterprise-ready as your complex global business requires.
 
-Power BI consists of three main elements – the <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Power BI Mobile<ept id="p3">**</ept> – which all work collectively to let you create, interact with, share, and consume your data how you want it.
+            **Power BI** es una colección de servicios de software, aplicaciones y conectores que funcionan conjuntamente para convertir los datos en visión interactivo. Puede usar datos de orígenes básicos únicos, como un libro de Excel, o extraer datos de varias bases de datos y orígenes para crear informes y conjuntos de datos complejos en la nube. Power BI puede ser tan sencillo como desee, o como preparado para la empresa como el complejo empresa global requiere.
+
+Power BI consta de tres elementos principales: la **Power BI Desktop**, el **servicio Power BI**, y **Power BI Mobile** – que todo el trabajo colectivamente para permitirle crear, interactuar con, compartir y consumir los datos agrado.
 
 ![](media/powerbi-learning-0-4-summary-of-intro-to-power-bi/c0a4_1.png)
 
-We discussed the basic building blocks in Power BI too, which are:
+Analizamos los pilares básicos en Power BI, que son:
 
--   <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> – a visual representation of data, sometimes just called visuals
--   <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> – a collection of data that Power BI uses to create visualizations
--   <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> – a collection of visuals from a dataset, spanning one or more pages
--   <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> – a single page collection of visuals, built from a report
--   <bpt id="p1">**</bpt>Tiles<ept id="p1">**</ept> – a single visualization found in a report or dashboard
+-   
+            **Visualizaciones** : representación visual de los datos, a veces se denominan elementos visuales
+-   
+            **Conjuntos de datos** : una colección de datos que Power BI se usa para crear visualizaciones
+-   
+            **Informes** : una colección de objetos visuales de un conjunto de datos, una o varias páginas
+-   
+            **Paneles** : una colección de una página de elementos visuales, que se crea a partir de un informe
+-   
+            **Mosaicos** – una visualización solo se encuentra en un informe o un panel
 
-From there, we took a look at Power BI in a video tour with our Tour Guide, <bpt id="p1">**</bpt>Will Thompson<ept id="p1">**</ept>. Will gave us a quick overview of how you can analyze and visualize data with Power BI.
+Desde allí, se llevaron a cabo un vistazo a Power BI en una visita en vídeo con nuestra guía de visita, **Will Thompson**. Will nos dio una introducción rápida de cómo puede analizar y visualizar datos con Power BI.
 
 <!---
 In **Power BI Desktop**, we connected to a basic Excel file, created visualizations, then published those visualizations to the service. Even if you use Power BI only with your Excel workbooks, you can gain amazing visual insights with those Excel workbooks, and both interact and share it in ways never before possible.
 -->
-In the <bpt id="p1">**</bpt>Power BI service<ept id="p1">**</ept>, we created a dashboard with just a few clicks. We continued with our glimpse into the Power BI service and used a <bpt id="p1">**</bpt>Content Pack<ept id="p1">**</ept> – a ready-made collection of visuals and reports – and connected to a <bpt id="p2">**</bpt>software service<ept id="p2">**</ept> to populate the content pack and bring that data to life.
+En el **servicio Power BI**, hemos creado un panel con unos pocos clics. Se continuó con nuestra visión en el servicio Power BI y utiliza un **Pack contenido** – colección listos para usar de informes y elementos visuales: y está conectado a un **software servicio** para rellenar el paquete de contenido y haga que los datos cobren vida.
 
-We also used natural language queries, called <bpt id="p1">**</bpt>Q &amp; A<ept id="p1">**</ept>, to ask questions of our answers, and let Power BI create visuals based on those questions. Lastly, we set up a <bpt id="p1">**</bpt>refresh schedule<ept id="p1">**</ept> for our data, so we know when we go back to the Power BI service, that data will be fresh.
+También hicimos uso de consultas en lenguaje natural, llamadas **preguntas y respuestas**, para formular preguntas de nuestras respuestas y permiten Power BI crear elementos visuales según esas preguntas. Por último, configuramos un **programación de actualización** de nuestros datos, por lo que sabemos Cuando volvemos al servicio Power BI, esos datos serán frescas.
 
-## What's Next
+## Próxima Novedades
 
-**Enhorabuena.** You've completed the first section of the <bpt id="p1">**</bpt>Guided Learning<ept id="p1">**</ept> course for Power BI. You now have a firm foundation of knowledge to move on to the next section, <bpt id="p1">**</bpt>Getting Data<ept id="p1">**</ept>, which is the next step in the logical flow of work for Power BI.
+**Enhorabuena.** Ha completado la primera sección de la **aprendizaje guiado** curso para Power BI. Ahora dispone de una base sólida de conocimientos para pasar a la siguiente sección, **obtener datos**, que es el siguiente paso en el flujo de trabajo para Power BI lógico.
 
-We mentioned this before, but it's worth restating: this course builds your knowledge by following the common flow of work in Power BI:
+Hemos mencionado antes, pero merece la pena reformular: este curso forjando su conocimiento siguiendo el flujo de trabajo en Power BI comunes:
 
--   Bring data into <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, and create a report.
--   <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> to the Power BI service, where you create new visualizations or build dashboards
--   <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> your dashboards with others, especially people who are on the go
--   View and interact with shared dashboards and reports in <bpt id="p1">**</bpt>Power BI Mobile<ept id="p1">**</ept> apps
+-   Pase datos a **Power BI Desktop**, y crear un informe.
+-   
+            **Publicar** al servicio Power BI, donde crear nuevas visualizaciones o paneles de compilación
+-   
+            **Recurso compartido** sus paneles con otras personas, especialmente personas que están de viaje
+-   Ver e interactuar con informes y paneles compartidos en **Power BI Mobile** aplicaciones
 
 ![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
-You might not do all that work yourself - some people will only view dashboards in the service that were created by someone else. That's fine, but because <bpt id="p1">*</bpt>you'll<ept id="p1">*</ept> go through all the sections in this course, you'll <bpt id="p2">*</bpt>understand<ept id="p2">*</ept> how those dashboards were created, and how they connected to the data... and you might even decide to create one of your own.
+No puede hacer todo lo que usted mismo - funcionan algunas personas sólo verán paneles en el servicio que se han creado por otra persona. Eso está bien, pero, como *tendrá* vaya a través de todas las secciones de este curso, necesitará *comprender* cómo se crearon los paneles y cómo que conectados a los datos... e incluso podría decidir crear una propia.
 
-See you in the next section!
+Ver, en la sección siguiente.

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Interact with tiles in the Power BI mobile app on the iPad"
-   description="You create tiles on a dashboard in the Power BI service. Read about opening tiles and interacting with them in the Power BI mobile app for iOS on the iPad."
+   pageTitle="Interactuar con iconos en la aplicación móvil de Power BI en el iPad"
+   description="Crear mosaicos en un panel en el servicio Power BI. Obtenga información acerca de abrir mosaicos e interactuar con ellos en la aplicación móvil de Power BI para iOS en el iPad."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,34 +20,37 @@
    ms.date="10/11/2016"
    ms.author="maggies"/>
 
-# Interact with tiles in the Power BI mobile app for iOS on the iPad
+# Interactuar con iconos en la aplicación móvil de Power BI para iOS en el iPad
 
-Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You <bpt id="p1">[</bpt>create tiles on a dashboard in the Power BI service<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>.
+Los iconos son instantáneas de los datos, anclados a un panel. Cambian sus valores como los cambios de datos. Se [crear mosaicos en un panel en el servicio Power BI](powerbi-service-dashboard-tiles.md).
 
-Then in <bpt id="p1">[</bpt>the iPad app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept>, you open tiles in focus mode and interact with them. You can open tiles with all kinds of visuals, including tiles based on Bing and R.
+A continuación, en [la aplicación de iPad](http://go.microsoft.com/fwlink/?LinkId=522062), abra mosaicos en modo de enfoque e interactuar con ellos. Puede abrir mosaicos con todos los tipos de efectos visuales, incluidos los mosaicos en función de Bing y R.
 
-1.  Open a <bpt id="p1">[</bpt>dashboard in the iPad app<ept id="p1">](powerbi-mobile-dashboards-on-the-ipad-app.md)</ept>.
+1.  Abrir un [panel en la aplicación de iPad](powerbi-mobile-dashboards-on-the-ipad-app.md).
 
-2.  Tap a tile. It opens in focus mode, where you can interact with the tile data:
+2.  Puntee en un mosaico. Se abre en modo de enfoque, donde puede interactuar con los datos de mosaico:
 
-   -   In a line, bar, or column chart, drag the bar to view the values for specific parts of the visualization.  
+   -   En una línea, la barra o el gráfico de columnas, arrastre la barra para ver los valores de partes específicas de la visualización.  
 
          ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile.png)
 
-        In this 100% column chart, the values are listed for March, where the vertical bar intersects the chart.
+        En este gráfico de columnas 100%, se muestran los valores de marzo, en la intersección de la barra vertical y el gráfico.
 
-  -   In a pie chart, tap a slice of the pie to show the value of the slice at the top of the pie.  
+  -   En un gráfico circular, puntee en un sector del gráfico circular para mostrar el valor del segmento en la parte superior del gráfico circular.  
       ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile-pie.png)
 
-  -   <bpt id="p1">[</bpt>Share a snapshot of the tile<ept id="p1">](powerbi-mobile-share-dashboards-from-the-ipad-app.md)</ept> <ph id="ph1">![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-share-tile.png)</ph> with others.
+  -   
+            [Compartir una instantánea del mosaico](powerbi-mobile-share-dashboards-from-the-ipad-app.md) ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-share-tile.png) con otros usuarios.
 
-  -   <bpt id="p1">[</bpt>Open the report<ept id="p1">](powerbi-mobile-reports-on-the-ipad-app.md)</ept> <ph id="ph1">![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-open-report-icon.png)</ph> that the tile is based on.
+  -   
+            [Abra el informe](powerbi-mobile-reports-on-the-ipad-app.md) ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-open-report-icon.png) que se basa el mosaico.
 
-3. To leave tile focus mode, tap the tile name, then tap the dashboard name or <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+3. Para salir del modo de enfoque de mosaico, puntee en el nombre de mosaico y, a continuación, puntee en el nombre del panel o **Mi área de trabajo**.
 
     ![](media/powerbi-mobile-tiles-in-the-ipad-app/power-bi-ipad-tile-breadcrumb.png)
 
 
 ### Consulte también
--  <bpt id="p1">[</bpt>Get started with the iPad app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> for Power BI.
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+-  
+            [Introducción a la aplicación de iPad](powerbi-mobile-iphone-app-get-started.md) para Power BI.
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

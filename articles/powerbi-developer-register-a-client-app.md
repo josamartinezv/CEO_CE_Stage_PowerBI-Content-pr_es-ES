@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Register a client app"
-   description="Register a client app"
+   pageTitle="Registrar una aplicación cliente"
+   description="Registrar una aplicación cliente"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,114 +20,123 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Register a client app
+# Registrar una aplicación cliente
 
-This article shows you how to register a Power BI client app in <bpt id="p1">**</bpt>Azure Active Directory (Azure AD)<ept id="p1">**</ept>. You register your client app with Azure AD to allow your application access to the Power BI REST API. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources. For a list of Power BI permissions, see <bpt id="p1">[</bpt>Power BI permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
+Este artículo muestra cómo registrar una aplicación de cliente de Power BI en **Azure Active Directory (Azure AD)**. Registrar la aplicación cliente con Azure AD para permitir que la aplicación tenga acceso a la API de REST de Power BI. Esto le permitirá establecer una identidad para la aplicación y especificar permisos para recursos de REST de Power BI. Para obtener una lista de permisos de Power BI, consulte [permisos de Power BI](powerbi-developer-power-bi-permissions.md).
 
-<bpt id="p1">**</bpt>Important<ept id="p1">**</ept> Before you register a Power BI app you need an <bpt id="p2">[</bpt>Azure Active Directory tenant and an organizational user<ept id="p2">](powerbi-developer-create-an-azure-active-directory-tenant.md)</ept>, and a <bpt id="p3">[</bpt>Power BI service account<ept id="p3">](powerbi-developer-sign-up-for-power-bi-service.md)</ept>.
 
-There are two ways to register your client app: with the Power BI App Registration Tool or on Azure Management Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. If you want to make changes to you app, this can be done through the Azure Management Portal.
+            **Importante** antes de registrar una aplicación de Power BI necesita un [inquilino de Azure Active Directory y un usuario de la organización](powerbi-developer-create-an-azure-active-directory-tenant.md), y un [cuenta de servicio de Power BI](powerbi-developer-sign-up-for-power-bi-service.md).
+
+Hay dos maneras de registrar la aplicación cliente: con la herramienta de registro de aplicación de Power BI o en el Portal de administración de Azure. La herramienta de registro de aplicación de Power BI es la opción más fácil dado que hay solo unos cuantos campos a rellenar. Si desea realizar cambios en la aplicación, esto puede hacerse a través del Portal de administración de Azure.
 
 ### En este artículo
 
-- [Register a client app with Power BI App Registration Tool](#clientTool)
-- [Register a client app with Azure Management Portal](#client)
-- [How to get a client id in Azure Management Portal](#clientID)
+- [Registrar una aplicación cliente con la herramienta de registro de aplicación de Power BI](#clientTool)
+- [Registrar una aplicación cliente con el Portal de administración de Azure](#client)
+- [Cómo obtener un identificador de cliente en el Portal de administración de Azure](#clientID)
 
 <a name="clientTool"></a>
-## Register a client app with Power BI App Registration Tool
-You need to register your client app in <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept> to establish an identity for your application and specify permissions to Power BI REST resources. When you register a client app, such as a console app, you receive a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept>.  The <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> is used by the application to identify themselves to the users that they are requesting permissions from.
-Here's how to register your client app with the Power BI App Registration Tool:
+## Registrar una aplicación cliente con la herramienta de registro de aplicación de Power BI
+Debe registrar la aplicación cliente en **Azure Active Directory** para establecer una identidad para la aplicación y especificar permisos para recursos de REST de Power BI. Al registrar una aplicación de cliente, como una aplicación de consola, recibirá un **Id. de cliente**.  El **Id. de cliente** se utiliza la aplicación para identificarse ante los usuarios que están solicitando permisos.
+Aquí se muestra cómo registrar la aplicación cliente con la herramienta de registro de aplicación de Power BI:
 
-1.  Go to dev.powerbi.com/apps.
-2.  In the Power BI App Registration Tool, follow these four steps:
+1.  Vaya a dev.powerbi.com/apps.
+2.  En la herramienta de registro de aplicaciones de BI energía, siga estos cuatro pasos:
 
-<bpt id="p1">**</bpt>Step 1<ept id="p1">**</ept> - Choose <bpt id="p2">**</bpt>Login in<ept id="p2">**</ept> to login to your Azure AD account. You will see your name in the Welcome line.
 
-<bpt id="p1">**</bpt>Step 2<ept id="p1">**</ept> – Enter information about your app.
+            **Paso 1** -elija **Inicio de sesión en** para iniciar sesión en su cuenta de Azure AD. Verá su nombre en la línea principal.
 
-  * <bpt id="p1">**</bpt>App Name<ept id="p1">**</ept>: The name of your app.
-  * <bpt id="p1">**</bpt>App Type<ept id="p1">**</ept>: Choose Native app.
-  * <bpt id="p1">**</bpt>Redirect URI<ept id="p1">**</ept>: For a native client app, a redirect uri gives AAD more details on the specific application that it will authenticate. Any valid Uri will work such as https://login.live.com/oauth20_desktop.srf.
 
-<bpt id="p1">**</bpt>Step 3<ept id="p1">**</ept> – Choose APIs to access. For more information about Power BI access permissions, see <bpt id="p1">[</bpt>Power BI Permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
+            **Paso 2** : especificar información acerca de la aplicación.
+
+  * 
+            **Nombre de la aplicación**: el nombre de la aplicación.
+  * 
+            **Tipo de aplicación**: elija la aplicación nativa.
+  * 
+            **URI de redireccionamiento**: para una aplicación de cliente nativo, un uri de redireccionamiento da a AAD más detalles en la aplicación específica que autenticará. Cualquier Uri válida funcionará como https://login.live.com/oauth20_desktop.srf.
+
+
+            **Paso 3** : elija API para tener acceso. Para obtener más información acerca de los permisos de acceso de Power BI, consulte [permisos de Power BI](powerbi-developer-power-bi-permissions.md).
 
 ![](media/powerbi-developer-register-a-client-app/register-app-tool-step-3.png)
 
-<bpt id="p1">**</bpt>Step 4<ept id="p1">**</ept> - To register your app, click <bpt id="p2">**</bpt>Register App<ept id="p2">**</ept>. After the app is registered in Azure AD, you will get a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept>. Make sure you copy the Client ID. You can get the Client ID later in the <bpt id="p1">**</bpt>Azure Management Portal<ept id="p1">**</ept>. See <bpt id="p1">[</bpt>How to get a client id in Azure Management Portal<ept id="p1">](#clientID)</ept>.
 
-You can now use your Client ID for your app. The next section shows how to register a client app with Azure Management Portal.
+            **Paso 4** : para registrar la aplicación, haga clic en **aplicación registrar**. Una vez que se registra la aplicación en Azure AD, obtendrá un **Id. de cliente**. Asegúrese de que copiar el identificador de cliente. Puede obtener el identificador de cliente más adelante en el **Portal de administración de Azure**. Vea [cómo obtener un identificador de cliente en el Portal de administración de Azure](#clientID).
+
+Ahora puede usar el identificador de cliente para la aplicación. La sección siguiente muestra cómo registrar una aplicación cliente con el Portal de administración de Azure.
 
 <a name="client"></a>
-## Register a client app with Azure Management Portal
-You need to register your client app in <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept> to establish an identity for your application and specify permissions to Power BI REST resources. When you register a client app, such as a console app, you receive a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept>.  The <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> is used by the application to identify themselves to the users that they are requesting permissions from.
+## Registrar una aplicación cliente con el Portal de administración de Azure
+Debe registrar la aplicación cliente en **Azure Active Directory** para establecer una identidad para la aplicación y especificar permisos para recursos de REST de Power BI. Al registrar una aplicación de cliente, como una aplicación de consola, recibirá un **Id. de cliente**.  El **Id. de cliente** se utiliza la aplicación para identificarse ante los usuarios que están solicitando permisos.
 
-To learn how to authenticate a client app using an Azure AD <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept>, see <bpt id="p2">[</bpt>Authenticate a client app<ept id="p2">](powerbi-developer-authenticate-a-client-app.md)</ept>.
+Para obtener información sobre cómo autenticar una aplicación cliente con Azure AD **Id. de cliente**, consulte [autenticar una aplicación cliente](powerbi-developer-authenticate-a-client-app.md).
 
-### Register a client app
+### Registrar una aplicación cliente
 
-Here's how to register a client app:
-1. Accept the <bpt id="p1">[</bpt>Microsoft Power BI API Terms<ept id="p1">](https://powerbi.microsoft.com/api-terms)</ept>.
-2. Sign into your Microsoft Azure subscription at https://manage.windowsazure.com.
-3. In the left service panel, choose <bpt id="p1">**</bpt>ACTIVE DIRECTORY<ept id="p1">**</ept>.
-4. Click the active directory that you belong to.
+Aquí se muestra cómo registrar una aplicación de cliente:
+1. Acepte el [términos de la API de Microsoft Power BI](https://powerbi.microsoft.com/api-terms).
+2. Inicie sesión en su suscripción de Microsoft Azure en https://manage.windowsazure.com.
+3. En el panel izquierdo del servicio, elija **ACTIVE DIRECTORY**.
+4. Haga clic en active directory al que pertenece.
 
   ![](media/powerbi-developer-register-a-client-app/register-app-ad.png)
 
-5. Click <bpt id="p1">**</bpt>APPLICATIONS<ept id="p1">**</ept>.
+5. Haga clic en **APLICACIONES**.
 
     ![](media/powerbi-developer-register-a-client-app/register-app-applications.png)
 
-6. Click <bpt id="p1">**</bpt>ADD<ept id="p1">**</ept>.
+6. Haga clic en **AGREGAR**.
 
     ![](media/powerbi-developer-register-a-client-app/register-app-add.png)
 
-7. In <bpt id="p1">**</bpt>Tell us about your application<ept id="p1">**</ept>, enter a <bpt id="p2">**</bpt>NAME<ept id="p2">**</ept>, and choose <bpt id="p3">**</bpt>NATIVE CLIENT APPLICATION<ept id="p3">**</ept> for the type, and click <bpt id="p4">**</bpt>Next<ept id="p4">**</ept> icon..
+7. En **más información sobre la aplicación**, escriba un **NOMBRE**, y elija **APLICACIÓN de CLIENTE NATIVO** para el tipo y haga clic en **siguiente** icono...
 
     ![](media/powerbi-developer-register-a-client-app/register-app-client-app.png)
 
-8. In <bpt id="p1">**</bpt>Application information<ept id="p1">**</ept>, enter a <bpt id="p2">**</bpt>REDIRECT URI<ept id="p2">**</ept>. For a client app, a redirect uri gives AAD more details on the specific application that it will authenticate. For a client app, you can use any valid Uri such as https://login.live.com/oauth20_desktop.srf.
+8. En **información de la aplicación**, escriba un **URI de REDIRECCIONAMIENTO**. Para una aplicación de cliente, un uri de redireccionamiento da a AAD más detalles en la aplicación específica que autenticará. Para una aplicación cliente, puede usar cualquier Uri válida como https://login.live.com/oauth20_desktop.srf.
 
-9.  Click the <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> icon.
-10. In the application page, choose <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept>. You will see your <bpt id="p1">**</bpt>CLIENT ID<ept id="p1">**</ept>.
-11. In the <bpt id="p1">**</bpt>CONFIGURATION<ept id="p1">**</ept> page, under permissions to other applications, click <bpt id="p2">**</bpt>Add Application<ept id="p2">**</ept>.
+9.  Haga clic en el **completado** icono.
+10. En la página aplicación, elija **CONFIGURAR**. Verá su **Id. de CLIENTE**.
+11. En el **CONFIGURACIÓN** en permisos para otras aplicaciones, haga clic en **Agregar aplicación**.
 
     ![](media/powerbi-developer-register-a-client-app/register-app-add-application.png)
 
-12. In <bpt id="p1">**</bpt>Permissions to other applications<ept id="p1">**</ept>, choose <bpt id="p2">**</bpt>Power BI Service<ept id="p2">**</ept>.
+12. En **permisos para otras aplicaciones**, elija **servicio Power BI**.
 
     ![](media/powerbi-developer-register-a-client-app/register-app-permissions-to-other-applications.png)
 
-      <bpt id="p1">**</bpt>Important<ept id="p1">**</ept> If you do not see <bpt id="p2">**</bpt>Power BI Service<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Permissions to other applications<ept id="p3">**</ept> list, you need to sign up for the <bpt id="p4">[</bpt>Power BI Service<ept id="p4">](https://www.powerbi.com/)</ept>. To sign up for the Power BI Service, you need at least one organizational user in your Azure Active Directory (AAD) tenant. If you do not have an Azure Active Directory (AAD) tenant, see <bpt id="p1">[</bpt>Create an Azure Active Directory tenant<ept id="p1">](powerbi-developer-create-an-azure-active-directory-tenant.md)</ept> to create an Azure AD tenant and an organizational user in your Azure AD tenant.
+      
+            **Importante** Si no ve **servicio Power BI** en el **permisos para otras aplicaciones** lista, debe registrarse para el [servicio Power BI](https://www.powerbi.com/). Para suscribirse al servicio Power BI, necesita al menos un usuario de la organización en el inquilino de Azure Active Directory (AAD). Si no tiene un inquilino de Azure Active Directory (AAD), consulte [crear un inquilino de Azure Active Directory](powerbi-developer-create-an-azure-active-directory-tenant.md) para crear un inquilino de Azure AD y un usuario de la organización en su inquilino de Azure AD.
 
-13. Click <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> icon.
-14. In the <bpt id="p1">**</bpt>permissions to other applications<ept id="p1">**</ept> group, choose all <bpt id="p2">**</bpt>Delegated Permissions<ept id="p2">**</ept>, and chooses one or more permissions. For more information about Power BI permissions, see <bpt id="p1">[</bpt>Power BI Permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
+13. Haga clic en **Complete** icono.
+14. En el **permisos para otras aplicaciones** grupo, elija todos los **permisos delegados**, y elige uno o varios permisos. Para obtener más información acerca de los permisos de Power BI, consulte [permisos de Power BI](powerbi-developer-power-bi-permissions.md).
 
     ![](media/powerbi-developer-register-a-client-app/register-app-delegated-permissions.png)
 
 15. Haga clic en **Guardar**.
 
 <a name="clientID"></a>
-## How to get a client app id
-When you register a client app, such as a console app, you receive a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept>.  The <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> is used by the application to identify themselves to the users that they are requesting permissions from.
+## Cómo obtener un identificador de aplicación cliente
+Al registrar una aplicación de cliente, como una aplicación de consola, recibirá un **Id. de cliente**.  El **Id. de cliente** se utiliza la aplicación para identificarse ante los usuarios que están solicitando permisos.
 
-Here's how to get a client id:
+Aquí se muestra cómo obtener un identificador de cliente:
 
-1. Sign into your Microsoft Azure subscription at https://manage.windowsazure.com.
-2. In the left service panel, choose <bpt id="p1">**</bpt>ACTIVE DIRECTORY<ept id="p1">**</ept>.
-3. Click the active directory that you belong to.
-4. Click <bpt id="p1">**</bpt>APPLICATIONS<ept id="p1">**</ept>.
-5. Choose an application.
-6. In the application page, choose <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept>.
-7. In the <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept> page, copy the <bpt id="p2">**</bpt>CLIENT ID<ept id="p2">**</ept>.
+1. Inicie sesión en su suscripción de Microsoft Azure en https://manage.windowsazure.com.
+2. En el panel izquierdo del servicio, elija **ACTIVE DIRECTORY**.
+3. Haga clic en active directory al que pertenece.
+4. Haga clic en **APLICACIONES**.
+5. Elija una aplicación.
+6. En la página aplicación, elija **CONFIGURAR**.
+7. En el **CONFIGURAR** página, copie el **Id. de CLIENTE**.
 
     ![](media/powerbi-developer-register-a-client-app/register-app-clientid.png)
 
 ## Consulte también
 
-[Power BI permissions](powerbi-developer-power-bi-permissions.md)  
-[Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md)  
-[Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md)  
-[Authenticate a client app](powerbi-developer-authenticate-a-client-app.md)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Permisos de Power BI](powerbi-developer-power-bi-permissions.md)  
+[Inquilino de Azure Active Directory y un usuario de la organización](powerbi-developer-create-an-azure-active-directory-tenant.md)  
+[Cuenta de servicio de Power BI](powerbi-developer-sign-up-for-power-bi-service.md)  
+[Autenticar una aplicación cliente](powerbi-developer-authenticate-a-client-app.md)  
+[Información general sobre la API de REST de Power BI](powerbi-developer-overview-of-power-bi-rest-api.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

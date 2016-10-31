@@ -1,6 +1,6 @@
 <properties
-   pageTitle="The report editor...Take a tour"
-   description="The report editor...Take a tour."
+   pageTitle="El editor de informe... Dé un paseo"
+   description="El editor de informe... Dé un paseo."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,115 +19,118 @@
    ms.workload="powerbi"
    ms.date="09/21/2016"
    ms.author="mihart"/>
-# The report editor...Take a tour
+# El editor de informe... Dé un paseo
 
-<bpt id="p1">[</bpt>Open a Power BI report in Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>.
 
-The Power BI report editor is made up of 3 panes:  <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Filters<ept id="p3">**</ept>, plus the top navigation bar and the report canvas.  
+            [Abra un informe de Power BI en la vista de edición de](powerbi-service-go-from-reading-view-to-editing-view.md).
 
-## The report editor panes
+El editor de informes de Power BI se compone de 3 paneles:  **campos**, **visualizaciones**, y **filtros**, además de la barra de navegación superior y el lienzo de informes.  
 
-The panes on the left side, Visualizations and Filters, control what your visualizations look like -- type, colors, filtering.  And the pane on the right side, Fields, control the underlying data being used in the visualizations. 
+## Los paneles del editor de informes
 
-The content displayed in the report editor varies by selections you make in the report canvas.  For example, when you select an individual visual, 
+Los paneles en el lado izquierdo, visualizaciones y los filtros, controlan las visualizaciones apariencia--escriba colores, filtrado.  Y el panel del lado derecho, campos, controlar los datos subyacentes que se utilizan en las visualizaciones. 
 
--   the top of the Visualization pane identifies the type of visual in use, 
--   the bottom of the Visualization pane displays the fields being used in the visual,
--   the Filters pane displays any filters that have been applied, and
--   the Fields list identifies tables (and fields if the table is already expanded) in use.
+El contenido mostrado en el editor de informe varía según las selecciones que realice en el lienzo de informes.  Por ejemplo, al seleccionar un objeto visual individual, 
+
+-   la parte superior del panel de visualización identifica el tipo de visual en uso, 
+-   la parte inferior del panel de visualización muestra los campos que se utiliza en el objeto visual,
+-   el panel filtros muestra los filtros que se han aplicado, y
+-   la lista de campos identifica tablas (campos y si la tabla ya está expandida) en uso.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/PBI_report_canvas.png)
 
-## The Visualizations pane (from top to bottom)
+## El panel de visualizaciones (de arriba a abajo)
 
-Select visual type, build your visual by adding and managing fields, and customize the look and feel of your visual.
+Seleccionar tipo de visual, compile su visual agregando y administrar campos y personalizar la apariencia y funcionamiento de su visual.
 
-### Change between different visual types by selecting the icon.
+### Cambiar entre los diferentes tipos visuales seleccionando el icono.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/selectViz.png)
 
-### Control the fields used in your visual.
+### Controlar los campos utilizados en el objeto visual.
 
-The buckets shown in this pane vary depending on what type of visualization you have selected.  For example, if you've selected a bar chart, you'll see buckets for: Values, Axis, and Legend. When you select a field, or drag it onto the canvas, Power BI adds that field to one of the buckets.  You can also drag fields from the Fields list directly into the Visualizations buckets.  Some buckets are limited to certain types of data.  For example, <bpt id="p1">**</bpt>Values<ept id="p1">**</ept> won't accept non-numeric fields. So if you drag an <bpt id="p1">**</bpt>employeename<ept id="p1">**</ept> field into the <bpt id="p2">**</bpt>Values<ept id="p2">**</ept> bucket, Power BI changes it to <bpt id="p3">**</bpt>count of employeename<ept id="p3">**</ept>.
+Los cubos que se muestra en este panel varían según el tipo de visualización que ha seleccionado.  Por ejemplo, si ha seleccionado un gráfico de barras, verá depósitos para: valores, el eje y la leyenda. Cuando seleccione un campo o arrástrelo al lienzo, Power BI agrega ese campo a uno de los cubos.  También puede arrastrar campos desde la lista de campos directamente en los depósitos de visualizaciones.  Algunos de los depósitos están limitados a determinados tipos de datos.  Por ejemplo, **valores** no aceptará los campos no numéricos. Por tanto, si arrastra una **employeename** campo en el **valores** depósitos, Power BI cambia a **recuento de employeename**.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-field-list.png)
 
-### Remove a field
+### Quitar un campo
 
-To remove a field from the visualization, select the field and click the <bpt id="p1">**</bpt>X<ept id="p1">**</ept>.
+Para quitar un campo de la visualización, seleccione el campo y haga clic en el **X**.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/deleteField.png)
 
-For more information, see <bpt id="p1">[</bpt>Add visualizations to a Power BI report<ept id="p1">](powerbi-service-add-visualizations-to-a-report-i.md)</ept>
+Para obtener más información, consulte [Agregar visualizaciones a un informe de Power BI](powerbi-service-add-visualizations-to-a-report-i.md)
 
-### Format your visuals
+### Dar formato a los objetos visuales
 
-Select the paintbrush icon to display customization options. 
+Seleccione el icono de pincel para mostrar las opciones de personalización. 
 
--   [Customizing  visualization title, background and legend](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
--   [Color formatting](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
--   [Customizing X-axis and Y-axis properties](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
+-   [Personalizar el título de visualización, el fondo y la leyenda](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
+-   [Formato de color](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
+-   [Personalizar las propiedades de los ejes x y y](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)
 
     ![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-formatting.png)
 
-## The Filters pane
+## El panel de filtros
 
-View, set, and modify page, report, and visual-level filters.
+Ver, establecer y modificar la página, informes y filtros de nivel visual.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-filter-pane.png)
 
-For more information, see <bpt id="p1">[</bpt>Add a filter to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>.
+Para obtener más información, consulte [Agregar un filtro a un informe](powerbi-service-add-a-filter-to-a-report.md).
 
-## The Fields pane 
+## El panel de campos 
 
-The Fields pane displays the tables and fields that exist in your data.  Use these fields to create visualizations.
+El panel de campos muestra las tablas y campos que existen en los datos.  Utilice estos campos para crear visualizaciones.
 
--   Drag a field onto the page to start a new visualization.  You can also drag a field onto an existing visualization to add the field.
+-   Arrastre un campo a la página para iniciar una visualización nueva.  También puede arrastrar un campo en una visualización existente para agregar el campo.
 
--   Or, select the checkbox next to a field.  If a visualization is selected on the canvas, then the new field is added to that visualization.
+-   O bien, seleccione la casilla de verificación junto a un campo.  Si está seleccionada una visualización en el lienzo, el nuevo campo se agrega a esa visualización.
 
--   Either way, each selected field is added to the Visualizations pane in the report editor.
+-   En cualquier caso, cada campo seleccionado se agrega al panel de visualizaciones en el editor de informes.
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/reportFields.png)
 
-<bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: If you're using Power BI Desktop, you can reach options to show/hide fields, add calculations etc, from here as well:
+
+            **NOTA**: si usa Power BI Desktop, puede llegar a opciones para mostrar u ocultar campos, agregar cálculos etc., desde aquí:
 
 ![](media/powerbi-service-the-report-editor-take-a-tour/reportFieldsDesigner.png)
 
-### What do the field icons mean?
+### ¿Qué significan los iconos de campo?
 
-- <bpt id="p1">**</bpt>∑ Aggregates<ept id="p1">**</ept> An aggregate is a numeric value that will be summed or averaged, for example. Aggregates are imported with the data (defined in the data model your report is based on).
-  For more information, see <bpt id="p1">[</bpt>Aggregates in Power BI reports<ept id="p1">](powerbi-service-aggregates.md)</ept>.
+- 
+              **∑ Agregados** un agregado es un valor numérico que se suma o promedio, por ejemplo. Agregados se importan con los datos (definidos en el informe se basa en el modelo de datos).
+  Para obtener más información, consulte [agregados en los informes de Power BI](powerbi-service-aggregates.md).
 
--  ![](media/powerbi-service-the-report-editor-take-a-tour/PBI_calculated_icon.png) **Calculated fields or measures**  
-    Each calculated field has its own hard-coded formula. You can’t change the calculation, for example, if it’s a sum, it can only be a sum. For more information, <bpt id="p1">[</bpt>read Understanding measures<ept id="p1">](powerbi-desktop-measures.md)</ept>
+-  ![](media/powerbi-service-the-report-editor-take-a-tour/PBI_calculated_icon.png) **Campos calculados o medidas**  
+    Cada calculado campo tiene su propia fórmula codificado de forma rígida. No se puede cambiar el cálculo, por ejemplo, si es una suma, sólo puede ser una suma. Para obtener más información, [leer la descripción de las medidas](powerbi-desktop-measures.md)
 
--  **Unique fields**  
-    Fields with this icon were imported from Excel and are set to show all values, even if they have duplicates. For example your data might have two records for people named 'John Smith', and each will be treated as unique -- they won't be summed.  
+-  **Campos únicos**  
+    Los campos con este icono se importaron desde Excel y se van a mostrar todos los valores, incluso si tienen duplicados. Por ejemplo, los datos podrían tener dos registros para las personas con el nombre "John Smith" y cada uno se trata como único: no sumar.  
 
--  **![](media/powerbi-service-the-report-editor-take-a-tour/PBI_geo_icon.png) Geography fields**  
-    Location fields can be used to create map visualizations. 
+-  **![](media/powerbi-service-the-report-editor-take-a-tour/PBI_geo_icon.png) Campos de geografía**  
+    Campos de ubicación se pueden usar para crear visualizaciones de mapas. 
 
 -  **![](media/powerbi-service-the-report-editor-take-a-tour/power-bi-hierarchy-icon.png) Jerarquía**  
-    Select the arrow to reveal the fields that make up the hierarchy. 
+    Seleccione la flecha para mostrar los campos que componen la jerarquía. 
 
-## The top navigation bar
-The actions available from the top navigation bar are numerous; with new actions being added all the time. For information about a particular action, use the Power BI Documentation Table of Contents or Search box.
+## La barra de navegación superior.
+Las acciones disponibles en la barra de navegación superior son numerosas; con las nuevas acciones que se agrega todo el tiempo. Para obtener información sobre una acción concreta, utilice el cuadro de búsqueda o la tabla de contenido de Power BI documentación.
 
 
-## Next Steps:
+## Pasos siguientes:
 
-[Edit a report](powerbi-service-interact-with-a-report-in-editing-view.md)
+[Editar un informe](powerbi-service-interact-with-a-report-in-editing-view.md)
 
 [crear un informe](powerbi-service-create-a-new-report.md)
 
 
 ## Consulte también
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Introducción a Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)﻿
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

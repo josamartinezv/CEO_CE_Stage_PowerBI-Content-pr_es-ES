@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Calculated Measures"
-   description="Define custom calculations to evaluate time-based functions"
+   pageTitle="Crear medidas calculadas"
+   description="Definir cálculos personalizados para evaluar las funciones de tiempo"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,26 +23,26 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create measures and work with time-based functions
+# Crear medidas y trabajar con funciones de tiempo
 
-A <bpt id="p1">*</bpt>measure<ept id="p1">*</ept> is a calculation that exists in your Power BI data model. To create a measure, in <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view select <bpt id="p2">**</bpt>New Measure<ept id="p2">**</ept> from the <bpt id="p3">**</bpt>Modeling<ept id="p3">**</ept> tab.
+Un *medida* es un cálculo que existe en el modelo de datos de Power BI. Para crear una medida en **informe** Ver seleccione **nueva medida** desde el **modelado** ficha.
 
 ![](media/powerbi-learning-2-5-create-calculated-measures/2-5_1.png)
 
-One of the great things about DAX, the Data Analysis Expression language in Power BI, is that it has lots of useful functions, particularly around time-based calculations such as <bpt id="p1">*</bpt>Year to Date<ept id="p1">*</ept> or <bpt id="p2">*</bpt>Year Over Year<ept id="p2">*</ept>. With DAX you can define a measure of time once, and then slice it by as many different fields as you want from your data model.
+Una de las grandes virtudes de DAX, el lenguaje de expresiones de análisis de datos en Power BI, es que tiene una gran cantidad de funciones útiles, especialmente en relación con cálculos de tiempo como *año hasta la fecha* o *sobre año*. Con DAX puede definir una medida de tiempo una vez y, a continuación, la división por tantos campos diferentes de su modelo de datos como desee.
 
-In Power BI, a defined calculation is called a <bpt id="p1">*</bpt>measure<ept id="p1">*</ept>. To create a <bpt id="p1">*</bpt>measure<ept id="p1">*</ept>, select <bpt id="p2">**</bpt>New Measure<ept id="p2">**</ept> from the <bpt id="p3">**</bpt>Home<ept id="p3">**</ept> tab. This opens the Formula bar where you can enter the DAX expression that defines your measure. As you type, Power BI suggests relevant DAX functions and data fields as you enter your calculation, and you'll also get a tooltip explaining some of the syntax and function parameters.
+En Power BI, se llama a un cálculo definido un *medida*. Para crear un *medida*, seleccione **nueva medida** desde el **Inicio** ficha. Se abre la barra de fórmulas donde puede especificar la expresión de DAX que define la medida. A medida que escribe, Power BI sugiere funciones DAX pertinentes y campos de datos cuando se especifica el cálculo, y también obtendrá información sobre herramientas que explica algunos de los parámetros de función y la sintaxis.
 
 ![](media/powerbi-learning-2-5-create-calculated-measures/2-5_2.png)
 
-If your calculation is particularly long, you can add extra line breaks in the Expression Editor by typing <bpt id="p1">**</bpt>ALT-Enter<ept id="p1">**</ept>.
+Si el cálculo es especialmente largo, puede agregar saltos de línea adicionales en el Editor de expresiones escribiendo **ALT+ENTRAR**.
 
 ![](media/powerbi-learning-2-5-create-calculated-measures/2-5_3.png)
 
-Once you've created a new measure, it will appear in one of the tables on the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, found on the right side of the screen. Power BI inserts the new measure into whichever table you have currently selected, and while it doesn't matter exactly where the measure is in your data, you can easily move it by selecting the measure and using the <bpt id="p1">**</bpt>Home Table<ept id="p1">**</ept> drop-down menu.
+Una vez haya creado una nueva medida, aparecerán en una de las tablas en la **campos** panel, que se encuentra en el lado derecho de la pantalla. Power BI inserta la nueva medida en cualquier tabla que se ha seleccionado y, aunque no importa dónde está exactamente la medida de los datos, puede moverlo fácilmente seleccionando la medida y utilizando la **Inicio tabla** menú desplegable.
 
 ![](media/powerbi-learning-2-5-create-calculated-measures/2-5_4.png)
 
-You can use a measure like any other table column: just drag and drop it onto the report canvas or visualization fields. Measures also integrate seamlessly with slicers, segmenting your data on the fly, which means you can define a measure once, and use it in many different visualizations.
+Puede usar una medida como cualquier otra columna de tabla: simplemente arrastre y coloque en los campos de elemento canvas o visualización de informes. Las medidas también integran sin dificultades con segmentaciones de datos, la segmentación de los datos sobre la marcha, lo que significa que puede definir una medida una vez y usarlo en varias visualizaciones diferentes.
 
-The <bpt id="p1">**</bpt>Calculate<ept id="p1">**</ept> DAX function is a powerful function that enables all sorts of useful calculations, which is especially useful for financial reporting and visuals.
+El **Calculate** función DAX es una función muy eficaz que permite a todo tipo de cálculos útiles, que es especialmente útil para los informes financieros y elementos visuales.

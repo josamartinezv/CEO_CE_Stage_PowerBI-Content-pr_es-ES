@@ -1,10 +1,10 @@
-<properties linkid="example-multi-paragraph-ordered-list" urlDisplayName="Ordered List with Multiple Paragraphs Example" pageTitle="Ordered List with Multiple Paragraphs Example" title="Ordered List with Multiple Paragraphs Example" metaKeywords="southworks" description="Test for the DPS Markdown Conversion." metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" authors="" videoId="" scriptId="" />
+<properties linkid="example-multi-paragraph-ordered-list" urlDisplayName="Ordered List with Multiple Paragraphs Example" pageTitle="Lista con el ejemplo de varios párrafos ordenada" title="Ordered List with Multiple Paragraphs Example" metaKeywords="southworks" description="Probar la conversión de descuento DP." metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" authors="" videoId="" scriptId="" />
 
-# Ordered List with Multiple Paragraphs
+# Lista con varios párrafos ordenada
 
 *Sintaxis*
 
-**Using different whitespace prefixes for the second paragraph**
+**Usando prefijos de diferentes espacios en blanco para el segundo párrafo**
 
 ```
 1._Item ONE first paragraph.__
@@ -28,30 +28,31 @@ ____Item FIVE second paragraph (* 4 space characters).
 1. Item SIX.
 ```
 
-\* _ indicates space character and {tab} is a tab character
+\* _ indica el carácter de espacio y {tab} es un carácter de tabulación
 
-<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> First paragraph ends with <bpt id="p2">**</bpt>two<ept id="p2">**</ept> (2) space characters except for item FIVE where there is a blank line between paragraphs and paragraphs <bpt id="p3">**</bpt>must<ept id="p3">**</ept> be indented with 4 spaces or 1 tab.
+
+            **Nota:** primer párrafo que termina con **dos** los caracteres de espacio (2) excepto para CINCO elementos donde hay una línea en blanco entre párrafos y párrafos **debe** se aplica una sangría con 4 espacios o 1 ficha.
 
 <hr />
 
-## My Items
+## Mis elementos
 
-1. Item ONE first paragraph.  
-Item ONE second paragraph.
+1. Elemento de UN primer párrafo.  
+Elemento de UN párrafo segundo.
 
-1. Item TWO first paragraph.  
- Item TWO second paragraph.
+1. Elemento DOS primer párrafo.  
+ Elemento DOS segundo párrafo.
 
-1. Item THREE first paragraph.  
-  Item THREE second paragraph.
+1. Elemento TRES primer párrafo.  
+  Elemento TRES segundo párrafo.
 
-1. Item FOUR first paragraph.  
-    Item FOUR second paragraph.
+1. Elemento CUATRO primer párrafo.  
+    Elemento CUATRO segundo párrafo.
 
-1. Item FIVE first paragraph.
+1. Elemento con CINCO primer párrafo.
 
-    Item FIVE second paragraph.
+    Elemento con CINCO segundo párrafo.
 
-    Item FIVE third paragraph.
+    Elemento con CINCO tercer párrafo.
 
-1. Item SIX.
+1. Elemento SEIS.

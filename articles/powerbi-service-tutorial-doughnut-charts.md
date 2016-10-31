@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Doughnut charts in Power BI"
-   description="Tutorial: Doughnut charts in Power BI"
+   pageTitle="Tutorial: Gráficos de anillos en Power BI"
+   description="Tutorial: Gráficos de anillos en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,48 +20,48 @@
    ms.date="08/11/2016"
    ms.author="mihart"/>
 
-# Tutorial: Doughnut charts in Power BI
+# Tutorial: Gráficos de anillos en Power BI
 
-A  doughnut chart is similar to a pie chart in that it shows the relationship of parts to a whole. The only difference is that the center is blank and allows space for a label or icon.
+Un gráfico de anillos es similar a un gráfico circular que muestra la relación de partes con un todo. La única diferencia es que el centro está en blanco y permite espacio para una etiqueta o un icono.
 
-## Create a doughnut chart
+## Crear un gráfico de anillos
 
-To follow along, sign in to Power BI and select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Samples<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Retail Analysis Sample<ept id="p3">**</ept>. 
+Para continuar, inicie sesión Power BI y seleccione **obtener datos** \> **ejemplos** \> **ejemplo de análisis de venta**. 
 
-1. From the "Retail Analysis Sample" dashboard, select the <bpt id="p1">**</bpt>Total Stores<ept id="p1">**</ept> tile to open the "Retail Analysis Sample" report.
+1. En el panel "Ejemplo de análisis de venta", seleccione la **Total almacenes** icono para abrir el informe "Ejemplo de análisis de venta directa".
 
-2. Select <bpt id="p1">**</bpt>Edit Report<ept id="p1">**</ept> to open the report in Editing View.
+2. Seleccione **Editar informe** para abrir el informe en la vista de edición.
 
-3. Add a new report page.
+3. Agregue una nueva página del informe.
 
-4. Create a Waterfall chart that displays this year's sales by category.
+4. Crear un gráfico en cascada que muestra las ventas de este año por categoría.
 
-  - From the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p3">**</bpt>Last Year Sales<ept id="p3">**</ept>.
+  - Desde el **campos** panel, seleccione **ventas** \> **ventas del último año**.
 
-  - Convert to a doughnut chart. If Last Year Sales is not in the <bpt id="p1">**</bpt>Values<ept id="p1">**</ept> area, drag it there.
+  - Convertir a un gráfico de anillos. Si no está en ventas del último año el **valores** área, lo arrastra.
 
         ![](media/powerbi-service-tutorial-doughnut-charts/convertDonut.png)
 
-  - Select <bpt id="p1">**</bpt>Item<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Category<ept id="p2">**</ept> to add it to the Legend area. 
+  - Seleccione **elemento** \> **categoría** para agregarlo al área de leyenda. 
 
         ![](media/powerbi-service-tutorial-doughnut-charts/doughnutTutorial.png)
 
-## Tips and Tricks for doughnut charts
+## Sugerencias y trucos para los gráficos de anillos
 
--   The sum of the doughnut chart values must add up to 100%.
+-   La suma de los valores del gráfico de anillos debe agregar un 100%.
 
--   Too many categories make it difficult to read and interpret.
+-   Demasiadas categorías dificultan leer e interpretar.
 
--   Doughnut charts are best used to compare a particular section to the whole, rather than comparing individual sections with each other. 
+-   Gráficos de anillos son útiles para comparar una sección concreta para todo, en lugar de comparar las secciones entre sí. 
 
 ## Consulte también
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[Tipos de visualización en Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

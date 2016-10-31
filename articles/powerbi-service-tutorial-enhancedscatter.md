@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Enhanced Scatter charts in Power BI"
-   description="Tutorial: Enhanced Scatter charts in Power BI."
+   pageTitle="Tutorial: Mejorado de los gráficos de dispersión en Power BI"
+   description="Tutorial: Mejorar los gráficos de dispersión en Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,97 +21,98 @@
    ms.author="mihart"/>
 
 
-# Tutorial: enhanced scatter charts in Power BI
+# Tutorial: mejorado de los gráficos de dispersión en Power BI
 
 ![](media/powerbi-service-tutorial-enhancedscatter/ES.png)
 
-The enhanced scatter chart is just one of the Microsoft-created custom visuals available for download from the <bpt id="p1">[</bpt>Power BI Visuals gallery<ept id="p1">](https://app.powerbi.com/visuals)</ept>.  An enhanced scatter chart is similar to a standard scatter or bubble chart in that it displays the relationship between 2 to 3 variables. The  difference is that you are not limited to circles (bubbles). You can display shapes, images, add images to the background, and much more.
+El gráfico de dispersión mejorada es sólo uno de los Microsoft creó elementos visuales personalizados disponibles para su descarga desde el [Galería de elementos visuales de BI energía](https://app.powerbi.com/visuals).  Un gráfico de dispersión mejorada es similar a un gráfico de dispersión o burbujas estándar, que muestra la relación entre las variables de 2 a 3. La diferencia es que no está limitado a los círculos (burbujas). Puede mostrar formas, imágenes, agregar imágenes de fondo y mucho más.
 
-For more information, watch this video about <bpt id="p1">[</bpt>Enhanced Scatter<ept id="p1">](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)</ept>.
+Para obtener más información, vea este vídeo acerca de [mejorada de dispersión](https://youtu.be/xCfM0cjM4do?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x).
 
-The steps below show just one way to use the enhanced scatter -- to create a visual that maps page clicks by number and location on a web page. Use your own dataset and discover even more ways to use this new custom visual.
+Los pasos siguientes muestran simplemente una forma de utilizar la dispersión mejorada--para crear un elemento visual que se asigna la página clics por número y la ubicación de una página web. Utilice su propio conjunto de datos y descubrir más formas de usar este nuevo objeto visual personalizado.
 
->[AZURE.NOTE] Unfortunately, the dataset used in this tutorial is not available for download.
+>[AZURE.NOTE] Desafortunadamente, el conjunto de datos que se utiliza en este tutorial no está disponible para su descarga.
 
-## Start by creating a basic bubble chart
+## Empiece por crear un gráfico de burbujas básica
 
-The bubble chart will display website traffic details.
+El gráfico de burbujas mostrará información de tráfico del sitio Web.
 
-1. Open a report in Editing View and add a blank page.
+1. Abra un informe en la vista de edición y agregue una página en blanco.
 
-2. Add an empty scatter chart to the canvas by selecting the scatter chart icon.
+2. Agregar un gráfico de dispersión vacía al lienzo seleccionando el icono de gráfico de dispersión.
 
-3. From the Fields pane, select <bpt id="p1">**</bpt>Page Usage<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>PageNum<ept id="p2">**</ept> to add it to  <bpt id="p3">**</bpt>Details<ept id="p3">**</ept>.
+3. En el panel de campos, seleccione **página uso** \> **PageNum** para agregarla a  **detalles**.
 
-4. Select <bpt id="p1">**</bpt>Link<ept id="p1">**</ept>, and then the <bpt id="p2">**</bpt>x<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Y1<ept id="p3">**</ept> coordinates for those links. Ensure Power BI adds <bpt id="p1">**</bpt>Link<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept>, <bpt id="p3">**</bpt>x<ept id="p3">**</ept> to <bpt id="p4">**</bpt>X Axis<ept id="p4">**</ept>, and <bpt id="p5">**</bpt>Y1<ept id="p5">**</ept> to <bpt id="p6">**</bpt>Y Axis<ept id="p6">**</ept>.
+4. Seleccione **vínculo**, y, a continuación, el **x** y **Y1** coordenadas para esos vínculos. Asegúrese de que agrega Power BI **vínculo** a **leyenda**, **x** a **eje X**, y **Y1** a **eje Y**.
 
-5. Finally, add <bpt id="p1">**</bpt>Clicks<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Size<ept id="p2">**</ept>.
+5. Por último, agregue **hace clic en** para **tamaño**.
 
       ![](media/powerbi-service-tutorial-enhancedscatter/pbi_bubble_convert.png)
 
-I've created a typical bubble chart. The next steps demonstrate the advanced capabilities of the enhanced scatter.  
+He creado un gráfico típico de burbujas. Los pasos siguientes muestran las capacidades avanzadas de la dispersión mejorada.  
 
-## Convert the bubble chart to an enhanced scatter chart
+## Convertir el gráfico de burbujas en un gráfico de dispersión mejorada
 
-1. <bpt id="p1">[</bpt>Download the enhanced scatter visualization<ept id="p1">](powerbi-custom-visuals-download-from-the-gallery.md)</ept> and <bpt id="p2">[</bpt>add it to the report<ept id="p2">](powerbi-custom-visuals-add-to-report.md)</ept>.
+1. 
+            [Descargue la visualización mejorada de dispersión](powerbi-custom-visuals-download-from-the-gallery.md) y [Agregar al informe](powerbi-custom-visuals-add-to-report.md).
 
-2. If you receive a message asking you to enable custom visuals, read the warning and select <bpt id="p1">**</bpt>Enable custom visuals<ept id="p1">**</ept>.
+2. Si recibe un mensaje pidiéndole que para habilitar elementos visuales personalizados, lea la advertencia y seleccione **Habilitar elementos visuales personalizados**.
 
-3. Select the bubble chart and convert it to an enhanced scatter chart by selecting the enhanced scatter chart icon    <ph id="ph1">![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterIcon.jpg)</ph> from the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane.
+3. Seleccione el gráfico de burbujas y convertirlo en un gráfico de dispersión mejorada seleccionando el icono de gráfico de dispersión mejorada    ![](media/powerbi-service-tutorial-enhancedscatter/PBI_enhancedScatterIcon.jpg) desde el **visualizaciones** panel.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_bubble_convert.png)
 
-  At this point, the chart should look exactly the same.  If it does not, check to see that the fields in the Visualization buckets didn't change.  If they did, move them back to their original buckets.  For example, if <bpt id="p1">**</bpt>Y1<ept id="p1">**</ept> moved from <bpt id="p2">**</bpt>Y Axis<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Size<ept id="p3">**</ept>, move it back to <bpt id="p4">**</bpt>Y Axis<ept id="p4">**</ept>, etc.
+  En este punto, el gráfico debe ser exactamente el mismo.  Si no es así, compruebe que los campos de los depósitos de visualización no cambian.  Si es así, muévalos a su sus depósitos originales.  Por ejemplo, si **Y1** movido de **eje Y** a **tamaño**, vuelva a poner **eje Y**, etc..
 
 
-## Add shapes, images, rotation, and background
+## Agregar formas, imágenes, rotación y fondo
 
-The enhanced scatter packs even more information into a single visualization. In these steps, add shapes, images, rotation, and a background.
+Los módulos de dispersión mejorada incluso más información en una sola visualización. En estos pasos, agregue formas, imágenes, rotación y un fondo.
 
->[AZURE.IMPORTANT]  These visualization fields require your dataset to have measures that returns a text value. If you have a column containing the shape name or image URLs, then you need to create a measure to return the first non-blank row (or any other logic that would return one text value and use that in this visualization field bucket).
+>[AZURE.IMPORTANT]  Estos campos de visualización requieren el conjunto de datos para que las medidas que devuelve un valor de texto. Si tiene una columna que contiene el nombre de la forma o imagen direcciones URL, tendrá que crear una medida para devolver la primera fila en blanco (o cualquier otra lógica que usaría devuelven un valor de texto y que en este depósito de campo de visualización).
 
-1.    Power BI allows: circle, cross, diamond, square, triangle-up, triangle-down, star, hexagon, x, up arrow, and down arrow. These values must already exist in (or be added to) your dataset.
+1. Agregar formas que visualmente identifica el tipo de vínculo: descargar, obtener más información, precios, página de inicio, etc.. Arrastre **ShapeMeasure** para **forma**.  Power BI permite: círculo, cruz, rombo, Hexágono cuadrado, el triángulo, de triángulo abajo, estrella, x, flecha arriba y flecha abajo. Estos valores ya debe existir en (o agregarse a) el conjunto de datos.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape_new.png)
 
-    Ensure that your colleagues know what each shape means.  You could do this by adding a text box to the report.  Or, use graphics that are generally universally understood.
+    Asegúrese de que sus colegas saben lo que significa cada forma.  Puede hacerlo mediante la adición de un cuadro de texto al informe.  O bien, utilizar los gráficos que generalmente reconocible.
 
-2. Remove <bpt id="p1">**</bpt>ShapeMeasure<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Shape<ept id="p2">**</ept> area and drag <bpt id="p3">**</bpt>LinkImageMeasure<ept id="p3">**</ept> to <bpt id="p4">**</bpt>Image<ept id="p4">**</ept>.
+2. Quitar **ShapeMeasure** desde el **forma** área y arrastre **LinkImageMeasure** a **imagen**.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_shape2_new.png)
 
-3. To communicate even more information graphically, drag <bpt id="p1">**</bpt>Trend<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Rotation<ept id="p2">**</ept>.  The rotation of each image indicates whether the number of clicks is trending up or down.
+3. Para comunicar información incluso más gráficamente, arrastre **tendencia** a **giro**.  La rotación de cada imagen indica si el número de clics se sube o baja.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_rotation.png)
 
-4. To make this chart even easier to read, add an image of the actual web page as a background.  In this example, we're not simply adding a single image, but a measure that controls which web page displays.
-Remove <bpt id="p1">**</bpt>LinkImageMeasure<ept id="p1">**</ept> and drag <bpt id="p2">**</bpt>PageLayout<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>ImageMeasure<ept id="p3">**</ept> to <bpt id="p4">**</bpt>Backdrop<ept id="p4">**</ept>.
+4. Para que este gráfico incluso más fáciles de leer, agregar una imagen de la página web como fondo.  En este ejemplo, no sólo estamos agregando una sola imagen, pero muestra una medida que controla la página web.
+Quitar **LinkImageMeasure** y arrastre **PageLayout** > **ImageMeasure** a **telón de fondo**.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_backdrop.png)
 
-5. Use the xmin, xmax, ymin, and ymax areas to align the background image with the x and y coordinates used to plot the data.
-  - drag <bpt id="p1">**</bpt>xmin<ept id="p1">**</ept> to <bpt id="p2">**</bpt>X Start<ept id="p2">**</ept>.
-  - drag <bpt id="p1">**</bpt>xmax<ept id="p1">**</ept> to <bpt id="p2">**</bpt>X End<ept id="p2">**</ept>.
-  - drag <bpt id="p1">**</bpt>ymin<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Y Start<ept id="p2">**</ept>
-  - drag <bpt id="p1">**</bpt>ymax<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Y End<ept id="p2">**</ept>
+5. Utilice las áreas xmin, xmax, ymin y ymax para alinear la imagen de fondo con x e y coordenadas usados para trazar los datos.
+  - Arrastre **xmin** a **X iniciar**.
+  - Arrastre **xmax** a **End X**.
+  - Arrastre **ymin** a **Y inicio**
+  - Arrastre **ymax** a **Y final**
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_add_xy.png)
 
-## Add a slicer
+## Agregar una segmentación de datos
 
-Right now, this visualization is not useful since it's displaying total clicks for all 3 webpages onto a single webpage image.  Add a slicer to control which webpage (and data) to display.
+Derecha ahora, esta visualización no es útil ya que está mostrando clics total para todas las páginas 3 Web en una imagen única página Web.  Agregar una segmentación de datos para controlar qué página Web (y datos) para mostrar.
 
 ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last.png)
 
-1. Add a slicer to a blank area of the report canvas by selecting the slicer icon <ph id="ph1">![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer_icon.png)</ph>.
+1. Agregar una segmentación de datos a un área en blanco del lienzo del informe seleccionando el icono de segmentación de datos ![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer_icon.png).
 
-2. Select <bpt id="p1">**</bpt>PageName<ept id="p1">**</ept> to add it to the <bpt id="p2">**</bpt>Field<ept id="p2">**</ept> area.
+2. Seleccione **PageName** para agregarlo a la **campo** área.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_slicer.png)
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
 
-3. Slice the enhanced scatter chart to display click data for each web page -- one at a time.
+3. Segmento del gráfico de dispersión mejorada para mostrar, haga clic en los datos de cada página web: uno en uno.
 
     ![](media/powerbi-service-tutorial-enhancedscatter/pbi_last2.png)
 
@@ -122,12 +123,12 @@ Right now, this visualization is not useful since it's displaying total clicks f
 
 ## Consulte también
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[Tipos de visualización en Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

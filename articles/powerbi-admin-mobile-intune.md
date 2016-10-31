@@ -1,6 +1,6 @@
 <properties
-pageTitle="Configure mobile apps with Intune"
-description="How to configure the Power BI Mobile apps with Microsoft Intune. This includes how to add, and deploy, the application. And, how to create the mobile application policy to control security."
+pageTitle="Configurar aplicaciones móviles con Intune"
+description="Cómo configurar las aplicaciones móviles de Power BI con Microsoft Intune. Esto incluye cómo agregar e implementar la aplicación. Y cómo crear la directiva de aplicación móvil para controlar la seguridad."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,163 +19,163 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="08/15/2016"
 ms.author="asaxton"/>
-# Configure Power BI mobile apps with Microsoft Intune
+# Configurar aplicaciones móviles de Power BI con Microsoft Intune
 
-Microsoft Intune enables organizations to manage devices and applications. The Power BI mobile applications, for iOS and Android, integrate with Intune to allow you to manage the application on your devices, and to control security. Through configuration policies, you can control items like requiring an access pin, controlling how data is handled by the application and even encrypting application data when the app is not in use.
+Microsoft Intune permite a las organizaciones administrar dispositivos y aplicaciones. Las aplicaciones móviles de Power BI, iOS y Android, integran con Intune que le permiten administrar la aplicación en los dispositivos y controlar la seguridad. A través de directivas de configuración, puede controlar elementos como requerir un pin de acceso, controlar cómo se controlan los datos por la aplicación o incluso cifrar los datos de la aplicación cuando la aplicación no está en uso.
 
-## General mobile device management configuration
+## Configuración de administración de dispositivos móviles general
 
-This article is not meant as full configuration guide for Microsoft Intune. If you are just now integrating with Intune, there are a few things you will want to make sure you have setup. [Obtener más información](https://technet.microsoft.com/library/jj676587.aspx)
+Este artículo no está pensado como guía de configuración completa de Microsoft Intune. Si ahora está integrando con Intune, hay algunas cosas que desea asegurarse de que ha configurado. [Obtener más información](https://technet.microsoft.com/library/jj676587.aspx)
 
-Microsoft Intune can co-exist with Mobile Device Management (MDM) within Office 365. [Obtener más información](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365/)
+Microsoft Intune puede coexistir con Mobile Device Management (MDM) dentro de Office 365. [Obtener más información](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365/)
 
-This article assumes that Intune is configured properly and you have devices enrolled with Intune. If you are co-existing with MDM, the device will show enrolled within MDM, but is available to manage within Intune.
+Este artículo se supone que Intune está configurado correctamente y que tiene los dispositivos inscritos con Intune. Si estás coexiste con MDM, el dispositivo mostrará inscrito en MDM, pero está disponible para administrar en Intune.
 
-## Step 1: Get the url for the application
+## Paso 1: Obtener la dirección url de la aplicación
 
-Before we create the application within Intune, we need to get the urls for the apps. For iOS, we will get this from iTunes. For Android, you can get it from the Power BI mobile page.
+Antes de crear la aplicación en Intune, necesitamos obtener las direcciones URL para las aplicaciones. Para iOS, se incluye de iTunes. Para Android, puede obtener desde la página móvil de Power BI.
 
-Save the url, as you will need it when we create the application.
+Guarde la dirección url, ya que lo necesitará al crear la aplicación.
 
 ### iOS
 
-To get the app url for iOS, we will need to get it from iTunes.
+Para obtener la dirección url de la aplicación para iOS, necesitamos obtener de iTunes.
 
-1. Open iTunes.
+1. Abra iTunes.
 
-2. Search for <bpt id="p1">*</bpt>Power BI<ept id="p1">*</ept>.
+2. Buscar *Power BI*.
 
-3. You should see <bpt id="p1">**</bpt>Microsoft Power BI<ept id="p1">**</ept> listed under <bpt id="p2">**</bpt>iPhone Apps<ept id="p2">**</ept> and <bpt id="p3">**</bpt>iPad Apps<ept id="p3">**</ept>. You can use either, as you will get the same url.
+3. Debería ver **Microsoft Power BI** aparece bajo **iPhone aplicaciones** y **iPad aplicaciones**. Puede utilizar cualquiera, como, obtendrá la misma dirección url.
 
-4. Select the <bpt id="p1">**</bpt>Get<ept id="p1">**</ept> drop down and select <bpt id="p2">**</bpt>Copy Link<ept id="p2">**</ept>.
+4. Seleccione el **obtener** de lista desplegable y seleccione **Copiar vínculo**.
 
     ![](media/powerbi-admin-mobile-intune/itunes-url.png)
 
-It should look similar to the following.
+Debería ser similar al siguiente.
 
     https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8
     
 ### Android
 
-You can get the url to Google Play from the <bpt id="p1">[</bpt>Power BI mobile page<ept id="p1">](https://powerbi.microsoft.com/mobile/)</ept>. Clicking on the <bpt id="p1">**</bpt>Download from Google Play<ept id="p1">**</ept> icon will take you to the app page. You can copy the URL from the browser address bar. It should look similar to the following.
+Puede obtener la dirección url a Google Play desde la [página móvil de Power BI](https://powerbi.microsoft.com/mobile/). Al hacer clic en el **descargar de Google Play** icono le llevará a la página de aplicación. Puede copiar la dirección URL de la barra de direcciones del explorador. Debería ser similar al siguiente.
 
     https://play.google.com/store/apps/details?id=com.microsoft.powerbim
 
-## Step 2: Create a mobile application management policy
+## Paso 2: Crear una directiva de administración de aplicaciones móviles
 
-The mobile application management policy allows you to enforce items like an access pin. You can create one within the Intune portal. 
+La directiva de administración de aplicaciones móviles le permite exigir los elementos como un NIP de acceso. Puede crear uno en el portal de Intune. 
 
-You can create the application, or the policy first. The order in which they are added doesn't matter. They will just need to both exist for the deploy step.
+Puede crear primero la aplicación o la directiva. No importa el orden en que se agregan. Se simplemente necesita tanto existen para el paso de implementación.
 
-1. Select <bpt id="p1">**</bpt>Policy<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Configuration Policies<ept id="p2">**</ept>.
+1. Seleccione **directiva** > **las directivas de configuración**.
 
     ![](media/powerbi-admin-mobile-intune/intune-policy.png)
 
-2. Select <bpt id="p1">**</bpt>Add...<ept id="p1">**</ept>.
+2. Seleccione **Agregar...**.
 
-3. Under <bpt id="p1">**</bpt>Software<ept id="p1">**</ept> you can select Mobile Application Management for either Android or iOS. To get started quickly, you can select <bpt id="p1">**</bpt>Create a policy with the recommended settings<ept id="p1">**</ept>, or you can create a custom policy.
+3. En **Software** seleccione Administración de aplicaciones móviles para Android o iOS. Para empezar a trabajar rápidamente, puede seleccionar **crear una directiva con la configuración recomendada**, o puede crear una directiva personalizada.
     
-4. Edit the policy to configure the restrictions you want on the application.
+4. Modificar la directiva para configurar las restricciones que desee en la aplicación.
 
-## Step 3: Create the application
+## Paso 3: Crear la aplicación
 
-The application is a reference, or package, that is saved into Intune for deployment. We will need to create an application and reference the app url that we got from either Google Play or iTunes.
+La aplicación es una referencia o paquete, que se guarda en Intune para implementación. Necesitamos crear una aplicación y hacer referencia a la dirección url de la aplicación que recibimos de Google Play o iTunes.
 
-You can create the application, or the policy first. The order in which they are added doesn't matter. They will just need to both exist for the deploy step.
+Puede crear primero la aplicación o la directiva. No importa el orden en que se agregan. Se simplemente necesita tanto existen para el paso de implementación.
 
-1. Go to the Intune portal and select <bpt id="p1">**</bpt>Apps<ept id="p1">**</ept> from the left menu.
+1. Vaya al portal y seleccione Intune **aplicaciones** en el menú izquierdo.
 
-2. Select <bpt id="p1">**</bpt>Add App<ept id="p1">**</ept>. This will launch the <bpt id="p1">**</bpt>Add Software<ept id="p1">**</ept> application.
+2. Seleccione **Agregar aplicación**. Esto iniciará el **Agregar Software** aplicación.
 
 ### iOS
 
-1. Select <bpt id="p1">**</bpt>Managed iOS App from the App Store<ept id="p1">**</ept> from the drop down.
+1. Seleccione **aplicación iOS administrada de la tienda de aplicaciones** en la lista desplegable.
 
-2. Enter the app url, that we got from <bpt id="p1">[</bpt>Step 1<ept id="p1">](#step-1-get-the-url-for-the-application)</ept>, and select <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.
+2. Escriba la dirección url de la aplicación, que recibimos de [paso 1](#step-1-get-the-url-for-the-application), y seleccione **siguiente**.
 
     ![](media/powerbi-admin-mobile-intune/intune-add-software-ios1.png)
     
-3. Provide a <bpt id="p1">**</bpt>Publisher<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Description<ept id="p3">**</ept>. You can optionally provide an <bpt id="p1">**</bpt>Icon<ept id="p1">**</ept>. The <bpt id="p1">**</bpt>Category<ept id="p1">**</ept> is for the Company Portal app. Once you are done, select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+3. Proporcionar un **Publisher**, **nombre** y **descripción**. También puede proporcionar una **icono**. El **categoría** es para la aplicación de Portal de empresa. Una vez que haya terminado, seleccione **siguiente**.
 
-4. You can decide if you want the publish the app as <bpt id="p1">**</bpt>Any<ept id="p1">**</ept> (default), <bpt id="p2">**</bpt>iPad<ept id="p2">**</ept> or <bpt id="p3">**</bpt>iPhone<ept id="p3">**</ept>. By default it will show <bpt id="p1">**</bpt>Any<ept id="p1">**</ept> and will work for both device types. The Power BI app is the same url for both iPhone and iPad. Select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+4. Puede decidir si desea publicar la aplicación como **cualquier** (valor predeterminado), **iPad** o **iPhone**. De forma predeterminada se muestran **cualquier** y funcionará para ambos tipos de dispositivo. La aplicación Power BI es la misma dirección url para el iPhone y iPad. Seleccione **siguiente**.
 
-5. Select <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept>.
+5. Seleccione **cargar**.
 
-> NOTE: You may not see it show up in the app list until you refresh the page. You can click on <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> and back to <bpt id="p2">**</bpt>Apps<ept id="p2">**</ept> to get the page to reload.
+> NOTA: No verá aparecen en la lista de aplicaciones hasta que actualice la página. Puede hacer clic en **Introducción** y a **aplicaciones** para obtener la página para volver a cargar.
 
 ![](media/powerbi-admin-mobile-intune/intune-add-software-ios2.png)
 
 ### Android
 
-1. Select <bpt id="p1">**</bpt>External Link<ept id="p1">**</ept> from the drop down.
+1. Seleccione **vínculo externo** en la lista desplegable.
 
-2. Enter the app url, that we got from <bpt id="p1">[</bpt>Step 1<ept id="p1">](#step-1-get-the-url-for-the-application)</ept>, and select <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.
+2. Escriba la dirección url de la aplicación, que recibimos de [paso 1](#step-1-get-the-url-for-the-application), y seleccione **siguiente**.
 
     ![](media/powerbi-admin-mobile-intune/intune-add-software-android1.png)
     
-3. Provide a <bpt id="p1">**</bpt>Publisher<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Name<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Description<ept id="p3">**</ept>. You can optionally provide an <bpt id="p1">**</bpt>Icon<ept id="p1">**</ept>. The <bpt id="p1">**</bpt>Category<ept id="p1">**</ept> is for the Company Portal app. Once you are done, select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+3. Proporcionar un **Publisher**, **nombre** y **descripción**. También puede proporcionar una **icono**. El **categoría** es para la aplicación de Portal de empresa. Una vez que haya terminado, seleccione **siguiente**.
 
-5. Select <bpt id="p1">**</bpt>Upload<ept id="p1">**</ept>.
+5. Seleccione **cargar**.
 
-> NOTE: You may not see it show up in the app list until you refresh the page. You can click on <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> and back to <bpt id="p2">**</bpt>Apps<ept id="p2">**</ept> to get the page to reload.
+> NOTA: No verá aparecen en la lista de aplicaciones hasta que actualice la página. Puede hacer clic en **Introducción** y a **aplicaciones** para obtener la página para volver a cargar.
 
 ![](media/powerbi-admin-mobile-intune/intune-add-software-android2.png)
 
-## Step 4: Deploy the application
+## Paso 4: Implementación de la aplicación
 
-After you have added the application, you will need to deploy it so that it is available to your end users. This is the step where you will bind the policy you created with the app.
+Después de haber agregado la aplicación, debe implementarlo para que esté disponible para los usuarios finales. Este es el paso donde se enlazará la directiva creada con la aplicación.
 
 ### iOS
 
-1. On the apps screen, select the app you created. Then select the <bpt id="p1">**</bpt>Manage Deployment...<ept id="p1">**</ept> link.
+1. En la pantalla de aplicaciones, seleccione la aplicación que creó. A continuación, seleccione la **Administrar implementación** vínculo.
 
     ![](media/powerbi-admin-mobile-intune/intune-deploy-ios1.png)
 
-2. In the <bpt id="p1">**</bpt>Select Groups<ept id="p1">**</ept> screen, you can choose which groups you want to deploy this app to. Select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+2. En la **Seleccionar grupos** pantalla, puede elegir qué grupos desea implementar esta aplicación. Seleccione **siguiente**.
 
-3. In the <bpt id="p1">**</bpt>Deployment Action<ept id="p1">**</ept> screen, you can choose how you want to deploy this app. Selecting <bpt id="p1">**</bpt>Available Install<ept id="p1">**</ept>, or <bpt id="p2">**</bpt>Required Install<ept id="p2">**</ept>, will make the app available in the Company Portal for users to install on-demand. After you are done making your selection, select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+3. En el **la acción de implementación** pantalla, puede elegir cómo desea implementar esta aplicación. Seleccionar **instalación disponible**, o **instalación requerida**, hará que la aplicación disponible en el Portal de empresa para los usuarios a instalar a petición. Cuando termine de realizar su selección, seleccione **siguiente**.
 
     ![](media/powerbi-admin-mobile-intune/intune-deploy-ios2.png)
 
-4. In the <bpt id="p1">**</bpt>Mobile App Management<ept id="p1">**</ept> screen, you can select the Mobile App Management policy that we created in <bpt id="p2">[</bpt>Step 2<ept id="p2">](#step-2-create-a-mobile-application-management-policy)</ept>. It will default to the policy you made, if that is the only iOS policy available. Select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+4. En el **administración de aplicaciones móviles** pantalla, puede seleccionar la directiva de administración de aplicaciones móviles que hemos creado en [paso 2](#step-2-create-a-mobile-application-management-policy). Usará la directiva que ha realizado, si es la única directiva de iOS disponible. Seleccione **siguiente**.
 
     ![](media/powerbi-admin-mobile-intune/intune-deploy-ios3.png)
 
-5. In the <bpt id="p1">**</bpt>VPN Profile<ept id="p1">**</ept> screen, you can select a policy if you have one for your organization. It defaults to <bpt id="p1">**</bpt>None<ept id="p1">**</ept>. Select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+5. En el **el perfil de VPN** pantalla, puede seleccionar una directiva si dispone de uno para su organización. El valor predeterminado es **Ninguno**. Seleccione **siguiente**.
 
-6. In the <bpt id="p1">**</bpt>Mobile App Configuration<ept id="p1">**</ept> screen, you can select an <bpt id="p2">**</bpt>App Configuration Policy<ept id="p2">**</ept> if you created one. It defaults to <bpt id="p1">**</bpt>None<ept id="p1">**</ept>. This is not required. Select <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.
+6. En el **configuración de la aplicación móvil** pantalla, puede seleccionar una **Directiva de configuración de aplicación** Si ha creado uno. El valor predeterminado es **Ninguno**. Esto no es necesario. Seleccione **Finalizar**.
 
-After you have deployed the app, it should show <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> for deployed, in the apps page.
+Después de haber implementado la aplicación, debe mostrar **Sí** implementa en la página de aplicaciones.
 
 ### Android
 
-1. On the apps screen, select the app you created. Then select the <bpt id="p1">**</bpt>Manage Deployment...<ept id="p1">**</ept> link.
+1. En la pantalla de aplicaciones, seleccione la aplicación que creó. A continuación, seleccione la **Administrar implementación** vínculo.
 
     ![](media/powerbi-admin-mobile-intune/intune-deploy-android1.png)
 
-2. In the <bpt id="p1">**</bpt>Select Groups<ept id="p1">**</ept> screen, you can choose which groups you want to deploy this app to. Select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+2. En la **Seleccionar grupos** pantalla, puede elegir qué grupos desea implementar esta aplicación. Seleccione **siguiente**.
 
-3. In the <bpt id="p1">**</bpt>Deployment Action<ept id="p1">**</ept> screen, you can choose how you want to deploy this app. Selecting <bpt id="p1">**</bpt>Available Install<ept id="p1">**</ept>, or <bpt id="p2">**</bpt>Required Install<ept id="p2">**</ept>, will make the app available in the Company Portal for users to install on-demand. After you are done making your selection, select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+3. En el **la acción de implementación** pantalla, puede elegir cómo desea implementar esta aplicación. Seleccionar **instalación disponible**, o **instalación requerida**, hará que la aplicación disponible en el Portal de empresa para los usuarios a instalar a petición. Cuando termine de realizar su selección, seleccione **siguiente**.
 
     ![](media/powerbi-admin-mobile-intune/intune-deploy-android2.png)
 
-4. In the <bpt id="p1">**</bpt>Mobile App Management<ept id="p1">**</ept> screen, you can select the Mobile App Management policy that we created in <bpt id="p2">[</bpt>Step 2<ept id="p2">](#step-2-create-a-mobile-application-management-policy)</ept>. It will default to the policy you made, if that is the only Android policy available. Select <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.
+4. En el **administración de aplicaciones móviles** pantalla, puede seleccionar la directiva de administración de aplicaciones móviles que hemos creado en [paso 2](#step-2-create-a-mobile-application-management-policy). Tomará predeterminado a la directiva que ha realizado, si es la directiva sólo Android disponible. Seleccione **Finalizar**.
 
     ![](media/powerbi-admin-mobile-intune/intune-deploy-android3.png)
 
-After you have deployed the app, it should show <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> for deployed, in the apps page.
+Después de haber implementado la aplicación, debe mostrar **Sí** implementa en la página de aplicaciones.
 
-## Step 5: Install the application on a device
+## Paso 5: Instalar la aplicación en un dispositivo
 
-You will install the application through the Company Portal app. If you haven't installed the Company Portal, you can get it through the app store on either iOS or Android platforms. You will sign into the Company Portal with your organizational login.
+Se instalará la aplicación a través de la aplicación de Portal de empresa. Si no ha instalado el Portal de empresa, puede obtener a través de la tienda de aplicaciones en plataformas Android o iOS. Iniciará sesión en el Portal de empresa con su inicio de sesión organizativa.
 
 1. Abra la aplicación del portal de empresa.
 
-2. If you don't see the Power BI app listed as a featured app, select <bpt id="p1">**</bpt>Company Apps<ept id="p1">**</ept>.
+2. Si no ve la aplicación de Power BI aparece como aplicación destacada, seleccione **aplicaciones de empresa**.
 
     ![](media/powerbi-admin-mobile-intune/intune-companyportal1.png)
 
-3. Select the Power BI app that you deployed.
+3. Seleccione la aplicación de Power BI que ha implementado.
 
     ![](media/powerbi-admin-mobile-intune/intune-companyportal2.png)
 
@@ -183,11 +183,11 @@ You will install the application through the Company Portal app. If you haven't 
 
     ![](media/powerbi-admin-mobile-intune/intune-companyportal3.png)
 
-5. If you are on iOS, it will push the app to you. Select <bpt id="p1">**</bpt>Install<ept id="p1">**</ept> on the push dialog.
+5. Si se encuentra en iOS, insertará la aplicación para usted. Seleccione **instalar** en el cuadro de diálogo de inserción.
 
     ![](media/powerbi-admin-mobile-intune/intune-companyportal5.png)
     
-After it is installed, you will see that it is <bpt id="p1">**</bpt>Managed by your company<ept id="p1">**</ept>. If you enabled access with a pin, in the policy, you will see the following.
+Una vez instalado, verá que es **administra su empresa**. Si ha habilitado el acceso con un pin en la directiva, verá lo siguiente.
 
 ![](media/powerbi-admin-mobile-intune/intune-powerbi-pin.png)
 
@@ -198,5 +198,5 @@ After it is installed, you will see that it is <bpt id="p1">**</bpt>Managed by y
 ## Consulte también
 
 [Configure and deploy mobile application management policies in the Microsoft Intune console](https://technet.microsoft.com/library/dn878026.aspx)  
-[Power BI apps for mobile devices](powerbi-power-bi-apps-for-mobile-devices.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Aplicaciones para dispositivos móviles de Power BI](powerbi-power-bi-apps-for-mobile-devices.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

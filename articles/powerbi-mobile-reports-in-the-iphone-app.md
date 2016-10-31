@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports in the iPhone app"
-   description="Learn about viewing and interacting with reports in the Power BI mobile app for iOS on your iPhone. Reports present your data visually. "
+   pageTitle="Informes en la aplicación de iPhone"
+   description="Obtenga información sobre cómo ver e interactuar con los informes en la aplicación móvil de Power BI para iOS en su iPhone. Los informes presentan los datos visualmente. "
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,59 +20,60 @@
    ms.date="10/03/2016"
    ms.author="maggies"/>
 
-# Reports in the iPhone app (Power BI for iOS)
+# Informes en la aplicación de iPhone (Power BI para iOS)
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You <bpt id="p1">[</bpt>create and customize reports<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> in the Power BI service <bpt id="p2">[</bpt>(https://powerbi.com)<ept id="p2">](https://powerbi.com)</ept>. 
+Un informe es una vista interactiva de los datos, con elementos visuales que representan diferentes resultados e información de esos datos. Se [crear y personalizar informes](powerbi-service-create-a-new-report.md) en el servicio Power BI [(https://powerbi.com)](https://powerbi.com). 
 
-Then you view and interact with those reports in the <bpt id="p1">[</bpt>iPhone app (Power BI for iOS)<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept>.
+A continuación, puede ver e interactuar con los informes en el [aplicación de iPhone (Power BI para iOS)](powerbi-mobile-iphone-app-get-started.md).
 
-## Open a Power BI report
+## Abrir un informe de Power BI
 
--   On your iPhone, in <bpt id="p1">**</bpt>My workspace<ept id="p1">**</ept> or in a group, tap Reports.
+-   En su iPhone en **Mi área de trabajo** o en un grupo, puntee en informes.
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-reports-home.png)
 
-    You see Power BI reports and Excel workbooks together.
+    Ver informes de Power BI y libros de Excel juntos.
 
--   Or: On a dashboard, tap a tile to open it in focus mode, then tap the Open Report icon <ph id="ph1">![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-open-report-icon.png)</ph>.
+-   O bien: En un panel, puntee en un mosaico para abrirlo en modo de enfoque, a continuación, puntee en el icono de abrir el informe ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-open-report-icon.png).
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-line-tile-open-report.png)
 
 
-The report opens in landscape mode.
+El informe se abre en modo horizontal.
 
 ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-landscape.png)
 
-><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&amp;A box don't open reports when you tap them. 
+>
+            **Nota**: no todos los mosaicos se pueden abrir en un informe. Por ejemplo, los iconos para crear, hacer una pregunta en el cuadro de preguntas y respuestas no abrir informes al puntear en ellos. 
 
-## See other pages in a Power BI report
+## Vea otras páginas de un informe de Power BI
 
--   Swipe side to side, or tap the pages icon <ph id="ph1">![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-pages-icon.png)</ph> &gt; tap a page. 
+-   Desplácese hacia los lados o puntee en el icono de páginas ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-pages-icon.png) > puntee en una página. 
 
-## Cross-filter and highlight a Power BI report page
+## Filtro cruzado y resalte una página de informe de Power BI
 
--   Tap a value in a chart.
+-   Puntee en un valor en un gráfico.
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/PBI_Win10Uni_XFltrRptSm.png)
 
-    Tapping the red "030-Kids" bubble in the bubble chart highlights related values in the other charts. Because the column chart in the upper-right shows percentages, some highlighted values are larger than the total values, and some are smaller. 
+    Punteando en rojos "030-hijos" burbuja en el gráfico de burbujas resalta los valores relacionados en los demás gráficos. Dado que el gráfico de columnas en la superior derecha muestra los porcentajes, algunos valores destacados son más grandes que los valores totales y algunas son más pequeños. 
 
-## Use slicers to filter the report page
+## Usar segmentaciones de datos para filtrar la página del informe
 
-When designing a report in the Power BI service <bpt id="p1">[</bpt>(https://powerbi.com)<ept id="p1">](https://powerbi.com)</ept>, you can <bpt id="p2">[</bpt>add slicers to a report page<ept id="p2">](powerbi-service-tutorial-slicers.md)</ept>. Then when you or your colleagues view your reports on your mobile devices, you can use the slicers to filter the page.
+Al diseñar un informe en el servicio Power BI [(https://powerbi.com)](https://powerbi.com), puede [Agregar segmentaciones de datos a una página de informe](powerbi-service-tutorial-slicers.md). A continuación, cuando usted o sus colegas de visualización de los informes en sus dispositivos móviles, puede utilizar las segmentaciones de datos para filtrar la página.
 
--   Select a value in a slicer on the report page.
+-   Seleccione un valor en una segmentación de datos en la página del informe.
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/pbi_iph_rptslice.png)
 
 
-## Go back to My Workspace
+## Volver a mi área de trabajo
 
-*   Tap the arrow next to the tile name and tap <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+*   Puntee en la flecha situada junto al nombre de mosaico y en **Mi área de trabajo**.
 
     ![](media/powerbi-mobile-reports-in-the-iphone-app/power-bi-iphone-report-breadcrumb.png)
 
 ### Consulte también
 
-- [Get started with the iPhone app (Power BI for iOS)](powerbi-mobile-iphone-app-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Introducción a la aplicación de iPhone (Power BI para iOS)](powerbi-mobile-iphone-app-get-started.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

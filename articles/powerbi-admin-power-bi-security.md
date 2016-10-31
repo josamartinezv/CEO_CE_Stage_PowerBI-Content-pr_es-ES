@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI Security"
-   description="Power BI Security. How Power BI relates to Azure Active Directory and other Azure services. This topic also includes a link to a white paper which goes more in-depth."
+   pageTitle="Seguridad de Power BI"
+   description="Seguridad de Power BI. Cómo Power BI se relaciona con Azure Active Directory y otros servicios de Azure. Este tema también incluye un vínculo a un documento que va a obtener información más detallado."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,45 +20,46 @@
    ms.date="09/28/2016"
    ms.author="asaxton"/>
 
-# Power BI Security
+# Seguridad de Power BI
 
-For a detailed explanation of Power BI security, please <bpt id="p1">[</bpt>download the Power BI Security whitepaper<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=829185)</ept>.
+Obtener una explicación detallada de la seguridad de Power BI, [descargar las notas del producto Power BI seguridad](http://go.microsoft.com/fwlink/?LinkId=829185).
 
-The Power BI service is built on <bpt id="p1">**</bpt>Azure<ept id="p1">**</ept>, which is Microsoft’s cloud computing infrastructure and platform. The Power BI service architecture is based on two clusters – the Web Front End (<bpt id="p1">**</bpt>WFE<ept id="p1">**</ept>) cluster and the <bpt id="p2">**</bpt>Back End<ept id="p2">**</ept> cluster. The WFE cluster is responsible for initial connection and authentication to the Power BI service, and once authenticated, the Back End handles all subsequent user interactions. Power BI uses Azure Active Directory (AAD) to store and manage user identities, and manages the storage of data and metadata using Azure BLOB and Azure SQL Database, respectively.
+El servicio Power BI se basa en **Azure**, que es la infraestructura informática y plataforma de nube de Microsoft. La arquitectura del servicio Power BI se basa en dos clústeres: el Front-End Web (**WFE**) clúster y **Back-End** clúster. El clúster WFE es responsable de la conexión inicial y la autenticación en el servicio Power BI y, una vez autenticado, el Back-End se encarga de todas las interacciones de usuario siguientes. Power BI usa Azure Active Directory (AAD) para almacenar y administrar identidades de usuario y administra el almacenamiento de datos y metadatos con BLOBS de Azure y base de datos de SQL Azure, respectivamente.
 
-## Power BI Architecture
+## Arquitectura de Power BI
 
-Each Power BI deployment consists of two clusters – a Web Front End (<bpt id="p1">**</bpt>WFE<ept id="p1">**</ept>) cluster, and a <bpt id="p2">**</bpt>Back End<ept id="p2">**</ept> cluster.
+Cada implementación de Power BI consta de dos clústeres – un Front-End Web (**WFE**) clúster y un **Back-End** clúster.
 
-The <bpt id="p1">**</bpt>WFE<ept id="p1">**</ept> cluster manages the initial connection and authentication process for Power BI, using AAD to authenticate clients and provide tokens for subsequent client connections to the Power BI service. Power BI also uses the <bpt id="p1">**</bpt>Azure Traffic Manager<ept id="p1">**</ept> (ATM) to direct user traffic to the nearest datacenter, determined by the DNS record of the client attempting to connect, for the authentication process and to download static content and files. Power BI uses the <bpt id="p1">**</bpt>Azure Content Delivery Network<ept id="p1">**</ept> (CDN) to efficiently distribute the necessary static content and files to users based on geographical locale.
+El **WFE** clúster administra el proceso de conexión y autenticación inicial para Power BI, con AAD para autenticar clientes y proporcionar tokens de cliente posteriores conexiones al servicio Power BI. Power BI también usa el **Azure Traffic Manager** (ATM) para dirigir el tráfico de usuarios hacia el centro de datos más cercano, determinado por el registro DNS del cliente intenta conectarse, el proceso de autenticación y para descargar archivos y contenido estático. Power BI usa el **red de entrega de contenido de Azure** (CDN) para distribuir eficazmente los archivos a los usuarios y el contenido estático necesario basándose en la región geográfica.
 
 ![](media/powerbi-admin-power-bi-security/PBI_Security_v2_WFE.png)
 
-The <bpt id="p1">**</bpt>Back End<ept id="p1">**</ept> cluster is how authenticated clients interact with the Power BI service. The <bpt id="p1">**</bpt>Back End<ept id="p1">**</ept> cluster manages visualizations, user dashboards, datasets, reports, data storage, data connections, data refresh, and other aspects of interacting with the Power BI service. The <bpt id="p1">**</bpt>Gateway Role<ept id="p1">**</ept> acts as a gateway between user requests and the Power BI service. Users do not interact directly with any roles other than the <bpt id="p1">**</bpt>Gateway Role<ept id="p1">**</ept>. <bpt id="p1">**</bpt>Azure API Management<ept id="p1">**</ept> will eventually handle the <bpt id="p2">**</bpt>Gateway Role<ept id="p2">**</ept>.
+El **Back-End** clúster es los clientes autenticados cómo interactuar con el servicio Power BI. El **Back-End** clúster administra visualizaciones, paneles de usuario, conjuntos de datos, informes, almacenamiento de datos, conexiones de datos, la actualización de datos y otros aspectos de la interacción con el servicio Power BI. El **función puerta de enlace** actúa como una puerta de enlace entre las solicitudes de usuario y el servicio Power BI. Los usuarios no interactúan directamente con los roles distinto de los **rol de puerta de enlace**. 
+            **Administración de API de Azure** finalmente controlará la **función puerta de enlace**.
 
 ![](media/powerbi-admin-power-bi-security/PBI_Security_v2_BackEnd_updated.png)
 
-> [AZURE.IMPORTANT] It is imperative to note that only <bpt id="p1">**</bpt>Azure API Management<ept id="p1">**</ept> (APIM) and <bpt id="p2">**</bpt>Gateway<ept id="p2">**</ept> (GW) roles are accessible through the public Internet. They provide authentication, authorization, DDoS protection, Throttling, Load Balancing, Routing, and other capabilities.
+> [AZURE.IMPORTANT] Es imprescindible tener en cuenta que solo **administración de API de Azure** (APIM) y **puerta de enlace** roles (GW) son accesibles a través de la red Internet pública. Proporcionan autenticación, autorización, DDoS protección, limitación, equilibrio de carga, enrutamiento y otras capacidades.
 
-## Data Storage Security
-Power BI uses two primary repositories for storing and managing data: data that is uploaded from users is typically sent to <bpt id="p1">**</bpt>Azure BLOB<ept id="p1">**</ept> storage, and all metadata as well as artifacts for the system itself are stored in <bpt id="p2">**</bpt>Azure SQL Database<ept id="p2">**</ept>.
+## Seguridad de almacenamiento de datos
+Power BI usa dos repositorios principales para almacenar y administrar datos: los datos que se cargan desde los usuarios normalmente se envían a **Azure BLOB** almacenamiento y todos los metadatos así como artefactos para el propio sistema se almacenan en **base de datos de SQL Azure**.
 
-The dotted line in the <bpt id="p1">**</bpt>Back End<ept id="p1">**</ept> cluster image, above, clarifies the boundary between the only two components that are accessible by users (left of the dotted line), and roles that are only accessible by the system. When an authenticated user connects to the Power BI Service, the connection and any request by the client is accepted and managed by the <bpt id="p1">**</bpt>Gateway Role<ept id="p1">**</ept> (eventually to be handled by <bpt id="p2">**</bpt>Azure API Management<ept id="p2">**</ept>), which then interacts on the user’s behalf with the rest of the Power BI Service. For example, when a client attempts to view a dashboard, the <bpt id="p1">**</bpt>Gateway Role<ept id="p1">**</ept> accepts that request then separately sends a request to the <bpt id="p2">**</bpt>Presentation Role<ept id="p2">**</ept> to retrieve the data needed by the browser to render the dashboard.
+La línea de puntos en el **Back-End** imagen de clúster anterior, clarifica el límite entre el sólo dos componentes que son accesibles para los usuarios (a la izquierda de la línea de puntos) y los roles que sólo son accesibles para el sistema. Cuando un usuario autenticado se conecta al servicio Power BI, la conexión y acepta cualquier solicitud del cliente y administra los **rol de puerta de enlace** (finalmente a ser manipulados por **administración de API de Azure**), que luego interactúa en nombre del usuario con el resto del servicio de Power BI. Por ejemplo, cuando un cliente intenta ver un panel, el **función puerta de enlace** acepta la solicitud, a continuación, envía una solicitud de forma independiente el **presentación rol** para recuperar los datos necesarios mediante el explorador para representar el panel.
 
 ## Autenticación de usuario
 
-Power BI uses Azure Active Directory (<bpt id="p1">[</bpt>AAD<ept id="p1">](http://azure.microsoft.com/services/active-directory/)</ept>) to authenticate users who login to the Power BI service, and in turn, uses the Power BI login credentials whenever a user attempt to resources that require authentication. Users login to the Power BI service using the email address used to establish their Power BI account; Power BI uses the that login email as the <bpt id="p1">*</bpt>effective username<ept id="p1">*</ept>, which is passed to resources whenever a user attempts to connect to data. The <bpt id="p1">*</bpt>effective username<ept id="p1">*</ept> is then mapped to a <bpt id="p2">*</bpt>User Principal Name<ept id="p2">*</ept> (<bpt id="p3">[</bpt>UPN<ept id="p3">](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx)</ept> and resolved to the associated Windows domain account, against which authentication is applied.
+Power BI usa Azure Active Directory ([AAD](http://azure.microsoft.com/services/active-directory/)) para autenticar a los usuarios que el inicio de sesión para el servicio Power BI y, a su vez, usa las credenciales de inicio de sesión de Power BI siempre que un usuario intenten recursos que requieren autenticación. Inicio de sesión de los usuarios al servicio Power BI con la dirección de correo electrónico que se utiliza para establecer su cuenta de Power BI; Power BI usa el correo electrónico de inicio de sesión como el *nombre de usuario efectivo*, que se pasa a los recursos de cada vez que un usuario intenta conectarse a los datos. El *nombre de usuario efectivo* a continuación, se asigna a un *nombre Principal de usuario* ([UPN](https://msdn.microsoft.com/library/windows/desktop/aa380525\(v=vs.85\).aspx) y resolver en la cuenta de dominio de Windows asociada, en la que se aplica la autenticación.
 
-For organizations that used work emails for Power BI login (such as <bpt id="p1">*</bpt>david@contoso.com<ept id="p1">*</ept>), the <bpt id="p2">*</bpt>effective username<ept id="p2">*</ept> to UPN mapping is straightforward. For organizations that did not use work emails for Power BI login (such as <bpt id="p1">*</bpt>david@contoso.onmicrosoft.com<ept id="p1">*</ept>), mapping between AAD and on-premises credentials will require <bpt id="p2">[</bpt>directory synchronization<ept id="p2">](https://technet.microsoft.com/library/jj573653.aspx)</ept> to work properly.
-
-
-Platform security for Power BI also includes multi-tenant environment security, networking security, and the ability to add additional AAD-based security measures.
-
-## Data and Service Security
-
-For more information, please visit the <bpt id="p1">[</bpt>Microsoft Trust Center<ept id="p1">](https://www.microsoft.com/trustcenter)</ept>.
-
-As described earlier in this article, a user’s Power BI login is used by on-premises Active Directory servers to map to a UPN for credentials. However, it’s <bpt id="p1">**</bpt>important<ept id="p1">**</ept> to note that users are responsible for the data they share: if a user connects to data sources using her credentials, then shares a report (or dashboard, or dataset) based on that data, users with whom the dashboard is shared are not authenticated against the original data source, and will be granted access to the report.
+Para las organizaciones que utilizan mensajes de correo electrónico de trabajo para el inicio de sesión de Power BI (como *david@contoso.com*), el *nombre de usuario efectivo* a UPN asignación es sencilla. Para las organizaciones que no utiliza mensajes de correo electrónico de trabajo para el inicio de sesión de Power BI (como *david@contoso.onmicrosoft.com*), la asignación entre AAD y local se requieren credenciales [la sincronización de directorios](https://technet.microsoft.com/library/jj573653.aspx) funcione correctamente.
 
 
-An exception is connections to <bpt id="p1">**</bpt>SQL Server Analysis Services<ept id="p1">**</ept> using the <bpt id="p2">**</bpt>On-premises Data Gateway<ept id="p2">**</ept>; dashboards are cached in Power BI, but access to underlying reports or datasets initiate authentication for the user attempting to access the report (or dataset), and access will only be granted if the user has sufficient credentials to access the data. For more information, see <bpt id="p1">[</bpt>On-premises Data Gateway deep dive<ept id="p1">](powerbi-gateway-onprem-indepth.md)</ept>.
+Seguridad de la plataforma para Power BI también incluye la capacidad para agregar medidas de seguridad adicionales basados en AAD, seguridad de redes y seguridad del entorno de varios inquilinos.
+
+## Seguridad de datos y servicio
+
+Para obtener más información, visite la [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+
+Como se describió anteriormente en este artículo, se utiliza el inicio de sesión de un usuario Power BI por servidores de Active Directory local para asignar a un UPN para las credenciales. Sin embargo, es **importante** a tener en cuenta que los usuarios son responsables de los datos que comparten: si un usuario se conecta a orígenes de datos utilizando sus credenciales y, a continuación, comparte un informe (o panel o conjunto de datos) basándose en los datos, los usuarios con los que se comparte el panel no está autenticados con el origen de datos original y se le concederá acceso al informe.
+
+
+Una excepción es que las conexiones a **SQL Server Analysis Services** utilizando el **puerta de enlace de datos local**; se almacenan en caché de los paneles en Power BI, pero el acceso a informes subyacentes o conjuntos de datos inician la autenticación para el usuario que intenta tener acceso al informe (o conjunto de datos) y sólo se concede acceso si el usuario tiene suficientes credenciales para tener acceso a los datos. Para obtener más información, consulte [profundización de puerta de enlace de datos local](powerbi-gateway-onprem-indepth.md).

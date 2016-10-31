@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Integrate a Power BI report into an app"
-   description="Walkthrough to integrate a report into an app, sample code"
+   pageTitle="Integrar un informe de Power BI en una aplicación"
+   description="Tutorial para integrar un informe en una aplicación, el código de ejemplo"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,39 +20,42 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Integrate a report into an app
+# Integrar un informe en una aplicación
 
 ## Introducción
 
-In this walkthrough, you integrate, or embed, a report into a web app using C# and the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> API, some JavaScript code, and an IFrame.
+En este tutorial, integrar o incrustar un informe en una aplicación web con C# y el **Power BI** API, algún código JavaScript y un IFrame.
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: To get started with this walkthrough, you need a <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> account. If you don't have an account, see <bpt id="p1">[</bpt>Sign up for Power BI<ept id="p1">]( powerbi-admin-free-with-custom-azure-directory.md)</ept>.
+>
+            **NOTA**: para empezar a trabajar con este tutorial, necesita un **Power BI** cuenta. Si no tiene una cuenta, consulte [suscribirse en Power BI]( powerbi-admin-free-with-custom-azure-directory.md).
 
-To integrate a report into a web app, you use the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> API, and an Azure Active Directory (AD) authorization <bpt id="p2">**</bpt>access token<ept id="p2">**</ept> to get a report. Then, you load the report into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept> using the same access token. The <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> API provides programmatic access to certain <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> resources. See <bpt id="p1">[</bpt>Overview of Power BI REST API<ept id="p1">](https://msdn.microsoft.com/library/dn877544.aspx)</ept>. The illustration below shows the general flow to integrate a report.
+Para integrar un informe en una aplicación web, utiliza el **Power BI** API y una autorización de Azure Active Directory (AD) **token de acceso** para obtener un informe. A continuación, cargar el informe en un **IFrame** usando el mismo token de acceso. El **Power BI** API proporciona acceso mediante programación a ciertos **Power BI** recursos. Consulte [información general sobre la API de REST de Power BI](https://msdn.microsoft.com/library/dn877544.aspx). La siguiente ilustración muestra el flujo general para integrar un informe.
 
 ![](media\powerbi-developer-integrate-report\integrate-report-flow.png)
 
-Here are the steps to integrate, or embed, a report into a web page.
+Estos son los pasos para integrar o incrustar un informe en una página web.
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: This article shows the code used in the <bpt id="p2">[</bpt>Integrate a report sample<ept id="p2">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)</ept> on GitHub. To follow along with this walkthrough, you should download the sample. To run the sample, see <bpt id="p1">[</bpt>Configure the integrate a report sample<ept id="p1">](powerbi-developer-integrate-report-register.md#configure-sample)</ept> in the Register a web app with Azure AD step .
+>
+            **NOTA**: este artículo muestra el código usado en el [integrar un informe de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app) en GitHub. Para seguir este tutorial, debe descargar el ejemplo. Para ejecutar el ejemplo, vea [Configurar la integración de un informe de ejemplo](powerbi-developer-integrate-report-register.md#configure-sample) en el registro de una aplicación web con el paso de Azure AD.
 
-## Steps to integrate a report into an app
+## Pasos para integrar un informe en una aplicación
 
-- <bpt id="p1">[</bpt>Step 1: Register a web app with Azure AD<ept id="p1">](powerbi-developer-integrate-report-register.md)</ept>. You need to register your web app with <bpt id="p1">**</bpt>Azure Active Directory (AD)<ept id="p1">**</ept> so that Azure AD can identify your application when you need to access <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> reports.
-- [Step 2: Get a Power BI report](powerbi-developer-integrate-report-get-report.md)
-- [Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md)
-- [Integrate a report into an app code listing](powerbi-developer-integrate-report-code.md)
+- 
+            [Paso 1: Registrar una aplicación web con Azure AD](powerbi-developer-integrate-report-register.md). Debe registrar su aplicación web con **Azure Active Directory (AD)** para que Azure AD pueda identificar su aplicación necesita tener acceso a **Power BI** informes.
+- [Paso 2: Obtener un informe de Power BI](powerbi-developer-integrate-report-get-report.md)
+- [Paso 3: Cargar un informe de Power BI en un IFrame](powerbi-developer-integrate-report-load-report-iframe.md)
+- [Integrar un informe en un listado de código de aplicación](powerbi-developer-integrate-report-code.md)
 
 ## Paso siguiente
 
-In the next step, you learn how to <bpt id="p1">[</bpt>Register a web app with Azure AD<ept id="p1">](powerbi-developer-integrate-report-register.md)</ept> to get a <bpt id="p2">**</bpt>Client ID<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Client Secret<ept id="p3">**</ept> to authenticate the web app with <bpt id="p4">**</bpt>Azure AD<ept id="p4">**</ept>. A Client ID and Client Secret is used to identify your app in Azure AD. After you get a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Client Secret<ept id="p2">**</ept>, you can configure the <bpt id="p3">[</bpt>Integrate a report sample<ept id="p3">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)</ept>. See <bpt id="p1">[</bpt>Configure the integrate a report sample<ept id="p1">](powerbi-developer-integrate-report-register.md#configure-sample)</ept>.
+En el paso siguiente, aprenderá cómo [registrar una aplicación web con Azure AD](powerbi-developer-integrate-report-register.md) para obtener un **Id. de cliente** y **secreto de cliente** para autenticar la aplicación web con **Azure AD**. Un identificador de cliente y el secreto del cliente se utiliza para identificar la aplicación en Azure AD. Después de obtener un **Id. de cliente** y **secreto de cliente**, puede configurar la [integrar un informe de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app). Consulte [Configurar la integración de un informe de ejemplo](powerbi-developer-integrate-report-register.md#configure-sample).
 
-[Next Step &gt;](powerbi-developer-integrate-report-register.md)
+[Siguiente paso >](powerbi-developer-integrate-report-register.md)
 
 ## Consulte también
 
-[Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
-[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)  
-[Step 1: Register a web app with Azure AD](powerbi-developer-integrate-report-register.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Registrarse para Power BI]( powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrar un informe de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
+[Configurar la integración de un informe de ejemplo](powerbi-developer-integrate-report-register.md#configure-sample)  
+[Paso 1: Registrar una aplicación web con Azure AD](powerbi-developer-integrate-report-register.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Integrate a Power BI tile into an app code listing"
-   description="Walkthrough to Integrate a tile into an app - Load a tile into an IFrame"
+   pageTitle="Integrar un mosaico de Power BI en un listado de código de aplicación"
+   description="Tutorial para integrar un mosaico en una aplicación - cargar un mosaico en un IFrame"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,19 +20,19 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Integrate a tile into an app code listing
+# Integrar un mosaico en un listado de código de aplicación
 
 ## Introducción
 
-In the <bpt id="p1">[</bpt>Integrate a tile into an app walkthrough<ept id="p1">](powerbi-developer-integrate-tile.md)</ept> you learn how to embed a <bpt id="p2">**</bpt>tile<ept id="p2">**</ept> using an <bpt id="p3">**</bpt>IFrame<ept id="p3">**</ept>. You can download the complete <bpt id="p1">[</bpt>Integrate a tile sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)</ept> which shows all the parts to embed a tile. Alternatively, you can view the essential source code below. Please note this is only the essential source code, not an entire web project.
+En el [integrar un mosaico en un tutorial de la aplicación](powerbi-developer-integrate-tile.md) Obtenga información acerca de cómo incrustar una **icono** mediante un **IFrame**. Puede descargar la completa [integrar un mosaico de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app) que muestra todas las partes para incrustar un mosaico. Como alternativa, puede ver el código fuente esencial siguiente. Tenga en cuenta que esto es sólo el código fuente esencial, no un proyecto web completo.
 
-**Sample Source Code**
+**Código fuente de ejemplo**
 
-- [Sample JavaScript to load a tile into an IFrame (Default.aspx)](#default-aspx)
-- [Sample C# code to get access token, get dashboard, and get tile (Default.aspx.cs)](#default-code)
+- [Ejemplo JavaScript para cargar un mosaico en un IFrame (Default.aspx)](#default-aspx)
+- [Código C# de ejemplo para obtener acceso de token, panel y obtener mosaico (Default.aspx.cs)](#default-code)
 
 <a name="default-aspx"/>
-## Sample JavaScript to load a tile into an IFrame (Default.aspx)
+## Ejemplo JavaScript para cargar un mosaico en un IFrame (Default.aspx)
 ```
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <script type="text/javascript">
@@ -80,7 +80,7 @@ In the <bpt id="p1">[</bpt>Integrate a tile into an app walkthrough<ept id="p1">
 ```
 
 <a name="default-code"/>
-## Sample C# code to get access token, get dashboard, and get tile (Default.aspx.cs)
+## Código C# de ejemplo para obtener acceso de token, panel y obtener mosaico (Default.aspx.cs)
 ```
 /* NOTE: This code is for sample purposes only. In a production application, you could use a MVC design pattern.
 * In addition, you should provide appropriate exception handling and refactor authentication settings into
@@ -289,5 +289,5 @@ public class PBITile
 
 ## Consulte también
 
-[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Integrar un mosaico en un tutorial de la aplicación](powerbi-developer-integrate-tile.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

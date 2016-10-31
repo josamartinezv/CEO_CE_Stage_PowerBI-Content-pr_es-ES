@@ -1,17 +1,23 @@
-<properties title="" pageTitle="Power BI technical content channel guidance" description="Describes the Microsoft content channels that employees, partners, and community contributors should use for publishing Power BI technical content." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+<properties title="" pageTitle="Orientación técnica canal contenido de Power BI" description="Describe los canales de contenido de Microsoft que deben usar los empleados, socios y colaboradores de la Comunidad para la publicación de contenido técnico de Power BI." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/01/2015" ms.author="mblythe" />
 
-#Power BI technical content channel guidance
+#Orientación técnica canal contenido de Power BI
 
 ##aka: What goes where?
-Generally speaking, core technical content for Microsoft Power BI belongs in the <bpt id="p1">[</bpt>Power BI Documentation Center<ept id="p1">](https://powerbi.microsoft.com/documentation)</ept>. Members of the content and product teams also publish developer content to <bpt id="p1">[</bpt>MSDN<ept id="p1">](https://msdn.microsoft.com/en-us/library/dn877544.aspx)</ept>, and we publish to the <bpt id="p2">[</bpt>Power BI blog<ept id="p2">](http://blogs.msdn.com/b/powerbi/)</ept>. 
+Por lo general, el contenido técnico de núcleo de Microsoft Power BI pertenece en el [Centro de documentación de Power BI](https://powerbi.microsoft.com/documentation). Miembros de los equipos de producto y contenido también publican contenido para desarrolladores [MSDN](https://msdn.microsoft.com/en-us/library/dn877544.aspx), y se publica en el [blog de Power BI](http://blogs.msdn.com/b/powerbi/). 
 
-The following channels are not part of the standard Power BI technical content experience:
+Los siguientes canales no forman parte de la experiencia de contenido técnica estándar de Power BI:
 
-- <bpt id="p1">**</bpt>TechNet Library<ept id="p1">**</ept>: TechNet does not offer a Power BI branded experience. All content for all audiences goes in the branded, scoped Power BI library hosted on MSDN.
-- <bpt id="p1">**</bpt>TechNet Wiki<ept id="p1">**</ept>: The wiki does not offer a Power BI branded experience. The community and internal partners can contribute to Power BI technical content through the Discus comment stream and by contributing to articles through GitHub.
-- <bpt id="p1">**</bpt>Standard MSDN library view<ept id="p1">**</ept>: Standard view does not offer a Power BI branded experience.
-- <bpt id="p1">**</bpt>TechNet TechCenters<ept id="p1">**</ept>: Our center is published to https://powerbi.microsoft.com/developers.
-- <bpt id="p1">**</bpt>MSDN DevCenters<ept id="p1">**</ept>: Our center is published to https://powerbi.microsoft.com/developers.
-- <bpt id="p1">**</bpt>E-book, CSI e-book gallery<ept id="p1">**</ept>: Due to static nature of content, do not deliver content in e-book form. The vast majority of content should be published through powerbi.microsoft.com or to the Power BI scoped library.
+- 
+            **Biblioteca de TechNet**: TechNet no ofrece una experiencia de marca de Power BI. Todo el contenido de todas las audiencias entra en la biblioteca de Power BI con marca y ámbito hospedada en MSDN.
+- 
+            **Wiki de TechNet**: el wiki no ofrece una experiencia de marca de Power BI. La Comunidad y socios internos pueden contribuir al contenido técnico de Power BI a través de la secuencia de comentario de disco y contribuyendo a artículos a través de GitHub.
+- 
+            **Vista estándar de la biblioteca MSDN**: vista estándar no ofrece una experiencia de marca de Power BI.
+- 
+            **TechCenters de TechNet**: nuestro centro se publica en https://powerbi.microsoft.com/developers.
+- 
+            **Centros de desarrollo de MSDN**: nuestro centro se publica en https://powerbi.microsoft.com/developers.
+- 
+            **Galería de libros electrónicos de libro electrónico CSI**: debido a la naturaleza estática de contenido, no ofrecen contenido en formato de libro electrónico. La mayoría del contenido se debe publicar a través de powerbi.microsoft.com o de Power BI con ámbito de biblioteca.

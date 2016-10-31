@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Visual hierarchies and drill-down"
-   description="Learn to drill into hierarchies, and manage how levels are shared"
+   pageTitle="Jerarquías visuales y exploración en profundidad"
+   description="Aprenda a profundizar en las jerarquías y administrar cómo se comparten los niveles"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,26 +22,26 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Visual hierarchies and drill-down behavior
+# Jerarquías visuales y el comportamiento de profundidad
 
-When you add a <bpt id="p1">*</bpt>date<ept id="p1">*</ept> field to a visual in the <bpt id="p2">*</bpt>Axis<ept id="p2">*</ept> field bucket, Power BI automatically adds a time hierarchy that includes <bpt id="p3">*</bpt>Year<ept id="p3">*</ept>, <bpt id="p4">*</bpt>Quarter<ept id="p4">*</ept>, <bpt id="p5">*</bpt>Month<ept id="p5">*</ept> and <bpt id="p6">*</bpt>Day<ept id="p6">*</ept>. By doing this, Power BI allows your visuals to have time-based interaction with those viewing your reports, by letting users drill-down through those different time levels.
+Cuando se agrega un *fecha* campo en un elemento visual en el *eje* depósito de campo, Power BI agrega automáticamente una jerarquía de tiempo que incluya *año*, *trimestre*, *mes* y *día*. Al hacerlo, Power BI permite que los objetos visuales basada en tiempo de interactuar con los que los ven los informes, permitiendo que los usuarios en profundidad a través de los niveles de tiempo diferente.
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_1.png)
 
-With a hierarchy in place, you can begin drilling down through the time hierarchy. For example, clicking a year in the chart drills down to the next level in the hierarchy, in this case <bpt id="p1">*</bpt>Quarters<ept id="p1">*</ept>, which are then displayed in the visual.
+Una jerarquía en su lugar, puede comenzar profundizando en la jerarquía de tiempo. Por ejemplo, al hacer clic en un año en el gráfico se expande hasta el siguiente nivel en la jerarquía, en este caso *trimestres*, que se muestran en el objeto visual.
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_2.png)
 
-In that automatically created hierarchy, you can also manage to which level your shared report allows people to drill. To do this, in the Visualizations pane, simply click the X beside the hierarchy that you want to remove. The deleted level is removed from the report, and drilling no longer displays that level.
+En el se crea automáticamente la jerarquía, también puede administrar el nivel de informe compartido permite a los usuarios obtener detalles. Para ello, en el panel de visualizaciones, simplemente haga clic en la X situada junto a la jerarquía que desea quitar. El nivel eliminado se quita del informe y obtención de detalles ya no muestra ese nivel.
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_3.png)
 
-If you need to get that level of the hierarchy back, just remove the <bpt id="p1">*</bpt>date<ept id="p1">*</ept> field, and then add it again from the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane, and the hierarchy is once again created for you automatically.
+Si necesita obtener ese nivel de la parte posterior de la jerarquía, simplemente quite el *fecha* campo y, a continuación, agregarlo de nuevo desde la **campos** panel y la jerarquía es nuevamente crea automáticamente.
 
-There may be times when you don't want the hierarchy to be used for a visual. You can control that by selecting the down-arrow button beside the <bpt id="p1">*</bpt>Date<ept id="p1">*</ept> field (once you've added it to a visual), and select <bpt id="p2">**</bpt>Date<ept id="p2">**</ept> rather than <bpt id="p3">**</bpt>Date Hierarchy<ept id="p3">**</ept>. That prompts Power BI to show the raw date values in the visual.
+Puede haber ocasiones cuando no desea que la jerarquía que se utilizará para un objeto visual. Puede controlar que seleccionando el botón de flecha hacia abajo situada junto a la *fecha* (una vez que se ha agregado un elemento visual) y seleccione **fecha** en lugar de **jerarquía de fecha**. Solicita Power BI para mostrar los valores de fecha sin procesar en el objeto visual.
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_4.png)
 
-You can also expand all data elements currently visible at once, rather than selecting a single quarter, or a single year. To do that, select the <bpt id="p1">*</bpt>Drill all<ept id="p1">*</ept> icon in the top left of the visual, which is a double-down arrow icon.
+También puede expandir todos los elementos de datos actualmente visibles a la vez, en lugar de seleccionar un trimestre único o un único año. Para ello, seleccione la *Explorar todos* situado en la esquina superior izquierda del objeto visual, que es un icono de flecha doble.
 
 ![](media/powerbi-learning-3-11g-visual-hierarchies-drilling/3-11g_5.png)

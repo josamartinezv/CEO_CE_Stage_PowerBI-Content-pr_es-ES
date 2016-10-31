@@ -1,32 +1,32 @@
 <properties
-   pageTitle="Create links in markdown articles" description="Explains how to code crosslinks in markdown." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+   pageTitle="Crear vínculos de artículos de descuento" description="Explica cómo codificar vínculos cruzados de descuento." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
-# Linking guidance for Power BI technical content
-## Guidelines for technical articles on powerbi.microsoft.com
+# Vinculación de orientación para el contenido técnico de Power BI
+## Directrices para artículos técnicos sobre powerbi.microsoft.com
 
 | Escenario de vinculación | Orientación  |
 |---------------|-----------|
-|Linking from a Power BI article to another Power BI article|Use vínculos relativos. Do not include the en-us language locale in your relative links.|
-|Linking to an MSDN library topic, a TechNet library topic, or KB article|Use the actual link to the article or topic, but remove the en-us language locale from the link.|
-|Linking from a Power BI article to any other web page|Utilice el vínculo directo.|
+|Vinculación de un artículo de Power BI para otro artículo de Power BI|Use vínculos relativos. No incluya la en-us configuración regional de idioma en los vínculos relativos.|
+|Vincular a un tema de la biblioteca MSDN, un tema de la biblioteca de TechNet o un artículo KB|Use el vínculo real para el artículo o el tema, pero quita la en-us configuración regional de idioma desde el vínculo.|
+|Vinculación de un artículo de Power BI a cualquier otra página web|Utilice el vínculo directo.|
 
-### Markdown syntax for Power BI relative links
+### Sintaxis de descuento para los vínculos relativos de Power BI
 
-To create an inline link from a Power BI technical article to another Power BI technical article, use this link format.
+Para crear un vínculo insertado en un artículo técnico de Power BI para otro artículo técnico de Power BI, use este formato de vínculo.
 
-> [AZURE.NOTE] Some aspects of linking are still TBD b/c we need to settle on a final structure for the github repo.
+> [AZURE.NOTE] Algunos aspectos de vinculación siguen siendo TBD b y c que es necesario para liquidar en una estructura final para el repositorio de github.
 
 Artículo que se vincula de un subdirectorio a un artículo del directorio raíz:
 
     [link text](../article-name.md)
 
-Article in the root directory links to an article in a subdirectory: 
+Artículo en los vínculos de directorio raíz para un artículo en un subdirectorio: 
 
     [link text](section-folder/article-name.md)
 
-Article in a section subdirectory links to an article that is in another section subdirectory:
+Artículo en una sección subdirectorio contiene vínculos a un artículo que se encuentra en otro subdirectorio de sección:
 
     [link text](../section-folder/article-name.md)
  
@@ -35,7 +35,7 @@ Artículo de un directorio que se vincula a otro artículo del mismo directorio:
     [link text](article-name.md)
 
 
-You do not have to create anchors - they are automatically generated at publishing time for all H2 headings. Basta con establecer vínculos a las secciones del tipo H2:
+No es necesario que crear los delimitadores, se generan automáticamente en el tiempo para todos los títulos H2 la publicación. Basta con establecer vínculos a las secciones del tipo H2:
 
     [link](#the-text-of-the-H2-section-separated-by-hyphens)
     [Create cache](#create-cache)
@@ -57,22 +57,22 @@ Debido a que los archivos de inclusión se encuentran en otro directorio, deber�
 
     [link text](../articles/section-folder/article-name.md)
     
-Learn more about how to use an includes file in the <bpt id="p1">[</bpt>Custom markdown extensions guidelines<ept id="p1">](custom-markdown-extensions.md#includes)</ept>.
+Obtener más información acerca de cómo usar un incluye el archivo en el [instrucciones de extensiones de descuento personalizado](custom-markdown-extensions.md#includes).
 
 Si cuenta con selectores incrustados en un archivo de inclusión, utilice este tipo de vinculación: 
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )] <ph id="ph1">    - </ph><bpt id="p1">[</bpt>(Text1 | Example1 )<ept id="p1">](../articles/section-folder/article-name1.md)</ept><ph id="ph2">
-    - </ph><bpt id="p2">[</bpt>(Text1 | Example2 )<ept id="p2">](../articles/section-folder/article-name2.md)</ept><ph id="ph3">
-    - </ph><bpt id="p3">[</bpt>(Text2 | Example3 )<ept id="p3">](../articles/section-folder/article-name3.md)</ept><ph id="ph4">
-    - </ph><bpt id="p4">[</bpt>(Text2 | Example4 )<ept id="p4">](../articles/section-folder/article-name4.md)</ept>
+    > [AZURE. LISTA de SELECCIÓN (Dropdown1 | Dropdown2)]     - [(Text1 | Ejemplo1)](../articles/section-folder/article-name1.md)
+    - [(Text1 | Ejemplo2)](../articles/section-folder/article-name2.md)
+    - [(Text2 | Example3)](../articles/section-folder/article-name3.md)
+    - [(Text2 | Example4)](../articles/section-folder/article-name4.md)
 
-To link to a page on Power BI (such as a pricing page, SLA page or anything else that is not a documentation article), use an absolute URL, but omit the locale. La finalidad es que los vínculos funcionen en GitHub y en el sitio representado:
+Para vincular a una página de Power BI (por ejemplo, una página de precios, página de SLA o cualquier otra cosa que no es un artículo de documentación), utiliza una dirección URL absoluta, pero se omite la configuración regional. La finalidad es que los vínculos funcionen en GitHub y en el sitio representado:
 
     [link text](http://powerbi.microsoft.com/pricing/)
 
-To test your links, push your page to your fork and view it in the rendered view and publish to staging. The cross links on the GitHub version of the page should work as long as the targets of the URLs are present in your fork.
+Para comprobar los vínculos, la página de inserción en la bifurcación y verlo en la vista representada y publicación en ensayo. Los vínculos entre la versión de GitHub de la página deberían funcionar como los destinos de las direcciones URL están presentes en la bifurcación.
 
-Our <bpt id="p1">[</bpt>markdown template for technical articles<ept id="p1">](../markdown templates/markdown-template-for-new-articles.md/)</ept> shows an alternate way to create crosslinks in markdown so all the crosslinks are coded together at the end of the article, even while they display inline.
+Nuestro [plantilla de descuento para artículos técnicos](../markdown templates/markdown-template-for-new-articles.md/) muestra una manera alternativa para crear vínculos cruzados de descuento para todos los vínculos cruzados se codifican juntos al final del artículo, aunque muestran insertados.
 
 ## Vínculos de estilo de referencia
 
@@ -91,15 +91,15 @@ Vínculos de referencia al final del artículo:
 
 ## FWLinks
 
-Avoid FWLinks (our redirection system) in powerbi.microsoft.com content. They should be used only as a last resort when you need to create a link for a page whose URL you don't yet know. They are almost never actually needed. For Power BI, you define the file name, so you can know what it will be ahead of time. For a library topic that is not yet published, you can create a link that uses the topic GUID so that you don't have to use an FWLink.
+Evite FWLinks (nuestro sistema de redirección) en el contenido de powerbi.microsoft.com. Debe utilizarse sólo como último recurso cuando necesite crear un vínculo de una página cuya dirección URL que aún no se conoce. Casi nunca son necesarios. Para Power BI, defina el nombre de archivo para saber cuál será antes de tiempo. Un tema de biblioteca que no se ha publicado, puede crear un vínculo que utiliza el tema GUID para que no tiene que usar un FWLink.
 
-If you must use an FWLink on a web page, include the P parameter to make it a permanent redirect:
+Si debe utilizar un FWLink en una página web, incluya el parámetro P para realizar una redirección permanente:
 
     http://go.microsoft.com/fwlink/p/?LinkId=389595
 
-When you paste the target URL into the FWLink tool, remember to remove the locale if your target link is Power BI, or the MSDN or TechNet library.
+Al pegar la dirección URL de destino en la herramienta FWLink, no olvide quitar la configuración regional si el vínculo de destino es la biblioteca de Power BI, o bien el MSDN o TechNet.
 
-### Contributors' Guide Links
+### Vínculos de la Guía de los colaboradores
 
 - [Artículo de información general](./../README.md)
 - [Índice de artículos de la guía](./contributor-guide-index.md)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Analysis Services Tabular data in Power BI Desktop"
-   description="Analysis Services Tabular data in Power BI Desktop"
+   pageTitle="Analysis Services TDS en Power BI Desktop"
+   description="Analysis Services TDS en Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,90 +19,104 @@
    ms.workload="powerbi"
    ms.date="09/29/2016"
    ms.author="davidi"/>
-# Analysis Services Tabular data in Power BI Desktop
+# Analysis Services TDS en Power BI Desktop
 
-With Power BI Desktop, there are two ways you can connect to and get data from your SQL Server Analysis Services Tabular models: Explore by using a live connection or Select items and import into Power BI Desktop.
+Con Power BI Desktop, hay dos maneras puede conectarse y obtener datos de los modelos de SQL Server Analysis Services Tabular: explorar mediante una conexión activa o seleccione los elementos e importar en Power BI Desktop.
 
-Let’s take a closer look.
+Echemos un vistazo.
 
-<bpt id="p1">**</bpt>Explore by using a live connection<ept id="p1">**</ept> – When using a live connection, items in your Tabular model or perspective, like tables, columns, and measures appear in your Power BI Desktop Fields list. You can use Power BI Desktop’s advanced visualization and report tools to explore your Tabular model in new, highly interactive ways.
 
-When connecting live, no data from the Tabular model is imported into Power BI Desktop. Each time you interact with a visualization, Power BI Desktop queries the Tabular model and calculates the results you see. You’re always looking at the latest data. Keep in-mind, Tabular models are highly secure. Items that appear in Power BI Desktop depend on your permissions for the Tabular model you’re connected to.
+            **Explorar mediante una conexión activa** : cuando se utiliza una conexión activa, los elementos de su modelo Tabular o perspectiva, como tablas, columnas, y las medidas aparecen en la lista de campos de Power BI Desktop. Puede utilizar las herramientas avanzadas de visualización y el informe de Power BI Desktop para explorar el modelo Tabular de formas nuevas y altamente interactivas.
 
-When you’ve created dynamic reports in Power BI Desktop, you can share them by publishing to your Power BI site. When you publish a Power BI Desktop file with a live connection to a Tabular model to your Power BI site, an On-premises Data Gateway must be installed and configured by an administrator. To learn more, see <bpt id="p1">[</bpt>On-premises Data Gateway<ept id="p1">](powerbi-gateway-onprem.md)</ept>.
+Cuando se conecta en directo, no se importa ningún dato del modelo Tabular en Power BI Desktop. Cada vez que interactúe con una visualización, Power BI Desktop consulta el modelo Tabular y calcula los resultados que vea. Siempre está buscando en los datos más recientes. Tenga en cuenta, los modelos tabulares son muy seguros. Elementos que aparecen en Power BI Desktop dependen de los permisos para el modelo Tabular que está conectado.
 
-<bpt id="p1">**</bpt>Select items and import into Power BI Desktop<ept id="p1">**</ept> – When you connect with this option, you can select items like tables, columns, and measures in your Tabular model or perspective and load them into a Power BI Desktop model. You can use Power BI Desktop’s advanced Query Editor to further shape what you want. You can use Power BI Desktop’s modeling features to further model the data. No live connection between Power BI Desktop and the Tabular model is maintained. You can then explore your Power BI Desktop model offline or publish to your Power BI site.
+Cuando ha creado informes dinámicos en Power BI Desktop, se puede compartir mediante la publicación en su sitio de Power BI. Al publicar un archivo de Power BI Desktop con una conexión activa a un modelo Tabular en su sitio de Power BI, una puerta de enlace de datos local debe tener instalado y configurado por un administrador. Para obtener más información, consulte [puerta de enlace de datos local](powerbi-gateway-onprem.md).
 
-## To connect to a Tabular model
 
-1. In Power BI Desktop, on the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> tab, click <bpt id="p2">﻿**</bpt>Get Data<ept id="p2">**</ept>.
+            **Seleccionar elementos e importar en Power BI Desktop** : cuando se conecta con esta opción, puede seleccionar elementos como tablas, columnas y medidas en el modelo Tabular o perspectiva y cargarlos en un modelo de Power BI Desktop. Puede utilizar el Editor de consultas avanzadas de Power BI Desktop forma aún más lo que desea. Puede utilizar características de modelado de Power BI Desktop al modelo más los datos. No se mantiene ninguna conexión activa entre Power BI Desktop y el modelo Tabular. A continuación, puede explorar el modelo de Power BI Desktop sin conexión o publicar en su sitio de Power BI.
+
+## Para conectarse a un modelo Tabular
+
+1. En Power BI Desktop, en la **Inicio** haga clic en la ficha ﻿**obtener datos**.
 
  ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData.png)
 
-2. Click <bpt id="p1">**</bpt>SQL Server Analysis Services Database<ept id="p1">**</ept>, then click <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.
+2. Haga clic en **base de datos de SQL Server Analysis Services**, a continuación, haga clic en **Conectar**.
 
  ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData_AS.png)
 
-3. Enter the Server name and select a connection mode. 
+3. Escriba el nombre del servidor y seleccione un modo de conexión. 
 
  ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData_AS_server.png)
 
-4. This step depends on the connection mode you selected:
+4. Este paso depende en el modo de conexión seleccionado:
 
--   If you’re connecting live, in Navigator, select a Tabular model or perspective.
+-   Si se conecta en directo, en navegación, seleccione un modelo Tabular o perspectiva.
 
     ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData_AS_Live.png)
 
--   If you chose Select items and get data, in Navigator, select a Tabular model or perspective. You can further select only particular tables or columns to load. To shape your data before loading, click Edit to open Query Editor. When you’re ready, click Load to import the data into Power BI Desktop.
+-   Si decide seleccionar elementos y obtener los datos, en el navegador, seleccione un modelo Tabular o perspectiva. También podrá seleccionar sólo las tablas o columnas para cargar. Para dar forma a los datos antes de la carga, haga clic en Editar para abrir el Editor de consultas. Cuando esté listo, haga clic en cargar para importar los datos en Power BI Desktop.
 >  ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_GetData_AS_Select.png)
 
 ## Preguntas más frecuentes
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Do I need an On-premises Data Gateway?
 
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> It depends. If you use Power BI Desktop to connect live to a Tabular model, but have no intention on publishing to your Power BI site, you do not need a gateway. On the other hand, if you do intend on publishing to your Power BI site, a data gateway is necessary to ensure secure communication between the Power BI service and your on-premises Analysis Services server. Be sure to talk to your Analysis Services server administrator before installing a data gateway.
+            **Pregunta:** se necesita una puerta de enlace de datos local?
 
-If you choose select items and get data, you’re importing Tabular model data right into your Power BI Desktop file, so no gateway is necessary.
 
- 
+            **Respuesta:** depende. Si usa Power BI Desktop para conectarse en directo a un modelo Tabular, pero no tenga intención de publicación para el sitio de Power BI, no necesitará una puerta de enlace. Por otro lado, si piensa en la publicación en su sitio de Power BI, una puerta de enlace de datos es necesario para garantizar una comunicación segura entre el servicio Power BI y el servidor de Analysis Services local. Asegúrese de hablar con el administrador del servidor de Analysis Services antes de instalar una puerta de enlace de datos.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What’s the difference between connecting live to a Tabular model from the Power BI service versus connecting live from Power BI Desktop?
-
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> When connecting live to a Tabular model from your site in the Power BI service to an Analysis Services database on-premises in your organization, an On-premises Data Gateway is required to secure communications between them. When connecting live to a Tabular model from Power BI Desktop, a gateway is not required because both Power BI Desktop and the Analysis Services server you’re connecting to are both running on-premises in your organization. However, if you publish your Power BI Desktop file to your Power BI site, a gateway is required.
+Si elige seleccionar elementos y obtener datos, está importando datos de modelo Tabular en el archivo de Power BI Desktop, por lo que no es necesario ninguna puerta de enlace.
 
  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> If I created a live connection, can I connect to another data source in the same Power BI Desktop file?
 
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. You cannot explore live data and connect to another type of data source in the same file. If you’ve already imported data or connected to a different data source in a Power BI Desktop file, you’ll need to create a new file to explore live.
+            **Pregunta:** Cuál es la diferencia entre la conexión activa a un modelo Tabular desde el servicio Power BI en comparación con la conexión en vivo desde Power BI Desktop?
 
- 
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> If I created a live connection, can I edit the model or query in Power BI Desktop?
-
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. All of the query and modeling features in Power BI Desktop are disabled when exploring live data.
+            **Respuesta:** al conectarse en directo a un modelo Tabular desde su sitio en el servicio de Power BI para Analysis Services base de datos locales en su organización, una puerta de enlace de datos local es necesario para proteger las comunicaciones entre ellos. Cuando se conecta en directo a un modelo Tabular desde Power BI Desktop, una puerta de enlace no es necesario porque Power BI Desktop y el servidor de Analysis Services que va a conectar son ejecución local de su organización. Sin embargo, si publica el archivo de Power BI Desktop a su sitio de Power BI, se requiere una puerta de enlace.
 
  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> If I created a live connection, is it secure?
 
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes. Your current Windows credentials are used to connect to the Analysis Services server. You cannot use Basic or stored credentials in either the Power BI service or Power BI Desktop when exploring live.
+            **Pregunta:** Si crea una conexión activa, ¿puedo conectarme a otro origen de datos en el mismo archivo de Power BI Desktop?
+
+
+            **Respuesta:** no. No puede explorar datos activos y conectarse a otro tipo de origen de datos en el mismo archivo. Si ya ha importado los datos o conectado a un origen de datos en un archivo de Power BI Desktop, debe crear un nuevo archivo para que explore en vivo.
 
  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> In Navigator, I see a model and a perspective. What’s the difference?
 
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> A perspective is a particular view of a Tabular model. It might include only particular tables, columns, or measures depending on a unique data analysis need. A Tabular model always contains at least one perspective, which could include everything in the model. If you’re unsure which you should select, check with your administrator.
+            **Pregunta:** Si crea una conexión activa, ¿puedo modificar el modelo o la consulta en Power BI Desktop?
 
 
-## To change the server name after initial connection
+            **Respuesta:** no. De la consulta y modelado de características de Power BI Desktop están deshabilitadas al explorar datos activos.
 
-Once you create a Power BI Desktop file with an explore live connection, there might be some cases where you want to switch the connection to a different server. For example, if you created your Power BI Desktop file when connecting to a development server, and before publishing to the Power BI service, you want to switch the connection to production server.
+ 
 
-1. Select <bpt id="p1">**</bpt>Edit Queries<ept id="p1">**</ept> from the Ribbon.
+
+            **Pregunta:** Si crea una conexión activa, es seguro?
+
+
+            **Respuesta:** Sí. Las credenciales de Windows actuales se utilizan para conectarse al servidor de Analysis Services. No puede utilizar Basic o las credenciales almacenadas en el servicio Power BI o Power BI Desktop al explorar live.
+
+ 
+
+
+            **Pregunta:** en el navegador, puedo ver un modelo y una perspectiva. ¿Cuál es la diferencia?
+
+
+            **Respuesta:** una perspectiva es una vista determinada de un modelo Tabular. Puede incluir sólo tablas, columnas o medidas según una necesidad de análisis de datos único. Un modelo Tabular siempre contiene al menos una perspectiva, lo que podría incluir todo el contenido del modelo. Si no está seguro de que se debe seleccionar, consulte con su administrador.
+
+
+## Para cambiar el nombre del servidor después de la conexión inicial
+
+Después de crear un archivo de Power BI Desktop con una conexión activa a explorar, puede haber algunos casos donde desea cambiar la conexión a un servidor diferente. Por ejemplo, si creó el archivo de Power BI Desktop al conectarse a un servidor de desarrollo y antes de la publicación para el servicio Power BI, desea cambiar la conexión al servidor de producción.
+
+1. Seleccione **Editar consultas** desde la cinta.
 
  ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_ChName_EditQuery.png)
 
-2. Enter the new server name.
+2. Escriba el nombre del nuevo servidor.
 
  ![](media/powerbi-desktop-analysis-services-tabular-data/PBID_SQLAS_ChName_Dialog.png)

@@ -1,48 +1,76 @@
 ## General
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What is the actual Windows service called?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> The gateway is called On-premises data gateway service in Services
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What are the requirements for the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Take a look at the requirements section of the main <bpt id="p2">[</bpt>gateway article<ept id="p2">](powerbi-gateway-onprem.md)</ept>.
+            **Pregunta:** lo que se denomina el servicio de Windows real?  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What data sources are supported with the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> See the data sources table in the main <bpt id="p2">[</bpt>gateway article<ept id="p2">](powerbi-gateway-onprem.md)</ept>.
+            **Respuesta:** la puerta de enlace se denomina servicio de puerta de enlace de datos local de servicios
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Do I need a gateway for cloud data sources like Azure SQL Database?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No! The service will be able to connect to that data source without a gateway.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Are there any inbound connections to the gateway from the cloud?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. The gateway uses outbound connections to Azure Service Bus.
+            **Pregunta:** Cuáles son los requisitos para la puerta de enlace?  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What if I block outbound connections? What do I need to open?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> See the <bpt id="p2">[</bpt>list of ports<ept id="p2">](powerbi-gateway-onprem.md#ports)</ept> and hosts that the gateway uses.
+            **Respuesta:** Eche un vistazo a la sección de requisitos de los principales [artículo de puerta de enlace](powerbi-gateway-onprem.md).
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Does the gateway have to be installed on the same machine as the data source?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. The gateway will connect to the data source using the connection information that was provided. Think of the gateway as a client application in this sense. It will just need to be able to connect to the server name that was provided.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What is the latency for running queries to a data source from the gateway? What is the best architecture?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> It is recommended to have the gateway as close to the data source as possible to avoid network latency. If you can install the gateway on the actual data source, it will minimize the latency introduced. Consider the data centers as well. For example, if your service is making use of the West US data center, and you have SQL Server hosted in an Azure VM, you will want to have the Azure VM in West US as well. This will minimize latency and avoid egress charges on the Azure VM.
+            **Pregunta:** qué orígenes de datos son compatibles con la puerta de enlace?  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Are there any requirements for network bandwidth?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> It is recommended to have good throughput for your network connection. Every environment is different and this is also dependent on the amount of data being sent. Using ExpressRoute could help to guarantee a level of throughput between on-premises and the Azure data centers.
+            **Respuesta:** vea la tabla de orígenes de datos en la ventana principal [artículo de puerta de enlace](powerbi-gateway-onprem.md).
 
-You can use the 3rd party <bpt id="p1">[</bpt>Azure Speed Test app<ept id="p1">](http://azurespeedtest.azurewebsites.net/)</ept> to help gauge what your throughput is. 
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can the gateway Windows service run with an Azure Active Directory account?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> No. The Windows service needs to have a valid Windows account. By default it will run with the Service SID, <bpt id="p1">*</bpt>NT SERVICE\PBIEgwService<ept id="p1">*</ept>.
+            **Pregunta:** es necesario una puerta de enlace para los orígenes de datos de nube como base de datos de SQL Azure?  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> How are results sent back to the cloud?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> This is done by way of the Azure Service Bus. For more information, see <bpt id="p1">[</bpt>how it works<ept id="p1">](powerbi-gateway-onprem.md#how-the-gateway-works)</ept>.
+            **Respuesta:** n! El servicio podrá conectarse a ese origen de datos sin una puerta de enlace.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Where are my credentials stored?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> The credentials you enter for a data source are stored encrypted in the gateway cloud service. The credentials are decrypted at the gateway on-premises.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Can I place the gateway in a perimeter network (also known as DMZ, demilitarized zone, and screened subnet)?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> The gateway requires connectivity to the data source. If the data source is not accessable in your perimeter network, the gateway may not be able to connect to it. For example, your SQL Server may not be in your perimeter network. And, you cannot connect to your SQL Server from the perimeter network. If you placed the gateway in your perimeter network, it would not be able to reach the SQL Server.
+            **Pregunta:** hay cualquier conexión entrante a la puerta de enlace de la nube?  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Is it possible to force the gateway to use HTTPS traffic with Azure Service Bus instead of TCP?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes. Although, this will greatly reduce performance. You will want to modify the <bpt id="p1">*</bpt>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config<ept id="p1">*</ept> file. You will want to change the value from <ph id="ph1">`AutoDetect`</ph> to <ph id="ph2">`Https`</ph>. This file is located, by default, at <bpt id="p1">*</bpt>C:\Program Files\On-premises data gateway<ept id="p1">*</ept>.
+            **Respuesta:** no. La puerta de enlace usa conexiones de salida al Bus de servicio de Azure.
+
+
+            **Pregunta:** ¿Qué ocurre si bloquear conexiones salientes? ¿Qué es necesario abrir?  
+
+            **Respuesta:** consulte la [lista de puertos](powerbi-gateway-onprem.md#ports) y los hosts que utiliza la puerta de enlace.
+
+
+            **Pregunta:** la puerta de enlace debe estar instalados en el mismo equipo que el origen de datos?  
+
+            **Respuesta:** no. Se conectará la puerta de enlace al origen de datos con la información de conexión que se proporcionó. Considere la puerta de enlace como una aplicación de cliente en este sentido. Solo tendrá que ser capaz de conectar con el nombre del servidor que se proporcionó.
+
+
+            **Pregunta:** ¿Qué es la latencia para ejecutar consultas para un origen de datos de la puerta de enlace? ¿Cuál es la mejor arquitectura?  
+
+            **Respuesta:** se recomienda que la puerta de enlace como cerca del origen de datos como sea posible para evitar la latencia de red. Si se puede instalar la puerta de enlace en el origen de datos real, minimizará la latencia que presenta. Considere la posibilidad de centros de datos. Por ejemplo, si el servicio usa del Oeste NOS centro de datos y tener SQL Server hospedado en una máquina Virtual de Azure, deseará tener también de la máquina Virtual de Azure en el oeste de Estados Unidos. Esto minimizará la latencia y evitar los cargos de salida en la máquina Virtual de Azure.
+
+
+            **Pregunta:** ¿existen requisitos de ancho de banda de red?  
+
+            **Respuesta:** se recomienda tener un buen rendimiento para la conexión de red. Cada entorno es diferente y también esto depende de la cantidad de datos que se envían. Usar ExpressRoute puede ayudar a garantizar un nivel de rendimiento entre local y los centros de datos de Azure.
+
+Puede utilizar la parte 3ª [aplicación de prueba de velocidad de Azure](http://azurespeedtest.azurewebsites.net/) para evaluar qué es el rendimiento. 
+
+
+            **Pregunta:** puede ejecutar la puerta de enlace de servicio de Windows con una cuenta de Azure Active Directory?  
+
+            **Respuesta:** no. El servicio de Windows debe tener una cuenta de Windows válida. De forma predeterminada, se ejecutará con el SID de servicio *SERVICE\PBIEgwService NT*.
+
+
+            **Pregunta:** cómo se envían resultados a la nube?  
+
+            **Respuesta:** Esto se consigue mediante el Bus de servicio de Azure. Para obtener más información, vea [cómo funciona](powerbi-gateway-onprem.md#how-the-gateway-works).
+
+
+            **Pregunta:** donde se almacenan las credenciales?  
+
+            **Respuesta:** las credenciales que especifique para un origen de datos se almacenan cifradas en el servicio de nube de puerta de enlace. Las credenciales se descifran en la puerta de enlace local.
+
+
+            **Pregunta:** puedo colocar la puerta de enlace en una red perimetral (también conocida como DMZ, zona desmilitarizada y subred filtrada)?  
+
+            **Respuesta:** la puerta de enlace requiere conectividad con el origen de datos. Si el origen de datos no es accesible en la red perimetral, es posible que la puerta de enlace no pueda conectarse a ella. Por ejemplo, SQL Server no estén en la red perimetral. Y no se puede conectar a SQL Server desde la red perimetral. Si coloca la puerta de enlace de la red perimetral, no sería capaz de ponerse en contacto con el servidor SQL Server.
+
+
+            **Pregunta:** es posible forzar la puerta de enlace para usar tráfico HTTPS con el Bus de servicio de Azure en lugar de TCP?  
+
+            **Respuesta:** Sí. Aunque esto reducirá en gran medida el rendimiento. Va a modificar el *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* archivo. Desea cambiar el valor de `AutoDetect` a `Https`. Este archivo se encuentra, de forma predeterminada, en *puerta de enlace de datos local de programa\Archivos C:\Program*.
 
 ```
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
@@ -50,23 +78,33 @@ You can use the 3rd party <bpt id="p1">[</bpt>Azure Speed Test app<ept id="p1">]
 </setting>
 ```
 
-## High Availability/Disaster Recovery
+## Alta disponibilidad/recuperación ante desastres
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Are there any plans for enabling high availability scenarios with the gateway?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> Yes. This is on the roadmap, but we don’t have a timeline yet.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What options are available for disaster recovery?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> You can use the recovery key to restore or move a gateway. When you install the gateway, supply the recovery key.
+            **Pregunta:** ¿existen planes para habilitar escenarios de alta disponibilidad con la puerta de enlace?  
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What is the benefit of the recovery key?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> It provides a way to migrate or recover your gateway settings. This is also used for disaster recovery.
+            **Respuesta:** Sí. Se trata de la guía, pero aún no tenemos una escala de tiempo.
+
+
+            **Pregunta:** qué opciones están disponibles para recuperación ante desastres?  
+
+            **Respuesta:** puede usar la clave de recuperación para restaurar o mover una puerta de enlace. Al instalar la puerta de enlace, proporcione la clave de recuperación.
+
+
+            **Pregunta:** Cuál es el beneficio de la clave de recuperación?  
+
+            **Respuesta:** proporciona una manera de migrar o recuperar la configuración de puerta de enlace. También se utiliza para la recuperación ante desastres.
 
 ## Solucionar problemas
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> Where are the gateway logs located?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> See the tools section of the <bpt id="p2">[</bpt>troubleshooting article<ept id="p2">](powerbi-gateway-onprem-tshoot.md#tools)</ept>.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> How can I see what queries are being sent to the on-premises data source?  
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> You can enable query tracing.  This will include the queries being sent. Remember to change it back to the original value when done troubleshooting. Having query tracing enabled will cause the logs to be larger.
+            **Pregunta:** donde están ubicados los registros de puerta de enlace?  
 
-You can also look at tools your data source has for tracing queries. For example, for SQL Server and Analysis Services you can use Extended Events or SQL Profiler.
+            **Respuesta:** consulte la sección de herramientas de la [artículo de solución de problemas](powerbi-gateway-onprem-tshoot.md#tools).
+
+
+            **Pregunta:** ¿cómo se puede ver lo que las consultas que se envían al origen de datos local?  
+
+            **Respuesta:** puede habilitar el seguimiento de la consulta.  Esto incluye las consultas que se envían. No olvide cambiar el valor original cuando finalizado la solución de problemas. Tener habilitado el seguimiento de consulta hará que los registros sean mayores.
+
+También puede mirar herramientas que tiene su origen de datos para las consultas de seguimiento. Por ejemplo, para SQL Server y Analysis Services puede utilizar eventos extendidos o el analizador de SQL.

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Print a dashboard, print a dashbaord tile, print a report page"
-   description="Printing a dashboard, tile, or report page from Power BI."
+   pageTitle="Imprimir un panel, un icono del panel de impresión, imprimir una página de informe"
+   description="Imprimir un mosaico, un panel o una página del informe de Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,90 +21,92 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Printing from Power BI
+# Imprimir desde Power BI
 
-Print an entire dashboard, a dashboard tile, a report page, or a report visual from Power BI service. Reports can only be printed one page at a time -- you can't print the entire report at once.
+Imprimir un panel completo, un icono de panel, una página de informe o un informe visual desde el servicio Power BI. Los informes pueden sólo sean una página impresa en un tiempo, no se puede imprimir el informe completo a la vez.
 
->[AZURE.NOTE] Printing is only available in Power BI service and not Power BI Desktop.
+>[AZURE.NOTE] Imprimir sólo está disponible en el servicio Power BI y no Power BI Desktop.
 
-Watch Amanda print from her dashboard and report. Then follow the step-by-step instructions below the video to try it out yourself.
+Vea Amanda imprimir desde sus paneles e informes. A continuación, siga las instrucciones detalladas a continuación el vídeo para probarlo usted mismo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jtlLGRKBvXY" frameborder="0" allowfullscreen></iframe>
 
-## Print a dashboard
+## Imprimir un panel
 
-1. Open the dashboard that you'd like to print.
+1. Abrir el panel que desea imprimir.
 
-2. In the top right corner, select the ellipses (...) and choose <bpt id="p1">**</bpt>Print dashboard<ept id="p1">**</ept>.
+2. En la esquina superior derecha, seleccione el botón de puntos suspensivos (...) y elija **panel imprimir**.
 
     ![](media/powerbi-service-print/pbi_print_dash_ellipses.png)
 
-3. The Print window for your browser opens. Choose the settings and print destination, and select <bpt id="p1">**</bpt>Print<ept id="p1">**</ept>.
+3. Se abre la ventana de impresión del explorador. Elija la configuración y el destino de impresión y seleccione **Imprimir**.
 
-    > [AZURE.NOTE] The print dialog you see will depend on which browser you are using.
+    > [AZURE.NOTE] El cuadro de diálogo de impresión que consulte dependerán de qué explorador que esté utilizando.
 
     ![](media/powerbi-service-print/pbi_print_dash_new2.png)
 
 
-## Print a dashboard tile
+## Imprimir un mosaico de panel
 
-1. <bpt id="p1">[</bpt>Open the tile in Focus mode<ept id="p1">](powerbi-service-display-dash-in-focus-mode.md)</ept>.
+1. 
+            [Abra el mosaico en el modo de enfoque](powerbi-service-display-dash-in-focus-mode.md).
 
-2. Open the tile in <bpt id="p1">[</bpt>full screen mode<ept id="p1">](powerbi-service-display-tile-in-full-screen-mode.md)</ept>.
+2. Abra la ventana en [modo de pantalla completa](powerbi-service-display-tile-in-full-screen-mode.md).
 
-2. Hover over the tile to reveal the Options menu.
+2. Mantenga el mouse sobre el icono para mostrar el menú de opciones.
 
     ![](media/powerbi-service-print/menu-options-new.png)
 
-3. Select the Print icon <ph id="ph1"> ![](media/powerbi-service-print/print-icon.png)</ph>. Continue with step 3 above.
+3. Seleccione el icono Imprimir  ![](media/powerbi-service-print/print-icon.png). Continúe con el paso 3 anterior.
 
-## Print a report page
+## Imprimir una página de informe
 
-Reports can be printed one page at a time.
+Informes se pueden imprimir una página a la vez.
 
-1. Open the report in either Reading View or Editing View.
+1. Abra el informe en la vista de lectura o vista de edición.
 
-2. Select <bpt id="p1">**</bpt>File<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Print<ept id="p2">**</ept> to print the current report page.
+2. Seleccione **archivo** > **Imprimir** para imprimir la página actual del informe.
 
     ![](media/powerbi-service-print/pbi_print_report_file.png)
 
-2. The Print window for your browser opens. Choose the settings and print destination, and select <bpt id="p1">**</bpt>Print<ept id="p1">**</ept>.
+2. Se abre la ventana de impresión del explorador. Elija la configuración y el destino de impresión y seleccione **Imprimir**.
 
     ![](media/powerbi-service-print/pbi_print_report_new.png)
 
-  > [AZURE.NOTE] The print dialog you see will depend on which browser you are using.
+  > [AZURE.NOTE] El cuadro de diálogo de impresión que consulte dependerán de qué explorador que esté utilizando.
 
-## Print a report visual
+## Imprimir un informe de visual
 
-1. <bpt id="p1">[</bpt>Open the visual in Focus mode<ept id="p1">](powerbi-service-display-dash-in-focus-mode.md)</ept>.
+1. 
+            [Abra el objeto visual en modo de enfoque](powerbi-service-display-dash-in-focus-mode.md).
 
-2. Follow steps 2-3 under <bpt id="p1">*</bpt>Print a report page<ept id="p1">*</ept> above.
+2. Siga los pasos 2 y 3 en *Imprimir una página de informe* anteriormente.
 
 ##  Solucionar problemas
 
-*   Q: I cannot find the <bpt id="p1">**</bpt>Print<ept id="p1">**</ept> button.
-*   A: If you are using Power BI Desktop, printing is not supported.  Printing only works in Power BI service.
+*   P: ¿no se puede encontrar el **Imprimir** botón.
+*   R: si usa Power BI Desktop, no se puede imprimir.  Imprimir sólo funciona en el servicio Power BI.
 
 
-*   Q: I cannot print all the report pages at once.
-*   A: That is correct. Report pages can only be printed one page at a time.
+*   P: no puedo imprimir todas las páginas del informe a la vez.
+*   R: que es correcta. Páginas del informe sólo puede imprimir una página a la vez.
 
 
-*   Q: I cannot print to PDF.
-*   A: You will only see this option if you've already configured the PDF driver in your browser.    
+*   P: no puedo imprimir en PDF.
+*   R: solo verá esta opción si ya ha configurado el controlador de PDF en el explorador.    
 
 
-*   Q: What I see when I select <bpt id="p1">**</bpt>Print<ept id="p1">**</ept> doesn't match what you're showing me here.
-*   A: The Print screens vary by browser and software version.
+*   P: ¿Qué puedo ver al seleccionar **Imprimir** no coincide con lo que está mostrando me aquí.
+*   R: las pantallas de impresión varían según el explorador y versión del software.
 
 
-*   Q: My printout isn't scaled correctly.  My dashboard doesn't fit on the page. Other scaling and orientation questions.
-*   A: Things like scaling, margins, orientation, size are not controlled by Power BI. For help with issues like this, refer to the documentation for your specific browser.      
+*   P: mi copia impresa no escala correctamente.  Mi panel no cabe en la página. Otras preguntas de escala y la orientación.
+*   R: cosas como el escalado, los márgenes, orientación, tamaño no están controladas por Power BI. Para obtener ayuda con problemas como este, consulte la documentación del explorador específico.      
 
 ## Consulte también
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

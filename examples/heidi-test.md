@@ -1,12 +1,12 @@
 <properties 
-        pageTitle="page title" 
+        pageTitle="título de la página" 
         description="description" 
         services="powerbi" 
         documentationCenter="" 
         authors="HeidiSteen" />
 
-# page title
+# título de la página
 
-This is my second test
+Se trata de la segunda prueba
 
 sdfsdfsdf aa

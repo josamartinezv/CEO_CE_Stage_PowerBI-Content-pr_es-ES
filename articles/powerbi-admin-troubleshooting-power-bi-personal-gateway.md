@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Troubleshooting Power BI Gateway - Personal"
-   description="Troubleshooting Power BI Gateway - Personal"
+   pageTitle="Solución de problemas de puerta de enlace de Power BI - Personal"
+   description="Solución de problemas de puerta de enlace de Power BI - Personal"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -19,135 +19,154 @@
    ms.workload="powerbi"
    ms.date="09/06/2016"
    ms.author="asaxton"/>
-# Troubleshooting Power BI Gateway - Personal
+# Solución de problemas de puerta de enlace de Power BI - Personal
 
-The following goes through some common issues you may encounter when using the Power BI Gateway - Personal. 
+A continuación se pasa por algunos problemas comunes que puede producirse al usar la puerta de enlace de Power BI - Personal. 
 
-> [AZURE.NOTE] If you encounter an issue that is not listed below, you can ask for further assistance on the <bpt id="p1">[</bpt>community site<ept id="p1">](http://community.powerbi.com/)</ept>, or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerbi.microsoft.com/support/)</ept>.
+> [AZURE.NOTE] Si detecta un problema que no se enumera a continuación, puede pedir ayuda adicional en el [sitio de la Comunidad](http://community.powerbi.com/), o puede crear un [admite vale](https://powerbi.microsoft.com/support/).
 
-## Update to the latest version 
+## Actualice a la versión más reciente 
  
-A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway and see if you can reproduce the issue.
+Muchos problemas pueden surgir cuando la versión de la puerta de enlace no está actualizada.  Es una buena práctica general para asegurarse de que se encuentra en la versión más reciente.  Si no ha actualizado la puerta de enlace durante un mes o más, puede considerar la instalación de la versión más reciente de la puerta de enlace y vea si puede reproducir el problema.
 
 ## Instalación
 
-<bpt id="p1">**</bpt>Personal gateway is 64bit<ept id="p1">**</ept> - If your machine is 32bit, you will not be able to install the personal gateway. Your operating system needs to be 64bit. You will need to install a 64bit version of Windows, or install the personal gateway on a 64bit machine.
 
-<bpt id="p1">**</bpt>Personal gateway fails to install as a service even though you are a local administrator for the computer<ept id="p1">**</ept> - Installation can fail if the user is in the computer’s local Administrator group, but group policy does not allow that username to log on as a service.  At the moment, ensure the group policy allows a user to log on as a service. We’re working on a fix for this issue. [Obtener más información](https://technet.microsoft.com/library/cc739424.aspx)
+            **Puerta de enlace personal es de 64 bits** -Si su equipo es de 32 bits, no podrá instalar la puerta de enlace personal. El sistema operativo debe ser de 64 bits. Debe instalar una versión de 64 bits de Windows, o la puerta de enlace personal en un equipo de 64 bits.
 
-<bpt id="p1">**</bpt>Operation timed out<ept id="p1">**</ept> - This is common if the computer (physical machine or VM) on which you’re installing the personal gateway has a single core processor. Close any applications and turn off any non-essential processes and try installing again.
 
-<bpt id="p1">**</bpt>Data Management Gateway or Analysis Services Connector cannot be installed on the same computer as personal gateway<ept id="p1">**</ept> - If you already have an Analysis Services Connector or Data Management Gateway installed, you must first uninstall the Connector or the gateway and then try installing the personal gateway.
+            **No se puede instalar como un servicio aunque sea un administrador local para el equipo de puerta de enlace personal** -instalación puede fallar si el usuario está en el grupo de administradores locales del equipo, pero la directiva de grupo no permite ese nombre de usuario iniciar sesión como un servicio.  En este momento, asegúrese de que la directiva de grupo permite a un usuario iniciar sesión como un servicio. Estamos trabajando en una solución para este problema. [Obtener más información](https://technet.microsoft.com/library/cc739424.aspx)
 
- > [AZURE.NOTE] If you encounter an issue during installation, the setup logs could provide information to help you resolve the issue. See <bpt id="p1">[</bpt>Setup Logs<ept id="p1">](#SetupLogs)</ept> for more information.
+
+            **Operación agotó el tiempo de espera** -Esto es frecuente si el equipo (equipo físico o máquina Virtual) en el que va a instalar la puerta de enlace personal tiene un procesador de núcleo único. Cierre las aplicaciones y desactivar los procesos que no sean necesarios e intente instalar de nuevo.
+
+
+            **Data Management Gateway o el conector de Analysis Services no puede instalarse en el mismo equipo que la puerta de enlace personal** : si ya tiene un conector de Analysis Services o puerta de enlace de datos de administración instalado, debe desinstalar el conector o la puerta de enlace y, a continuación, intente instalar la puerta de enlace personal.
+
+ > [AZURE.NOTE] Si detecta un problema durante la instalación, los registros de instalación podrían proporcionar información para ayudarle a resolver el problema. Consulte [registros de instalación](#SetupLogs) para obtener más información.
  
- <bpt id="p1">**</bpt>Proxy configuration<ept id="p1">**</ept><ph id="ph1">
-</ph> You may encounter issues with configuring the personal gateway if your environment needs the use of a proxy. To learn more about how to configure proxy information, see <bpt id="p1">[</bpt>Configuring proxy settings for the Power BI Gateways<ept id="p1">](powerbi-gateway-proxy.md)</ept>
+ 
+            **Configuración de proxy**
+ se pueden producir problemas con la configuración de la puerta de enlace personal si su entorno necesita el uso de un servidor proxy. Para obtener más información acerca de cómo configurar la información de proxy, consulte [configuración de proxy para las puertas de enlace de Power BI](powerbi-gateway-proxy.md)
 
-## Schedule Refresh
+## Programación de actualización
 
-**Error: The credential stored in the cloud is missing.**
+**Error: La credencial almacenada en la nube es que faltan.**
 
-You could get this error in Settings for <ph id="ph1">\&lt;</ph>dataset<ph id="ph2">\&gt;</ph> if you have a scheduled refresh and then uninstalled and re-installed the personal gateway. When you uninstall a personal gateway, data source credentials for a dataset that has been configured for refresh are removed from the Power BI service.
+Puede obtener este error en la configuración de \<conjunto de datos\> Si una actualización programada y, a continuación, desinstalar y volver a instalar la puerta de enlace personal. Cuando se desinstala una puerta de enlace personal, se quitan las credenciales de origen de datos para un conjunto de datos que se ha configurado para la actualización desde el servicio Power BI.
 
-<bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> In Power BI, go to the refresh settings for a dataset. In Manage Data Sources, for any data source with an error, click Edit credentials and sign in to the data source again.
 
-**Error: The credentials provided for the dataset are invalid. Please update the credentials through a refresh or in the Data Source Settings dialog to continue.**
+            **Solución:** en Power BI, vaya a la configuración de actualización de un conjunto de datos. En Administrar orígenes de datos de cualquier origen de datos con un error, haga clic en Editar credenciales y vuelva a iniciar la sesión en el origen de datos.
 
-<bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: If you get a credentials message, it could mean:
+**Error: Las credenciales proporcionadas para el conjunto de datos no son válidas. Actualice las credenciales a través de una actualización o en el cuadro de diálogo de configuración de origen de datos para continuar.**
 
--   Make sure usernames and passwords used to sign into data sources are up to date. In Power BI, go to refresh settings for the dataset. In Manage Data Sources, click Edit credentials to update the credentials for the data source.
 
--   Mashups between a cloud source and an on-premises source, in a single query, will fail to refresh in the personal gateway if one of the sources is using OAuth for authentication. An example of this is a mashup between CRM Online and a local SQL Server. This will fail because CRM Online requires OAuth.
+            **Solución**: Si recibe un mensaje de credenciales, esto podría significar que:
 
-    This is a known issue, and being looked at. To work around the problem, have a separate query for the cloud source and the on-premises source and use a merge or append query to combine them.
+-   Asegúrese de que los nombres de usuario y contraseñas que utiliza para iniciar sesión en orígenes de datos están actualizadas. En Power BI, vaya a actualizar la configuración del conjunto de datos. En Administrar orígenes de datos, haga clic en Editar credenciales para actualizar las credenciales del origen de datos.
 
-**Error: Unsupported data source.**
+-   Mashups entre un origen de la nube y un origen local, en una sola consulta, se producirá un error al actualizar en la puerta de enlace personal si uno de los orígenes utiliza OAuth para la autenticación. Un ejemplo de esto es un mashup entre CRM Online y un servidor SQL Server local. Esto generará un error porque CRM Online requiere OAuth.
 
-<bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> If you get an unsupported data source message in Schedule Refresh settings, it could mean: 
+    Se trata de un problema conocido y que se buscaba. Para solucionar el problema, tiene una consulta independiente para el origen de la nube y el origen local y use una combinación o anexar consulta para combinarlos.
 
--   The data source is not currently supported for refresh in Power BI. 
+**Error: El origen de datos no admitidos.**
 
--   The Excel workbook does not contain a data model, only worksheet data. Power BI currently only supports refresh if the uploaded Excel workbook contains a data model. When you import data using Power Query in Excel, be sure to choose the option to Load data to data model. This ensures data is imported into a data model. 
 
-**Error: [Unable to combine data] <ph id="ph1">&amp;lt;</ph>query part<ph id="ph2">&amp;gt;/&amp;lt;</ph>…<ph id="ph3">&amp;gt;/&amp;lt;</ph>…&gt; is accessing data sources that have privacy levels which cannot be used together. Please rebuild this data combination.**
+            **Solución:** Si recibe un mensaje de origen de datos no admitidos en la configuración de la programación de actualización, esto podría significar que: 
 
-<bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: This error is due to the privacy level restrictions and the types of data sources you are using. [Obtener más información](powerbi-refresh-enable-fast-combine.md)
+-   El origen de datos no se admite actualmente para la actualización en Power BI. 
 
-**Error: Data source error: We cannot convert the value "<ph id="ph1">\[</ph>Table<ph id="ph2">\]</ph>" to type Table.**
+-   El libro de Excel no contiene un modelo de datos, sólo los datos de hoja de cálculo. Power BI actualmente sólo admite la actualización si el libro de Excel cargado contiene un modelo de datos. Al importar datos mediante Power Query en Excel, asegúrese de elegir la opción para cargar el modelo de datos para datos. Esto garantiza que se importan datos en un modelo de datos. 
 
-<bpt id="p1">**</bpt>Solution<ept id="p1">**</ept>: This error is due to the privacy level restrictions and the types of data sources you are using. [Obtener más información](powerbi-refresh-enable-fast-combine.md)
+**Error: [No se puede combinar datos] &lt;parte de la consulta&gt;/&lt;...&gt;/&lt;…&gt; tiene acceso a orígenes de datos que tienen niveles de privacidad que no pueden utilizarse juntos. Vuelva a generar esta combinación de datos.**
 
-**Error: There is not enough space for this row.**
 
-This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
+            **Solución**: este error es debido a las restricciones de nivel de privacidad y los tipos de orígenes de datos que está utilizando. [Obtener más información](powerbi-refresh-enable-fast-combine.md)
+
+**Error: Error de origen de datos: no se puede convertir el valor "\[tabla\]" al tipo de tabla.**
+
+
+            **Solución**: este error es debido a las restricciones de nivel de privacidad y los tipos de orígenes de datos que está utilizando. [Obtener más información](powerbi-refresh-enable-fast-combine.md)
+
+**Error: No hay espacio suficiente para esta fila.**
+
+Esto ocurrirá si tiene una sola fila mayor que 4 MB de tamaño. Debe determinar cuál es la fila del origen de datos e intentar filtrar o reducir el tamaño de la fila.
 
 ## Orígenes de datos
 
-<bpt id="p1">**</bpt>Missing data provider<ept id="p1">**</ept> – The personal gateway is 64-bit only. It requires a 64-bit version of the data providers to be installed on the same computer where the personal gateway is installed. For example, if the data source in the dataset is Microsoft Access, you must install the 64-bit ACE provider on the same computer where you installed the personal gateway.  <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> if you have 32 bit Excel, you cannot install a 64-bit ACE provider on the same computer.
 
-<bpt id="p1">**</bpt>Windows authentication is not supported for Access database<ept id="p1">**</ept> - Power BI currently only supports anonymous for Access database. We are working on enabling Windows authentication for Access database.
+            **Proveedor de datos que faltan** : la puerta de enlace personal es 64 bits sólo. Requiere una versión de 64 bits de los proveedores de datos esté instalado en el mismo equipo donde se instaló la puerta de enlace personal. Por ejemplo, si el origen de datos del conjunto de datos es Microsoft Access, debe instalar al proveedor ACE de 64 bits en el mismo equipo donde instaló la puerta de enlace personal.  
+            **Nota:** Si tiene Excel de 32 bits, no puede instalar un proveedor ACE de 64 bits en el mismo equipo.
 
-<bpt id="p1">**</bpt>Sign in error when entering credentials for a datasource<ept id="p1">**</ept> - If you get an error similar to this when entering Windows credentials for a data source, you might still be on an older version of the personal gateway. <bpt id="p1">[</bpt>Install the latest version of Power BI Gateway - Personal<ept id="p1">](https://powerbi.microsoft.com/gateway/)</ept>.
+
+            **No se admite la autenticación de Windows para la base de datos de Access** -Power BI solo admite actualmente anónimo para la base de datos de Access. Estamos trabajando en habilitar la autenticación de Windows para la base de datos de Access.
+
+
+            **Error de identificación al especificar credenciales para un origen de datos** -Si obtiene un error similar al siguiente al escribir las credenciales de Windows para un origen de datos, es posible que en una versión anterior de la puerta de enlace personal. 
+            [Instale la versión más reciente de Power BI Gateway - Personal](https://powerbi.microsoft.com/gateway/).
 
   ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/PBI_PG_CredentialsError.jpg.png)
 
-<bpt id="p1">**</bpt>Error: Sign in error when selecting Windows authentication for a data source using ACE OLEDB<ept id="p1">**</ept> - If you get the following error when entering data source credentials for a data source using ACE OLEDB provider:
+
+            **Error: Error de identificación cuando se selecciona la autenticación de Windows para un origen de datos mediante OLE DB de ACE** : si se produce el siguiente error al introducir credenciales de origen de datos de un origen de datos mediante el proveedor OLE DB de ACE:
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/ACEOLEDBerror.png)
 
-Power BI does not currently support Windows authentication for a data source using ACE OLEDB provider.
+Power BI no admite la autenticación de Windows para un origen de datos mediante el proveedor OLE DB de ACE.
 
-<bpt id="p1">**</bpt>Solution:<ept id="p1">**</ept> To workaround this error, you can select Anonymous authentication. For legacy ACE OLEDB provider, Anonymous credentials are equivalent to Windows credentials.
 
-## Tile refresh
+            **Solución:** para solucionar este error, puede seleccionar la autenticación anónima. Proveedor OLEDB de ACE heredada, credenciales anónimas son equivalentes a las credenciales de Windows.
 
-If you are receiving an error with dashboard tiles refreshing, please refer to the following article.
+## Actualización de mosaico
 
-[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)
+Si recibe un error con los iconos de panel de actualización, consulte el siguiente artículo.
+
+[Solución de problemas de errores de mosaico](powerbi-refresh-troubleshooting-tile-errors.md)
 
 ## Herramientas para la solución de problemas
 
-### Refresh History  
-<bpt id="p1">**</bpt>Refresh History<ept id="p1">**</ept> can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the <bpt id="p1">**</bpt>Refresh History<ept id="p1">**</ept>.
+### Historial de actualización  
 
-1.  In the Power BI navigation pane, in <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept>, select a dataset <ph id="ph1">&amp;gt;</ph> Open Menu <ph id="ph2">&amp;gt;</ph> <bpt id="p2">**</bpt>Schedule Refresh<ept id="p2">**</ept>.
+            **Historial de actualización** puede ayudarle a ver qué errores se han producido, así como proporcionar datos útiles si necesita crear una solicitud de soporte técnico. Puede ver ambos programada, así como a petición, las actualizaciones. A continuación mostramos cómo puede tener acceso a la **historial de actualización**.
+
+1.  En el panel de navegación de Power BI en **conjuntos de datos**, seleccione un conjunto de datos &gt; menú Abrir &gt; **Programar actualización**.
     ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Scheduled-Refresh.png)
 
-2.     
+2.  En **configuración...** &gt; **Programar actualización**, seleccione **historial de actualización**.  
     ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Scheduled-Refresh-2.png)
   
     ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Refresh-History.png)
 
 ### Registros de eventos  
-There are several event logs that can provide information. The first two, <bpt id="p1">**</bpt>Data Management Gateway<ept id="p1">**</ept> and <bpt id="p2">**</bpt>PowerBIGateway<ept id="p2">**</ept>, are present if you are an admin on the machine.  If you are not an admin, and you are using the Personal Gateway, you will see the log entries within the <bpt id="p1">**</bpt>Application<ept id="p1">**</ept> log.
+Hay varios registros de eventos que pueden proporcionar información. Las dos primeras, **Data Management Gateway** y **PowerBIGateway**, están presentes si es administrador en el equipo.  Si no es un administrador y utiliza la puerta de enlace Personal, verá las entradas del registro dentro de la **aplicación** registro.
 
-The <bpt id="p1">**</bpt>Data Management Gateway<ept id="p1">**</ept> and <bpt id="p2">**</bpt>PowerBIGateway<ept id="p2">**</ept> logs are present under <bpt id="p3">**</bpt>Application and Services Logs<ept id="p3">**</ept>.
+El **Data Management Gateway** y **PowerBIGateway** están presentes en registros **registros de aplicaciones y servicios**.
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Event-Logs.png)
 
-### Fiddler Trace  
-<bpt id="p1">[</bpt>Fiddler<ept id="p1">](http://www.telerik.com/fiddler)</ept> is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
+### Seguimiento de Fiddler  
+
+            [Fiddler](http://www.telerik.com/fiddler) es una herramienta gratuita de Telerik que supervisa el tráfico HTTP.  Puede ver la parte posterior y hacia delante con Power BI de servicio desde el equipo cliente. Esto puede mostrar errores y otra información relacionada.
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Fiddler.png)
 
 <a name="SetupLogs">
-### Setup Logs
-If the <bpt id="p1">**</bpt>Personal Gateway<ept id="p1">**</ept>, fails to install, you will see a link to show the setup log. This could show you details about the failure. These are Windows Install logs, or also knows as MSI logs. They can be fairly complex and hard to read. Typically the resulting error will be at the bottom, but determining the cause of the error is not trivial. It could be a result of errors in a different log, or be a result of an error higher up in the log. 
+### Registros de instalación
+Si el **Personal Gateway**, no se puede instalar, verá un vínculo para mostrar el registro de instalación. Puede mostrar detalles del error. Estos registros son registros de instalación de Windows, o también se conoce como registros MSI. Pueden ser bastante compleja y difícil de leer. Normalmente será el error resultante en la parte inferior, pero no es fácil determinar la causa del error. Podría ser el resultado de errores en un registro diferente, o ser el resultado de un error más arriba en el registro. 
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Log.png)
 
-Alternatively, you can go to your <bpt id="p1">**</bpt>Temp folder<ept id="p1">**</ept> (%temp%) and look for files that start with <bpt id="p2">**</bpt>Power<ph id="ph1">\_</ph>BI<ph id="ph2">\_</ph><ept id="p2">**</ept>.
+Como alternativa, puede ir a su **carpeta Temp** (% temp %) y busque los archivos que comienzan con **Power\_BI\_**.
 
-> [AZURE.NOTE] Going to %temp% may take you to a subfolder of temp.  The <bpt id="p1">**</bpt>Power<ph id="ph1">\_</ph>BI<ph id="ph2">\_</ph><ept id="p1">**</ept> files will be in the root of the temp directory.  You may need to go up a level or two.
+> [AZURE.NOTE] Ir a % temp % puede tardar en una subcarpeta de temp.  El **Power\_BI\_** archivos estarán en la raíz del directorio temporal.  Debe subir un nivel o dos.
 
 ![](media/powerbi-admin-troubleshooting-power-bi-personal-gateway/Setup-Logs2.png)
 
 ## Véase también
 
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
-[Data Refresh](powerbi-refresh-data.md)  
-[Power BI Gateway - Personal](powerbi-personal-gateway.md)  
-[Troubleshooting tile errors](powerbi-refresh-troubleshooting-tile-errors.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Configuración de proxy para las puertas de enlace de Power BI](powerbi-gateway-proxy.md)  
+[Actualización de datos](powerbi-refresh-data.md)  
+[Puerta de enlace de Power BI - Personal](powerbi-personal-gateway.md)  
+[Solución de problemas de errores de mosaico](powerbi-refresh-troubleshooting-tile-errors.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Radial Gauge charts in Power BI"
-   description="Tutorial: Radial Gauge charts in Power BI"
+   pageTitle="Tutorial: Gráficos de medidor Radial en Power BI"
+   description="Tutorial: Gráficos de medidor Radial en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,117 +21,119 @@
    ms.date="08/22/2016"
    ms.author="mihart"/>
 
-# Tutorial: radial gauge charts in Power BI
+# Tutorial: gráficos de medidor radial en Power BI
 
-A radial gauge chart has a circular arc and displays a single value that measures progress toward a goal/KPI.  The goal, or target value, is represented by the line (needle). Progress toward that goal is represented by the shading.  And the value that represents that progress is shown in bold inside the arc. All possible values are spread evenly along the arc, from the minimum (left-most value) to the maximum (right-most value).
+Un gráfico de medidor radial tiene un arco circular y muestra un valor único que se mide el progreso hacia un objetivo o KPI.  El objetivo o el valor de destino, se representa mediante la línea (aguja). Progreso hacia ese objetivo se representa mediante el sombreado.  Y el valor que representa ese proceso se muestra en negrita dentro del arco. Todos los valores posibles están repartidos por igual a lo largo del arco, del mínimo (extremo izquierdo valor) al máximo (valor más a la derecha).
 
-In the example below, we are a car retailer, tracking our Sales team's average sales per month. Our goal is 140 and represented by the black needle.  The minimum possible average sales is 0 and we've set the maximum as 200.  The blue shading shows that we're currently averaging approximately 120 sales this month. Luckily, we still have another week to reach our goal.
+En el ejemplo siguiente, estamos un distribuidor de automóvil, seguimiento promedio de ventas de nuestro equipo de ventas por mes. Nuestro objetivo es 140 y representado por la aguja negra.  Las ventas promedio posibles mínimas es 0 y hemos configurado el máximo 200.  El sombreado azul muestra que nos estamos actualmente el promedio de aproximadamente 120 ventas este mes. Por suerte, todavía tenemos otra semana a lograr nuestro objetivo.
 
 ![](media/powerbi-service-tutorial-radial-gauge-charts/gauge_m.PNG)
 
-## When to use a radial gauge
+## Cuándo usar un medidor radial
 
-Radial gauges are a great choice to:
+Los medidores radiales son una excelente elección para:
 
--   show progress toward a goal.
+-   Mostrar el progreso hacia un objetivo.
 
--   represent a percentile measure, like a KPI.
+-   Representa una medida de percentil, como un KPI.
 
--   show the health of a single measure.
+-   Mostrar el estado de una sola medida.
 
--   display information that can be quickly scanned and understood.
+-   Muestra la información que puede examinar rápidamente y comprender.
 
-## Create a basic radial gauge
+## Crear un medidor radial básico
 
-These instructions use the Financial Sample. To follow along, <bpt id="p1">[</bpt>download the sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=521962)</ept> to your computer, sign in to Power BI and select <bpt id="p2">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Files <ph id="ph2">\&gt;</ph>  Local File &gt; Open<ept id="p2">**</ept>. 
+Estas instrucciones utilizan el ejemplo financieros. Para continuar, [Descargue el ejemplo](http://go.microsoft.com/fwlink/?LinkID=521962) en el equipo, inicie sesión Power BI y seleccione **obtener datos \> archivos \>  archivo Local > Abrir**. 
 
-Or watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
+O inspección le mostrará cómo crear elementos visuales de métrica únicos: medidores, tarjetas y KPI.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-### Step 1: Open the Financial Sample Excel file.
+### Paso 1: Abrir el archivo de Excel de ejemplo financieros.
 
-1.  Open the file in Power BI by selecting <bpt id="p1">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Files<ept id="p1">**</ept> and browsing to the location where you saved the file. Select <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>. The Financial Sample is added to your workspace as a dataset.
+1.  Abra el archivo en Power BI seleccionando **obtener datos \> archivos** y vaya a la ubicación donde guardó el archivo. Seleccione **importación**. El ejemplo financieros se agrega al área de trabajo como un conjunto de datos.
 
-2.  Select <bpt id="p1">**</bpt>Financial Sample<ept id="p1">**</ept> to open it in Explore mode.
+2.  Seleccione **ejemplo financieros** para abrirlo en modo de exploración.
 
-### Step 2: Create a gauge to track Gross Sales
+### Paso 2: Crear un medidor para realizar un seguimiento de ventas brutas
 
-1.  In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select <bpt id="p2">**</bpt>Gross Sales<ept id="p2">**</ept>.
+1.  En la **campos** panel, seleccione **ventas brutas**.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/GrossSalesValue_new.png)
 
-2.  Change the aggregation to <bpt id="p1">**</bpt>Average<ept id="p1">**</ept>.
+2.  Cambiar la agregación a **Media**.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/changeToAverage_new.png)
 
-3.  Select the gauge icon <ph id="ph1">![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeIcon_new.png)</ph> to convert the Column Chart to a gauge.
+3.  Seleccione el icono del medidor ![](media/powerbi-service-tutorial-radial-gauge-charts/gaugeIcon_new.png) para convertir el gráfico de columnas a un medidor.
 
-  By default, Power BI creates a Gauge chart where the current value (in this case, Average of Gross Sales) is assumed to be at the halfway point on the gauge. Since the Average Gross Sales is $182.76K, the start value (Minimum) is set to 0 and the end value (Maximum) is set to double the current value.
+  De forma predeterminada, Power BI crea un gráfico de medidor, donde el valor actual (en este caso, el promedio de ventas brutas) se supone que en el punto central en el medidor. Dado que el promedio de ventas brutas es $182. 76K, el valor inicial (mínimo) se establece en 0 y se establece el valor final (máximo) para duplicar el valor actual.
 
   ![](media/powerbi-service-tutorial-radial-gauge-charts/gauge_no_target.png)
 
-### Step 3: Set a target value
+### Paso 3: Establecer un valor de destino
 
-1. Drag <bpt id="p1">**</bpt>COGS<ept id="p1">**</ept> to the <bpt id="p2">**</bpt>Target value<ept id="p2">**</ept> well.
+1. Arrastre **COGS** a la **valor de destino** bien.
 
-2.  Change the aggregation to <bpt id="p1">**</bpt>Average<ept id="p1">**</ept>.
-  Power BI adds a needle to represent our target value of <bpt id="p1">**</bpt>$145.48K<ept id="p1">**</ept>. Notice that we've exceeded our target.
+2.  Cambiar la agregación a **Media**.
+  Power BI agrega una aguja para representar el valor de destino de **$145. 48K**. Tenga en cuenta que nos hemos superado nuestro objetivo.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/GaugeInProgress_new.png)
 
-    >[AZURE.NOTE] You can also manually enter a target value.  See "Use formatting options to manually set Minimum, Maximum, and Target values" below.
+    >[AZURE.NOTE] Puede escribir manualmente un valor de destino.  Consulte "Uso de opciones de formato al establecer manualmente los valores mínimo, máximo y destino" a continuación.
 
-### Step 4: Set a maximum value
+### Paso 4: Establecer un valor máximo
 
-In Step 2, Power BI used the Value field to automatically set minimum (start) and maximum (end).  But what if you want to set your own maximum value?  Let's say that instead of using double the current value as the maximum possible value, you want to set it to the highest Gross Sales number in your dataset? 
+En el paso 2, Power BI usa el campo de valor para establecer automáticamente (inicio) de mínimo y máximo (final).  Pero ¿qué ocurre si desea configurar su propio valor máximo?  ¿Supongamos que en lugar de duplicar el valor actual como el valor máximo posible, desea establecer para el número de ventas brutas más alto del conjunto de datos? 
 
-2.  Drag <bpt id="p1">**</bpt>Gross Sales<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> list to the <bpt id="p3">**</bpt>Maximum Value<ept id="p3">**</ept> well.
+2.  Arrastre **ventas brutas** desde el **campos** lista para la **valor máximo** bien.
 
-2.  Change the aggregation to <bpt id="p1">**</bpt>Maximum<ept id="p1">**</ept>.
+2.  Cambiar la agregación para **máximo**.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/SetMaximum_new.png)
 
-    The gauge is redrawn with a new end value, 1.21 million in gross sales.
+    Se vuelve a dibujar el medidor con un nuevo valor final, ventas 1.21 millones en bruto.
 
-### Step 5: Save your report
+### Paso 5: Guardar el informe
 
-6.  <bpt id="p1">[</bpt>Save the report<ept id="p1">](powerbi-service-save-a-report.md)</ept>.
+6.  
+            [Guardar el informe](powerbi-service-save-a-report.md).
 
-7. <bpt id="p1">[</bpt>Add the gauge chart as a dashboard tile<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>. 
+7. 
+            [Agregar el gráfico de medidor como un icono de panel](powerbi-service-dashboard-tiles.md). 
 
-## Use formatting options to manually set Minimum, Maximum, and Target values
+## Use las opciones de formato para establecer manualmente los valores mínimo, máximo y destino
 
-1. Remove <bpt id="p1">**</bpt>Max of Gross Sales<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Maximum value<ept id="p2">**</ept> well.
+1. Quitar **máximo de ventas brutas** desde el **valor máximo** bien.
 
-2.  Open the formatting pane by selecting the paintbrush icon.
+2.  Abra el panel de formato seleccionando el icono de pincel.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_format.png)
 
-2. Expand the <bpt id="p1">**</bpt>Gauge axis<ept id="p1">**</ept> and enter values for <bpt id="p2">**</bpt>Min<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Max<ept id="p3">**</ept>.
+2. Expanda el **eje medidor** y especifique los valores de **Min** y **Max**.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_gauge_axis.png)
 
-3. Remove the current target value by removing the checkmark next to <bpt id="p1">**</bpt>COGS<ept id="p1">**</ept>.
+3. Quitar el valor de destino actual quitando la marca de verificación junto a **COGS**.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_remove_target.png)
 
-4. When the <bpt id="p1">**</bpt>Target<ept id="p1">**</ept> field appears under <bpt id="p2">**</bpt>Gauge axis<ept id="p2">**</ept>, enter a value.
+4. Cuando el **destino** campo aparece bajo **eje medidor**, escriba un valor.
 
     ![](media/powerbi-service-tutorial-radial-gauge-charts/PBI_new_target.png)
 
-5. Optionally, continue formatting your gauge chart.
+5. Opcionalmente, continúe formato gráfico medidor.
 
 
 ## Consulte también
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[Tipos de visualización en Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
-[Add a visualization to a report](https://powerbi.uservoice.com/knowledgebase/articles/441777)
+[Agregar una visualización a un informe](https://powerbi.uservoice.com/knowledgebase/articles/441777)
 
-[Pin a visualization to a dashboard](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+[Ancla una visualización a un panel](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
 
-[ Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[ Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

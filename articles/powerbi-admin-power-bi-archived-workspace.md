@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Power BI Archived Workspace"
-   description="Power BI Archived Workspace after managing your Office 365 tenant"
+   pageTitle="Área de trabajo de archivado de Power BI"
+   description="Área de trabajo Power BI archivado después de administrar al inquilino de Office 365"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,34 +20,42 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Power BI Archived Workspace  
+# Área de trabajo de archivado de Power BI  
 
-With Power BI, anyone can sign up and start using the service in a few minutes.  Later, your organization's IT department may choose to take over managing Power BI for users in your organization.  If this takeover occurs, you will benefit from central management of users and permissions in your organization and you may be able to take advantage of streamlined sign-in using the same username and password you use for other services in your organization. 
+Con Power BI, cualquier usuario puede registrarse y empezar a usar el servicio en unos minutos.  Más adelante, de la organización departamento de TI puede optar por sacar sobre la administración de Power BI para los usuarios de su organización.  Si se produce esta adquisición, se beneficiará de la administración central de usuarios y permisos de la organización y es posible que pueda aprovechar optimizada iniciar sesión con el mismo nombre de usuario y contraseña que se usa para otros servicios de su organización. 
 
-Any content you created before your IT department started managing Power BI will be placed in a Power BI Archived Workspace, which is accessible from the left navigation of <bpt id="p1">[</bpt>Power BI<ept id="p1">](https://app.powerbi.com)</ept>.  You should start creating new Power BI content in My Workspace, which is secured and managed by your organization's IT department.  Your Archived Workspace will continue to exist, but there are restrictions on actions you can perform on content in your Archived Workspace.  To remove these restrictions, you will need to migrate the content from your Archived Workspace to your My Workspace, managed by your IT department.
+Cualquier contenido que se haya creado antes de que el departamento de TI a administrar Power BI se colocará en un área de archivado de Power BI, que es accesible desde el panel izquierdo de [Power BI](https://app.powerbi.com).  Debería empezar a crear el contenido nuevo Power BI en Mi área de trabajo que sea seguro y administrado por su organización departamento de TI.  El área de trabajo de archivado seguirán existiendo, pero existen restricciones sobre las acciones que puede realizar en el contenido del área de trabajo de archivado.  Para quitar estas restricciones, debe migrar el contenido del área de trabajo archivados a su mi área de trabajo administrados por el departamento de TI.
 
-## Restrictions in your Archived Workspace  
-No content will be deleted from your Archived Workspace.  You can continue to get data, create reports and dashboards, and refresh datasets.  Existing users you have shared content with will still be able to view the content in their Archived Workspace too.
+## Restricciones en el área de trabajo archivado  
+Se eliminará ningún contenido del área de trabajo archivados.  Puede continuar obtener datos, crear informes y paneles y actualizar conjuntos de datos.  Los usuarios existentes que comparta contenido podrá ver el contenido en su área de trabajo de archivado demasiado.
 
-However, there are some restrictions on content in your Archived Workspace:
+Sin embargo, hay algunas restricciones en el contenido del área de trabajo de archivado:
 
--   <bpt id="p1">**</bpt>OneDrive for Business.  <ept id="p1">**</ept> You will no longer be able to get data or refresh from OneDrive for Business for datasets in your Archived Workspace.  If you try to connect to this source, you will receive a warning.
+-   
+            **OneDrive para la empresa.  ** Ya no podrá obtener datos o actualizar de OneDrive para la empresa para conjuntos de datos en el área de trabajo de archivado.  Si intenta conectarse a este origen, recibirá una advertencia.
 
--   <bpt id="p1">**</bpt>Sharing dashboards.  <ept id="p1">**</ept> You can't share dashboards with other users from your Archived Workspace.  Any users that already have access will continue to be able to view shared dashboards by accessing their Archived Workspace.
+-   
+            **Compartir paneles.  ** No puede compartir paneles con otros usuarios de su área de trabajo de archivado.  Los usuarios que ya tienen acceso seguirá poder ver los paneles compartidos mediante el acceso a su área de trabajo de archivado.
 
--   <bpt id="p1">**</bpt>Creating groups.  <ept id="p1">**</ept> You can't create groups in your Archived Workspace.
+-   
+            **Creación de grupos.  ** No se puede crear grupos en el área de trabajo de archivado.
 
--   <bpt id="p1">**</bpt>Access on Power BI mobile apps.  <ept id="p1">**</ept><ph id="ph1">﻿</ph>While you can still view content on the web in your Archived Workspace, this content will no longer appear in the Power BI mobile apps.
+-   
+            **Acceso en aplicaciones móviles de Power BI.  **﻿Aunque todavía puede ver el contenido en la web en el área de trabajo de archivado, este contenido ya no aparecerá en las aplicaciones móviles de Power BI.
 
-## Migrating Content in your Archived Workspace  
-To continue to use Power BI, you should create new content in your My Workspace, managed by your IT department.   You should also plan to migrate any content in your Archived Workspace to your My Workspace.  How you migrate content depends on the kind of content:
+## Migración de contenido en el área de trabajo archivado  
+Para seguir usando Power BI, debe crear nuevo contenido en el área de trabajo Mi administrado por el departamento de TI.   También debe planear migrar contenido en el área de trabajo de archivado a mi área de trabajo.  Cómo migrar contenido depende del tipo de contenido:
 
--   <bpt id="p1">**</bpt>Excel or Power BI Desktop ﻿Datasets.  <ept id="p1">**</ept> Migrate these datasets by switching from your Archived Workspace to My Workspace and re-uploading the Excel or Power BI Desktop file by clicking the "My Data" button.  If you set up scheduled refresh, you will need to reconfigure those settings for the new dataset in My Workspace.
+-   
+            **Excel o Power BI Desktop conjuntos de datos.  ** Migrar estos conjuntos de datos cambiando el área de trabajo de archivado a mi área de trabajo y volver a cargar el archivo de Excel o Power BI Desktop haciendo clic en el botón "Mis datos".  Si establece la actualización programada, debe volver a configurar los valores del conjunto de datos nuevo en Mi área de trabajo.
 
--   <bpt id="p1">**</bpt>Other Datasets.  <ept id="p1">**</ept> Switch to My Workspace and then click the Get Data button to reconnect to any other datasets you created in your Archived Workspace.  You may need to re-enter security or connection information.
+-   
+            **Otros conjuntos de datos.  ** Cambie a mi área de trabajo y, a continuación, haga clic en el botón obtener datos para volver a conectar a los otros conjuntos de datos que creó en el área de trabajo de archivado.  Debe volver a escribir la información de conexión o de seguridad.
 
--   <bpt id="p1">**</bpt>Reports.  <ept id="p1">**</ept> Reports that were contained in Excel or Power BI Desktop files or reports installed as part of content packs will be automatically recreated once you re-upload the corresponding Excel or Power BI Desktop file or reconnect to the content pack.  If you created your own reports through the Power BI service, you will need to recreate those reports in your My Workspace.
+-   
+            **Informes.  ** Informes que se incluían en los archivos de Excel o Power BI Desktop o informes que se instalan como parte de los paquetes de contenido se volverá automáticamente una vez que vuelva a cargar el archivo de Excel o Power BI Desktop correspondiente o volver a conectar con el paquete de contenido.  Si crea sus propios informes a través del servicio Power BI, debe volver a crear los informes de Mi área de trabajo.
 
--   <bpt id="p1">**</bpt>Dashboards.  <ept id="p1">**</ept> Dashboards installed as part of content packs will be automatically recreated when you reconnect to the content pack in My Workspace.  If you created your own dashboards through the Power BI service, you will need to recreate those dashboards in your My Workspace.
+-   
+            **Paneles.  ** Los paneles que se instala como parte de los paquetes de contenido se volverá automáticamente al conectarse de nuevo para el paquete de contenido en Mi área de trabajo.  Si crea sus propios paneles a través del servicio Power BI, debe volver a crear esos paneles en Mi área de trabajo.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)  

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Build Content Packs"
-   description="Publish a content pack with a bundle of pre-designed dashboards, reports, and datasets"
+   pageTitle="Crear paquetes de contenido"
+   description="Publicar un paquete de contenido con un conjunto de paneles prediseñados, informes y conjuntos de datos"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,30 +23,30 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create a content pack in Power BI
+# Crear un paquete de contenido de Power BI
 
-In this lesson, we create a <bpt id="p1">*</bpt>content pack<ept id="p1">*</ept> with existing artifacts we already have in Power BI, and then share those with colleagues.
+En esta lección, creamos un *pack content* con artefactos existentes ya tiene en Power BI y, a continuación, compartir con compañeros de trabajo.
 
-In <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept> I have a dashboard, the report underneath, and the dataset. I want to share them as a package with people in my organization, so they can reuse them.
+En **Mi área de trabajo** tengo un panel, el informe debajo y el conjunto de datos. Quiero compartirlos como un paquete con personas de mi organización, por lo que pueden volver a usarlos.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02myworkspacenohilite.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02myworkspacenohilite.png)
 
-When I select the <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> icon (the gear in the top-right of the service), I can see how much storage I've used, and I can create a content pack.
+Cuando se selecciona el **configuración** icono (el engranaje en la parte superior derecha del servicio), puedo ver cuánto almacenamiento he usado y puedo crear un paquete de contenido.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02options.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02options.png)
 
-In the dialog that appears, I can choose whether to distribute it to specific people or groups, and also give it a title. It's also a good idea to provide a detailed description in the <bpt id="p1">**</bpt>Description<ept id="p1">**</ept> box, to people browsing for a content pack to know what it contains or what it provides.
+En el cuadro de diálogo que aparece, puedo elegir si desea distribuir a usuarios específicos o grupos y también asígnele un título. También es una buena idea proporcionar una descripción detallada en el **descripción** cuadro para buscar un paquete de contenido de personas saber lo que contiene o lo que proporciona.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02create_contpktop.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02create_contpktop.png)
 
-On the bottom of the dialog, I have an opportunity to upload an image for the content pack, and then the most important step: I select the dashboard I want to include in the content pack, and when I do so, Power BI automatically selects the report and dataset that are used in the dashboard. I cannot unselect the report or dataset, because the dashboard I want to include in the content pack requires them.
+En la parte inferior del cuadro de diálogo, tengo una oportunidad para cargar una imagen para el paquete de contenido y, a continuación, en el paso más importante: seleccionar el panel desea incluir en el paquete de contenido y, al hacerlo, Power BI selecciona automáticamente el informe y el conjunto de datos que se utilizan en el panel. No se puede anular la selección del informe o conjunto de datos, porque requiere el panel que desea incluir en el paquete de contenido.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02create_contpk2ndhalf.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02create_contpk2ndhalf.png)
 
-I could also select other dashboards, reports, and datasets, but I won't now.
+También podría seleccionar otros paneles, informes y conjuntos de datos, pero no lo haré ahora.
 
-When I publish, the content pack is added to the organization's content gallery.
+Al publicar, el paquete de contenido se agrega a la Galería de contenido de la organización.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02contpksuccess.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-2-create-content-packs/pbi_learn06_02contpksuccess.png)
 
-On to the next lesson!
+¡En la siguiente lección!

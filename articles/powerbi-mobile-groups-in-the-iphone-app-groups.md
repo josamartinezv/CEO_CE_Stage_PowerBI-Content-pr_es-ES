@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Groups in the iPhone app"
-   description="Power BI groups are built on Office 365 groups. Read about viewing and interacting with group dashboards in the Power BI iOS mobile app for the iPhone."
+   pageTitle="Grupos en la aplicación de iPhone"
+   description="Grupos de Power BI se basan en grupos de Office 365. Lea acerca de cómo ver e interactuar con los paneles del grupo en la aplicación móvil iOS de Power BI para el iPhone."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,30 +20,31 @@
    ms.date="10/03/2016"
    ms.author="maggies"/>
 
-# Groups in the iPhone app (Power BI for iOS)  
+# Grupos en la aplicación de iPhone (Power BI para iOS)  
 
-Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about <bpt id="p1">[</bpt>groups in Office 365<ept id="p1">](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)</ept>. Groups are available with the paid Power BI experience. 
+Grupos de Power BI proporcionan una experiencia de colaboración eficaces basada en grupos de Office 365. Obtenga más información sobre [grupos en Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Grupos están disponibles con la experiencia de Power BI de pago. 
 
-You <bpt id="p1">[</bpt>create a group in the Power BI service<ept id="p1">](powerbi-service-create-a-group-in-power-bi.md)</ept>. Then you see and interact with group dashboards in the Microsoft <bpt id="p1">[</bpt>Power BI iOS app for the iPhone<ept id="p1">](powerbi-mobile-ipad-app-get-started.md)</ept>. 
+Se [crear un grupo en el servicio Power BI](powerbi-service-create-a-group-in-power-bi.md). A continuación, puede ver e interactuar con paneles de grupo en Microsoft [aplicación de iOS de Power BI para el iPhone](powerbi-mobile-ipad-app-get-started.md). 
 
-Power BI sends a notification to your iPhone whenever someone adds a new dashboard to any group you belong to. 
+Power BI envía una notificación a su iPhone cuando alguien agrega un nuevo panel a cualquier grupo al que pertenece. 
 
-## Interact with Power BI groups  
-1.  Open the Power BI for iOS app for the iPhone. 
+## Interactuar con los grupos de Power BI  
+1.  Abra la aplicación Power BI para iOS para el iPhone. 
 
-    Need to <bpt id="p1">[</bpt>download and install the iOS app for the iPhone<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> first?
+    ¿Necesita [descargar e instalar la aplicación de iOS para el iPhone](http://go.microsoft.com/fwlink/?LinkId=522062) primera?
 
-2.  Under My Workspace, select a group. 
+2.  En Mi área de trabajo, seleccione un grupo. 
  
     ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/power-bi-iphone-group.png)
 
-3.  Your group page displays the dashboards that have been published to the group workspace.  
+3.  La página de grupo muestra los paneles que se han publicado en el área de trabajo del grupo.  
 
     ![](media/powerbi-mobile-groups-in-the-iphone-app-groups/power-bi-iphone-groups-dashboards.png)
 
-4.  <bpt id="p1">[</bpt>Select a dashboard<ept id="p1">](powerbi-mobile-dashboards-in-the-iphone-app.md)</ept> to open and view it.
+4.  
+            [Seleccione un panel](powerbi-mobile-dashboards-in-the-iphone-app.md) para abrirla y verla.
 
 ### Consulte también
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
-- [Get started with Power BI](powerbi-service-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)  
+- [Introducción a la aplicación de iPhone para Power BI](powerbi-mobile-iphone-app-get-started.md)
+- [Introducción a Power BI](powerbi-service-get-started.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)  

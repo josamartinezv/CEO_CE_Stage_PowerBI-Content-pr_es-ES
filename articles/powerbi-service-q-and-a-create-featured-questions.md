@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create featured questions for Power BI Q&amp;A"
-   description="Documentation on how to create featured questions for Power BI Q&amp;A"
+   pageTitle="Crear las preguntas destacadas para Power BI Q & A"
+   description="Documentación sobre cómo crear las preguntas destacadas para Power BI Q & A"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,41 +21,41 @@
    ms.date="08/23/2016"
    ms.author="mihart"/>
 
-# Create featured questions for Power BI Q&amp;A  
+# Crear las preguntas destacadas para Power BI Q & A  
 
-If you own a dataset, you can add your own featured questions to that dataset.  And Power BI Q&amp;A will show those questions to colleagues who use your dataset.  Featured questions give your colleagues ideas about the types of questions they can ask about the dataset. The featured questions you add are up to you -- add popular questions, questions that display interesting results, or questions that may be hard to phrase.
+Si dispone de un conjunto de datos, puede agregar sus propias preguntas destacadas a ese conjunto de datos.  Y Power BI Q & A mostrará esas preguntas a los colegas que utilizan el conjunto de datos.  Las preguntas destacadas dar a sus colegas ideas acerca de los tipos de preguntas que pueden hacer sobre el conjunto de datos. Son las preguntas destacadas que agrega hasta agregue las preguntas más frecuentes, preguntas que muestran los resultados interesantes o preguntas que pueden ser difíciles de frase;
 
-Watch Will add some featured questions to Power BI Q&amp;A and then use those featured questions to explore his dataset. Then follow the step-by-step instructions below the video to try it out yourself.
+Inspección agregará algunas preguntas destacadas a Power BI Q & A y, a continuación, usar esas preguntas destacadas para explorar su conjunto de datos. A continuación, siga las instrucciones detalladas a continuación el vídeo para probarlo usted mismo.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E1mIAyEXuF4" frameborder="0" allowfullscreen></iframe>
 
 
 
-This article uses the <bpt id="p1">[</bpt>Retail Analysis Sales sample<ept id="p1">](powerbi-sample-datasets.md)</ept>.
+Este artículo se usa el [ejemplo de análisis de venta minorista](powerbi-sample-datasets.md).
 
-1.  Select the Q&amp;A question box.   Notice that Q&amp;A is already being helpful by displaying a list of terms that appear in the dataset.
+1.  Seleccione las preguntas y un cuadro de pregunta.   Observe que preguntas y respuestas está siendo útil mostrando una lista de términos que aparecen en el conjunto de datos.
 
-2.  To add to this list, select the gear icon in the top right corner of Power BI.  
+2.  Para agregar a esta lista, seleccione el icono de engranaje en la esquina superior derecha de Power BI.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/PBI_gearIcon2.jpg)
 
-3.  Select <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Datasets<ept id="p2">**</ept> <ph id="ph2">&amp;gt;</ph> <bpt id="p3">**</bpt>Retail Analysis sample<ept id="p3">**</ept> <ph id="ph3">&amp;gt;</ph> <bpt id="p4">**</bpt>Featured Q&amp;A Questions<ept id="p4">**</ept>.  
+3.  Seleccione **configuración** &gt; **conjuntos de datos** &gt; **ejemplo de análisis de venta** &gt; **destacados de preguntas y respuestas A preguntas**.  
 
-4.  Select <bpt id="p1">**</bpt>Add a question<ept id="p1">**</ept>.
+4.  Seleccione **Agregar una pregunta**.
 
     ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-settings.png)
 
-5.  Type your question in the text box and select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.   Optionally, add another question by selecting <bpt id="p1">**</bpt>Add a question<ept id="p1">**</ept>.  
+5.  Escriba su pregunta en el cuadro de texto y seleccione **aplicar**.   Opcionalmente, agregue otra pregunta seleccionando **Agregar una pregunta**.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-type-featured-question.png)
 
-6.  Navigate back to the Power BI dashboard for Retail Analysis Sample, and place your cursor in the Q&amp;A question box.   
+6.  Vaya al panel de Power BI de ejemplo de análisis de venta directa y coloque el cursor en las preguntas y un cuadro de pregunta.   
     ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-featured-q.png)
 
-7.  The new featured question, <bpt id="p1">**</bpt>Sales by territory as a map<ept id="p1">**</ept>, is first in the list. Select it.  
+7.  El nuevo destacados de pregunta, **ventas por territorio como un mapa**, es el primero de la lista. Seleccione esta opción.  
 
-8.  The answer displays as a filled map visualization.  
+8.  La respuesta se muestra como una visualización de mapa de relleno.  
     ![](media/powerbi-service-q-and-a-create-featured-questions/power-bi-filled-map.png)
 
 ## Véase también
-[Q&amp;A in Power BI](powerbi-service-q-and-a.md)  
-[Tutorial: Introduction to Power BI Q&amp;A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Preguntas y respuestas en Power BI](powerbi-service-q-and-a.md)  
+[Tutorial: Introducción a Power BI Q & A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

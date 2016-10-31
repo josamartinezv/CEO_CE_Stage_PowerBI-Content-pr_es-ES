@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Reorder pages in a report in Power BI"
-   description="Reorder pages in a report in Power BI"
+   pageTitle="Reordenar las páginas de un informe en Power BI"
+   description="Reordenar las páginas de un informe en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,12 +20,12 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Reorder pages in a report in Power BI  
+# Reordenar las páginas de un informe en Power BI  
 
-In Power BI, drag the tab where you want it in the report and let go.  
+En Power BI, arrastre la ficha donde desee en el informe y suéltelo.  
 ![](media/powerbi-service-reorder-pages-in-a-report/reorder.gif)
 
 ## Véase también  
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

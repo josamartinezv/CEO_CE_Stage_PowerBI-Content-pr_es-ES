@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI and ExpressRoute"
-   description="Power BI and ExpressRoute"
+   pageTitle="ExpressRoute y power BI"
+   description="ExpressRoute y power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,92 +20,98 @@
    ms.date="10/10/2016"
    ms.author="davidi"/>
 
-# Power BI and ExpressRoute
+# ExpressRoute y power BI
 
-With <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ExpressRoute<ept id="p2">**</ept>, you can create a private network connection from your organization to Power BI (or using an ISP’s colocation facility), bypassing the Internet to better secure your sensitive Power BI data and connections.
+Con **Power BI** y **ExpressRoute**, puede crear una conexión de red privada de su organización a Power BI (o mediante instalación de coubicación de un ISP), omitiendo Internet para proteger mejor sus datos confidenciales de Power BI y conexiones.
 
-<bpt id="p1">**</bpt>ExpressRoute<ept id="p1">**</ept> is an Azure service that lets you create private connections between Azure datacenters (where Power BI resides) and your on-premises infrastructure, or create private connections between Azure datacenters and your colocation environment.
+
+            **ExpressRoute** es un servicio de Azure que le permite crear conexiones privadas entre los centros de datos de Azure (donde reside Power BI) y la infraestructura local o crear conexiones privadas entre los centros de datos de Azure y su entorno de colocación.
 
 
 ![](media/powerbi-admin-power-bi-expressroute/pbi_expressroute_1.png)
 
-You can get <bpt id="p1">[</bpt>more information about ExpressRoute<ept id="p1">](https://azure.microsoft.com/services/expressroute/)</ept> or learn <bpt id="p2">[</bpt>how to sign up<ept id="p2">](https://azure.microsoft.com/pricing/details/expressroute/)</ept>.
+Puede obtener [para obtener más información acerca de ExpressRoute](https://azure.microsoft.com/services/expressroute/) u obtenga [cómo suscribirse a](https://azure.microsoft.com/pricing/details/expressroute/).
 
 
-## Power BI ExpressRoute Exceptions
+## Excepciones de Power BI ExpressRoute
 
-Power BI is compliant with ExpressRoute, with a few exceptions where Power BI gets or sends data over the public Internet. These specific exceptions often include static data, such as browser configuration files that are downloaded from the nearest <bpt id="p1">**</bpt>Content Delivery Network (CDN)<ept id="p1">**</ept> node. There are some broad exceptions which apply to all of Power BI, and there are some service- or feature-specific exceptions, each of which are documented in the following sections.
+Power BI es compatible con ExpressRoute, con algunas excepciones en Power BI Obtiene o envía datos a través de la red Internet pública. Estas excepciones específicas suelen incluyan datos estáticos, como archivos de configuración de explorador que se descargan de más próximo **red de entrega de contenido (CDN)** nodo. Existen algunas excepciones generales que se aplican a todos de Power BI y existen algunas excepciones específico del servicio o de la función, cada uno de los cuales se documentan en las secciones siguientes.
 
-### Overall Exceptions to Power BI and ExpressRoute
+### Excepciones generales Power BI y ExpressRoute
 
-An exception to <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> and <bpt id="p2">**</bpt>ExpressRoute<ept id="p2">**</ept> means that the data being transmitted to or from Power BI goes over the public Internet, rather than being transmitted over the private ExpressRoute link.
+Una excepción **Power BI** y **ExpressRoute** significa que los datos que se transmiten desde Power BI o pasan a través de la red Internet pública, en lugar de transmitirse a través del vínculo ExpressRoute privado.
 
-The two overall exceptions to Power BI using ExpressRoute are:
+Las dos excepciones general para Power BI mediante ExpressRoute son:
 
--   Static files downloaded from the <bpt id="p1">**</bpt>Content Delivery Network (CDN)<ept id="p1">**</ept> and websites
+-   Archivos estáticos que se descarga desde el **red de entrega de contenido (CDN)** y sitios Web
 
--   <bpt id="p1">**</bpt>Telemetry<ept id="p1">**</ept> data sent over the public Internet
+-   
+            **Telemetría** datos enviados a través de la red Internet pública
 
-Power BI uses multiple <bpt id="p1">**</bpt>Content Delivery Networks (CDNs)<ept id="p1">**</ept> or web sites to efficiently distribute the necessary static content and files to users based on geographical locale through the public Internet. These static files include product downloads (such as <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, <bpt id="p2">**</bpt>On-premises Data Gateway<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Power BI Content Packs<ept id="p3">**</ept> from various independent service providers), browser configuration files that are used to initiate and establish any subsequent connections with Power BI, as well as the initial secure Power BI login page – the actual credentials are only sent over ExpressRoute.   
+Power BI usa varios **redes de entrega de contenido (CDN)** o sitios web para distribuir eficazmente los archivos a los usuarios según la región geográfica a través de la red Internet pública y es necesario contenido estático. Estos archivos estáticos incluyen descargas de productos (como **Power BI Desktop**, **puerta de enlace de datos local**, o **paquetes de contenido de Power BI** de distintos proveedores de servicios independientes), archivos de configuración de explorador que se usan para iniciar y establecer las conexiones posteriores con Power BI, así como la página Inicio de sesión seguro inicial de Power BI: sólo se envían las credenciales reales sobre ExpressRoute.   
 
-Certain <bpt id="p1">**</bpt>telemetry data<ept id="p1">**</ept> is also sent over the public Internet and over ExpressRoute. Telemetry data includes usage statistics and similar data, which is transmitted to services that are used to monitor usage and activity.
+Ciertos **datos de telemetría** también se envía a través de la red Internet pública y ExpressRoute. Los datos de telemetría incluyen las estadísticas de uso y datos similares, que se transmiten a los servicios que se utilizan para supervisar la actividad y el uso.
 
-### Power BI SaaS Application and ExpressRoute
+### ExpressRoute y aplicación de SaaS de BI de energía
 
-When a user initiates a connection to the Power BI service (powerbi.com or through Cortana), the Power BI Landing Page, the login page, and static files that prepare the browser to connect and interact with Power BI are retrieved from a CDN or websites, which connects over the public Internet.
+Cuando un usuario inicia una conexión con el servicio Power BI (powerbi.com o a través de Cortana), la página de inicio de Power BI, la página de inicio de sesión y los archivos estáticos que preparación el explorador para conectarse e interactuar con Power BI se recuperan de una CDN o sitios Web, que se conecta a través de la red Internet pública.
 
-Once the login is established, subsequent Power BI data interactions occur over ExpressRoute, with the exception of certain features and services that depend on public Internet data:
+Una vez establecido el inicio de sesión, se producen las interacciones de datos subsiguientes de Power BI con ExpressRoute, con la excepción de ciertas características y servicios que dependen de datos públicos de Internet:
 
--   <bpt id="p1">**</bpt>Map visuals<ept id="p1">**</ept> require connection and data transmission to the Bing Virtual Earth service or the Bing geocoding service, each of which is established over the public Internet.
+-   
+            **Asignar elementos visuales** requieren la transmisión de datos y la conexión al servicio Bing Virtual Earth o el servicio de coordenadas geográficas de Bing, cada uno de los cuales se establece a través de la red Internet pública.
 
--   Power BI integration with <bpt id="p1">**</bpt>Cortana<ept id="p1">**</ept> requires access to Bing over the public Internet.
+-   Con la integración de BI de energía **Cortana** requiere acceso a Bing a través de la Internet pública.
 
--   When <bpt id="p1">**</bpt>custom links<ept id="p1">**</ept> are added by a user, such as an image widget or a video, Power BI requests data based on the link provided by the user, which may or may not use ExpressRoute.
+-   Cuando **vínculos personalizados** se agregan a un usuario, como un widget de imagen o un vídeo, Power BI solicita datos basándose en el vínculo proporcionado por el usuario, que pueden o no se puede usar ExpressRoute.
 
--   Users can send <bpt id="p1">**</bpt>feedback to Power BI<ept id="p1">**</ept> in text (and optionally images) over the User Voice feedback mechanism, which uses the public Internet for transmission.
+-   Los usuarios pueden enviar **comentarios a Power BI** en texto (y, opcionalmente, imágenes) sobre el mecanismo de comentarios de voz del usuario, que utiliza la red Internet pública para la transmisión.
 
--   The <bpt id="p1">**</bpt>Bing News content provider<ept id="p1">**</ept> downloads content from Bing using the public Internet.
+-   El **proveedor de contenido de noticias de Bing** descarga contenido de Bing mediante la red Internet pública.
 
--   When connecting to <bpt id="p1">**</bpt>apps<ept id="p1">**</ept> (for example, content packs), users are often required to enter credentials and settings using pages provided by the SaaS provider. Such pages may or may not use ExpressRoute.
+-   Al conectarse a **aplicaciones** (por ejemplo, paquetes de contenido), los usuarios a menudo deben escribir las credenciales y configuraciones mediante páginas proporcionadas por el proveedor de SaaS. Estas páginas pueden o no pueden usar ExpressRoute.
 
 
 |Actividad del usuario |Destination|
 |---|---|
-|Landing page (prior to login)| `maxcdn.bootstrapcdn.com ; ajax.aspnetcdn.com ; netdna.bootstrapcdn.com ; cdn.optimizely.com; google-analytics.com ` |
+|Página de aterrizaje (antes del inicio de sesión)| `maxcdn.bootstrapcdn.com ; ajax.aspnetcdn.com ; netdna.bootstrapcdn.com ; cdn.optimizely.com; google-analytics.com ` |
 |Login | `*.mktoresp.com ; *.aadcdn.microsoftonline-p.com ; *.msecnd.com ; *.localytics.com ; ajax.aspnetcdn.com`  |
-|Dashboard, report, dataset management (includes maps and geocoding)| `*.localytics.com ; *.virtualearch.net ; platform.bing.com; powerbi.microsoft.com; c.microsoft.com; app.powerbi.com; *.powerbi.com; dc.services.visualstudio.com `  |
+|Panel, informes, administración de conjunto de datos (incluye mapas y codificación geográfica)| `*.localytics.com ; *.virtualearch.net ; platform.bing.com; powerbi.microsoft.com; c.microsoft.com; app.powerbi.com; *.powerbi.com; dc.services.visualstudio.com `  |
 |Support| `support.powerbi.com ; powerbi.uservoice.com ; go.microsoft.com `|
 
 
-### Power BI Desktop and ExpressRoute
+### Power BI Desktop y ExpressRoute
 
-Power BI Desktop is also ExpressRoute compliant, with a few exceptions that are described in the following list:
+Power BI Desktop también es compatible con algunas excepciones que se describen en la siguiente lista de ExpressRoute:
 
--   <bpt id="p1">**</bpt>Update notifications<ept id="p1">**</ept>, used to detect whether users have the most recent version of Power BI Desktop, go over the public Internet.
+-   
+            **Notificaciones de actualización**, se utiliza para detectar si los usuarios tienen la versión más reciente de Power BI Desktop, vaya a través de la Internet pública.
 
--   Certain <bpt id="p1">**</bpt>telemetry data<ept id="p1">**</ept> goes over the public Internet.
+-   Ciertos **datos de telemetría** supera la Internet pública.
 
--   <bpt id="p1">**</bpt>Map visuals<ept id="p1">**</ept> require connection and data transmission to the <bpt id="p2">**</bpt>Bing Virtual Earth<ept id="p2">**</ept> service or the <bpt id="p3">**</bpt>Bing geocoding<ept id="p3">**</ept> service, each of which is established over the public Internet.
+-   
+            **Asignar elementos visuales** requieren la transmisión de datos y la conexión a la **Bing Virtual Earth** servicio o la **coordenadas geográficas de Bing** servicio, cada uno de los cuales se establece a través de la red Internet pública.
 
--   <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> from several data sources such as <bpt id="p2">**</bpt>Web<ept id="p2">**</ept> or third party SaaS providers go over the public Internet.
+-   
+            **Obtener datos** de datos de varios orígenes como **Web** o proveedores de SaaS de terceros pasan por la Internet pública.
 
 
-### Power BI PaaS and ExpressRoute
+### Power BI PaaS y ExpressRoute
 
-Power BI offers APIs and other platform-based features that enable developers to create customized Power BI solutions and apps. The following services, in addition to telemetry and CDN data discussed earlier in this topic, are used when transmitting Power BI PaaS data over the public Internet:
+Power BI ofrece API y otras características de plataforma que permiten a los desarrolladores crear aplicaciones y soluciones personalizadas de Power BI. Los siguientes servicios, además de telemetría y datos de la red CDN mencionados anteriormente en este tema, se utilizan cuando se transmiten datos de Power BI PaaS sobre la Internet pública:
 
-|PaaS Activity |Additional destinations used |
+|Actividad de PaaS |Destinos adicionales que se utilizan |
 |---|---|
-|Public embed (telemetry)| `c1.microsoft.com` |
-|Custom visuals (CDN) | `*.azureedge.net`  |
+|Público incrustar telemetría)| `c1.microsoft.com` |
+|Elementos visuales personalizados (CDN) | `*.azureedge.net`  |
 
-Some <bpt id="p1">**</bpt>custom visuals<ept id="p1">**</ept> are created by third-parties, some are created by Microsoft. These may or may not use ExpressRoute.
+Algunos **elementos visuales personalizados** creadas por terceros, algunas son creadas por Microsoft. Pueden, o no se puede usar ExpressRoute.
 
-### Power BI Mobile and ExpressRoute
+### Power BI Mobile y ExpressRoute
 
-This document does not cover the use of Power BI Mobile apps.  
+Este documento no cubre el uso de aplicaciones móviles de Power BI.  
 
 
-### On-premises Data Gateway and ExpressRoute
+### Datos locales puerta de enlace y ExpressRoute
 
-When an <bpt id="p1">**</bpt>On-premises Data Gateway<ept id="p1">**</ept> is used with Power BI, transmissions are ExpressRoute compliant, with the exception of the user activities documented in the <bpt id="p2">**</bpt>Power BI SaaS Application and ExpressRoute<ept id="p2">**</ept> section found earlier in this topic.  
+Cuando un **puerta de enlace de datos local** se usa con Power BI, las transmisiones están conformes con la excepción de las actividades de usuario que se documentan en ExpressRoute el **aplicación SaaS de Power BI y ExpressRoute** sección aparecía anteriormente en este tema.  

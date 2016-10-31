@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Duplicate a report page in Power BI"
-   description="Copy and paste a report page in Power BI"
+   pageTitle="Duplicar una página del informe en Power BI"
+   description="Copiar y pegar una página del informe en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,23 +21,23 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Duplicate a report page in Power BI  
+# Duplicar una página del informe en Power BI  
 
-1.  In Power BI, open a report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept> and <bpt id="p2">[</bpt>create a visualization<ept id="p2">](powerbi-service-add-visualizations-to-a-report-i.md)</ept> if your report doesn't already have one. 
+1.  En Power BI, abrir un informe en [vista de edición](powerbi-service-go-from-reading-view-to-editing-view.md) y [crear una visualización](powerbi-service-add-visualizations-to-a-report-i.md) Si todavía no tiene el informe. 
 
-2.  From the top control bar, select the <bpt id="p1">**</bpt>Duplicate this page<ept id="p1">**</ept> icon.
+2.  En la barra de control superior, seleccione la **duplicar esta página** icono.
 
     ![](media/powerbi-service-copy-and-paste-a-report-page/PBI_duplicate_new.png)
 
-    Your new page is created and becomes the active page.
+    La nueva página se crea y se convierte en la página activa.
 
-3.  Optionally, <bpt id="p1">[</bpt>rename the report page<ept id="p1">](powerbi-service-rename-a-report-page.md)</ept>.
+3.  Opcionalmente, [cambiar el nombre de la página del informe](powerbi-service-rename-a-report-page.md).
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/UOKbxTXZrWw?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 ## Consulte también  
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>
+Más información sobre [visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

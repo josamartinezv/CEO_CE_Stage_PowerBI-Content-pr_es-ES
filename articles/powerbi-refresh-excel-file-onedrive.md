@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Refresh a dataset created from an Excel workbook - cloud"
-   description="Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online"
+   pageTitle="Actualizar un conjunto de datos creado a partir de un libro de Excel - nube"
+   description="Actualizar un conjunto de datos creado a partir de un libro de Excel en OneDrive o SharePoint Online"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,87 +20,91 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
 
-# Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online
+# Actualizar un conjunto de datos creado a partir de un libro de Excel en OneDrive o SharePoint Online
 
-You can import Excel workbooks that are stored on your local machine, or in cloud storage such as OneDrive for Business or SharePoint Online. We will look at the advantages of using cloud storage for your excel files. For more information on how to import Excel files into Power BI, see <bpt id="p1">[</bpt>Get data from Excel workbook files<ept id="p1">](powerbi-service-excel-workbook-files.md)</ept>.
+Puede importar libros de Excel que se almacenan en el equipo local o en el almacenamiento en nube como OneDrive para SharePoint Online o de negocio. Veremos las ventajas de utilizar el almacenamiento en la nube para los archivos de excel. Para obtener más información acerca de cómo importar archivos de Excel en Power BI, consulte [obtener datos de archivos de libro de Excel](powerbi-service-excel-workbook-files.md).
 
-## What are the advantages?  
-Importing files from OneDrive, or SharePoint Online, is a great way to make sure the work you’re doing in Excel stays in-sync with the Power BI service. Any data you’ve loaded into your file’s model is imported into the dataset and any reports you’ve created in the file are loaded into Reports in Power BI. If you make changes to your file on OneDrive, or SharePoint Online, like add new measures, change column names, or edit visualizations, once you save, those changes will be updated in Power BI too, usually within about an hour.
+## ¿Cuáles son las ventajas?  
+Importación de archivos de OneDrive o de SharePoint Online es una excelente manera de asegurarse de que el trabajo que esté realizando en Excel permanece en sincronización con el servicio Power BI. Los datos que ha cargado en el modelo de su archivo se importación en el conjunto de datos y los informes que ha creado en el archivo se cargan en informes de Power BI. Si realiza cambios en el archivo en OneDrive o SharePoint Online, como agregar nuevas medidas, cambiar los nombres de columna o editar visualizaciones, una vez guardada, esos cambios se actualizarán en Power BI demasiado, normalmente dentro de una hora aproximadamente.
 
-When you import an Excel workbook from your personal OneDrive, any data in the workbook, like tables in worksheets and/or data that is loaded into the Excel data model and the structure of the data model, are imported into a new dataset in Power BI. Any Power View visualizations are re-created in Reports. Power BI automatically connects to the workbook on OneDrive, or SharePoint Online, about every hour to check for updates. If the workbook has changed, Power BI will refresh the dataset and reports in the Power BI service.
+Cuando se importa un libro de Excel de su OneDrive personal, los datos del libro, como tablas de hojas de cálculo o datos que se cargan en el modelo de datos de Excel y la estructura del modelo de datos se importan en un nuevo conjunto de datos en Power BI. Las visualizaciones de Power View se vuelven a creadas en los informes. Power BI se conecta automáticamente al libro en OneDrive o SharePoint Online, sobre cada hora para comprobar si hay actualizaciones. Si ha cambiado el libro, Power BI actualizará el conjunto de datos e informes en el servicio Power BI.
 
-You can refresh on the dataset in the Power BI service. When you manually refresh, or schedule refresh, on the dataset, Power BI connects directly to the external data sources to query for updated data it then loads into the dataset. Refreshing a dataset from within Power BI does not refresh the data in the workbook on OneDrive, or SharePoint Online. 
+Puede actualizar el conjunto de datos en el servicio Power BI. Cuando se actualiza manualmente, o actualización programada, el conjunto de datos, Power BI se conecta directamente a los orígenes de datos externos para consultar los datos actualizados a continuación, se carga en el conjunto de datos. Actualizar un conjunto de datos de Power BI no actualiza los datos en el libro en OneDrive o SharePoint Online. 
 
-## What’s supported?  
-In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Power BI Desktop files imported from a local drive where Get Data/Query Editor is used to connect to and load data from any of the following data sources:  
+## ¿Qué es compatible?  
+En Power BI, actualizar ahora y programar la actualización se admite para conjuntos de datos creado a partir de archivos de Power BI Desktop importados desde una unidad local donde se utiliza el Editor de datos o consulta obtener para conectarse y cargar datos desde cualquiera de los siguientes orígenes de datos:  
 
-### Power BI Gateway - Personal
--   All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
--   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+### Puerta de enlace de Power BI - Personal
+-   Todos los orígenes de datos en línea que se muestra en el Editor de consultas y obtener datos en Power BI Desktop.
+-   Todos los orígenes de datos local que se muestra en el Editor de consultas y obtener datos en Power BI Desktop excepto archivo Hadoop (HDFS) y Microsoft Exchange.
 
 <!-- Refresh Data sources-->
 [AZURE.INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
-> [AZURE.NOTE] A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
+> [AZURE.NOTE] Una puerta de enlace debe estar instalado y en ejecución para Power BI para conectarse a orígenes de datos locales y actualizar el conjunto de datos.
 
-## OneDrive or OneDrive for Business. What’s the difference?  
-If you have both a personal OneDrive and OneDrive for Business, it’s recommended you keep any files you want to import into Power BI in OneDrive for Business. Here’s why: You likely use two different accounts to sign into them.
+## OneDrive o OneDrive para la empresa. ¿Cuál es la diferencia?  
+Si tiene un OneDrive personal y OneDrive para la empresa, se recomienda que mantener los archivos que desea importar en Power BI en OneDrive para la empresa. Esta es la razón: es probable que utiliza dos cuentas diferentes para iniciar sesión en ellos.
 
-Connecting to OneDrive for Business in Power BI is typically seamless because the same account you use to sign into Power BI with is often the same account used to sign into OneDrive for Business. But, with personal OneDrive, you likely sign in with a different <bpt id="p1">[</bpt>Microsoft account<ept id="p1">](http://www.microsoft.com/account/default.aspx)</ept>.
+Conectarse a OneDrive para la empresa en Power BI es normalmente transparente, ya que la misma cuenta de con que inicio de sesión en Power BI suele ser la misma cuenta utilizada para iniciar sesión en OneDrive para la empresa. Pero, con OneDrive personal, es probable que inicie sesión con otra [cuenta de Microsoft](http://www.microsoft.com/account/default.aspx).
 
-When you sign in with your Microsoft account, be sure to select Keep me signed in. Power BI can then synchronize any updates you make in the file in Power BI Desktop with datasets in Power BI  
+Cuando inicia sesión con tu cuenta de Microsoft, no olvide seleccionar mantener la sesión iniciada. Power BI, a continuación, puede sincronizar las actualizaciones que realice en el archivo de Power BI Desktop con conjuntos de datos en Power BI  
     ![](media/powerbi-refresh-desktop-file-onedrive/Refresh_SignIn_KeepMeSignedIn.png)
 
-If you make changes to your file on OneDrive that cannot be synchronized with the dataset or reports in Power BI, because your Microsoft account credentials might have changed, you’ll need to connect to and import your file again from your personal OneDrive.
+Si realiza cambios en el archivo en OneDrive que no se puede sincronizar con el conjunto de datos o informes de Power BI, porque pueden haber cambiado sus credenciales de cuenta de Microsoft, debe conectarse a y vuelva a importar el archivo desde su OneDrive personal.
 
 
-## Options for connecting to Excel file
-When you connect to an Excel workbook in OneDrive for Business, or SharePoint Online, you’ll have two options on how to get what’s in your workbook into Power BI.
+## Opciones para conectarse al archivo de Excel
+Cuando se conecta a un libro de Excel en OneDrive para la empresa o SharePoint Online, tendrá dos opciones sobre cómo hacer lo que está en el libro en Power BI.
 
-<bpt id="p1">[</bpt><bpt id="p2">**</bpt>Import Excel data into Power BI<ept id="p2">**</ept><ept id="p1">](powerbi-service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi)</ept> – When you import an Excel workbook from your OneDrive for Business, or SharePoint Online, it works as described above.
 
-<bpt id="p1">[</bpt><bpt id="p2">**</bpt>Connect, Manage, and View Excel in Power BI<ept id="p2">**</ept><ept id="p1">](powerbi-service-excel-workbook-files.md#one-excel-workbook-two-ways-to-use-it)</ept> – When using this option, you create a connection from Power BI right to your workbook on OneDrive for Business, or SharePoint Online.
+            [
+            **Importar datos de Excel en Power BI**](powerbi-service-excel-workbook-files.md#import-or-connect-to-an-excel-workbook-from-power-bi) : cuando se importa un libro de Excel desde su OneDrive para Business o SharePoint Online, funciona como se describió anteriormente.
 
-When you connect to an Excel workbook this way, a dataset is not created in Power BI. However, the workbook will appear in the Power BI service under Reports with an Excel icon next to the name. Unlike with Excel Online, when you connect to your workbook from Power BI, if your workbook has connections to external data sources that load data into the Excel data model, you can setup a refresh schedule.
 
-When you setup a refresh schedule this way, the only difference is refreshed data goes into the workbook’s data model on OneDrive, or SharePoint Online, rather than a dataset in Power BI.
+            [
+            **Conectar, administrar y ver Excel en Power BI**](powerbi-service-excel-workbook-files.md#one-excel-workbook-two-ways-to-use-it) : al utilizar esta opción, crear una conexión de Power BI derecha a su libro en OneDrive para Business o SharePoint Online.
 
-## How do I make sure data is loaded to the Excel data model?  
-When you use Power Query (Get &amp; Transform data in Excel 2016) to connect to a data source, you have several options where to load the data. To make sure you load data into the data model, you must select the <bpt id="p1">**</bpt>Add this data to the Data Model<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>Load To<ept id="p2">**</ept> dialog box.
+Cuando se conecta a un libro de Excel de esta manera, no se crea un conjunto de datos en Power BI. Sin embargo, el libro aparecerá en el servicio de Power BI con informes con un icono de Excel junto al nombre. A diferencia de con Excel Online cuando se conecta a su libro de Power BI, si el libro tiene conexiones a orígenes de datos externos que cargan datos en el modelo de datos de Excel, puede configurar una programación de actualización.
 
-> [AZURE.NOTE] The images here show Excel 2016.
+Al configurar una programación de actualización de este modo, la única diferencia se actualiza datos ingresan al modelo de datos del libro en OneDrive, o SharePoint Online, en lugar de un conjunto de datos en Power BI.
 
-In <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Load To…<ept id="p2">**</ept>  
+## ¿Cómo puedo asegurarme de que se cargan datos en el modelo de datos de Excel?  
+Cuando usa Power Query (Get y transformación de datos en Excel 2016) para conectarse a un origen de datos, tiene varias opciones donde desea cargar los datos. Para asegurarse de que se cargan datos en el modelo de datos, debe seleccionar la **agregar estos datos al modelo de datos** opción en la **cargar a** cuadro de diálogo.
+
+> [AZURE.NOTE] Las imágenes a continuación muestran Excel 2016.
+
+En **Navigator**, haga clic en **cargar...**  
     ![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_1.png)
 
-Or, If you click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> in Navigator, you’ll open the Query Editor. There you can click <bpt id="p1">**</bpt>Close &amp; Load To….<ept id="p1">**</ept>  
+O bien, si hace clic **modificar** en Navigator, se abrirá el Editor de consultas. Se puede hacer clic en **Cerrar y cargar...**  
     ![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_2.png)
 
-Then in <bpt id="p1">**</bpt>Load To<ept id="p1">**</ept>, make sure you select <bpt id="p2">**</bpt>Add this data to the Data Model<ept id="p2">**</ept>.  
+A continuación, en **cargar**, asegúrese de seleccionar **agregar estos datos al modelo de datos**.  
     ![](media/powerbi-refresh-excel-file-onedrive/Refresh_LoadToDM_3.png)
 
-### What if I use Get External Data in Power Pivot?  
-No problem. Whenever you use Power Pivot to connect to and query data from an on-premises or online data source, the data is automatically loaded to the data model.
+### ¿Qué ocurre si utilizo obtener datos externos en Power Pivot?  
+No hay problema. Siempre que use Power Pivot para conectarse y consultar datos de una implementación local o el origen de datos en línea, los datos se cargan automáticamente al modelo de datos.
 
-## How do I schedule refresh?  
-When you setup a refresh schedule, Power BI will connect directly to the data sources using connection information and credentials in the dataset to query for updated data, then load the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
+## ¿Cómo programar la actualización?  
+Al configurar una programación de actualización, Power BI conectarse directamente a los orígenes de datos con información de conexión y credenciales en el conjunto de datos de consulta para obtener datos actualizados y cargar los datos actualizados en el conjunto de datos. También se actualizan las visualizaciones en informes y paneles basados en ese conjunto de datos en el servicio Power BI.
 
-For details on how to setup schedule refresh, see <bpt id="p1">[</bpt>Configure Schedule Refresh<ept id="p1">](powerbi-refresh-scheduled-refresh.md)</ept>.
+Para obtener más información acerca de cómo programar la actualización de instalación, consulte [Configurar actualización de programación](powerbi-refresh-scheduled-refresh.md).
 
-## When things go wrong  
-When things go wrong, it’s usually because Power BI can’t sign into data sources, or if the dataset connects to an on-premises data source, the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
+## Cuando existe algún problema  
+Cuando existe algún problema, suele ser porque Power BI no puede iniciar sesión en orígenes de datos, o si el conjunto de datos se conecta a un origen de datos local, la puerta de enlace está sin conexión. Asegúrese de que Power BI puede iniciar sesión en orígenes de datos. Si cambia una contraseña que se utiliza para iniciar sesión en un origen de datos o Power BI Obtiene la sesión de un origen de datos, asegúrese de intentar iniciar sesión en los orígenes de datos en las credenciales de origen de datos.
 
-Be sure to leave the <bpt id="p1">**</bpt>Send refresh failure notification email to me checked<ept id="p1">**</ept>. You’ll want to know right away if a scheduled refresh fails.
+Asegúrese de dejar el **Enviar correo de electrónico de notificación de error de actualización a mí comprueban**. Deseará saber inmediatamente si se produce un error en una actualización programada.
 
-## Important notes  
-\* Refresh is not supported for OData feeds connected to and queried from Power Pivot. When using an OData feed as a data source, use Power Query.
+## Notas importantes  
+\* No se admite la actualización en las fuentes de OData conectado a y consulta de PowerPivot. Al utilizar una OData fuente como un origen de datos, use Power Query.
 
 ## Solucionar problemas
 
-Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
+No puede ir a veces, actualizar los datos según lo esperado. Normalmente se trata de un problema conectado con una puerta de enlace. Eche un vistazo a los artículos de solución de problemas de puerta de enlace para herramientas y problemas conocidos.
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)
 
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[Solución de problemas de la puerta de enlace de Power BI - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

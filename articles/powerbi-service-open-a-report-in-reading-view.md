@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Open a Power BI report in Reading View"
-   description="Open a Power BI report in Reading View"
+   pageTitle="Abra un informe de Power BI en la vista de lectura"
+   description="Abra un informe de Power BI en la vista de lectura"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,28 +20,29 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Open a Power BI report in Reading View  
-##   Reading View
-Reading View is a great way to explore the data in a Power BI report, without worrying that you'll break something.  You can browse the report, interact with the visualizations, and pin any of the visualizations to your dashboard. 
+# Abra un informe de Power BI en la vista de lectura  
+##   Vista de lectura
+Vista de lectura es una excelente manera de explorar los datos en un informe de Power BI, sin tener en cuenta que podrá dividir algo.  Puede examinar el informe, interactuar con las visualizaciones y cualquiera de las visualizaciones Anclar al panel. 
 
->[AZURE.NOTE] To edit the report and save your changes, <bpt id="p1">[</bpt>open it in Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>.
+>[AZURE.NOTE] Para editar el informe y guardar los cambios, [abrirlo en la vista de edición de](powerbi-service-go-from-reading-view-to-editing-view.md).
 
-1.  <bpt id="p1">[</bpt>Create a report<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> and open it in Reading View.
+1.  
+            [Crear un informe](powerbi-service-create-a-new-report.md) y ábralo en la vista de lectura.
 
-    -   From the left navigation pane, select the name of the report, or
+    -   En el panel de navegación izquierdo, seleccione el nombre del informe, o
 
-    -   From a dashboard, select a tile, that was created from a report, to open the report.
+    -   En un panel, seleccione un mosaico, que se creó a partir de un informe para abrir el informe.
 
-2.  The report opens in Reading View.  
+2.  El informe se abre en la vista de lectura.  
 ![](media/powerbi-service-open-a-report-in-reading-view/readingView.png)
 
-3.  There's so much you can do in Reading View.  Start by browsing the report by clicking the arrows at the bottom of the screen.  This sample report has multiple pages. Now start <bpt id="p1">[</bpt>interacting with your report<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept>
+3.  Hay muchas cosas que puede hacer en la vista de lectura.  Empiece por examinar el informe haciendo clic en las flechas situadas en la parte inferior de la pantalla.  Este informe de ejemplo tiene varias páginas. Ahora inicie [interactuar con el informe](powerbi-service-interact-with-a-report-in-reading-view.md)
 
 ## Consulte también  
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Introducción a Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts ](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos ](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)  

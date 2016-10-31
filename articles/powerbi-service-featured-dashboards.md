@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Featured dashboards in Power BI"
-   description="Documentation on how to create a Featured dashboard in Power BI"
+   pageTitle="Paneles destacados en Power BI"
+   description="Documentación sobre cómo crear un panel destacados en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,57 +21,58 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Featured dashboards in Power BI
+# Paneles destacados en Power BI
 
-## Create a Featured dashboard
+## Crear un panel destacados
 
-Many of you have one dashboard that you visit more than any others.  It might be the dashboard you use to run your business, or it might contain an aggregation of tiles from many different dashboards and reports.
+Muchos de ustedes tienen un panel que visite más de los demás.  Es posible que el panel que se utiliza para ejecutar su negocio o puede contener una agregación de mosaicos de muchos informes y paneles diferentes.
 
-To make it easier to reach the dashboard you care about most, we added the ability to feature a dashboard in your workspace. This means Power BI will always open to this dashboard (instead of the last dashboard you visited).  And you can reach your Featured dashboard at any time by selecting  <bpt id="p1">**</bpt>Featured dashboard<ept id="p1">**</ept> in the left navigation pane.
+Para que resulten más fáciles de alcanzar el panel que le preocupa más, hemos agregado la capacidad de ofrecer un panel del área de trabajo. Esto significa que siempre se abrirá Power BI a este panel (en lugar del panel última visita).  Y pueden alcanzar su panel destacados en cualquier momento seleccionando  **panel destacados** en el panel de navegación izquierdo.
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: You can also select a few dashboards and set them as <bpt id="p2">*</bpt>favorites<ept id="p2">*</ept>. See <bpt id="p1">[</bpt>Dashboard favorites<ept id="p1">](powerbi-service-favorite-dashboards.md)</ept>.
+>
+            **NOTA**: también puede seleccionar algunos paneles y establecerlos como *favoritos*. Consulte [Favoritos del panel](powerbi-service-favorite-dashboards.md).
 
 
-The <bpt id="p1">**</bpt>Featured dashboard<ept id="p1">**</ept> section of your left navpane will be greyed out until you set a dashboard as featured.
+Los **destacados panel** sección de la izquierda del panel de navegación se atenúa hasta que se establezca un panel como destacados.
 
 ![](media/powerbi-service-featured-dashboards/featured-on-navpane2new.png)
 
-### To set a dashboard as <bpt id="p1">**</bpt>Featured<ept id="p1">**</ept>
+### Para establecer un panel como **destacados**
 
-Watch Amanda create a featured dashboard and then follow the instructions below the video to try it out yourself.
+Vea Amanda crear un panel de información destacada y, a continuación, siga las instrucciones a continuación el vídeo para probarlo usted mismo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7-gQWhUZSsk" frameborder="0" allowfullscreen></iframe>
 
 
-1. From the top-right corner of the dashboard, select the '...' and choose <bpt id="p1">**</bpt>Set as Featured dashboard<ept id="p1">**</ept>.
+1. En la esquina superior derecha del panel, seleccione el '...' y elija **establecido como portada**.
 
     ![](media/powerbi-service-featured-dashboards/featured-dropdown2.png)
 
-2. Confirm your selection.
+2. Confirme la selección.
 
     ![](media/powerbi-service-featured-dashboards/confirm-featured.png)
 
-3. After you see the Success message, the <bpt id="p1">**</bpt>Featured dashboard<ept id="p1">**</ept> option is activated in the left navpane.
+3. Una vez que aparezca el mensaje de confirmación, la **destacados panel** opción está activada en la izquierda del panel de navegación.
 
     ![](media/powerbi-service-featured-dashboards/featured-only2new.png)
 
 
-## Change the Featured dashboard
+## Cambiar el panel destacados
 
-Of course, if you change your mind later you can set a new dashboard as the Featured dashboard, or you can remove the Featured dashboard altogether.
+Por supuesto, si cambia de opinión más adelante puede establecer un nuevo panel como el panel de la portada, o puede quitar completamente el panel de la portada.
 
-1. Select the ‘…’ and choose <bpt id="p1">**</bpt>Disable Featured dashboard<ept id="p1">**</ept>.
+1. Seleccione el '...' y elija **destacados de deshabilitar panel**.
 
     ![](media/powerbi-service-featured-dashboards/change-featured.png)
 
-2. Confirm that you no longer want to feature this particular dashboard. Un-featuring a dashboard does not remove it from your workspace.  
+2. Confirme que ya no desea este panel concreto de características. No cuenta con un panel no quita del área de trabajo.  
 
     ![](media/powerbi-service-featured-dashboards/confirm-unfeature.png)
 
 ## Consulte también
 
-[Get Started with Power BI](powerbi-service-get-started.md)
+[Introducción a Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

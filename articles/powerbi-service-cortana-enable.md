@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Enable Cortana for Power BI"
-   description="Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset and then enable Cortana to access your datasets from mobile devices."
+   pageTitle="Habilitar Cortana para Power BI"
+   description="Usar Cortana con Power BI para obtener respuestas de los datos. Activar Cortana para cada conjunto de datos de Power BI y, a continuación, habilite Cortana tener acceso a los conjuntos de datos desde dispositivos móviles."
    services="powerbi"
    documentationCenter=""
    authors="mihart"  
@@ -21,68 +21,73 @@
    ms.author="mihart"/>
 
 
-# <a name="enable-cortana-for-power-bi"></a>Enable Cortana for Power BI
+# <a name="enable-cortana-for-power-bi"></a>Habilitar Cortana para Power BI
 
-Ask natural language questions in Cortana and find answers from data stored in Power BI.
+Formule preguntas en lenguaje natural en Cortana y encuentre respuestas de datos almacenados en Power BI.
 
-Before Cortana can look for answers in your Power BI datasets and reports, you'll need:
+Antes de Cortana puede buscar respuestas en los informes y conjuntos de datos de Power BI, necesitará:
 
--  a dataset in Power BI enabled for Cortana to access
+-  en Power BI habilitada para que Cortana tener acceso a un conjunto de datos
 
--  to add the account you use with Power BI for Windows.
+-  Para agregar la cuenta se utiliza con Power BI para Windows.
 
-  >[AZURE.NOTE] Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
+  >[AZURE.NOTE] Cortana para Power BI solo está disponible en inglés. Cortana no está actualmente disponible en dispositivos móviles.
 
-## <a name="enable-cortana-to-access-data-in-power-bi"></a>Enable Cortana to access data in Power BI
-In the Power BI service, you'll need to repeat these steps for each dataset that you want Cortana to be able to access.
+## <a name="enable-cortana-to-access-data-in-power-bi"></a>Habilitar Cortana para acceder a datos en Power BI
+En el servicio Power BI, deberá repetir estos pasos para cada conjunto de datos que desee Cortana para tener acceso a.
 
-1.  Sign-in to Power BI service.
+1.  Inicie sesión en el servicio Power BI.
 
-2. In the upper right corner, select the cog icon and choose <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
+2. En la esquina superior derecha, seleccione el icono de engranaje y elija **configuración**.
 
     ![](media/powerbi-service-cortana-enable/PBI_cortana_settings.png)
 
-3. Select the <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> tab and select the dataset from the list on the left.
+3. Seleccione el **conjuntos de datos** ficha y seleccione el conjunto de datos en la lista de la izquierda.
 
-4.  Select <bpt id="p1">**</bpt>Q&amp;A and Cortana<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Allow Cortana to access this dataset<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Apply<ept id="p3">**</ept>.
+4.  Seleccione **preguntas y respuestas y Cortana** > **Cortana permiten tener acceso a este conjunto de datos** > **aplicar**.
 
     ![](media/powerbi-service-cortana-enable/PBI_cortana-enable-new.png)
 
-    In this example, we're enabling Cortana on the Retail Analysis Sample dataset.
+    En este ejemplo, permitimos que Cortana en el conjunto de datos de ejemplo de análisis de venta directa.
 
-    >[AZURE.NOTE] When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana, it can take up to 30 minutes for results to begin appearing.  Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+    >[AZURE.NOTE] Cuando un nuevo conjunto de datos o una página de respuesta de Cortana personalizado se agrega a Power BI y habilitada para Cortana, puede tardar hasta 30 minutos para que comiencen a aparecer los resultados.  Registro dentro y fuera de Windows 10 o, de lo contrario, reiniciar el proceso de Cortana de Windows 10, le permitirá nuevo contenido a aparecer inmediatamente.
 
-    >[AZURE.IMPORTANT]If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you will need to re-publish for your colleagues to also be able to use it with Cortana.
+    >[AZURE.IMPORTANT]Si habilita un conjunto de datos para Cortana, y ese conjunto de datos forma parte de un paquete de contenido tiene, será necesario volver a publicar para que sus compañeros para que también pueda utilizar con Cortana.
 
-5. Determine which Windows 10 version you are running. Check which version you have by selecting <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>System<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>About<ept id="p3">**</ept>.
+5. Determinar qué versión de Windows 10 que se está ejecutando. Compruebe qué versión tiene, seleccione **configuración** > **System** > **sobre**.
 
-   -  If you have <bpt id="p1">[</bpt>Windows 10 version 1511 (Windows 10 November Update) up until 1607<ept id="p1">](http://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/)</ept>, add your work or school account and Microsoft account (complete steps 6 and 7 below).
+   -  Si tiene [Windows 10 versión 1511 (actualización de noviembre de Windows 10) hasta 1607](http://blogs.windows.com/windowsexperience/2015/11/12/first-major-update-for-windows-10-available-today/), agregar su cuenta organizativa y o cuenta Microsoft (finalizar los pasos 6 y 7 siguiente).
 
-   -  If you have <bpt id="p1">[</bpt>Windows 10 version 1607 (Windows 10 July 2016 update) or later<ept id="p1">](https://support.microsoft.com/en-us/kb/3176929)</ept>, add your work or school account (complete only step 6 below).
+   -  Si tiene [Windows 10 versión 1607 (10 de julio de 2016 Windows update) o posterior](https://support.microsoft.com/en-us/kb/3176929), agregue el trabajo o escuela cuenta (completo único paso 6 a continuación).
 
-6. Add your work or school account for Cortana.
-   -  Open Windows Settings &gt; Accounts.
+6. Agregue su cuenta profesional o educativa para Cortana.
+   -  Configuración de Windows > cuentas.
 
          ![](media/powerbi-service-cortana-enable/power-bi-windows-accounts.png)
 
-   -  Scroll to the bottom and select <bpt id="p1">**</bpt>Add a work or school account<ept id="p1">**</ept>.
+   -  Desplácese hasta la parte inferior y seleccione **Agregar una cuenta profesional o educativa**.
 
          ![](media/powerbi-service-cortana-enable/power-bi-add-work-account.png)
 
-7. On the <bpt id="p1">**</bpt>Accounts<ept id="p1">**</ept> page, scroll to the bottom where you'll see <bpt id="p2">**</bpt>Add a Microsoft account<ept id="p2">**</ept>.
+7. En el **cuentas** página, desplácese hasta el final donde verá **Agregar una cuenta de Microsoft**.
       ![](media/powerbi-service-cortana-enable/power-bi-add-microsoft-account.png)
 
-   -  Sign in with the account you use with Power BI.
+   -  Inicie sesión con la cuenta que utilice con Power BI.
 
-Cortana will use this work or school account to check Power BI for potential answers to your questions in Cortana.
+Cortana usará este trabajo o escuela cuenta para comprobar Power BI para evitar posibles respuestas a sus preguntas en Cortana.
 
 ## <a name="see-also"></a>Consulte también
-<bpt id="p1">[</bpt>Using Cortana with Power BI<ept id="p1">](powerbi-service-cortana-intro.md)</ept>
 
-<bpt id="p1">[</bpt>Create Cortana <bpt id="p2">*</bpt>Answer pages<ept id="p2">*</ept> in Power BI<ept id="p1">](powerbi-service-cortana-desktop-entity-cards.md)</ept>
+            [Uso de Cortana con Power BI](powerbi-service-cortana-intro.md)
 
-<bpt id="p1">[</bpt>Q&amp;A in Power BI<ept id="p1">](powerbi-service-q-and-a.md)</ept>
 
-<bpt id="p1">[</bpt>Power BI basic concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
+            [Crear Cortana *responder páginas* en Power BI](powerbi-service-cortana-desktop-entity-cards.md)
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+
+            [Preguntas y respuestas en Power BI](powerbi-service-q-and-a.md)
+
+
+            [Conceptos básicos de Power BI](powerbi-service-basic-concepts.md)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Analyze in Excel"
-   description="Learn about how to analyze Power BI datasets in Excel"
+   pageTitle="Analizar en Excel"
+   description="Obtenga información acerca de cómo analizar los conjuntos de datos de Power BI en Excel"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,86 +20,89 @@
    ms.date="09/27/2016"
    ms.author="davidi"/>
 
-# Analyze in Excel
-With <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>, you can view and interact with a dataset you have access to in Power BI, and thereby access PivotTable, chart, and slicer features directly in Excel, based on the dataset that exists in Power BI.
+# Analizar en Excel
+Con **analizar en Excel**, puede ver e interactuar con un conjunto de datos tiene acceso a en Power BI y, por tanto, obtener acceso a características de segmentación de datos, gráfico y tabla dinámica directamente en Excel, basado en el conjunto de datos que existe en Power BI.
 
 ## Requisitos
-There are a few requirements for using <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>:
-- <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> is supported for Microsoft Excel 2010 SP1 and later.
-- Excel PivotTables do not support drag-and-drop aggregation of numeric fields. Your dataset in Power BI <bpt id="p1">*</bpt>must have pre-defined measures<ept id="p1">*</ept>.
-- Some organizations may have Group Policy rules that prevent installing the required <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> updates to Excel. If you’re unable to install the updates, check with your administrator.
+Hay algunos requisitos para usar **analizar en Excel**:
+- 
+            **Analizar en Excel** se admite para Microsoft Excel 2010 SP1 y versiones posteriores.
+- Tablas dinámicas de Excel no admiten la agregación de arrastrar y colocar de campos numéricos. El conjunto de datos en Power BI *debe haber definido previamente medidas*.
+- Algunas organizaciones pueden tener reglas de directiva de grupo que evita la instalación de los necesarios **analizar en Excel** actualizaciones a Excel. Si no puede instalar las actualizaciones, consulte con su administrador.
 
 ## ¿Cómo funciona?
-When you select <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> from the ellipses menu (the ...) associated with a dataset or report in <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept>, Power BI creates an .ODC file and downloads it from the browser to your computer.
+Al seleccionar **analizar en Excel** en el menú del botón de puntos suspensivos (el...) asociado a un conjunto de datos o un informe en **Power BI**, Power BI creará una. Archivo ODC y descarga desde el explorador en su equipo.
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_menu.png)
 
-When you open the file in Excel, an empty <bpt id="p1">**</bpt>PivotTable<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> list appears with the tables, fields, and measures from the Power BI dataset. You can create PivotTables, charts, and analyze that dataset just as you would work with a local dataset in Excel.
+Al abrir el archivo en Excel, vacía **tabla dinámica** y **campos** lista aparece con las tablas, campos y medidas del conjunto de datos de Power BI. Puede crear tablas dinámicas, gráficos y analizar ese conjunto de datos igual que trabaja con un conjunto de datos local en Excel.
 
-The .ODC file has an MSOLAP connection string that connects to your dataset in Power BI. When you analyze or work with the data, Excel queries that dataset in Power BI and returns the results to Excel. If that dataset connects to a live data source using DirectQuery, Power BI queries the data source and returns the result to Excel.
+El archivo. Archivo ODC tiene una cadena de conexión de MSOLAP que se conecta al conjunto de datos en Power BI. Al analizar o trabajar con los datos, Excel consulta ese conjunto de datos en Power BI y devuelve los resultados a Excel. Si ese conjunto de datos se conecta a un origen de datos en directo mediante DirectQuery, Power BI consulta el origen de datos y devuelve el resultado a Excel.
 
-<bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> is very useful for datasets and reports that connect to <bpt id="p2">*</bpt>Analysis Services Tabular<ept id="p2">*</ept> or <bpt id="p3">*</bpt>Multidimensional<ept id="p3">*</ept> databases, or from Power BI Desktop files or Excel workbooks with data models that have explicit measures created using Data Analysis Expressions (DAX).
 
-## Get started with Analyze in Excel
+            **Analizar en Excel** es muy útil para los conjuntos de datos y los informes que se conectan a *Tabular de Analysis Services* o *Multidimensional* bases de datos o de Power BI Desktop archivos de Excel con modelos de datos que tienen medidas explícitas que se crean mediante expresiones de análisis de datos (DAX).
 
-In Power BI, select the ellipses menu beside a report or dataset (the ... beside the report or dataset name), and from the menu that appears, select <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>.
+## Introducción a analizar en Excel
+
+En Power BI, seleccione el menú del botón de puntos suspensivos junto a un informe o un conjunto de datos (el... junto al nombre de informe o conjunto de datos) y en el menú que aparece, seleccione **analizar en Excel**.
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_menu.png)
 
 
-### Install Excel updates
-When you first use <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>, you need to install updates to the Excel libraries. You’ll be prompted to download and run Excel updates (this initiates installation of the <bpt id="p1">*</bpt>SQL_AS_OLEDDB.msi<ept id="p1">*</ept> Windows installer package). This package installs <bpt id="p1">**</bpt>Microsoft AS OLE DB Provider for SQL Server 2016 RC0 (Preview)<ept id="p1">**</ept>.
+### Instalar actualizaciones de Excel
+Cuando usa **analizar en Excel**, debe instalar las actualizaciones a las bibliotecas de Excel. Se le pedirá que descargar y ejecutar actualizaciones de Excel (Esto inicia la instalación de la *SQL_AS_OLEDDB.msi* paquete de Windows installer). Este paquete instala **AS proveedor Microsoft OLE DB para SQL Server 2016 RC0 (vista previa)**.
 
-> <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Be sure to check <bpt id="p2">**</bpt>Don’t show this again<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Install Excel updates<ept id="p3">**</ept> dialog. You only need to install the update once.
+> 
+            **Nota:** Compruebe **no volver a mostrar** en la **instalar Excel actualiza** cuadro de diálogo. Sólo debe instalar la actualización una vez.
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_dontshow.png)
 
-If you do need to install the Excel updates for <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> again, you can download the update from the <bpt id="p2">**</bpt>Download<ept id="p2">**</ept> icon in Power BI, as shown in the following image.
+Si es necesario instalar las actualizaciones de Excel para **analizar en Excel** de nuevo, puede descargar la actualización desde el **descargar** icono en Power BI, tal como se muestra en la siguiente imagen.
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_download_again.png)
 
-### Sign in to Power BI
-Although you’re signed in to Power BI in your browser, the first time you open a new .ODC file in Excel you must sign in to Power BI with your Power BI account. This authenticates the connection from Excel to Power BI.
+### Inicie sesión Power BI
+Aunque haya iniciado sesión en Power BI en el explorador, la primera vez que abra una nueva. Archivo ODC en Excel, deberá iniciar sesión Power BI con su cuenta de Power BI. Esto autentica la conexión desde Excel a Power BI.
 
-### Users with multiple Power BI accounts
-Some users have multiple Power BI accounts, and those users may encounter a situation where they're logged into Power BI with one account, but the account that has access to the dataset being used in Analyze in Excel is a different account. In those situations, you may get a <bpt id="p1">**</bpt>Forbidden<ept id="p1">**</ept> error or a sign-in failure when attempting to access a dataset that's being used in an Analyze in Excel workbook.
+### Usuarios con varias cuentas de Power BI
+Algunos usuarios tienen varias cuentas de Power BI, y los usuarios pueden producirse una situación en que inicien sesión en Power BI con una cuenta, pero la cuenta que tiene acceso al conjunto de datos que se utiliza en analizar en Excel es una cuenta diferente. En estos casos, es posible que obtenga un **prohibido** error o un error de inicio de sesión al intentar tener acceso a un conjunto de datos que se utiliza en un análisis en el libro de Excel.
 
-You'll be provided an opportunity to sign in again, at which time you can sign in with the Power BI account that has access to the dataset being accessed by Analyze in Excel.
+Se le proporcionará una oportunidad de iniciar sesión de nuevo, momento en el que puede iniciar sesión con la cuenta de Power BI que tiene acceso al conjunto de datos que se obtiene acceso por analizar en Excel.
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_AADlogin.png)
 
-For other errors you might encounter, take a look at the <bpt id="p1">[</bpt>Troubleshooting Analyze in Excel<ept id="p1">](powerbi-desktop-troubleshooting-analyze-in-excel.md)</ept> article.
+Para otros errores que pueden surgir, eche un vistazo la [solución de problemas de analizar en Excel](powerbi-desktop-troubleshooting-analyze-in-excel.md) artículo.
 
-### Enable data connections
-In order to analyze your Power BI data in Excel, you are prompted to verify the file name and path for the .odc file, and then select <bpt id="p1">**</bpt>Enable<ept id="p1">**</ept>.
+### Habilitar conexiones de datos
+Para analizar los datos de Power BI en Excel, se le pide que compruebe el nombre de archivo y ruta de acceso para el archivo .odc y, a continuación, seleccione **Habilitar**.
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_enable.png)
 
-You can also connect to on-premises Analysis Services (AS) databases using <bpt id="p1">*</bpt>DirectQuery<ept id="p1">*</ept>, and include data in reports created using Analyze in Excel. You must be on the same Active Directory domain as the AS database, and it must be on-premises. Administrators for a Power BI deployment can enable or disable the ability to connect to AS databases in the <bpt id="p1">**</bpt>Admin portal<ept id="p1">**</ept>.
+También puede conectarse a bases de datos de Analysis Services (AS) de local mediante *DirectQuery*, e incluir datos en informes creados utilizando analizar en Excel. Debe estar en el mismo dominio de Active Directory como la base de datos de AS y debe ser local. Los administradores de una implementación de Power BI puede habilitar o deshabilitar la capacidad de conectarse a COMO bases de datos en el **del portal de administración**.
 
-## Analyze away
-Now that Excel has opened and you have an empty PivotTable, you're ready to do all sorts of analysis with your Power BI dataset. Just as with other local workbooks, with Analyze with Excel you can create PivotTables, charts, add data from other sources, and so on. And of course, you can create different worksheets with all sorts of views into your data.
+## Analizar ausente
+Ahora que ha abierto Excel y dispone de una tabla dinámica vacía, está listo para realizar a todo tipo de análisis con el conjunto de datos de Power BI. Al igual que con otros libros local, con la característica analizar en Excel, puede crear tablas dinámicas, gráficos, agregar datos de otros orígenes y así sucesivamente. Y por supuesto, puede crear distintas hojas de cálculo con todos los tipos de vistas de los datos.
 
 ![](media/powerbi-service-analyze-in-excel/pbi_anlz_excel_chart.png)
 
 ## Guardar
-You can save this Power BI dataset connected workbook just like any other workbook. However, you cannot publish or import the workbook back into Power BI because you can only publish or import workbooks into Power BI that have data in tables, or that have a data model. Since the new workbook simply has a connection to the dataset in Power BI, publishing or importing it into Power BI would be going in circles!
+Puede guardar este conjunto de datos de Power BI conectado libro al igual que cualquier otro libro. Sin embargo, no se puede publicar o volver a importar el libro a Power BI porque sólo se pueden publicar o importar libros en Power BI que tienen datos en tablas, o que tienen un modelo de datos. Dado que el nuevo libro simplemente tiene una conexión con el conjunto de datos en Power BI, publicación o importar en Power BI iría en círculos!
 
 ## Compartir
-Once your workbook is saved, you can share it with other Power BI users in your organization. In order to share your workbook with other Power BI users, you must share the dataset (the workbook) by doing one of the following:
+Una vez que se guarda el libro, puede compartirlo con otros usuarios de Power BI en su organización. Para compartir un libro con otros usuarios de Power BI, deben compartir el conjunto de datos (el libro), realice una de las siguientes acciones:
 
--   Share the Power BI dashboard that hosts a pinned element from your Power BI report with the user
--   Share a content pack that contains the dataset with the user
--   Add the user with whom you want to share to the group that owns the dataset
+-   Comparta el panel de Power BI que hospeda un elemento anclado en el informe de Power BI con el usuario
+-   Compartir un paquete de contenido que contiene el conjunto de datos con el usuario
+-   Agregue el usuario con los que desee compartir en el grupo que posee el conjunto de datos
 
-When a user with whom you’ve shared your workbook opens the workbook, they’ll see your PivotTables and data as they appeared when the workbook was last saved, which may not be the latest version of the data. To get the latest data, users must use the <bpt id="p1">**</bpt>Refresh<ept id="p1">**</ept> button on the <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> ribbon. And since the workbook is connecting to a dataset in Power BI, users attempting to refresh the workbook must sign into Power BI and install the Excel updates the first time they attempt to update using this method.
+Cuando un usuario con los que ha compartido el libro abre el libro, verán las tablas dinámicas y los datos como aparecían cuando el libro se guardó, lo que puede no ser la versión más reciente de los datos. Para obtener los datos más recientes, los usuarios deben utilizar el **actualizar** situado en el **datos** cinta de opciones. Y dado que el libro se conecta a un conjunto de datos en Power BI, los usuarios que intenten actualizar el libro deben iniciar sesión en Power BI e instalar las actualizaciones de Excel la primera vez que intentan actualizar con este método.
 
-You can also set the workbook file to refresh the data upon opening, which refreshes the data whenever anyone accesses the dataset. To refresh the workbook each time it's opened, in Excel select <bpt id="p1">**</bpt>Connections<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> ribbon, select the connection used for the workbook, then select <bpt id="p3">**</bpt>Properties<ept id="p3">**</ept> and set <bpt id="p4">*</bpt>Refresh data when opening the file<ept id="p4">*</ept> to <bpt id="p5">**</bpt>True<ept id="p5">**</ept>, then select <bpt id="p6">**</bpt>OK<ept id="p6">**</ept>.
+También puede establecer el archivo de libro para actualizar los datos tras la apertura, que actualiza los datos cada vez que alguien tenga acceso a los conjuntos de datos. Para actualizar el libro cada vez que se abre en, seleccione Excel **conexiones** desde el **datos** la cinta de opciones, seleccione la conexión usada para el libro y, a continuación, seleccione **propiedades** y establecer *Actualizar al abrir el archivo* a **True**, a continuación, seleccione **Aceptar**.
 
-Since users will need to refresh the dataset, and refresh for external connections is not supported in Excel Online, it’s recommended that users open the workbook in the desktop version of Excel on their computer.
+Puesto que los usuarios necesitarán que actualice el conjunto de datos y para las conexiones externas no se admite en Excel Online, se recomienda que los usuarios abran el libro en la versión de escritorio de Excel en su equipo.
 
 ## Véase también  
 
-[Troubleshooting Analyze in Excel](powerbi-desktop-troubleshooting-analyze-in-excel.md)
+[Solución de problemas de analizar en Excel](powerbi-desktop-troubleshooting-analyze-in-excel.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

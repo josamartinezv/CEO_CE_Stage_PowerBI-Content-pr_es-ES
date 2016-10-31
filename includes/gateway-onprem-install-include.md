@@ -1,53 +1,55 @@
-## Install the On-premises data gateway
+## Instale la puerta de enlace de datos local
 
-The data gateway installs and runs on your computer. It is best to install the gateway on a machine that can be left running all the time.
+La puerta de enlace de datos se instala y se ejecuta en el equipo. Es mejor instalar la puerta de enlace en un equipo que puede dejarse en ejecución todo el tiempo.
 
-> [AZURE.NOTE] The gateway is supported only on 64-bit Windows operating systems.
+> [AZURE.NOTE] La puerta de enlace sólo se admite en sistemas operativos de Windows de 64 bits.
 
-For Power BI, the first choice you have to make is the mode of the gateway.
+Para Power BI, la primera opción que debe realizar es el modo de la puerta de enlace.
 
--   <bpt id="p1">**</bpt>On-premises data gateway:<ept id="p1">**</ept> Multiple users can share and reuse a gateway in this mode. This gateway can be used by Power BI, PowerApps, Flow or Logic Apps. For Power BI, this includes support for both schedule refresh and DirectQuery
+-   
+            **Puerta de enlace de datos local:** varios usuarios pueden compartir y reutilizar una puerta de enlace en este modo. Esta puerta de enlace puede utilizarse por Power BI, PowerApps, flujo o aplicaciones lógicas. Para Power BI, esto incluye compatibilidad con programación de actualización y DirectQuery
 
--   <bpt id="p1">**</bpt>Personal:<ept id="p1">**</ept> This is for Power BI only and can be used as an individual without any administrator configuration. This can only be used for on-demand refresh and schedule refresh. This will launch the installation of the personal gateway.
+-   
+            **Personal:** Esto es sólo para Power BI y puede utilizarse como una persona sin ninguna configuración de administrador. Sólo puede utilizarse para la actualización de programación y de actualización a petición. Se iniciará la instalación de la puerta de enlace personal.
 
-> [AZURE.NOTE] If you install the gateway in personal mode, you will not be able to install another gateway on the same machine. 
+> [AZURE.NOTE] Si instala la puerta de enlace en modo personal, no podrá instalar otra puerta de enlace en el mismo equipo. 
 
-![on-prem-data-gateway-install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
+![on-PREM-Data-Gateway-Install-powerbi](./media/gateway-onprem-install-include/on-prem-data-gateway-install-powerbi.png)
 
-Here are a few things to consider before installing the gateway.
+Estas son algunas cosas a tener en cuenta antes de instalar la puerta de enlace.
 
--   If you are installing on a laptop, and your laptop is turned off, not connected to the internet, or asleep the gateway won’t work and the data in the cloud service will not be synchronized with your on-premises data.
+-   Si va a instalar en un equipo portátil y el portátil está apagado, no conectado a internet o suspensión no funcionará la puerta de enlace y los datos en el servicio de nube no se sincronizarán con los datos locales.
 
--   If your machine is connected to a wireless network, the gateway may perform more slowly which will cause it to take longer to synchronize the data in the cloud service with your on-premises data.
+-   Si el equipo está conectado a una red inalámbrica, la puerta de enlace puede funcionar más despacio que hará que se tardará más tiempo para sincronizar los datos en el servicio de nube con los datos locales.
 
-Once the gateway is installed, you will need to sign in with your work or school account.
+Una vez instalada la puerta de enlace, debe iniciar sesión con su cuenta profesional o educativa.
 
-![on-prem-data-gateway-install-signin](./media/gateway-onprem-install-include/on-prem-data-gateway-install-signin.png)
+![on-PREM-Data-Gateway-Install-SignIn](./media/gateway-onprem-install-include/on-prem-data-gateway-install-signin.png)
 
-After you are signed in, you will have the option to configure a new gateway, or to migrate, restore, or take over an existing gateway.
+Después de que ha iniciado sesión, tendrá la opción de configurar una puerta de enlace, o migrar, restaurar o asumir una puerta de enlace existente.
 
-![on-prem-data-gateway-install-register-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-register-recovery.png)
+![on-PREM-Data-Gateway-Install-Register-Recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-register-recovery.png)
 
-## Configure a new gateway
+## Configurar una puerta de enlace
 
-1.  Enter a <bpt id="p1">**</bpt>name<ept id="p1">**</ept> for the gateway
+1.  Escriba un **nombre** la puerta de enlace
 
-2.  Enter a <bpt id="p1">**</bpt>recovery key<ept id="p1">**</ept>. This has to be a minimum of 8 characters.
+2.  Escriba un **clave de recuperación**. Esto tiene que ser un mínimo de 8 caracteres.
 
-3.  Select <bpt id="p1">**</bpt>Configure<ept id="p1">**</ept>.
+3.  Seleccione **configurar**.
 
-> [AZURE.NOTE] The recovery key will be needed if you ever need to migrate, restore or take over a gateway. Be sure to keep this key in a safe place.
+> [AZURE.NOTE] Si alguna vez necesita migrar, restaurar o asumir una puerta de enlace, se necesitará la clave de recuperación. Asegúrese de conservar esta clave en un lugar seguro.
 
-![on-prem-data-gateway-install-recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-recovery.png)
+![on-PREM-Data-Gateway-Install-Recovery](./media/gateway-onprem-install-include/on-prem-data-gateway-install-recovery.png)
 
-### Migrate, restore or take over an existing gateway
+### Migrar, restaurar o asumir una puerta de enlace existente
 
-You will need to select the gateway you want to recover and supply the recovery key that was used to first create the gateway. 
+Debe seleccionar la puerta de enlace que desea recuperar y proporcionar la clave de recuperación que se usó para crear la puerta de enlace. 
 
-### On-premises data gateway connected
+### Puerta de enlace de datos local conectado
 
-Once the gateway is configured, you will be able to make use of it to connect to on-premises data sources. 
+Una vez configurada la puerta de enlace, podrá hacer uso de ella para conectarse a orígenes de datos locales. 
 
-If the gateway is for Power BI, you will need to add your data sources to the gateway within the Power BI service. For PowerApps, you will need to select a gateway for a defined connection for supported data sources.
+Si la puerta de enlace es para Power BI, debe agregar los orígenes de datos a la puerta de enlace en el servicio Power BI. Para PowerApps, debe seleccionar una puerta de enlace para una conexión definida para orígenes de datos admitidos.
 
-For Flow and Logic Apps, this gateway is ready to be used with your on-premises connections 
+Lógica de aplicaciones y flujo de esta puerta de enlace está listo para usarse con las conexiones locales 

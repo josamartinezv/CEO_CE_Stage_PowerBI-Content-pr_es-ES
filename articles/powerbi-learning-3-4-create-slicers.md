@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Slicers"
-   description="Use slicers to visually segment your data"
+   pageTitle="Las segmentaciones de datos"
+   description="Usar segmentaciones de datos para segmentar visualmente los datos"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,18 +23,18 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create and format slicers
+# Crear y formatear las segmentaciones de datos
 
-Slicers are one of the most powerful types of visualizations, particularly as part of a busy report. A <bpt id="p1">**</bpt>slicer<ept id="p1">**</ept> is an on-canvas visual filter in <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept> that lets anyone looking at a report segment the data by a particular value, such as by year or by geographical location.
+Las segmentaciones de datos son uno de los tipos más eficaces de visualizaciones, especialmente como parte de un informe de disponibilidad. Un **segmentación** es un filtro visual en el lienzo en **Power BI Desktop** que permite a cualquier persona que busque en un segmento de informe los datos por un valor concreto, como por año o por ubicación geográfica.
 
-To add a slicer to your report, select <bpt id="p1">**</bpt>Slicer<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane.
+Para agregar una segmentación de datos a un informe, seleccione **segmentación** desde el **visualizaciones** panel.
 
 ![](media/powerbi-learning-3-4-create-slicers/3-4_1.png)
 
-Drag the field by which you want to slice and drop it top of the slicer placeholder. The visualization turns into a list of elements with checkboxes. These elements are your filters - select the box next to one to segment, and all other visualizations on the same report page are filtered, or <bpt id="p1">*</bpt>sliced<ept id="p1">*</ept>, by your selection.
+Arrastre el campo por el cual desea segmentar y colóquelo en la parte superior del marcador de posición de segmentación de datos. La visualización se convierte en una lista de elementos con las casillas de verificación. Estos elementos son sus filtros: seleccione la casilla situada junto a uno al segmento y todas las otras visualizaciones en la misma página del informe se filtran, o *segmenta*, por su selección.
 
 ![](media/powerbi-learning-3-4-create-slicers/3-4_2.png)
 
-There are a few different options available to format your slicer. You can set it to accept multiple inputs at once, or toggle <bpt id="p1">**</bpt>Single Select<ept id="p1">**</ept> mode to use one at a time. You can also add a <bpt id="p1">**</bpt>Select All<ept id="p1">**</ept> option to your slicer elements, which is helpful when you have a particularly long list. Change the orientation of your slicer from the vertical default to horizontal, and it becomes a selection bar rather than a checklist.
+Hay algunas opciones diferentes disponibles para dar formato a la segmentación de datos. Se puede establecer para aceptar varias entradas a la vez o alternar **Seleccione único** modo de uso de uno en uno. También puede agregar un **Seleccionar todo** opción a sus elementos de segmentación de datos, lo que resulta útil cuando tiene una lista larga especialmente. Cambiar la orientación de la segmentación de datos predeterminado de vertical a horizontal, y se convierte en una barra de selección, en lugar de una lista de comprobación.
 
 ![](media/powerbi-learning-3-4-create-slicers/3-4_3.png)

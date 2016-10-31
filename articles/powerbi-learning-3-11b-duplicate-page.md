@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Duplicate a Report Page"
-   description="Save time with similar report page layouts"
+   pageTitle="Duplicar una página del informe"
+   description="Ahorre tiempo con un informe similar de diseños de página"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,14 +23,14 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Duplicate a Report Page
+# Duplicar una página del informe
 
-Individual pages of a report can be quite complex, with multiple visualizations that interact in specific ways and have precise formatting. Occasionally when building a report, you may want to use the same visuals and layouts for two different page topics. For example, if you've just put together a report page on gross revenue, you may want an almost identical page on net revenue.
+Las páginas individuales de un informe pueden ser bastante complejas, con varias visualizaciones que interactúan de forma específica y que tienen el formato preciso. Ocasionalmente al generar un informe, puede usar los mismos elementos visuales y diseños para dos temas de página diferente. Por ejemplo, si sólo ha puesto conjuntamente una página del informe en ingresos brutos, puede que una página casi idéntica en los ingresos netos.
 
-Recreating all of your work would be difficult, but with Power BI Desktop you can just duplicate a report page.
+Volver a crear todo su trabajo sería difícil, pero con Power BI Desktop solo puede duplicar una página del informe.
 
-Right-click on the tab you want to copy, and select <bpt id="p1">**</bpt>Duplicate Page<ept id="p1">**</ept>.
+Haga doble clic en la ficha que desea copiar y seleccione **Duplicar página**.
 
 ![](media/powerbi-learning-3-11b-duplicate-page/3-11b_1.png)
 
-You can then rename the new page tab as appropriate, update the text title if you have one, and then update your visuals with the new field you want to track.
+Puede, a continuación, cambiar la nueva pestaña de página como actualización adecuada, el título de texto si tiene uno y, a continuación, actualizar los objetos visuales con el nuevo campo que se desea realizar un seguimiento.

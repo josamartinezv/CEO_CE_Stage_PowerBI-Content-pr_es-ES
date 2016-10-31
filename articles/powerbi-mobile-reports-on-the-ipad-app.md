@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports on the iPad app"
-   description="Learn about viewing reports in the Power BI mobile app for iOS on the iPad. You create reports in the Power BI service, then interact with them in the mobile apps."
+   pageTitle="Informes sobre la aplicación de iPad"
+   description="Obtenga información acerca de cómo ver los informes en la aplicación móvil de Power BI para iOS en el iPad. Crear informes en el servicio Power BI y luego interactuar con ellos en las aplicaciones móviles."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,99 +19,101 @@
    ms.workload="powerbi"
    ms.date="10/10/2016"
    ms.author="maggies"/>
-# <a name="reports-on-the-ipad-app-(power-bi-for-ios)"></a>Reports on the iPad app (Power BI for iOS)
+# <a name="reports-on-the-ipad-app-(power-bi-for-ios)"></a>Informes sobre la aplicación de iPad (Power BI para iOS)
 
-A report is an interactive view of your data, with visualizations representing different findings and insights from that data. You <bpt id="p1">[</bpt>create and customize reports<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> in the Power BI service <bpt id="p2">[</bpt>(https://powerbi.com)<ept id="p2">](https://powerbi.com)</ept>.
+Un informe es una vista interactiva de los datos con visualizaciones que representan diferentes resultados e información de esos datos. Se [crear y personalizar informes](powerbi-service-create-a-new-report.md) en el servicio Power BI [(https://powerbi.com)](https://powerbi.com).
 
-Then you view and interact with reports on the <bpt id="p1">[</bpt>iPad app for Microsoft Power BI<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> for iOS.
+A continuación, puede ver e interactuar con informes en el [aplicación de iPad para Microsoft Power BI](http://go.microsoft.com/fwlink/?LinkId=522062) para iOS.
 
-## <a name="open-reports"></a>Open reports
+## <a name="open-reports"></a>Abrir informes
 
--   Tap <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> at the top of <bpt id="p2">**</bpt>My Workspace<ept id="p2">**</ept>.
+-   Puntee en **informes** en la parte superior de **Mi área de trabajo**.
 
--   Or tap a tile on a dashboard, and tap the report icon <ph id="ph1">![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-open-report-icon.png)</ph>.
+-   O puntee en un mosaico en un panel y pulse el icono de informe ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-open-report-icon.png).
 
-    > [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles created by asking questions with Q&amp;A don't open reports.
+    > [AZURE.NOTE]  No todos los mosaicos se pueden abrir en un informe. Por ejemplo, mosaicos creados por formulando preguntas con preguntas y respuestas no abrir informes.
 
--   Or tap the search icon <ph id="ph1">![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-search-icon.png)</ph> in the upper-right corner to search for it by name, or see the list of reports you've visited recently.
+-   O pulse el icono de búsqueda ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-search-icon.png) en la esquina superior derecha para buscar por nombre o consulte la lista de informes que ha visitado recientemente.
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-search.png)
 
-## <a name="see-other-pages-in-the-report"></a>See other pages in the report
+## <a name="see-other-pages-in-the-report"></a>Vea otras páginas del informe
 
--   Tap the tabs at the bottom of the app.
+-   Puntee en las fichas en la parte inferior de la aplicación.
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-tabs.png)
 
 
-## <a name="cross-filter-a-report-page"></a>Cross-filter a report page
+## <a name="cross-filter-a-report-page"></a>Filtro de entre una página de informe
 
--   Tap a bar or column in a chart.
+-   Puntee en una barra o columna de un gráfico.
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_Xflter.png)
 
-    Tapping the <bpt id="p1">**</bpt>Raw Materials<ept id="p1">**</ept> column in the lower chart highlights related values in the upper chart.
+    Al puntear en el **materias primas** columna en el gráfico inferior resalta los valores relacionados en el gráfico superior.
 
-## <a name="sort-a-chart"></a>Sort a chart
+## <a name="sort-a-chart"></a>Ordenar un gráfico
 
--  Tap the chart, tap the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) and tap the field name.
+-  Puntee en el gráfico, puntee en el botón de puntos suspensivos (**...**) y puntee en el nombre del campo.
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-sort-order.png)
 
--   To reverse the sort order, tap the <bpt id="p1">**</bpt>Sort by<ept id="p1">**</ept> arrow, then tap the same field name again.
+-   Para invertir el criterio de ordenación, puntee en el **Ordenar por** flecha y, a continuación, puntee en el mismo nombre de campo nuevo.
 
-## <a name="drill-down-and-up-in-a-chart"></a>Drill down and up in a chart
+## <a name="drill-down-and-up-in-a-chart"></a>Explorar e inactivos en un gráfico
 
-Sometimes you can drill down in charts to see the values that make up one part of the chart. You can drill up and down in the iPad app, but you can't add it to a visualization. You can only <bpt id="p1">[</bpt>add drill down to a visualization<ept id="p1">](powerbi-service-drill-down-in-a-visualization.md)</ept> in a report in Power BI. 
+A veces puede profundizar en los gráficos para ver los valores que constituyen una parte del gráfico. Puede desplazarse hacia arriba y abajo en la aplicación de iPad, pero no se puede agregar a una visualización. Sólo puede [Agregar explore en profundidad hasta una visualización](powerbi-service-drill-down-in-a-visualization.md) en un informe en Power BI. 
 
-> [AZURE.NOTE]  Currently, drill-down doesn't work on maps in the iPad.
+> [AZURE.NOTE]  Actualmente, detalle no funciona en los mapas en el iPad.
 
--   Tap a visual. If it has a down arrow in the upper-right corner, then you can drill down. Tap the arrow, then tap a value in the visual &amp;#151; in this case, the <bpt id="p1">**</bpt>Oct<ept id="p1">**</ept> column.
+-   Puntee en un objeto visual. Si tiene una flecha hacia abajo en la esquina superior derecha, a continuación, puede explorar en profundidad. Puntee en la flecha, a continuación, puntee en un valor en el objeto visual & #151; en este caso, el **Oct** columna.
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillDownNew.png)
 
--   To drill back up, tap the up arrow in the upper-left corner.
+-   Para obtener detalles de copia de seguridad, puntee en la flecha hacia arriba en la esquina superior izquierda.
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_iPad_DrillUpNew.png)
 
-## <a name="filter-a-power-bi-report"></a>Filter a Power BI report
+## <a name="filter-a-power-bi-report"></a>Filtrar un informe de Power BI
 
-You can always filter individual visuals in a Power BI report by using the fields in the visual itself as filters. You can also filter whole pages in a report, if you or the report creator has <bpt id="p1">[</bpt>added filters to the page<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept> in the Power BI service (<bpt id="p2">[</bpt>https://powerbi.com<ept id="p2">](http://powerbi.com/)</ept>). In the Power BI service, you can also add other fields as filters for a specific visual. 
+Siempre puede filtrar elementos visuales individuales en un informe de Power BI con los campos en el propio objeto visual como filtros. También puede filtrar las páginas completas en un informe, si usted o el creador del informe tiene [Agregar filtros a la página](powerbi-service-add-a-filter-to-a-report.md) en el servicio Power BI ([https://powerbi.com](http://powerbi.com/)). En el servicio Power BI, también puede agregar otros campos como filtros para un objeto visual específico. 
 
-> [AZURE.NOTE]  If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
+> [AZURE.NOTE]  Si no tiene permiso de edición de un informe, puede cambiar los filtros, pero no puede guardar los cambios. 
 
-1. In a report, expand the Filters pane.
+1. En un informe, expanda el panel filtros.
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/PBI_WinAppCollapsFilter.png)
 
-    If the report creator has set page-level filters, when you select a visual you see <bpt id="p1">*</bpt>visual-level filters<ept id="p1">*</ept> for that visual, and <bpt id="p2">*</bpt>page-level filters<ept id="p2">*</ept> for the whole page.
+    Si el creador del informe se establece filtros de nivel de página, cuando se selecciona un elemento visual verá *filtros de nivel visual* para que visual y *filtros de nivel de página* para toda la página.
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-filter-pane-basic-visual.png)
 
-2. Select check boxes for the values you want.
+2. Seleccione las casillas de verificación de los valores que desee.
 
-3. Or you can switch the filtering mode. Tap <bpt id="p1">**</bpt>Basic filtering<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>Advanced filtering<ept id="p2">**</ept> to select values using expressions instead.
+3. O bien, puede cambiar el modo de filtrado. Puntee en **filtrado básico** y seleccione **filtrado avanzado** para seleccionar valores mediante expresiones en su lugar.
 
     ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-filter-type.png)
 
-     Number fields offer expressions such as <bpt id="p1">**</bpt>is less than<ept id="p1">**</ept>, <bpt id="p2">**</bpt>is greater than<ept id="p2">**</ept>, <bpt id="p3">**</bpt>is not<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>is blank<ept id="p4">**</ept>.
+     Campos de número ofrecen expresiones como **es menor que**, **es mayor que**, **no**, y **está en blanco**.
 
-     Text fields offer expressions such as <bpt id="p1">**</bpt>contains<ept id="p1">**</ept>, <bpt id="p2">**</bpt>doesn't start with<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>is not<ept id="p3">**</ept>.
+     Los campos de texto proporcionan expresiones como **contiene**, **no empieza por**, y **no**.
 
        ![](media/powerbi-mobile-reports-on-the-ipad-app/power-bi-ipad-report-filter-pane-advanced.png)
 
-4.  To add other fields to the Filters pane, go to the Power BI service (<bpt id="p1">[</bpt>https://powerbi.com<ept id="p1">](http://powerbi.com/)</ept>), <bpt id="p2">[</bpt>add filters to the page<ept id="p2">](powerbi-service-add-a-filter-to-a-report.md)</ept>, and save the report.
+4.  Para agregar otros campos en el panel filtros, vaya al servicio Power BI ([https://powerbi.com](http://powerbi.com/)), [Agregar filtros a la página](powerbi-service-add-a-filter-to-a-report.md), y guarde el informe.
 
-## <a name="go-back-to-my-workspace"></a>Go back to My Workspace
+## <a name="go-back-to-my-workspace"></a>Volver a mi área de trabajo
 
--  Tap the back arrow, or tap the report name &gt; <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+-  Puntee en la flecha hacia atrás o puntee en el nombre de informe > **Mi área de trabajo**.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-report-breadcrumb.png)
 
 
 ### <a name="see-also"></a>Consulte también 
 
--  <bpt id="p1">[</bpt>Get started with the iPad app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> for Power BI.
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+-  
+            [Introducción a la aplicación de iPad](powerbi-mobile-iphone-app-get-started.md) para Power BI.
+- ¿Tiene preguntas? 
+            [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)
 
 

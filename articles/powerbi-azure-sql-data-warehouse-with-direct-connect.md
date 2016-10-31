@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Azure SQL Data Warehouse with DirectQuery"
-   description="Azure SQL Data Warehouse with DirectQuery"
+   pageTitle="Almacenamiento de datos SQL Azure con DirectQuery"
+   description="Almacenamiento de datos SQL Azure con DirectQuery"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,57 +20,57 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Azure SQL Data Warehouse with DirectQuery
+# Almacenamiento de datos SQL Azure con DirectQuery
 
-Azure SQL Data Warehouse with DirectQuery allows you to create dynamic reports based on data and metrics you already have in Azure SQL Data Warehouse. With DirectQuery, queries are sent back to your Azure SQL Data Warehouse in real time as you explore the data. This, combined with the scale of SQL Data Warehouse enables users to create dynamic reports in minutes against terabytes of data. In addition, the introduction of the <bpt id="p1">**</bpt>Open in Power BI<ept id="p1">**</ept> button allows users to directly connect Power BI to their SQL Data Warehouse without having to manually specify the information.
+Almacenamiento de datos de SQL Azure con DirectQuery le permite crear informes dinámicos basados en datos y métricas que ya tiene en el almacén de datos de SQL Azure. Con DirectQuery, las consultas se envían a su almacén de datos de SQL Azure en tiempo real como explorar los datos. Esto, combinado con la escala de almacenamiento de datos de SQL permite a los usuarios crear informes dinámicos en minutos con terabytes de datos. Además, la introducción de la **Abrir en Power BI** botón permite a los usuarios conectarse directamente Power BI a su almacén de datos SQL sin tener que especificar manualmente la información.
 
-NOTES: When using the SQL Data Warehouse connector:
+NOTAS: Al utilizar el conector de almacenamiento de datos SQL:
 
--   Specify the fully qualified server name when connecting (see below for details)
+-   Especificar el nombre completo del servidor cuando se conecte (consulte a continuación para obtener más información)
 
--   Ensure firewall rules for the server are configured to "Allow access to Azure services"
+-   Asegúrese de que las reglas de firewall para el servidor están configuradas para "Permitir el acceso a los servicios de Azure"
 
--   Every action such as selecting a column or adding a filter will directly query the data warehouse
+-   Cada acción, como seleccionar una columna o agregar un filtro directamente consultará el almacén de datos
 
--   Tiles are set to refresh approximately every 15 minutes and refresh does not need to be scheduled.  This can be adjusted in the Advanced settings when you connect.
+-   Los mosaicos se establecen para actualizar aproximadamente cada 15 minutos y no es necesario programar actualización.  Esto se puede ajustar en la configuración avanzada cuando se conecte.
 
--   Q&amp;A is not available for DirectQuery datasets
+-   Preguntas y respuestas no está disponible para los conjuntos de datos DirectQuery
 
--   schema changes are not picked up automatically
+-   cambios de esquema no se recogen automáticamente
 
-These restrictions and notes may change as we continue to improve the experiences. The step to connect are detailed below.
+Estas restricciones y notas pueden cambiar mientras seguimos mejorando las experiencias. El paso para conectar se detallan a continuación.
 
-## Using the 'Open in Power BI' button
+## Con el botón 'Abrir en Power BI'
 
-The easiest way to move between your SQL Data Warehouse and Power BI is with the <bpt id="p1">**</bpt>Open in Power BI<ept id="p1">**</ept> button within the Azure Preview Portal. This button allows you to seamlessly begin creating new dashboards in Power BI.
+Es la manera más fácil de mover entre el almacén de datos SQL y Power BI con el **Abrir en Power BI** botón dentro del Portal de vista previa de Azure. Este botón permite perfectamente comenzar a crear nuevos paneles en Power BI.
 
-1. To get started, navigate to your SQL Data Warehouse instance in the Azure Preview Portal. Please note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
+1. Para empezar, vaya a la instancia del almacén de datos SQL en el Portal de vista previa de Azure. Tenga en cuenta que almacenamiento de datos de SQL tiene sólo una presencia en el portal de vista previa de Azure en este momento.
 
-2. Click the <bpt id="p1">**</bpt>Open in Power BI<ept id="p1">**</ept> button
+2. Haga clic en el **Abrir en Power BI** botón
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/openinpowerbi.png)
 
-3. If we are not able to sign you in directly or if you do not have a Power BI account, you will need to sign in.
+3. Si no puedes iniciar sesión directamente o si no tiene una cuenta de Power BI, necesitará iniciar sesión.
 
-4. You will be directed to the SQL Data Warehouse connection page, with the information from your SQL Data Warehouse pre-populated. Enter your credentials and hit connect to create a connection.
+4. Se le dirigirá a la página de conexión de almacenamiento de datos SQL, con la información de almacenamiento de datos SQL rellenado previamente. Escriba sus credenciales y aciertos conectar para crear una conexión.
 
-## Connecting through Power BI
+## Conexión a través de Power BI
 
-SQL Data Warehouse is also listed on the Power BI Get Data page. 
+Almacén de datos SQL también aparece en la página de Power BI obtener datos. 
 
-1. Select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> at the bottom of the left navigation pane.  
+1. Seleccione **obtener datos** en la parte inferior del panel de navegación izquierdo.  
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/GetDatabutton.png)
 
-2. Within <bpt id="p1">**</bpt>Databases<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Get<ept id="p2">**</ept>.
+2. Dentro de **bases de datos**, seleccione **obtener**.
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/databases.png)
 
-3. Select <bpt id="p1">**</bpt>SQL Data Warehouse<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.
+3. Seleccione **almacenamiento de datos SQL** \> **Conectar**.
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/azuresqldatawarehouseconnect.png)
 
-4. Enter the necessary information to connect. The <bpt id="p1">**</bpt>Finding Parameters<ept id="p1">**</ept> section below shows where this data can be located in your Azure Portal.
+4. Escriba la información necesaria para conectarse. El **Buscar parámetros** sección siguiente muestra dónde se pueden encontrar estos datos en el Portal de Azure.
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/servername.png)
    
@@ -78,25 +78,26 @@ SQL Data Warehouse is also listed on the Power BI Get Data page.
    
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/username.png)
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The username will be a user that is defined in your Azure SQL Data Warehouse instance.
+    > 
+            **Nota**: el nombre de usuario será un usuario que se define en la instancia del almacén de datos de SQL Azure.
 
-5. Drill into the dataset by selecting the new tile or the newly created dataset, indicated by the asterisk. This dataset will have the same name as your database.
+5. Profundice en el conjunto de datos seleccionando el icono nuevo o el conjunto de datos recién creada, indicado por un asterisco. Este conjunto de datos tendrá el mismo nombre que la base de datos.
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/dataset2.png)
 
-6. You can explore all of the tables and columns. Selecting a column will send a query back to the source, dynamically creating your visual. Filters will also be translated into queries back to your data warehouse. These visuals can be saved in a new report and pinned back to your dashboard.
+6. Puede explorar todas las tablas y columnas. Seleccione una columna enviará una consulta en el origen, creando dinámicamente su visual. Los filtros también se convertirá en las consultas a su almacén de datos. Estos objetos visuales se pueden guardar en un informe nuevo y anclarse de nuevo al escritorio.
 
     ![](media/powerbi-azure-sql-data-warehouse-with-directquery/explore3.png)
 
-## Finding Parameter Values
+## Buscar valores de parámetro
 
-Your fully qualified server name and database name can be found in the Azure Preview Portal. Please note that SQL Data Warehouse only have a presence in the Azure Preview portal at this time.
+El nombre completo del servidor y el nombre de la base de datos pueden encontrarse en el Portal de vista previa de Azure. Tenga en cuenta que almacenamiento de datos de SQL tiene sólo una presencia en el portal de vista previa de Azure en este momento.
 
 ![](media/powerbi-azure-sql-data-warehouse-with-directquery/azureportal.png)
 
 ## Consulte también
 
-[Get started with Power BI](powerbi-service-get-started.md)  
-[Get Data for Power BI](powerbi-service-get-data.md)  
-[Azure SQL Data Warehouse](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Introducción a Power BI](powerbi-service-get-started.md)  
+[Obtener datos para Power BI](powerbi-service-get-data.md)  
+[Almacenamiento de datos SQL Azure](https://azure.microsoft.com/en-us/documentation/services/sql-data-warehouse/)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

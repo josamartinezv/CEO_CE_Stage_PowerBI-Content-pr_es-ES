@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Power BI visuals using R"
-   description="Create Power BI visuals using R"
+   pageTitle="Crear efectos visuales de Power BI con R"
+   description="Crear efectos visuales de Power BI con R"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,112 +20,116 @@
    ms.date="09/08/2016"
    ms.author="davidi"/>
 
-# Create Power BI visuals using R  
+# Crear efectos visuales de Power BI con R  
 
-With Power BI Desktop, you can use R to visualize your data.
+Con Power BI Desktop, puede usar R para visualizar los datos.
 
-### Installing R
+### Instalar R
 
-Power BI Desktop does not include, deploy or install the R engine. To run R scripts in Power BI Desktop, you must separately install <bpt id="p1">**</bpt>R<ept id="p1">**</ept> on your local computer. You can download and install <bpt id="p1">**</bpt>R<ept id="p1">**</ept> for free from many locations, including the <bpt id="p2">[</bpt>Revolution Open download page<ept id="p2">](https://mran.revolutionanalytics.com/download/)</ept>, and the <bpt id="p3">[</bpt>CRAN Repository<ept id="p3">](https://cran.r-project.org/bin/windows/base/)</ept>. The current release of R scripting in Power BI Desktop supports Unicode characters as well as spaces (empty characters) in the installation path.
+Power BI Desktop incluye, implementar o instalar el motor de R. Para ejecutar scripts de R en Power BI Desktop, debe instalar por separado **R** en el equipo local. Puede descargar e instalar **R** gratuitamente desde varias ubicaciones, incluyendo la [revolución abrir la página de descarga](https://mran.revolutionanalytics.com/download/), y el [repositorio CRAN](https://cran.r-project.org/bin/windows/base/). La versión actual de secuencias de comandos de R en Power BI Desktop admite caracteres Unicode, así como espacios (caracteres vacíos) en la ruta de instalación.
 
-### Enabling R Visuals
-1.   To enable R visuals, select <bpt id="p1">**</bpt>File &gt; Options and settings &gt; Options<ept id="p1">**</ept> and in the <bpt id="p2">**</bpt>Options<ept id="p2">**</ept> page that appears, make sure your local R installation is specified in the <bpt id="p3">**</bpt>R Scripting<ept id="p3">**</ept> section of the <bpt id="p4">**</bpt>Options<ept id="p4">**</ept> window, as shown in the following image. In the following image, the path local installation of R is <bpt id="p1">**</bpt>C:\Program Files\R\R-3.2.0<ept id="p1">**</ept> and that path is explicitly provided in the text box. Make sure the path it displays properly reflects the local R installation you want Power BI Desktop to use.
+### Habilitar elementos visuales de R
+1.   Para habilitar los elementos visuales de R, seleccione **archivo > Opciones y configuración > opciones** y en el **opciones** página que aparece, asegúrese de que la instalación local de R se especifica en la **R Scripting** sección de la **opciones** ventana, tal como se muestra en la siguiente imagen. En la siguiente imagen, es la instalación local de la ruta de acceso de R **C:\Program Files\R\R-3.2.0** y esa ruta de acceso se proporciona explícitamente en el cuadro de texto. Asegúrese de que la ruta de acceso que se mostrará correctamente refleja la instalación local de R que desea Power BI Desktop para usar.
 
     ![](media/powerbi-desktop-r-visuals/r-visuals-2.png)
 
-Once you specify your R installation, you’re ready to begin creating R visuals.
+Cuando se especifica la instalación de R, ya está listo para empezar a crear elementos visuales de R.
 
-#### Creating R visuals in Power BI Desktop
+#### Crear elementos visuales de R en Power BI Desktop
 
-1.   Select the <bpt id="p1">**</bpt>R Visual<ept id="p1">**</ept> icon in the <bpt id="p2">**</bpt>Visualization<ept id="p2">**</ept> pane, as shown in the following image, to add an R visual.
+1.   Seleccione el **R Visual** icono en el **visualización** panel, como se muestra en la siguiente imagen, para agregar una R visual.
 
     ![](media/powerbi-desktop-r-visuals/r-visuals-3.png)
 
-2.   When you add an R visual to a report, Power BI Desktop does the following:
+2.   Cuando se agrega un objeto visual R a un informe, Power BI Desktop hace lo siguiente:
 
-   a) A placeholder R visual image appears on the report canvas.
+   (a) una imagen visual de R de marcador de posición aparece en el lienzo de informe.
 
-   b) The <bpt id="p1">**</bpt>R script editor<ept id="p1">**</ept> appears along the bottom of the center pane.
+   (b) el **editor de script de R** aparece en la parte inferior del panel central.
 
   ![](media/powerbi-desktop-r-visuals/r-visuals-4.png)
 
-3.   Next, add fields you want to consume in your R script to the <bpt id="p1">**</bpt>Values<ept id="p1">**</ept> section in the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> well, just as you would with any other Power BI Desktop visual. Only fields that have been added to the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> well are available to your R script, and you can add new fields, or remove unneeded fields from the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> well while working on your R script in the Power BI Desktop <bpt id="p3">**</bpt>R script editor<ept id="p3">**</ept>. Power BI Desktop automatically detects which fields you have added or removed.
+3.   A continuación, agregue los campos que desee utilizar en el script de R para el **valores** sección la **campos** Bueno, tal como haría con cualquier otro visual de Power BI Desktop. Solo los campos que se han agregado a la **campos** también están disponibles para el script de R y puede agregar nuevos campos o quitar los campos de la **campos** bien mientras se trabaja en el script de R en Power BI Desktop **editor de script de R**. Power BI Desktop detecta automáticamente los campos que se han agregado o quitado.
 
-> <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> The default aggregation type for R visuals is <bpt id="p2">*</bpt>do not summarize<ept id="p2">*</ept>.
+> 
+            **Nota:** es el tipo de agregación predeterminado para elementos visuales de R *no resumir*.
 
-4.   Now you can use the data you selected to create a plot. As you select fields, the <bpt id="p1">**</bpt>R script editor<ept id="p1">**</ept> generates supporting R script binding code based on your selections in the gray section along the top of the editor pane. As you select or remove additional fields, supporting code in the R script editor is automatically generated or removed accordingly.
+4.   Ahora puede usar los datos seleccionados para crear un gráfico. Cuando selecciona campos, el **editor de script de R** genera un script de R compatible según las selecciones realizadas en la sección de color gris a lo largo de la parte superior del panel del editor de código de enlace. Al selecciona o quitar campos adicionales, para permitir el código en el editor de secuencias de comandos de R se genera automáticamente o quitado en consecuencia.
 
-    In the example shown in the following image, three fields were selected: hp, gear, and drat. As a result of those selections, the R script editor generated the following binding code:
-      -  A dataframe called <bpt id="p1">**</bpt>dataset<ept id="p1">**</ept> was created
-        -  That dataframe is comprised of the different fields selected by the user
-      -  The default aggregation is <bpt id="p1">*</bpt>do not summarize<ept id="p1">*</ept>
-      -  Similar to table visuals, fields are grouped and duplicate rows only appear once
+    En el ejemplo se muestra en la siguiente imagen, se seleccionaron tres campos: hp, engranaje y drat. Como resultado de estas selecciones, el editor de scripts de R genera el siguiente código de enlace:
+      -  Una trama de datos denominada **dataset** creó
+        -  Esa trama de datos consta de los distintos campos seleccionados por el usuario
+      -  La agregación predeterminada es *no resumir*
+      -  Similar a los elementos visuales de la tabla, se agrupan los campos y las filas duplicadas aparecen sólo una vez
 
     ![](media/powerbi-desktop-r-visuals/r-visuals-5.png)
 
-    ><bpt id="p1">**</bpt>Tip:<ept id="p1">**</ept> In certain cases you may not want automatic grouping to occur, or you may want all rows to appear, including duplicates. In that case you can add an index field to your dataset which causes all rows to be considered unique, and prevents grouping.
+    >
+            **Sugerencia:** en ciertos casos no puede automática agrupar para que se produzca, o realizar todas las filas que aparezca, incluidos los duplicados. En ese caso puede agregar un campo de índice al conjunto de datos que hace que todas las filas que se consideran únicos y evita la agrupación.
 
-    The generated dataframe is called <bpt id="p1">**</bpt>dataset<ept id="p1">**</ept>, and selected columns can be accessed by their respective names. For example, the gear field can be accessed by writing <bpt id="p1">*</bpt>dataset$gear<ept id="p1">*</ept> in your R script. For fields with spaces or special characters, use single quotes.
+    La trama de datos generado se denomina **dataset**, y sus respectivos nombres pueden tener acceso a las columnas seleccionadas. Por ejemplo, puede obtenerse el campo engranaje escribiendo *engranaje de conjunto de datos$* en el script de R. Para los campos con espacios o caracteres especiales, utilice comillas simples.
 
-5. With the dataframe automatically generated by the fields you selected, you’re ready to write R script that results in plotting to the R default device. When the script is complete, select <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>R script editor<ept id="p2">**</ept> title bar (<bpt id="p3">**</bpt>Run<ept id="p3">**</ept> is on the right side of the title bar).
+5. Con la trama de datos generada automáticamente los campos seleccionados, está listo para escribir el script de R que se traduce en trazar en el dispositivo predeterminado de R. Una vez completada la secuencia de comandos, seleccione **ejecutar** desde el **editor de script de R** barra de título (**ejecutar** está en el lado derecho de la barra de título).
 
-    When <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> is selected, Power BI Desktop identifies the plot and present it on the canvas.
-Since the process is executed on your local R installation, make sure required packages are installed.
+    Cuando **ejecutar** está seleccionada, Power BI Desktop identifica el trazado y presentar en el lienzo.
+Puesto que el proceso se ejecuta en la instalación local de R, asegúrese de que están instalados los paquetes necesarios.
 
-    Power BI Desktop replots the visual when any of the following events occur:
-      - <bpt id="p1">**</bpt>Run<ept id="p1">**</ept> is selected from the <bpt id="p2">**</bpt>R script editor<ept id="p2">**</ept> title bar
-      - Whenever a data change occurs, due to data refresh, filtering, or highlighting
+    Power BI Desktop replots visual cuando se produzca cualquiera de los siguientes eventos:
+      - 
+            **Ejecutar** está seleccionado en el **editor de script de R** barra de título
+      - Siempre que se produce un cambio de datos, debido a la actualización de datos, filtrar o resaltado
 
-The following image shows an example of the correlation plot code, and plots the correlations between attributes of different types of cars.
+La siguiente imagen muestra un ejemplo del código de trazado de correlación y traza las correlaciones entre atributos distintos tipos de automóviles.
 
 ![](media/powerbi-desktop-r-visuals/r-visuals-6.png)
 
-To get a larger view of the visualizations, you can minimize the <bpt id="p1">**</bpt>R script editor<ept id="p1">**</ept>. And of course, like other visuals in Power BI Desktop, you can cross filter the correlation plot by selecting only sport cars in the donut visual (the round visual on the right, in the above example image).
+Para obtener una vista más grande de las visualizaciones, puede minimizar la **editor de script de R**. Y por supuesto, al igual que otros elementos visuales en Power BI Desktop, puede cruzar filtro trazar la correlación seleccionando sólo de deporte automóviles en el anillo visual por (el redondeo visual a la derecha, en la imagen de ejemplo anterior).
 
 ![](media/powerbi-desktop-r-visuals/r-visuals-7.png)
 
-You can also modify the R script to customize the visual, and take advantage of the power of R by adding parameters to the plotting command.
+También puede modificar el script de R para personalizar el objeto visual y aprovechar la potencia de R mediante la adición de parámetros para el comando trazado.
 
-The original plotting command was the following:
+El comando trazado original fue el siguiente:
 
     corrplot(M, method = "color",  tl.cex=0.6, tl.srt = 45, tl.col = "black")
 
-With a few changes in the R script, the command is now the following:
+Con unos pocos cambios en el script de R, el comando es el siguiente:
 
     corrplot(M, method = "circle", tl.cex=0.6, tl.srt = 45, tl.col = "black", type= "upper", order="hclust")
 
-As a result, the R visual now plots circles, only considers at the upper half, and reorders the matrix to cluster correlated attributes, as shown in the following image.
+Como resultado, R visual ahora traza círculos, sólo tiene en cuenta en la mitad superior y reordena la matriz para agrupar en clúster correlacionados atributos, como se muestra en la siguiente imagen.
 
 ![](media/powerbi-desktop-r-visuals/r-visuals-8.png)
 
-When executing a R script that results in an error, the R visual is not plotted and an error message is displayed on the canvas. For details on the error, select <bpt id="p1">**</bpt>See details<ept id="p1">**</ept> from the R visual error on the canvas.
+Al ejecutar un script de R que se produce un error, no se traza R visual y se muestra un mensaje de error en el lienzo. Para obtener más información sobre el error, seleccione **Ver detalles** del error visual R en el lienzo.
 
 ![](media/powerbi-desktop-r-visuals/r-visuals-9.png)
 
-> <bpt id="p1">**</bpt>R scripts security:<ept id="p1">**</ept> R visuals are created from R scripts, which could contain code with security or privacy risks. When attempting to view or interact with an R visual the first time, a user is presented with a security warning message. Only enable R visuals if you trust the author and source, or after you review and understand the R script.
+> 
+            **Seguridad de secuencias de comandos de R:** elementos visuales de R se crean a partir de scripts de R, que podrían contener código con los riesgos de seguridad o privacidad. Al intentar ver o interactuar con una R visual por primera vez, aparece un mensaje de advertencia de seguridad. Permitir sólo elementos visuales de R si confía en el autor y el origen o después de revisar y comprender el script de R.
 
-#### Known Limitations
+#### Limitaciones conocidas
 
-R visuals in Power BI Desktop has a few limitations:
+Elementos visuales de R en Power BI Desktop tiene algunas limitaciones:
 
--  Data size limitations – data used by the R visual for plotting is limited to 150,000 rows. If more than 150,000 rows are selected, only the top 150,000 rows are used and a message is displayed on the image.
+-  Limitaciones de tamaño de datos: datos utilizados por el R visual para trazar está limitados a 150.000 filas. Si hay más de 150.000 filas seleccionadas, se usan las primeras filas de 150.000 y se muestra un mensaje en la imagen.
 
--  Calculation time limitation – if an R visual calculation exceeds 5 minutes the execution times out, resulting in an error.
+-  Limitación de tiempo de cálculo: si un cálculo de R visual supera los 5 minutos los tiempos de ejecución espera, lo que produce un error.
 
--  Relationships – as with other Power BI Desktop visuals, if data fields from different tables with no defined relationship between them are selected, an error occurs.
+-  Relaciones: al igual que con otros elementos visuales de Power BI Desktop, si se seleccionan campos de datos de tablas diferentes con ninguna relación definida entre ellos, se produce un error.
 
--  R visuals are refreshed upon data updates, filtering, and highlighting. However, the image itself is not interactive and cannot be the source of cross-filtering.
+-  Elementos visuales de R se actualizan en las actualizaciones de datos, filtrado y resaltado. Sin embargo, la imagen en sí no es interactiva y no puede ser el origen del filtro cruzado.
 
--  R visuals respond to highlighting other visuals, but you cannot click on elements in the R visual in order to cross filter other elements.
+-  Elementos visuales de R responden al resaltado de otros elementos visuales, pero no puede hacer clic en elementos de R visual para cross filtrar otros elementos.
 
--  Only plots that are plotted to the R default display device are displayed correctly on the canvas. Avoid explicitly using a different R display device.
+-  Sólo gráficos que se muestran en el dispositivo de presentación predeterminado de R se muestran correctamente en el lienzo. Evite usar explícitamente un dispositivo de pantalla de R diferentes.
 
--  In this release, RRO installations are not automatically identified by the 32-bit version of Power BI Desktop, so you must manually provide the path to the R installation directory in <bpt id="p1">**</bpt>Options and settings &gt; Options &gt; R Scripting<ept id="p1">**</ept>.
+-  En esta versión, las instalaciones RRO no identifica automáticamente la versión de 32 bits de Power BI Desktop, por lo que debe proporcionar manualmente la ruta de acceso al directorio de instalación de R en **Opciones y configuración > Opciones > Scripting R**.
 
 ### Más información
 
-Take a look at the following additional information about R in Power BI.
+Eche un vistazo a la siguiente información adicional acerca de R en Power BI.
 
--   [Running R Scripts in Power BI Desktop](powerbi-desktop-r-scripts.md)
+-   [Ejecutar Scripts de R en Power BI Desktop](powerbi-desktop-r-scripts.md)
 
--   [Use an external R IDE with Power BI](powerbi-desktop-r-ide.md)
+-   [Usar un IDE R externo con Power BI](powerbi-desktop-r-ide.md)

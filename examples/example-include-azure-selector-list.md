@@ -1,8 +1,8 @@
-<properties pageTitle="Documentation Example - example-include-azure-selector-list Markdown Extension" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - example-include-azure-selector-list" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación: extensión de ejemplo incluyen lista-de-azure-selector descuento" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - example-include-azure-selector-list" solutions="" authors="" videoId="" scriptId="" />
 
-# Example include azure selector list
+# Ejemplo incluye la lista de selectores de azure
 
 [AZURE.INCLUDE [example-azure-selector-list](../includes/example-azure-selector-list.md)]
 
-This is a sample documentation article that is used to test and validate the publishing system for Azure.com.  
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para Azure.com.  
 

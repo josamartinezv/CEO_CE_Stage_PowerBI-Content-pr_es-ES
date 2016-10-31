@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Shapes, text boxes, and images"
-   description="Add a personal touch, and a logo, to reports and dashboards"
+   pageTitle="Formas, cuadros de texto e imágenes"
+   description="Agregue un toque personal y un logotipo a los informes y paneles"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,16 +23,18 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Style Your Reports With Shapes, Text Boxes, and Images
+# Aplicar estilo a sus informes con formas, cuadros de texto e imágenes
 
-Along with data-bound visuals, you can also add static elements such as text boxes, images, and shapes to improve the visual design of your reports. To add a visual element, select <bpt id="p1">**</bpt>Text Box<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Image<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Shapes<ept id="p3">**</ept> from the <bpt id="p4">**</bpt>Home<ept id="p4">**</ept> tab.
+Junto con elementos visuales enlazado a datos, también puede agregar elementos estáticos como cuadros de texto, imágenes y formas para mejorar el diseño visual de los informes. Para agregar un elemento visual, seleccione **cuadro de texto**, **imagen**, o **formas** desde el **Inicio** ficha.
 
 ![](media/powerbi-learning-3-10-create-shapes-images/3-10_1.png)
 
-<bpt id="p1">**</bpt>Text boxes<ept id="p1">**</ept> are an ideal way to display large titles, captions, or short paragraphs of information along with your visualizations. Text boxes can include links, either through a written URL or by highlighting an anchor phrase and selecting the link symbol on the text box options bar. You can include URLs in text boxes, and Power BI automatically detects the link, and makes it live.
 
-Selecting <bpt id="p1">**</bpt>Image<ept id="p1">**</ept> will open a file browser where you can select the image from your computer or other networked source. By default, resizing an image in your report will maintain its aspect ratio, but this can be disabled in the visual formatting options.
+            **Cuadros de texto** constituyen una manera idónea para mostrar títulos grandes, títulos o párrafos cortos de información junto con las visualizaciones. Cuadros de texto pueden incluir vínculos, mediante una dirección URL escrita o resaltar una frase de anclaje y seleccionar el símbolo de vínculo en la barra de opciones del cuadro de texto. Puede incluir direcciones URL en los cuadros de texto y Power BI detecta automáticamente el vínculo y facilita la vida.
 
-<bpt id="p1">**</bpt>Shapes<ept id="p1">**</ept> have five different options for form, including rectangles and arrows. Shapes can be opaque, or transparent with a colored border. (The latter is useful for creating borders around groups of visualizations.)
+Seleccionar **imagen** se abrirá un explorador de archivos donde puede seleccionar la imagen de su equipo u otro origen de red. De forma predeterminada, cambiar el tamaño de una imagen en el informe mantendrá su relación de aspecto, pero esto se puede deshabilitar en las opciones de formato visuales.
+
+
+            **Formas** tiene cinco opciones de formulario, como rectángulos y flechas. Formas pueden ser opaco o transparente con un borde de color. (Este último es útil para crear bordes alrededor de los grupos de visualizaciones.)
 
 ![](media/powerbi-learning-3-10-create-shapes-images/3-10_2.png)

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports in the Power BI mobile app for Windows 10"
-   description="Learn about viewing reports in the Power BI mobile app for Windows 10. You create reports in the Power BI service, then interact with them in the mobile apps. "
+   pageTitle="Informes en la aplicación móvil de Power BI para Windows 10"
+   description="Obtenga información acerca de cómo ver los informes en la aplicación móvil de Power BI para Windows 10. Crear informes en el servicio Power BI y luego interactuar con ellos en las aplicaciones móviles. "
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,120 +19,122 @@
    ms.workload="powerbi"
    ms.date="10/12/2016"
    ms.author="maggies"/>
-# <a name="reports-in-the-power-bi-mobile-app-for-windows-10"></a>Reports in the Power BI mobile app for Windows 10
+# <a name="reports-in-the-power-bi-mobile-app-for-windows-10"></a>Informes en la aplicación móvil de Power BI para Windows 10
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You <bpt id="p1">[</bpt>create and customize reports<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> in the Power BI service <bpt id="p2">[</bpt>(https://powerbi.com)<ept id="p2">](https://powerbi.com)</ept>.
+Un informe es una vista interactiva de los datos, con elementos visuales que representan diferentes resultados e información de esos datos. Se [crear y personalizar informes](powerbi-service-create-a-new-report.md) en el servicio Power BI [(https://powerbi.com)](https://powerbi.com).
 
-Then you view and interact with those reports in the <bpt id="p1">[</bpt>Power BI mobile app for Windows 10<ept id="p1">](powerbi-mobile-win10phone-app-get-started.md)</ept>.
+A continuación, puede ver e interactuar con los informes en el [aplicación móvil de Power BI para Windows 10](powerbi-mobile-win10phone-app-get-started.md).
 
-## <a name="open-a-power-bi-report"></a>Open a Power BI report
+## <a name="open-a-power-bi-report"></a>Abrir un informe de Power BI
 
-You can open reports in <bpt id="p1">**</bpt>My workspace<ept id="p1">**</ept> or in a group on your Windows 10 phone in several ways: 
+Puede abrir informes en **Mi área de trabajo** o en un grupo en el teléfono de Windows 10 de varias maneras: 
 
--   Scroll down to your reports, or 
--   Tap <bpt id="p1">**</bpt>View all content<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Reports<ept id="p2">**</ept>. 
+-   Desplácese hacia abajo hasta los informes, o 
+-   Puntee en **Ver todo el contenido** > **informes**. 
     
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-reports-home.png)
 
--   Or tap the search icon <ph id="ph1">![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-ipad-search-icon.png)</ph> to see the list of reports you've visited recently or to search for it by name.
+-   O pulse el icono de búsqueda ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-ipad-search-icon.png) para ver la lista de informes que ha visitado recientemente o para buscar por nombre.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-search-page.png)
 
-    > [AZURE.NOTE]  If you <bpt id="p1">[</bpt>import whole Excel files into Power BI<ept id="p1">](powerbi-bring-in-whole-excel-files.md)</ept>, they have an Excel icon. When you tap them in the app, they open in the <bpt id="p1">[</bpt>Power BI service<ept id="p1">](https://powerbi.com)</ept> in a browser window.
+    > [AZURE.NOTE]  Si se [importar archivos completos de Excel en Power BI](powerbi-bring-in-whole-excel-files.md), tienen un icono de Excel. Al puntear en la aplicación, que se abran en el [servicio Power BI](https://powerbi.com) en una ventana del explorador.
 
--   Or on a dashboard, tap the vertical ellipsis on the tile, then tap the <bpt id="p1">**</bpt>Open Report<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png)</ph>.
+-   O en un panel, puntee en los puntos suspensivos verticales en el mosaico, puntee en el **informe abierto** icono ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10app_OpenRptIcon.png).
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/pbi_win10ph_tileellips.png)
 
-    > [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&amp;A box don't open reports when you tap them.   
+    > [AZURE.NOTE]  No todos los mosaicos se pueden abrir en un informe. Por ejemplo, los iconos para crear, hacer una pregunta en el cuadro de preguntas y respuestas no abrir informes al puntear en ellos.   
 
-## <a name="see-other-pages-in-a-power-bi-report"></a>See other pages in a Power BI report
+## <a name="see-other-pages-in-a-power-bi-report"></a>Vea otras páginas de un informe de Power BI
 
--   Tap the tabs at the bottom of the page. 
+-   Puntee en las fichas en la parte inferior de la página. 
 
-## <a name="sort-a-chart-in-a-power-bi-report"></a>Sort a chart in a Power BI report
+## <a name="sort-a-chart-in-a-power-bi-report"></a>Ordenar un gráfico en un informe de Power BI
 
-> [AZURE.NOTE]  Sorting isn't available on Windows 10 phones.
+> [AZURE.NOTE]  La ordenación no está disponible en los teléfonos Windows 10.
 
-1.  Tap the chart. 
+1.  Puntee en el gráfico. 
 
-2.  Tap the ellipsis (...) in the upper-right corner, tap the <bpt id="p1">**</bpt>Sort by<ept id="p1">**</ept> arrow, then tap the field name.
+2.  Puntee en el botón de puntos suspensivos (...) en la esquina superior derecha, puntee el **Ordenar por** flecha y, a continuación, puntee en el nombre del campo.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-report-sort.png)
 
-3.  To reverse the sort order, tap the <bpt id="p1">**</bpt>Sort by<ept id="p1">**</ept> arrow, then tap the same field name again. 
+3.  Para invertir el criterio de ordenación, puntee en el **Ordenar por** flecha y, a continuación, puntee en el mismo nombre de campo nuevo. 
 
-## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>Cross-filter and highlight a Power BI report page
+## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>Filtro cruzado y resalte una página de informe de Power BI
 
--   Tap a value in a chart.
+-   Puntee en un valor en un gráfico.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_XFltrRptSm.png)
 
-    Tapping the red "030-Kids" bubble in the bubble chart highlights related values in the other charts. Because the column chart in the upper-right shows percentages, some highlighted values are larger than the total values, and some are smaller. 
+    Punteando en rojos "030-hijos" burbuja en el gráfico de burbujas resalta los valores relacionados en los demás gráficos. Dado que el gráfico de columnas en la superior derecha muestra los porcentajes, algunos valores destacados son más grandes que los valores totales y algunas son más pequeños. 
 
-## <a name="use-slicers-to-filter-the-report-page"></a>Use slicers to filter the report page
+## <a name="use-slicers-to-filter-the-report-page"></a>Usar segmentaciones de datos para filtrar la página del informe
 
-When designing a report in the Power BI service <bpt id="p1">[</bpt>(https://powerbi.com)<ept id="p1">](https://powerbi.com)</ept>, you can <bpt id="p2">[</bpt>add slicers to a report page<ept id="p2">](powerbi-service-tutorial-slicers.md)</ept>. Then when you or your colleagues view your reports on your mobile devices, you can use the slicers to filter the page.
+Al diseñar un informe en el servicio Power BI [(https://powerbi.com)](https://powerbi.com), puede [Agregar segmentaciones de datos a una página de informe](powerbi-service-tutorial-slicers.md). A continuación, cuando usted o sus colegas de visualización de los informes en sus dispositivos móviles, puede utilizar las segmentaciones de datos para filtrar la página.
 
--   Select a value in a slicer on the report page.
+-   Seleccione un valor en una segmentación de datos en la página del informe.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/pbi_win10_slicer.png)
 
-## <a name="filter-a-power-bi-report"></a>Filter a Power BI report
+## <a name="filter-a-power-bi-report"></a>Filtrar un informe de Power BI
 
-You can always filter individual visuals in a Power BI report by using the fields in the visual itself as filters. You can also filter whole pages in a report, if you or the report creator has <bpt id="p1">[</bpt>added filters to the page<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept> in the Power BI service (<bpt id="p2">[</bpt>https://powerbi.com<ept id="p2">](http://powerbi.com/)</ept>). In the Power BI service, you can also add other fields as filters for a specific visual. 
+Siempre puede filtrar elementos visuales individuales en un informe de Power BI con los campos en el propio objeto visual como filtros. También puede filtrar las páginas completas en un informe, si usted o el creador del informe tiene [Agregar filtros a la página](powerbi-service-add-a-filter-to-a-report.md) en el servicio Power BI ([https://powerbi.com](http://powerbi.com/)). En el servicio Power BI, también puede agregar otros campos como filtros para un objeto visual específico. 
 
 > [AZURE.NOTE]  
 > 
-> - If you don't have Edit permission for a report, you can change the filters, but you can't save those changes. 
-> - Report filtering isn't available on Windows 10 phones. However, slicers are available on phones. See <bpt id="p1">[</bpt>Use slicers to filter the report page<ept id="p1">](powerbi-mobile-reports-in-the-windows-app.md#use-slicers-to-filter-the-report-page)</ept>.
+> - Si no tiene permiso de edición de un informe, puede cambiar los filtros, pero no puede guardar los cambios. 
+> - Filtrado de informes no está disponible en los teléfonos Windows 10. Sin embargo, las segmentaciones de datos están disponibles en los teléfonos. Consulte [utilizar segmentaciones de datos para filtrar la página del informe](powerbi-mobile-reports-in-the-windows-app.md#use-slicers-to-filter-the-report-page).
 
-1. In a report, expand the Filters pane.
+1. En un informe, expanda el panel filtros.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppCollapsFilter.png)
 
-    If the report creator has set page-level filters, when you select a visual you see <bpt id="p1">*</bpt>visual-level filters<ept id="p1">*</ept> for that visual, and <bpt id="p2">*</bpt>page-level filters<ept id="p2">*</ept> for the whole page.
+    Si el creador del informe se establece filtros de nivel de página, cuando se selecciona un elemento visual verá *filtros de nivel visual* para que visual y *filtros de nivel de página* para toda la página.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-filter-pane-visual.png)
 
-2. Select check boxes for the values you want.
+2. Seleccione las casillas de verificación de los valores que desee.
 
-3. Or you can switch the filtering mode. Tap <bpt id="p1">**</bpt>Basic filtering<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>Advanced filtering<ept id="p2">**</ept> to select values using expressions instead.
+3. O bien, puede cambiar el modo de filtrado. Puntee en **filtrado básico** y seleccione **filtrado avanzado** para seleccionar valores mediante expresiones en su lugar.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-filter-type.png)
 
-    Number fields offer expressions such as <bpt id="p1">**</bpt>is less than<ept id="p1">**</ept>, <bpt id="p2">**</bpt>is greater than<ept id="p2">**</ept>, <bpt id="p3">**</bpt>is not<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>is blank<ept id="p4">**</ept>.
+    Campos de número ofrecen expresiones como **es menor que**, **es mayor que**, **no**, y **está en blanco**.
 
        ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_WinAppAdvFilterOptions.png)
 
-    Text fields offer expressions such as <bpt id="p1">**</bpt>contains<ept id="p1">**</ept>, <bpt id="p2">**</bpt>doesn't start with<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>is not<ept id="p3">**</ept>.
+    Los campos de texto proporcionan expresiones como **contiene**, **no empieza por**, y **no**.
 
-4.  To add other fields to the Filters pane, go to the Power BI service (<bpt id="p1">[</bpt>https://powerbi.com<ept id="p1">](http://powerbi.com/)</ept>), <bpt id="p2">[</bpt>add filters to the page<ept id="p2">](powerbi-service-add-a-filter-to-a-report.md)</ept>, and save the report.
+4.  Para agregar otros campos en el panel filtros, vaya al servicio Power BI ([https://powerbi.com](http://powerbi.com/)), [Agregar filtros a la página](powerbi-service-add-a-filter-to-a-report.md), y guarde el informe.
 
-## <a name="drill-down-and-up-in-a-chart"></a>Drill down and up in a chart
+## <a name="drill-down-and-up-in-a-chart"></a>Explorar e inactivos en un gráfico
 
-In charts with up and down arrows in the upper corners, you can drill down to see the values that make up one part of the chart. To <bpt id="p1">[</bpt>add drill down to a visual<ept id="p1">](powerbi-service-drill-down-in-a-visualization.md)</ept>, edit the report in the Power BI service (<bpt id="p2">[</bpt>https://powerbi.com<ept id="p2">](https://powerbi.com/)</ept>).
+En los gráficos con flechas en las esquinas superiores arriba y abajo, puede explorar en profundidad para ver los valores que constituyen una parte del gráfico. Para [Agregar detalles a un objeto visual](powerbi-service-drill-down-in-a-visualization.md), editar el informe en el servicio Power BI ([https://powerbi.com](https://powerbi.com/)).
 
-> [AZURE.NOTE]  Drill down and up isn't available on Windows 10 phones.
+> [AZURE.NOTE]  Obtención de detalles y no está disponible en los teléfonos Windows 10.
 
-1.   Tap the arrow in the upper-right corner to turn on drill-down.
+1.   Puntee en la flecha en la esquina superior derecha para activar la exploración en profundidad.
    
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_DrillSng1.png)
 
-2.   Double-tap a bar, column, or other part of a chart to drill into the details for that part — in this case, the OH column for stores in Ohio.
+2.   Puntee una barra, columna u otra parte de un gráfico para profundizar en los detalles de esa parte, en este caso, la columna OH almacena en Ohio.
 
-3.   To drill back up, tap and hold or right-click the chart, and tap the up arrow in the upper-right corner.
+3.   Para obtener detalles de copia de seguridad, puntee y mantenga o haga clic en el gráfico y puntee en la flecha hacia arriba en la esquina superior derecha.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/PBI_Win10Uni_DrillUp.png)
 
-## <a name="go-back-to-my-workspace"></a>Go back to My Workspace
+## <a name="go-back-to-my-workspace"></a>Volver a mi área de trabajo
 
--  Tap the back arrow, or tap the report name &gt; <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+-  Puntee en la flecha hacia atrás o puntee en el nombre de informe > **Mi área de trabajo**.
 
     ![](media/powerbi-mobile-reports-in-the-windows-app/power-bi-windows-10-report-breadcrumb.png)
 
 ### <a name="see-also"></a>Consulte también
 
-- <bpt id="p1">[</bpt>Get started with the Power BI app for Windows 10 devices<ept id="p1">](powerbi-service-windows-app-get-started.md)</ept>
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [Introducción a la aplicación de Power BI para dispositivos Windows 10](powerbi-service-windows-app-get-started.md)
+- ¿Tiene preguntas? 
+            [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)
 

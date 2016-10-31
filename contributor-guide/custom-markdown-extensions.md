@@ -1,7 +1,7 @@
 <properties
     title="required"
     pageTitle="Extensiones Markdown personalizadas que se usan en nuestros artículos técnicos"
-    description="Lists the custom markdown extensions that enable embedded videos, notes and tips, reusable content, and other item in powerbi.microsoft.com technical articles."
+    description="Enumera las extensiones de descuento personalizados que permiten vídeos incrustados, notas y sugerencias, contenido reutilizable y artículos técnicos de powerbi.microsoft.com otro elemento."
     services=""
     solutions=""
     documentationCenter=""
@@ -18,18 +18,18 @@
     ms.date="09/09/2015"
     ms.author="mblythe"/>
 
-## Markdown for powerbi.microsoft.com
+## Descuento para powerbi.microsoft.com
 
-For general markdown tips, see <bpt id="p1">[</bpt>Markdown Basics<ept id="p1">](https://help.github.com/articles/markdown-basics/)</ept> and our <bpt id="p2">[</bpt>markdown cheatsheet<ept id="p2">](./media/documents/markdown-cheatsheet.pdf?raw=true)</ept>. If you need to create article crosslinks in markdown, see the [linking guidance] (./create-links-markdown.md#markdown-syntax-for-acom-relative-links.md/).
+Para obtener sugerencias de descuento general, consulte [conceptos básicos de descuento](https://help.github.com/articles/markdown-basics/) y nuestro [datos básicos de descuento](./media/documents/markdown-cheatsheet.pdf?raw=true). Si necesita crear vínculos cruzados de artículo de descuento, consulte [orientación vinculación] (. / create-links-markdown.md#markdown-syntax-for-acom-relative-links.md/).
 
-powerbi.microsoft.com supports <bpt id="p1">[</bpt>fenced code blocks<ept id="p1">](https://help.github.com/articles/github-flavored-markdown/#fenced-code-blocks)</ept> and <bpt id="p2">[</bpt>syntax highlighting<ept id="p2">](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting)</ept>. However, Power BI supports only one syntax highlighting color scheme, regardless of the language you specify in a code block.
+powerbi.Microsoft.com admite [bloqueado bloques de código](https://help.github.com/articles/github-flavored-markdown/#fenced-code-blocks) y [resaltado de sintaxis](https://help.github.com/articles/github-flavored-markdown/#syntax-highlighting). Sin embargo, Power BI admite sólo una combinación de colores, independientemente del idioma que especifique en un bloque de código para resaltar la sintaxis.
 
 ## Extensiones Markdown personalizadas que se usan en nuestros artículos técnicos
 
-Nuestros artículos usan el marcado característico de GitHub para dar formato a la mayoría de los artículos; por ejemplo, párrafos, vínculos, listas, títulos, etc.  Estas son las extensiones que usamos actualmente:
+Nuestros artículos usan el marcado característico de GitHub para dar formato a la mayoría de los artículos; por ejemplo, párrafos, vínculos, listas, títulos, etc. Pero usar extensiones de descuento personalizado que necesitamos un formato más enriquecido en las páginas representadas en powerbi.microsoft.com. Estas son las extensiones que usamos actualmente:
 
 + [Notas y sugerencias]
-+ [Includes]
++ [Incluye]
 + [Vídeos insertados]
 + [Selectores de tecnología y plataforma]
 
@@ -37,27 +37,27 @@ Nuestros artículos usan el marcado característico de GitHub para dar formato a
 
 Puede elegir entre 4 tipos de notas y sugerencias:
 
-- AZURE.NOTE
-- AZURE.WARNING
-- AZURE.TIP
-- AZURE.IMPORTANT
+- AZURE. TENGA EN CUENTA
+- AZURE. ADVERTENCIA
+- AZURE. SUGERENCIA
+- AZURE. IMPORTANTE
 
 ###Uso
 En general, utilice con moderación las notas y sugerencias en los artículos. Cuando lo haga, elija el tipo adecuado de nota o sugerencia:
 
-- Use AZURE.NOTE to highlight neutral or positive information that emphasizes or supplements key points of the main text. Una nota proporciona información que se aplica solo en casos especiales.
+- Uso de AZURE. Tenga en CUENTA para resaltar información neutral o positiva que acentúa o complementa puntos clave del texto principal. Una nota proporciona información que se aplica solo en casos especiales.
 
   ![](./media/custom-markdown-extensions/Notes-note.PNG)
 
-- Use AZURE.WARNING to alert the user to a condition that might cause a problem in the future. Por ejemplo, al seleccionar una opción determinada o tomar una decisión específica, es posible que ya no pueda dar marcha atrás.
+- Uso de AZURE. ADVERTENCIA para avisar al usuario a una condición que podría provocar un problema en el futuro. Por ejemplo, al seleccionar una opción determinada o tomar una decisión específica, es posible que ya no pueda dar marcha atrás.
 
   ![](./media/custom-markdown-extensions/Notes-warning.PNG)
 
-- Use AZURE.TIP to help your users apply the techniques and procedures described in the text to their specific needs. Una sugerencia también podría recomendar métodos alternativos que puede que no sean evidentes. Sin embargo, las sugerencias no son esenciales para comprender el texto en líneas generales.
+- Uso de AZURE. SUGERENCIA para ayudar a los usuarios a aplicar las técnicas y los procedimientos descritos en el texto a sus necesidades específicas. Una sugerencia también podría recomendar métodos alternativos que puede que no sean evidentes. Sin embargo, las sugerencias no son esenciales para comprender el texto en líneas generales.
 
   ![](./media/custom-markdown-extensions/Notes-tip.PNG)
 
-- Use AZURE.IMPORTANT to provide information that is essential to the completion of a task.
+- Uso de AZURE. Es IMPORTANTE para proporcionar información esencial para la realización de una tarea.
 
   ![](./media/custom-markdown-extensions/Notes-important.PNG)
 
@@ -65,7 +65,7 @@ Aunque estas notas y sugerencias son compatibles con vínculos, imágenes, lista
 
 ###Marcado de muestra
 
-The samples all show a AZURE.NOTE. Para usar TIP, WARNING o IMPORTANT, reemplace "NOTE" en el marcado:
+Los ejemplos todos muestran un AZURE. TENGA EN CUENTA. Para usar TIP, WARNING o IMPORTANT, reemplace "NOTE" en el marcado:
 
     > [AZURE.TIP]
 
@@ -75,45 +75,45 @@ The samples all show a AZURE.NOTE. Para usar TIP, WARNING o IMPORTANT, reemplace
 
 Un solo párrafo:
 
-    > [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Power BI account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos.
+    > [AZURE.NOTE] Para completar este tutorial, debe tener una cuenta activa de Microsoft Power BI. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos.
 
 Varios párrafos:
 
-    > [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Power BI account.
+    > [AZURE.NOTE] Para completar este tutorial, debe tener una cuenta activa de Microsoft Power BI.
     >
-    > If you don't have an account, you can <bpt id="p1">[</bpt>create a free trial account<ept id="p1">](http://www.windowsPower BI.com/pricing/free-trial/)</ept> in just a couple of minutes.
+    > Si no tiene una cuenta, puede [crear una cuenta gratuita](http://www.windowsPower BI.com/pricing/free-trial/) en tan solo unos minutos.
 
-## Includes
+## Incluye
 
-Reusable text fragments in our GitHub repository are called "includes". Si tiene texto que debe usarse en varios artículos, incluya una referencia a los fragmentos de texto en los archivos Markdown. The text fragment (the include) itself is a simple markdown (.md) file. Puede contener cualquier marcado válido, como texto, vínculos e imágenes. All include markdown files must be in <bpt id="p1">[</bpt>the /includes directory<ept id="p1">](https://github.com/azure/powerbi-content/tree/master/includes)</ept> in the root of the repository. When the article is published, the include text is seamlessly integrated into the published topic.
+Fragmentos de texto reutilizable en nuestro repositorio de GitHub se denominan "incluye". Si tiene texto que debe usarse en varios artículos, incluya una referencia a los fragmentos de texto en los archivos Markdown. El fragmento de texto (incluir) es un archivo simple descuento (.md). Puede contener cualquier marcado válido, como texto, vínculos e imágenes. Todos incluyen reducciones de archivos deben estar en [el incluye el directorio](https://github.com/azure/powerbi-content/tree/master/includes) en la raíz del repositorio. Cuando se publica el artículo, el texto de inclusión se integra perfectamente con el tema publicado.
 
-- We use a specific syntax to reference an include.
+- Utilizamos una sintaxis específica para hacer referencia a una instrucción include.
 
-- Media files you put in an include must be created in a media folder specific to the include. Media folders for includes belong in <bpt id="p1">[</bpt>the powerbi-content/includes/media folder<ept id="p1">](https://github.com/azure/powerbi-content/tree/master/includes/media)</ept>. The media directory should not contain any images in its root. If the include does not have images, then a corresponding media directory is not required.
+- Los archivos multimedia que se colocan en una instrucción include deben crearse en una carpeta de medios específicos de la inclusión. Incluye las carpetas de medios para pertenecen a [la carpeta de powerbi contenido/incluye/medio](https://github.com/azure/powerbi-content/tree/master/includes/media). El directorio media no debe contener todas las imágenes en su raíz. Si la inclusión no tiene imágenes, no se requiere un directorio de medios correspondientes.
 
 ###Uso
 
-- Use includes wherever you need the same text to appear in multiple articles.
-- Includes are meant to be used for significant amounts of content - a paragraph or two, a shared procedure, or a shared section. No los utilice en unidades más pequeñas que una frase; no se pueden emplear en nombres de producto o frases incompletas.
-- Don't embed includes within other includes. ya que se producirán problemas en el sistema de publicación.
-- No comparta elementos multimedia entre archivos. Use a separate file with a unique name for each include and article. Store the media file in the media folder associated with the include.
-- Don't use an includes as the only content of an article.  Includes are meant to be supplemental to the content in the rest of the article.
-- Because all includes must be in the /includes directory, the path to an include from an article is always
+- Utilice incluye siempre que necesite el mismo texto que aparezca en varios artículos.
+- Incluye están diseñados para usarse para grandes cantidades de contenido, un párrafo o dos, un procedimiento compartido o una sección compartida. No los utilice en unidades más pequeñas que una frase; no se pueden emplear en nombres de producto o frases incompletas.
+- No incruste incluye otros incluye. ya que se producirán problemas en el sistema de publicación.
+- No comparta elementos multimedia entre archivos. Utilizar un archivo independiente con un nombre único para cada include y el artículo. Almacene el archivo multimedia en la carpeta de medios asociada con la inclusión.
+- No utilice un incluye sólo el contenido de un artículo.  Incluye están diseñados para ser complementario para el contenido en el resto del artículo.
+- Dado que todas las inclusiones debe estar en el incluye el directorio, la ruta de acceso include de un artículo es siempre
 
-    ../includes
+    .. incluye
 
-- Do NOT repeat a link or image filename reference in both the article and the include. Add "-include" to the link reference or media filename to avoid repeating the reference:
+- No se repiten una referencia de nombre de archivo de vínculo o una imagen en el artículo e incluir. Agregue "-incluyen" para el nombre de archivo vínculo multimedia o de referencia para evitar la repetición de la referencia:
 
  **Referencia de vínculo**
 
- Change: odata.org To: odata.org-include
+ Cambio: odata.org a: incluir odata.org
 
  **Referencia de imagen**
 
- Change: table.png To: table-include.png
+ Cambio: table.png a: include.png de tabla
 
 ###Marcado de muestra
-The syntax for adding an include to a documentation article is:
+La sintaxis para agregar una inclusión a un artículo de documentación es:
 
     [AZURE.INCLUDE [include-short-name](../includes/include-file-name.md)]
 
@@ -121,35 +121,35 @@ Ejemplo
 
     [AZURE.INCLUDE [howto-blob-storage](../includes/howto-blob-storage.md)]
 
-The first part of the include is the include name without the path and without the .md extension. The second part is the relative path to the include in the /includes directory, with the .md extension.
+La primera parte de la inclusión es el nombre de inclusión sin la ruta de acceso y sin la extensión .md. La segunda parte es la ruta de acceso relativa a la inclusión en el incluye el directorio, con la extensión .md.
 
 ###Representación
 
-In the rendered GitHub page, the include will render as follows:
+En la página GitHub representada, la inclusión se representará como sigue:
 
- [AZURE.INCLUDE howto-blob-storage]
+ [AZURE. INCLUIR el almacenamiento de blobs howto]
 
-In the rendered HTML on powerbi.microsoft.com, the HTML from the includes is merged into the rest of the document's HTML. However, the HTML will contain an HTML comment with the original include markdown filename and the GitHub commit hash. Este comentario se incluye para poder solucionar problemas, de modo que el contenido de origen pueda identificarse y encontrarse con facilidad en GitHub:
+En el HTML representado en powerbi.microsoft.com, el código HTML de la incluye se combina con el resto del documento HTML. No obstante, el código HTML contiene HTML comentario con el original incluyen el nombre de archivo de descuento y el hash de la confirmación de GitHub. Este comentario se incluye para poder solucionar problemas, de modo que el contenido de origen pueda identificarse y encontrarse con facilidad en GitHub:
 
   ![](./media/custom-markdown-extensions/include.png)
 
 
 ## Vídeos insertados
 
-Our technical articles will support embeddeded videos in technical articles, details are TBD (Azure requires Channel 9, but we want to use YouTube).
+Nuestros artículos técnicos admitirá vídeos embeddeded en artículos técnicos, detalles son TBD (Azure exige Channel 9, pero queremos usar YouTube).
 
 
 ## Selectores de tecnología y plataforma
 
-> [AZURE.NOTE] This info is for Azure but we might adopt selectors in the future.
+> [AZURE.NOTE] Esta información es de Azure, pero nos podemos adoptar a selectores en el futuro.
 
 Utilice modificadores de tecnología y plataforma en artículos técnicos al crear varias versiones del mismo artículo con el objetivo de corregir las diferencias de implementación entre plataformas o tecnologías. En la mayoría de los casos, tendrá que emplearlos en nuestro contenido de plataforma móvil para desarrolladores. Actualmente, hay dos tipos diferentes de selectores: [simples](#simple-selectors) y [bidireccionales](#two-way-selectors).
 
-Because the same selector markdown goes in each topic in the selection, we recommend placing the selector for your topic in an include, then referencing that include in all of your topics that use the same selector.
+Ya que el mismo descuento selector va en cada tema de la selección, se recomienda colocar el selector para el tema en una instrucción include, a continuación, hacer referencia a los que incluyen en todos los temas que utilizan el mismo selector.
 
 ###<a id="simple-selectors"></a>Selectores simples
 
-Los selectores simples (unidireccionales) se representan como un conjunto de botones de opción justo debajo del título. Use these buttons when customers only need to choose from topics in a single platform or technology set, such as .NET, Node.js, and Java.  Please use the below custom markdown format for any selectors.  Do not use HTML for selector functions.  
+Los selectores simples (unidireccionales) se representan como un conjunto de botones de opción justo debajo del título. Use estos botones cuando los clientes sólo necesitan elegir entre los temas de un único conjunto de plataforma o tecnología, como. NET, Node.js y Java.  Utilice el siguiente formato de descuento personalizado para los selectores de.  No utilice HTML para las funciones del selector.  
 
 Consulte [Get started with Notification Hubs](http://azure.microsoft.com/documentation/articles/notification-hubs-windows-phone-get-started/) (Introducción a Centros de notificaciones) para ver cómo el autor creó 8 versiones del mismo artículo y usó los selectores para permitir la navegación en todos ellos.
 
@@ -158,30 +158,32 @@ Consulte [Get started with Notification Hubs](http://azure.microsoft.com/documen
 ####Sintaxis
 
     > [AZURE.SELECTOR]
-    - <bpt id="p1">[</bpt>Link #1 Label<ept id="p1">](link #1 url)</ept><ph id="ph1">
-    - </ph><bpt id="p2">[</bpt>Link #2 Label<ept id="p2">](link #2 url)</ept>
+    - 
+            [Vincular etiqueta 1 #](link #1 url)
+    - [#2 etiqueta del vínculo](link #2 url)
 
 Ejemplo:
 
     > [AZURE.SELECTOR]
-    - <bpt id="p1">[</bpt>Universal Windows<ept id="p1">](../articles/notification-hubs-windows-store-dotnet-get-started/)</ept><ph id="ph1">
-    - </ph><bpt id="p2">[</bpt>Windows Phone<ept id="p2">](../articles/notification-hubs-windows-phone-get-started/)</ept><ph id="ph2">
-    - </ph><bpt id="p3">[</bpt>iOS<ept id="p3">](../articles/notification-hubs-ios-get-started/)</ept><ph id="ph3">
-    - </ph><bpt id="p4">[</bpt>Android<ept id="p4">](../articles/notification-hubs-android-get-started/)</ept><ph id="ph4">
-    - </ph><bpt id="p5">[</bpt>Kindle<ept id="p5">](../articles/notification-hubs-kindle-get-started/)</ept><ph id="ph5">
-    - </ph><bpt id="p6">[</bpt>Baidu<ept id="p6">](../articles/notification-hubs-baidu-get-started/)</ept><ph id="ph6">
-    - </ph><bpt id="p7">[</bpt>Xamarin.iOS<ept id="p7">](../articles/partner-xamarin-notification-hubs-ios-get-started/)</ept><ph id="ph7">
-    - </ph><bpt id="p8">[</bpt>Xamarin.Android<ept id="p8">](../articles/partner-xamarin-notification-hubs-android-get-started/)</ept>
+    - 
+            [Windows universal](../articles/notification-hubs-windows-store-dotnet-get-started/)
+    - [Windows Phone](../articles/notification-hubs-windows-phone-get-started/)
+    - [iOS](../articles/notification-hubs-ios-get-started/)
+    - [Android](../articles/notification-hubs-android-get-started/)
+    - [Kindle](../articles/notification-hubs-kindle-get-started/)
+    - [Baidu](../articles/notification-hubs-baidu-get-started/)
+    - [Xamarin.iOS](../articles/partner-xamarin-notification-hubs-ios-get-started/)
+    - [Xamarin.Android](../articles/partner-xamarin-notification-hubs-android-get-started/)
 
 #### Representación
 
-The image above shows the rendering on powerbi.microsoft.com. En las páginas de GitHub representadas, los selectores se representan como una lista con viñetas de vínculos.
+La imagen anterior muestra la representación en powerbi.microsoft.com. En las páginas de GitHub representadas, los selectores se representan como una lista con viñetas de vínculos.
 
 ###<a id="two-way-selectors"></a>Selectores bidireccionales
 
-Los selectores bidireccionales permiten a los usuarios seleccionar un tema de una matriz bidireccional. This is essential when an Azure technology, such as Mobile Services, supports multiple backend platforms as well as multiple clients. Tenga en cuenta lo siguiente:
+Los selectores bidireccionales permiten a los usuarios seleccionar un tema de una matriz bidireccional. Esto es esencial cuando una tecnología de Azure, como los servicios móviles es compatible con varias plataformas de back-end, así como varios clientes. Tenga en cuenta lo siguiente:
 
-- While it was designed as <ph id="ph1">`(Platform | Backend)`</ph>, the dropwdown text can now be customized.
+- Mientras se diseñó como `(Platform | Backend)`, ahora se puede personalizar el texto dropwdown.
 - No necesita un elemento de lista en todos los puntos de la matriz, solamente uno en el que haya una dirección URL de un tema y que no esté duplicada.
 - El vínculo puede ser cualquier dirección URL, aunque, normalmente, es otro tema de GitHub.
 
@@ -191,23 +193,23 @@ Consulte [Introducción a Mobile Services](http://azure.microsoft.com/en-us/docu
 
 ####Sintaxis
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )] <ph id="ph1">    - </ph><bpt id="p1">[</bpt>(Dropdown1Text1 | Dropdown2Text1 )<ept id="p1">](../articles/dropdown1-text1-dropdown2-text1.md)</ept><ph id="ph2">
-    - </ph><bpt id="p2">[</bpt>(Dropdown1Text1 | Dropdown2Text2 )<ept id="p2">](../articles/dropdown1-text1-dropdown2-text1.md)</ept><ph id="ph3">
-    - </ph><bpt id="p3">[</bpt>(Dropdown1Text2 | Dropdown2Text3 )<ept id="p3">](../articles/dropdown1-text1-dropdown2-text1.md)</ept><ph id="ph4">
-    - </ph><bpt id="p4">[</bpt>(Dropdown1Text3 | Dropdown2Text4 )<ept id="p4">](../articles/dropdown1-text1-dropdown2-text1.md)</ept>
+    > [AZURE. LISTA de SELECCIÓN (Dropdown1 | Dropdown2)]     - [(Dropdown1Text1 | Dropdown2Text1)](../articles/dropdown1-text1-dropdown2-text1.md)
+    - [(Dropdown1Text1 | Dropdown2Text2)](../articles/dropdown1-text1-dropdown2-text1.md)
+    - [(Dropdown1Text2 | Dropdown2Text3)](../articles/dropdown1-text1-dropdown2-text1.md)
+    - [(Dropdown1Text3 | Dropdown2Text4)](../articles/dropdown1-text1-dropdown2-text1.md)
 
 Ejemplo:
 
-    > [AZURE.SELECTOR-LIST (Platform | Backend )] <ph id="ph1">    - </ph><bpt id="p1">[</bpt>(iOS | .NET)<ept id="p1">](./mobile-services-dotnet-backend-ios-get-started-push.md)</ept><ph id="ph2">
-    - </ph><bpt id="p2">[</bpt>(iOS | JavaScript)<ept id="p2">](./mobile-services-javascript-backend-ios-get-started-push.md)</ept><ph id="ph3">
-    - </ph><bpt id="p3">[</bpt>(Windows universal C# | .NET)<ept id="p3">](./mobile-services-dotnet-backend-windows-universal-dotnet-get-started-push.md)</ept><ph id="ph4">
-    - </ph><bpt id="p4">[</bpt>(Windows universal C# | Javascript)<ept id="p4">](./mobile-services-javascript-backend-windows-universal-dotnet-get-started-push.md)</ept><ph id="ph5">
-    - </ph><bpt id="p5">[</bpt>(Windows Phone | .NET)<ept id="p5">](./mobile-services-dotnet-backend-windows-phone-get-started-push.md)</ept><ph id="ph6">
-    - </ph><bpt id="p6">[</bpt>(Windows Phone | Javascript)<ept id="p6">](./mobile-services-javascript-backend-windows-phone-get-started-push.md)</ept><ph id="ph7">
-    - </ph><bpt id="p7">[</bpt>(Android | .NET)<ept id="p7">](./mobile-services-dotnet-backend-android-get-started-push.md)</ept><ph id="ph8">
-    - </ph><bpt id="p8">[</bpt>(Android | Javascript)<ept id="p8">](./mobile-services-javascript-backend-android-get-started-push.md)</ept><ph id="ph9">
-    - </ph><bpt id="p9">[</bpt>(Xamarin iOS | Javascript)<ept id="p9">](./partner-xamarin-mobile-services-ios-get-started-push.md)</ept><ph id="ph10">
-    - </ph><bpt id="p10">[</bpt>(Xamarin Android | Javascript)<ept id="p10">](./partner-xamarin-mobile-services-android-get-started-push.md)</ept>
+    > [AZURE. SELECTOR-LIST (plataforma | Back-end)]     - [(iOS |. NET)](./mobile-services-dotnet-backend-ios-get-started-push.md)
+    - [(iOS | JavaScript)](./mobile-services-javascript-backend-ios-get-started-push.md)
+    - [(Windows universal C# |. NET)](./mobile-services-dotnet-backend-windows-universal-dotnet-get-started-push.md)
+    - [(Windows universal C# | JavaScript)](./mobile-services-javascript-backend-windows-universal-dotnet-get-started-push.md)
+    - [(Windows Phone |. NET)](./mobile-services-dotnet-backend-windows-phone-get-started-push.md)
+    - [(Windows Phone | JavaScript)](./mobile-services-javascript-backend-windows-phone-get-started-push.md)
+    - [(Android |. NET)](./mobile-services-dotnet-backend-android-get-started-push.md)
+    - [(Android | JavaScript)](./mobile-services-javascript-backend-android-get-started-push.md)
+    - [(Xamarin iOS | JavaScript)](./partner-xamarin-mobile-services-ios-get-started-push.md)
+    - [(Xamarin Android | JavaScript)](./partner-xamarin-mobile-services-android-get-started-push.md)
 
 #### Representación
 
@@ -215,11 +217,11 @@ La imagen anterior muestra la representación en azure.microsoft.com. En las pá
 
 <!--Anchors-->
 [Notas y sugerencias]: #notes-and-tips
-[Includes]: #includes
+[Incluye]: #includes
 [Vídeos insertados]: #embedded-videos
 [Selectores de tecnología y plataforma]: #technology-and-platform-selectors
 
-###Contributors' Guide Links
+###Vínculos de la Guía de los colaboradores
 
 - [Artículo de información general](./../README.md)
 - [Índice de artículos de la guía](./contributor-guide-index.md)

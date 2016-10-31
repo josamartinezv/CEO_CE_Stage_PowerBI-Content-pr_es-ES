@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Pin an entire report page to a Power BI dashboard "
-   description="Documentation on how to pin an entire live report page to a Power BI dashboard from a report."
+   pageTitle="Anclar una página de informe completo en un panel de Power BI "
+   description="Documentación sobre cómo anclar una página de todo el informe activo a un panel de Power BI desde un informe."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,49 +21,49 @@
    ms.date="08/11/2016"
    ms.author="mihart"/>
 
-# Pin an entire report page, as a live tile, to a Power BI dashboard
+# Anclar una página de informe completo, como un icono dinámico a un panel de Power BI
 
-Another way to add a new <bpt id="p1">[</bpt>dashboard tile<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept> is by pinning an entire report page.  This is an easy way to pin more than one visualization at a time.  Also, when you pin an entire page, the tiles are <bpt id="p1">*</bpt>live<ept id="p1">*</ept>; you can interact with them right there on the dashboard. And changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
+Otra manera de agregar un nuevo [icono Panel de](powerbi-service-dashboard-tiles.md) es fijando una página de informe completo.  Se trata de una manera fácil de anclar una visualización más de uno en uno.  Además, al anclar una página completa, los iconos son *live*; puede interactuar con ellos aquí en el panel. Y se reflejan los cambios realizados en cualquiera de las visualizaciones en el editor de informe, como agregar un filtro o cambiar los campos utilizados en el gráfico del icono del panel.  
 
->[AZURE.NOTE]  You can't pin tiles from reports that are shared with you.
+>[AZURE.NOTE]  No se puede anclar mosaicos de los informes que se comparten con usted.
 
-## Pin a report page
+## Anclar una página del informe
 
-Watch Amanda pin a live report page to a dashboard and then follow the step-by-step instructions below the video to try it yourself.
+Vea Amanda anclar una página de informe a un panel y, a continuación, siga las instrucciones detalladas a continuación el vídeo para probarlo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EzhfBpPboPA" frameborder="0" allowfullscreen></iframe>
 
 
-1. Open a report in Editing view.
+1. Abrir un informe en la vista de edición.
 
-2.  From the menubar, select <bpt id="p1">**</bpt>Pin Live Page<ept id="p1">**</ept>.
+2.  En la barra de menús, seleccione **página activa de Pin**.
 
     ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-pin-live-page.png) 
 
-2.  Pin the tile to an existing dashboard or to a new dashboard. Notice the highlighted text: <bpt id="p1">*</bpt>Pin live page enables changes to reports to appear in the dashboard tile when the page is refreshed.<ept id="p1">*</ept>
+2.  Anclar el mosaico a un panel existente o a un nuevo panel. Observe el texto resaltado: *página activa de Pin permite cambios en los informes que aparecen en el mosaico del panel cuando se actualiza la página.*
 
-  -   Existing dashboard: select the name of the dashboard from the dropdown. Dashboards that have been shared with you will not appear in the dropdown.
+  -   Panel existente: seleccione el nombre del panel en la lista desplegable. Los paneles que se han compartido con usted no aparecerá en la lista desplegable.
 
-  -   New dashboard: type the name of the new dashboard.
+  -   Nuevo panel: escriba el nombre del nuevo panel.
 
      ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-pin-live-page-dialog.png)
 
-3.  Select <bpt id="p1">**</bpt>Pin live<ept id="p1">**</ept>. A Success message (near the top right corner) lets you know the page was added, as a tile, to your dashboard.
+3.  Seleccione **Pin live**. Un mensaje de confirmación (cerca de la esquina superior derecha) le permite saber que se ha agregado a la página, como un icono en el panel.
 
-4.  From the navigation pane, select the dashboard with the new live tile. There, you can do things like <bpt id="p1">[</bpt>rename, resize, link, and move<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept> the pinned report page.  
+4.  En el panel de navegación, seleccione el panel con el nuevo icono dinámico. Allí, puede hacer cosas como [cambiar el nombre, tamaño, vincular y mover](powerbi-service-edit-a-tile-in-a-dashboard.md) la página de informe anclado.  
 
-5. Interact with the live tile.  In the screenshot below, selecting a bar on the column chart has cross-filtered and cross-highlighted the other visualizations on the tile.
+5. Interactuar con el icono dinámico.  En la captura de pantalla siguiente, al seleccionar una barra en la columna de gráfico tiene un filtro cruzado y resaltadas entre las otras visualizaciones en el mosaico.
 
     ![](media/powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report/pbi-live-tile.png)
 
 ## Consulte también
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Q&amp;A in Power BI](powerbi-service-q-and-a.md)
+[Preguntas y respuestas en Power BI](powerbi-service-q-and-a.md)
 
-[Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)
+[Vista previa de Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

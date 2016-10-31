@@ -1,16 +1,16 @@
-<properties pageTitle="Documentation Example - Markdown Article to Article Links" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Markdown Article to Article Links" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación - vínculos de artículo al artículo de descuento" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Markdown Article to Article Links" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Article-to-Article Links #
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+# Por ejemplo, vínculos de artículo al artículo #
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the use of markdown-to-markdown article links
+El contenido entre las líneas siguientes muestra el uso de vínculos de descuento a descuentos artículo
 
 ---
 
-This <bpt id="p1">[</bpt>link<ept id="p1">](example-azure-note.md)</ept> is to an example document that demonstrates the use of the AZURE.NOTE extension.  Notice that the link in markdown content is to a .md file.
+Esto [vínculo](example-azure-note.md) es un ejemplo de documento que se muestra el uso de AZURE. Extensión de la NOTA.  Observe que el vínculo en el contenido de descuento está en un archivo .md.
 
-This <bpt id="p1">[</bpt>link<ept id="p1">](example-headings.md#heading-2)</ept> goes to a markdown document with an anchor.
+Esto [vínculo](example-headings.md#heading-2) entra en un documento de descuento con un delimitador.
 
-This <bpt id="p1">[</bpt>link<ept id="p1">](https://github.com/Azure/azure-content-test/blob/master/README.md)</ept> is absolute and should not change.
+Esto [vínculo](https://github.com/Azure/azure-content-test/blob/master/README.md) es absoluta y no debe cambiar.
 
 ---

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Tag a barcode field in Power BI Desktop for the Power BI mobile apps"
-   description="When you tag a barcode field in your model in Power BI Desktop, you can filter data for barcodes automatically in the Power BI app on your iPhone."
+   pageTitle="Etiqueta de un campo de código de barras en Power BI Desktop para las aplicaciones móviles de Power BI"
+   description="Cuando se etiqueta un campo de código de barras en el modelo en Power BI Desktop, puede filtrar los datos de códigos de barras automáticamente en la aplicación Power BI en su iPhone."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,26 +19,26 @@
    ms.date="09/29/2016"
    ms.author="maggies"/>
 
-# Tag barcodes in Power BI Desktop for the Power BI mobile apps
+# Códigos de barras de etiqueta en Power BI Desktop para las aplicaciones móviles de Power BI
 
-In Power BI Desktop, you can <bpt id="p1">[</bpt>categorize data<ept id="p1">](powerbi-desktop-data-categorization.md)</ept> in a column, so Power BI Desktop knows how to treat values in visuals in a report. You can also categorize a column as <bpt id="p1">**</bpt>Barcode<ept id="p1">**</ept>. When you or your colleagues <bpt id="p1">[</bpt>scan a barcode on a product with the Power BI app<ept id="p1">](powerbi-mobile-scan-barcode-for-report.md)</ept> on the iPhone, you see any report that includes that barcode. When you open the report in the mobile app, Power BI automatically filters the report to data related to that barcode.
+En Power BI Desktop, puede [clasificar los datos](powerbi-desktop-data-categorization.md) en una columna, por lo que Power BI Desktop sabe cómo tratar los valores en objetos visuales en un informe. También puede clasificar una columna como **código de barras**. Cuando usted o sus colegas [analizar un código de barras en un producto con la aplicación Power BI](powerbi-mobile-scan-barcode-for-report.md) en el iPhone, verá que cualquier informe que incluya ese código de barras. Cuando abra el informe en la aplicación móvil, Power BI filtra automáticamente el informe a los datos relacionados con ese código de barras.
 
-1. In Power BI Desktop, switch to Data View.
+1. En Power BI Desktop, cambie a la vista de datos.
 
-2. Select a column with barcode data. See the list of <bpt id="p1">[</bpt>supported barcode formats<ept id="p1">](#supported-barcode-formats)</ept> below.
+2. Seleccione una columna con datos de código de barras. Ver la lista de [admite formatos de código de barras](#supported-barcode-formats) a continuación.
 
-3. On the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Barcode<ept id="p3">**</ept>.
+3. En el **modelado** ficha, seleccione **categoría datos** > **código de barras**.
 
     ![](media/powerbi-desktop-mobile-barcodes/power-bi-desktop-barcode.png)
 
-4. In Report view, add this field to the visuals you want filtered by the barcode.
+4. En la vista de informe, agregue este campo a los elementos visuales que desee filtrar por el código de barras.
 
-5. Save the report and publish it to the Power BI service.
+5. Guarde el informe y publicarlo en el servicio Power BI.
 
-Now when you open the scanner on the <bpt id="p1">[</bpt>Power BI app for iPhone<ept id="p1">](powerbi-mobile-ipad-iphone-apps.md)</ept> and scan a barcode, you see this report in the list of reports. When you open the report, its visuals are filtered by the product barcode you scanned.
+Ahora, cuando abra el escáner en el [aplicación Power BI para iPhone](powerbi-mobile-ipad-iphone-apps.md) y analizar un código de barras, vea este informe en la lista de informes. Al abrir el informe, sus elementos visuales se filtran por el código de barras de producto que ha examinado.
 
-## Supported barcode formats
-These are the barcodes Power BI recognizes if you can tag them in a Power BI report: 
+## Formatos de código de barras
+Estos son los códigos de barras que Power BI reconoce si puede etiquetar en un informe de Power BI: 
 
 - UPCECode 
 - Code39Code  
@@ -52,9 +52,9 @@ These are the barcodes Power BI recognizes if you can tag them in a Power BI rep
 - ITF14Code 
 
 ### Consulte también  
-- [Scan a barcode from the Power BI app on your iPhone](powerbi-mobile-scan-barcode-for-report.md)
-- [Issue with scanning barcodes on an iPhone](powerbi-mobile-scan-barcode-for-report.md#issues-with-scanning-a-barcode)
-- [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)  
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
-- [Get started with Power BI](powerbi-service-get-started.md)  
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Análisis de código de barras de la aplicación de Power BI en su iPhone](powerbi-mobile-scan-barcode-for-report.md)
+- [Emitir con el análisis de códigos de barras en un iPhone](powerbi-mobile-scan-barcode-for-report.md#issues-with-scanning-a-barcode)
+- [Categorización de datos en Power BI Desktop](powerbi-desktop-data-categorization.md)  
+- [Introducción a la aplicación de iPhone para Power BI](powerbi-mobile-iphone-app-get-started.md)  
+- [Introducción a Power BI](powerbi-service-get-started.md)  
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

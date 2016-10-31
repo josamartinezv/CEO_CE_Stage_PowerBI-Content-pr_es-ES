@@ -1,6 +1,6 @@
 <properties
-pageTitle="Power BI (free) in your organization"
-description="This article looks at your options for Power BI (free) from an organization perspective. If you are the Administrator of your tenant, this will show you how to manage free sign ups."
+pageTitle="Power BI (gratuito) de su organización"
+description="Este artículo examina las opciones de Power BI (gratuito) desde una perspectiva de la organización. Si es el administrador del inquilino, esto le mostrará cómo administrar SAI (UPS) de inicio de sesión gratuita."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,77 +19,77 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="09/21/2016"
 ms.author="asaxton"/>
-# Power BI (free) in your organization
+# Power BI (gratuito) de su organización
 
-This will look at how the Power BI (free) offering can be used within your organization. An organization means that you have a tenant and can manage users and services within that tenant. As an administrator, you can control license assignment, or you can allow users to sign up as an individual. We will look at the Power BI (free) license and how you can control individual sign up.
+Examinará cómo puede usarse el Power BI (gratuito) de la oferta dentro de su organización. Una organización significa que tiene un inquilino y puede administrar usuarios y servicios dentro de ese inquilino. Como administrador, puede controlar la asignación de licencias o puede permitir que los usuarios inicien sesión como usuario individual. Veremos la licencia de Power BI (gratuito) y cómo se puede controlar el inicio de sesión individual de.
 
-## Individual sign up versus license assignment
+## Suscripción individual frente a asignación de licencias
 
-Users within your organization can gain access to Power BI in two different ways. They can individually sign up for Power BI, or you can assign a Power BI license to them within the Office 365 admin portal.
+Los usuarios de su organización pueden tener acceso a Power BI de dos maneras diferentes. Puede firmar individualmente para Power BI, o puede asignar una licencia de Power BI a ellos en el portal de administración de Office 365.
 
-Allowing individual sign up reduces the burden, from the organization administrators, by allowing the users that are interested in Power BI to sign up for free. 
+Permitir inicio de sesión individual de reduce la carga, de los administradores de organización, permitiendo a los usuarios que están interesados en Power BI para suscribirse de forma gratuita. 
 
-For more control, you can block individual sign up and assign Power BI licenses yourself within the Office 365 admin center. This allows you to be specific of who can access what services within your organization. This is also a great option if you have to deal with auditing and need to know exactly who can use what.
+Para obtener más control, puede bloquear el inicio de sesión individual de y asignar licencias de Power BI en el centro de administración de Office 365. Esto le permite ser específica de quién puede acceder a los servicios dentro de su organización. También es una buena opción si tiene que tratar con la auditoría y necesita saber exactamente quién puede usar qué.
 
-## How to get the unlimited license block
-Within the Office 365 admin center, under <bpt id="p1">**</bpt>Billing<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Licenses<ept id="p2">**</ept>, you may or may not see Power BI (free) with unlimited licenses.
+## Cómo obtener el bloque de licencias ilimitadas
+En el centro de administración de Office 365, bajo **facturación** > **licencias**, puede o no ver Power BI (gratuito) con licencias ilimitadas.
 
 ![](media/powerbi-admin-powerbi-free-in-your-organization/unlimited-licenses.png)
  
-This block of licenses will show up after the first time someone signs up for Power BI as an individual. During that process, this license block gets attached to your organization and a license is assigned to the user that is signing up.
+Este bloque de licencias se mostrará la primera vez que alguien se suscribe a Power BI como usuario individual. Durante ese proceso, este bloque de licencia se asocia a su organización y se asigna una licencia al usuario que se inscribe.
 
-If you are blocking individual user sign up, and no one has signed up, you will not see this license block. You can either allow individual user sign ups and have one user sign up, or you can get free licenses through the add subscription Office 365 flow which will be talked about next.
+Si va a bloquear individuales usuario registrarse y nadie ha suscrito, no verá este bloque de licencia. O bien puede permitir el inicio de sesión de usuario individual y a tener un usuario registrarse u obtener licencias gratuitas a través del flujo de Agregar suscripción a Office 365 que se hablado siguiente.
 
-Once the Power BI (free) license block is available, you can assign those licenses to your users. [Obtener más información](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
+Una vez que el bloque de la licencia de Power BI (gratuito) está disponible, puede asignar las licencias a los usuarios. [Obtener más información](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
 
-## Getting free licenses via add subscription within Office 365
+## Obtener licencias gratuitas a través de Agregar suscripción dentro de Office 365
 
-1.  Navigate to the <bpt id="p1">[</bpt>Office 365 admin center<ept id="p1">](https://portal.office.com/admin/default.aspx)</ept>.
-2.  On the left navigation pane, select <bpt id="p1">**</bpt>Billing<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Subscriptions<ept id="p2">**</ept>.
-3.  Select <bpt id="p1">**</bpt>Add subscriptions +<ept id="p1">**</ept> on the right side.
-4.  Under Other Plans, hover over the <bpt id="p1">**</bpt>ellipse (…)<ept id="p1">**</ept> for Power BI (free) and select <bpt id="p2">**</bpt>Buy now<ept id="p2">**</ept>.
+1.  Desplácese hasta el [Centro de administración de Office 365](https://portal.office.com/admin/default.aspx).
+2.  En el panel de navegación izquierdo, seleccione **facturación** > **suscripciones**.
+3.  Seleccione **Agregar suscripciones +** en el lado derecho.
+4.  En otros planes, mantenga el mouse sobre el **puntos suspensivos (...)** para Power BI (gratuito) y seleccione **comprar ahora**.
 
     ![](media/powerbi-admin-powerbi-free-in-your-organization/buy-powerbi-free.png)
 
-5.  Enter the number of licenses you would like to add and select <bpt id="p1">**</bpt>Check out now<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Add to cart<ept id="p2">**</ept>.
+5.  Escriba el número de licencias que desea agregar y seleccione **Desproteger ahora** o **Agregar al carro**.
 
-    > [AZURE.NOTE] You can add more at a later date if needed.
+    > [AZURE.NOTE] Puede agregar más adelante si es necesario.
 
-6.  Enter the needed information in the check out flow.
+6.  Escriba la información necesaria en la comprobación de flujo de cierre.
 
-There is no purchase when using this approach, although you will need to either enter your credit card information for billing, or choose to be invoiced.
+No hay ninguna compra cuando se usa este enfoque, pero debe especificar la información de su tarjeta de crédito para la facturación o elija facturación.
 
-If you decide later that you want to add more licenses, you can go back to <bpt id="p1">**</bpt>Add subscriptions<ept id="p1">**</ept>, and select <bpt id="p2">**</bpt>Change license quantity<ept id="p2">**</ept> for Power BI (free).
+Si más adelante decide que desea agregar más licencias, puede volver a **Agregar suscripciones**, y seleccione **cambiar la cantidad de licencias** para Power BI (gratis).
 
 ![](media/powerbi-admin-powerbi-free-in-your-organization/change-license-quantity.png)
  
-You can now assign those licenses to your users. [Obtener más información](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
+Ahora puede asignar las licencias a los usuarios. [Obtener más información](https://support.office.com/article/Assign-or-unassign-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)
 
-## Enable, or disable, individual user sign up in Azure Active Directory
+## Habilitar o deshabilitar, cada usuario de inicio de sesión de Azure Active Directory
 
-As an administrator, you can choose to enable, or disable, individual user sign ups as part of Azure Active Directory (AAD). If you know how to leverage the AAD PowerShell commands, you can enable, or disable, ad-hoc subscriptions yourself. [Obtener más información](https://technet.microsoft.com/library/jj151815.aspx)
+Como administrador, puede habilitar o deshabilitar, ups de inicio de sesión de usuario individual como parte de Azure Active Directory (AAD). Si sabe cómo aprovechar los comandos de PowerShell de AAD, puede habilitar o deshabilitar, ad hoc suscripciones usted mismo. [Obtener más información](https://technet.microsoft.com/library/jj151815.aspx)
 
-The AAD setting that controls this is <bpt id="p1">**</bpt>AllowAdHocSubscriptions<ept id="p1">**</ept>. Most tenants will have this setting set to true, which means it is enabled. If you acquired Power BI through a partner, this may be set to false by default, which means it is disabled.
+Es la configuración de AAD que controla este **AllowAdHocSubscriptions**. La mayoría de los inquilinos tendrán esta propiedad establecida en true, lo que significa que está habilitada. Si adquirió Power BI a través de un socio, esto se puede establecer en false de forma predeterminada, lo que significa que está deshabilitado.
 
-1.  You need to first sign into Azure Active Directory using your Office 365 credential. The first line will prompt you for your credentials. The second line connects to Azure Active Directory.
+1.  Debe iniciar sesión primero en Azure Active Directory mediante las credenciales de Office 365. La primera línea le solicitará las credenciales. La segunda línea se conecta a Azure Active Directory.
 
         $msolcred = get-credential
         connect-msolservice -credential $msolcred
     
     ![](media/powerbi-admin-powerbi-free-in-your-organization/aad-signin.png)
 
-2.  Once you are signed in, you can issue the following command to see what your tenant is currently configured for.
+2.  Una vez que ha iniciado sesión, puede emitir el comando siguiente para ver lo que el inquilino está configurado actualmente para.
 
         Get-MsolCompanyInformation | fl AllowAdHocSubscriptions
 
-3.  You can this command to enable ($true) or disable ($false) AllowAdHocSubscriptions.
+3.  Puede que este comando para habilitar ($true) o deshabilitar AllowAdHocSubscriptions ($false).
 
         Set-MsolCompanySettings -AllowAdHocSubscriptions $true
 
-> [AZURE.NOTE] This blocking prevents new users in your organization from signing up for Power BI. Users that sign up for Power BI prior to disabling new signups for your organization will still retain their licenses.
+> [AZURE.NOTE] Este bloqueo impide que nuevos usuarios de su organización de registrarse para Power BI. Los usuarios que se suscriben para Power BI antes de desactivar las suscripciones nuevas para su organización aún conserva sus licencias.
 
 ## Consulte también
 
-[Self-service sign up for Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
-[Sign up for Power BI (free) with a custom Azure Active Directory tenant](powerbi-admin-free-with-custom-azure-directory.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Suscripción de autoservicio para Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
+[Registrarse para Power BI (gratuito) con un inquilino de Azure Active Directory personalizado](powerbi-admin-free-with-custom-azure-directory.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

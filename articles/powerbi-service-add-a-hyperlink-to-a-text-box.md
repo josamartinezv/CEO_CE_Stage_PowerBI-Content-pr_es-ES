@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add a hyperlink to a text box in a Power BI report"
-   description="Add a hyperlink to a Text Box in Power BI"
+   pageTitle="Agregar un hipervínculo a un cuadro de texto en un informe de Power BI"
+   description="Agregar un hipervínculo a un cuadro de texto en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,61 +21,63 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Add a hyperlink to a text box in a report
+# Agregar un hipervínculo a un cuadro de texto en un informe
 
-Text boxes can be added to reports, pinned to dashboards from reports, and added directly to dashboards. Hyperlinks can be added to a text box no matter where it resides. **This topic covers text boxes in reports.**
+Cuadros de texto se pueden agregados a los informes, anclar en paneles de informes y agrega directamente a los paneles. Pueden agregar hipervínculos a un cuadro de texto independientemente de su ubicación. **Este tema trata los cuadros de texto en los informes.**
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: For information on hyperlinks in Power BI tables and matrixes, see <bpt id="p2">[</bpt>Hyperlinks in tables<ept id="p2">](powerbi-service-hyperlinks-in-tables.md)</ept>. For information on adding text boxes to your <bpt id="p1">**</bpt>dashboard<ept id="p1">**</ept>, see <bpt id="p2">[</bpt>Add a tile directly from the dashboard <ept id="p2">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept>. 
+>
+            **NOTA**: para obtener información sobre los hipervínculos en matrices y tablas de Power BI, consulte [hipervínculos en tablas](powerbi-service-hyperlinks-in-tables.md). Para obtener información sobre cómo agregar cuadros de texto para su **panel**, consulte [Agregar un mosaico directamente desde el panel ](powerbi-service-add-a-widget-to-a-dashboard.md). 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_3q6VEBhGew?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
-## To add a hyperlink to a text box in a report
+## Para agregar un hipervínculo a un cuadro de texto en un informe
 
-1.  <bpt id="p1">[</bpt>Create a text box and add some text<ept id="p1">](powerbi-service-text-boxes-in-reports.md)</ept>. 
+1.  
+            [Crear un cuadro de texto y agregue texto](powerbi-service-text-boxes-in-reports.md). 
 
-2.  Highlight existing text, or add new text to use as a hyperlink.
+2.  Resalte el texto existente o agregar el nuevo texto que se usará como un hipervínculo.
 
     ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/PBI_textBoxHyperlink.png)
 
-3.  Select the hyperlink icon  <ph id="ph1">![](media/powerbi-service-add-a-hyperlink-to-a-text-box/PBI_hyperlink.png)</ph> .
+3.  Seleccione el icono de hipervínculo  ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/PBI_hyperlink.png) .
 
-4.  Type or paste the URL in the hyperlink field, and select <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.
+4.  Escriba o pegue la dirección URL en el campo de hipervínculo y seleccione **realiza**.
 
     ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/PBI_addHyperlinkURL.png)
 
     ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/PBI_AddedHyperlink.png)
 
-5.  Test the link.  
+5.  Probar el vínculo.  
 
-    -  In the text box, select the hyperlink to display the URL
+    -  En el cuadro de texto, seleccione el hipervínculo para mostrar la dirección URL
 
-    -  Select the URL to open the page in a new browser window.
+    -  Seleccione la dirección URL para abrir la página en una nueva ventana del explorador.
 
 
-## To remove the hyperlink but leave the text
+## Para quitar el hipervínculo del texto
 
-1.  With at least a portion of the hyperlink highlighted,
+1.  Con al menos una parte del hipervínculo resaltado,
 
-2.  select the hyperlink icon and then
+2.  Seleccione el icono de hipervínculo y, a continuación,
 
-3.  choose <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>. 
+3.  Elija **quitar**. 
 
     ![](media/powerbi-service-add-a-hyperlink-to-a-text-box/PBI_removeHyperlink.png)
 
-    Alternately, to remove the hyperlink but leave the text, highlight the entire hyperlink and select <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.
+    O bien, para quitar el hipervínculo, pero deja el texto, resalte el hipervínculo completo y seleccione **Eliminar**.
 
 
 ## Consulte también
 
-[Text boxes in Power BI reports](powerbi-service-text-boxes-in-reports.md)
+[Cuadros de texto en los informes de Power BI](powerbi-service-text-boxes-in-reports.md)
 
-[Add a text box to a dashboard ](powerbi-service-add-a-widget-to-a-dashboard.md)
+[Agregar un cuadro de texto a un panel ](powerbi-service-add-a-widget-to-a-dashboard.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

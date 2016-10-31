@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Register a web app"
-   description="Register a web app"
+   pageTitle="Registrar una aplicación web"
+   description="Registrar una aplicación web"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,124 +20,136 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Register a web app
+# Registrar una aplicación web
 
-This article shows you how to register a Power BI web app in Azure Active Directory (Azure AD). To allow your application access to the Power BI REST API, you need to register your application with <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept>. This will allow you to establish an identity for your application and specify permissions to Power BI REST resources. For a list of Power BI permissions, see <bpt id="p1">[</bpt>Power BI permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
+En este artículo se muestra cómo registrar una aplicación web de Power BI en Azure Active Directory (Azure AD). Para permitir que la aplicación tenga acceso a la API de REST de Power BI, deberá registrar la aplicación con **Azure Active Directory**. Esto le permitirá establecer una identidad para la aplicación y especificar permisos para recursos de REST de Power BI. Para obtener una lista de permisos de Power BI, consulte [permisos de Power BI](powerbi-developer-power-bi-permissions.md).
 
-<bpt id="p1">**</bpt>Important<ept id="p1">**</ept> Before you register a Power BI app you need an <bpt id="p2">[</bpt>Azure Active Directory and an organizational user<ept id="p2">](powerbi-developer-create-an-azure-active-directory-tenant.md)</ept>, and a <bpt id="p3">[</bpt>Power BI service account<ept id="p3">](powerbi-developer-sign-up-for-power-bi-service.md)</ept>.
 
-There are two ways to register your web app: with the Power BI App Registration Tool or on Azure Management Portal. The Power BI App Registration Tool is the easiest option since there are just a few fields to fill in. If you want to make changes to your app, this can be done through the Azure Management Portal.
+            **Importante** antes de registrar una aplicación de Power BI necesita un [Azure Active Directory y un usuario de la organización](powerbi-developer-create-an-azure-active-directory-tenant.md), y un [cuenta de servicio de Power BI](powerbi-developer-sign-up-for-power-bi-service.md).
+
+Hay dos maneras de registrar la aplicación web: con la herramienta de registro de aplicación de Power BI o en el Portal de administración de Azure. La herramienta de registro de aplicación de Power BI es la opción más fácil dado que hay solo unos cuantos campos a rellenar. Si desea realizar cambios en la aplicación, esto puede hacerse a través del Portal de administración de Azure.
 
 <a name="webTool"></a>
-## Register a web app with Power BI App Registration Tool
-You need to register your web app in <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept> to establish an identity for your application and specify permissions to Power BI REST resources. When you register a web app, you receive a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Client Secret<ept id="p2">**</ept>.  The <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> is used by the application to identify themselves to the users that they are requesting permissions from. The client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept> is used by the web app to securely identify themselves to the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>.
+## Registrar una aplicación web con la herramienta de registro de aplicación de Power BI
+Debe registrar la aplicación web en **Azure Active Directory** para establecer una identidad para la aplicación y especificar permisos para recursos de REST de Power BI. Al registrar una aplicación web, recibirá un **Id. de cliente** y **secreto de cliente**.  El **Id. de cliente** se utiliza la aplicación para identificarse ante los usuarios que están solicitando permisos. El secreto del cliente **clave** se utiliza la aplicación web para identificarse de forma segura a los **servicio Power BI**.
 
-Here's how to register your web app with the <bpt id="p1">**</bpt>Power BI App Registration Tool<ept id="p1">**</ept>:
+Aquí se muestra cómo registrar su aplicación web con el **herramienta de registro de aplicación de Power BI**:
 
-1.  Go to dev.powerbi.com/apps.
-2.  In the <bpt id="p1">**</bpt>Power BI App Registration Tool<ept id="p1">**</ept>, follow these four steps:
+1.  Vaya a dev.powerbi.com/apps.
+2.  En el **herramienta de registro de aplicación de Power BI**, siga estos cuatro pasos:
 
-<bpt id="p1">**</bpt>Step 1<ept id="p1">**</ept> - Choose <bpt id="p2">**</bpt>Login in<ept id="p2">**</ept> to login to your Azure AD account. You will see your name in the Welcome line.
 
-<bpt id="p1">**</bpt>Step 2<ept id="p1">**</ept> – Enter information about your app.
+            **Paso 1** -elija **Inicio de sesión en** para iniciar sesión en su cuenta de Azure AD. Verá su nombre en la línea principal.
 
-  * <bpt id="p1">**</bpt>App Name<ept id="p1">**</ept>: The name of your app.
-  * <bpt id="p1">**</bpt>App Type<ept id="p1">**</ept>: Choose Native app.
-  * <bpt id="p1">**</bpt>Redirect URI<ept id="p1">**</ept>: For a web app, a redirect uri gives AAD more details on the specific application that it will authenticate. An example <bpt id="p1">**</bpt>Redirect URI<ept id="p1">**</ept> looks like this: http://localhost/redirect.
-  * <bpt id="p1">**</bpt>Home Page<ept id="p1">**</ept>: The home page or sign on page for your web app.
+
+            **Paso 2** : especificar información acerca de la aplicación.
+
+  * 
+            **Nombre de la aplicación**: el nombre de la aplicación.
+  * 
+            **Tipo de aplicación**: elija la aplicación nativa.
+  * 
+            **URI de redireccionamiento**: para una aplicación web, un uri de redireccionamiento da a AAD más detalles en la aplicación específica que autenticará. Un ejemplo **URI de redireccionamiento** este aspecto: http://localhost/redirect.
+  * 
+            **Página principal**: la página principal o la página de la aplicación web de inicio de sesión.
 
 ![](media/powerbi-developer-register-a-web-app/register-tool-2.png)
 
-<bpt id="p1">**</bpt>Step 3<ept id="p1">**</ept> – Choose APIs to access. For more information about Power BI access permissions, see <bpt id="p1">[</bpt>Power BI Permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
+
+            **Paso 3** : elija API para tener acceso. Para obtener más información acerca de los permisos de acceso de Power BI, consulte [permisos de Power BI](powerbi-developer-power-bi-permissions.md).
 
 ![](media/powerbi-developer-register-a-web-app/register-app-tool-3.png)
 
-<bpt id="p1">**</bpt>Step 4<ept id="p1">**</ept> - To register your app, click <bpt id="p2">**</bpt>Register App<ept id="p2">**</ept>. After the app is registered in Azure AD, you will get a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Client Secret<ept id="p2">**</ept> key. Make sure you copy the Client ID and Client Secret key. You can get the Client ID or Client Secret key later in the <bpt id="p1">**</bpt>Azure Management Portal<ept id="p1">**</ept>. See <bpt id="p1">[</bpt>How to get a client id in Azure Management Portal<ept id="p1">](#clientID)</ept> and <bpt id="p2">[</bpt>How to get a client secret key<ept id="p2">](#clientSecret)</ept>.
 
-You can now use your Client ID and Client Secret for your app. The next section shows how to register a web app with <bpt id="p1">**</bpt>Azure Management Portal<ept id="p1">**</ept>.
+            **Paso 4** : para registrar la aplicación, haga clic en **aplicación registrar**. Una vez que se registra la aplicación en Azure AD, obtendrá un **Id. de cliente** y **secreto de cliente** clave. Asegúrese de que copiar la clave de Id. de cliente y el secreto del cliente. Puede obtener la clave de Id. de cliente o el secreto de cliente más adelante en el **Portal de administración de Azure**. Vea [cómo obtener un identificador de cliente en el Portal de administración de Azure](#clientID) y [cómo obtener un cliente clave secreta](#clientSecret).
+
+Ahora puede usar el identificador de cliente y el secreto del cliente para la aplicación. La siguiente sección muestra cómo registrar una aplicación web con **Portal de administración de Azure**.
 
 <a name="web"></a>
-## Register a web app with Azure Management Portal
-When you register a web app, you receive an <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and a client secret <bpt id="p2">**</bpt>Key<ept id="p2">**</ept>. The <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> is used by the application to identify themselves to the users that they are requesting permissions from. The client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept> is used by the web app to securely identify themselves to the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>.
+## Registrar una aplicación web con el Portal de administración de Azure
+Al registrar una aplicación web, recibirá un **Id. de cliente** y un secreto de cliente **clave**. El **Id. de cliente** se utiliza la aplicación para identificarse ante los usuarios que están solicitando permisos. El secreto del cliente **clave** se utiliza la aplicación web para identificarse de forma segura a los **servicio Power BI**.
 
-To learn how to authenticate a web app using an Azure AD <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and client secret <bpt id="p2">**</bpt>Key<ept id="p2">**</ept>, see <bpt id="p3">[</bpt>Authenticate a web app<ept id="p3">](powerbi-developer-authenticate-a-web-app.md)</ept>.
+Para obtener información sobre cómo autenticar una aplicación web con Azure AD **Id. de cliente** y el secreto del cliente **clave**, consulte [autenticar una aplicación web](powerbi-developer-authenticate-a-web-app.md).
 
-Here's how to register a client app:
+Aquí se muestra cómo registrar una aplicación de cliente:
 
-1. Accept the <bpt id="p1">[</bpt>Microsoft Power BI API Terms<ept id="p1">](https://powerbi.microsoft.com/api-terms)</ept>.
-2. Sign into your Microsoft Azure subscription at https://manage.windowsazure.com.
-3. In the left service panel, choose <bpt id="p1">**</bpt>ACTIVE DIRECTORY<ept id="p1">**</ept>.
-4. Click any active directory.
+1. Acepte el [términos de la API de Microsoft Power BI](https://powerbi.microsoft.com/api-terms).
+2. Inicie sesión en su suscripción de Microsoft Azure en https://manage.windowsazure.com.
+3. En el panel izquierdo del servicio, elija **ACTIVE DIRECTORY**.
+4. Haga clic en active directory.
 
     ![](media/powerbi-developer-register-a-web-app/register-app-ad.png)
 
-5. Click <bpt id="p1">**</bpt>APPLICATIONS<ept id="p1">**</ept>.
+5. Haga clic en **APLICACIONES**.
 
     ![](media/powerbi-developer-register-a-web-app/register-app-applications.png)
 
-6. Click <bpt id="p1">**</bpt>ADD<ept id="p1">**</ept>.
+6. Haga clic en **AGREGAR**.
 
     ![](media/powerbi-developer-register-a-web-app/register-app-add.png)
 
-7.  In <bpt id="p1">**</bpt>Tell us about your application<ept id="p1">**</ept>, enter a <bpt id="p2">**</bpt>NAME<ept id="p2">**</ept>, and choose <bpt id="p3">**</bpt>WEB APPLICATION AND/OR WEB API<ept id="p3">**</ept> for the type, and click <bpt id="p4">**</bpt>Next<ept id="p4">**</ept> icon.
+7.  En **más información sobre la aplicación**, escriba un **NOMBRE**, y elija **APLICACIÓN WEB o API de WEB** para el tipo y haga clic en **siguiente** icono.
 
     ![](media/powerbi-developer-register-a-web-app/register-app-web-app.png)
 
-8. In <bpt id="p1">**</bpt>App properties<ept id="p1">**</ept>, enter a <bpt id="p2">**</bpt>SIGN-ON URL<ept id="p2">**</ept> and <bpt id="p3">**</bpt>APP ID URI<ept id="p3">**</ept>. The <bpt id="p1">**</bpt>SIGN-ON URL<ept id="p1">**</ept> is your web app url such as https://localhost:44307. The <bpt id="p1">**</bpt>APP ID URI<ept id="p1">**</ept> is your Azure Tenant URI followed by your app name. For example, https://yourtenant.onmicrosoft.com/YourWebApp.
+8. En **Propiedades de la aplicación**, escriba una **dirección URL de inicio de sesión** y **APP ID URI**. El **dirección URL de inicio de sesión** es la dirección url de aplicación web como https://localhost: 44307. El **APP ID URI** es el URI del inquilino de Azure seguido por el nombre de la aplicación. Por ejemplo, https://yourtenant.onmicrosoft.com/YourWebApp.
 
     ![](media/powerbi-developer-register-a-web-app/register-app-properties.png)
 
-9.  Click the <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> icon.
-10. In the application page, choose <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept>. The <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept> page has a <bpt id="p2">**</bpt>Client ID<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Key<ept id="p3">**</ept> for your app.
+9.  Haga clic en el **completado** icono.
+10. En la página aplicación, elija **CONFIGURAR**. El **CONFIGURAR** página tiene un **Id. de cliente** y **clave** para la aplicación.
 
     ![Paso 10](media/powerbi-developer-register-a-web-app/register-app-config.png)
 
-11. For a web app, you need a client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept>. In the <bpt id="p1">**</bpt>keys<ept id="p1">**</ept> section, select a duration. The key is displayed after you <bpt id="p1">**</bpt>Save<ept id="p1">**</ept> it. Make sure you copy the key; otherwise, the key will not be available upon future navigation to the configuration page.
+11. Para una aplicación web, necesita un secreto de cliente **clave**. En el **claves** seleccione una duración. La clave se muestra después **Guardar** lo. Asegúrese de que copiar la clave; de lo contrario, la clave no estará disponible en futuras navegaciones a la página de configuración.
 
-12. In the <bpt id="p1">**</bpt>CONFIGURATION<ept id="p1">**</ept> page, click <bpt id="p2">**</bpt>Add Application<ept id="p2">**</ept>.
-13. In <bpt id="p1">**</bpt>Permissions to other applications<ept id="p1">**</ept>, choose <bpt id="p2">**</bpt>Power BI Service<ept id="p2">**</ept>.
+12. En el **CONFIGURACIÓN** haga clic en **Agregar aplicación**.
+13. En **permisos para otras aplicaciones**, elija **servicio Power BI**.
 
     ![](media/powerbi-developer-register-a-web-app/register-app-permissions.png)
 
-    <bpt id="p1">**</bpt>Important<ept id="p1">**</ept> If you do not see <bpt id="p2">**</bpt>Power BI Service<ept id="p2">**</ept> in the <bpt id="p3">**</bpt>Permissions to other applications<ept id="p3">**</ept> list, you need to sign up for the <bpt id="p4">[</bpt>Power BI Service<ept id="p4">](https://www.powerbi.com/)</ept>. To sign up for the Power BI Service, you need at least one organizational user in your Azure Active Directory (AAD) tenant. If you do not have an Azure Active Directory (AAD) tenant, see <bpt id="p1">[</bpt>Create an Azure Active Directory tenant<ept id="p1">](powerbi-developer-create-an-azure-active-directory-tenant.md)</ept> to create an Azure AD tenant and an organizational user in your Azure AD tenant.
+    
+            **Importante** Si no ve **servicio Power BI** en el **permisos para otras aplicaciones** lista, debe registrarse para el [servicio Power BI](https://www.powerbi.com/). Para suscribirse al servicio Power BI, necesita al menos un usuario de la organización en el inquilino de Azure Active Directory (AAD). Si no tiene un inquilino de Azure Active Directory (AAD), consulte [crear un inquilino de Azure Active Directory](powerbi-developer-create-an-azure-active-directory-tenant.md) para crear un inquilino de Azure AD y un usuario de la organización en su inquilino de Azure AD.
 
-14. Click <bpt id="p1">**</bpt>Complete<ept id="p1">**</ept> icon which is located at the lower right corner of the page.
-15. In the <bpt id="p1">**</bpt>permissions to other applications<ept id="p1">**</ept> group, dropdown  
-<bpt id="p1">**</bpt>Delegated Permissions<ept id="p1">**</ept>, and choose which operations your app is permitted to call. For more information about Power BI permissions, see <bpt id="p1">[</bpt>Power BI Permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
+14. Haga clic en **Complete** icono que se encuentra en la esquina inferior derecha de la página.
+15. En el **permisos para otras aplicaciones** grupo, la lista desplegable  
+
+            **Permisos delegados**, y elegir qué operaciones se permite llamar a la aplicación. Para obtener más información acerca de los permisos de Power BI, consulte [permisos de Power BI](powerbi-developer-power-bi-permissions.md).
 
     ![](media/powerbi-developer-register-a-web-app/register-app-delegated.png)
 
 16. Haga clic en **Guardar**.
 
-    <bpt id="p1">**</bpt> Important <ept id="p1">**</ept> For a web app, you need a client secret <bpt id="p2">**</bpt>Key<ept id="p2">**</ept>. The client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept> is displayed after you <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> it. Make sure you copy the key; otherwise, the key will not be available upon future navigation to the configuration page.
+    
+                ** Importante ** para una aplicación web, necesita un secreto de cliente **clave**. El secreto del cliente **clave** se muestra después **Guardar** lo. Asegúrese de que copiar la clave; de lo contrario, la clave no estará disponible en futuras navegaciones a la página de configuración.
 
 
 <a name="clientID"></a>
-## How to get a client app id
-When you register a web app, you receive a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept>.  The <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> is used by the application to identify themselves to the users that they are requesting permissions from.
+## Cómo obtener un identificador de aplicación cliente
+Al registrar una aplicación web, recibirá un **Id. de cliente**.  El **Id. de cliente** se utiliza la aplicación para identificarse ante los usuarios que están solicitando permisos.
 
-Here's how to get a client app id:
+Aquí se muestra cómo obtener un identificador de la aplicación cliente:
 
-1. Sign into your Microsoft Azure subscription at https://manage.windowsazure.com.
-2. In the left service panel, choose <bpt id="p1">**</bpt>ACTIVE DIRECTORY<ept id="p1">**</ept>.
-3. Choose any active directory.
-4. Click <bpt id="p1">**</bpt>APPLICATIONS<ept id="p1">**</ept>.
-5. Choose an application.
-6. In the application page, choose <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept>.
-7. In the <bpt id="p1">**</bpt>CONFIGURE<ept id="p1">**</ept> page, copy the <bpt id="p2">**</bpt>CLIENT ID<ept id="p2">**</ept>.
+1. Inicie sesión en su suscripción de Microsoft Azure en https://manage.windowsazure.com.
+2. En el panel izquierdo del servicio, elija **ACTIVE DIRECTORY**.
+3. Seleccione cualquier active directory.
+4. Haga clic en **APLICACIONES**.
+5. Elija una aplicación.
+6. En la página aplicación, elija **CONFIGURAR**.
+7. En el **CONFIGURAR** página, copie el **Id. de CLIENTE**.
 
-    ![step 1.3](media/powerbi-developer-register-a-web-app/register-app-clientid.png)
+    ![paso 1.3](media/powerbi-developer-register-a-web-app/register-app-clientid.png)
 
 <a name="clientSecret"></a>
-## How to get a client secret
+## Cómo obtener un secreto de cliente
 
-For a web app, you need a client secret <bpt id="p1">**</bpt>Key<ept id="p1">**</ept>. When you register a web app, Azure AD generates a key (see step 11 above). In the <bpt id="p1">**</bpt>keys<ept id="p1">**</ept> section, select a duration. The key is displayed after you save it. Make sure you copy the key; otherwise, the key will not be available upon future navigation to the configuration page.
+Para una aplicación web, necesita un secreto de cliente **clave**. Al registrar una aplicación web, genera una clave de Azure AD (consulte el paso 11 anterior). En el **claves** seleccione una duración. La clave se muestra después de guardarlo. Asegúrese de que copiar la clave; de lo contrario, la clave no estará disponible en futuras navegaciones a la página de configuración.
 
 ## Consulte también
 
-[Power BI permissions](powerbi-developer-power-bi-permissions.md)  
-[Azure Active Directory tenant and an organizational user](powerbi-developer-create-an-azure-active-directory-tenant.md)  
-[Power BI service account](powerbi-developer-sign-up-for-power-bi-service.md)  
-[Authenticate a web app](powerbi-developer-authenticate-a-web-app.md)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Permisos de Power BI](powerbi-developer-power-bi-permissions.md)  
+[Inquilino de Azure Active Directory y un usuario de la organización](powerbi-developer-create-an-azure-active-directory-tenant.md)  
+[Cuenta de servicio de Power BI](powerbi-developer-sign-up-for-power-bi-service.md)  
+[Autenticar una aplicación web](powerbi-developer-authenticate-a-web-app.md)  
+[Información general sobre la API de REST de Power BI](powerbi-developer-overview-of-power-bi-rest-api.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="View dashboards in the Power BI mobile apps"
-   description="You create or connect to dashboards in the Power BI service. Then you can view them in the Power BI mobile apps."
+   pageTitle="Paneles de la vista de las aplicaciones móviles de Power BI"
+   description="Crear o conectarse a los paneles en el servicio Power BI. A continuación, puede ver en las aplicaciones móviles de Power BI."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,52 +19,54 @@
    ms.workload="powerbi"
    ms.date="10/03/2016"
    ms.author="maggies"/>
-# View dashboards in the Power BI mobile apps
+# Paneles de la vista de las aplicaciones móviles de Power BI
 
-Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business.
+Los paneles son un portal para el ciclo de vida y los procesos de su empresa. Un panel es una introducción, un único lugar para supervisar el estado actual de la empresa.
 
-## Create dashboards in the Power BI service
-**You don't create dashboards in the mobile apps.** 
+## Crear paneles en el servicio Power BI
+**No cree paneles en las aplicaciones móviles.** 
 
-To see more dashboards on your mobile device, you need to create or connect to them on your computer. 
+Para ver más paneles en tu dispositivo móvil, debe crear o conectarse a ellos en el equipo. 
 
-1. Go to the Power BI service (<bpt id="p1">[</bpt>https://www.powerbi.com<ept id="p1">](https://www.powerbi.com)</ept>) and <bpt id="p2">[</bpt>sign up for an account<ept id="p2">](powerbi-service-self-service-signup-for-power-bi.md)</ept>.
+1. Vaya al servicio Power BI ([https://www.powerbi.com](https://www.powerbi.com)) y [registrarse para una cuenta](powerbi-service-self-service-signup-for-power-bi.md).
 
-2. <bpt id="p1">[</bpt>Create your own Power BI dashboards<ept id="p1">](powerbi-service-create-a-dashboard.md)</ept>, or connect to existing <bpt id="p2">[</bpt>content packs for a variety of services<ept id="p2">](powerbi-content-packs-services.md)</ept>.
+2. 
+            [Crear sus propios paneles de Power BI](powerbi-service-create-a-dashboard.md), o conectarse a uno existente [paquetes para una variedad de servicios de contenido](powerbi-content-packs-services.md).
 
-Here's a Power BI dashboard in the Power BI service:
+Este es un panel de Power BI en el servicio Power BI:
 
 ![](media/powerbi-mobile-create-dashboard/power-bi-service-dashboard-sm.png)
 
 
-## View dashboards in the Power BI mobile apps
+## Paneles de la vista de las aplicaciones móviles de Power BI
 
-Then these same dashboards will appear automatically in your Power BI mobile app. Dashboards refresh in real time, automatically, so no need to manually refresh them.
+A continuación, estos paneles mismos aparecerá automáticamente en su aplicación móvil de Power BI. Los paneles se actualización en tiempo real, automáticamente, por lo que no necesita actualizarla manualmente.
 
-Here's the same dashboard as seen on a mobile phone:
+Este es el mismo panel, tal como se muestra en un teléfono móvil:
 
 ![](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard.png)
 
-From here, you can:
+Desde aquí, puede:
 
-- Share the dashboard with colleagues <ph id="ph1">![](media/powerbi-mobile-create-dashboard/PBI_Andr_InviteIcon.png)</ph>.
-- <bpt id="p1">[</bpt>Make the dashboard one of your favorites<ept id="p1">](powerbi-mobile-favorites.md)</ept> <ph id="ph1">![](media/powerbi-mobile-create-dashboard/power-bi-mobile-not-favorite-icon.png)</ph>.
-- Tap the arrow next to the dashboard name to go back to My Workspace.
+- Comparta el panel con sus colegas ![](media/powerbi-mobile-create-dashboard/PBI_Andr_InviteIcon.png).
+- 
+            [Convertir el panel uno de sus favoritos](powerbi-mobile-favorites.md) ![](media/powerbi-mobile-create-dashboard/power-bi-mobile-not-favorite-icon.png).
+- Puntee en la flecha situada junto al nombre del panel para volver atrás y mi área de trabajo.
 
     ![](media/powerbi-mobile-create-dashboard/power-bi-iphone-dashboard-breadcrumb.png)
 
-## Create a phone view of a dashboard in the Power BI service
+## Crear una vista de teléfono de un panel en el servicio Power BI
 
-If you're the dashboard owner, <bpt id="p1">*</bpt>in the Power BI service<ept id="p1">*</ept> you can create a view of the dashboard specifically for phones in portrait mode. 
+Si eres el propietario del panel, *en el servicio Power BI* puede crear una vista del panel específicamente para teléfonos en modo vertical. 
 
 ![](media/powerbi-mobile-create-dashboard/power-bi-phone-dashboard-in-progress.png)
 
-Read more about <bpt id="p1">[</bpt>creating a phone view of a dashboard<ept id="p1">](powerbi-service-create-dashboard-phone-view.md)</ept>.
+Obtenga más información sobre [crear una vista de teléfono de un panel de](powerbi-service-create-dashboard-phone-view.md).
 
 
-### More about dashboards in the Power BI mobile apps
-- [Dashboards in the iPad app for Power BI for iOS](powerbi-mobile-dashboards-on-the-ipad-app.md)
-- [Dashboards in the iPhone app for Power BI for iOS](powerbi-mobile-dashboards-in-the-iphone-app.md)
-- [Dashboards in the Power BI mobile app for Windows 10 devices](powerbi-mobile-dashboards-in-the-win10phone-app.md)
-- [Dashboards in the Power BI app for Android phones](powerbi-mobile-dashboards-in-the-android-app.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+### Más información acerca de los paneles de las aplicaciones móviles de Power BI
+- [Paneles de la aplicación de iPad para Power BI para iOS](powerbi-mobile-dashboards-on-the-ipad-app.md)
+- [Paneles de la aplicación de iPhone para Power BI para iOS](powerbi-mobile-dashboards-in-the-iphone-app.md)
+- [Paneles de la aplicación móvil de Power BI para dispositivos Windows 10](powerbi-mobile-dashboards-in-the-win10phone-app.md)
+- [Paneles de la aplicación de Power BI para teléfonos Android](powerbi-mobile-dashboards-in-the-android-app.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

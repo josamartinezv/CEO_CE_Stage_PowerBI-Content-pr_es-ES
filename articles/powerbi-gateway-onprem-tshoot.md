@@ -1,6 +1,6 @@
 <properties
-pageTitle="Troubleshooting the On-Premises Data Gateway"
-description="This article provides ways for you to troubleshoot issues you are having with the On-Premises Data Gateway. It provides potential workarounds to known issues, as well as tools to assist you."
+pageTitle="Solución de problemas de la puerta de enlace de datos local"
+description="Este artículo proporciona métodos solucionar los problemas que tiene con la puerta de enlace de datos local. Proporciona posibles soluciones a problemas conocidos, así como herramientas para ayudarle."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,9 +19,9 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="09/21/2016"
 ms.author="asaxton"/>
-# Troubleshooting the On-Premises Data Gateway
+# Solución de problemas de la puerta de enlace de datos local
 
-The following goes through some common issues you may encounter when using the On-premises Data Gateway. 
+A continuación se pasa por algunos problemas comunes que puede producirse al usar la puerta de enlace de datos local. 
 
 <!-- Shared Community & support links Include -->
 [AZURE.INCLUDE [gateway-onprem-tshoot-support-links-include](../includes/gateway-onprem-tshoot-support-links-include.md)]
@@ -31,189 +31,189 @@ The following goes through some common issues you may encounter when using the O
 
 ## Configuración
 
-### How to restart the gateway
+### Cómo reiniciar la puerta de enlace
 
-The gateway runs as a Windows service, so you can start and stop it in multiple ways. For example, you can open a command prompt with elevated permissions on the machine where the gateway is running and then run either of these commands:
+La puerta de enlace se ejecuta como un servicio de Windows para que pueda iniciar y detener de varias maneras. Por ejemplo, puede abrir un símbolo del sistema con permisos elevados en el equipo donde la puerta de enlace se está ejecutando y, a continuación, ejecute cualquiera de estos comandos:
 
-- To stop the service, run this command:
+- Para detener el servicio, ejecute este comando:
 
-    '''   net stop PBIEgwService   '''
+    ''' net stop PBIEgwService '''
     
-- To start the service, run this command:
+- Para iniciar el servicio, ejecute este comando:
 
-    '''   net start PBIEgwService   '''
+    ''' del comando net start PBIEgwService '''
 
-### Error: Failed to create gateway. Inténtelo de nuevo.
+### Error: No se pudo crear la puerta de enlace. Inténtelo de nuevo.
 
-All of the details are available, but the call to the Power BI service returned an error. The error, and an activity id, will be displayed. This could happen for different reasons. You can collect, and review, the logs, as mentioned below, to get more details. 
+Todos los detalles están disponibles, pero la llamada al servicio Power BI devolvió un error. Se mostrará el error y un identificador de actividad. Esto puede ocurrir por diferentes motivos. Puede recopilar y revisar los registros, como se menciona a continuación, para obtener más detalles. 
 
-This could also be due to proxy configuration issues. The user interface does now allow for proxy configuration. You can learn more about making <bpt id="p1">[</bpt>proxy configuration changes<ept id="p1">](powerbi-gateway-proxy.md)</ept>
+Esto también podría ser debido a problemas de configuración de proxy. Ahora permiten la interfaz de usuario de configuración del proxy. Puede obtener más información acerca de decisiones [cambios de configuración de proxy](powerbi-gateway-proxy.md)
 
-### Error: Failed to update gateway details.  Inténtelo de nuevo.
+### Error: Error al actualizar los detalles de la puerta de enlace.  Inténtelo de nuevo.
 
-Information was received from the Power BI service, to the gateway. The information was passed onto the local windows service, but it failed to return. Or, a symmetric key generation failed. The inner exception will be displayed under <bpt id="p1">**</bpt>Show details<ept id="p1">**</ept>. You can collect, and review, the logs, as mentioned below, to get more details. 
+Ha recibido información desde el servicio Power BI, la puerta de enlace. La información se pasa en el servicio de windows local, pero no pudo devolver. O bien, error de generación de la clave simétrica. La excepción interna que se mostrarán en **Mostrar detalles**. Puede recopilar y revisar los registros, como se menciona a continuación, para obtener más detalles. 
 
-### Error: Power BI service reported local gateway as unreachable. Please restart the gateway and try again.
+### Error: El servicio Power BI registrado puerta de enlace local como no accesible. Reinicie la puerta de enlace y vuelva a intentarlo.
 
-At the end of configuration, the Power BI service will be called again to validate the gateway. The Power BI service does not report the gateway as <bpt id="p1">*</bpt>live<ept id="p1">*</ept>. Restarting the windows service may allow the communication to be successful. You can collect, and review, the logs, as mentioned below, to get more details. 
+Al final de la configuración, el servicio Power BI se llamará nuevo para validar la puerta de enlace. El servicio Power BI no informa de la puerta de enlace como *live*. Reiniciar el servicio de windows puede permitir la comunicación se realice correctamente. Puede recopilar y revisar los registros, como se menciona a continuación, para obtener más detalles. 
 
-### Script error during sign into Power BI
+### Error de secuencia de comandos durante el inicio de sesión en Power BI
 
-You may receive a script error when signing into Power BI as part of the enterprise gateway configuration. Installing the following security update should resolve the issue. This can be installed via Windows Update.
+Puede recibir un error de secuencia de comandos al iniciar sesión en Power BI como parte de la configuración de puerta de enlace de la empresa. Instalar la siguiente actualización de seguridad, debe resolver el problema. Esto se puede instalar mediante Windows Update.
 
-[MS16-051: Security update for Internet Explorer: May 10, 2016 (KB 3154070)](https://support.microsoft.com/kb/3154070)
+[MS16-051: Actualización de seguridad para Internet Explorer: 10 de mayo de 2016 (3154070 KB)](https://support.microsoft.com/kb/3154070)
 
-### Gateway configuration failed with a null reference exception
+### Error en la configuración de puerta de enlace con una excepción de referencia nula
 
-You may encounter an error similar to the following.
+Puede encontrar un error similar al siguiente.
 
         Failed to update gateway details.  Please try again.
         Error updating gateway configuration.
 
-This will include a stack trace, and that stack trace will may include the following.
+Esto incluye un seguimiento de pila y seguimiento de la pila se pueden incluir lo siguiente.
 
         Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.CouldNotUpdateGatewayConfigurationException: Error updating gateway configuration. ----> System.ArgumentNullException: Value cannot be null.
         Parameter name: serviceSection
 
-If you are upgrading from an older gateway, we preserve the config file. There may be a section that is missing. When the gateway tries to read it, we will get the above null reference exception.
+Si va a actualizar una puerta de enlace anterior, se conserva el archivo de configuración. Puede haber una sección que falta. Cuando la puerta de enlace intenta leerlo, obtenemos el anterior null a excepción de referencia.
 
-To correct this, do the following.
+Para corregir este problema, realice lo siguiente.
 
-1. Uninstall the gateway.
+1. Desinstalar la puerta de enlace.
 
-2. Delete the following folder.
+2. Elimine la carpeta siguiente.
 
         c:\Program Files\on-premises data gateway
 
-3. Reinstall the gateway.
+3. Vuelva a instalar la puerta de enlace.
 
-4. Optionally apply the recovery key to restore an existing gateway.
+4. Opcionalmente, aplique la clave de recuperación para restaurar el enlace existente.
 
 ## Orígenes de datos
 
-### Error: Unable to Connect. Details: "Invalid connection credentials"
+### Error: No se puede conectar. Detalles: "credenciales de conexión no válida"
 
-Within <bpt id="p1">**</bpt>Show details<ept id="p1">**</ept>, it should display the error message received from the data source. For SQL Server, you should see something like the following.
+Dentro de **Mostrar detalles**, debe mostrar el mensaje de error recibido desde el origen de datos. Para SQL Server, debería ver algo parecido a lo siguiente.
 
     Login failed for user 'username'.
 
-Verify that you have the correct username and password. Also verify that those credentials can successfully connect to the data source. Make sure the account being used matches the <bpt id="p1">**</bpt>Authentication Method<ept id="p1">**</ept>.
+Compruebe que tiene el nombre de usuario correcto y la contraseña. Compruebe también que esas credenciales pueden conectarse correctamente al origen de datos. Asegúrese de que coincide con la cuenta que se usa el **método de autenticación**.
 
-### Error: Unable to Connect. Details: "Cannot connect to the database"
+### Error: No se puede conectar. Detalles: "no se puede conectar a la base de datos"
 
-We were able to connect to the server, but not to the database supplied. Verify the name of the database, and that the user credential as the proper permission to access that database.
+Pudimos para conectarse al servidor, pero no a la base de datos proporcionado. Compruebe el nombre de la base de datos, y que el usuario de credenciales como el permiso adecuado para tener acceso a esa base de datos.
 
-Within <bpt id="p1">**</bpt>Show details<ept id="p1">**</ept>, it should display the error message received from the data source. For SQL Server, you should see something like the following.
+Dentro de **Mostrar detalles**, debe mostrar el mensaje de error recibido desde el origen de datos. Para SQL Server, debería ver algo parecido a lo siguiente.
 
     Cannot open database "AdventureWorks" requested by the login. The login failed. Login failed for user 'username'.
 
-### Error: Unable to Connect. Details: "Unknown error in enterprise gateway"
+### Error: No se puede conectar. Detalles: "error desconocido en la puerta de enlace empresarial"
 
-This error could occur for different reasons. Be sure to validate that you can connect to the data source from the machine hosting the gateway. This could be the result of the server not being accessible.
+Este error puede producirse por diferentes motivos. Asegúrese de validar que puede conectarse al origen de datos desde el equipo que hospeda la puerta de enlace. Esto puede ser el resultado del servidor no está accesible.
 
-Within <bpt id="p1">**</bpt>Show details<ept id="p1">**</ept>, you will see an error code of <bpt id="p2">**</bpt>DM_GWPipeline_UnknownError<ept id="p2">**</ept>.
+Dentro de **Mostrar detalles**, verá el código de error **DM_GWPipeline_UnknownError**.
 
-You can also look in the Event Logs &gt; <bpt id="p1">**</bpt>Applications and Services Logs<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Power BI Enterprise Gateway Service<ept id="p2">**</ept> for more details.
+También puede buscar en los registros de eventos > **registros de aplicaciones y servicios** > **servicio de puerta de enlace de Power BI empresarial** para obtener más detalles.
 
-### Error: We encountered an error while trying to connect to <ph id="ph1">&lt;server&gt;</ph>. Details: "We reached the enterprise gateway, but the gateway can't access the on-premises data source."
+### Error: Se detectó un error al intentar conectarse a <server>. Detalles: "hemos llegado a la puerta de enlace de la empresa, pero la puerta de enlace no puede tener acceso el origen de datos local".
 
-We were unable to connect to the specified data source. Be sure to validate the information provided for that data source.
+No hemos podido conectar con el origen de datos especificado. Asegúrese de validar la información proporcionada para ese origen de datos.
 
-Within <bpt id="p1">**</bpt>Show details<ept id="p1">**</ept>, you will see an error code of <bpt id="p2">**</bpt>DM_GWPipeline_Gateway_DataSourceAccessError<ept id="p2">**</ept>. 
+Dentro de **Mostrar detalles**, verá el código de error **DM_GWPipeline_Gateway_DataSourceAccessError**. 
 
-If the underlying error message is similar to the following, this means that the account you are using for the data source is not a server admin for that Analysis Services instance. [Obtener más información](powerbi-gateway-onprem-manage-ssas.md#add-a-data-source)
+Si el mensaje de error subyacente es similar al siguiente, esto significa que la cuenta que se usa para el origen de datos no es un administrador del servidor para esa instancia de Analysis Services. [Obtener más información](powerbi-gateway-onprem-manage-ssas.md#add-a-data-source)
 
     The 'CONTOSO\account' value of the 'EffectiveUserName' XML for Analysis property is not valid.
 
-If the underlying error message is similar to the following, it could mean that the service account for Analysis Services may be missing the <bpt id="p1">[</bpt>token-groups-global-and-universal<ept id="p1">](https://msdn.microsoft.com/library/windows/desktop/ms680300.aspx)</ept> (TGGAU) directory attribute.
+Si el mensaje de error subyacente es similar al siguiente, esto podría significar que la cuenta de servicio para Analysis Services pueden faltar los [token grupos-global-y-universal](https://msdn.microsoft.com/library/windows/desktop/ms680300.aspx) atributos de directorio (TGGAU).
 
     The user name or password is incorrect.
 
-Domains with Pre-Windows 2000 compatibility access will have the TGGAU attribute enabled. However, most newly created domains will not enable this attribute by default. You can read more about this <bpt id="p1">[</bpt>here<ept id="p1">](https://support.microsoft.com/kb/331951)</ept>.
+Dominios con acceso de compatibilidad de versiones anteriores de Windows 2000 tendrá el atributo TGGAU habilitado. Sin embargo, dominios creadas más recientemente no activará este atributo de forma predeterminada. Puede obtener más información sobre este [aquí](https://support.microsoft.com/kb/331951).
 
-You can confirm this by doing the following.
+Puede confirmarlo haciendo lo siguiente.
 
-1. Connect to the Analysis Services machine within SQL Server Management Studio. Within the Advanced connection properties, include EffectiveUserName for the user in question and see if this reproduces the error.
+1. Conectar con el equipo de Analysis Services en SQL Server Management Studio. En las propiedades avanzadas de conexión, incluir EffectiveUserName para el usuario en cuestión y vea si esto reproduce el error.
 
-2. You can use the dsacls Active Directory tool to validate whether the attribute is listed. This is tool is normally found on a domain controller. You will need to know what the distinguished domain name is for the account and pass that to the tool.
+2. Puede utilizar la herramienta de Active Directory de dsacls para validar si el atributo se muestra. Esta es la herramienta se encuentra normalmente en un controlador de dominio. Debe saber cuál es el nombre de dominio completo de la cuenta y pasarlo a la herramienta.
 
         dsacls "CN=John Doe,CN=UserAccounts,DC=contoso,DC=com"
     
-    You want to see something similar to the following in the results.
+    Desea ver algo parecido a lo siguiente en los resultados.
 
             Allow BUILTIN\Windows Authorization Access Group
                                           SPECIAL ACCESS for tokenGroupsGlobalAndUniversal
                                           READ PROPERTY
 
-To correct this issue, you will need to enable TGGAU on account used for the Analysis Services windows service.
+Para corregir este problema, debe habilitar TGGAU en la cuenta usada para el servicio de windows de Analysis Services.
 
-**Another possibility for user name or password incorrect**
+**Otra posibilidad de que el nombre de usuario o contraseña incorrecta**
 
-This error could also be caused if the Analysis Services server is in a different domain than the users and there is not a two-way trust established.
+Este error puede deberse también si el servidor de Analysis Services está en un dominio diferente que los usuarios y no hay una confianza bidireccional establecida.
 
-You will need to work with your domain administrators to verify the trust relationship between domains.
+Debe trabajar con los administradores de dominio para comprobar la relación de confianza entre dominios.
 
-**Unable to see enterprise gateway data sources in the 'Get Data' experience for Analysis Services from the Power BI service**
+**No se pueden ver orígenes de datos de puerta de enlace de enterprise en 'Obtener datos' experiencia para Analysis Services desde el servicio Power BI**
 
-Make sure that your account is listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source within the gateway configuration. If you don't have access to the gateway, check with the administrator of the gateway and ask them to verify. Only accounts in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> list will see the data source listed in the Analysis Services list.
+Asegúrese de que su cuenta aparece en el **usuarios** ficha del origen de datos dentro de la configuración de puerta de enlace. Si no tiene acceso a la puerta de enlace, consulte con el Administrador de la puerta de enlace y pídale que compruebe. Sólo las cuentas en el **usuarios** lista verá el origen de datos en la lista de Analysis Services.
 
 ## Conjuntos de datos
 
-### Error: There is not enough space for this row.
+### Error: No hay espacio suficiente para esta fila.
 
-This will occur if you have a single row greater than 4 MB in size. You will need to determine what the row is from your data source and attempt to filter it out or reduce the size for that row.
+Esto ocurrirá si tiene una sola fila mayor que 4 MB de tamaño. Debe determinar cuál es la fila del origen de datos e intentar filtrar o reducir el tamaño de la fila.
 
 ## Reports
 
-### Report could not access the data source because you do not have access to our data source via an enterprise gateway.
+### Informe no pudo acceder al origen de datos porque no tiene acceso a nuestro origen de datos a través de una puerta de enlace de la empresa.
 
-This is usually caused by one of the following. 
+Esto ocurre normalmente por uno de los siguientes. 
 
-1. The data source information does not match what is in the underlying dataset. The server and database name need to match between the data source defined for the on-premises data gateway and what you supply within Power BI Desktop. If you use an IP Address in Power BI Desktop, the data source, for the on-premises data gateway, needs to use an IP Address as well.
+1. La información de origen de datos no coincide con lo que está en el conjunto de datos subyacente. El servidor y el nombre de la base de datos necesitan coinciden con el origen de datos definido para la puerta de enlace de datos local y proporcionar en Power BI Desktop. Si utiliza una dirección IP en Power BI Desktop, el origen de datos, la puerta de enlace de datos local, debe usar también una dirección IP.
 
-2. There is not a data source available on any gateway within your organization. You can configure the data source on a new, or existing, on-premises data gateway.
+2. No hay un origen de datos en cualquier puerta de enlace dentro de su organización. Puede configurar el origen de datos en una puerta de enlace de datos nueva o existente, en local.
 
-### Error: Data source access error. Please contact the gateway administrator.
+### Error: Error de acceso de origen de datos. Póngase en contacto con el Administrador de puerta de enlace.
 
-If this report is making use of a live Analysis Services connection, you could be encountering an issue with a value being passed to EffectiveUserName that is either not valid, or doesn't have permissions on the Analysis Services machine. Typically, an authentication issue is due to the fact that the value being passed for EffectiveUserName doesn't match a local user principal name (UPN).
+Si está realizando este informe de uso de una conexión activa de Analysis Services, podría darse un problema con un valor que se pasa al EffectiveUserName que no es válida, o no tiene permisos en el equipo de Analysis Services. Normalmente, un problema de autenticación es debido a que el valor que se pasa para EffectiveUserName no coincide con un nombre principal de usuario local (UPN).
 
-To confirm this, you can do the following.
+Para confirmar esto, puede hacer lo siguiente.
 
-1. Find the effective username within the <bpt id="p1">[</bpt>gateway logs<ept id="p1">](#logs)</ept>.
+1. Buscar el nombre de usuario eficaz dentro de la [registros de puerta de enlace](#logs).
 
-2. Once you have the value being passed, validate that it is correct. If it is your user, you can use the following command from a command prompt to see what the UPN should be. The UPN will look like an email address.
+2. Una vez que el valor que se pasa, valide que es correcta. Si es el usuario, puede utilizar el siguiente comando desde un símbolo del sistema para ver el UPN. El UPN será similar a una dirección de correo electrónico.
 
         whoami /upn
 
-Optionally, you can see what Power BI gets from Azure Active Directory.
+Si lo desea, puede ver qué obtiene Power BI de Azure Active Directory.
 
-1. Browse to <bpt id="p1">[</bpt>https://graphexplorer.cloudapp.net<ept id="p1">](https://graphexplorer.cloudapp.net)</ept>.
+1. Vaya a [https://graphexplorer.cloudapp.net](https://graphexplorer.cloudapp.net).
 
-2. Select <bpt id="p1">**</bpt>Sign in<ept id="p1">**</ept> in the upper right.
+2. Seleccione **sesión** en la esquina superior derecha.
 
-3. Run the following query. You will see a rather large JSON response.
+3. Ejecute la consulta siguiente. Verá una respuesta JSON bastante grande.
 
         https://graph.windows.net/me?api-version=1.5
 
-4. Look for <bpt id="p1">**</bpt>userPrincipalName<ept id="p1">**</ept>. 
+4. Busque **userPrincipalName**. 
 
 
-If your Azure Active Directory UPN doesn't match your local Active Directory UPN, you can use the <bpt id="p1">[</bpt>Map user names<ept id="p1">](powerbi-gateway-enterprise-manage-ssas.md#map-user-names)</ept> feature to replace it with a valid value. Or you can work with either your tenant admin, or local Active Directory admin, to get your UPN changed.
+Si el UPN de Azure Active Directory no coincide con el UPN local de Active Directory, puede utilizar el [asignar nombres de usuario](powerbi-gateway-enterprise-manage-ssas.md#map-user-names) característica reemplazarla con un valor válido. O bien, puede trabajar con su administrador de inquilinos o administrador de Active Directory local, para obtener el UPN cambiado.
 
 <!-- Shared Troubleshooting Firewall/Proxy Include -->
 [AZURE.INCLUDE [gateway-onprem-tshoot-firewall-include](../includes/gateway-onprem-tshoot-firewall-include.md)]
 
-You can find the data center region you are in by doing the following:
+Puede encontrar la región del centro de datos están en haciendo lo siguiente:
 
-1. Select the <bpt id="p1">**</bpt>?<ept id="p1">**</ept> in the upper right of the Power BI service.
+1. ¿Seleccione el **?** en la esquina superior derecha del servicio Power BI.
 
-2. Select <bpt id="p1">**</bpt>About Power BI<ept id="p1">**</ept>.
+2. Seleccione **acerca de Power BI**.
 
-3. Your data region will be listed in <bpt id="p1">**</bpt>Your data is stored in<ept id="p1">**</ept>.
+3. La región de datos se mostrarán en **los datos se almacenan en**.
 
     ![](media/powerbi-gateway-onprem-tshoot/power-bi-data-region.png)
 
-If you are still not getting anywhere, you could try getting a network trace using a tool like <bpt id="p1">[</bpt>fiddler<ept id="p1">](#fiddler)</ept> or netsh, although these are advanced collection methods and you may need assistance in analyzing the collected data. You can contact <bpt id="p1">[</bpt>support<ept id="p1">](https://support.microsoft.com)</ept> for assistance.
+Si todavía no está recibiendo desde cualquier lugar, intente obtener un seguimiento de red mediante una herramienta como [fiddler](#fiddler) o netsh, aunque estas avanzadas métodos de colección y puede que necesite asistencia para analizar los datos recopilados. Puede ponerse en contacto con [admite](https://support.microsoft.com) para obtener ayuda.
 
 ## Pruebas
 
@@ -221,64 +221,64 @@ If you are still not getting anywhere, you could try getting a network trace usi
 
 ### Contadores de rendimiento
 
-There are a number of performance counters that can be used to gauge the activities for the gateway. These can be helfup to understanding if we have a large load of activity and may need to make a new gateway. These counters will not reflect how long something takes.
+Hay una serie de contadores de rendimiento que puede usar para medir las actividades de la puerta de enlace. Pueden ser helfup para entender si se tiene una gran carga de actividad y que tenga que realizar una nueva puerta de enlace. Estos contadores no reflejará cuánto tiempo tarda algo.
 
-These counters can be access through the Windows Performance Monitor tool.
+Estos contadores pueden acceder a través de la herramienta Monitor de rendimiento de Windows.
 
 ![](media/powerbi-gateway-onprem-tshoot/gateway-perfmon.png)
 
-There are general groupings of these counters.
+Hay agrupaciones generales de estos contadores.
 
-|Counter Type|Descripción|
+|Tipo de contador|Descripción|
 |---|---|
-|ADO.NET|This is used for any DirectQuery connection.|
-|ADOMD|This is used for Analysis Services 2014 and earlier.|
-|OLEDB|This is used by certain data sources. This includes SAP HANA and Analysis Service 2016 or later.|
-|Mashup|This includes any imported data source. If you are scheduling refresh or doing an on-demand refresh, it will go through the mashup engine.|
+|ADO.NET|Se utiliza para las conexiones de DirectQuery.|
+|ADOMD|Se utiliza para Analysis Services 2014 y versiones anteriores.|
+|OLEDB|Esto sirve para algunos orígenes de datos. Esto incluye SAP HANA y servicio de análisis de 2016 o posterior.|
+|Mashup|Esto incluye cualquier origen de datos importados. Si va a programar la actualización o realizar una actualización a petición, pasará a través del motor de mashup.|
 
-Here is a listing of the available performance counters.
+Aquí se muestra una lista de los contadores de rendimiento disponibles.
 
 |Contador|Descripción|
 |---|---|
-|# of ADO.NET open connection executed / sec|Number of ADO.NET open connection actions executed per second (succeeded or failed).|
-|# of ADO.NET open connection failed / sec|Number of ADO.NET open connections actions failed per second.|
-|# of ADO.NET queries executed / sec|Number of ADO.NET queries executed per second (succeeded or failed).|
-|# of ADO.NET queries failed / sec|Number of ADO.NET failed queries executed per second.|
-|# of ADOMD open connection executed / sec|Number of ADOMD open connection actions executed per second (succeeded or failed).|
-|# of ADOMD open connection failed / sec|Number of ADOMD open connection actions failed per second.|
-|# of ADOMD queries executed / sec|Number of ADOMD queries executed per second (succeeded or failed).|
-|# of ADOMD queries failed / sec|Number of ADOMD failed queries executed per second.|
-|# of all open connection executed / sec|Number of open connection actions executed per second (succeeded or failed).|
-|# of all open connection failed / sec|Number of failed open connection actions executed per second.|
-|# of all queries executed / sec|Number of queries executed per second (succeeded or failed).|
-|# of items in the ADO.NET connection pool|Number of items in the ADO.NET connection pool.|
-|# of items in the OLEDB connection pool|Number of items in the OLEDB connection pool.|
-|# of items in the Service Bus pool|Number of items in the Service Bus pool.|
-|# of Mashup open connection executed / sec|Number of Mashup open connection actions executed per second (succeeded or failed).|
-|# of Mashup open connection failed / sec|Number of Mashup open connection actions failed per second.|
-|# of Mashup queries executed / sec|Number of Mashup queries executed per second (succeeded or failed).|
-|# of Mashup queries failed / sec|Number of Mashup failed queries executed per second|
-|# of multiple result set OLEDB queries failed / sec|Number of multiple resultset OLEDB failed queries executed per second.|
-|# of OLEDB multiple resultset queries executed / sec|Number of OLEDB multiple resultset queries executed per second (succeeded or failed).|
-|# of OLEDB open connection executed / sec|Number of OLEDB open connection actions executed per second (succeeded or failed).|
-|# of OLEDB open connection failed / sec|Number of OLEDB open connection actions failed per second.|
-|# of OLEDB queries executed / sec|Number of OLEDB multiple resultset queries executed per second (succeeded or failed).|
-|# of OLEDB queries failed / sec|Number of OLEDB mutiple resultset failed queries executed per second.|
-|# of OLEDB single resultset queries executed / sec|Number of OLEDB single resultset queries executed per second (succeeded or failed).|
-|# of queries failed / sec|Number of failed queries executed per second.|
-|# of single result set OLEDB queries failed / sec|Number of single resultset OLEDB failed queries executed per second.|
+|# de conexión abierta de ADO.NET ejecutada por segundo|Número de acciones de conexión abierta de ADO.NET ejecutadas por segundo (correcta o errónea).|
+|# de ADO.NET Abrir conexión con error por segundo|Número de acciones de conexiones abiertas de ADO.NET con error por segundo.|
+|# de las consultas ADO.NET ejecutadas por segundo|Número de consultas ADO.NET ejecutadas por segundo (correcta o errónea).|
+|# de ADO.NET consultas con error por segundo|Número de ADO.NET no las consultas ejecutadas por segundo.|
+|# de conexión abierta de ADOMD ejecutada por segundo|Número de acciones de conexión abierta ADOMD ejecutados por segundo (correcta o errónea).|
+|# de ADOMD Abrir conexión con error por segundo|Número de acciones de conexión abierta ADOMD con error por segundo.|
+|# de consultas ADOMD ejecutadas por segundo|Número de consultas ADOMD ejecutados por segundo (correcta o errónea).|
+|# de consultas ADOMD con error por segundo|Número de ADOMD no las consultas ejecutadas por segundo.|
+|# de conexión abierto ejecutada por segundo|Número de acciones de conexión abierta ejecutados por segundo (correcta o errónea).|
+|# de todas las conexiones con error por segundo|Número de acciones de error en la conexión abierta ejecutados por segundo.|
+|# de todas las consultas ejecutadas por segundo|Número de consultas ejecutadas por segundo (correcta o errónea).|
+|# elementos de la agrupación de conexiones de ADO.NET|Número de elementos de la agrupación de conexiones de ADO.NET.|
+|# elementos de la agrupación de conexiones OLE DB|Número de elementos de la agrupación de conexiones OLE DB.|
+|# de elementos en el grupo de Bus de servicio|Número de elementos en el grupo de Bus de servicio.|
+|# de conexión abierta de Mashup ejecutada por segundo|Número de acciones de conexión abierta de Mashup ejecutados por segundo (correcta o errónea).|
+|# de conexión abierta de Mashup con error por segundo|Número de acciones de conexión abierta de Mashup con error por segundo.|
+|# de Mashup consultas ejecutadas por segundo|Número de consultas de Mashup ejecutadas por segundo (correcta o errónea).|
+|# de Mashup consultas con error por segundo|Número de Mashup no las consultas ejecutadas por segundo|
+|# de resultados múltiples establece consultas OLEDB con error por segundo|Número de varias consultas OLEDB error resultset ejecutados por segundo.|
+|# de OLEDB resultset varias consultas ejecutadas por segundo|Número de OLEDB varias consultas de conjunto de resultados ejecutadas por segundo (correcta o errónea).|
+|# de conexión abierta de OLEDB ejecutada por segundo|Número de acciones de conexión abierta de OLEDB ejecutados por segundo (correcta o errónea).|
+|# de conexión abierta de OLEDB con error por segundo|Número de acciones de abrir conexión OLEDB con error por segundo.|
+|# de las consultas ejecutadas por segundo de OLEDB|Número de OLEDB varias consultas de conjunto de resultados ejecutadas por segundo (correcta o errónea).|
+|# de consultas OLEDB con error por segundo|Número de conjunto de resultados de varias OLEDB no las consultas ejecutadas por segundo.|
+|# de consultas de conjunto de resultados único OLEDB ejecutadas por segundo|Número de consultas de conjunto de resultados único OLEDB ejecutados por segundo (correcta o errónea).|
+|# de consultas con error por segundo|Número de errores de las consultas ejecutadas por segundo.|
+|# de resultado único conjunto OLEDB consultas con error por segundo|Número de conjunto de resultados único OLEDB no las consultas ejecutadas por segundo.|
 
-### Reviewing slow performing queries
+### Revisar las consultas lentas de rendimiento
 
-You may find that response through the gateway is slow. This could be for DirectQuery queries or when refreshing your imported dataset. You can enable additional logging to output queries and their timings to help understand what is performing slow. When you find a long running query, it may require additional modification on your data source to tune query performance. For example, adjusting indexes for a SQL Server query.
+Es posible que la respuesta a través de la puerta de enlace es lento. Esto podría ser para las consultas DirectQuery o al actualizar el conjunto de datos importado. Puede habilitar el registro adicional a las consultas de salida y sus intervalos para ayudar a entender lo que está realizando lentamente. Cuando encuentre una consulta de larga ejecución, puede requerir modificaciones adicionales en el origen de datos para optimizar el rendimiento de las consultas. Por ejemplo, ajustar los índices para una consulta de SQL Server.
 
-You will need to modify two configuration files to determine the duration of a query. 
+Debe modificar dos archivos de configuración para determinar la duración de una consulta. 
 
 #### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
 
-Within the <bpt id="p1">*</bpt>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config<ept id="p1">*</ept> file, change the <ph id="ph1">`EmitQueryTraces`</ph> value from <ph id="ph2">`False`</ph> to <ph id="ph3">`True`</ph>. This file is located, by default, at <bpt id="p1">*</bpt>C:\Program Files\On-premises data gateway<ept id="p1">*</ept>. Enabling <ph id="ph1">`EmitQueryTraces`</ph> will begin to log queries that are sent from the gateway to a data source.
+Dentro de la *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* archivo, cambie la `EmitQueryTraces` valor de `False` a `True`. Este archivo se encuentra, de forma predeterminada, en *puerta de enlace de datos local de programa\Archivos C:\Program*. Habilitar `EmitQueryTraces` empezará a registrar las consultas que se envían desde la puerta de enlace a un origen de datos.
 
-> [AZURE.IMPORTANT] Enabling EmitQueryTraces could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set EmitQueryTraces to False. It is not recommended to leave this setting enabled long term.
+> [AZURE.IMPORTANT] Habilitar EmitQueryTraces podría aumentar el tamaño de registro considerablemente dependiendo del uso de la puerta de enlace. Una vez que haya terminado de revisar los registros, desee EmitQueryTraces se establece en False. No se recomienda dejar esta opción habilitada de largo plazo.
 
 ```
 <setting name="EmitQueryTraces" serializeAs="String">
@@ -286,7 +286,7 @@ Within the <bpt id="p1">*</bpt>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCo
 </setting>
 ```
 
-**Example query entry**
+**Entrada de consulta de ejemplo**
 
 ```
 DM.EnterpriseGateway Information: 0 : 2016-09-15T16:09:27.2664967Z DM.EnterpriseGateway 4af2c279-1f91-4c33-ae5e-b3c863946c41    d1c77e9e-3858-4b21-3e62-1b6eaf28b176    MGEQ    c32f15e3-699c-4360-9e61-2cc03e8c8f4c    FF59BC20 [DM.GatewayCore] Executing query (timeout=224) "<pi>
@@ -317,9 +317,9 @@ GROUP BY [t0].[ProductCategoryName],[t0].[FiscalYear] </pi>"
 
 #### Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config
 
-Within the <bpt id="p1">*</bpt>Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config<ept id="p1">*</ept> file, change the <ph id="ph1">`TraceVerbosity`</ph> value from <ph id="ph2">`4`</ph> to <ph id="ph3">`5`</ph>. This file is located, by default, at <bpt id="p1">*</bpt>C:\Program Files\On-premises data gateway<ept id="p1">*</ept>. Changing this setting will begin to log verbose entries to the gateway log. This includes entries that show duration.
+Dentro de la *Microsoft.PowerBI.DataMovement.Pipeline.Diagnostics.dll.config* archivo, cambie la `TraceVerbosity` valor de `4` a `5`. Este archivo se encuentra, de forma predeterminada, en *puerta de enlace de datos local de programa\Archivos C:\Program*. Este cambio comenzará a detallado entradas de registro en el registro de puerta de enlace. Esto incluye las entradas que muestran la duración.
 
-> [AZURE.IMPORTANT] Enabling TraceVerbosity 5 could increase the log size significantly depending on gateway usage. Once you are done reviewing the logs, you will want to set EmitQueryTraces to <ph id="ph1">`4`</ph>. It is not recommended to leave this setting enabled long term.
+> [AZURE.IMPORTANT] Habilitar TraceVerbosity 5 podría aumentar el tamaño de registro considerablemente dependiendo del uso de la puerta de enlace. Una vez que haya terminado de revisar los registros, deberá establecer EmitQueryTraces en `4`. No se recomienda dejar esta opción habilitada de largo plazo.
 
 ```
 <setting name="TracingVerbosity" serializeAs="String">
@@ -328,42 +328,42 @@ Within the <bpt id="p1">*</bpt>Microsoft.PowerBI.DataMovement.Pipeline.Diagnosti
 ```
 
 <a name="activities"></a>
-#### Activity Types
+#### Tipos de actividad
 
-|Activty Type|Descripción|
+|Tipo de actividad|Descripción|
 |---|---|
-|MGEQ|Queries executed over ADO.NET. This includes DirectQuery data sources.|
-|MGEO|Queries executed over OLEDB. This includes SAB HANA and Analysis Services 2016.|
-|MGEM|Queries executed from the Mashup engine. This is used with imported datasets that use scheduled refresh or refresh on-demand.|
+|MGEQ|Consultas ejecutadas en ADO.NET. Esto incluye orígenes de datos de DirectQuery.|
+|MGEO|Consultas ejecutadas a través de OLE DB. Esto incluye SAB HANA y 2016 de Analysis Services.|
+|MGEM|Consultas ejecutadas desde el motor de Mashup. Se utiliza con conjuntos de datos importados que utilice actualización programada o a petición de la actualización.|
 
-#### Determine the duration of a query
+#### Determinar la duración de una consulta
 
-To determine the time it took to query the data source, you can do the following.
+Para determinar el tiempo que tardó para consultar el origen de datos, puede hacer lo siguiente.
 
-1. Open the gateway log.
+1. Abra el registro de puerta de enlace.
 
-2. Search for an <bpt id="p1">[</bpt>Activity Type<ept id="p1">](#activities)</ept> to find the query. An example of this would be MGEQ.
+2. Buscar un [tipo de actividad](#activities) para buscar la consulta. Un ejemplo de esto sería MGEQ.
 
-3. Make note of the second GUID as this is the request id. 
+3. Tome nota del GUID de segundo es el identificador de solicitud. 
 
-4. Continue to search for MGEQ until you find the FireActivityCompletedSuccessfullyEvent entry with the duration. You can verify the entry has the same request id. Duration will be in milliseconds.
+4. Continuará buscando MGEQ hasta que encuentre la entrada de FireActivityCompletedSuccessfullyEvent con la duración. Puede comprobar que la entrada tiene el mismo identificador de solicitud. Duración será en milisegundos.
 
         DM.EnterpriseGateway Verbose: 0 : 2016-09-26T23:08:56.7940067Z DM.EnterpriseGateway baf40f21-2eb4-4af1-9c59-0950ef11ec4a    5f99f566-106d-c8ac-c864-c0808c41a606    MGEQ    21f96cc4-7496-bfdd-748c-b4915cb4b70c    B8DFCF12 [DM.Pipeline.Common.TracingTelemetryService] Event: FireActivityCompletedSuccessfullyEvent (duration=5004)
     
-    > [AZURE.NOTE] FireActivityCompletedSuccessfullyEvent is a verbose entry. This entry will not be logged unless TraceVerbosity is at level 5.
+    > [AZURE.NOTE] FireActivityCompletedSuccessfullyEvent es una entrada detallada. Esta entrada no se registrará a menos que sea TraceVerbosity en el nivel 5.
 
 <!-- Shared Troubleshooting tools Include -->
 [AZURE.INCLUDE [gateway-onprem-tshoot-tools-include](../includes/gateway-onprem-tshoot-tools-include.md)]
 
-### Refresh History
+### Historial de actualización
 
-When using the gateway for scheduled refresh, <bpt id="p1">**</bpt>Refresh History<ept id="p1">**</ept> can help you see what errors have occurred, as well as provide useful data if you should need to create a support request. You can view both scheduled, as well as on demand, refreshes. Here is how you can get to the <bpt id="p1">**</bpt>Refresh History<ept id="p1">**</ept>.
+Cuando se utiliza la puerta de enlace para una actualización programada, **historial de actualización** puede ayudarle a ver qué errores se han producido, así como proporcionar datos útiles si necesita crear una solicitud de soporte técnico. Puede ver ambos programada, así como a petición, las actualizaciones. A continuación mostramos cómo puede tener acceso a la **historial de actualización**.
 
-1. In the Power BI navigation pane, in <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept>, select a dataset <ph id="ph1">&amp;gt;</ph> Open Menu <ph id="ph2">&amp;gt;</ph> <bpt id="p2">**</bpt>Schedule Refresh<ept id="p2">**</ept>.
+1. En el panel de navegación de Power BI en **conjuntos de datos**, seleccione un conjunto de datos &gt; menú Abrir &gt; **Programar actualización**.
 
     ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh.png)
 
-2.  
+2. En **configuración...** &gt; **Programar actualización**, seleccione **historial de actualización**.
 
     ![](media/powerbi-gateway-onprem-tshoot/scheduled-refresh-2.png)
 
@@ -371,11 +371,11 @@ When using the gateway for scheduled refresh, <bpt id="p1">**</bpt>Refresh Histo
 
 ## Consulte también
 
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
-[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
-[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
-[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
-[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Configuración de proxy para las puertas de enlace de Power BI](powerbi-gateway-proxy.md)  
+[Puerta de enlace de datos local](powerbi-gateway-onprem.md)  
+[Puerta de enlace de datos - profundidad local](powerbi-gateway-onprem-indepth.md)  
+[Administrar el origen de datos - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
+[Administrar el origen de datos - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
+[Administrar el origen de datos: SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
+[Administrar el origen de datos - actualización programada o importar](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

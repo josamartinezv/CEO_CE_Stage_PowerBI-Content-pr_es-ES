@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Change how a chart is sorted in a Power BI report"
-   description="Change how a chart is sorted in a Power BI report"
+   pageTitle="Cambiar cómo se ordena un gráfico en un informe de Power BI"
+   description="Cambiar cómo se ordena un gráfico en un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,36 +20,37 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Change how a chart is sorted in a Power BI report
+# Cambiar cómo se ordena un gráfico en un informe de Power BI
 
-In Power BI, you can sort charts alphabetically by the names of the categories in the chart, or by the numeric values of each category. For example, this chart is sorted by store name.
+En Power BI, puede ordenar alfabéticamente los gráficos mediante los nombres de las categorías del gráfico o los valores numéricos de cada categoría. Por ejemplo, este gráfico se ordena por nombre de almacén.
 
 ![](media/powerbi-service-change-how-a-chart-is-sorted/PBI_ChartSortCategory.png)
 
-It's easy to sort it from highest to lowest sales per square feet instead.
+Es fácil ordenan de mayor a menor ventas por pies cuadrados en su lugar.
 
-1.  Select the ellipses (...) and choose <bpt id="p1">**</bpt>Sort by Sales Per Sq Ft<ept id="p1">**</ept>.
+1.  Seleccione el botón de puntos suspensivos (...) y elija **Ordenar por ventas por Sq Ft**.
 
-2.  If necessary, select the sort icon <ph id="ph1">![](media/powerbi-service-change-how-a-chart-is-sorted/sortIcon.png)</ph> to change to <bpt id="p1">**</bpt>Descending<ept id="p1">**</ept>.
+2.  Si es necesario, seleccione el icono de orden ![](media/powerbi-service-change-how-a-chart-is-sorted/sortIcon.png) para cambiar a **descendente**.
 
     ![](media/powerbi-service-change-how-a-chart-is-sorted/sortby.gif)
 
-    <bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Not all visuals can be sorted.  The following visuals cannot be sorted: Treemap, Map, Filled Map, Scatter, Gauge, Card, Multi Row Card, Waterfall.
+    
+            **NOTA**: no todos los elementos visuales se pueden ordenar.  No se pueden ordenar los elementos visuales siguientes: Treemap, asignación, asignación rellena, dispersión, medidor, tarjeta, tarjeta de varias filas, cascada.
 
-##  Sorting using other criteria
+##  Otros criterios de ordenación
 
-Sometimes, you want to sort your visual using a different column or other criteria.  For example, you might want to sort by month (and not in alphabetical order) or you might want to sort by entire numbers instead of by digit (example, 0, 1, 9, 20 and not 0, 1, 20, 9).  Here are several solutions:
+A veces, desea ordenar el objeto visual con una columna diferente u otros criterios.  Por ejemplo, desea ordenar por mes (y no en orden alfabético) o desea ordenar por número completo en lugar de dígito (ejemplo, 0, 1, 9, 20 y no 0, 1, 20, 9).  Existen varias soluciones:
 
--   In Power BI Desktop, <bpt id="p1">[</bpt>use the Data Tools Modeling tab to sort by a different column<ept id="p1">](powerbi-desktop-sort-by-column.md)</ept>.
+-   En Power BI Desktop, [Utilice la ficha Herramientas de modelado de datos para ordenar por una columna diferente](powerbi-desktop-sort-by-column.md).
 
--   In Excel, if you own the dataset, add a new column that concatenates the month name and number. Then refresh or re-import the dataset to see the new column in the Fields area.
+-   En Excel, si posee el conjunto de datos, agregue una nueva columna que concatena el nombre del mes y el número. A continuación, actualizar o volver a importar el conjunto de datos para ver la nueva columna en el área campos.
 
--   In Excel, ensure that your numerical columns are tagged as "whole number" or "decimal" and not as "text."
+-   En Excel, asegúrese de que las columnas numéricas se etiquetan como "número entero" o "decimal" y no como "text".
 
 ## Consulte también
 
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>.
+Más información sobre [visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md).
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

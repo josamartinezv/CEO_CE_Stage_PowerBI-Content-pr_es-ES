@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Visualization types in Power BI"
-   description="Visualization types in Power BI"
+   pageTitle="Tipos de visualización en Power BI"
+   description="Tipos de visualización en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,175 +19,189 @@
    ms.workload="powerbi"
    ms.date="09/17/2016"
    ms.author="mihart"/>
-# Visualization types in Power BI
+# Tipos de visualización en Power BI
 
 
-## Power BI visualizations
+## Visualizaciones de Power BI
 
-We'll be adding new visualizations, stay tuned!
+¡Vamos a agregar nuevas visualizaciones, esté atento!
 
-And check out the community site, visuals.powerbi.com, where you'll find a growing list of  custom visuals you can download and use in your own dashboards and reports. Feeling creative?  Watch this video to learn how to create and add your own visuals to the community site.  
+Y visite el sitio de comunidad, visuals.powerbi.com, donde encontrará una lista creciente de elementos visuales personalizados que puede descargar y utilizar en sus propios paneles e informes. ¿Se siente creativo?  Vea este vídeo para aprender a crear y agregar sus propios elementos visuales al sitio de la Comunidad.  
 
-## List of visualizations available in Power BI
+## Lista de visualizaciones disponibles en Power BI
 
-All of these visualizations can be added to Power BI reports, specified in Q&amp;A, and pinned to dashboards.
+Todas estas visualizaciones pueden agregadas a los informes de Power BI, especificado en preguntas y respuestas y anclados a paneles.
 
-### Bar and column charts
+### Barras y columnas gráficos
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bar.png) 
 
  ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_col.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Bar charts are the standard for looking at a specific value across different categories.
 
-### Basic (Layered) and Stacked Area charts
+            **Sugerencia**: gráficos de barras son el estándar para buscar en un valor concreto en categorías diferentes.
+
+### Basic (en capas) y los gráficos de áreas apiladas
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/basicareamapsmall.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: The Basic Area chart is based on the line chart with the area between the axis and line filled in.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Basic Area chart<ept id="p1">](powerbi-service-tutorial-basic-area-chart.md)</ept>.
+            **Sugerencia**: gráfico de la superficie básica se basa en el gráfico de líneas con el área situada entre el eje y la línea rellenado.
 
-### Single number cards
+Para obtener más información, consulte [Tutorial: gráfico de áreas básicas](powerbi-service-tutorial-basic-area-chart.md).
+
+### Tarjetas de número únicas
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_card.png)
 
-For more information, see <bpt id="p1">[</bpt>Create a big number tile for a dashboard<ept id="p1">](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)</ept>.
+Para obtener más información, consulte [crear un icono de número grande para un panel](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
 
-### Multi row cards
+### Varias tarjetas de fila
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/multi-row-card.png)
 
 
-### Combo charts
+### Gráficos combinados
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/comboSmall.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: A Combo chart combines a column chart and a line chart. Choose from <bpt id="p1">*</bpt>Line and Stacked Column<ept id="p1">*</ept> and <bpt id="p2">*</bpt>Line and Clustered Column<ept id="p2">*</ept>.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Combo charts in Power BI<ept id="p1">](powerbi-service-tutorial-combo-chart-merge-visualizations.md)</ept>.
+            **Sugerencia**: un gráfico combinado combina un gráfico de columnas y un gráfico de líneas. Elegir *línea y columna apilada* y *línea y columna agrupada*.
 
-### Doughnut charts
+Para obtener más información, consulte [Tutorial: gráficos combinados en Power BI](powerbi-service-tutorial-combo-chart-merge-visualizations.md).
+
+### Gráficos de anillos
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/donutSmall.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Doughnut charts are similar to Pie charts.  They show the relationship of parts to a whole.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Doughnut charts in Power BI<ept id="p1">](powerbi-service-tutorial-doughnut-charts.md)</ept>.
+            **Sugerencia**: gráficos de anillos son similares a los gráficos circulares.  Muestran la relación de partes con un todo.
 
-### Funnel charts
+Para obtener más información, consulte [Tutorial: gráficos de anillos en Power BI](powerbi-service-tutorial-doughnut-charts.md).
+
+### Gráficos de embudo
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_funnel.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Funnels help visualize a process that has stages and items flow sequentially from one stage to the next.  Use a funnel when there is a sequential flow between stages, such as a sales process that starts with leads and ends with purchase fulfillment.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Funnel Charts in Power BI<ept id="p1">](powerbi-service-tutorial-funnel-charts.md)</ept>.
+            **Sugerencia**: Embudos ayuda a visualizar un proceso que tiene fases y elementos de flujo secuencialmente de una fase a la siguiente.  Utilice un embudo cuando hay un flujo secuencial entre fases, como un proceso de ventas que empieza con clientes potenciales y finaliza con el cumplimiento de compra.
 
-### Gauge charts
+Para obtener más información, consulte [Tutorial: gráficos de embudo en Power BI](powerbi-service-tutorial-funnel-charts.md).
+
+### Gráficos de medidor
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/gauge_m.PNG)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Displays current status in the context of a goal.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Gauge Charts in Power BI<ept id="p1">](powerbi-service-tutorial-radial-gauge-charts.md)</ept>.
+            **Sugerencia**: muestra el estado actual en el contexto de un objetivo.
+
+Para obtener más información, consulte [Tutorial: gráficos de medidor en Power BI](powerbi-service-tutorial-radial-gauge-charts.md).
 
 ###   KPI
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/power-bi-kpi.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Displays progress toward a measurable goal.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: KPIs in Power BI<ept id="p1">](powerbi-service-tutorial-kpi.md)</ept>.
+            **Sugerencia**: muestra el progreso hacia un objetivo cuantificable.
 
-### Line charts
+Para obtener más información, consulte [Tutorial: KPI en Power BI](powerbi-service-tutorial-kpi.md).
+
+### Gráficos de líneas
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_line.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: emphasize the overall shape of an entire series of values, usually over time.
 
-### Maps (basic)
+            **Sugerencia**: Resalte la forma general de toda una serie de valores, normalmente con el tiempo.
+
+### Mapas (basic)
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi-Nancy_viz_map.png)
 
-<bpt id="p1">**</bpt>Ti﻿p<ept id="p1">**</ept>: are used to associate both categorical and quantitative information with spatial locations.
 
-For more information, see <bpt id="p1">[</bpt>Tips and tricks for map visuals<ept id="p1">](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md)</ept>.
+            **TI p**: se utilizan para asociar la información de categorías y cuantitativa con ubicaciones espaciales.
 
-### Filled Maps (Choropleth)
+Para obtener más información, consulte [sugerencias y trucos para elementos visuales de mapa](powerbi-service-tips-and-tricks-for-power-bi-map-visualizations.md).
+
+### Mapas de rellenadas (Choropleth)
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_FilledMap.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: The more intense the color, the larger the value.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Filled Maps in Power BI<ept id="p1">](powerbi-service-tutorial-filled-maps-choropleths.md)</ept>.
+            **Sugerencia**: más intensa el color, cuanto mayor sea el valor.
 
-### Matrix
+Para obtener más información, consulte [Tutorial: rellenar mapas en Power BI](powerbi-service-tutorial-filled-maps-choropleths.md).
+
+### Matriz
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/matrix.png)
 
-### Pie charts
+### Gráficos circulares
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_pie.png)
 
-### Scatter and Bubble charts
+### Dispersión y burbujas
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_bubble.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: display relationships between 2 (scatter) or 3 (bubble) quantitative measures -- whether or not, in which order, etc.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Scatter charts in Power BI<ept id="p1">](powerbi-service-tutorial-scatter.md)</ept>.
+            **Sugerencia**: mostrar las relaciones entre 2 (Dispersión) o medidas cuantitativas de 3 (burbuja)--o no, en qué orden, etc..
 
-### Slicers
+Para obtener más información, consulte [Tutorial: gráficos en Power BI de dispersión](powerbi-service-tutorial-scatter.md).
+
+### Las segmentaciones de datos
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/PBI_slicer.png)
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Slicers in Power BI<ept id="p1">](powerbi-service-tutorial-slicers.md)</ept>.
+Para obtener más información, consulte [Tutorial: segmentaciones de datos en Power BI](powerbi-service-tutorial-slicers.md).
 
-### Standalone images
+### Imágenes independientes
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_image.png)
 
-For more information, see <bpt id="p1">[</bpt>Add an image widget to a dashboard<ept id="p1">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept>.
+Para obtener más información, consulte [Agregar un widget de imagen a un panel](powerbi-service-add-a-widget-to-a-dashboard.md).
 
 ### Tablas
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/tableType.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: work well with quantitative comparisons among items where there are many categories.
 
-### Tree Maps
+            **Sugerencia**: funcionan bien con cuantitativas comparaciones entre elementos donde hay muchas categorías.
+
+### Mapas de árbol
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/pbi_Nancy_viz_tree.png)
 
-For more information, see <bpt id="p1">[</bpt>Tutorial: Treemaps in Power BI<ept id="p1">](powerbi-service-tutorial-treemaps.md)</ept>.
+Para obtener más información, consulte [Tutorial: Treemaps en Power BI](powerbi-service-tutorial-treemaps.md).
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: are charts of colored rectangles, with size representing value.  They can be hierarchical, with rectangles nested within the main rectangles.
 
-### Waterfall charts
+            **Sugerencia**: son gráficos de rectángulos con color, que representa el valor de tamaño.  Puede ser jerárquicas, con rectángulos anidados dentro de los rectángulos principales.
+
+### Gráficos de cascada
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/waterfallsmall.png)
 
-<bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Waterfall charts show a running total as values are added or subtracted.
 
-For more information, see <bpt id="p1">[</bpt>Tutorial Waterfall charts in Power BI<ept id="p1">](powerbi-service-tutorial-waterfall-charts.md)</ept>.
+            **Sugerencia**: cascada gráficos muestran un ejecución total cuando se agregan o se restan valores.
+
+Para obtener más información, consulte [gráficos de cascada Tutorial en Power BI](powerbi-service-tutorial-waterfall-charts.md).
 
 ###
 
-## Tell Q&amp;A which visualization to use
+## Indicar las preguntas y respuestas visualización que usar
 
-When typing natural language queries with Power BI Q&amp;A, you can specify the visualization type in your query.  Por ejemplo:
+Al escribir las consultas en lenguaje natural con Power BI Q & A, puede especificar el tipo de visualización de la consulta.  Por ejemplo:
 
-"<bpt id="p1">***</bpt>sales by state as a treemap<ept id="p1">***</ept>"
+"***ventas por estado como un treemap***"
 
 ![](media/powerbi-service-visualization-types-for-reports-and-q-and-a/QAtreeMap.png)
 
 
 ## Consulte también
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

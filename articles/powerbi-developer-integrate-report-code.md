@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Integrate a Power BI report into an app code listing"
-   description="Walkthrough to Integrate a report into an app - Load a report into an IFrame"
+   pageTitle="Integrar un informe de Power BI en un listado de código de aplicación"
+   description="Tutorial para integrar un informe en una aplicación - cargar un informe en un IFrame"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,19 +20,19 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Integrate a report into an app code listing
+# Integrar un informe en un listado de código de aplicación
 
 ## Introducción
 
-In the <bpt id="p1">[</bpt>Integrate a report into an app walkthrough<ept id="p1">](powerbi-developer-integrate-report.md)</ept> you learn how to embed a <bpt id="p2">**</bpt>report<ept id="p2">**</ept> using an <bpt id="p3">**</bpt>IFrame<ept id="p3">**</ept>. You can download the complete <bpt id="p1">[</bpt>Integrate a report sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)</ept> which shows all the parts to embed a report. Alternatively, you can view the essential source code below. Please note this is only the essential source code, not an entire web project.
+En el [integrar un informe en un tutorial de la aplicación](powerbi-developer-integrate-report.md) Obtenga información acerca de cómo incrustar un **informe** mediante un **IFrame**. Puede descargar la completa [integrar un informe de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app) que muestra todas las partes para incrustar un informe. Como alternativa, puede ver el código fuente esencial siguiente. Tenga en cuenta que esto es sólo el código fuente esencial, no un proyecto web completo.
 
-**Sample Source Code**
+**Código fuente de ejemplo**
 
-- [Sample JavaScript to load a report into an IFrame (Default.aspx)](#default-aspx)
-- [Sample C# code to get access token, and get report (Default.aspx.cs)](#default-code)
+- [Ejemplo JavaScript para cargar un informe en un IFrame (Default.aspx)](#default-aspx)
+- [Ejemplo de código C# para obtener token de acceso y obtener informes (Default.aspx.cs)](#default-code)
 
 <a name="default-aspx"/>
-## Sample JavaScript to load a report into an IFrame (Default.aspx)
+## Ejemplo JavaScript para cargar un informe en un IFrame (Default.aspx)
 ```
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <script type="text/javascript">
@@ -88,7 +88,7 @@ In the <bpt id="p1">[</bpt>Integrate a report into an app walkthrough<ept id="p1
 ```
 
 <a name="default-code"/>
-## Sample C# code to get access token, and get report (Default.aspx.cs)
+## Ejemplo de código C# para obtener token de acceso y obtener informes (Default.aspx.cs)
 ```
 public partial class _Default : Page
 {
@@ -244,5 +244,5 @@ public class PBIReport
 
 ## Consulte también
 
-[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Integrar un informe en un tutorial de la aplicación](powerbi-developer-integrate-report.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

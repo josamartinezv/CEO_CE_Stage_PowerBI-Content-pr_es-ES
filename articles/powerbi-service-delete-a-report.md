@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Delete a report from Power BI"
-   description="Delete a report from Power BI"
+   pageTitle="Eliminar un informe de Power BI"
+   description="Eliminar un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,20 +20,20 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Delete a report from Power BI  
+# Eliminar un informe de Power BI  
 
-Don't worry, deleting a report does not delete the dataset that the report is based on.  And any visualizations that you pinned from the report are also safe -- they remain on the dashboard until you delete them individually.
+No se preocupe, eliminar un informe no elimina el conjunto de datos que se basa el informe.  Y las visualizaciones que anclado del informe también son seguros, sino que siguen en el panel hasta que elimine individualmente.
 
-## To delete a report:  
-1.  In the left navigation pane, right-click the report to delete and select <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.  
+## Para eliminar un informe:  
+1.  En el panel de navegación izquierdo, haga clic en el informe para eliminar y seleccione **quitar**.  
     ![](media/powerbi-service-delete-a-report/deleteareport1_new.png)
 
-2.  Confirm the deletion.
+2.  Confirmar la eliminación.
 
 >**Nota:**  
->If the report is part of a <bpt id="p1">[</bpt>content pack<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>, you will not be able to delete it using this method.  See <bpt id="p1">[</bpt>Deleting an organizational content pack<ept id="p1">](powerbi-service-organizational-content-pack-delete.md)</ept>. 
+>Si el informe es parte de una [paquete de contenido](powerbi-service-organizational-content-packs-introduction.md), no podrá eliminar con este método.  Consulte [Eliminar un paquete de contenido de organización](powerbi-service-organizational-content-pack-delete.md). 
 
 ## Consulte también  
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

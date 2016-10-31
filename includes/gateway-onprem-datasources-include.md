@@ -1,21 +1,21 @@
-## List of available data source types
+## Lista de tipos de orígenes de datos disponibles
 
-|**Origen de datos**|**Live/DirectQuery**|**User configured manual or scheduled refresh**|
+|**Origen de datos**|**Live/DirectQuery**|**Actualización manual o programada configurada por el usuario**|
 |---|---|---|---|
 |Analysis Services Tabular|Sí|Sí|
-|Analysis Services Multidimensional|Sí|Sí|
+|Multidimensional de Analysis Services|Sí|Sí|
 |SQL Server|Sí|Sí|
 |SAP HANA|Sí|Sí|
 |Oracle|Sí|Sí|
 |Teradata|Sí|Sí|
 |Archivo|No|Sí|
 |Carpeta|No|Sí|
-|SharePoint list (on-premises)|No|Sí|
+|Lista de SharePoint (local)|No|Sí|
 |Web|No|Sí|
 |OData|No|Sí|
 |IBM DB2|No|Sí|
 |MySQL|No|Sí|
 |Sybase|No|Sí|
 |SAP BW|No|Sí|
-|IBM Informix Database|No|Sí|
+|Base de datos de Informix de IBM|No|Sí|
 |ODBC|No|Sí|

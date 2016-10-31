@@ -1,12 +1,12 @@
-<properties pageTitle="Git commands for staging an new or updated article" description="Steps for previewing new and updated articles." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+<properties pageTitle="Comandos de GIT para almacenar provisionalmente un artículo nuevo o actualizado" description="Pasos para obtener una vista previa de los artículos nuevos y actualizados." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
-# Git commands for staging an article on the internal preview site
+# Comandos de GIT para un artículo en el sitio de vista previa interna de almacenamiento provisional
 
-Staging is now automated for private repository pull requests. See <bpt id="p1">[</bpt>Git commands for creating a new article or updating an existing article<ept id="p1">](git-commands-for-master.md)</ept>
+Ahora está automatizado de ensayo para las solicitudes de extracción de repositorio privado. Consulte [comandos Git para crear un nuevo artículo o actualizar un artículo existente](git-commands-for-master.md)
 
-> [AZURE.NOTE] Will revisit this article and add info as appropriate, depending on how we set up staging.
+> [AZURE.NOTE] Se vuelva a consultar este artículo y agregar información, según cómo configuramos ensayo.
 
 <!--
 Follow the steps in this article to stage content to the internal staging site prior to releasing the article to the public site.

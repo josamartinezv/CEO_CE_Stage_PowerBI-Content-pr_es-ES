@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI Pro content - what is it?"
-   description="Power BI Pro content - what is it?"
+   pageTitle="Contenido de BI Pro Power - ¿qué es?"
+   description="Contenido de BI Pro Power - ¿qué es?"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,35 +20,36 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Power BI Pro content - what is it?  
+# Contenido de BI Pro Power - ¿qué es?  
 
-Power BI free and Pro licenses are different based on the kind of content users can consume. If your content contains any of the following items, it's Power BI Pro content:
+Power BI libre y licencias Pro son diferentes según el tipo de contenido que los usuarios pueden consumir. Si el contenido incluye alguno de los elementos siguientes, es contenido de Power BI Pro:
 
--   Data from a DirectQuery dataset, such as <bpt id="p1">[</bpt>SQL Server Analysis Services<ept id="p1">](powerbi-sql-server-analysis-services-tabular-data.md)</ept> tabular data, <bpt id="p2">[</bpt>Azure SQL Database<ept id="p2">](powerbi-azure-sql-database-with-direct-connect.md)</ept>, <bpt id="p3">[</bpt>Azure SQL Data Warehouse<ept id="p3">](powerbi-azure-sql-data-warehouse-with-direct-connect.md)</ept>, or Apache <bpt id="p4">[</bpt>Spark for HDInsight<ept id="p4">](powerbi-spark-on-hdinsight-with-direct-connect.md)</ept>.
+-   Los datos de un conjunto de datos de DirectQuery como [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md) datos tabulares, [base de datos de SQL Azure](powerbi-azure-sql-database-with-direct-connect.md), [el almacenamiento de datos de SQL Azure](powerbi-azure-sql-data-warehouse-with-direct-connect.md), Apache [Spark para HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md).
 
--   Data from a <bpt id="p1">[</bpt>dataset that refreshes more frequently than daily<ept id="p1">](powerbi-refresh-data.md)</ept>.
+-   Los datos de un [conjunto de datos que se actualiza con más frecuencia que diario](powerbi-refresh-data.md).
 
--   Data from a dataset that connects to on-premises data using the <bpt id="p1">[</bpt>Power BI Gateway - Personal <ept id="p1">](powerbi-personal-gateway.md)</ept> or the <bpt id="p2">[</bpt>On-premises Data Gateway<ept id="p2">](powerbi-gateway-onprem.md)</ept>.
+-   Los datos de un conjunto de datos que se conecta a local de datos mediante el [Power BI Gateway - Personal ](powerbi-personal-gateway.md) o [puerta de enlace de datos local](powerbi-gateway-onprem.md).
 
--   Data (including reports, dashboards or tiles) from a dataset that uses <bpt id="p1">[</bpt>Row-level security (RLS)<ept id="p1">](powerbi-admin-rls.md)</ept>.
+-   Datos (incluidos los informes, paneles o mosaicos) de un conjunto de datos que utiliza [la seguridad de nivel de fila (RLS)](powerbi-admin-rls.md).
 
--   A dashboard or report that's installed from an <bpt id="p1">[</bpt>organizational content pack<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>.
+-   Un panel o informe que se instala desde un [paquete de contenido de organización](powerbi-service-organizational-content-packs-introduction.md).
 
--   A dashboard, report, or dataset that's contained in a <bpt id="p1">[</bpt>group workspace<ept id="p1">](powerbi-service-create-a-group-in-power-bi.md)</ept>.
+-   Un panel, un informe o un conjunto de datos que se encuentra en un [área de trabajo de grupo](powerbi-service-create-a-group-in-power-bi.md).
 
--   A dashboard that contains data streamed at a rate above 10k rows/hour.
+-   Un panel que contiene los datos que se transmiten a una velocidad por encima de 10 k filas por hora.
 
-Conversely, if your content contains only the following items it will be consumable by both Power BI free and Pro users:
+Por el contrario, si el contenido incluye únicamente los elementos siguientes será compatible con ambos usuarios de Power BI Pro y gratuitas:
 
--   A dashboard or report connected to content packs for services (e.g. Dynamics CRM, Salesforce, and Google Analytics).
+-   Un panel o informe conectado a paquetes de contenido para los servicios (por ejemplo, Dynamics CRM, Salesforce y Google Analytics).
 
--   A dashboard or report with data imported from files such as Excel spreadsheets, Power BI Desktop, and CSV.
+-   Un panel o informe con los datos importados de archivos como hojas de cálculo de Excel, Power BI Desktop y CSV.
 
--   <bpt id="p1">[</bpt>Tiles pinned<ept id="p1">](https://msdn.microsoft.com/library/mt604784.aspx)</ept> from a report in SQL Server Reporting Services.
+-   
+            [Iconos anclados](https://msdn.microsoft.com/library/mt604784.aspx) de un informe de SQL Server Reporting Services.
 
 
-For example, if you create a manufacturing dashboard that updates progress multiple times during the day, anyone <bpt id="p1">*</bpt>consuming<ept id="p1">*</ept> that dashboard would need a Power BI Pro license. Or, if you create a report using the Power BI Gateway - Enterprise, then another that uses the personal gateway, anyone <bpt id="p1">*</bpt>consuming or interacting<ept id="p1">*</ept> with either of those reports would need a Power BI Pro license.
+Por ejemplo, si crea un panel de fabricación que las actualizaciones de progreso varias veces durante el día, cualquier persona *consumiendo* ese panel necesitaría una licencia de Power BI Pro. O bien, si crea un informe con Power BI Gateway - Enterprise y otro que utiliza la puerta de enlace personal, cualquier persona *consumo o la interacción* con cualquiera de estos informes, necesitaría una licencia de Power BI Pro.
 
-If you want to share your Power BI Pro content with users, they can sign up for a <bpt id="p1">[</bpt>free trial of Power BI Pro<ept id="p1">](powerbi-service-self-service-signup-for-power-bi.md#power-bi-pro-60-day-trial)</ept>, and gain access to your content during the trial period.
+Si desea compartir su contenido con usuarios de Power BI Pro, puede iniciar sesión en un [de prueba gratuita de Power BI Pro](powerbi-service-self-service-signup-for-power-bi.md#power-bi-pro-60-day-trial), y tener acceso a su contenido durante el período de prueba.
 
-For a list of Power BI Pro features (and how those features compare to a free Power BI license), take a look at <bpt id="p1">[</bpt>Power BI Pricing<ept id="p1">](https://powerbi.microsoft.com/pricing)</ept>.
+Para obtener una lista de Power BI Pro características (y cómo se comparan las características para una licencia gratuita de Power BI), eche un vistazo [precios de Power BI](https://powerbi.microsoft.com/pricing).

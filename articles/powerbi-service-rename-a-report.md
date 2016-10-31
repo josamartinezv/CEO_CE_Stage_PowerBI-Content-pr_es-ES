@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Rename a report in Power BI"
-   description="Rename a report in Power BI"
+   pageTitle="Cambiar el nombre de un informe en Power BI"
+   description="Cambiar el nombre de un informe en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,25 +19,25 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Rename a report in Power BI
+# Cambiar el nombre de un informe en Power BI
 
-##  What happens when I rename a report?
+##  ¿Qué ocurre al cambiar el nombre de un informe?
 
-Don't like the default name of a report in Power BI?  A new name is just a click away.  And renaming a report does not rename the associated dataset or <bpt id="p1">[</bpt>rename the associated dashboard<ept id="p1">](powerbi-service-rename-a-dashboard.md)</ept>.
+¿No le gusta el nombre predeterminado de un informe en Power BI?  Un nuevo nombre es sólo un clic de distancia.  Y cambiar el nombre de un informe de no cambiar el nombre de conjunto de datos asociado o [cambiar el nombre del panel asociado](powerbi-service-rename-a-dashboard.md).
 
-## Rename a report
+## Cambiar el nombre de un informe
 
-1.  In the left navigation pane, locate the report, right-click it, and select <bpt id="p1">**</bpt>Rename<ept id="p1">**</ept>.
+1.  En el panel de navegación izquierdo, busque el informe, haga clic en él y seleccione **cambiar el nombre de**.
 
     ![](media/powerbi-service-rename-a-report/Rename-a-report2.png)
 
-2.  Type the new name.
+2.  Escriba el nuevo nombre.
 
 
 ##  Consulte también
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)*
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

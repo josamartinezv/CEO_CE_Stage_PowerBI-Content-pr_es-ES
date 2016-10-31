@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Register an app with Azure AD"
-   description="Walkthrough - Push data into a dashboard - Register an app with Azure AD"
+   pageTitle="Registrar una aplicación con Azure AD"
+   description="Tutorial: insertar datos en un panel: registrar una aplicación con Azure AD"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,39 +20,40 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 1: Register an app with Azure AD
+# Paso 1: Registrar una aplicación con Azure AD
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+Este artículo forma parte de un tutorial paso a paso para [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md).
 
-The first step to push data into a Power BI dashboard is to register your app in Azure AD. You need to do this first so that you have a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> that identifies your app in Azure AD. Without a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept>, Azure AD cannot authenticate your app.
+El primer paso para insertar datos en un panel de Power BI es registrar su aplicación en Azure AD. Debe hacer esto en primer lugar para que tenga un **Id. de cliente** que identifica la aplicación en Azure AD. Sin un **Id. de cliente**, Azure AD no puede autenticar la aplicación.
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you register an app for Power BI, you need to <bpt id="p2">[</bpt>Sign up for Power BI<ept id="p2">](powerbi-admin-free-with-custom-azure-directory.md)</ept>.
+>
+            **NOTA**: antes de registrar una aplicación de Power BI, necesita [suscribirse en Power BI](powerbi-admin-free-with-custom-azure-directory.md).
 
-Here are the steps to register an app in Azure AD.
+Estos son los pasos para registrar una aplicación en Azure AD.
 
-## Register an app in Azure AD
+## Registrar una aplicación en Azure AD
 
-1. Go to dev.powerbi.com/apps.
-2. Click <bpt id="p1">**</bpt>Sign in with your existing account<ept id="p1">**</ept>, and sign into your Power BI account.
-3. Enter an <bpt id="p1">**</bpt>App Name<ept id="p1">**</ept> such as "Sample push data app".
-4. For <bpt id="p1">**</bpt>App Type<ept id="p1">**</ept>, choose <bpt id="p2">**</bpt>Native app<ept id="p2">**</ept>.
-5. Enter a <bpt id="p1">**</bpt>Redirect URL<ept id="p1">**</ept>, such as <bpt id="p2">**</bpt>https://login.live.com/oauth20_desktop.srf<ept id="p2">**</ept>. For a <bpt id="p1">**</bpt>Native client app<ept id="p1">**</ept>, a redirect uri gives <bpt id="p2">**</bpt>Azure AD<ept id="p2">**</ept> more details on the specific application that it will authenticate. The standard Uri for a client app is https://login.live.com/oauth20_desktop.srf.
-6. For <bpt id="p1">**</bpt>Choose APIs to access<ept id="p1">**</ept>, choose <bpt id="p2">**</bpt>Read and Write All Datasets<ept id="p2">**</ept>. For all Power BI app permissions, see <bpt id="p1">[</bpt>Power BI Permissions<ept id="p1">](powerbi-developer-power-bi-permissions.md)</ept>.
-7. Click <bpt id="p1">**</bpt>Register app<ept id="p1">**</ept>, and save the <bpt id="p2">**</bpt>Client ID<ept id="p2">**</ept> that was generated. A <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> identifies the app in Azure AD.
+1. Vaya a dev.powerbi.com/apps.
+2. Haga clic en **inicie sesión con su cuenta existente**, e inicie sesión en su cuenta de Power BI.
+3. Escriba un **nombre de aplicación** como "Aplicación de datos de ejemplo inserción".
+4. Para **el tipo de aplicación**, elija **aplicación nativa**.
+5. Escriba un **dirección URL de redireccionamiento**, como **https://login.live.com/oauth20_desktop.srf**. Para una **aplicación Native client**, proporciona un uri de redireccionamiento **Azure AD** obtener más información sobre la aplicación específica que autenticará. El Uri para una aplicación de cliente estándar es https://login.live.com/oauth20_desktop.srf.
+6. Para **Elija API para tener acceso a**, elija **leer y escribir todos los conjuntos de datos**. Para todos los permisos de la aplicación de Power BI, consulte [permisos de Power BI](powerbi-developer-power-bi-permissions.md).
+7. Haga clic en **Registrar aplicación**, y guarde el **Id. de cliente** que se ha generado. Un **Id. de cliente** identifica la aplicación en Azure AD.
 
-Here's how your <bpt id="p1">**</bpt>Register an Application for Power BI<ept id="p1">**</ept> page should look:
+Le mostramos cómo su **registrar una aplicación de Power BI** página debe ser:
 
 ![](media\powerbi-developer-walkthrough-push-data\powerbi-developer-sample-register-app.png)
 
-The next step shows you how to <bpt id="p1">[</bpt>get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>.
+El paso siguiente muestra cómo al [obtener un acceso de autenticación token](powerbi-developer-walkthrough-push-data-get-token.md).
 
-[Next Step &gt;](powerbi-developer-walkthrough-push-data-get-token.md)
+[Siguiente paso >](powerbi-developer-walkthrough-push-data-get-token.md)
 
 ## Consulte también
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
-[Walkthrough: Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)  
-[Register a client app](powerbi-developer-register-a-client-app.md)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Registrarse para Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Obtener un acceso de autenticación token](powerbi-developer-walkthrough-push-data-get-token.md)  
+[Tutorial: Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md)  
+[Registrar una aplicación cliente](powerbi-developer-register-a-client-app.md)  
+[Información general sobre la API de REST de Power BI](powerbi-developer-overview-of-power-bi-rest-api.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

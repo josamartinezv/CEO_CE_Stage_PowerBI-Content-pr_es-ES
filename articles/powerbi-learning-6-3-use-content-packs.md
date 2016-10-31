@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Use Content Packs"
-   description="Quickly reuse dashboards, reports, and datasets across your organization"
+   pageTitle="Usar paquetes de contenido"
+   description="Volver a utilizar rápidamente los paneles, informes y conjuntos de datos de la organización"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,40 +23,40 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Connect to a content pack from a group in Power BI
+# Conectarse a un paquete de contenido de un grupo en Power BI
 
-In previous lessons, we already created a content pack and a group. In this lesson, we're going to create an instance of the content pack for everyone in the group.
+En lecciones anteriores, ya hemos creado un paquete de contenido y un grupo. En esta lección, vamos a crear una instancia del paquete de contenido para todos los usuarios en el grupo.
 
-I start in My Workspace, ...
+Iniciar en Mi área de trabajo...
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03myworkspace.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03myworkspace.png)
 
-... and switch back to the Finance group I created in the earlier lesson.
+… y cambiar al grupo Finanzas se creó en la lección anterior.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03switch2group.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03switch2group.png)
 
-The group doesn't have any dashboards, reports, or datasets yet. I'm going to use the content pack I created. I browse content packs from my organization rather than those from third-party services.
+El grupo no tiene paneles, informes o conjuntos de datos todavía. Voy a usar el paquete de contenido que se ha creado. Examinar paquetes de contenido de mi organización en lugar de los de servicios de terceros.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03myorgcontpk.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03myorgcontpk.png)
 
-I find the content pack I created a minute ago. I see why it's important to give it a good title, description, and image, so people can find it. I connect to it.
+Encontrar el paquete de contenido que creó hace un minuto. Ver por qué es importante dar un buen título, la descripción y la imagen, por lo que la gente puede encontrarla. Conectar a él.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03contgallry.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03contgallry.png)
 
-Power BI imports the dashboards, reports, and datasets that are in the content pack.
+Power BI importa los paneles, informes y conjuntos de datos que se encuentran en el paquete de contenido.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03added2group.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03added2group.png)
 
-When I select the dataset, Power BI asks if I want to personalize the content pack.
+Al seleccionar el conjunto de datos, Power BI le preguntará si desea personalizar el paquete de contenido.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03personalize.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03personalize.png)
 
-I'm creating a copy of the content pack that I can make changes to, and disconnecting it from the published version of the content pack. If the content pack creator makes changes to the published version, I won't automatically get those updates.
+Estoy creando una copia del paquete de contenido que se pueden efectuar cambios en y desconectarlo de la versión publicada del paquete de contenido. Si el creador del paquete de contenido realiza cambios en la versión publicada, no obtendrá automáticamente las actualizaciones.
 
-But I can edit the dashboard, the report, and even the dataset, if I want.
+Pero, ¿puedo editar el panel, el informe e incluso el conjunto de datos, si es necesario.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03editreport.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-3-use-content-packs/pbi_learn06_03editreport.png)
 
-So content packs are a simple way to reuse content created by other people in your organization.
+Por lo que los paquetes de contenido son una manera simple de reutilizar el contenido creado por otras personas de su organización.
 
-On to the next lesson: <bpt id="p1">[</bpt>Create a content pack in Power BI<ept id="p1">](powerbi-learning-6-4-update-content-pack.md)</ept>.
+En la siguiente lección: [crear un paquete de contenido de Power BI](powerbi-learning-6-4-update-content-pack.md).

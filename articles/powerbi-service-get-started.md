@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get started with Power BI"
-   description="Get started with Power BI"
+   pageTitle="Introducción a Power BI"
+   description="Introducción a Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,121 +20,127 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Get started with Power BI
+# Introducción a Power BI
 
 ##  Introducción
 
-This tutorial helps you get started with Power BI service.  If you're looking for help with Power BI Desktop, see <bpt id="p1">[</bpt>Get started with Desktop<ept id="p1">](powerbi-desktop-getting-started.md)</ept>.
+Este tutorial le ayudará a empezar a trabajar con el servicio Power BI.  Si desea obtener ayuda con Power BI Desktop, consulte [Introducción a Desktop](powerbi-desktop-getting-started.md).
 
-Microsoft Power BI helps you stay up to date with the information that matters to you.  With Power BI, <bpt id="p1">***</bpt>dashboards<ept id="p1">***</ept> help you keep a finger on the pulse of your business.  Your dashboards display <bpt id="p1">***</bpt>tiles<ept id="p1">***</ept> that you can click to open <bpt id="p2">***</bpt>reports<ept id="p2">***</ept> for exploring further.  Connect to multiple <bpt id="p1">***</bpt>datasets<ept id="p1">***</ept> to bring all of the relevant data together in one place.
+Microsoft Power BI le ayuda a mantenerse al día con la información que es importante para usted.  Con Power BI, ***paneles*** le ayuda a tener un dedo en el pulso de su negocio.  Los paneles muestran ***mosaicos*** que puede hacer clic para abrir ***informes*** para explorar aún más.  Conectar a varios ***conjuntos de datos*** para mostrar todos los datos relevantes juntos en un solo lugar.
 
-Need help understanding the building blocks that make up Power BI?  See <bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>.
+¿Necesita ayuda para comprender los bloques de creación que conforman Power BI?  Consulte [BI: conceptos básicos de energía](powerbi-service-basic-concepts.md).
 
-If you have important data in Excel or CSV files, you can create a Power BI dashboard to stay informed anywhere and share insights with others.  Do you have a subscription to a SaaS application like Salesforce?  Get a head start by <bpt id="p1">[</bpt>connecting to Salesforce<ept id="p1">](powerbi-content-pack-salesforce.md)</ept> to automatically create a dashboard from that data, or <bpt id="p2">[</bpt>check out all the other SaaS apps<ept id="p2">](powerbi-service-get-data.md)</ept> you can connect to. If you are part of an organization, see if any <bpt id="p1">[</bpt>organizational content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept> have been published for you.
+Si tiene datos importantes en los archivos de Excel o CSV, puede crear un panel de Power BI para mantenerse informado en cualquier lugar y compartir conocimientos con otros usuarios.  ¿Tiene una suscripción a una aplicación de SaaS como Salesforce?  Obtenga un avance [conectarse a Salesforce](powerbi-content-pack-salesforce.md) para crear automáticamente un panel de datos, o [retirar todas las aplicaciones SaaS](powerbi-service-get-data.md) puede conectarse a. Si forma parte de una organización, ver si algún [paquetes de contenido organizativo](powerbi-service-organizational-content-packs-introduction.md) se han publicado para usted.
 
 
-Read about all the other ways to <bpt id="p1">[</bpt>get data for Power BI<ept id="p1">](powerbi-service-get-data.md)</ept>.
+Obtenga información acerca de todas las formas a [obtener datos para Power BI](powerbi-service-get-data.md).
 
-## Step 1: Get data
+## Paso 1: Obtener los datos
 
-Here's an example of getting data from a CSV file. Want to follow along with this tutorial? <bpt id="p1">[</bpt>Download this sample CSV file<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=619356)</ept>.
+Este es un ejemplo de cómo obtener datos desde un archivo CSV. ¿Desea seguir este tutorial? 
+            [Descargue este archivo CSV de ejemplo](http://go.microsoft.com/fwlink/?LinkID=619356).
 
-1.  <bpt id="p1">[</bpt>Sign in to Power BI<ept id="p1">](http://www.powerbi.com/)</ept>. Don’t have an account? You can sign up for <bpt id="p1">[</bpt>Power BI for free<ept id="p1">]</ept><bpt id="p2">(http://www.powerbi.com/ "</bpt>try out the new Power BI Preview for free<ept id="p2">")</ept>.
+1.  
+            [Inicie sesión Power BI](http://www.powerbi.com/). ¿No tiene una cuenta? Puede registrarse para [Power BI para liberar](http://www.powerbi.com/ "Pruebe gratuitamente la nueva vista previa de Power BI").
 
-1.  Power BI opens with a dashboard displayed. Select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> at the bottom of the left navigation pane.
+1.  Power BI se abre con un panel que se muestra. Seleccione **obtener datos** en la parte inferior del panel de navegación izquierdo.
 
     ![](media/powerbi-service-get-started/getdata3.png)
 
-2.  Select <bpt id="p1">**</bpt>Files<ept id="p1">**</ept>. 
+2.  Seleccione **archivos**. 
 
     ![](media/powerbi-service-get-started/gs1.png)
 
-3.  Select <bpt id="p1">**</bpt>Local File<ept id="p1">**</ept>, browse to the file on your computer, and choose <bpt id="p2">**</bpt>Open<ept id="p2">**</ept>.
+3.  Seleccione **archivo Local**, busque el archivo en el equipo y elija **abiertos**.
 
     ![](media/powerbi-service-get-started/gs2.png)
 
-4.  Power BI uploads the CSV file and adds it as a new dataset (the yellow asterisk indicates a new item).  Since we did not already have a dashboard, Power BI also created a new dashboard for us.  In the left navigation pane, the new dashboard is listed under the <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> heading, and the new dataset appears under the <bpt id="p2">**</bpt>Datasets<ept id="p2">**</ept> heading. 
+4.  Power BI carga el archivo CSV y lo agrega como un nuevo conjunto de datos (el asterisco amarillo indica un nuevo elemento).  Puesto que ya no ha habido un panel, Power BI también crea un nuevo panel para nosotros.  En el panel de navegación izquierdo, el nuevo panel aparece bajo la **paneles** título y el nuevo conjunto de datos aparece en la **conjuntos de datos** encabezado. 
 
     ![](media/powerbi-service-get-started/gs4.png)
 
 
-## Step 2: Start exploring your dataset
+## Paso 2: Empezar a explorar el conjunto de datos
 
-Now that you have connected to data, explore to find insights.  When you've found something you want to monitor, you can create a dashboard to keep up-to-date with changes.
+Ahora que ha conectado a datos, explore para encontrar información.  Cuando haya encontrado algo que desea supervisar, puede crear un panel para mantenerse actualizado con los cambios.
 
-1.  Select the dataset image on the dashboard to explore the data you just connected to or, under the <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> heading, select the dataset name to open it. This opens the dataset as a blank report.
+1.  Seleccione la imagen del conjunto de datos en el panel para explorar los datos que acaba de conectarse a o, bajo la **conjuntos de datos** título, seleccione el nombre del conjunto de datos para abrirla. Esto abre el conjunto de datos como un informe en blanco.
 
     ![](media/powerbi-service-get-started/gettingstart4.png)
 
-    >NOTE: Another way to explore your data is <bpt id="p1">**</bpt>Quick Insights<ept id="p1">**</ept>.  For more information, see <bpt id="p1">[</bpt>Introduction to Quick Insights<ept id="p1">](powerbi-service-auto-insights.md)</ept>
+    >NOTA: Es otra manera de explorar los datos **profundas**.  Para obtener más información, consulte [Introducción rápida visión](powerbi-service-auto-insights.md)
 
-2.  In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> list on the right side of the page, select fields to build a visualization.  Select the checkbox beside <bpt id="p1">**</bpt><ph id="ph1">﻿</ph>Gross Sales<ept id="p1">**</ept><ph id="ph2">﻿</ph> and  <bpt id="p2">**</bpt><ph id="ph3">﻿</ph>Date<ept id="p2">**</ept><ph id="ph4">﻿</ph>.
+2.  En la **campos** en el lado derecho de la página, seleccione los campos para crear una visualización.  Seleccione la casilla de verificación situada junto a **﻿ventas brutas**﻿ y  **﻿fecha**﻿.
 
     ![](media/powerbi-service-get-started/fields.png)
 
-3.  Power BI analyzes the data and creates a visual.  If you selected <bpt id="p1">**</bpt>Date<ept id="p1">**</ept> first, you'll see a table.  If you selected <bpt id="p1">**</bpt>Gross Sales<ept id="p1">**</ept> first, you'll see a chart. Switch to a different way of displaying your data. Try changing to a line chart by selecting the line chart option.
+3.  Power BI analiza los datos y crea un objeto visual.  Si seleccionó **fecha** en primer lugar, verá una tabla.  Si seleccionó **ventas brutas** en primer lugar, verá un gráfico. Cambiar a una forma diferente de mostrar los datos. Intente cambiar a un gráfico de líneas, seleccione la opción de gráfico de línea.
 
     ![](media/powerbi-service-get-started/gettingstart5new.png)
 
-4.  When you have a visualization you want on your dashboard, hover over the visualization and select the <bpt id="p1">**</bpt><ph id="ph1">﻿</ph>Pin<ept id="p1">**</ept><ph id="ph2">﻿</ph> icon.  When you pin this visualization, it will be stored on your dashboard so you can track the latest value at a glance.
+4.  Cuando tenga una visualización que desee en el panel, mantenga el mouse sobre la visualización y seleccione el **﻿Pin**﻿ icono.  Anclar esta visualización, se almacenan en el panel para que pueda seguir el valor más reciente de un vistazo.
 
     ![](media/powerbi-service-get-started/pinnew.png)
 
-5.  Because this is a new report, you need to save it before you can pin a visualization from it to the dashboard. Give your report a name (e.g., <bpt id="p1">*</bpt>Sales Over Time<ept id="p1">*</ept>) and select <bpt id="p2">**</bpt>Save and Continue<ept id="p2">**</ept>. 
+5.  Se trata de un nuevo informe, debe guardarlo antes de poder anclar una visualización del mismo en el panel. Asigne un nombre a un informe (por ejemplo, *ventas sobre tiempo*) y seleccione **Guardar y continuar**. 
 
     ![](media/powerbi-service-get-started/PBI_GetStartSaveB4Pinnew.png)
 
-    The new report appears in the navigation pane under the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> heading.
+    Aparece el nuevo informe en el panel de navegación en el **informes** encabezado.
 
-6.  Pin the tile to an existing dashboard or to a new dashboard. 
+6.  Anclar el mosaico a un panel existente o a un nuevo panel. 
 
     ![](media/powerbi-service-get-started/PBI_GS_PinDialognew.png)
 
-    -   <bpt id="p1">**</bpt>Existing dashboard<ept id="p1">**</ept>: select the name of the dashboard from the dropdown.
-    -   <bpt id="p1">**</bpt>New dashboard<ept id="p1">**</ept>: type the name of the new dashboard.
+    -   
+            **Panel existente**: seleccione el nombre del panel en la lista desplegable.
+    -   
+            **Nuevo panel**: escriba el nombre del nuevo panel.
 
-7.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+7.  Seleccione **Pin**.
 
-    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
+    Un mensaje de confirmación (cerca de la esquina superior derecha) le permite conocer que la visualización se ha agregado, como un icono al escritorio.
 
     ![](media/powerbi-service-get-started/pinSuccess.png)
 
-8.  Open the dashboard you just created. To do this, select the name under the <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> heading in the left navigation pane. Because the dashboard is new, it will have a yellow asterisk. The line chart is pinned, as a tile, to the dashboard. Make your dashboard even better by <bpt id="p1">[</bpt>renaming, resizing, linking, and repositioning tiles<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>.﻿﻿
+8.  Abrir el panel que acaba de crear. Para ello, seleccione el nombre de la **paneles** título en el panel de navegación izquierdo. Dado que el panel es nuevo, tendrá un asterisco amarillo. El gráfico de líneas está anclado, como un icono en el panel. Haga que el panel aún mejor [cambiar el nombre, el cambio de tamaño, vinculación y reubicando los mosaicos](powerbi-service-edit-a-tile-in-a-dashboard.md).﻿﻿
 
     ![](media/powerbi-service-get-started/gsPinFirstnew.png)
 
-    Select the new tile on your dashboard to return to the report any time.
+    Seleccione el icono nuevo en el panel para volver al informe en cualquier momento.
 
-##  Step 3: Continue exploring with Q&amp;A (natural language querying)
+##  Paso 3: Continuar explorando con preguntas y respuestas (consulta de lenguaje natural)
 
-1.  For a quick exploration of your data, try asking a question in the Q&amp;A box. The Q&amp;A question box is located at the top of your dashboard. For example, try typing "<bpt id="p1">**</bpt>what segment had the most revenue<ept id="p1">**</ept>".
+1.  Para una exploración rápida de los datos, intente formular una pregunta en el cuadro de preguntas y respuestas. El cuadro de pregunta de preguntas y respuestas se encuentra en la parte superior del panel. Por ejemplo, pruebe a escribir "**qué departamento tuvo más ingresos**".
 
     ![](media/powerbi-service-get-started/powerbi-qna.png)
 
-1. Select the pin icon <ph id="ph1">![](media/powerbi-service-get-started/PBI_PinIcon.png)</ph> to show this visualization on your dashboard too.
+1. Seleccione el icono de pin ![](media/powerbi-service-get-started/PBI_PinIcon.png) para mostrar esta visualización en el panel demasiado.
 
-2. Pin the visualization to the Financial Sample dashboard.
+2. Anclar la visualización en el panel de ejemplo financieros.
 
     ![](media/powerbi-service-get-started/gsPinWithQnA.png)
 
-3. Select the back arrow <ph id="ph1">![](media/powerbi-service-get-started/PBI_QABackArrow.png)</ph> to return to your dashboard where you'll see the new tile.
+3. Seleccione la flecha Atrás ![](media/powerbi-service-get-started/PBI_QABackArrow.png) para volver al panel donde podrá ver el nuevo icono.
 
-Ready to try more?  Here are some great ways to explore more of Power BI.
+¿Listo para probar más?  Estas son algunas formas de explorar más de Power BI.
 
--   <bpt id="p1">[</bpt>Connect to another dataset<ept id="p1">](powerbi-service-get-data.md)</ept>.
--   <bpt id="p1">[</bpt>Share your dashboard<ept id="p1">](powerbi-service-share-unshare-dashboard.md)</ept> with your colleagues.
--   Read <bpt id="p1">[</bpt>tips for designing dashboards<ept id="p1">](powerbi-service-tips-for-designing-a-great-dashboard.md)</ept>.
--   View your dashboards with a <bpt id="p1">[</bpt>Power BI app on a mobile device<ept id="p1">](powerbi-power-bi-apps-for-mobile-devices.md)</ept>
+-   
+            [Conectarse a otro conjunto de datos](powerbi-service-get-data.md).
+-   
+            [Compartir el escritorio](powerbi-service-share-unshare-dashboard.md) con sus colegas.
+-   Lectura [sugerencias para diseñar paneles](powerbi-service-tips-for-designing-a-great-dashboard.md).
+-   Ver sus paneles con un [aplicación Power BI en un dispositivo móvil](powerbi-power-bi-apps-for-mobile-devices.md)
 
-Not quite ready to jump right in? Start with these topics designed to help you feel comfortable with Power BI.
+¿No es bastante listo para lanzarse? Comience con estos temas diseñados para ayudarle a sentirse cómodo con Power BI.
 
--   [Learn how reports, datasets, dashboards, and tiles all fit together](powerbi-service-basic-concepts.md)
--   [Power BI videos](powerbi-videos.md)
--   [See what samples we have available for you to use](powerbi-sample-datasets.md)
+-   [Obtenga información acerca de cómo funcionan conjuntamente los informes, conjuntos de datos, paneles y mosaicos](powerbi-service-basic-concepts.md)
+-   [Vídeos de Power BI](powerbi-videos.md)
+-   [Vea los ejemplos que tenemos disponible para su uso](powerbi-sample-datasets.md)
 
-### Stay in touch with Power BI
+### Mantente en contacto con Power BI
 
--   Follow <bpt id="p1">[</bpt>@MSPowerBI on Twitter<ept id="p1">](https://twitter.com/mspowerbi)</ept>
--   Subscribe to our <bpt id="p1">[</bpt>YouTube video channel<ept id="p1">](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)</ept>
--   Watch our <bpt id="p1">[</bpt>Power BI Getting Started webinars<ept id="p1">](powerbi-webinars.md)</ept> on demand
--  More questions? [Try the Power BI Community](http://community.powerbi.com/)
+-   Siga [@MSPowerBI en Twitter](https://twitter.com/mspowerbi)
+-   Suscríbase a nuestro [canales de vídeo de YouTube](https://www.youtube.com/channel/UCy--PYvwBwAeuYaR8JLmrfg)
+-   Vea nuestros [seminarios Web de introducción a Power BI](powerbi-webinars.md) a petición
+-  ¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

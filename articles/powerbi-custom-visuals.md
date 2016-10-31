@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Custom visualizations in Power BI"
-   description="Custom visualizations in Power BI"
+   pageTitle="Visualizaciones personalizadas en Power BI"
+   description="Visualizaciones personalizadas en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,29 +20,37 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# <a name="custom-visualizations-in-power-bi"></a>Custom visualizations in Power BI
+# <a name="custom-visualizations-in-power-bi"></a>Visualizaciones personalizadas en Power BI
 
-The <bpt id="p1">[</bpt>Power BI Visuals gallery<ept id="p1">](https://app.powerbi.com/visuals)</ept> contains custom visualizations created by members of the community and by Microsoft. These visualizations can be downloaded and added to Power BI Service reports and Power BI Desktop reports. They behave just like the native visualizations included with Power BI; they can be filtered, highlighted, edited, shared, etc.
+La [Galería de elementos visuales de BI energía](https://app.powerbi.com/visuals) contiene visualizaciones personalizadas creadas por miembros de la Comunidad y Microsoft. Estas visualizaciones se pueden descargar y agregar a informes de servicio Power BI e informes de Power BI Desktop. Se comportan igual que las visualizaciones nativas incluidas con Power BI; Puede filtrar, resaltados, editados, compartido, etc..
 
-Are you a Web developer and interested in creating your own visualizations and adding them to the Gallery?  See <bpt id="p1">[</bpt>Extend Power BI with custom visuals<ept id="p1">](powerbi-custom-visuals-getting-started-with-developer-tools.md)</ept> and visit the <bpt id="p2">[</bpt>Power BI visuals gallery<ept id="p2">](http://app.powerbi.com/visuals?WT.mc_id=Blog_CustomVisuals)</ept> to learn how.
+¿Es un desarrollador Web y está interesado en crear sus propias visualizaciones y agregarlos a la Galería?  Consulte [ampliar Power BI con elementos visuales personalizados](powerbi-custom-visuals-getting-started-with-developer-tools.md) y visite la [Galería de elementos visuales de Power BI](http://app.powerbi.com/visuals?WT.mc_id=Blog_CustomVisuals) para obtener información sobre cómo.
 
-- <bpt id="p1">[</bpt>Download a custom visualization from the gallery<ept id="p1">](powerbi-custom-visuals-download-from-the-gallery.md)</ept>
+- 
+            [Descargar una visualización personalizada de la Galería](powerbi-custom-visuals-download-from-the-gallery.md)
 
-- <bpt id="p1">[</bpt>Add a custom visualization to your report (Power BI Service)<ept id="p1">](powerbi-custom-visuals-add-to-report.md)</ept>
+- 
+            [Agregar una visualización personalizada a un informe (servicio Power BI)](powerbi-custom-visuals-add-to-report.md)
 
-- <bpt id="p1">[</bpt>Add a custom visualization to your report (Power BI Desktop)<ept id="p1">](powerbi-custom-visuals-use.md)</ept>
+- 
+            [Agregar una visualización personalizada a un informe (Power BI Desktop)](powerbi-custom-visuals-use.md)
 
-- <bpt id="p1">[</bpt>Create and submit a visualization to the gallery<ept id="p1">](powerbi-custom-visuals-create-for-the-gallery.md)</ept>
+- 
+            [Crear y enviar una visualización en la Galería](powerbi-custom-visuals-create-for-the-gallery.md)
 
 <iframe src="https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/321/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 
 ## <a name="see-also"></a>Consulte también
 
-<bpt id="p1">[</bpt>Microsoft's custom visual playlist on YouTube<ept id="p1">](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)</ept>
 
-<bpt id="p1">[</bpt>Visualizations in Power BI<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>
+            [Visual lista de reproducción personalizada de Microsoft en YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 
-<bpt id="p1">[</bpt>Developer Tools for creating custom visuals<ept id="p1">](powerbi-custom-visuals-getting-started-with-developer-tools.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [Visualizaciones en Power BI](powerbi-service-visualizations-for-reports.md)
+
+
+            [Herramientas de desarrollador para crear elementos visuales personalizados](powerbi-custom-visuals-getting-started-with-developer-tools.md)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

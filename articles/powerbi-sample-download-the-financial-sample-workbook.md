@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Download the Financial Sample workbook for Power BI"
-   description="Download the Financial Sample workbook for Power BI"
+   pageTitle="Descargue el libro de ejemplo financieros para Power BI"
+   description="Descargue el libro de ejemplo financieros para Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,19 +19,23 @@
    ms.workload="powerbi"
    ms.date="03/23/2016"
    ms.author="amac"/>
-# <a name="download-the-financial-sample-workbook-for-power-bi"></a>Download the Financial Sample workbook for Power BI
+# <a name="download-the-financial-sample-workbook-for-power-bi"></a>Descargue el libro de ejemplo financieros para Power BI
 
-Need some data to try with Power BI service? We have a simple Excel workbook of sample financial data available for download.  Here's how to download it:
+¿Necesita algunos datos que se va a probar con servicio Power BI? Tenemos un libro de Excel simple financieros de datos de ejemplo disponibles para su descarga.  Le mostramos cómo descargarlo:
 
--   Financial sample Excel workbook: <bpt id="p1">[</bpt>download the sample directly<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=521962)</ept>.
-    This workbook has one table of data of sales and profit data by market segment and country/region.
+-   Libro de Excel de ejemplo financieros: [descargar el ejemplo directamente](http://go.microsoft.com/fwlink/?LinkID=521962).
+    Este libro tiene una tabla de datos de ventas y datos de beneficios por segmento de mercado y el país o región.
 
 ### <a name="see-also"></a>Consulte también
 
-<bpt id="p1">[</bpt>Get Data<ept id="p1">](powerbi-service-get-data.md)</ept>
 
-<bpt id="p1">[</bpt>How to import Excel data<ept id="p1">](powerbi-service-excel-data.md)</ept>
+            [Obtener datos](powerbi-service-get-data.md)
 
-<bpt id="p1">[</bpt>Other data you can try with Power BI -- Sample datasets and content packs<ept id="p1">](powerbi-sample-datasets.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [Cómo importar datos de Excel](powerbi-service-excel-data.md)
+
+
+            [Otros datos que se puede probar con Power BI: conjuntos de datos de ejemplo y paquetes de contenido](powerbi-sample-datasets.md)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

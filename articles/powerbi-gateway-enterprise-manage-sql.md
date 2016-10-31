@@ -1,6 +1,6 @@
 <properties
-pageTitle="Manage your data source - SQL"
-description="How to manage the on-premises data gateway and data sources that belong to that gateway."
+pageTitle="Administrar el origen de datos - SQL"
+description="Cómo administrar los locales puerta de enlace y los datos de orígenes de datos que pertenecen a dicha puerta de enlace."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,107 +19,108 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/01/2016"
 ms.author="asaxton"/>
-# Manage your data source - SQL Server
+# Administrar el origen de datos: SQL Server
 
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the SQL Server data source either for scheduled refresh or for DirectQuery.
+Una vez haya instalado la puerta de enlace de datos local, debe agregar los orígenes de datos que se pueden usar con la puerta de enlace. En este artículo se describe cómo trabajar con orígenes de datos y las puertas de enlace. Puede usar el origen de datos de SQL Server para la actualización programada o DirectQuery.
 
-## Download and install the gateway
+## Descargue e instale la puerta de enlace
 
-You can download the gateway from the Power BI service. Select <bpt id="p1">**</bpt>Downloads<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Data Gateway<ept id="p2">**</ept>, or by going to the <bpt id="p3">[</bpt>gateway download page<ept id="p3">](https://go.microsoft.com/fwlink/?LinkId=698861)</ept>.
+Puede descargar la puerta de enlace desde el servicio Power BI. Seleccione **descargas** > **puerta de enlace de datos**, o yendo a la [página de descarga de la puerta de enlace](https://go.microsoft.com/fwlink/?LinkId=698861).
 
 ![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
 
-## Add a gateway
+## Agregar una puerta de enlace
 
-To add a Gateway, simply <bpt id="p1">[</bpt>download<ept id="p1">](https://go.microsoft.com/fwlink/?LinkId=698861)</ept> and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+Para agregar una puerta de enlace, simplemente [descargar](https://go.microsoft.com/fwlink/?LinkId=698861) e instalar la puerta de enlace en un servidor en su entorno. Después de haber instalado la puerta de enlace, se mostrará en la lista de puertas de enlace en **Administrar puertas de enlace**.
 
-> [AZURE.NOTE] <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept> will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> [AZURE.NOTE] 
+            **Administrar las puertas de enlace** no se mostrará hasta que son el Administrador de al menos una puerta de enlace. Esto puede suceder ya sea por que se agrega como un administrador o instalar y configurar una puerta de enlace.
 
-## Remove a gateway
+## Quitar una puerta de enlace
 
-Removing a gateway will also delete any data sources under that gateway.  This will also break any dashboards and reports that rely on those data sources.
+Quitar una puerta de enlace también se eliminan los orígenes de datos en dicha puerta de enlace.  Esto también interrumpirá cualquier paneles e informes que dependen de esos orígenes de datos.
 
-1.  Select the gear icon <ph id="ph1">![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png)</ph> in the upper-right corner &gt; <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+1.  Seleccione el icono de engranaje ![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png) en la esquina superior derecha > **Administrar puertas de enlace**.
 
-2.  Gateway &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>
+2.  Puerta de enlace > **quitar**
 
     ![](media/powerbi-gateway-enterprise-manage/datasourcesettings7.png)
 
-## Add a data source
+## Agregar un origen de datos
 
-You can add a data source by either selecting a gateway and click <bpt id="p1">**</bpt>Add data source<ept id="p1">**</ept>, or go to Gateway &gt; <bpt id="p2">**</bpt>Add data source<ept id="p2">**</ept>.
+Puede agregar un origen de datos seleccionando una puerta de enlace y haga clic en **Agregar origen de datos**, o ir a la puerta de enlace > **Agregar origen de datos**.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings1.png)
 
-You can then select the <bpt id="p1">**</bpt>Data Source Type<ept id="p1">**</ept> from the list.
+A continuación, puede seleccionar el **el tipo de origen de datos** de la lista.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings2.png)
 
-You will then want to fill in the information for the data source which includes the <bpt id="p1">**</bpt>Server<ept id="p1">**</ept> and the <bpt id="p2">**</bpt>Database<ept id="p2">**</ept>.  
+A continuación, deberá rellenar la información del origen de datos que incluye el **Server** y **base de datos**.  
 
-You will also need to choose an <bpt id="p1">**</bpt>Authentication Method<ept id="p1">**</ept>.  This can either be <bpt id="p1">**</bpt>Windows<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Basic<ept id="p2">**</ept>.  You would want to choose <bpt id="p1">**</bpt>Basic<ept id="p1">**</ept> if you are going to use SQL Authentication instead of Windows Authentication. Then enter the credentials that will be used for this data source.
+También deberá elegir una **método de autenticación**.  Esto puede ser **Windows** o **básica**.  ¿Desea elegir **básica** Si va a utilizar la autenticación de SQL en lugar de la autenticación de Windows. A continuación, escriba las credenciales que se utilizará para este origen de datos.
 
-> [AZURE.NOTE] All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how <bpt id="p1">[</bpt>credentials<ept id="p1">](powerbi-gateway-onprem.md#credentials)</ept> are stored.
+> [AZURE.NOTE] Todas las consultas al origen de datos se ejecutan con estas credenciales. Para obtener más información, consulte el artículo de puerta de enlace de datos principal local para obtener más información acerca de cómo [credenciales](powerbi-gateway-onprem.md#credentials) se almacenan.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3.png)
 
-You can click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> after you have everything filled in.  You can now use this data source for scheduled refresh, or DirectQuery, against a SQL Server that is on-premises. You will see <bpt id="p1">*</bpt>Connection Successful<ept id="p1">*</ept> if it succeeded.
+Puede hacer clic en **Agregar** después de que todo lo rellena dispone de.  Ahora puede usar este origen de datos para la actualización programada o DirectQuery en SQL Server que es local. Verá *conexión correcta* Si se ha ejecutado correctamente.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
 
 ### Configuración avanzada
 
-You can configure the privacy level for your data source. This controls how data can be mashed up. This is only used for scheduled refresh. It does not apply to DirectQuery. [Obtener más información](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
+Puede configurar el nivel de privacidad para el origen de datos. Controla cómo se pueden puré los datos de. Sólo se utiliza para la actualización programada. No se aplica a DirectQuery. [Obtener más información](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings9.png)
 
-## Remove a data source
+## Quitar un origen de datos
 
-Removing a data source will break any dashboards or reports that rely on the given data source.  
+Quitar un origen de datos se interrumpen cualquier paneles o informes que se basan en el origen de datos determinado.  
 
-To remove a Data Source, go to the Data Source &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.
+Para quitar un origen de datos, vaya al origen de datos > **quitar**.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings6.png)
 
-## Manage administrators
+## Administrar administradores
 
-On the Administrators tab, for the gateway, you can add, and remove, users that can administer the gateway. You can only add users at this time. Security groups cannot be added.
+En la ficha de administradores, la puerta de enlace, puede agregar y quitar usuarios que pueden administrar la puerta de enlace. Sólo puede agregar usuarios en este momento. No se puede agregar grupos de seguridad.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings8.png)
 
 ## Administrar usuarios
 
-On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
+En la pestaña usuarios, el origen de datos, puede agregar y quitar usuarios o grupos de seguridad, que pueden usar este origen de datos.
 
-> [AZURE.NOTE] The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
+> [AZURE.NOTE] Sólo los controles que tienen permiso para publicar informes de lista de los usuarios. Los propietarios de informes pueden crear paneles o paquetes de contenido y compartir con otros usuarios.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings5.png)
 
-## Using the data source
+## Usar el origen de datos
 
-After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh. 
+Después de haber creado el origen de datos, estará disponible para usarse con cualquier conexiones DirectQuery o a través de la actualización programada. 
 
-> [AZURE.NOTE] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway gateway!
+> [AZURE.NOTE] Servidor y el nombre de la base de datos deben coincidir entre Power BI Desktop y el origen de datos dentro de la puerta de enlace de puerta de enlace de datos local.
 
-The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. If you use <bpt id="p1">*</bpt>SERVER\INSTANCE<ept id="p1">*</ept>, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
+El vínculo entre el conjunto de datos y el origen de datos dentro de la puerta de enlace se basa en el nombre del servidor y el nombre de la base de datos. Estos tienen que coincidir. Por ejemplo, si proporciona una dirección IP para el nombre del servidor, en Power BI Desktop, debe utilizar la dirección IP del origen de datos dentro de la configuración de puerta de enlace. Si utiliza *servidor*, en Power BI Desktop, debe usar el mismo origen de datos configurado para la puerta de enlace.
 
-This is the case for both DirectQuery and scheduled refresh.
+Este es el caso de DirectQuery y actualización programada.
 
-### Using the data source with DirectQuery connections
+### Utilizar el origen de datos con conexiones de DirectQuery
 
-You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the gateway. You will also need to make sure your user is listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source in order to publish DirectQuery datasets. The selection, for DirectQuery, occurs within Power BI Desktop when you first import data. [Obtener más información](powerbi-desktop-use-directquery.md)
+Debe asegurarse de que las coincidencias de nombre servidor y base de datos entre Power BI Desktop y el origen de datos configurado para la puerta de enlace. También necesitará asegurarse de que el usuario aparece en el **usuarios** ficha del origen de datos para poder publicar conjuntos de datos de DirectQuery. La selección de DirectQuery, se produce dentro de Power BI Desktop al importar los datos primero. [Obtener más información](powerbi-desktop-use-directquery.md)
 
-After you publish, either from Power BI Desktop or <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>, your reports should start working. It may take several minutes, after creating the data source within the gateway, for the connection to be usable.
+Después de publicar, desde Power BI Desktop o **obtener datos**, los informes deben empezar a trabajar. Puede tardar varios minutos, después de crear el origen de datos dentro de la puerta de enlace para la conexión ser utilizable.
 
-### Using the data source with scheduled refresh
+### Usar el origen de datos con la actualización programada
 
-If you are listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source configured within the gateway, and the server and database name match, you will see the gateway as an option to use with scheduled refresh.
+Si se enumeran en el **usuarios** ficha del origen de datos configurado dentro de la puerta de enlace y la coincidencia de nombre de servidor y base de datos, verá la puerta de enlace como una opción para usar con la actualización programada.
 
 ![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## Véase también
 
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Puerta de enlace de datos local](powerbi-gateway-onprem.md)  
+[Puerta de enlace de datos - profundidad local](powerbi-gateway-onprem-indepth.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

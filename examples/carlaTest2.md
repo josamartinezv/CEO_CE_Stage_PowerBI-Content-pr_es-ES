@@ -1,29 +1,29 @@
 <properties 
-        pageTitle="Test Markdown 2 (carlasab)" 
-        description="test page" 
+        pageTitle="Prueba 2 de descuento (carlasab)" 
+        description="página de prueba" 
         services="powerbi" 
         documentationCenter="" 
         authors="sabotta" />
 
 # Introducción
 
-This is a test markdown article, and it's the first markdown article that I've created using MarkdownPad2. The UI seems <bpt id="p1">*</bpt>user friendly<ept id="p1">*</ept>.
+Se trata de un artículo de descuento de prueba y es el primer artículo de descuento que he creado con MarkdownPad2. La interfaz de Usuario parece *descriptivo*.
 
 ## Tablas
-The following is a table.
+La siguiente es una tabla.
 
-|First Header   |Second Header    |
+|Primer encabezado   |Segundo encabezado    |
 |------------:  |-------------:   |
-|Content Cell|Content Cell|
-|Content Cell|Content Cell|
+|Celda de contenido|Celda de contenido|
+|Celda de contenido|Celda de contenido|
 
 
 ## Listas
-1. First step includes adding `code`
-2. Second step.
-3. Third step.
+1. Primer paso incluye la adición de `code`
+2. Segundo paso.
+3. El tercer paso.
 
-Here is a list
+Esta es una lista
 
 - Elemento 
 - Elemento
@@ -31,4 +31,4 @@ Here is a list
 
 ### Links
 
-[Markdownpad Site] (http://markdownpad.com/compare.html)
+[Markdownpad sitio] (http://markdownpad.com/compare.html)

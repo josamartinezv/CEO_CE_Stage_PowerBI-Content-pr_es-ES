@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Edit a tile -- resize, move, rename, pin, delete, add hyperlink"
-   description="Documentation for how to edit a dashboard tile -- resize, move, rename, pin, delete, add hyperlink."
+   pageTitle="Editar un mosaico: cambiar el tamaño, mover, cambiar el nombre, pin, eliminar, Agregar hipervínculo"
+   description="Documentación acerca de cómo editar un icono de panel: cambiar el tamaño, mover, cambiar el nombre, anclar, eliminar, Agregar hipervínculo."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,95 +21,95 @@
    ms.date="08/24/2016"
    ms.author="mihart"/>
 
-# Edit a tile -- resize, move, rename, pin, delete, add hyperlink
+# Editar un mosaico: cambiar el tamaño, mover, cambiar el nombre, pin, eliminar, Agregar hipervínculo
 
-You can change the look and default behavior of a tile in a dashboard.
+Puede cambiar la apariencia y el comportamiento predeterminado de un icono en un panel.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
-This article covers the following.
+En este artículo se trata lo siguiente.
 
--   [Pin a tile to a different dashboard](#different)
+-   [Anclar un mosaico en un panel diferente](#different)
 
--   [Rename a tile](#rename)
+-   [Cambiar el nombre de un mosaico](#rename)
 
--   [Move a tile](#move)
+-   [Mover un mosaico](#move)
 
--   [Resize a tile](#resize)
+-   [Cambiar el tamaño de un mosaico](#resize)
 
--   [Add a hyperlink to a tile](#hyperlink)
+-   [Agregar un hipervínculo a un mosaico](#hyperlink)
 
--   [Delete a tile](#delete)
+-   [Eliminar un mosaico](#delete)
 
-    >[AZURE.NOTE] To change the visualization shown on the tile itself, delete the tile and add a new <bpt id="p1">[</bpt>dashboard tile<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>.
+    >[AZURE.NOTE] Para cambiar la visualización se muestra en el mosaico, elimino el mosaico y agregue un nuevo [icono Panel de](powerbi-service-dashboard-tiles.md).
 
-##  How to begin   
+##  Cómo empezar   
 
-1.  In a <bpt id="p1">[</bpt>dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept>, <bpt id="p2">[</bpt>get data <ept id="p2">](powerbi-service-get-data.md)</ept>, and add a tile. 
+1.  En un [panel](powerbi-service-dashboards.md), [obtener datos ](powerbi-service-get-data.md), y agregar un mosaico. 
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBI_DashTile.png)
 
-2.  Hover over a dashboard tile, select the ellipses to display the options.
+2.  Mantenga el mouse sobre un icono de panel, seleccione el botón de puntos suspensivos para mostrar las opciones.
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/power-bi-tile-menu.png)
 
 <a name="different"></a>
-## Pin the tile to a different dashboard
+## Anclar el mosaico a un panel diferente
 
-1.    Select the pin icon <ph id="ph1">![](media/powerbi-service-edit-a-tile-in-a-dashboard/pinNoOutline.png)</ph> .
+1.    Seleccione el icono de pin ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pinNoOutline.png) .
 
-2.  Decide whether to pin to an existing dashboard or to a new dashboard. 
+2.  Decida si desea anclar a un panel existente o a un nuevo panel. 
 
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBI_PinToAnotherDash.png)
 
-3.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+3.  Seleccione **Pin**.
 
 ****
 <a name="rename"></a>
-## Rename the tile
+## Cambiar el nombre del mosaico
 
--   Select the pencil icon   <ph id="ph1">![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)</ph>  to edit the tile title.
+-   Seleccione el icono de lápiz   ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)  para modificar el título del mosaico.
 
 ****
 <a name="move"></a>
-## Move the tile
+## Mover el mosaico
 
--   Select and hold the tile to drag it to a new location on the dashboard canvas.
+-   Seleccione y mantenga el mosaico arrastrarla a una nueva ubicación en el lienzo de panel.
 
 ****
 <a name="resize"></a>
-## Resize the tile
+## Cambiar el tamaño del mosaico
 
-You can make tiles many different sizes -- from 1x1 tile units up to 5x5.
+Puede realizar muchos iconos distintos tamaños, de 1 x 1 tile unidades de hasta 5 x 5.
 
--    Select and drag the handle  (in the bottom right corner) to resize the tile.
+-    Seleccione y arrastre el controlador (en la esquina inferior derecha) para cambiar el tamaño del mosaico.
     ![](media/powerbi-service-edit-a-tile-in-a-dashboard/PBIGIF_ResizeTile4.gif)
 
 
 ****
 <a name="hyperlink"></a>
-## Add a hyperlink to a dashboard tile
+## Agregar un hipervínculo a un icono de panel
 
-By default, clicking a tile takes you to the report where the tile was created or to Q&amp;A (if the tile was created in Q&amp;A). To link to a webpage, another dashboard, an SSRS report, or other online content - add a custom link:
+De forma predeterminada, al hacer clic en un mosaico le lleva al informe en el que se creó el mosaico o para preguntas y respuestas (si el mosaico se creó en preguntas y respuestas). Para vincular a una página Web, otro panel, un informe de SSRS u otro contenido en línea - agregar un vínculo personalizado:
 
-1.    Select the pencil icon <ph id="ph1">![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)</ph>  to edit the tile.
+1.    Seleccione el icono de lápiz ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_pencilIcon.png)  para editar el mosaico.
 
-2.    Place a checkmark in <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> and enter a URL.
+2.    Coloque una marca de verificación en **conjunto de vínculos personalizados** y escriba una dirección URL.
 
 ****
 <a name="delete"></a>
-## Delete the tile
+## Eliminar el mosaico
 
--   Select the X icon <ph id="ph1">![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_X_icon.png)</ph> to delete the tile. Deleting a tile does not delete the underlying report.
+-   Seleccione el icono X ![](media/powerbi-service-edit-a-tile-in-a-dashboard/pbi_Nancy_X_icon.png) para eliminar el icono. Eliminación de un mosaico, no elimina el informe subyacente.
 
 ****
 
 ## Consulte también
 
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
+[Iconos de panel en Power BI](powerbi-service-dashboard-tiles.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

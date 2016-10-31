@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Treemaps in Power BI"
-   description="Tutorial: Treemaps in Power BI"
+   pageTitle="Tutorial: Treemaps en Power BI"
+   description="Tutorial: Treemaps en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,78 +21,86 @@
    ms.date="10/14/2016"
    ms.author="mihart"/>
 
-# <a name="tutorial:-treemaps-in-power-bi"></a>Tutorial: treemaps in Power BI  
+# <a name="tutorial:-treemaps-in-power-bi"></a>Tutorial: treemaps en Power BI  
 
-Treemaps display hierarchical data as a set of nested rectangles.  Each level of the hierarchy is represented by a colored rectangle (often called a "branch") containing other rectangles ("leaves").  The space inside each rectangle is allocated based on the quantitative value being measured, with the rectangles arranged in size from top left (largest) to bottom right (smallest).
+Treemaps mostrar datos jerárquicos como un conjunto de rectángulos anidados.  Cada nivel de la jerarquía se representa mediante un rectángulo de color (a menudo denominado "bifurcación") que contiene otros rectángulos ("hojas").  Se asigna el espacio dentro de cada rectángulo basándose en el valor cuantitativo que se va a medir, con los rectángulos que se organizan en el tamaño de la esquina superior izquierda (mayor) a la parte inferior derecha (menor).
 
 ![](media/powerbi-service-tutorial-treemaps/pbi-Nancy_viz_treemap.png)
 
-For example, if I'm analyzing my sales, I might have top-level rectangles (branches) for the clothing categories: <bpt id="p1">**</bpt>Urban<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Rural<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Youth<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Mix<ept id="p4">**</ept>.  My category rectangles would contain smaller rectangles (leaves) for the clothing manufacturers within that category, and these smaller rectangles would be sized and shaded based on the number sold.  In the <bpt id="p1">**</bpt>Urban<ept id="p1">**</ept> branch above, lots of Maximus clothing was sold, less Natura and Fama, and very little Leo.  So, the <bpt id="p1">**</bpt>Urban<ept id="p1">**</ept> branch of my Treemap would have the largest rectangle for Maximus (in the top left corner), slightly-smaller rectangles for Natura and Fama, lots of other rectangles representing all the other clothing sold, and a tiny rectangle for Leo.  And I could compare the number of items sold across the other clothing categories by comparing the size and shading of each leaf node; the larger the rectangle and the darker the shading, the higher the value.
+Por ejemplo, si estoy analizando los Mis ventas, puede que tenga rectángulos de nivel superior (ramas) para las categorías de ropa: **Urban**, **Rural**, **juventud**, y **combinación**.  Mi rectángulos categoría contendría rectángulos más pequeños (hoja) para la ropa fabricantes dentro de esa categoría y estos rectángulos menor tamaño y sombreados en función del número vendido.  En el **Urban** rama anterior, una gran cantidad de máximos se vendió ropa, menos Natura y Fama y Leo muy poco.  Por lo tanto, la **Urban** rama de mi Treemap tendría el rectángulo más grande de máximos (en la esquina superior izquierda), ligeramente menor rectángulos para Natura y Fama, muchos otros rectángulos que representan todas las demás prendas vendidas y un pequeño rectángulo para Leo.  Y que podía comparar el número de elementos vendidos en otras categorías de ropa comparando el tamaño y el sombreado de cada nodo de hoja; Cuanto mayor sea el rectángulo y cuanto más oscuro el sombreado, cuanto mayor sea el valor.
 
-## <a name="when-to-use-a-treemap"></a>When to use a treemap  
-Treemaps are a great choice:
+## <a name="when-to-use-a-treemap"></a>Cuándo utilizar un treemap  
+Treemaps son una excelente opción:
 
--   to display large amounts of hierarchical data.
+-   para mostrar grandes cantidades de datos jerárquicos.
 
--   when a bar chart can't effectively handle the large number of values.
+-   Cuando un gráfico de barras no puede controlar eficazmente el gran número de valores.
 
--   to show the proportions between each part and the whole.
+-   para mostrar las proporciones entre cada parte y el conjunto.
 
--   to show the pattern of the distribution of the measure across each level of categories in the hierarchy.
+-   para mostrar el patrón de la distribución de la medida en cada nivel de categorías de la jerarquía.
 
--   to show attributes using size and color coding.
+-   para mostrar atributos mediante codificación de color y tamaño.
 
--   to spot patterns, outliers, most-important contributors, and exceptions.
+-   para detectar patrones, los valores atípicos, colaboradores más importante y excepciones.
 
-## <a name="create-a-basic-treemap"></a>Create a basic treemap  
+## <a name="create-a-basic-treemap"></a>Crear un treemap básica  
 
 
-Want to watch someone else create a treemap first?  Skip to 2:01 in this video to watch Will create a treemap using the Sales and Marketing sample.
+¿Desea ver alguien cree un treemap primero?  Saltar a las 2:01 en este vídeo ver creará un treemap con las ventas y Marketing de ejemplo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rnMyiA6Nt6Y?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-Or, create your own treemap. These instructions use the Retail Analysis Sample. To follow along,  <bpt id="p1">[</bpt>download the sample<ept id="p1">](powerbi-sample-downloads.md)</ept>, sign in to Power BI and select <bpt id="p2">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Excel Workbook <ph id="ph2">\&gt;</ph>  Connect <ph id="ph3">\&gt;</ph> Retail Analysis Sample<ept id="p2">**</ept>.<bpt id="p3">**</bpt>xlsx<ept id="p3">**</ept>.
+O bien, puede crear su propio treemap. Estas instrucciones utilizan el ejemplo de análisis de venta directa. Para continuar,  [Descargue el ejemplo](powerbi-sample-downloads.md), inicie sesión en Power BI y seleccione **obtener datos \> libro de Excel \>  Conectar \> ejemplo de análisis de venta**.**xlsx**.
 
-1.  Start in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept> and select the <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Last Years Sales<ept id="p3">**</ept> measure.   
+1.  Iniciar en [vista de edición](powerbi-service-interact-with-a-report-in-editing-view.md) y seleccione la **ventas** > **ventas de últimos años** medida.   
 ![](media/powerbi-service-tutorial-treemaps/treemapFirstValue_new.png)
 
-2.  Convert the chart to a treemap.  
+2.  Convertir el gráfico a un treemap.  
 ![](media/powerbi-service-tutorial-treemaps/treemapConvertTo_new.png)
 
-3.  Drag <bpt id="p1">**</bpt>Item<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Category<ept id="p2">**</ept> to the <bpt id="p3">**</bpt>Group<ept id="p3">**</ept> well. Power BI creates a treemap where the size of the rectangles reflect total sales and the color represents the category.  In essence you've created a hierarchy that visually describes the relative size of total sales by category.  The <bpt id="p1">**</bpt>Mens<ept id="p1">**</ept> category has the highest sales and the <bpt id="p2">**</bpt>Hosiery<ept id="p2">**</ept> category has the lowest.
+3.  Arrastre **elemento** > **categoría** a la **grupo** bien. Power BI crea un treemap donde el tamaño de los rectángulos reflejar el total de ventas y el color representa la categoría.  En esencia, ha creado una jerarquía que describe visualmente el tamaño relativo del total de ventas por categoría.  El **hombres** categoría tiene las ventas más altas y **calcetería** categoría tiene los valores más bajos.
   ![](media/powerbi-service-tutorial-treemaps/treemapComplete_new.png)
 
-4.  Drag <bpt id="p1">**</bpt>Store<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Chain<ept id="p2">**</ept> to the <bpt id="p3">**</bpt>Details<ept id="p3">**</ept> well to complete your treemap. You can now compare last year's sales by category and chain.   
+4.  Arrastre **almacén** > **cadena** a la **detalles** apropiado para completar su treemap. Ahora puede comparar las ventas del último año por categoría y la cadena.   
 ![](media/powerbi-service-tutorial-treemaps/treemap_addGroup_new.png)
 
-    >[AZURE.NOTE] Color Saturation and Details cannot be used at the same time.
+    >[AZURE.NOTE] Saturación del color y detalles no se puede usar al mismo tiempo.
 
-5. Hover over a <bpt id="p1">**</bpt>Chain<ept id="p1">**</ept> area to reveal the tooltip for that portion of the <bpt id="p2">**</bpt>Category<ept id="p2">**</ept>.  For example, hovering over <bpt id="p1">**</bpt>Lindseys<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>040-Juniors<ept id="p2">**</ept> rectangle reveals the tooltip for Lindsey's portion of the Juniors category.  
+5. Mantenga el mouse sobre un **cadena** área para mostrar la información sobre herramientas para la parte de la **categoría**.  Por ejemplo, el mouse sobre **Lindseys** en el **Juniors 040** rectángulo revela la información sobre herramientas para parte de Lindsey de la categoría de Juniors.  
 ![](media/powerbi-service-tutorial-treemaps/treemapHoverDetail_new.png)
 
-5.  <bpt id="p1">[</bpt>Add the treemap as a dashboard tile (pin the visual)<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>. 
+5.  
+            [Agregue el treemap como un icono de panel (pin visual)](powerbi-service-dashboard-tiles.md). 
 
-6.  <bpt id="p1">[</bpt>Save the report<ept id="p1">](powerbi-service-save-a-report.md)</ept>.
+6.  
+            [Guardar el informe](powerbi-service-save-a-report.md).
 
-## <a name="highlighting-and-cross-filtering"></a>Highlighting and cross-filtering  
-For information about using the Filters pane, see <bpt id="p1">[</bpt>Add a filter to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>.
+## <a name="highlighting-and-cross-filtering"></a>Resaltado y filtrado cruzado  
+Para obtener información acerca de cómo utilizar el panel de filtros, consulte [Agregar un filtro a un informe](powerbi-service-add-a-filter-to-a-report.md).
 
-Highlighting a Category or Details in a treemap cross-highlights and cross-filters the other visualizations on the report page... and vice versa. To follow along, either add some visuals to the same page or copy/paste the treemap to a report page that already has other visuals.
+Resaltado de una categoría o detalles en un treemap resaltado de referencias cruzadas y filtros cruzados las otras visualizaciones en la página de informe... y viceversa. Para poder continuar, agregue algunos elementos visuales a la misma página o copiar y pegar el treemap a una página del informe que ya tiene otros elementos visuales.
 
-1.  On the treemap, select either a Category or a Chain within a Category.  This cross-highlights the other visualizations on the page. Selecting <bpt id="p1">**</bpt>050-Shoes<ept id="p1">**</ept>, for example, shows me that last year's sales for shoes was $3,640,471 with $2,174,185 of that coming from Fashions Direct.  
+1.  En el treemap, seleccione una categoría o una cadena dentro de una categoría.  Esto entre-información destacada de las otras visualizaciones en la página. Seleccionar **zapatos 050**, por ejemplo, me muestra que ventas del último año de zapatos era $3,640,471 con $2,174,185 de que procedan de moda directa.  
     ![](media/powerbi-service-tutorial-treemaps/treemapHiliting.png)
 
-2.  In the <bpt id="p1">**</bpt>Last Year Sales by Chain<ept id="p1">**</ept> pie chart, select the <bpt id="p2">**</bpt>Fashions Direct<ept id="p2">**</ept> slice.  
+2.  En el **ventas del último año por cadena** gráfico circular, seleccione la **directa de moda** segmento.  
     ![](media/powerbi-service-tutorial-treemaps/treemapNoOwl.gif)
 
-3. To manage how charts cross-highlight and cross-filter each other, see <bpt id="p1">[</bpt>Visualization interactions in a Power BI report<ept id="p1">](powerbi-service-visual-interactions.md)</ept>
+3. Para administrar cómo gráficos realzado cruzado y filtro entre ellos, consulte [interacciones de visualización en un informe de Power BI](powerbi-service-visual-interactions.md)
 
 ## <a name="see-also"></a>Consulte también  
-<bpt id="p1">[</bpt>Reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-<bpt id="p1">[</bpt>Add a visualization to a report<ept id="p1">](https://powerbi.uservoice.com/knowledgebase/articles/441777)</ept>  
-<bpt id="p1">[</bpt>Visualization types in Power BI<ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept><ph id="ph1">
-</ph><bpt id="p2">[</bpt> Pin a visualization to a dashboard<ept id="p2">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept>  
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>  
-<bpt id="p1">[</bpt>Try it out -- it's free!<ept id="p1">](https://powerbi.com/)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>  
+            [Informes de Power BI](powerbi-service-reports.md)  
+
+            [Agregar una visualización a un informe](https://powerbi.uservoice.com/knowledgebase/articles/441777)  
+
+            [Tipos de visualización en Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[ ancla una visualización a un panel](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)  
+
+            [Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
+
+            [¡Probar--es gratuito!](https://powerbi.com/)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)  

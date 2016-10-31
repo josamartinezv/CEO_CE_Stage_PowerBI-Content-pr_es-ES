@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Reports in the Android app"
-   description="Learn about viewing reports in the Power BI mobile app for Android phones. You create reports in the Power BI service, then interact with them in the mobile apps."
+   pageTitle="Informes en la aplicación Android"
+   description="Obtenga información acerca de cómo ver los informes en la aplicación móvil de Power BI para teléfonos Android. Crear informes en el servicio Power BI y luego interactuar con ellos en las aplicaciones móviles."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,54 +20,56 @@
    ms.date="10/14/2016"
    ms.author="maggies"/>
 
-# <a name="reports-in-the-power-bi-app-for-android-phones"></a>Reports in the Power BI app for Android phones
+# <a name="reports-in-the-power-bi-app-for-android-phones"></a>Informes en la aplicación de Power BI para teléfonos Android
 
-A report is an interactive view of your data, with visuals representing different findings and insights from that data. You <bpt id="p1">[</bpt>create and customize reports<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> in the Power BI service <bpt id="p2">[</bpt>(https://powerbi.com)<ept id="p2">](https://powerbi.com)</ept>.
+Un informe es una vista interactiva de los datos, con elementos visuales que representan diferentes resultados e información de esos datos. Se [crear y personalizar informes](powerbi-service-create-a-new-report.md) en el servicio Power BI [(https://powerbi.com)](https://powerbi.com).
 
-Then you view and interact with those reports in the <bpt id="p1">[</bpt>Android app<ept id="p1">](powerbi-mobile-android-app-get-started.md)</ept>.
+A continuación, puede ver e interactuar con los informes en el [aplicación Android](powerbi-mobile-android-app-get-started.md).
 
-## <a name="open-a-power-bi-report"></a>Open a Power BI report
+## <a name="open-a-power-bi-report"></a>Abrir un informe de Power BI
 
-- On the main page of the Power BI mobile app, tap Reports, then the report you want to open. 
+- En la página principal de la aplicación móvil de Power BI, puntee en informes, a continuación, en el informe que desea abrir. 
 
      ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report-home.png)
 
-    Here you see the same Power BI reports <ph id="ph1">![](media/powerbi-mobile-reports-in-the-android-app/pbi_and_openrpticon.png)</ph> and Excel workbooks that you have in the Power BI service.
+    Aquí verá los mismos informes de Power BI ![](media/powerbi-mobile-reports-in-the-android-app/pbi_and_openrpticon.png) y libros que tienen en el servicio Power BI de Excel.
 
-- On a dashboard, tap the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) on a tile &gt; <bpt id="p2">**</bpt>Open Report<ept id="p2">**</ept>.
+- En un panel, puntee en el botón de puntos suspensivos (**...**) en un mosaico > **Abrir informe**.
 
     ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-open-report-tile.png)
 
-    The report opens in landscape mode.
+    El informe se abre en modo horizontal.
 
     ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report.png)
 
-     > [AZURE.NOTE]  Not all tiles can open in a report. For example, tiles you create by asking a question in the Q&amp;A box don't open reports when you tap them. 
+     > [AZURE.NOTE]  No todos los mosaicos se pueden abrir en un informe. Por ejemplo, los iconos para crear, hacer una pregunta en el cuadro de preguntas y respuestas no abrir informes al puntear en ellos. 
 
-## <a name="see-other-pages-in-a-power-bi-report"></a>See other pages in a Power BI report
+## <a name="see-other-pages-in-a-power-bi-report"></a>Vea otras páginas de un informe de Power BI
 
--   Swipe from one side or the other, or 
+-   Pasar por un lado u otro, o 
 
--   Tap the Pages icon <ph id="ph1">![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-pages-icon.png)</ph> in the lower-right corner, then tap a page name. 
+-   Puntee en el icono de páginas ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-pages-icon.png) en la esquina inferior derecha, a continuación, puntee en un nombre de página. 
 
-## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>Cross-filter and highlight a Power BI report page
+## <a name="cross-filter-and-highlight-a-power-bi-report-page"></a>Filtro cruzado y resalte una página de informe de Power BI
 
--   Tap a value in a chart.
+-   Puntee en un valor en un gráfico.
 
     ![](media/powerbi-mobile-reports-in-the-android-app/PBI_Win10Uni_XFltrRptSm.png)
 
-    Tapping the red "030-Kids" bubble in the bubble chart highlights related values in the other charts. Because the column chart in the upper-right shows percentages, some highlighted values are larger than the total values, and some are smaller. 
+    Punteando en rojos "030-hijos" burbuja en el gráfico de burbujas resalta los valores relacionados en los demás gráficos. Dado que el gráfico de columnas en la superior derecha muestra los porcentajes, algunos valores destacados son más grandes que los valores totales y algunas son más pequeños. 
 
-## <a name="use-slicers-to-filter-the-report-page"></a>Use slicers to filter the report page
+## <a name="use-slicers-to-filter-the-report-page"></a>Usar segmentaciones de datos para filtrar la página del informe
 
-When designing a report in the Power BI service <bpt id="p1">[</bpt>(https://powerbi.com)<ept id="p1">](https://powerbi.com)</ept>, it's good to <bpt id="p2">[</bpt>add slicers to a report page<ept id="p2">](powerbi-service-tutorial-slicers.md)</ept>. Then when you or your colleagues view your reports on your mobile devices, you can use the slicers to filter the page.
+Al diseñar un informe en el servicio Power BI [(https://powerbi.com)](https://powerbi.com), es aconsejable [Agregar segmentaciones de datos a una página de informe](powerbi-service-tutorial-slicers.md). A continuación, cuando usted o sus colegas de visualización de los informes en sus dispositivos móviles, puede utilizar las segmentaciones de datos para filtrar la página.
 
--   Select a value in a slicer on the report page.
+-   Seleccione un valor en una segmentación de datos en la página del informe.
 
     ![](media/powerbi-mobile-reports-in-the-android-app/power-bi-android-report-slicer.png)
 
 
 ### <a name="see-also"></a>Consulte también
 
-- <bpt id="p1">[</bpt>Get started with the Android app<ept id="p1">](powerbi-mobile-android-app-get-started.md)</ept>
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [Introducción a la aplicación Android](powerbi-mobile-android-app-get-started.md)
+- ¿Tiene preguntas? 
+            [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

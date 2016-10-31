@@ -1,22 +1,22 @@
-<properties pageTitle="Documentation Example - HTML Tables" description="This is an example document" title="Documentation Example - HTML Tables" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación - tablas HTML" description="Esto es un ejemplo de documento" title="Documentation Example - HTML Tables" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
 
 
-# Example - HTML Tables
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+# Por ejemplo, tablas HTML
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the use of HTML formatted tables.  Notice that each closing table tag is followed by <ph id="ph1">`&lt;br /&gt;`</ph>. This is required (as of 2014-01-01) by azure.microsoft.com and also by GitHub in order to avoid breaking the markdown formatting.  
+El contenido entre las líneas siguientes se muestra que el uso de HTML con formato de tablas.  Observe que cada cierre de la etiqueta de tabla es seguido por `<br />`. Esto es necesario (a partir de 2014-01-01) por azure.microsoft.com y también por GitHub para evitar errores en el formato de descuento.  
 
 ---
 
-## What version of Hadoop is in Microsoft Azure HDInsight?
+## ¿Es la versión de Hadoop en HDInsight de Microsoft Azure?
 
-HDInsight supports multiple Hadoop cluster versions that can be deployed at any time. Each version choice provisions a specific version of the HortonWorks Data Platform (HDP) distribution and a set of components that are contained within that distribution.
+HDInsight admite varias versiones de clústeres que se pueden implementar en cualquier momento. Cada versión aprovisiona una versión específica de la distribución de HortonWorks Data Platform (HDP) y un conjunto de componentes que están incluidos en esa distribución.
 
-## HDInsight versions
+## Versiones de HDInsight
 
-### Cluster version 2.1
+### Versión 2.1 del clúster
 
-The default cluster version used by <bpt id="p1">[</bpt>Microsoft Azure HDInsight<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=285601)</ept> is 2.1. It is based on the Hortonworks Data Platform version 1.3.0 and provides Hadoop services with the component versions itemized in the following table:
+La versión de clúster predeterminada utilizada por [Microsoft Azure HDInsight](http://go.microsoft.com/fwlink/?LinkID=285601) es la 2.1. Se basa en la versión 1.3.0 de Hortonworks Data Platform y proporciona servicios de Hadoop con las versiones de los componentes incluidas en la tabla siguiente:
 
 <table border="1">
 <tr><th>Componente</th><th>Version</th></tr>
@@ -24,16 +24,17 @@ The default cluster version used by <bpt id="p1">[</bpt>Microsoft Azure HDInsigh
 <tr><td>Apache Hive</td><td>0.11.0</td></tr>
 <tr><td>Apache Pig</td><td>0.11</td></tr>
 <tr><td>Apache Sqoop</td><td>1.4.3</td></tr>
-<tr><td>Apache Oozie</td><td>3.2.2</td></tr>
-<tr><td>Apache HCatalog</td><td>Merged with Hive</td></tr>
-<tr><td>Apache Templeton</td><td>Merged with Hive</td></tr>
-<tr><td>Ambari</td><td>API v1.0</td></tr>
+<tr><td>Oozie de Apache</td><td>3.2.2</td></tr>
+<tr><td>Apache HCatalog</td><td>Fusionado con Hive</td></tr>
+<tr><td>Apache Templeton</td><td>Fusionado con Hive</td></tr>
+<tr><td>Ambari</td><td>La API v1.0</td></tr>
 </table><br/>
 
 
-### Cluster version 1.6
+### Versión 1.6 del clúster
 
-<bpt id="p1">[</bpt>Microsoft Azure HDInsight<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=285601)</ept> cluster version 1.6 is also available. It is based on the Hortonworks Data Platform version 1.1.0 and provides Hadoop services with the component versions itemized in the following table:
+
+            [Microsoft Azure HDInsight](http://go.microsoft.com/fwlink/?LinkID=285601) también está disponible la versión 1.6 del clúster. Se basa en la versión 1.1.0 de Hortonworks Data Platform y proporciona servicios de Hadoop con las versiones de los componentes incluidas en la tabla siguiente:
 
 <table border="1">
 <tr><th>Componente</th><th>Version</th></tr>
@@ -41,25 +42,25 @@ The default cluster version used by <bpt id="p1">[</bpt>Microsoft Azure HDInsigh
 <tr><td>Apache Hive</td><td>0.9.0</td></tr>
 <tr><td>Apache Pig</td><td>0.9.3</td></tr>
 <tr><td>Apache Sqoop</td><td>1.4.2</td></tr>
-<tr><td>Apache Oozie</td><td>3.2.0</td></tr>
+<tr><td>Oozie de Apache</td><td>3.2.0</td></tr>
 <tr><td>Apache HCatalog</td><td>0.4.1</td></tr>
 <tr><td>Apache Templeton</td><td>0.1.4</td></tr>
-<tr><td>SQL Server JDBC Driver</td><td>3.0</td></tr>
+<tr><td>Controlador JDBC de SQL Server</td><td>3.0</td></tr>
 </table><br/>
 
 
-## Select a version when provisioning an HDInsight cluster
+## Seleccione una versión al aprovisionar un clúster de HDInsight
 
-When creating a cluster through the HDInsight PowerShell Cmdlets or the HDInsight .NET SDK, you can choose a version using the "Version" parameter.
+Al crear un clúster mediante los Cmdlets de PowerShell de HDInsight o el SDK de .NET de HDInsight, puede elegir una versión mediante el parámetro "Versión".
 
-If you use the <bpt id="p1">**</bpt>Quick Create<ept id="p1">**</ept> option, you will get the 2.1 version. If you use the <bpt id="p1">**</bpt>Custom Create<ept id="p1">**</ept> option from the Microsoft Azure Portal, you can choose the version of the cluster you will deploy from the HDInsight Version drop-down on the <bpt id="p2">**</bpt>Cluster Details<ept id="p2">**</ept> page.
+Si utiliza el **creación rápida** opción, obtendrá la versión 2.1. Si utiliza el **creación personalizada** opción desde el Portal de Microsoft Azure, puede elegir la versión del clúster que implementará desde la lista desplegable en la HDInsight versión la **Detalles del clúster** página.
 
 ## Versiones compatibles
-The following table lists the versions of HDInsight currently available, the corresponding Hortonworks Data Platform (HDP) versions that they use, and their release dates. When known, their deprecation dates will also be provided.
+En la tabla siguiente se enumera las versiones de HDInsight está disponible, las versiones correspondientes de Hortonworks Data Platform (HDP) que utilizan y sus fechas de lanzamiento. Si se conocen, también se proporcionará la fecha de degradación.
 
 <table border="1">
-<tr><th>HDInsight version</th>
-<th><a href="http://go.microsoft.com/fwlink/?LinkID=286746">HDP version</a></th>
+<tr><th>Versión de HDInsight</th>
+<th><a href="http://go.microsoft.com/fwlink/?LinkID=286746">Versión de HDP</a></th>
 <th>Fecha de lanzamiento</th></tr>
 <tr><td>HDI 1.6</td><td>HDP 1.1</td><td>10/28/2013</td></tr>
 <tr><td>HDI 2.1</td><td>HDP 1.3</td><td>10/28/2013</td></tr>
@@ -67,9 +68,9 @@ The following table lists the versions of HDInsight currently available, the cor
 
 ---
 
-[connect-excel-with-hive-ODBC]: /manage/services/hdinsight/connect-excel-with-hive-ODBC/
+[Connect-excel-with-hive-ODBC]: /manage/services/hdinsight/connect-excel-with-hive-ODBC/
 
-[hdp-1-3-0]: http://docs.hortonworks.com/HDPDocuments/HDP1/HDP-1.3.0/bk_releasenotes_hdp_1.x/content/ch_relnotes-hdp1.3.0_1.html
+[HDP-1-3-0]: http://docs.hortonworks.com/HDPDocuments/HDP1/HDP-1.3.0/bk_releasenotes_hdp_1.x/content/ch_relnotes-hdp1.3.0_1.html
 
-[hdp-1-1-0]: http://docs.hortonworks.com/HDPDocuments/HDP1/HDP-Win-1.1/bk_releasenotes_HDP-Win/content/ch_relnotes-hdp-win-1.1.0_1.html
+[HDP-1-1-0]: http://docs.hortonworks.com/HDPDocuments/HDP1/HDP-Win-1.1/bk_releasenotes_HDP-Win/content/ch_relnotes-hdp-win-1.1.0_1.html
 

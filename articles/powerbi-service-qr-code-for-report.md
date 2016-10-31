@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a QR code for a report"
-   description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
+   pageTitle="Crear un código QR para un informe"
+   description="Códigos QR en Power BI pueden conectarse a cualquier cosa en el mundo real directamente a la información relacionada de BI en la aplicación móvil de Power BI, ninguna búsqueda necesitada."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -20,51 +20,54 @@
    ms.date="10/03/2016"
    ms.author="maggies"/>
 
-# Create a QR code for a report in Power BI
+# Crear un código QR para un informe en Power BI
 
-QR codes in Power BI can connect anything in the real world directly to related BI information &amp;#151; no navigation or search needed.
+Códigos QR en Power BI pueden conectarse directamente a la información relacionada de BI & #151; nada en el mundo real ninguna exploración o la búsqueda necesitado.
 
-You can create a QR code in the Power BI service for any report that you can edit. Then place the QR code in a key location. For example, you could paste it in an email, or print it out and paste it in a specific location. 
+Puede crear un código QR en el servicio Power BI para cualquier informe que puede editar. A continuación, coloque el código QR en una ubicación de la clave. Por ejemplo, podría pegar en un correo electrónico, o imprimirlo y péguelo en una ubicación específica. 
 
-Colleagues you've shared the report with can scan the QR code for access to the report, right from <bpt id="p1">[</bpt>their phone<ept id="p1">](powerbi-mobile-qr-code-for-tile.md)</ept>. They can use either the QR code scanner located in the Power BI app, or any other QR scanner installed on their phone. Read more about <bpt id="p1">[</bpt>how to share dashboards and reports<ept id="p1">](powerbi-service-how-should-i-share-my-dashboard.md)</ept>.
+Compañeros que ha compartido el informe puede examen el código QR para el acceso al informe, desde [su teléfono](powerbi-mobile-qr-code-for-tile.md). Puede utilizar el analizador de código QR ubicado en la aplicación Power BI o cualquier otro escáner QR instalados en su teléfono. Obtenga más información sobre [cómo compartir paneles e informes](powerbi-service-how-should-i-share-my-dashboard.md).
 
-## Add a QR code to a report in the Power BI service
+## Agregar un código QR a un informe en el servicio Power BI
 
-1. Open a report in the Power BI service.
+1. Abra un informe en el servicio Power BI.
 
-2. In the upper-left corner of the report, select <bpt id="p1">**</bpt>Edit report<ept id="p1">**</ept>. 
+2. En la esquina superior izquierda del informe, seleccione **Editar informe**. 
 
-    ><bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: If you don't see <bpt id="p2">**</bpt>Edit report<ept id="p2">**</ept>, then you don't have edit permission for the report, so you can't make a QR code for it. Contact the report owner for permission.
+    >
+            **Sugerencia**: si no ve **Editar informe**, entonces no tiene permiso de edición para el informe, por lo que no puede hacer un código QR para él. Para obtener permiso, póngase en contacto con el propietario del informe.
 
-2. Select the ellipsis (...) in the top-right corner and select <bpt id="p1">**</bpt>Generate QR code<ept id="p1">**</ept>. 
+2. Seleccione el botón de puntos suspensivos (...) en la esquina superior derecha y seleccione **código QR generar**. 
 
     ![](media/powerbi-service-qr-code-for-report/power-bi-service-report-qr-menu.png)
 
-3. A dialog box with the QR code appears. 
+3. Aparece un cuadro de diálogo con el código QR. 
 
     ![](media/powerbi-service-qr-code-for-report/powerbi_report_qrcode.png)
 
-4. From here you can scan the QR code or download and save it so you can: 
+4. Desde aquí puede examinar el código QR o descargar y guardarla para que pueda: 
 
-     - Add it to an email or other document, or 
-     - Print it and place it in a specific location. 
+     - Agregar a un correo electrónico u otro documento, o 
+     - Imprimir y colóquelo en una ubicación específica. 
 
-## Print the QR code
+## Imprimir el código QR
 
-Power BI generates the QR code as a JPG file, ready to print. 
+Power BI genera el código QR como un archivo JPG, está listo para imprimirlo. 
 
-1. Select <bpt id="p1">**</bpt>Download<ept id="p1">**</ept>, then open the JPG file on a computer connected to a printer.  
+1. Seleccione **descargar**, a continuación, abra el archivo JPG en un equipo conectado a una impresora.  
 
-    ><bpt id="p1">**</bpt>Tip:<ept id="p1">**</ept> The JPG file has the same name as the tile. For example, "Sales and Marketing Sample.jpg".
+    >
+            **Sugerencia:** el archivo JPG tiene el mismo nombre que el mosaico. Por ejemplo, "Ventas y Marketing Sample.jpg".
 
-2. Print the file at 100% or “actual size”.  
+2. Imprimir el archivo al 100% o "tamaño real".  
 
-3. Cut out the QR code along its edge and glue it to a place relevant to the tile. 
+3. Recortar el código QR a lo largo de su borde y péguela en un lugar relevante para el mosaico. 
 
 
 ### Consulte también
 
--  <bpt id="p1">[</bpt>Connect to Power BI data from the real world<ept id="p1">](powerbi-mobile-data-in-real-world-context.md)</ept> with the mobile apps
--  [Scan a Power BI QR code from your phone](powerbi-mobile-qr-code-for-tile.md)
--  [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+-  
+            [Conectarse a los datos de Power BI del mundo real](powerbi-mobile-data-in-real-world-context.md) con las aplicaciones móviles
+-  [Examinar un código QR de BI de energía desde el teléfono](powerbi-mobile-qr-code-for-tile.md)
+-  [Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

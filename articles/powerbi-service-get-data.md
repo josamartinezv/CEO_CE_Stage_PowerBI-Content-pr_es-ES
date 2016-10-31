@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Data sources for Power BI"
-   description="Data sources for Power BI"
+   pageTitle="Orígenes de datos para Power BI"
+   description="Orígenes de datos para Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,74 +20,81 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Data sources for Power BI service
+# Orígenes de datos para el servicio Power BI
 
-Data is at the heart of Power BI. Whenever you’re exploring data, creating charts and dashboards, asking questions with Q&amp;A, all of those visualizations and answers you see are really getting their underlying data from a dataset. But where does that dataset come from? Well, from a data source.
+Datos están la esencia de Power BI. Cuando está explorando los datos, crear gráficos y paneles, hacer preguntas con preguntas y respuestas, todas las visualizaciones y respuestas que verá realmente reciben sus datos subyacentes de un conjunto de datos. Pero, ¿de dónde proceden ese conjunto de datos? Bueno, de un origen de datos.
 
-In this article, we’re going to go over the different types of data sources you can connect to from the Power BI service. Keep in-mind, there are many other types of data sources you can get data from, too. But those might require first using Power BI Desktop or Excel’s advanced data query and modeling features. We’ll go into more about that later. For now, let’s look at the different types of data sources you can connect to right from your Power BI service site.
+En este artículo, vamos a recorrer los distintos tipos de orígenes de datos que puede conectarse a desde el servicio Power BI. Tenga en cuenta, hay muchos otros tipos de orígenes de datos que se puede obtener datos, demasiado. Pero los pueden necesitar en primer lugar mediante Power BI Desktop o de Excel consulta avanzada de datos y características de modelado. Vamos a más información acerca de los más adelante. Por ahora, echemos un vistazo a los distintos tipos de orígenes de datos que puede conectarse a la derecha de su sitio de servicio de Power BI.
 
-You can get data from any of these data sources in Power BI by clicking <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Get Data<ept id="p2">**</ept>.
+Puede obtener datos desde cualquiera de estos orígenes de datos en Power BI haciendo clic **Mi área de trabajo** > **obtener datos**.
 
 ![](media/powerbi-service-get-data/pbi_getdata_startscreen.png)
 
 ## Archivos
 ![](media/powerbi-service-get-data/pbi_getdata_files.png)
 
-<bpt id="p1">**</bpt>Excel<ept id="p1">**</ept> (.xlsx, xlxm) – Excel is unique in that a workbook can have both data you’ve typed into worksheets yourself or you can query and load data from external data sources by using Power Query (Get &amp; Transform in Excel 2016) or Power Pivot. Data can be in simple worksheets or loaded into a data model. To learn more, see <bpt id="p1">[</bpt>Get data from Excel<ept id="p1">](powerbi-service-get-data-from-files.md)</ept>.
 
-<bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> (.pbi) -  You can use Power BI Desktop to query and load data from external data sources, extend your data model with measures and relationships, and create reports. You can import your Power BI Desktop file into your Power BI site. Power BI Desktop is best for more advanced users who have a good understanding of their data sources, data query and transformation, and data modeling concepts. To learn more, see <bpt id="p1">[</bpt>Connect to data in Power BI Desktop<ept id="p1">](powerbi-desktop-connect-to-data.md)</ept>.
+            **Excel** (.xlsx, xlxm): Excel es único en que un libro puede tener tanto los datos que ha escrito en hojas de cálculo usted mismo o puede consultar y cargar datos de orígenes de datos externos mediante Power Query (obtener & transformar en Excel 2016) o Power Pivot. Datos pueden estar en hojas de cálculo simples o cargan en un modelo de datos. Para obtener más información, consulte [obtener datos desde Excel](powerbi-service-get-data-from-files.md).
 
-<bpt id="p1">**</bpt>Comma Separated Value<ept id="p1">**</ept> (.csv) -  Files are simple text files with rows of data. Each row can contain one or more values, each separated by a comma. For example, a .csv containing name and address data can have a number of rows where each row has values for first name, last name, street address, city, state, and so on. You cannot import data into a .csv file, but many applications, like Excel, can save simple table data as a .csv file.
 
-For other file types like XML Table (.xml) or text (.txt) files, you can use Get &amp; Transform to query, transform, and load that data into an Excel or Power BI Desktop file first. You can then import the Excel or Power BI Desktop file into Power BI.
+            **Power BI Desktop** (.pbi): puede usar Power BI Desktop para consultar y cargar datos desde orígenes de datos externos, ampliar el modelo de datos con medidas y relaciones y crear informes. Puede importar el archivo de Power BI Desktop en el sitio de Power BI. Power BI Desktop es mejor para los usuarios más avanzados con una buena comprensión de sus orígenes de datos, consultas de datos, transformación y conceptos de modelado de datos. Para obtener más información, consulte [Conectar a datos en Power BI Desktop](powerbi-desktop-connect-to-data.md).
 
-Where you store your files makes a big difference, too. OneDrive for Business provides the greatest amount of flexibility and integration with Power BI. If you keep your files on your local drive, that’s ok, but if you need to refresh your data, a few extra steps are involved. More details are provided in the linked articles.
 
-## Content packs
+            **Valores separados por comas** (.csv) - son archivos de texto simple con filas de datos. Cada fila puede contener uno o varios valores, separados por punto y coma. Por ejemplo, un .csv que contiene el nombre y los datos de la dirección pueden tener un número de filas, donde cada fila tiene valores para nombre, apellido, dirección, ciudad, estado y así sucesivamente. No puede importar datos en un archivo .csv, pero muchas aplicaciones, como Excel, pueden guardar datos de tabla simple como un archivo .csv.
+
+Para otros tipos de archivo como tabla de XML (.xml) o archivos de texto (.txt), puede utilizar obtener & transformar para consultar, transformar y cargar datos en un archivo de Excel o Power BI Desktop primero. A continuación, puede importar el archivo de Excel o Power BI Desktop en Power BI.
+
+Donde se almacenan los archivos, una gran diferencia, hace demasiado. OneDrive para la empresa proporciona un mayor grado de flexibilidad y la integración con Power BI. Si guarda los archivos en la unidad local, que es correcta, pero si necesita actualizar los datos, intervienen unos pasos adicionales. Se proporcionan más detalles en los artículos vinculados.
+
+## Paquetes de contenido
 ![](media/powerbi-service-get-data/pbi_getdata_contentpacks.png)
 
-Content packs contain all of the data and reports you need already prepared for you. In Power BI, there are two types of content packs; those from services like Google Analytics, Marketo, or Salesforce, and those created and shared by other users in your organization.
+Paquetes de contenido contienen todos los datos y los informes que necesita ya está preparados para usted. En Power BI, hay dos tipos de paquetes de contenido; los servicios de como Google Analytics, Marketo o Salesforce y las crean y comparten con otros usuarios de su organización.
 
-<bpt id="p1">**</bpt>Services<ept id="p1">**</ept> – There are literally dozens of services with content packs for Power BI, and more are being added all the time. Most services require you to have an account. To learn more, see <bpt id="p1">[</bpt>Connect to services<ept id="p1">](powerbi-content-packs-services.md)</ept>.
 
-<bpt id="p1">**</bpt>Organizational<ept id="p1">**</ept> – If you and other users in your organization have a Power BI Pro account, you can create, share, and use content packs. To learn more, see <bpt id="p1">[</bpt>Organizational content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>.
+            **Servicios** : existen, literalmente, decenas de servicios con los paquetes de contenido para Power BI y más se agregan continuamente. La mayoría de servicios requiere que tenga una cuenta. Para obtener más información, consulte [conectarse a servicios](powerbi-content-packs-services.md).
+
+
+            **Organización** – Si usted y otros usuarios de su organización tienen una cuenta de Power BI Pro, puede crear, compartir y usar paquetes de contenido. Para obtener más información, consulte [paquetes de contenido organizativo](powerbi-service-organizational-content-packs-introduction.md).
 
 ## Bases de datos
 ![](media/powerbi-service-get-data/pbi_getdata_databases.png)
 
-<bpt id="p1">**</bpt>Databases in the Cloud<ept id="p1">**</ept> – From the Power BI service, you can connect live to Azure SQL Database, Azure SQL Data Warehouse, Spark on Azure HD Insight, and SQL Server Analysis Services using DirectQuery. Connections from Power BI to these databases are live, that is, when you’ve connected to say an Azure SQL Database, and you begin exploring its data by creating reports in Power BI, anytime you slice your data or add another field to a visualization, a query is made right to the database. To learn more, see <bpt id="p1">[</bpt>Azure and Power BI<ept id="p1">](powerbi-azure-and-power-bi.md)</ept>.
 
-<bpt id="p1">**</bpt>Databases on-premises<ept id="p1">**</ept> – From the Power BI service, you can connect directly to SQL Server Analysis Services Tabular model databases. A Power BI Enterprise Gateway is required. If you’re unsure how to connect to your organization’s tabular model database, check with your administrator or IT department. To learn more, see <bpt id="p1">[</bpt>SQL Server Analysis Tabular data in Power BI<ept id="p1">](powerbi-sql-server-analysis-services-tabular-data.md)</ept>.
+            **Las bases de datos en la nube** : servicio de Power BI, puede conectarse en directo a la base de datos de SQL Azure, almacenamiento de datos de SQL Azure, Spark en Hdinsight de Azure y SQL Server Analysis Services mediante DirectQuery. Las conexiones de Power BI a estas bases de datos en directo, es decir, cuando se haya conectado para indicar una base de datos de SQL Azure y comenzar a explorar sus datos mediante la creación de informes en Power BI, en cualquier momento Segmente los datos o agregar otro campo a una visualización, se realiza una consulta correcta para la base de datos. Para obtener más información, consulte [Azure y Power BI](powerbi-azure-and-power-bi.md).
 
-For other types of databases in your organization, you’ll need to first use Power BI Desktop or Excel to connect to, query, and load data into a data model. You can then import your file into Power BI where a dataset is created. If you setup scheduled refresh, Power BI will use connection information from the file along with refresh settings you configure to connect directly to the datasource and query for updates. Those updates are then loaded into the dataset in Power BI. To learn more, see <bpt id="p1">[</bpt>Connect to data in Power BI Desktop<ept id="p1">](powerbi-desktop-connect-to-data.md)</ept>.
 
-## What if my data comes from a different source?
-There are literally hundreds of different data sources you can use with Power BI. But regardless of where you get your data from, that data has to be in a format the Power BI service can use to create reports and dashboards, answer questions with Q &amp; A, and so on.
+            **Las bases de datos local** : servicio de Power BI, puede conectarse directamente a SQL Server Analysis Services Tabular bases de datos de modelo. Se requiere una puerta de enlace empresarial de Power BI. Si no está seguro de cómo conectarse a la base de datos de modelo tabular de su organización, consulte con el administrador o el departamento de TI. Para obtener más información, consulte [datos tabulares de SQL Server Analysis en Power BI](powerbi-sql-server-analysis-services-tabular-data.md).
 
-Some data sources already have their data in a format ready for the Power BI service, like content packs from service providers like Google Analytics, and Twilio. SQL Server Analysis Services Tabular model databases are ready, too. And you can connect live to databases in the cloud like Azure SQL Database and Spark on HDInsight.
+Para otros tipos de bases de datos de su organización, debe utilizar primero Power BI Desktop o Excel para conectarse a, consultar y cargar datos en un modelo de datos. A continuación, puede importar el archivo en Power BI donde se crea un conjunto de datos. Si configura la actualización programada, Power BI usará la información de conexión desde el archivo junto con la configuración de actualización que puede configurar para conectarse directamente al origen de datos y consultas sobre las actualizaciones. Esas actualizaciones se cargan en el conjunto de datos en Power BI. Para obtener más información, consulte [Conectar a datos en Power BI Desktop](powerbi-desktop-connect-to-data.md).
 
-In other cases, it might be necessary to query and load the data you want into a file. For example, let’s say you have logistics data in a data warehouse database on a server in your organization. In the Power BI service, you cannot connect directly to that database and begin exploring its data (unless it is a tabular model database). You can, however, use Power BI Desktop or Excel to query and load that logistics data into a data model you then save as a file. You can then import that file into Power BI where a dataset is created.
+## ¿Qué ocurre si mi datos proceden de un origen diferente?
+Existen literalmente cientos de diferentes orígenes de datos que puede usar con Power BI. Pero independientemente de dónde obtener los datos, que los datos tienen que estar en un formato que se puede utilizar el servicio Power BI para crear informes y paneles, responder preguntas con preguntas y respuestas y así sucesivamente.
 
-You’re probably thinking “But that logistics data on that database changes every day. How do I make sure my dataset in Power BI is refreshed?” Connection information from the Power BI Desktop or Excel file is imported into the dataset along with the data. If you setup scheduled refresh or do a manual refresh on the dataset, Power BI will use the connection information from the dataset, along with a couple other settings, to connect directly to the database, query for updates, and load those updates into the dataset. A Power BI Gateway will likely be required to secure any data transfer between your on-premises server and Power BI. Any visualizations in reports and dashboards are refreshed automatically.
+Algunos orígenes de datos ya tienen sus datos en un formato de lista para el servicio Power BI, como paquetes de contenido de proveedores de servicios como Google Analytics y Twilio. Bases de datos de SQL Server Analysis Services Tabular modelo estén listos, demasiado. Y puede conectarse a bases de datos en la nube como base de datos de SQL Azure y Spark en HDInsight en vivo.
 
-You see, just because you cannot connect to your data source right from the Power BI service doesn’t mean you can’t get that data into Power BI. It just might take a few more steps and maybe some help from your IT department. See <bpt id="p1">[</bpt>Data sources in Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept> to learn more.
+En otros casos, podría ser necesario consultar y cargar los datos que desee en un archivo. Por ejemplo, supongamos que tiene datos de logística en una base de datos del almacén de datos en un servidor de su organización. En el servicio Power BI, no puede conectarse directamente a esa base de datos y empezar a explorar sus datos (a menos que es una base de datos de modelo tabular). Sin embargo, puede usar Power BI Desktop o Excel para consultar y cargar datos logística en un modelo de datos, a continuación, guardar como un archivo. A continuación, puede importar ese archivo en Power BI donde se crea un conjunto de datos.
 
-## Some more details
-You’ll see the terms dataset and datasource used a lot in Power BI. They’re often use synonymously, but they really are two different things, albeit related.
+Probablemente esté pensando "pero que cambian los datos de logística en esa base de datos cada día. Cómo asegurarse de que se actualiza el conjunto de datos en Power BI?" Información de conexión desde el archivo de Excel o Power BI Desktop se importa en el conjunto de datos junto con los datos. Si la instalación de actualización programada o realizar una actualización manual en el conjunto de datos, Power BI usará la información de conexión del conjunto de datos, junto con algunas otras configuraciones para conectarse directamente a la base de datos, consultas de actualizaciones y cargar las actualizaciones en el conjunto de datos. Una puerta de enlace de Power BI probablemente serán necesaria para proteger cualquier transferencia de datos entre el servidor local y Power BI. Las visualizaciones en informes y paneles se actualizan automáticamente.
 
-A <bpt id="p1">***</bpt>dataset<ept id="p1">***</ept> is automatically created in Power BI when you use Get Data to connect to and import data from a content pack, file, or you connect to a live data source. A dataset contains information about the data source, data source credentials, and in many cases, a sub-set of data copied from the data source. In most cases, when you create visualizations in reports and dashboards, you’re looking at data in the dataset.
+Vea, simplemente porque no se puede conectar a la derecha del origen de datos desde el servicio Power BI no significa que no puede obtener datos en Power BI. Quizás algunos ayuda del departamento de TI y sólo puede tardar unos pocos pasos más. Consulte [orígenes de datos en Power BI Desktop](powerbi-desktop-data-sources.md) para obtener más información.
 
-A <bpt id="p1">***</bpt>data source<ept id="p1">***</ept> is where the data in a dataset really comes from. For example, an online service like Google Analytics or QuickBooks, a database in the cloud like Azure SQL Database, or a database or file on a local computer or server in your own organization.
+## Algunos detalles más
+Verá el conjunto de datos de términos y origen de datos que se usan mucho en Power BI. A menudo se usan como sinónimos, pero que realmente son dos cosas distintas, aunque relacionados.
 
-### Data refresh
-If you save your files on your local drive, or a drive somewhere in your organization, a Power BI Gateway might be required in-order to refresh the dataset in Power BI. And, the computer where the file is saved must be on when a refresh happens. You can also re-import your file, or use Publish from Excel or Power BI Desktop, but those are not automated processes.
+Un ***conjunto de datos*** se crea automáticamente en Power BI al utilizar la obtención de datos para conectarse a e importar datos desde un paquete de contenido, archivo o conexión a un origen de datos en directo. Un conjunto de datos contiene información sobre el origen de datos, las credenciales del origen de datos, y en muchos casos, un conjunto de datos secundarios se copia desde el origen de datos. En la mayoría de los casos, al crear visualizaciones en informes y paneles, busca en el conjunto de datos.
 
-If you save your files on OneDrive for Business or SharePoint – Team Sites, and then connect to or import them into Power BI, your dataset, reports, and dashboard will always be up-to-date. Because both OneDrive and Power BI are in the cloud, Power BI can connect directly to your saved file, about once every hour, and check for updates. If any are found, the dataset and any visualizations are refreshed automatically.
+Un ***origen de datos*** es donde entra realmente los datos en un conjunto de datos de. Por ejemplo, un servicio en línea, como Google Analytics o QuickBooks, una base de datos en la nube como base de datos de SQL Azure, o base de datos o un archivo en un equipo local o el servidor en su propia organización.
 
-Content packs from services are automatically updated. In most cases, once a day. You can manually refresh, but whether or not you’ll see any updated data will depend on the service provider. Content packs from others in your organization will depend on the data sources used and how the person who created the content pack setup refresh.
+### Actualización de datos
+Si guarda los archivos en la unidad local o una unidad en algún lugar de su organización, una puerta de enlace de Power BI podría ser necesarios en orden para actualizar el conjunto de datos en Power BI. Y el equipo donde se guarda el archivo debe estar activado cuando se produce una actualización. También puede volver a importar el archivo o use publicar desde Excel o Power BI Desktop, pero no son procesos automatizados.
 
-Azure SQL Database, Azure SQL Data Warehouse, and Spark on Azure HDInsight are unique in that they are data sources in the Cloud. Because the Power BI service is also in the cloud, Power BI can connect to them live, using DirectQuery. What you see in Power BI is always in-sync and there’s no need to setup refresh.
+Si guardar los archivos en OneDrive para el negocio o SharePoint, sitios de equipos y conectarse o importarlos en Power BI, el conjunto de datos, informes y paneles siempre estar actualizada. Como OneDrive y Power BI están en la nube, Power BI puede conectarse directamente al archivo guardado, sobre una vez cada hora y comprobar si hay actualizaciones. Si encuentra alguno, el conjunto de datos y las visualizaciones se actualizan automáticamente.
 
-SQL Server Analysis Services is unique in that when you connect to it from Power BI, it’s a live connection just like an Azure database in the cloud, but the database itself is on a server in your organization. This type of connection requires a Power BI Gateway, which is usually configured by an IT department.
+Paquetes de contenido de servicios se actualizan automáticamente. En la mayoría de los casos, una vez al día. Puede actualizar manualmente, pero si no verá los datos actualizados se dependen del proveedor de servicio. Paquetes de contenido de otros usuarios de su organización dependerá de los orígenes de datos que se utiliza y cómo la actualización de la persona que creó el programa de instalación del paquete de contenido.
 
-Data refresh is a super important part of Power BI, and much too deep to cover here. If you want to get a thorough understanding, be sure to checkout <bpt id="p1">[</bpt>Data Refresh in Power BI<ept id="p1">](powerbi-refresh-data.md)</ept>.
+Base de datos de SQL Azure, almacenamiento de datos de SQL Azure y Spark en HDInsight de Azure son únicos en que son orígenes de datos en la nube. Porque el servicio de Power BI también está en la nube, Power BI puede conectarse a ellos en vivo, mediante DirectQuery. Lo que ve en Power BI es siempre sincronizados y no es necesario actualizar el programa de instalación.
+
+SQL Server Analysis Services es único en que cuando se conecta a él desde Power BI, es una conexión activa como una base de datos de Azure en la nube, pero la base de datos está en un servidor de su organización. Este tipo de conexión requiere una puerta de enlace de BI de energía, que normalmente se configura de un departamento de TI.
+
+Actualización de datos es una muy importante parte de Power BI y mucho demasiado profundas para tratar aquí. Si desea obtener una descripción completa, asegúrese de desprotección [de actualización de datos en Power BI](powerbi-refresh-data.md).

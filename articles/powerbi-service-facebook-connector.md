@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Third-party service: Facebook connector for Power BI Desktop"
-   description="Third-party service: Facebook connector for Power BI Desktop"
+   pageTitle="Servicio de terceros: conector de Facebook para Power BI Desktop"
+   description="Servicio de terceros: conector de Facebook para Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,16 +19,16 @@
    ms.workload="powerbi"
    ms.date="09/29/2016"
    ms.author="davidi"/>
-# Third-party service: Facebook connector for Power BI Desktop
+# Servicio de terceros: conector de Facebook para Power BI Desktop
 
-The Facebook connector in Power BI Desktop relies on the Facebook Graph API. As such, features and availability may vary over time.
+El conector de Facebook en Power BI Desktop se basa en la API de Facebook. Como tal, características y la disponibilidad pueden variar con el tiempo.
 
-You can see a <bpt id="p1">[</bpt>tutorial about the Facebook Connector for Power BI Desktop<ept id="p1">](powerbi-desktop-tutorial-facebook-analytics.md)</ept>.
+Puede ver un [tutorial acerca del conector de Facebook para Power BI Desktop](powerbi-desktop-tutorial-facebook-analytics.md).
 
-Facebook expired v1.0 of its Graph API on April 30<ph id="ph1">&lt;sup&gt;</ph>th<ph id="ph2">&lt;/sup&gt;</ph> 2015. Power BI uses the Graph API behind the scenes for the Facebook connector, allowing you to connect to your data and analyze it.
+Facebook caducado v1.0 de su API de Graph el 30 de abril de<sup>th</sup> 2015. Power BI usa la API Graph en segundo plano para el conector de Facebook, lo que le permite conectarse a los datos y analizarlos.
 
-Queries that were built before April 30<ph id="ph1">&lt;sup&gt;</ph>th<ph id="ph2">&lt;/sup&gt;</ph> 2015 may no longer work or return less data. Subsequent to April 30<ph id="ph1">&lt;sup&gt;</ph>th<ph id="ph2">&lt;/sup&gt;</ph> 2015, Power BI leverages v2.2 in all calls to the Facebook API. If your query was built prior to April 30, 2015 and you have not used it since, you’ll likely need to authenticate again, to approve the new set of permissions that we’ll ask for.
+Las consultas que se crearon antes del 30 de abril<sup>th</sup> 2015 ya no se puede trabajar o devolver menos datos. Después del 30 de abril<sup>th</sup> 2015, Power BI aprovecha v2.2 en todas las llamadas a la API de Facebook. Si la consulta se creó antes del 30 de abril de 2015 y no ha utilizado desde, probablemente necesitará volver a autenticarse, para aprobar el nuevo conjunto de permisos que te preguntaremos.
 
-Although we attempt to release updates in accordance with any changes, the API may change in a way that affects the results of the queries we generate. In some cases, certain queries may no longer be supported. Due to this dependency we cannot guarantee the results of your queries when using this connector.
+Aunque intentamos publicar actualizaciones de acuerdo con los cambios, la API puede cambiar de manera que afecta a los resultados de las consultas que se genera. En algunos casos, ya no pueden admitirse determinadas consultas. Debido a esta dependencia no podemos garantizar los resultados de las consultas cuando se utiliza este conector.
 
-More details on the change in the Facebook API are available <bpt id="p1">[</bpt>here<ept id="p1">](https://developers.facebook.com/docs/apps/changelog#v2_0)</ept>.
+Hay disponible más información sobre el cambio en la API de Facebook [aquí](https://developers.facebook.com/docs/apps/changelog#v2_0).

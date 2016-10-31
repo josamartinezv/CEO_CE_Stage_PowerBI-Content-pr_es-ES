@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Dashboards on the iPad app"
-   description="Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI app for iOS on your iPad."
+   pageTitle="Paneles en la aplicación de iPad"
+   description="Los paneles son un portal para el ciclo de vida de su empresa. Obtenga información acerca de cómo ver, explorar y compartir sus paneles en la aplicación de Power BI para iOS en su iPad."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,51 +19,56 @@
    ms.workload="powerbi"
    ms.date="10/11/2016"
    ms.author="maggies"/>
-# Dashboards on the iPad app (Power BI for iOS)
+# Paneles en la aplicación de iPad (Power BI para iOS)
 
-Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI app for iOS on your iPad.
+Los paneles son un portal para el ciclo de vida de su empresa. Obtenga información acerca de cómo ver, explorar y compartir sus paneles en la aplicación de Power BI para iOS en su iPad.
 
 ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-sample-dashboard.png)
 
-You don't create dashboards on your iPad. In the Power BI service (<bpt id="p1">[</bpt>https://www.powerbi.com<ept id="p1">](https://www.powerbi.com)</ept>) on your computer, you <bpt id="p2">[</bpt>create dashboards<ept id="p2">](powerbi-service-dashboards.md)</ept> or <bpt id="p3">[</bpt>connect to built-in dashboards for services<ept id="p3">](powerbi-content-packs-services.md)</ept> such as Salesforce.
+No cree paneles en su iPad. En el servicio Power BI ([https://www.powerbi.com](https://www.powerbi.com)) en el equipo, se [crear paneles](powerbi-service-dashboards.md) o [conectarse a los paneles de información para servicios](powerbi-content-packs-services.md) como Salesforce.
 
-Then you see these same dashboards in the iPad app for Microsoft Power BI for iOS, along with dashboards your colleagues share with you.
+A continuación, verá estos mismos paneles en la aplicación de iPad para Microsoft Power BI para iOS, junto con sus colegas compartan con usted los paneles.
 
-## View dashboards on your iPad
+## Paneles de la vista en su iPad
 
-1.  Open the Power BI app.
+1.  Abra la aplicación de Power BI.
 
-    Need to <bpt id="p1">[</bpt>download the iPad app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> from the Apple App Store first?
+    ¿Necesita [Descargar la aplicación de iPad](http://go.microsoft.com/fwlink/?LinkId=522062) desde la aplicación de Apple almacenar primero?
 
-2.  Tap <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> at the top of the app.  
+2.  Puntee en **paneles** en la parte superior de la aplicación.  
 
     ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-dashboard-home.png)
 
-     -     The yellow stars <ph id="ph1">![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-mobile-yes-favorite-icon.png)</ph> show which dashboards are favorites. 
+     -     Las estrellas amarillas ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-mobile-yes-favorite-icon.png) Mostrar paneles de qué son los favoritos. 
 
-     -     The notation below each dashboard name <ph id="ph1">![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-dashboard-medium-classification.png)</ph> shows how the data in each dashboard is classified. Read more about <bpt id="p1">[</bpt>data classification in Power BI<ept id="p1">](powerbi-service-data-classification.md)</ept>.
+     -     La notación debajo de cada nombre de panel ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-dashboard-medium-classification.png) muestra cómo se clasifican los datos de cada panel. Obtenga más información sobre [clasificación de datos en Power BI](powerbi-service-data-classification.md).
 
-3.  You can share a dashboard from your workspace. Tap the ellipsis (...) in the lower-right corner of the dashboard tile, and tap <bpt id="p1">**</bpt>Invite Others<ept id="p1">**</ept>.
+3.  Puede compartir un panel del área de trabajo. Puntee en los puntos suspensivos (...) en la esquina inferior derecha del icono de panel y en **Invitar a otros**.
 
     ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-ipad-tile-invite-others.png)
 
-4.  You can also tap a dashboard to open it and see the tiles in that dashboard. While on the dashboard you can interact with it:
+4.  También puede pulsar un panel para abrirlo y ver los iconos en ese panel. Mientras está en el panel puede interactuar con él:
 
-    - <bpt id="p1">[</bpt>Tap a tile to interact<ept id="p1">](powerbi-mobile-tiles-in-the-ipad-app.md)</ept> with the tile.
+    - 
+            [Puntee en un mosaico para interactuar](powerbi-mobile-tiles-in-the-ipad-app.md) con el mosaico.
 
-    - <bpt id="p1">[</bpt>Open the reports<ept id="p1">](powerbi-mobile-reports-on-the-ipad-app.md)</ept> behind the tiles.
+    - 
+            [Abrir los informes](powerbi-mobile-reports-on-the-ipad-app.md) detrás de los mosaicos.
 
-    - <bpt id="p1">[</bpt>Invite others to view the dashboard<ept id="p1">](powerbi-mobile-share-dashboards-from-the-ipad-app.md)</ept>.
+    - 
+            [Invitar a otros usuarios para ver el panel](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
 
-    - <bpt id="p1">[</bpt>Annotate and share a snapshot<ept id="p1">](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)</ept> of a tile.
+    - 
+            [Anotar y compartir una instantánea](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) de un mosaico.
 
-4.  To go back to My Workspace, tap the name of the dashboard in the upper-left corner, then tap <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+4.  Para volver a mi área de trabajo, puntee en el nombre del panel en la esquina superior izquierda y, a continuación, puntee en **Mi área de trabajo**.
 
     ![](media/powerbi-mobile-dashboards-on-the-ipad-app/power-bi-dashboard-breadcrumb.png)
 
 ### Consulte también
 
--   <bpt id="p1">[</bpt>Get started with the iPad app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> for Power BI.
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+-   
+            [Introducción a la aplicación de iPad](powerbi-mobile-iphone-app-get-started.md) para Power BI.
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)
 
 

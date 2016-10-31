@@ -1,6 +1,6 @@
 <properties
-   pageTitle=" Introduction to Using Excel Data in Power BI"
-   description="Excel and Power BI work beautifully together, and it's easy"
+   pageTitle=" Introducción al uso de datos de Excel en Power BI"
+   description="Excel y Power BI funcionan perfectamente juntos, y es fácil"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,22 +23,22 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Power BI and Excel
+# Excel y power BI
 
-Welcome to the <bpt id="p1">**</bpt>Power BI and Excel<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Guided Learning<ept id="p2">**</ept> course for Power BI.
+Bienvenido a la **Power BI y Excel** sección de la **aprendizaje guiado** curso para Power BI.
 
-Chances are good that you've used <bpt id="p1">**</bpt>Excel<ept id="p1">**</ept> before. Maybe you used Excel to create or view reports, or to build pie charts or other visuals. Or maybe you used <bpt id="p1">**</bpt>Power Pivot<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Power Query<ept id="p2">**</ept> to build solutions that were a bit more technical. If so, you'll be right at home in Power BI, and so will your workbooks.
+Lo más probable es bueno que usó **Excel** antes. Quizás se utiliza Excel para crear o ver los informes, o para crear gráficos circulares u otros elementos visuales. O quizás usa **Power Pivot** o **Power Query** para crear soluciones que eran un poco más técnicas. Si es así, estará justo en casa en Power BI y también la tendrán los libros.
 
-This section shows you just how easy it is to bring Excel workbooks into Power BI, and demonstrates that Power BI and Excel make a great partnership.
+Esta sección muestra lo fácil que es poner los libros de Excel en Power BI y demuestra que Power BI y Excel forman una asociación excelente.
 
-## Introduction to Using Excel Data in Power BI
+## Introducción al uso de datos de Excel en Power BI
 
-*Watch an introduction to the ways Excel and the Power BI service work together*
+*Ver una introducción a las formas de Excel y el servicio Power BI funcionan conjuntamente*
 
-With Power BI, getting your Excel data into Power BI is easy.
+Con Power BI, es fácil obtener los datos de Excel en Power BI.
 
 ![](media/powerbi-learning-5-1-intro-excel-data/5-1_1.png)
 
-The following topics guide you through uploading an Excel workbook with a simple table into Power BI. Then you see how to upload workbooks created with Excel's more advanced BI data modeling and reporting features, such as Power Pivot and Power View.
+Los temas siguientes le guiarán por la carga de un libro de Excel con una tabla sencilla en Power BI. A continuación, verá cómo cargar los libros creados con datos de Excel más avanzados BI de características, como PowerPivot y Power View de informes y modelos.
 
-You'll also learn some benefits of saving your Excel workbook files to OneDrive for Business. When you connect to Excel files on OneDrive from Power BI, your reports and dashboards in Power BI are updated and refreshed automatically when you make changes and save your work.
+También aprenderá algunas ventajas de guardar los archivos de libro de Excel en OneDrive para la empresa. Cuando se conecta a los archivos de Excel en OneDrive desde Power BI, los informes y paneles en Power BI actualiza y los actualiza automáticamente al realizar cambios y guardar su trabajo.

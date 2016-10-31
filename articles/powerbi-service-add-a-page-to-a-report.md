@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add a page to a Power BI report"
-   description="Add a page to a Power BI report"
+   pageTitle="Agregar una página a un informe de Power BI"
+   description="Agregar una página a un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,24 +20,24 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Add a page to a Power BI report  
-## Add a new blank page
+# Agregar una página a un informe de Power BI  
+## Agregar una nueva página en blanco
 
-No reason to crowd up a report page -- just add a new blank page.
+Ninguna razón para multitud de una página del informe, simplemente agregue una nueva página en blanco.
 
-Select the yellow plus icon and then type a new name for the page.  
+Seleccione el amarillo y el icono y, a continuación, escriba un nombre nuevo para la página.  
 ![](media/powerbi-service-add-a-page-to-a-report/reorderPages2.gif)
 
-## Duplicate a page
-From the top control bar, in <bpt id="p1">[</bpt>Editing mode<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>, select the <bpt id="p2">**</bpt>Duplicate this page<ept id="p2">**</ept> icon.
+## Duplicar una página
+En la barra de control superior en [el modo de edición](powerbi-service-interact-with-a-report-in-editing-view.md), seleccione la **duplicar esta página** icono.
 
 ![](media/powerbi-service-add-a-page-to-a-report/PBI_duplicate.png)
 
-Your new page is created and becomes the active page. To rename it, double-click the name on the tab to highlight it, and type a new name.  For more information, see <bpt id="p1">[</bpt>rename a report and report page<ept id="p1">]()</ept>
+La nueva página se crea y se convierte en la página activa. Para cambiar el nombre, haga doble clic en el nombre de la ficha para resaltarla y escriba un nombre nuevo.  Para obtener más información, consulte [cambiar el nombre de un informe y la página del informe]()
 
 
 ## Consulte también  
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

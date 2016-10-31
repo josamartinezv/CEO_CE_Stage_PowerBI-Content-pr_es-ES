@@ -1,13 +1,13 @@
-<properties pageTitle="Documentation Example - Inline code" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Inline code" authors="jamescon" solutions="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación: código en línea" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Inline code" authors="jamescon" solutions="" videoId="" scriptId="" />
 
-# Example - Inline Code #
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+# Ejemplo: el código en línea #
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the use of inline code within a text block.
+El contenido entre las líneas siguientes muestra el uso de código en línea dentro de un bloque de texto.
 
 ---
 
-1. in the above code, replace the <ph id="ph1">`&lt;hub name&gt;`</ph> and <ph id="ph2">`&lt;connection string with listen access&gt;`</ph> placeholders "DefaultListenSharedAccessSignature" that you obtained earlier.
+1. en el código anterior, reemplace el `<hub name>` y `<connection string with listen access>` marcadores de posición "DefaultListenSharedAccessSignature" que obtuvo anteriormente.
 
 
 ---

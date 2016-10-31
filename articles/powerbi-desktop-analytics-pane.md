@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Analytics pane in Power BI Desktop"
-   description="Create dynamic reference lines for visuals in Power BI Desktop"
+   pageTitle="Panel de análisis en Power BI Desktop"
+   description="Crear líneas de referencia dinámica para elementos visuales de Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -21,117 +21,117 @@
    ms.author="davidi"/>
 
 
-# Analytics pane in Power BI Desktop
+# Panel de análisis en Power BI Desktop
 
-With the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane in <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept>, you can add dynamic <bpt id="p3">*</bpt>reference lines<ept id="p3">*</ept> to visuals, and provide focus for important trends or insights. The <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane is found in the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> area of Power BI Desktop, beginning with the August 2016 release (version 2.37.4464.321 or later), as shown below.
+Con el **análisis** panel en **Power BI Desktop**, puede agregar dinámica *líneas de referencia* en elementos visuales y proporcione el foco para estas importantes tendencias o conocimientos. El **análisis** panel se encuentra en la **visualizaciones** área de Power BI Desktop, desde la versión de agosto de 2016 (versión 2.37.4464.321 o posterior), como se muestra a continuación.
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_1.png)
 
->   Note: The <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane only appears when you select a visual on the Power BI Desktop canvas.
+>   Nota: La **análisis** panel sólo aparece cuando se selecciona un elemento visual en el lienzo de Power BI Desktop.
 
-## Enable Forecasting (Preview)
+## Habilitar la previsión (vista previa)
 
-In addition, with the September 2016 release of <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> (version 2.39.4526.362 or later), you can also perform <bpt id="p2">*</bpt>forecasting<ept id="p2">*</ept> from the <bpt id="p3">**</bpt>Analytics<ept id="p3">**</ept> pane. You must enable this preview feature, by going to <bpt id="p1">**</bpt>File &gt; Options and settings &gt; Options<ept id="p1">**</ept> then selecting <bpt id="p2">**</bpt>Preview Features<ept id="p2">**</ept> from the left pane. Select the checkbox next to <bpt id="p1">**</bpt>Forecasting<ept id="p1">**</ept> to enable the feature, as shown in the following image. You'll need to restart <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> for your changes to take effect.
+Además, la versión con el de 2016 de septiembre de **Power BI Desktop** (versión 2.39.4526.362 o posterior), también puede realizar *previsión* desde el **análisis** panel. Debe habilitar esta característica de vista previa, yendo a **archivo > Opciones y configuración > opciones** seleccionando **características de vista previa** en el panel izquierdo. Active la casilla de verificación junto a **Forecasting** para habilitar la característica, tal como se muestra en la siguiente imagen. Debe reiniciar **Power BI Desktop** para que los cambios surtan efecto.
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_1b.png)
 
-## Using the Analytics pane
+## Mediante el panel de análisis.
 
-With the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane, you can create the following types of dynamic reference lines (not all lines are available for all visual types):
+Con el **análisis** panel, puede crear los siguientes tipos de líneas de referencia dinámica (no todas las líneas están disponibles para todos los tipos visuales):
 
--   X-Axis constant line
--   Y-Axis constant line
--   Min line
--   Max line
--   Average line
--   Median line
--   Percentile line
+-   Línea constante del eje x
+-   Línea constante del eje y
+-   Línea de min
+-   Línea máximo
+-   Promedio de la línea
+-   Línea mediana
+-   Línea de percentil
 
-The following sections show how you can use the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane and dynamic reference lines in your visualizations.
+Las secciones siguientes muestran cómo se puede utilizar el **análisis** panel y las líneas de referencia dinámica en las visualizaciones.
 
-To view the available dynamic reference lines for a visual, follow these steps:
+Para ver las líneas de referencia dinámica disponible para un objeto visual, siga estos pasos:
 
-1.  Select or create a visual, then select the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> icon from the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> section.
+1.  Seleccione o cree un objeto visual y seleccione el **análisis** icono desde la **visualizaciones** sección.
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_2.png)
 
-2.  Select the down arrow for the type of line you want to create to expand its options. In this case, we'll select <bpt id="p1">**</bpt>Average Line<ept id="p1">**</ept>.
+2.  Seleccione la flecha hacia abajo para el tipo de línea que desea crear para expandir sus opciones. En este caso, seleccionaremos **promedio de la línea**.
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_3.png)
 
-3.  To create a new line, select <bpt id="p1">**</bpt>+ Add<ept id="p1">**</ept>. You can then specify a name for the line by double-clicking the text box, then typing in your name.
+3.  Para crear una nueva línea, seleccione **+ Agregar**. A continuación, puede especificar un nombre para la línea, haga doble clic en el cuadro de texto y luego escribiendo su nombre.
 
-    You have all sorts of options for your line, such as selecting its <bpt id="p1">*</bpt>color<ept id="p1">*</ept>, <bpt id="p2">*</bpt>transparency<ept id="p2">*</ept>, <bpt id="p3">*</bpt>style<ept id="p3">*</ept> and <bpt id="p4">*</bpt>position<ept id="p4">*</ept> (relative to the visual's data elements), and whether to include the label. And importantly, you can select which <bpt id="p1">**</bpt>Measure<ept id="p1">**</ept> in the visual you want your line to be based upon by selecting the <bpt id="p2">**</bpt>Measure<ept id="p2">**</ept> drop down, which is automatically populated with data elements from the visual. In this case, we'll select <bpt id="p1">*</bpt>Weather<ept id="p1">*</ept> as the measure, label it <bpt id="p2">*</bpt>Average Weather<ept id="p2">*</ept>, and customize a few of the other options as shown below.
+    Tener todo tipo de opciones de la línea, como la selección de su *color*, *transparencia*, *estilo* y *posición* (con respecto a los elementos de datos del objeto visual) y si se debe incluir la etiqueta. Y lo que es importante, puede seleccionar que **medida** del objeto visual que desea que la línea en que basarse seleccionando el **medida** lista desplegable, que se rellena automáticamente con los elementos de datos desde el objeto visual. En este caso, seleccionaremos *Weather* como medida, asígnele la etiqueta *tiempo promedio*, y personalizar algunas de las otras opciones, como se muestra a continuación.
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_4.png)
 
-4.  If you want to have a data label appear, move the <bpt id="p1">**</bpt>Data label<ept id="p1">**</ept> slider on. When you do so, you get a whole host of additional options for your data label, as shown in the following image.
+4.  Si desea tener una etiqueta de datos aparecen, mueva la **etiqueta datos** control deslizante en. Al hacerlo, obtendrá una gran variedad de opciones adicionales para la etiqueta de datos, como se muestra en la siguiente imagen.
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_5.png)
 
-5.  Notice the number that appears next to the <bpt id="p1">**</bpt>Average line<ept id="p1">**</ept> item in the <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> pane. That tells you how many dyanmic lines you currently have on your visual, and of which type. If we add a <bpt id="p1">**</bpt>Max line<ept id="p1">**</ept> for <bpt id="p2">*</bpt>Cost of Living<ept id="p2">*</ept>, you can see that the <bpt id="p3">**</bpt>Analytics<ept id="p3">**</ept> pane shows that we now also have a <bpt id="p4">**</bpt>Max line<ept id="p4">**</ept> dynamic reference line applied to this visual.
+5.  Observe el número que aparece junto a la **promedio de la línea** de elemento en el **análisis** panel. Que indica cuántas líneas dinámicos que tiene actualmente en el objeto visual y de qué tipo. Si agregamos un **línea Max** para *coste de la vida*, puede ver que el **análisis** panel muestra ahora también tenemos un **línea Max** línea de referencia dinámica aplicada a este objeto visual.
 
     ![](media/powerbi-desktop-analytics-pane/Analytics-pane_6.png)
 
-If the visual you've selected can't have dynamic reference lines applied to it (in this case, a <bpt id="p1">**</bpt>Map<ept id="p1">**</ept> visual), you'll see the following when you select the <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> pane.
+Si el objeto visual seleccionado no puede tener líneas de referencia dinámica aplicadas (en este caso, un **mapa** visual), verá lo siguiente cuando se selecciona el **análisis** panel.
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_7.png)
 
 
-There are all sorts of interesting insights you can highlight by creating dynamic reference lines with the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane.
+Hay todo tipo de información interesante que puede resaltar mediante la creación de líneas de referencia dinámica con el **análisis** panel.
 
-We're planning more features and capabilities, including expanding which visuals can have dynamic reference lines applied to them, so check back often for what's new.
+Estamos planeando más características y funcionalidades, que incluyen expansión que elementos visuales pueden tener líneas de referencia dinámica aplicadas a ellos, así que vuelva a menudo para ' s new.
 
-## Apply Forecasting
+## Aplicar la previsión
 
-You can use the <bpt id="p1">**</bpt>Forecast<ept id="p1">**</ept> feature by selecting a visual, then expanding the <bpt id="p2">**</bpt>Forecast<ept id="p2">**</ept> section of the <bpt id="p3">**</bpt>Analytics<ept id="p3">**</ept> pane. You can specify many inputs to modify the forecast, such as the <bpt id="p1">*</bpt>Forecast length<ept id="p1">*</ept>, the <bpt id="p2">*</bpt>Confidence interval<ept id="p2">*</ept>, and others. The following image shows a basic line visual with forecasting applied, but you can use your imagination (and play around with the <bpt id="p1">*</bpt>forecasting<ept id="p1">*</ept> feature) to see how it can apply to your models.
+Puede usar el **previsión** característica, seleccione un objeto visual y luego expandir la **previsión** sección de la **análisis** panel. Puede especificar cuántas entradas para modificar la previsión, como el *previsión longitud*, el *intervalo de confianza*, y otros. La siguiente imagen muestra una línea básica visual con previsión aplicado, pero puede usar su imaginación (y jugar con el *previsión* característica) para ver cómo puede aplicar a los modelos.
 
 ![](media/powerbi-desktop-analytics-pane/Analytics-pane_8.png)
 
 ## Limitaciones
 
-The ability to use dynamic reference lines is based on the type of visual being used. The following list shows which dynamic lines are currently available for which visuals:
+La capacidad para usar líneas de referencia dinámica se basa en el tipo de visual que se va a utilizar. La siguiente lista muestra las líneas dinámicas están actualmente disponibles para los elementos visuales:
 
-Full use of dynamic lines are available on the following visuals:
+Un uso completo de las líneas dinámicas están disponibles en los elementos visuales siguientes:
 
--   Area chart
--   Line chart
--   Scatter chart
--   Clustered Column chart
--   Clustered Bar chart
+-   Gráfico de áreas
+-   Gráfico de líneas
+-   Gráfico de dispersión
+-   Gráfico de columnas en clúster
+-   Gráfico de barras en clúster
 
-The following visuals can use only a <bpt id="p1">*</bpt>constant line<ept id="p1">*</ept> from the <bpt id="p2">**</bpt>Analytics<ept id="p2">**</ept> pane:
+Sólo pueden utilizar los elementos visuales siguientes un *línea constante* desde el **análisis** panel:
 
--   Stacked Area
--   Stacked Bar
--   Stacked Column
--   100% Stacked Bar
--   100% Stacked Column
+-   Área apilada
+-   Gráficos de barras apiladas
+-   Columna apilada
+-   Barra 100% apilada
+-   Columna 100% apilada
 
-For the following visuals, a <bpt id="p1">*</bpt>trend line<ept id="p1">*</ept> is currently the only option:
+Para los objetos visuales siguientes, un *línea de tendencia* actualmente es la única opción:
 
--   Non-stacked Line
--   Clustered Column chart
+-   Línea no apiladas
+-   Gráfico de columnas en clúster
 
-Lastly, non-Cartesian visuals cannot currently apply dynamic lines from the <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane, such as:
+Por último, elementos visuales no cartesiano actualmente no pueden aplicar las líneas dinámicas desde el **análisis** panel, como:
 
--   Matrix
--   Pie chart
+-   Matriz
+-   Gráfico circular
 -   Donut
 -   Tabla
 
 
 ## Más información
 
-There are all sorts of things you can do with Power BI Desktop. For more information on its capabilities, check out the following resources:
+Hay todo tipo de cosas que puede hacer con Power BI Desktop. Para obtener más información sobre sus capacidades, consulte los siguientes recursos:
 
--   [What's New in Power BI Desktop](powerbi-desktop-latest-update.md)
--   [Download Power BI Desktop](powerbi-desktop-get-the-desktop.md)
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
--   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
--   [Data Types in Power BI Desktop](powerbi-desktop-data-types.md)
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
--   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)    
+-   [Novedades de Power BI Desktop](powerbi-desktop-latest-update.md)
+-   [Descargar Power BI Desktop](powerbi-desktop-get-the-desktop.md)
+-   [Introducción a Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [Información general sobre consultas con Power BI Desktop](powerbi-desktop-query-overview.md)
+-   [Tipos de datos en Power BI Desktop](powerbi-desktop-data-types.md)
+-   [La forma y combinar datos con Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [Tareas comunes de consultas en Power BI Desktop](powerbi-desktop-common-query-tasks.md)    
 
 
 

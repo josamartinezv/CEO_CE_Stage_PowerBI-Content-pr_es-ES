@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI Videos"
-   description="Power BI Videos and link to YouTube channel."
+   pageTitle="Vídeos de Power BI"
+   description="Vídeos de Power BI y vínculo al canal YouTube."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,34 +19,39 @@
    ms.workload="powerbi"
    ms.date="10/14/2016"
    ms.author="mihart"/>
-# <a name="power-bi-videos"></a>Power BI Videos
+# <a name="power-bi-videos"></a>Vídeos de Power BI
 
-We have a YouTube channel for Power BI! You can visit <bpt id="p1">[</bpt>our channel<ept id="p1">](https://www.youtube.com/user/mspowerbi/videos)</ept> and, if you're new to Power BI a good place to start is the <bpt id="p2">[</bpt>Analyze and Visualize data with Power BI playlist<ept id="p2">](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP)</ept>.
+Tenemos un canal YouTube para Power BI. Puede visitar [nuestro canal](https://www.youtube.com/user/mspowerbi/videos) y, si está familiarizado con Power BI es un buen lugar para comenzar la [analizar y visualizar datos con la lista de reproducción de Power BI](https://www.youtube.com/playlist?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP).
 
--   This video covers some tips for optimizing your data for Power BI. Learn the best way to format your data before uploading it to the service.
+-   Este vídeo tratan algunas sugerencias para optimizar los datos de Power BI. Obtenga información acerca de la mejor manera de dar formato a los datos antes de cargarlo al servicio.
 
     <iframe width="500" height="281" src="https://www.youtube.com/embed/l2wy4XgQIu0" frameborder="0" allowfullscreen></iframe>
 
--   Uploading files from your local computer is quick and easy with Power BI. Learn how here!
+-   Carga de archivos desde el equipo local es rápido y fácil con Power BI. Descubra cómo hacerlo aquí.
 
     <iframe width="500" height="281" src="https://www.youtube.com/embed/ETj-z3NyY_o" frameborder="0" allowfullscreen></iframe>
 
--   Using OneDrive is a great way to connect to your data and make sure it stays up to date at all times
+-   Uso de OneDrive es una excelente manera de conectarse a los datos y asegúrese de que mantiene al día en todo momento
 
     <iframe width="500" height="281" src="https://www.youtube.com/embed/6cOjiV_klrs" frameborder="0" allowfullscreen></iframe>
 
-## <a name="watch-some-of-our-new-uploads"></a>Watch some of our new uploads
+## <a name="watch-some-of-our-new-uploads"></a>Ver algunas de nuestras nuevas cargas
 
--  <bpt id="p1">[</bpt>DAX expressions and variables<ept id="p1">](https://www.youtube.com/watch?v=kd4tgKxhRTU)</ept>
+-  
+            [Variables y expresiones de DAX](https://www.youtube.com/watch?v=kd4tgKxhRTU)
 
--  <bpt id="p1">[</bpt>Taking your content offline<ept id="p1">](https://www.youtube.com/watch?v=u7cnpupfVnE)</ept>
+-  
+            [Poner el contenido sin conexión](https://www.youtube.com/watch?v=u7cnpupfVnE)
 
--  <bpt id="p1">[</bpt>Introduction to Power BI mobile<ept id="p1">](https://www.youtube.com/watch?v=07uBWhaCo78)</ept>
+-  
+            [Introducción a Power BI móvil](https://www.youtube.com/watch?v=07uBWhaCo78)
 
 
 
 ## <a name="see-also"></a>Consulte también
 
-<bpt id="p1">[</bpt>Get started with Power BI<ept id="p1">](powerbi-service-get-started.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [Introducción a Power BI](powerbi-service-get-started.md)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

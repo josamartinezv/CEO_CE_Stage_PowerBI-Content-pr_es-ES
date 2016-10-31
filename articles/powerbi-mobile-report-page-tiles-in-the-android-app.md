@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="View report page tiles in the Android app"
-   description="Read about viewing and interacting with live report tiles in a dashboard in the Power BI mobile app for Android."
+   pageTitle="Iconos de página de informe de vista en la aplicación Android"
+   description="Lea acerca de cómo ver e interactuar con iconos de informe activo en un panel en la aplicación móvil de Power BI para Android."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,20 +20,22 @@
    ms.date="10/14/2016"
    ms.author="maggies"/>
 
-# <a name="view-report-page-tiles-in-the-power-bi-for-android-app"></a>View report page tiles in the Power BI for Android app
+# <a name="view-report-page-tiles-in-the-power-bi-for-android-app"></a>Ver los iconos de página de informe en la aplicación Power BI para Android
 
-When you <bpt id="p1">[</bpt>create a dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept> in the Power BI service, you add individual visuals from Power BI reports as tiles on the dashboard. You can also <bpt id="p1">[</bpt>pin a whole Power BI report page as a live tile<ept id="p1">](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md)</ept>. You can view these report tiles in the Power BI app for the Android phone.
+Cuando se [crear un panel](powerbi-service-dashboards.md) en el servicio Power BI, agregar efectos visuales individuales de informes de Power BI como iconos en el panel. También puede [Anclar una página de informe de Power BI completa como un icono dinámico](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md). Puede ver estos iconos de informe en la aplicación de Power BI para el teléfono Android.
 
-1.  When you open a <bpt id="p1">[</bpt>dashboard in the Android app<ept id="p1">](powerbi-mobile-dashboards-in-the-android-app.md)</ept>, you see a small image of the report.
+1.  Cuando se abre un [panel en la aplicación Android](powerbi-mobile-dashboards-in-the-android-app.md), verá una pequeña imagen del informe.
 
     ![](media/powerbi-mobile-report-page-tiles-in-the-android-app/power-bi-android-report-tile.png)
 
-2. Tap the tile. The pinned live report page opens in landscape mode. 
+2. Puntee en el icono. Se abre la página de informe directo anclado en modo horizontal. 
 
     ![](media/powerbi-mobile-report-page-tiles-in-the-android-app/power-bi-android-report-tile-open-report.png)
 
 ### <a name="see-also"></a>Consulte también
 
-- <bpt id="p1">[</bpt>Tiles in the Android app<ept id="p1">](powerbi-mobile-tiles-in-the-android-app.md)</ept>
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [Iconos de la aplicación Android](powerbi-mobile-tiles-in-the-android-app.md)
+- ¿Tiene preguntas? 
+            [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)
 

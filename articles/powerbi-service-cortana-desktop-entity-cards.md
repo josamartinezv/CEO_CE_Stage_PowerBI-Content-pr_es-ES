@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create custom Power BI answer cards for Cortana"
-   description="Create custom answer cards for Cortana in Power BI"
+   pageTitle="Crear tarjetas de respuesta personalizadas de Power BI para Cortana"
+   description="Crear tarjetas de respuesta personalizado para Cortana de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"  
@@ -21,62 +21,62 @@
    ms.author="mihart"/>
 
 
-# Use Power BI to create a custom Answer Page for Cortana
+# Use Power BI para crear una página de respuesta personalizado para Cortana
 
-Use the full capabilities of Power BI to create reports designed specifically to answer Cortana questions.
+Utilice las capacidades completas de Power BI para crear informes diseñados específicamente para responder a preguntas de Cortana.
 
 ## Antes de comenzar
 
-Before you can begin creating custom Answer Pages for Cortana, <bpt id="p1">[</bpt>enable Cortana for Power BI<ept id="p1">](powerbi-service-cortana-enable.md)</ept>.  
+Antes de comenzar a crear páginas personalizadas de respuesta para Cortana, [Habilitar Cortana para Power BI](powerbi-service-cortana-enable.md).  
 
-## Create an Answer Page for Cortana
-An <bpt id="p1">*</bpt>Answer Page<ept id="p1">*</ept> in a report is sized specifically for Cortana so that Cortana can show it as an answer to a question.  To create an Answer Page for Cortana:
+## Crear una página de respuesta de Cortana
+Un *página respuesta* en un informe tiene un tamaño específicamente para Cortana para que Cortana puede mostrar como respuesta a una pregunta.  Para crear una página de respuesta para Cortana:
 
-1. We recommend starting with a <bpt id="p1">[</bpt>blank report page<ept id="p1">](powerbi-service-add-a-page-to-a-report.md)</ept>.
+1. Se recomienda empezar con un [página del informe en blanco](powerbi-service-add-a-page-to-a-report.md).
 
-2. In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the paintbrush icon and choose <bpt id="p2">**</bpt>Page Size &gt; Cortana<ept id="p2">**</ept>.
+2. En el **visualizaciones** panel, seleccione el icono de pincel y elija **tamaño de página > Cortana**.
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-page-size.png)
 
-3. Create a visual or a set of visuals that you want to appear in Cortana in response to a particular question (or set of questions).
+3. Crear un objeto visual o un conjunto de elementos visuales que desee que aparezca en Cortana en respuesta a una pregunta determinada (o conjunto de preguntas).
 
-4. Ensure that all visuals fit within the page borders.  Optionally, modify display settings, data labels, colors, and backgrounds.  
+4. Asegúrese de que todos los elementos visuales se ajustan a los bordes de página.  Opcionalmente, modifique la configuración de pantalla, las etiquetas de datos, colores y fondos.  
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI_Cortana_modify.png)
 
-5. Name the page and add alternate names.  Cortana uses these names when it searches for results. In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the paintbrush icon and choose <bpt id="p2">**</bpt>Page Information<ept id="p2">**</ept>. Enable Q&amp;A for this visual by moving the slider to <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.
+5. Nombre de la página y agregue nombres alternativos.  Cortana utiliza estos nombres al buscar los resultados. En el **visualizaciones** panel, seleccione el icono de pincel y elija **información de la página**. Habilitar preguntas y respuestas para este objeto visual moviendo el control deslizante para **en**.
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/powerbi-cortana-name.png)
 
-    >[AZURE.TIP] To improve results, avoid using words that are also column names.
+    >[AZURE.TIP] Para mejorar los resultados, evite utilizar palabras que también son los nombres de columna.
 
-6. Optionally, if your report has page level filters, you can set <bpt id="p1">**</bpt>Require single selection<ept id="p1">**</ept>. Cortana will only display this report as an answer if one, and only one, of the filter items is specified in the question.
+6. Opcionalmente, si el informe tiene filtros de nivel de página, puede establecer **requieren selección única**. Cortana solo mostrará este informe como respuesta si uno y sólo uno, de los elementos de filtro se especifica en la pregunta.
 
     ![](media/powerbi-service-cortana-desktop-entity-cards/PBI-cortana-single-selection.png)
 
-      For example, if you ask Cortana:
+      Por ejemplo, si solicita a Cortana:
 
-      - "show sales by store name," this Answer Page will not appear because you did not include any of the items in the required page level filter.
+      - "Mostrar las ventas por nombre de tienda", esta página de respuesta no aparecerá porque no incluyó alguno de los elementos en el filtro de nivel de página requiere.
 
-      - "show sales for Cary Lindseys and Charlotte Lindseys," this Answer Page will not appear because you specified more than one item from the required page level filter.
+      - "Mostrar las ventas de Cary Lindseys y Charlotte Lindseys," esta página de respuesta no aparecerá porque se especificó más de un elemento de filtro de nivel de página requiere.
 
-      - "show sales for Charlotte Lindseys," this Answer Page will display.
+      - "Mostrar las ventas de Charlotte Lindseys", se mostrará esta página de respuesta.
 
-    Now, asking a question including the name of a Cortana-sized page will return results from Cortana.
+    Ahora, formular una pregunta incluido el nombre de una página de tamaño de Cortana devolverá resultados de Cortana.
 
-    >[AZURE.IMPORTANT]  Before your Answer Page can be accessed by Cortana, you will need to <bpt id="p1">[</bpt>Enable the dataset for Cortana<ept id="p1">](powerbi-service-cortana-enable.md)</ept>.
+    >[AZURE.IMPORTANT]  Para poder acceder a la página de respuesta por Cortana, necesitará [Habilitar el conjunto de datos para Cortana](powerbi-service-cortana-enable.md).
 
-## How does Cortana order the results?
+## ¿Cómo Cortana el pedido de los resultados?
 
-Results with high scoring answers (such as a complete match of a specified page name) will appear first as a <bpt id="p1">*</bpt>best match<ept id="p1">*</ept> in Cortana. Multiple best matches can appear if there are multiple answers in Power BI. Medium or lower scoring answers, such as answers not based on a named page for Cortana or a question with words not understood by Power BI, are listed as links below best matches in Cortana.
+Resultados con respuestas puntuación alta (por ejemplo, una coincidencia completa de un nombre de página especificado) aparecerá en primer lugar como un *mejor coincidencia* en Cortana. Si hay varias respuestas en Power BI, pueden aparecer varios mejores coincidencias. Media o baja puntuación respuestas, como las respuestas no se basa en una página con nombre para una pregunta o Cortana con palabras que no entiende Power BI, se muestran como vínculos que aparecen las mejores coincidencias en Cortana.
 
->[AZURE.NOTE] When a new dataset or custom Cortana Answer Page is added to Power BI and enabled for Cortana it can take up to 30 minutes for results to begin appearing in Cortana. Logging in and out of Windows 10, or otherwise restarting the Cortana process in Windows 10, will allow new content to appear immediately.
+>[AZURE.NOTE] Cuando un nuevo conjunto de datos o una página de respuesta de Cortana personalizado se agrega a Power BI y habilitada para Cortana puede tardar hasta 30 minutos para que comienzan a aparecer en Cortana los resultados. Registro dentro y fuera de Windows 10 o, de lo contrario, reiniciar el proceso de Cortana de Windows 10, le permitirá nuevo contenido a aparecer inmediatamente.
 
 
 ## Consulte también
 
-[Using Cortana with Power BI](powerbi-service-cortana-intro.md)
+[Uso de Cortana con Power BI](powerbi-service-cortana-intro.md)
 
-[Get started with Power BI Desktop](powerbi-desktop-getting-started.md)
+[Introducción a Power BI Desktop](powerbi-desktop-getting-started.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

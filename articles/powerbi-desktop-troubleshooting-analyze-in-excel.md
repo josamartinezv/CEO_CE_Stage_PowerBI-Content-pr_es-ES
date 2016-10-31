@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Troubleshooting Analyze in Excel"
-   description="Solutions to common issues for Analyze in Excel"
+   pageTitle="Solución de problemas de analizar en Excel"
+   description="Soluciones a problemas comunes para analizar en Excel"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,99 +20,101 @@
    ms.date="09/27/2016"
    ms.author="davidi"/>
 
-# Troubleshooting Analyze in Excel
+# Solución de problemas de analizar en Excel
 
-There may be times when using Analyze in Excel that you get an unexpected result, or the feature doesn't work as you expected. This page provides solutions for common issues when using Analyze in Excel.
+Puede haber ocasiones cuando utilizando analizar en Excel que obtendrá un resultado inesperado o la característica no funciona como esperaba. Esta página proporciona soluciones para problemas comunes al utilizar analizar en Excel.
 
-> <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> There's a separate page dedicated to describing and enabling <bpt id="p2">[</bpt>Analyze in Excel<ept id="p2">](powerbi-service-analyze-in-excel.md)</ept>.
+> 
+            **Nota:** hay una página independiente dedicada a describir y habilitar [analizar en Excel](powerbi-service-analyze-in-excel.md).
 
-> If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the <bpt id="p1">[</bpt>community site<ept id="p1">](http://community.powerbi.com/)</ept>, or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerbi.microsoft.com/support/)</ept>.
+> Si se encuentra un caso que no se enumera a continuación y está causando problemas, puede pedir ayuda adicional en el [sitio de la Comunidad](http://community.powerbi.com/), o puede crear un [admite vale](https://powerbi.microsoft.com/support/).
 
-This article contains the following troubleshooting sections:
+Este artículo contiene las siguientes secciones de solución de problemas:
 
--   Update Excel libraries for the OLE DB provider
--   Determining whether you need to update your Excel libraries
--   Connection cannot be made error
--   Forbidden error
--   No data models
--   Token expired error
--   Unable to access on-premises Analysis services
--   Can't drag anything to the PivotTable Values area (no measures)
+-   Actualizar las bibliotecas de Excel para el proveedor OLE DB
+-   Determinar si necesita actualizar las bibliotecas de Excel
+-   No se puede realizar la conexión error
+-   Error prohibido
+-   No hay modelos de datos
+-   Error de token ha caducado
+-   No se puede tener acceso a Analysis services local
+-   Puede arrastrar ningún elemento hasta el área de valores de tabla dinámica (ninguna medida)
 
 
-## Update Excel libraries for the OLE DB provider
-To use <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept>, your computer must have a current AS OLE DB provider installed. This <bpt id="p1">[</bpt>community post<ept id="p1">](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081)</ept> is a great source to verify your installation of the OLE DB provider, or to download a recent version.
+## Actualizar las bibliotecas de Excel para el proveedor OLE DB
+Usar **analizar en Excel**, el equipo debe tener instalado un proveedor de OLE DB como actual. Esto [entrada de la Comunidad](http://community.powerbi.com/t5/Service/Analyze-in-Excel-Initialization-of-the-data-source-failed/m-p/30837#M8081) es una excelente fuente para comprobar la instalación del proveedor OLE DB o para descargar una versión actualizada.
 
-The Excel libraries need to match your version of Windows in terms of its bit-level. If you have 64-bit Windows installed, you need to install the 64-bit OLE DB provider.
+Las bibliotecas de Excel se necesitan para que coincida con su versión de Windows en términos de nivel de bit. Si tiene instalada de Windows de 64 bits, debe instalar al proveedor OLE DB de 64 bits.
 
-To download the latest Excel libraries, visit Power BI and select the <bpt id="p1">**</bpt>down arrow<ept id="p1">**</ept> in the upper right corner of the Power BI service, then select <bpt id="p2">**</bpt>Analyze in Excel updates<ept id="p2">**</ept>.
+Para descargar las bibliotecas más recientes de Excel, visite Power BI y seleccione el **flecha abajo** en la esquina superior derecha del servicio Power BI, a continuación, seleccione **analizar en actualizaciones de Excel**.
 
 ![](media/powerbi-desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_1.png)
 
-In the dialog that appears, select <bpt id="p1">**</bpt>Download (preview)<ept id="p1">**</ept>.
+En el cuadro de diálogo que aparece, seleccione **descarga (vista previa)**.
 
 ![](media/powerbi-desktop-troubleshooting-analyze-in-excel/tshoot-analyze-excel_2.png)
 
-## Determining whether you need to update your Excel libraries
-You can download the most recent version of the Excel OLE DB provider libraries from the links in the previous section. Once you download the appropriate OLD DB provider library and begin installation, checks are performed against your current installed version.
+## Determinar si necesita actualizar las bibliotecas de Excel
+Puede descargar la versión más reciente de las bibliotecas de proveedor OLE DB de Excel en los vínculos de la sección anterior. Una vez que descargue la biblioteca de proveedor ANTERIOR base de datos adecuada y comenzar la instalación, se realizan comprobaciones en la versión actual instalada.
 
-If your Excel OLE DB provider client libraries are up to date, you'll be presented with a dialog that looks like the following:
+Si las bibliotecas de cliente de proveedor OLE DB de Excel están actualizadas, verá un cuadro de diálogo es similar a la siguiente:
 
 ![](media/powerbi-desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_3.png)
 
-C:\Users\davidi\Desktop\powerbi-content-pr\articles\media\powerbi-desktop-troubleshooting-analyze-in-excel
+C:\Users\davidi\Desktop\powerbi-Content-pr\articles\media\powerbi-Desktop-Troubleshooting-ANALYZE-in-Excel
 
-Alternatively, if the new version you are installing is newer than the version on your computer, the following dialog appears:
+Como alternativa, si la nueva versión que está instalando es más reciente que la versión en el equipo, aparece el cuadro de diálogo siguiente:
 
 ![](media/powerbi-desktop-troubleshooting-analyze-in-excel/troubleshoot-analyze-excel_2.png)
 
-If you see the dialog prompting you to upgrade, you should continue with the installation to get the most recent version of the OLE DB provider installed in your computer.
+Si ve el cuadro de diálogo que le pide que actualice, debe continuar con la instalación para obtener la versión más reciente del proveedor OLE DB instalado en el equipo.
 
-## Connection cannot be made error
-The primary cause for a <bpt id="p1">*</bpt>connection cannot be made<ept id="p1">*</ept> error is that your computer's OLE DB provider client libraries are not current. For information about how to determine the correct update, and for download links, see <bpt id="p1">**</bpt>Update Excel libraries for the OLE DB provider<ept id="p1">**</ept> earlier in this article.
+## No se puede realizar la conexión error
+La causa principal de un *no se puede realizar la conexión* error es que las bibliotecas de cliente de proveedor de OLE DB de su equipo no están actualizadas. Para obtener información acerca de cómo determinar la actualización correcta y vínculos de descarga, consulte **bibliotecas de Excel de actualización para el proveedor OLE DB** anteriormente en este artículo.
 
-## Forbidden error
-Some users have more than one Power BI account, and when Excel attempts to connect to Power BI using existing credentials, it may use credentials that do not have access to the dataset or report you want to access.
+## Error prohibido
+Algunos usuarios tienen más de una cuenta de Power BI y cuando Excel intenta conectarse a Power BI mediante las credenciales existentes, puede usar las credenciales que no tienen acceso al conjunto de datos o el informe que desea tener acceso.
 
-When this occurs, you may  receive an error titled <bpt id="p1">**</bpt>Forbidden<ept id="p1">**</ept>, which means you may be signed into Power BI with credentials that do not have permissions to the dataset. After encountering the <bpt id="p1">**</bpt>forbidden<ept id="p1">**</ept> error, when prompted to enter your credentials, use the credentials that have permission to access the dataset you're trying to use.
+Cuando esto ocurre, recibirá un error titulado **prohibido**, lo que significa que puede estar firmado en Power BI con credenciales que no tienen permisos para el conjunto de datos. Después de encontrar el **prohibido** error, cuando se le pida que escriba las credenciales, utilice las credenciales que tengan permiso de acceso del conjunto de datos que está intentando utilizar.
 
-If you still run into errors, log into Power BI with the account that has permission, and verify that you can view and access the dataset in Power BI that you're attempting to access in Excel.
+Si aún experimenta errores, inicie sesión en Power BI con la cuenta que tiene permiso y compruebe que puede ver y tener acceso el conjunto de datos en Power BI que está intentando tener acceso en Excel.
 
-## No data models
-If you encounter an error that states <bpt id="p1">**</bpt>Can't find OLAP cube model<ept id="p1">**</ept>, then the dataset you're trying to access has no data model, and therefore cannot be analyzed in Excel.
+## No hay modelos de datos
+Si se produce un error que indica que **no se puede encontrar el modelo del cubo OLAP**, entonces el conjunto de datos que está intentando obtener acceso tiene modelo de datos y no se puede analizar en Excel.
 
-## Token expired error
-If you receive a <bpt id="p1">**</bpt>token expired<ept id="p1">**</ept> error, it means you haven't recently used the <bpt id="p2">**</bpt>Analyze in Excel<ept id="p2">**</ept> feature on the computer you're using. Simply re-enter your credentials, or reopen the file, and the error should go away.
+## Error de token ha caducado
+Si recibe un **token haya expirado** error, significa que no ha utilizado recientemente el **analizar en Excel** característica en el equipo que está utilizando. Simplemente vuelva a escribir sus credenciales, o vuelva a abrir el archivo y el error deberían desaparecer.
 
-## Unable to access on-premises Analysis Services
-If you're trying to access a dataset that has connections to on-premises Analysis Services data, you may receive an error message. <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> does support connecting to datasets and reports on on-premises <bpt id="p2">**</bpt>Analysis Services<ept id="p2">**</ept> with a connection string, as long as your computer is on the same domain as the <bpt id="p3">**</bpt>Analysis Services<ept id="p3">**</ept> server, and your account has access to that <bpt id="p4">**</bpt>Analysis Services<ept id="p4">**</ept> server.
+## No se puede tener acceso a Analysis Services local
+Si está intentando obtener acceso a un conjunto de datos tiene conexiones de datos de Analysis Services local, puede recibir un mensaje de error. 
+            **Analizar en Excel** admite la conexión a informes y conjuntos de datos en local **Analysis Services** con una cadena de conexión, siempre y cuando el equipo está en el mismo dominio que el **Analysis Services** servidor y la cuenta tiene acceso a la **Analysis Services** server.
 
-currently does not support connections to on-premises Analysis Services.
+actualmente no admite conexiones a local de Analysis Services.
 
-## Can't drag anything to the PivotTable Values area (no measures)
+## Puede arrastrar ningún elemento hasta el área de valores de tabla dinámica (ninguna medida)
 
-When <bpt id="p1">**</bpt>Analyze in Excel<ept id="p1">**</ept> connects to an external OLAP model (which is how Excel connects to Power BI), the <bpt id="p2">*</bpt>PivotTable<ept id="p2">*</ept> <bpt id="p3">[</bpt>requires <bpt id="p4">**</bpt>measures<ept id="p4">**</ept> to be defined in the external model<ept id="p3">](https://support.microsoft.com/kb/234700)</ept>, since all calculations are performed on the server. This is different than when you work with a local data source (such as tables in Excel, or when you're working with datasets in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> or the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>), in which case the tabular model is available locally, and <bpt id="p3">[</bpt>you can use implicit measures<ept id="p3">](https://msdn.microsoft.com/library/gg399077.aspx)</ept>, which are measures that are generated dynamically and are not stored in the data model. In these cases, the behavior in Excel is different from the behavior in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> or the <bpt id="p2">**</bpt>Power BI service<ept id="p2">**</ept>: there may be columns in the data that can be treated as measures in Power BI, but can't be used as values (measures) in Excel.
+Cuando **analizar en Excel** se conecta a un modelo OLAP externo (que es la forma en que Excel se conecta a Power BI), el *tabla dinámica* [requiere **medidas** que deben definirse en el modelo externo](https://support.microsoft.com/kb/234700), ya que todos los cálculos se realizan en el servidor. Esto es diferente a cuando se trabaja con un origen de datos local (como tablas de Excel, o cuando se trabaja con conjuntos de datos en **Power BI Desktop** o **servicio Power BI**), en cuyo caso el modelo tabular está disponible localmente, y [puede utilizar medidas implícitas](https://msdn.microsoft.com/library/gg399077.aspx), que son medidas que se generan dinámicamente y no se almacenan en el modelo de datos. En estos casos, el comportamiento de Excel es diferente del comportamiento en **Power BI Desktop** o **servicio Power BI**: puede haber columnas en los datos que se pueden tratar como medidas en Power BI, pero no puede utilizarse como valores (medidas) en Excel.
 
-To address this issue, you have a few options:
+Para solucionar este problema, tiene varias opciones:
 
-1.  Create <bpt id="p1">[</bpt>measures in your data model in <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept><ept id="p1">](powerbi-desktop-tutorial-create-measures.md)</ept>, then publish the data model to the <bpt id="p3">**</bpt>Power BI service<ept id="p3">**</ept> and access that published dataset from Excel.
-2.  Create <bpt id="p1">[</bpt>measures in your data model from Excel PowerPivot<ept id="p1">](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)</ept>.
-3.  If you imported data from an Excel workbook that had only tables (and no data model), then you can <bpt id="p1">[</bpt>add the tables to the data model<ept id="p1">](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)</ept>, then follow the steps in option 2, directly above, to create measures in your data model.
+1.  Crear [medidas en el modelo de datos en **Power BI Desktop**](powerbi-desktop-tutorial-create-measures.md), a continuación, publicar el modelo de datos para el **servicio Power BI** y acceso que publica el conjunto de datos de Excel.
+2.  Crear [medidas en el modelo de datos de PowerPivot de Excel](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198).
+3.  Si importa datos de un libro de Excel que tenía sólo tablas (y ningún modelo de datos), entonces puede [Agregar las tablas al modelo de datos](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42), a continuación, siga los pasos en la opción 2, directamente encima para crear medidas en el modelo de datos.
 
-Once your measures are defined in the model in the Power BI service, you'll be able to use them in the <bpt id="p1">**</bpt>Values<ept id="p1">**</ept> area in Excel PivotTables.
+Una vez que las medidas se definen en el modelo en el servicio Power BI, podrá utilizarlas en el **valores** área en tablas dinámicas de Excel.
 
 
 
 ## Véase también  
 
-[Analyze in Excel](powerbi-service-analyze-in-excel.md)
+[Analizar en Excel](powerbi-service-analyze-in-excel.md)
 
-[Tutorial: Create your own measures in Power BI Desktop](powerbi-desktop-tutorial-create-measures.md)
+[Tutorial: Crear sus propias medidas en Power BI Desktop](powerbi-desktop-tutorial-create-measures.md)
 
-[Measures in PowerPivot](https://msdn.microsoft.com/library/gg399077.aspx)
+[Medidas en PowerPivot](https://msdn.microsoft.com/library/gg399077.aspx)
 
-[Create a Measure in PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
+[Crear una medida en PowerPivot](https://support.office.com/article/Create-a-Measure-in-Power-Pivot-d3cc1495-b4e5-48e7-ba98-163022a71198)
 
-[Add worksheet data to a Data Model using a linked table](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
+[Agregar datos de la hoja de cálculo a un modelo de datos utilizando una tabla vinculada](https://support.office.com/article/Add-worksheet-data-to-a-Data-Model-using-a-linked-table-d3665fc3-99b0-479d-ba09-a37640f5be42)
 
-[Differences between OLAP and non-OLAP PivotTables in Excel](https://support.microsoft.com/kb/234700)
+[Diferencias entre OLAP y dinámicas no OLAP en Excel](https://support.microsoft.com/kb/234700)

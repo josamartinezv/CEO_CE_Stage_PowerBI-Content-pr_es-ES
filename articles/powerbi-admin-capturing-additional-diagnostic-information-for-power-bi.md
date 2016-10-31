@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Capturing additional diagnostic information for Power BI"
-   description="Capturing additional diagnostic information for Power BI"
+   pageTitle="Capturar información de diagnóstico adicional para Power BI"
+   description="Capturar información de diagnóstico adicional para Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,38 +20,38 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# Capturing additional diagnostic information for Power BI  
+# Capturar información de diagnóstico adicional para Power BI  
 
-## Capturing Additional Diagnostic Information for Power BI  
-These instructions provide two potential options for manually collecting additional diagnostic information from the Power BI web client.  Only one of these options needs to be followed.
+## Capturar información de diagnóstico adicional para Power BI  
+Estas instrucciones ofrecen dos opciones posibles para recopilar manualmente la información de diagnóstico adicional desde el cliente web de Power BI.  Solo una de estas opciones debe seguirse.
 
-## Network Capture - Edge &amp; Internet Explorer 
-1.  Browse to <bpt id="p1">[</bpt>Power BI<ept id="p1">](https://app.powerbi.com)</ept> with Edge or Internet Explorer.
+## Captura de red - Edge e Internet Explorer 
+1.  Vaya a [Power BI](https://app.powerbi.com) con borde o Internet Explorer.
 
-2.  Open the Edge developer tools by pressing F12.
+2.  Abrir las herramientas de desarrollador de borde presionando F12.
 
-3.  That will bring up the Developer Tools window: 
+3.  Que se abrirá la ventana Herramientas de desarrollo: 
 
     ![](media/powerbi-admin-capturing-additional-diagnostic-information-for-power-bi/edge-developer-tools.png)
 
-4.  Switch to the Network tab. It will list traffic it has already captured. 
+4.  Cambie a la pestaña de la red. Obtendrá una lista de tráfico que ya capturados. 
 
     ![](media/powerbi-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab.png)
 
-5.  You can browse within the window and reproduce any problem you may be encountering. You can hide and show the developer tools window at any time during the session by pressing F12.
+5.  Puede buscar dentro de la ventana y reproducir cualquier problema que encuentre. Puede ocultar y mostrar ventana de herramientas del desarrollador en cualquier momento durante la sesión presionando F12.
 
-6.  To stop the capture, you can select the red square on the network tab of the developer tools area.
+6.  Para detener la captura, puede seleccionar el cuadrado rojo en la ficha red del área de herramientas para desarrolladores.
 
     ![](media/powerbi-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-stop.png)
 
-7.  Select on the diskette icon to <bpt id="p1">**</bpt>Export as HAR<ept id="p1">**</ept>
+7.  Seleccione en el icono de disquete para **Exportar como HAR**
 
     ![](media/powerbi-admin-capturing-additional-diagnostic-information-for-power-bi/edge-network-tab-save.png)
 
-8. Provide a file name and save the HAR file.
+8. Proporcione un nombre de archivo y guarde el archivo HAR.
 
-    The HAR file will contain all the information about network requests between the browser window and Power BI.  This will include the activity IDs for each request, the precise timestamp for each request, and any error information returned to the client.  This trace will also contain the data used to populate the visuals shown on the screen.
+    El archivo HAR contendrá toda la información acerca de las solicitudes de red entre la ventana del explorador y Power BI.  Esto incluye los identificadores de actividad de cada solicitud, la marca de tiempo preciso para cada solicitud y cualquier información de error que se devuelve al cliente.  Esta traza también contendrá los datos utilizados para rellenar los elementos visuales que se muestra en la pantalla.
 
-9. You can provide the HAR file to support for review.
+9. Puede proporcionar el archivo HAR para admitir para su revisión.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

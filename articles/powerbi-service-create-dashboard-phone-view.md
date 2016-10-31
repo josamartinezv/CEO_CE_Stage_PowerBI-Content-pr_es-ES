@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a phone view of a dashboard in Power BI"
-   description="Learn how to create a customized view of any Power BI dashboard that you own, specifically for viewing on phones."
+   pageTitle="Crear una vista de teléfono de un panel en Power BI"
+   description="Aprenda a crear una vista personalizada de cualquier panel de Power BI que posee, específicamente para su visualización en teléfonos."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -20,44 +20,47 @@
    ms.date="09/27/2016"
    ms.author="maggies"/>
 
-# Create a phone view of a dashboard in Power BI
+# Crear una vista de teléfono de un panel en Power BI
 
-When you view dashboards in the Power BI mobile app on a phone, you notice the dashboard tiles are laid out one after another, and they're all the same size. In the Power BI service, you can create a customized view of any dashboard that you own, specifically for phones.
+Ver los paneles en la aplicación móvil de Power BI en un teléfono, verá los iconos de panel se colocan uno tras otro y está tamaño de los mismos. En el servicio Power BI, puede crear una vista personalizada de paneles que posee, específicamente para teléfonos.
 
-When you turn the phone sideways, then you see the dashboard as it's laid out in the service, not as you designed it for the phone.
+Cuando se activa el teléfono lateralmente, a continuación, verá el panel recogido en el servicio, no se ha diseñado para el teléfono.
 
-> <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: As you edit the phone view, anyone viewing the dashboard on a phone can see the changes you make in real time. 
 > 
-> For example, if you unpin all tiles on the dashboard phone view, the dashboard on the phone will suddenly have no tiles. 
+            **Nota**: edición de la vista de teléfono, cualquiera que vea el panel en un teléfono puede ver los cambios que realice en tiempo real. 
+> 
+> Por ejemplo, si desancla todos los mosaicos en la vista de panel de teléfono, el panel en el teléfono de repente no tendrá ningún mosaico. 
 
-1. In the Power BI service, open a dashboard.
+1. En el servicio Power BI, abrir un panel.
 
-2. Select the ellipsis (...) in the upper-right corner &gt; under <bpt id="p1">**</bpt>Edit View<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Phone<ept id="p2">**</ept>.
+2. Seleccione el botón de puntos suspensivos (...) en la esquina superior derecha > bajo **Editar vista**, seleccione **teléfono**.
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: If you aren't the dashboard owner, you won't see this option on the menu.
+    >
+            **Nota**: si no es el propietario del panel, no verá esta opción en el menú.
 
     ![](media/powerbi-service-create-dashboard-phone-view/power-bi-edit-phone-view.png)
 
-    The phone dashboard edit view opens. Here you can unpin, resize, and rearrange tiles to fit the phone view. The web version of the dashboard doesn't change.
+    Se abre la vista de edición de escritorio de teléfono. Aquí se puede liberar, cambiar de tamaño y reorganizar los mosaicos para ajustarse a la vista de teléfono. La versión web del panel no cambia.
 
     ![](media/powerbi-service-create-dashboard-phone-view/power-bi-phone-dashboard.png)
 
-3. Select a tile to drag, resize, or unpin it. You notice the other tiles move out of the way as you drag a tile.
+3. Seleccione un icono para arrastrar, cambiar el tamaño o Desanclar. Observe los otros iconos mover de forma mientras se arrastra un mosaico.
 
     ![](media/powerbi-service-create-dashboard-phone-view/power-bi-unpin-tile-phone-dashboard.png)
 
-    The unpinned tiles go in the Tiles pane, where they stay unless you add them back.
+    Los mosaicos desanclados ir en el panel de mosaicos, donde permanecen a menos que se vuelva a agregarlas.
 
     ![](media/powerbi-service-create-dashboard-phone-view/power-bi-phone-dashboard-in-progress.png)
 
-4. If you change your mind, select <bpt id="p1">**</bpt>Reset tiles<ept id="p1">**</ept> to put them back in the size and order they were before.
+4. Si cambia de opinión, seleccione **Restablecer mosaicos** para volver a ponerlo en el tamaño y el orden que se encontraban antes.
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Just opening Phone Edit view in the Power BI service slightly changes the size and shape of the tiles on a phone. So to return the dashboard to its exact state before you opened it in Phone Edit view, select <bpt id="p1">**</bpt>Reset phone view<ept id="p1">**</ept>.
+    >
+            **Nota**: simplemente abrir teléfono Editar vista de Power BI servicio cambia ligeramente el tamaño y la forma de los mosaicos en un teléfono. Para devolver el panel a su estado exacto antes de abrir en la vista Edición del teléfono, seleccione **Restablecer vista teléfono**.
 
-5. When you're satisfied with the phone dashboard layout, select the ellipsis (...) in the upper-right corner &gt; under <bpt id="p1">**</bpt>Edit View<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Web<ept id="p2">**</ept>.
+5. Cuando esté satisfecho con el diseño del panel de teléfono, seleccione el botón de puntos suspensivos (...) en la esquina superior derecha > bajo **Editar vista**, seleccione **Web**.
 
 ### Consulte también
 
-- [Get started with Power BI](powerbi-service-get-started.md)
-- [Dashboards in the Power BI mobile apps](powerbi-mobile-create-dashboard.md)
-- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Introducción a Power BI](powerbi-service-get-started.md)
+- [Paneles de las aplicaciones móviles de Power BI](powerbi-mobile-create-dashboard.md)
+- ¿Preguntas más frecuentes? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

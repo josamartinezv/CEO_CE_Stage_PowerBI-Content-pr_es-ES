@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect to Excel in Power BI Desktop"
-   description="Easily connect to and use Excel workbook data in Power BI Desktop"
+   pageTitle="Conectarse a Excel en Power BI Desktop"
+   description="Conectarse a y utilizar los datos de libro de Excel en Power BI Desktop fácilmente"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,47 +20,47 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Connect to Excel in Power BI Desktop
+# Conectarse a Excel en Power BI Desktop
 
-Connecting to an Excel workbook from Power BI Desktop is straightforward, and this article walks you through the steps.
+Conectarse a un libro de Excel desde Power BI Desktop es sencilla, y este artículo le guiará a través de los pasos.
 
-In Power BI Desktop, select <bpt id="p1">**</bpt>Get Data &gt; Excel<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon.
+En Power BI Desktop, seleccione **obtener datos > Excel** desde el **Inicio** cinta de opciones.
 
 
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_1.png)
 
-Select your workbook from the <bpt id="p1">**</bpt>Open<ept id="p1">**</ept> dialog that appears.
+Seleccione el libro desde el **abiertos** cuadro de diálogo que aparece.
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_2.png)
 
-Power BI Desktop presents the tables on other data elements from the workbook in the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window. When you select a table in the left pane, a preview of the data appears in the right pane.
+Power BI Desktop presenta las tablas en otros elementos de datos del libro en la **Navigator** ventana. Al seleccionar una tabla en el panel izquierdo, aparece una vista previa de los datos en el panel derecho.
 
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_3.png)
 
-You can select the Load button to import the data, or if you want to edit the data using <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> before bringing it into Power BI Desktop, select the <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> button.
+Puede seleccionar el botón Cargar para importar los datos, o si desea editar los datos mediante **Editor de consultas** antes de ponerla en Power BI Desktop, seleccione la **Editar** botón.
 
-When you load the data, Power BI Desktop displays the <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> window and displays the activity associated with loading the data.  
+Al cargar los datos, Power BI Desktop muestra la **cargar** ventana y muestra la actividad asociada a la carga de los datos.  
 
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_4.png)
 
-When complete, Power BI Desktop displays the tables and fields it imported from your Excel workbook in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, on the right side of the Desktop.
+Cuando haya finalizado, Power BI Desktop muestra las tablas y campos que importó el libro de Excel en la **campos** panel, en el lado derecho del escritorio.
 
 ![](media/powerbi-desktop-connect-excel/connect_to_Excel_5.png)
 
-And that’s it!
+Y eso es todo!
 
-You’re now ready to use the imported data from your Excel workbook in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as other Excel workbooks, databases, or any other data source.
+Ahora está preparado para utilizar los datos importados desde el libro de Excel en Power BI Desktop para crear efectos visuales, informes, o para interactuar con cualquier otro dato que desee conectar con e importar, como otros libros de Excel, las bases de datos o cualquier otro origen de datos.
 
 
 ## Más información
 
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+﻿Hay todo tipo de datos que puede conectarse con Power BI Desktop. Para obtener más información sobre los orígenes de datos, consulte los siguientes recursos:
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [Introducción a Power BI Desktop](powerbi-desktop-getting-started.md)
 
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+-   [Orígenes de datos en Power BI Desktop](powerbi-desktop-data-sources.md)
 
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [La forma y combinar datos con Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
--   [Connect to CSV files in Power BI Desktop](powerbi-desktop-connect-csv.md)   
+-   [Conectarse a un archivo CSV en Power BI Desktop](powerbi-desktop-connect-csv.md)   
 
--   [Enter data directly into Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   
+-   [Introducir datos directamente en Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   

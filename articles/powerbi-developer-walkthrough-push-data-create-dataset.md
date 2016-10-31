@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a dataset"
-   description="Walkthrough - Push data into a dashboard - Create a dataset in a Power BI dashboard"
+   pageTitle="Crear un conjunto de datos"
+   description="Tutorial: insertar datos en un panel: crear un conjunto de datos en un panel de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,35 +20,36 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 3: Create a dataset in a Power BI dashboard
+# Paso 3: Crear un conjunto de datos en un panel de Power BI
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+Este artículo forma parte de un tutorial paso a paso para [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md).
 
-In <bpt id="p1">**</bpt>step 2<ept id="p1">**</ept> of Push data into a dashboard, <bpt id="p2">[</bpt>Get an authentication access token<ept id="p2">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>, you got a token to authenticate to <bpt id="p3">**</bpt>Azure AD<ept id="p3">**</ept>. In this step, you use the token to call the <bpt id="p1">[</bpt>Create Dataset<ept id="p1">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> operation.
+En **paso 2** de insertar datos en un panel [obtener un acceso de autenticación token](powerbi-developer-walkthrough-push-data-get-token.md), obtuvo un token para autenticarse en **Azure AD**. En este paso, se utiliza el token para llamar la [Crear conjunto de datos](https://msdn.microsoft.com/library/mt203562.aspx) operación.
 
-To make a call to a REST resource, you use a url that locates the resource, and you send a JavaScript Object Notation (JSON) string, which describes the dataset, to the Power BI service resource. A REST resource identifies the part of the Power BI service you want to work with. To push data into the dashboard, the target resource is a <bpt id="p1">**</bpt>Dashboard Dataset<ept id="p1">**</ept>. The URL that identifies a dataset is https://api.PowerBI.com/v1.0/myorg/datasets. If you are pushing data within a group, the url is https://api.PowerBI.com/v1.0/myorg/groups/{group_id}/datasets.
+Para realizar una llamada a un recurso REST, utilice una dirección url que localiza el recurso y enviar una cadena de JavaScript Object Notation (JSON), que describe el conjunto de datos, para el recurso del servicio Power BI. Un recurso REST identifica la parte de la que desea trabajar con el servicio de Power BI. Para insertar datos en el panel, el recurso de destino es un **conjunto de datos del panel**. La dirección URL que identifica un conjunto de datos es https://api.PowerBI.com/v1.0/myorg/datasets. Si va a insertar datos de un grupo, la dirección url es https://api.PowerBI.com/v1.0/myorg/groups/ {group_id} / conjuntos de datos.
 
-To authenticate a Power BI REST operation, you add the token you got in <bpt id="p1">[</bpt>Get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept> to a request header:
+Para autenticar una operación de REST de Power BI, agregará el token que obtuvo en [obtener un acceso de autenticación token](powerbi-developer-walkthrough-push-data-get-token.md) a un encabezado de solicitud:
 
-When you call the <bpt id="p1">[</bpt>Create Dataset<ept id="p1">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> operation, a new dataset is created in your dashboard.
+Cuando se llama a la [Crear conjunto de datos](https://msdn.microsoft.com/library/mt203562.aspx) operación, se crea un nuevo conjunto de datos en el panel.
 
 ![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-create-dataset.png)
 
-Here's how to create a dataset in a Power BI dashboard.
+A continuación le mostramos cómo crear un conjunto de datos en un panel de Power BI.
 
-## Create a dataset in a Power BI dashboard
+## Crear un conjunto de datos en un panel de Power BI
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you get started, make sure you have followed the previous steps in the <bpt id="p2">[</bpt>push data into a dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data.md)</ept> walkthrough.
+>
+            **NOTA**: antes de comenzar, asegúrese de que ha seguido los pasos anteriores en el [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md) tutorial.
 
-1. In the Console Application project you created in <bpt id="p1">[</bpt>Step 2 - Get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>, add <bpt id="p2">**</bpt>using System.Net;<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>using System.IO;<ept id="p3">**</ept> to Program.cs.
-2. In Program.cs, add the code below.
-3. Run the Console App, and login to your Power BI account. You should see <bpt id="p1">**</bpt>Dataset Created<ept id="p1">**</ept> in the Console Window. Also, you can login to your dashboard to see the new dataset.
+1. En la aplicación de consola de proyecto que creó en [paso 2: obtener un token de acceso de autenticación](powerbi-developer-walkthrough-push-data-get-token.md), agregue **using System.Net;**, y **using System.IO;** en Program.cs.
+2. En Program.cs, agregue el código siguiente.
+3. Ejecutar la aplicación de consola e inicie sesión en su cuenta de Power BI. Debería ver **creó el conjunto de datos** en la ventana de consola. Además, puede iniciar sesión en el panel para ver el nuevo conjunto de datos.
 
-**Sample push data into a dashboard**
+**Insertar datos en un panel de ejemplo**
 
-Add this code into Program.cs.
+Agregue este código en Program.cs.
 
-- In static void Main(string[] args):
+- En static void Main (string [] args):
 
     ```
     static void Main(string[] args)
@@ -61,7 +62,7 @@ Add this code into Program.cs.
     }
     ```
 
-- Add a CreateDataset() method:
+- Agregue un método CreateDataset():
 
     ```
     #region Create a dataset in a Power BI dashboard
@@ -112,22 +113,22 @@ Add this code into Program.cs.
     #endregion
     ```
 
-The next step shows you how to <bpt id="p1">[</bpt>get a dataset to add rows into a Power BI table<ept id="p1">](powerbi-developer-walkthrough-push-data-get-datasets.md)</ept>.
+El paso siguiente muestra cómo al [obtener un conjunto de datos para agregar filas a una tabla de Power BI](powerbi-developer-walkthrough-push-data-get-datasets.md).
 
-Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept>.
+A continuación se muestra la [código completo](#code).
 
-[Next Step &gt;](powerbi-developer-walkthrough-push-data-get-datasets.md)
+[Siguiente paso >](powerbi-developer-walkthrough-push-data-get-datasets.md)
 
 ## Consulte también
-- [Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)
-- [Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)
-- [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [Obtiene un conjunto de datos para agregar filas a una tabla de Power BI](powerbi-developer-walkthrough-push-data-get-datasets.md)
+- [Obtener un acceso de autenticación token](powerbi-developer-walkthrough-push-data-get-token.md)
+- [Crear conjunto de datos](https://msdn.microsoft.com/library/mt203562.aspx)
+- [Insertar datos en un panel de Power BI](powerbi-developer-walkthrough-push-data.md)
+- [Información general sobre la API de REST de Power BI](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Referencia de API de REST de BI de energía](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
-## Complete code listing
+## Lista de código completa
 
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -240,4 +241,4 @@ Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept
         }
     }
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

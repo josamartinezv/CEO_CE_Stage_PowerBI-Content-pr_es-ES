@@ -1,37 +1,38 @@
-<properties pageTitle="Documentation Example - AZURE.NOTE Markdown Extension" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Inline code" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación - AZURE. NOTA la extensión de descuento" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Inline code" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - AZURE.NOTE Markdown Extension #
+# Por ejemplo, AZURE. NOTA la extensión de descuento #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the use of the AZURE.NOTE Markdown extension.  For more information about the AZURE.NOTE Markdown extension please see the WIKI   <bpt id="p1">[</bpt>here<ept id="p1">](https://github.com/Azure/azure-content-test/wiki/markdown-extensions-notes)</ept>.
+El contenido entre las líneas siguientes muestra el uso de AZURE. Tenga en CUENTA la extensión de descuento.  Para obtener más información acerca de AZURE. Tenga en CUENTA la extensión de descuento, consulte el sitio WIKI   [aquí](https://github.com/Azure/azure-content-test/wiki/markdown-extensions-notes).
 
 ---
-## AZURE.NOTE ##
+## AZURE. TENGA EN CUENTA ##
 
-Here is an example of a AZURE.NOTE:
+Este es un ejemplo de una de AZURE. NOTA:
 
 ````lang-html
 > [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE.NOTE] Para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 ---
-## AZURE.NOTE with custom heading##
+## AZURE. Tenga en CUENTA con un encabezado personalizado##
 
-Here is an example of a AZURE.NOTE:
+Este es un ejemplo de una de AZURE. NOTA:
 
 ````lang-html
 > [AZURE.NOTE (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> <bpt id="p1">[AZURE.NOTE (</bpt>some heading<ept id="p1">)]</ept> To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> 
+            [AZURE.NOTE (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 ---
-## AZURE.NOTE with multiple paragraphs ##
+## AZURE. Tenga en CUENTA con varios párrafos ##
 
-Here is an example of a AZURE.NOTE with multiple paragraphs:
+Este es un ejemplo de una de AZURE. Tenga en CUENTA con varios párrafos:
 
 ````lang-html
 > [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Azure account. 
@@ -39,45 +40,45 @@ Here is an example of a AZURE.NOTE with multiple paragraphs:
 > If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/pricing/free-trial/) in just a couple of minutes. 
 ````
 
-> [AZURE.NOTE] To complete this tutorial, you must have an Microsoft Azure account. 
+> [AZURE.NOTE] Para completar este tutorial, debe tener una cuenta de Microsoft Azure. 
 > 
-> If you don't have an account, you can <bpt id="p1">[</bpt>create a free trial account<ept id="p1">](https://azure.microsoft.com/pricing/free-trial/)</ept> in just a couple of minutes. 
+> Si no tiene una cuenta, puede [crear una cuenta gratuita](https://azure.microsoft.com/pricing/free-trial/) en tan solo unos minutos. 
 
 ---
-## AZURE.NOTE with inline links and formatting ##
+## AZURE. Tenga en CUENTA con formato y vínculos en línea ##
 
-Here is an example of a AZURE.NOTE with an inline link and inline formatting for bold and italics:
+Este es un ejemplo de una de AZURE. Tenga en CUENTA con un vínculo en línea y el formato en línea para aplicar negrita y cursiva:
 
 ````lang-html
 > [AZURE.NOTE] To complete this tutorial, you must have an _active_ **Microsoft Azure account**. If you don't have an account, you can [create a free trial account](https://azure.microsoft.com/pricing/free-trial/) in just a couple of minutes. 
 ````
 
-> [AZURE.NOTE] To complete this tutorial, you must have an <bpt id="p1">_</bpt>active<ept id="p1">_</ept> <bpt id="p2">**</bpt>Microsoft Azure account<ept id="p2">**</ept>. If you don't have an account, you can <bpt id="p1">[</bpt>create a free trial account<ept id="p1">](https://azure.microsoft.com/pricing/free-trial/)</ept> in just a couple of minutes. 
+> [AZURE.NOTE] Para completar este tutorial, debe tener un _active_ **cuenta de Microsoft Azure**. Si no tiene una cuenta, puede [crear una cuenta gratuita](https://azure.microsoft.com/pricing/free-trial/) en tan solo unos minutos. 
 
 ---
 
-## AZURE.NOTE with inline code ##
+## AZURE. Tenga en CUENTA con código en línea ##
 
-Here is an example of a AZURE.NOTE with an inline code:
+Este es un ejemplo de una de AZURE. Tenga en CUENTA con un código en línea:
 
 ````lang-html
 > [AZURE.NOTE] When deploying to a Microsoft Azure Web Site, if your package.json file references a native module you will see an error similar to the following when publishing the application using Git:
 ````
-npm ERR! module-name@0.6.0 install: <ph id="ph1">`node-gyp configure build`</ph> npm ERR! `cmd "/c" "node-gyp configure build"` failed with 1
+¡NPM ERR! instalar Module-Name@0.6.0: `node-gyp configure build` npm ERR! `cmd "/c" "node-gyp configure build"` no se pudo con 1
 ````
 ````
 
-> [AZURE.NOTE] When deploying to a Microsoft Azure Web Site, if your package.json file references a native module you will see an error similar to the following when publishing the application using Git:
+> [AZURE.NOTE] Cuando se implementa en un sitio Web de Microsoft Azure, si el archivo package.json hace referencia a un módulo nativo verá un error similar al siguiente cuando publique la aplicación con Git:
 ````
 npm ERR! module-name@0.6.0 install: `node-gyp configure build`
 npm ERR! `cmd "/c" "node-gyp configure build"` failed with 1
 ````
 
 ---
-## AZURE.NOTE With multiple paragraphs, lists and images ##
+## AZURE. Tenga en CUENTA con varios párrafos, listas e imágenes ##
 
 
-Here is an example of a AZURE.NOTE with custom heading:
+Este es un ejemplo de una de AZURE. Tenga en CUENTA con un título personalizado:
 
 ````lang-html
 > [AZURE.NOTE (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
@@ -98,55 +99,56 @@ Here is an example of a AZURE.NOTE with custom heading:
 > Some text
 ````
 
-> <bpt id="p1">[AZURE.NOTE (</bpt>some heading<ept id="p1">)]</ept> To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> 
+            [AZURE.NOTE (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
-> * List 1
-> * List 2
-> * List 3
-> * List 4
+> * Lista 1
+> * Lista 2
+> * Lista 3
+> * Lista 4
 
 > ````C#
 >   some code   
 > ````
 
-> Some text
+> Parte del texto
 
-> ![windows-azure-logo](./media/example-azure-note/windows-azure.png)
+> ![logotipo de Windows azure](./media/example-azure-note/windows-azure.png)
         
-> Some text
+> Parte del texto
 
 
 
 ---
 
-## AZURE.WARNING##
+## AZURE. ADVERTENCIA##
 
-Here is an example of a AZURE.WARNING:
+Este es un ejemplo de una de AZURE. ADVERTENCIA:
 
 ````lang-html
 > [AZURE.WARNING] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> [AZURE.WARNING] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE.WARNING] Para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 ---
 
-## AZURE.WARNING With custom title ##
+## AZURE. ADVERTENCIA con título personalizado ##
 
 
-Here is an example of a AZURE.WARNING with custom heading:
+Este es un ejemplo de una de AZURE. ADVERTENCIA de encabezado personalizado:
 
 ````lang-html
 > [AZURE.WARNING (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> [AZURE.WARNING (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE. ADVERTENCIA (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 ---
-## AZURE.WARNING With multiple paragraphs, lists and images ##
+## AZURE. ADVERTENCIA con varios párrafos, listas e imágenes ##
 
 
-Here is an example of a AZURE.WARNING with custom heading:
+Este es un ejemplo de una de AZURE. ADVERTENCIA de encabezado personalizado:
 
 ````lang-html
 > [AZURE.WARNING (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
@@ -167,54 +169,54 @@ Here is an example of a AZURE.WARNING with custom heading:
 > Some text
 ````
 
-> [AZURE.WARNING (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE. ADVERTENCIA (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
-> * List 1
-> * List 2
-> * List 3
-> * List 4
+> * Lista 1
+> * Lista 2
+> * Lista 3
+> * Lista 4
 
 > ````C#
 >   some code   
 > ````
 
-> Some text
+> Parte del texto
 
-> ![windows-azure-logo](./media/example-azure-note/windows-azure.png)
+> ![logotipo de Windows azure](./media/example-azure-note/windows-azure.png)
         
-> Some text
+> Parte del texto
 
 
 ---
 ## AZURE.INFORMATION ##
 
 
-Here is an example of a AZURE.INFORMATION with custom heading:
+Este es un ejemplo de un AZURE.INFORMATION con título personalizado:
 
 ````lang-html
 > [AZURE.INFORMATION] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> [AZURE.INFORMATION] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE.INFORMATION] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 
 ---
-## AZURE.INFORMATION With custom title ##
+## AZURE.INFORMATION con título personalizado ##
 
 
-Here is an example of a AZURE.INFORMATION with custom heading:
+Este es un ejemplo de un AZURE.INFORMATION con título personalizado:
 
 ````lang-html
 > [AZURE.INFORMATION (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> [AZURE.INFORMATION (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE.INFORMATION (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 ---
-## AZURE.INFORMATION With multiple paragraphs, lists and images ##
+## AZURE.INFORMATION con varios párrafos, listas e imágenes ##
 
 
-Here is an example of a AZURE.INFORMATION with custom heading:
+Este es un ejemplo de un AZURE.INFORMATION con título personalizado:
 
 ````lang-html
 > [AZURE.INFORMATION (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
@@ -235,55 +237,55 @@ Here is an example of a AZURE.INFORMATION with custom heading:
 > Some text
 ````
 
-> [AZURE.INFORMATION (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE.INFORMATION (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
-> * List 1
-> * List 2
-> * List 3
-> * List 4
+> * Lista 1
+> * Lista 2
+> * Lista 3
+> * Lista 4
 
 > ````C#
 >   some code   
 > ````
 
-> Some text
+> Parte del texto
 
-> ![windows-azure-logo](./media/example-azure-note/windows-azure.png)
+> ![logotipo de Windows azure](./media/example-azure-note/windows-azure.png)
         
-> Some text
+> Parte del texto
 
 
 
 ---
-## AZURE.TIP ##
+## AZURE. SUGERENCIA ##
 
 
-Here is an example of a AZURE.TIP with custom heading:
+Este es un ejemplo de una de AZURE. SUGERENCIA con título personalizado:
 
 ````lang-html
 > [AZURE.TIP ] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> [AZURE.TIP] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE.TIP] Para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 
 ---
-## AZURE.TIP With custom title ##
+## AZURE. SUGERENCIA con título personalizado ##
 
 
-Here is an example of a AZURE.TIP with custom heading:
+Este es un ejemplo de una de AZURE. SUGERENCIA con título personalizado:
 
 ````lang-html
 > [AZURE.TIP (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> [AZURE.TIP (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE. SUGERENCIA (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 ---
-## AZURE.TIP With multiple paragraphs, lists and images ##
+## AZURE. SUGERENCIA con varios párrafos, listas e imágenes ##
 
 
-Here is an example of a AZURE.TIP with custom heading:
+Este es un ejemplo de una de AZURE. SUGERENCIA con título personalizado:
 
 ````lang-html
 > [AZURE.TIP (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
@@ -304,56 +306,56 @@ Here is an example of a AZURE.TIP with custom heading:
 > Some text
 ````
 
-> [AZURE.TIP (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE. SUGERENCIA (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
-> * List 1
-> * List 2
-> * List 3
-> * List 4
+> * Lista 1
+> * Lista 2
+> * Lista 3
+> * Lista 4
 
 > ````C#
 >   some code   
 > ````
 
-> Some text
+> Parte del texto
 
-> ![windows-azure-logo](./media/example-azure-note/windows-azure.png)
+> ![logotipo de Windows azure](./media/example-azure-note/windows-azure.png)
         
-> Some text
+> Parte del texto
 
 
 
 ---
-## AZURE.IMPORTANT ##
+## AZURE. IMPORTANTE ##
 
 
-Here is an example of a AZURE.IMPORTANT with custom heading:
+Este es un ejemplo de una de AZURE. IMPORTANTE con título personalizado:
 
 ````lang-html
 > [AZURE.IMPORTANT] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> [AZURE.IMPORTANT] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE.IMPORTANT] Para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 
 ---
-## AZURE.IMPORTANT With custom title ##
+## AZURE. IMPORTANTE con título personalizado ##
 
 
-Here is an example of a AZURE.TIP with custom heading:
+Este es un ejemplo de una de AZURE. SUGERENCIA con título personalizado:
 
 ````lang-html
 > [AZURE.IMPORTANT (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
 ````
 
-> [AZURE.IMPORTANT (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE. IMPORTANTE (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 
 ---
-## AZURE.IMPORTANT With multiple paragraphs, lists and images ##
+## AZURE. IMPORTANTE con varios párrafos, listas e imágenes ##
 
 
-Here is an example of a AZURE.IMPORTANT with custom heading:
+Este es un ejemplo de una de AZURE. IMPORTANTE con título personalizado:
 
 ````lang-html
 > [AZURE.IMPORTANT (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
@@ -374,27 +376,27 @@ Here is an example of a AZURE.IMPORTANT with custom heading:
 > Some text
 ````
 
-> [AZURE.IMPORTANT (some heading)] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE. IMPORTANTE (algún encabezado)] para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
-> * List 1
-> * List 2
-> * List 3
-> * List 4
+> * Lista 1
+> * Lista 2
+> * Lista 3
+> * Lista 4
 
 > ````C#
 >   some code   
 > ````
 
-> Some text
+> Parte del texto
 
-> ![windows-azure-logo](./media/example-azure-note/windows-azure.png)
+> ![logotipo de Windows azure](./media/example-azure-note/windows-azure.png)
         
-> Some text
+> Parte del texto
 
 ---
-## AZURE.NOTE Example ##
+## AZURE. Ejemplo de NOTA ##
 
-Here is an example of a AZURE.NOTE with custom heading:
+Este es un ejemplo de una de AZURE. Tenga en CUENTA con un título personalizado:
 
 ````lang-html
 > [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Azure account. If you don't have an account, you can create a free trial account in just a couple of minutes. 
@@ -402,8 +404,8 @@ Here is an example of a AZURE.NOTE with custom heading:
 >
 ````
 
-> [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE.NOTE] Para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
 
 <br />
 
-> [AZURE.NOTE] To complete this tutorial, you must have an active Microsoft Azure account. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 
+> [AZURE.NOTE] Para completar este tutorial, debe tener una cuenta activa de Microsoft Azure. Si no tiene una cuenta, puede crear una cuenta de evaluación gratuita en un par de minutos. 

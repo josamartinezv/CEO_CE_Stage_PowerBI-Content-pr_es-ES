@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Enter data directly into Power BI Desktop"
-   description="Easily add data directly into Power BI Desktop"
+   pageTitle="Introducir datos directamente en Power BI Desktop"
+   description="Agregar fácilmente los datos directamente en Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,40 +20,40 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Enter data directly into Power BI Desktop
+# Introducir datos directamente en Power BI Desktop
 
-With Power BI Desktop, you can enter data directly and use that data in your reports and visualizations. For example, you can copy portions of a workbook or web page, then paste it into Power BI Desktop.
+Con Power BI Desktop, puede escribir directamente los datos y usar esos datos en los informes y visualizaciones. Por ejemplo, puede copiar partes de un libro o una página web, a continuación, péguelo en Power BI Desktop.
 
-To enter data directly, select <bpt id="p1">**</bpt>Enter Data<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon.
+Para escribir los datos directamente, seleccione **Escriba datos** desde el **Inicio** cinta de opciones.
 
 ![](media/powerbi-desktop-enter-data-directly-into-desktop/enter-data-directly_1.png)
 
-Power BI Desktop may attempt to make minor transformations on the data, if appropriate, just like it does when you load data from any source. For example, in the following case it promoted the first row of data to headers.
+Power BI Desktop puede intentar realizar transformaciones menores en los datos, si no adecuado, al igual al cargar datos desde cualquier origen. Por ejemplo, en el caso siguiente que promueve la primera fila de datos a los encabezados.
 
 ![](media/powerbi-desktop-enter-data-directly-into-desktop/enter-data-directly_2.png)
 
-If you want to shape the data you entered (or pasted), you can select the Edit button to bring up <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>, where you can shape and transform the data before bringing it into Power BI Desktop. Or you can select the <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> button to import the data as it appears.
+Si desea que los datos de formas especificado (o pegado), puede seleccionar el botón Editar para que aparezca **Editor de consultas**, donde puede dar forma y transformar los datos antes de ponerla en Power BI Desktop. O puede seleccionar la **carga** botón para importar los datos tal y como aparece.
 
-When you select <bpt id="p1">**</bpt>Load<ept id="p1">**</ept>, Power BI Desktop creates a new table from your data, and makes it available in the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane. In the following image, Power BI Desktop shows my new table, called <bpt id="p1">*</bpt>Table1<ept id="p1">*</ept> by default, and the two fields within that table that were created.
+Al seleccionar **carga**, Power BI Desktop crea una nueva tabla a partir de los datos y hace que esté disponible en la **campos** panel. En la siguiente imagen, se muestra la nueva tabla, denominada Power BI Desktop *Table1* de forma predeterminada, y los dos campos dentro de esa tabla que se crearon.
 
 ![](media/powerbi-desktop-enter-data-directly-into-desktop/enter-data-directly_3.png)
 
-And that’s it – it’s that easy to enter data into Power BI Desktop.
+Y eso es todo, resulta fácil escribir datos en Power BI Desktop.
 
-You’re now ready to use the data in Power BI Desktop to create visuals, reports, or interact with any other data you might want to connect with and import, such as Excel workbooks, databases, or any other data source.
+Ahora está preparado para utilizar los datos en Power BI Desktop para crear efectos visuales, informes, o para interactuar con cualquier otro dato que desee conectar con e importar, como libros de Excel, las bases de datos o cualquier otro origen de datos.
 
 
 
 ## Más información
 
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+﻿Hay todo tipo de datos que puede conectarse con Power BI Desktop. Para obtener más información sobre los orígenes de datos, consulte los siguientes recursos:
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [Introducción a Power BI Desktop](powerbi-desktop-getting-started.md)
 
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+-   [Orígenes de datos en Power BI Desktop](powerbi-desktop-data-sources.md)
 
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [La forma y combinar datos con Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
--   [Connect to Excel workbooks in Power BI Desktop](powerbi-desktop-connect-excel.md)   
+-   [Conectarse a libros de Excel en Power BI Desktop](powerbi-desktop-connect-excel.md)   
 
--   [Connect to CSV files in Power BI Desktop](powerbi-desktop-connect-csv.md)   
+-   [Conectarse a un archivo CSV en Power BI Desktop](powerbi-desktop-connect-csv.md)   

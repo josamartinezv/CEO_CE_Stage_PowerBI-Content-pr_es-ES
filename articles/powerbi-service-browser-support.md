@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Supported browsers for Power BI"
-   description="Supported browsers for Power BI"
+   pageTitle="Exploradores compatibles para Power BI"
+   description="Exploradores compatibles para Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,16 +20,17 @@
    ms.date="10/14/2016"
    ms.author="maggies"/>
 
-# <a name="supported-browsers-for-power-bi"></a>Supported browsers for Power BI  
+# <a name="supported-browsers-for-power-bi"></a>Exploradores compatibles para Power BI  
 
-We support Power BI in these browsers:
+Power BI se admite los siguientes exploradores:
 
 -   Microsoft Edge
 -   Internet Explorer 11
--   Chrome desktop latest version
--   Safari Mac latest version
--   Firefox desktop latest version
+-   Última versión de escritorio de Chrome
+-   Versión más reciente de Safari Mac
+-   Última versión de escritorio de Firefox
 
 ### <a name="see-also"></a>Consulte también 
-- <bpt id="p1">[</bpt>Get started with Power BI<ept id="p1">](powerbi-service-get-started.md)</ept> 
-- Try asking the <bpt id="p1">[</bpt>Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [Introducción a Power BI](powerbi-service-get-started.md) 
+- Pruebe a formular la [Comunidad de Power BI](http://community.powerbi.com/)

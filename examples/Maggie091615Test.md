@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="maggie test" 
-   description="maggie test description" 
+   pageTitle="prueba de maggie" 
+   description="Descripción de la prueba de maggie" 
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,4 +19,4 @@
 
 
 # Maggie091615test
-Wow, back to this. Hard to believe.
+WOW, devuelva a esta. Difícil de creer.

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Delete a page from a Power BI report"
-   description="Delete a page from a Power BI report"
+   pageTitle="Eliminar una página de un informe de Power BI"
+   description="Eliminar una página de un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,16 +20,16 @@
    ms.date="10/01/2016"
    ms.author="mihart"/>
 
-# Delete a page from a Power BI report
+# Eliminar una página de un informe de Power BI
 
-Hover over the tab of the page to delete and click the <bpt id="p1">**</bpt>X<ept id="p1">**</ept> (in the top right corner).  Sometimes the X is hard to see.
+Mantenga el mouse sobre la ficha de la página que desea eliminar y haga clic en el **X** (en la esquina superior derecha).  A veces la X es difícil ver.
 
 ![](media/powerbi-service-delete-a-page-from-a-report/deletepage.gif)
 
 ### Consulte también
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)﻿
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)﻿
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

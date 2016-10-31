@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Upload Excel data to Power BI"
-   description="See how easy it is to upload an Excel workbook to Power BI"
+   pageTitle="Cargar datos de Excel en Power BI"
+   description="Vea lo fácil que es cargar un libro de Excel en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,29 +23,29 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Import an Excel table into Power BI
+# Importar una tabla de Excel en Power BI
 
-In this topic, we'll first take a look at how you can import an Excel workbook file containing a simple <bpt id="p1">**</bpt>table<ept id="p1">**</ept> from a local drive into Power BI. You'll then learn how you can begin exploring that table's data in Power BI by creating a report.
+En este tema, en primer lugar echaremos un vistazo a cómo importar un archivo de libro de Excel que contiene un sencillo **tabla** desde una unidad local en Power BI. A continuación, aprenderá cómo puede empezar a explorar los datos de la tabla en Power BI mediante la creación de un informe.
 
-## Make sure your data is formatted as a table
-In order for Power BI to import data from your workbook, that data needs to be  <bpt id="p1">**</bpt>formatted as a table<ept id="p1">**</ept>. It's easy. In Excel, you can highlight a range of cells, then on the <bpt id="p1">**</bpt>Insert<ept id="p1">**</ept> tab of the Excel ribbon, click <bpt id="p2">**</bpt>Table<ept id="p2">**</ept>.
+## Asegúrese de que los datos tienen formato de una tabla
+Para Power BI importar datos de un libro, que los datos deben ser  **con formato de tabla**. Es fácil. En Excel, puede resaltar un rango de celdas, a continuación, en la **Insertar** ficha de la cinta de opciones de Excel, haga clic en **tabla**.
 
 ![](media/powerbi-learning-5-2-upload-excel/5-2_1.png)
 
-You'll want to make sure each column has a good name. It will make it easier to find the data you want when creating your reports in Power BI.
+Desea asegurarse de que cada columna tiene un nombre adecuado. Hará más fácil encontrar los datos que desee para crear los informes en Power BI.
 
-## Import from a local drive
-Wherever you keep your files, Power BI makes it easy to import them. In Power BI, you can use <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Files<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Local File<ept id="p3">**</ept>, to find and select the Excel file we want.
+## Importar desde una unidad local
+Donde guardar los archivos, Power BI facilita la importación. En Power BI, puede usar **obtener datos** > **archivos** > **archivo Local**, para buscar y seleccionar el archivo de Excel que queremos.
 
 ![](media/powerbi-learning-5-2-upload-excel/5-2_2.png)
 
-Once imported into Power BI, you can begin creating reports.
+Una vez importado en Power BI, puede empezar a crear informes.
 
-Your files don't have to be on a local drive, of course. If you save your files on OneDrive or SharePoint Team Site, that's even better. We'll go into more details about that in a later topic.
+Los archivos no tienen que estar en una unidad local, por supuesto. Si guarda los archivos en OneDrive o sitio de SharePoint Team, que es aún mejor. Vamos a más detalles sobre esto en un tema más adelante.
 
-## Start creating reports
-Once your workbook's data has been imported, a dataset is created in Power BI. It appears under <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept>. Now you can begin exploring your data by creating reports and dashboards. Just click on the <bpt id="p1">**</bpt>Open menu<ept id="p1">**</ept> icon next to the dataset and then click <bpt id="p2">**</bpt>Explore<ept id="p2">**</ept>. A new blank report canvas appears. Over on the right, under <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept>, you'll see your tables and columns. Just select the fields you want to create a new visualization on the canvas.
+## Iniciar la creación de informes
+Una vez que se ha importado los datos del libro, se crea un conjunto de datos en Power BI. Aparece en **conjuntos de datos**. Ahora puede empezar a explorar los datos mediante la creación de informes y paneles. Haga clic en el **menú Abrir** icono junto al conjunto de datos y, a continuación, haga clic en **Explorar**. Aparece un nuevo lienzo de informe en blanco. Over a la derecha, bajo **campos**, verá las tablas y columnas. Seleccione los campos que desea crear una nueva visualización en el lienzo.
 
 ![](media/powerbi-learning-5-2-upload-excel/5-2_3.png)
 
-You can change the type of visualization and apply <bpt id="p1">**</bpt>filters<ept id="p1">**</ept> and other properties under <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept>.
+Puede cambiar el tipo de visualización y aplicar **filtros** y otras propiedades en **visualizaciones**.

@@ -1,7 +1,7 @@
-## Using the username() DAX function
+## Mediante la función DAX username()
 
-You can take advantage of the DAX function <bpt id="p1">*</bpt>username()<ept id="p1">*</ept> within your dataset. You can use it within expressions in Power BI Desktop. When you publish your model, it will be used within the Power BI service.
+Puede sacar partido de la función DAX *username()* dentro del conjunto de datos. Puede usarlo dentro de las expresiones en Power BI Desktop. Cuando se publica el modelo, se utilizará en el servicio Power BI.
 
-Within Power BI Desktop, <bpt id="p1">*</bpt>username()<ept id="p1">*</ept> will return a user in the format of <bpt id="p2">*</bpt>DOMAIN\User<ept id="p2">*</ept>.
+En Power BI Desktop, *username()* devolverá un usuario en el formato de *dominio\usuario*.
 
-Within the Power BI service, <bpt id="p1">*</bpt>username()<ept id="p1">*</ept> will return the user's User Principal Name (UPN). This looks similar to an email address.
+Dentro del servicio Power BI, *username()* devolverá el nombre de entidad de seguridad usuario (UPN) del usuario. Esto es similar a una dirección de correo electrónico.

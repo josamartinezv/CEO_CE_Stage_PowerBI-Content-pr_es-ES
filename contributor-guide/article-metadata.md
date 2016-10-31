@@ -1,17 +1,17 @@
 
 
-#Metadata for Power BI technical articles
+#Metadatos de artículos técnicos de Power BI
 
-All Power BI technical articles contain two metadata sections - a properties section and a tags section. La sección de propiedades habilita algunos elementos relacionados con la automatización del sitio web y la SEO, mientras que la de etiquetas permite la creación de una gran cantidad de informes de contenido interno. Ambas secciones resultan necesarias.
+Todos los artículos técnicos de Power BI contienen dos secciones de metadatos: una sección de propiedades y una sección de etiquetas. La sección de propiedades habilita algunos elementos relacionados con la automatización del sitio web y la SEO, mientras que la de etiquetas permite la creación de una gran cantidad de informes de contenido interno. Ambas secciones resultan necesarias.
 
 - [Sintaxis]
 - [Uso]
-- [Attributes and values for the properties section]
-- [Attributes and values for the tags section]
+- [Atributos y valores de la sección de propiedades]
+- [Atributos y valores de la sección de etiquetas]
 
 ##Sintaxis
 
-The properties section uses this syntax:
+La sección propiedades utiliza esta sintaxis:
 
     <properties
        pageTitle="<Page title that displays in search results and the browser tab | Microsoft Power BI>"
@@ -23,7 +23,7 @@ The properties section uses this syntax:
        editor="NA"
        tags="NA"/>
 
-The tags section uses this syntax:
+La sección etiquetas, utiliza esta sintaxis:
 
     <tags
        ms.service="powerbi"
@@ -37,54 +37,73 @@ The tags section uses this syntax:
 ##Uso
 
 - Se distingue entre mayúsculas y minúsculas en los nombres del elemento y de los atributos.
-- La opción <properties> section must be the first line of your file.
+- La opción <properties> sección debe ser la primera línea del archivo.
 - Deje una línea en blanco después de cada sección de metadatos y antes del título de la página para asegurarse de que este último se convierta correctamente a HTML durante el proceso de publicación.
 
-## Attributes and values for the properties section
+## Atributos y valores de la sección de propiedades
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>pageTitle<ept id="p1">**</ept>: Required; important to SEO. El texto de este atributo aparece en la pestaña del navegador y como el título en los resultados de búsqueda. Use 55-60 characters including spaces and including the site identifier <bpt id="p1">*</bpt>| Microsoft Power BI<ept id="p1">*</ept> (typed as: space pipe space Microsoft Power BI).
+![](./media/article-metadata/checkmark-small.png)
+            **pageTitle**: necesario; importante SEO. El texto de este atributo aparece en la pestaña del navegador y como el título en los resultados de búsqueda. Utilice 55 y 60 caracteres incluidos los espacios e incluya el identificador de sitio *| Microsoft Power BI* (tipo: espacio espacio canalización Microsoft Power BI).
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>description<ept id="p1">**</ept>: Required; important for SEO (relevance) and site functionalities. Use at least 140 characters, but don't exceed 170 characters including spaces. Describe the  purpose of your content so customers will know whether to choose it from a list of search results. The value is usually displayed as the description or abstract paragraph in search results.
+![](./media/article-metadata/checkmark-small.png)
+            **descripción**: necesario; importante para SEO (relevancia) y funcionalidades de sitio. Utilice al menos de 140 caracteres, pero no superar 170 caracteres incluidos los espacios. Describir el propósito de su contenido para que los clientes sepa si debe elegir de una lista de resultados de búsqueda. El valor se muestra normalmente como la descripción o el párrafo abstracta en resultados de búsqueda.
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>services<ept id="p1">**</ept>: Always "powerbi" for Power BI content (Azure has multiple options).
+![](./media/article-metadata/checkmark-small.png)
+            **servicios**: siempre "powerbi" para el contenido de Power BI (Azure tiene varias opciones).
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>documentationCenter<ept id="p1">**</ept>: "NA" for Power BI content.
+![](./media/article-metadata/checkmark-small.png)
+            **documentationCenter**: "NA" para el contenido de Power BI.
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>authors<ept id="p1">**</ept>: Required, one value only. Indique la cuenta de GitHub del autor principal o del SME del artículo. Este atributo activa la línea de autor en el artículo publicado. Especifique tan solo un valor, a pesar de la forma plural del nombre del atributo.
+![](./media/article-metadata/checkmark-small.png)
+            **los autores**: requiere un único valor. Indique la cuenta de GitHub del autor principal o del SME del artículo. Este atributo activa la línea de autor en el artículo publicado. Especifique tan solo un valor, a pesar de la forma plural del nombre del atributo.
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>manager<ept id="p1">**</ept>: Required if you are a Microsoft contributor. List the alias of the content publishing manager for the technology area. Si es un colaborador de la comunidad, incluya el atributo, pero déjelo vacío para que podamos rellenarlo.
+![](./media/article-metadata/checkmark-small.png)
+            **Administrador de**: necesario si es un colaborador de Microsoft. El alias del Administrador de publicación de contenido para el área de tecnología de la lista. Si es un colaborador de la comunidad, incluya el atributo, pero déjelo vacío para que podamos rellenarlo.
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>editor<ept id="p1">**</ept>: "NA" - Not used. No lo utilice para otros fines.
+![](./media/article-metadata/checkmark-small.png)
+            **Editor de**: "NA" - no utilizado. No lo utilice para otros fines.
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>tags<ept id="p1">**</ept>: "NA" for Power BI content.
+![](./media/article-metadata/checkmark-small.png)
+            **etiquetas**: "NA" para el contenido de Power BI.
 
 
-## Attributes and values for the tags section
+## Atributos y valores de la sección de etiquetas
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.service<ept id="p1">**</ept>: Always "powerbi" for Power BI content (Azure has multiple options).
+![](./media/article-metadata/checkmark-small.png)
+            **MS.Service**: siempre "powerbi" para el contenido de Power BI (Azure tiene varias opciones).
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.devlang<ept id="p1">**</ept>: "NA" for Power BI content.
+![](./media/article-metadata/checkmark-small.png)
+            **MS.DevLang**: "NA" para el contenido de Power BI.
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.topic<ept id="p1">**</ept>: Required. Specifies the topic type. La mayoría de las páginas nuevas que crean los colaboradores serán artículos o material de referencia. NOTE: the list below is from Azure, and I have removed some of the options that definitely aren't valid for Power BI. We will decide how to use the remaining options as our site architecture is developed. If in doubt, use "article". 
+![](./media/article-metadata/checkmark-small.png)
+            **MS.topic**: requerido. Especifica el tipo de tema. La mayoría de las páginas nuevas que crean los colaboradores serán artículos o material de referencia. NOTA: la lista siguiente es de Azure y he quitado algunas de las opciones que definitivamente no son válidas para Power BI. Decidimos cómo usar las opciones restantes como se desarrolla nuestra arquitectura de sitio. En caso de duda, utilice "artículo". 
 
  - 
             **article**: un tema conceptual, un tutorial, una guía de funciones u otro artículo que no sea de referencia.
 
- - <bpt id="p1">**</bpt>campaign-page<ept id="p1">**</ept>: A page that is specifically designed as a landing page for external campaigns, and is not included as part of the primary site IA.  Should not be used for documentation articles or regular doc landing pages.
+ - 
+            **página de campaña**: una página que está específicamente diseñada como una página de aterrizaje de campañas externas y no se incluye como parte del sitio primario IA.  No debe utilizarse para artículos de documentación o doc regular las páginas de inicio.
 
- - <bpt id="p1">**</bpt>get-started-article<ept id="p1">**</ept>: Assign to articles that are featured in the Get Started section of the left navigation for a service.
+ - 
+            **artículo iniciado Get**: asignar a los artículos que se muestran en la sección de introducción de la izquierda para un servicio.
 
- - <bpt id="p1">**</bpt>hero-article<ept id="p1">**</ept>: A "hero" tutorial that is designed to provide an introduction to a service or feature that gets visitors started using the service quickly and drives free-trial sign-ups and MSDN activations. Asigne este valor SOLO a los artículos que se destaquen en la parte superior de la página de destino de la documentación del servicio.
+ - 
+            **artículo héroe**: un tutorial de "hero" que está diseñado para proporcionar una introducción a un servicio o característica que obtiene los visitantes a usar el servicio rápidamente y unidades de suscripciones de prueba gratuita y las activaciones de MSDN. Asigne este valor SOLO a los artículos que se destaquen en la parte superior de la página de destino de la documentación del servicio.
 
- - <bpt id="p1">**</bpt>home-page<ept id="p1">**</ept>: Top level documentation home page.
+ - 
+            **página principal**: página principal de documentación de nivel superior.
 
- - <bpt id="p1">**</bpt>infographic-page<ept id="p1">**</ept>: A page that features a browsable infographic or poster.
+ - 
+            **página infografía**: una página que incluye un infografía browsable o póster.
 
- - <bpt id="p1">**</bpt>reference<ept id="p1">**</ept>: An API or language reference page (including REST API).
+ - 
+            **referencia**: página de referencia de una API o lenguaje (incluida la API de REST).
 
- - <bpt id="p1">**</bpt>video-page<ept id="p1">**</ept>: A page that features a video.
+ - 
+            **página de vídeo**: una página que incluye un vídeo.
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.tgt_pltfrm<ept id="p1">**</ept>: Required. Specifies the target platform. This value will be <bpt id="p1">**</bpt>NA<ept id="p1">**</ept> for most topics. NOTE: Still detemining whether we should use this for our mobile content.
+![](./media/article-metadata/checkmark-small.png)
+            **MS.tgt_pltfrm**: requerido. Especifica la plataforma de destino. Este valor será **NA** para la mayoría de los temas. NOTA: Todavía detemining si debemos usar nuestro contenido para dispositivos móviles.
 
  - **mobile-android**
  - **mobile-html**
@@ -93,14 +112,17 @@ The tags section uses this syntax:
  - **múltiple**
  - **N/D**
 
-![](./media/article-metadata/checkmark-small.png)<bpt id="p1">**</bpt>ms.workload<ept id="p1">**</ept>: Always "powerbi" for Power BI content (Azure has multiple options).
+![](./media/article-metadata/checkmark-small.png)
+            **MS.Workload**: siempre "powerbi" para el contenido de Power BI (Azure tiene varias opciones).
 
-![](./media/article-metadata/checkmark-small.png) <bpt id="p1">**</bpt>ms.date<ept id="p1">**</ept>: Required. Especifica la fecha en la que se revisaron por última vez la relevancia, la precisión, la corrección de las capturas de pantalla y el funcionamiento de los vínculos. Especifique la fecha en el formato mm/dd/aaaa. Esta fecha también aparece en el artículo publicado como la fecha de la última actualización.
+![](./media/article-metadata/checkmark-small.png) 
+            **MS.Date**: requerido. Especifica la fecha en la que se revisaron por última vez la relevancia, la precisión, la corrección de las capturas de pantalla y el funcionamiento de los vínculos. Especifique la fecha en el formato mm/dd/aaaa. Esta fecha también aparece en el artículo publicado como la fecha de la última actualización.
 
-![](./media/article-metadata/checkmark-small.png) <bpt id="p1">**</bpt>ms.author<ept id="p1">**</ept>: Required. Indica los autores asociados con el tema. Para especificar varios valores, debe separarlos por punto y coma. Se aceptan alias de Microsoft o direcciones de correo completas. La longitud no puede superar los 200 caracteres.
+![](./media/article-metadata/checkmark-small.png) 
+            **MS.author**: requerido. Indica los autores asociados con el tema. Para especificar varios valores, debe separarlos por punto y coma. Se aceptan alias de Microsoft o direcciones de correo completas. La longitud no puede superar los 200 caracteres.
 
 
-###Contributors' Guide Links
+###Vínculos de la Guía de los colaboradores
 
 - [Artículo de información general](./../README.md)
 - [Índice de artículos de la guía](./contributor-guide-index.md)
@@ -109,5 +131,5 @@ The tags section uses this syntax:
 <!--Anchors-->
 [Sintaxis]: #syntax
 [Uso]: #usage
-[Attributes and values for the properties section]: #attributes-and-values-for-the-properties-section
-[Attributes and values for the tags section]: #attributes-and-values-for-the-tags-section
+[Atributos y valores de la sección de propiedades]: #attributes-and-values-for-the-properties-section
+[Atributos y valores de la sección de etiquetas]: #attributes-and-values-for-the-tags-section

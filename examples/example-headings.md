@@ -1,14 +1,14 @@
-<properties pageTitle="Documentation Example - Headings" description="This is an example document" title="Documentation Example - Headings" services="" documentationCenter="" authors="jamescon, Bill Smith" metaKeywords="" solutions="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación - encabezados" description="Esto es un ejemplo de documento" title="Documentation Example - Headings" services="" documentationCenter="" authors="jamescon, Bill Smith" metaKeywords="" solutions="" videoId="" scriptId="" />
 
 
-# Example - Headings #
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+# Por ejemplo, títulos #
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the use of headings.
+El contenido entre las líneas siguientes muestra el uso de encabezados.
 
 ---
 
-The below headings are created with the following Markdown syntax:  
+El debajo de los títulos se crean con la siguiente sintaxis de descuento:  
 
 ````
 # Heading 1 #
@@ -20,13 +20,13 @@ The below headings are created with the following Markdown syntax:
 #### Heading 4 ####
 ````
 
-# Heading 1 #
+# Título 1 #
 
-## Heading 2 ##
+## Título 2 ##
 
-### Heading 3 ###
+### Título 3 ###
 
-#### Heading 4 ####
+#### Título 4 ####
 
 ---
 

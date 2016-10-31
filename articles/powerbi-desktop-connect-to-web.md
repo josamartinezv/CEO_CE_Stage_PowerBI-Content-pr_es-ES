@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect to a Web page from Power BI Desktop"
-   description="Easily connect to and use Web page data in Power BI Desktop"
+   pageTitle="Conectarse a una página Web de Power BI Desktop"
+   description="Conectarse a y utilizar datos de la página Web de Power BI Desktop fácilmente"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,45 +20,45 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Connect to a Web page from Power BI Desktop
+# Conectarse a una página Web de Power BI Desktop
 
-You can connect to a Web page, and import its data into Power BI Desktop, to use in your visuals and in your data models.
+Puede conectarse a una página Web y para importar sus datos en Power BI Desktop, para utilizar en los objetos visuales y en los modelos de datos.
 
-In Power BI Desktop, select <bpt id="p1">**</bpt>Get Data &gt; Web<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon.
+En Power BI Desktop, seleccione **obtener datos > Web** desde el **Inicio** cinta de opciones.
 
 ![](media/powerbi-desktop-connect-to-web/connect-to-web_1.png)
 
-A dialog appears, asking for the URL of the Web page from which you want to import data.
+Un cuadro de diálogo aparecerá la dirección URL de la página Web desde el que desea importar los datos.
 
 ![](media/powerbi-desktop-connect-to-web/connect-to-web_2.png)
 
-Once you’ve typed in (or pasted) the URL, select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept>. Power BI Desktop connects to that page, then presents the page’s available data in the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window. When you select one of the available data elements, such as a table of the entire page, the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window displays a preview of that data on the right side of the window.
+Una vez que haya escrito en (o pegado) la dirección URL, seleccione **Aceptar**. Power BI Desktop se conecta a esa página, a continuación, muestra los datos disponibles de la página en el **Navigator** ventana. Cuando se selecciona uno de los elementos de datos disponibles, como una tabla de la página completa, el **Navigator** ventana muestra una vista previa de los datos en el lado derecho de la ventana.
 
 ![](media/powerbi-desktop-connect-to-web/connect-to-web_3.png)
 
-You can choose the <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> button, which launches <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept>, where you can shape and transform the data on that Web page before importing it into Power BI Desktop. Or you can select the <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> button, and import all of the data elements you selected in the left pane.
+Puede elegir el **Editar** botón que inicia **Editor de consultas**, donde puede dar forma y transformar los datos en la página Web antes de importarlo en Power BI Desktop. O puede seleccionar la **carga** botón e importar todos los elementos de datos que seleccionó en el panel izquierdo.
 
-When we select <bpt id="p1">**</bpt>Load<ept id="p1">**</ept>, Power BI Desktop imports the selected items, and makes them available in the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane, found on the right side of the Reports view in Power BI Desktop.
+Cuando se selecciona **carga**, Power BI Desktop importa los elementos seleccionados y pone a disposición en la **campos** panel, que se encuentra en el lado derecho de la vista de informes en Power BI Desktop.
 
 ![](media/powerbi-desktop-connect-to-web/connect-to-web_4.png)
 
-That’s all there is to connecting to a Web page, and bring its data into Power BI Desktop.
+Que es todo para conectarse a una página Web y llevar sus datos a Power BI Desktop.
 
-From there, you can drag those fields onto the Report canvas and create all the visualizations you want. You can also work this the data from that Web page just like you would any other data – you can shape it, you can create relationships between it and other data sources in your model, and otherwise do what you’d like to create just the Power BI report you want.
+Desde allí, puede arrastrar los campos al lienzo del informe y crear todas las visualizaciones que desee. También se puede trabajar los datos de esa página Web justo como lo haría con cualquier otro dato: puede modelar, puede crear relaciones entre éste y otros orígenes de datos en el modelo y hacer lo contrario, lo que le gustaría crear simplemente el informe de Power BI que desee.
 
-To see connecting to a Web page in more depth and action, take a look at the <bpt id="p1">[</bpt>Power BI Desktop Getting Started Guide<ept id="p1">](powerbi-desktop-getting-started.md)</ept>.
+Para ver la conexión a una página Web en más profundidad y acción, eche un vistazo la [Power BI Desktop Guía de introducción a](powerbi-desktop-getting-started.md).
 
 
 ## Más información
 
-﻿There are all sorts of data you can connect to using Power BI Desktop. For more information on data sources, check out the following resources:
+﻿Hay todo tipo de datos que puede conectarse con Power BI Desktop. Para obtener más información sobre los orígenes de datos, consulte los siguientes recursos:
 
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
+-   [Orígenes de datos en Power BI Desktop](powerbi-desktop-data-sources.md)
 
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [La forma y combinar datos con Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
 
--   [Connect to Excel workbooks in Power BI Desktop](powerbi-desktop-connect-excel.md)   
+-   [Conectarse a libros de Excel en Power BI Desktop](powerbi-desktop-connect-excel.md)   
 
--   [Connect to CSV files in Power BI Desktop](powerbi-desktop-connect-csv.md)   
+-   [Conectarse a un archivo CSV en Power BI Desktop](powerbi-desktop-connect-csv.md)   
 
--   [Enter data directly into Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   
+-   [Introducir datos directamente en Power BI Desktop](powerbi-desktop-enter-data-directly-into-desktop.md)   

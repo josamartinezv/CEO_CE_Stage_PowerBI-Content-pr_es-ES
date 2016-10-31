@@ -1,13 +1,13 @@
-<properties pageTitle="Documentation Example - Comment" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Comment" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación - comentario" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Comment" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Markdown comment #
+# Por ejemplo, comentario de descuento #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com. Specifically, this sample is used to test and validate the use of HTML comments <ph id="ph1">````&lt;!-- --&gt;````</ph> for commenting out markdown content.  
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com. En concreto, este ejemplo se utiliza para probar y validar el uso de comentarios HTML ````<!-- -->```` para comentar el contenido de descuento.  
 
 ---
-## Comment containing markdown syntax ##
+## Comentario que contiene la sintaxis de descuento ##
 
-Here is an example of a comment containing a H2 heading:
+Este es un ejemplo de un comentario que contiene un encabezado H2:
 
 ````lang-html
 <!--
@@ -15,15 +15,15 @@ Here is an example of a comment containing a H2 heading:
 -->
 ````
 
-Comment starts here:
+Comentario comienza aquí:
 <!--
 ## Storing authentication tokens in your app ##
 -->
 
 ---
-## Comment containing an AZURE.NOTE markdown extension ##
+## Comentario de AZURE. NOTA la extensión de descuento ##
 
-Here is an example of a comment containing an AZURE.NOTE markdown extension:
+Este es un ejemplo de un comentario que contiene una de AZURE. Tenga en CUENTA la extensión de descuento:
 
 ````lang-html
 <!--
@@ -31,16 +31,16 @@ Here is an example of a comment containing an AZURE.NOTE markdown extension:
 -->
 ````
 
-Comment starts here:
+Comentario comienza aquí:
 <!--
 > [AZURE.NOTE] To complete this tutorial, you must have an active Azure account.
 -->
 
 
 ---
-## Comment containing an AZURE.INCLUDE markdown extension ##
+## Comentario de AZURE. INCLUIR la extensión de descuento ##
 
-Here is an example of a comment containing an AZURE.INCLUDE markdown extension:
+Este es un ejemplo de un comentario que contiene una de AZURE. INCLUIR la extensión de descuento:
 
 ````lang-html
 <!--
@@ -48,7 +48,7 @@ Here is an example of a comment containing an AZURE.INCLUDE markdown extension:
 -->
 ````
 
-Comment starts here:
+Comentario comienza aquí:
 <!--
 [AZURE.INCLUDE [example-include-images](../includes/example-include-images.md)]
 -->

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Basic Area chart"
-   description="Tutorial: Basic Area chart."
+   pageTitle="Tutorial: Gráfico de áreas básicas"
+   description="Tutorial: Gráfico de áreas básicas."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,50 +20,50 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Tutorial: Basic Area chart  
+# Tutorial: Gráfico de áreas básicas  
 
-The basic area chart (aka layered area chart.) is based on the line chart. The area between axis and line is filled with colors to indicate volume. 
+El gráfico de áreas básicas (también conocidas como capas del área de gráfico.) se basa en el gráfico de líneas. El área situada entre el eje y en línea se rellena con colores para indicar el volumen. 
 
-Area charts emphasize the magnitude of change over time, and can be used to draw attention to the total value across a trend. For example, data that represents profit over time can be plotted in an area chart to emphasize the total profit.
+Gráficos de áreas destacan la magnitud de cambiar con el tiempo y puede usarse para llamar la atención sobre el valor total en una tendencia. Por ejemplo, se pueden trazar datos que representan el beneficio en el tiempo en un gráfico de área para destacar el beneficio total.
 
-## When to use a basic area chart  
-Basic area charts are a great choice:
+## Cuándo utilizar un gráfico de áreas básicas  
+Gráficos de áreas básicas son una excelente opción:
 
--   to see and compare the volume trend across time series 
+-   Para ver y comparar la tendencia de volumen a través de la serie temporal 
 
--   for individual series representing a physically countable set
+-   para las series individuales que representa un físicamente contable establecido
 
-## Create a basic area chart  
-To follow along, sign in to Power BI and select <bpt id="p1">**</bpt>Get Data <ph id="ph1">\&gt;</ph> Samples <ph id="ph2">\&gt;</ph> Retail Analysis Sample<ept id="p1">**</ept>. 
+## Crear un gráfico de áreas básicas  
+Para continuar, inicie sesión Power BI y seleccione **obtener datos \> ejemplos \> ejemplo de análisis de venta**. 
 
-1.  From the "Retail Analysis Sample" dashboard, select the <bpt id="p1">**</bpt>Total Stores<ept id="p1">**</ept> tile to open the "Retail Analysis Sample" report.
+1.  En el panel "Ejemplo de análisis de venta", seleccione la **Total almacenes** icono para abrir el informe "Ejemplo de análisis de venta directa".
 
-2.  Select <bpt id="p1">**</bpt>Edit Report<ept id="p1">**</ept> to open the report in Editing View.
+2.  Seleccione **Editar informe** para abrir el informe en la vista de edición.
 
-3.  Add a new report page.
+3.  Agregue una nueva página del informe.
 
-4.  Create an area chart that displays this year's sales and last year's sales by month.
+4.  Crear un gráfico de área que muestra las ventas de este año y ventas del último año por mes.
 
-    a.  From the <bpt id="p1">**</bpt>Fields pane<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Sales <ph id="ph1">\&gt;</ph> Last Year Sales<ept id="p2">**</ept>, ﻿and <bpt id="p3">**</bpt>This Year Sales &gt; Value<ept id="p3">**</ept>.
+    a.  Desde el **panel campos**, seleccione **ventas \> ventas del último año**, y **ventas de este año > valor**.
 
-    b.  Convert the chart to a basic area chart.    
+    b.  Convertir el gráfico a un gráfico de superficie básica.    
     ![](media/powerbi-service-tutorial-basic-area-chart/convertChart.png)
 
-    c.  Select <bpt id="p1">**</bpt>Time <ph id="ph1">\&gt;</ph> Month<ept id="p1">**</ept> to add it to the <bpt id="p2">**</bpt>Axis<ept id="p2">**</ept> well.   
+    c.  Seleccione **tiempo \> mes** para agregarlo a la **eje** bien.   
     ![](media/powerbi-service-tutorial-basic-area-chart/powerbi-area-chartnew.png)
 
-    d.  To display the chart by month, select the ellipses (top right corner of the visual) and choose <bpt id="p1">**</bpt>Sort by month<ept id="p1">**</ept>.
+    d.  Para mostrar el gráfico por mes, seleccione el botón de puntos suspensivos (esquina superior derecha del objeto visual) y elija **Ordenar por mes**.
 
-## Highlighting and cross-filtering  
-For information about using the Filters pane, see <bpt id="p1">[</bpt>Add a filter to a report<ept id="p1">](powerbi-service-add-a-filter-to-a-report.md)</ept>.
+## Resaltado y filtrado cruzado  
+Para obtener información acerca de cómo utilizar el panel de filtros, consulte [Agregar un filtro a un informe](powerbi-service-add-a-filter-to-a-report.md).
 
-To select an area, click inside that area or along the top line.  Basic area charts do not cross-filter the other visualizations on the report page. However, area charts are a target for cross-filtering triggered by other visualizations on the report page.
+Para seleccionar un área, haga clic dentro de esa área o a lo largo de la línea superior.  Gráficos de áreas básicas no filtro cruzado las otras visualizaciones en la página del informe. Sin embargo, los gráficos de áreas son un destino para filtrar entre desencadenado por otras visualizaciones en la página del informe.
 
-## Tips and tricks for Basic Area charts  
--   Basic area charts are not effective for comparing the values due to the occlusion on the layered areas. Power BI uses transparency to indicate the overlap of areas. However, it only works well with two or three different areas. When you need to compare trend to more than three measures, try using line charts. When you need to compare volume to more than three measures, try using treemap.
+## Sugerencias y trucos para los gráficos de áreas básicas  
+-   Gráficos de áreas básicas no son eficaces para comparar los valores debido a la oclusión en las áreas de capas. Power BI usa transparencia para indicar la superposición de áreas. Sin embargo, sólo funciona bien con dos o tres áreas diferentes. Si necesita comparar tendencia a más de tres medidas, intente con gráficos de líneas. Cuando se necesita comparar el volumen a más de tres medidas, pruebe a usar treemap.
 
 ## Consulte también  
-[Reports in Power BI](powerbi-service-reports.md)  
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Informes de Power BI](powerbi-service-reports.md)  
+[Visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

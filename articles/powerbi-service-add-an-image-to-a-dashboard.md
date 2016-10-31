@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add an image to a Power BI dashboard"
-   description="Documentation on how to add an image to a Power BI dashboard."
+   pageTitle="Agregar una imagen a un panel de Power BI"
+   description="Documentación sobre cómo agregar una imagen a un panel de Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,13 +21,15 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Add an image to a Power BI dashboard
+# Agregar una imagen a un panel de Power BI
 
-There are several ways to a a standalone image to a dashboard: one way is to pin an image from a report to a dashboard and another way is to add it directly onto the dashboard using <bpt id="p1">**</bpt>Add tile<ept id="p1">**</ept>.  For more information, visit these articles:
+Hay varias formas de un una imagen independiente a un panel: es una manera de anclar una imagen desde un informe a un panel y otra manera es agregar directamente en el panel utilizando **Agregar mosaico**.  Para obtener más información, visite estos artículos:
 
--   <bpt id="p1">[</bpt>Add dashboard tiles directly from a Power BI dashboard<ept id="p1">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept>.
--   <bpt id="p1">[</bpt>Pin images from a Power BI report<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept>.
+-   
+            [Agregar iconos de panel directamente desde un panel de Power BI](powerbi-service-add-a-widget-to-a-dashboard.md).
+-   
+            [Anclar imágenes desde un informe de Power BI](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md).
 
-More about <bpt id="p1">[</bpt>creating Power BI dashboards<ept id="p1">](powerbi-service-create-a-dashboard.md)</ept>.
+Más información sobre [creación de paneles de Power BI](powerbi-service-create-a-dashboard.md).
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

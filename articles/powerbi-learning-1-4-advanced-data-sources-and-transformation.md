@@ -1,6 +1,6 @@
 <properties
-   pageTitle="More Advanced Data Sources and Transformation"
-   description="Connect and combine two data sources - it's easy"
+   pageTitle="Más avanzado datos orígenes y transformación"
+   description="Conectarse y combinar dos orígenes de datos: es fácil"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,26 +22,26 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# More Advanced Data Sources and Transformation
+# Más avanzado datos orígenes y transformación
 
-In this article, we investigate some advanced data import and cleaning techniques for <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>. Once you've shaped your data in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> and brought it into <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept>, you can look at it in a few different ways. There are three views in Power BI Desktop: <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> view, and <bpt id="p3">**</bpt>Relationships<ept id="p3">**</ept> view. You see each view by selecting its icon in the upper left side of the canvas. In the following image, <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view is selected. The yellow bar beside the icon indicates which view is active.
+En este artículo, investigue los otros avanzada de importación de datos y técnicas para la limpieza **Power BI Desktop**. Una vez que haya en la forma de los datos de **Editor de consultas** y poner en **Power BI Desktop**, puede mirar lo de diferentes formas. Hay tres vistas en Power BI Desktop: **informe** vista, **datos** vista, y **relaciones** vista. Consulte cada vista seleccionando el icono en la parte superior izquierda del lienzo. En la siguiente imagen, **informe** vista está seleccionada. La barra amarilla situada junto al icono indica la vista que está activa.
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_1.png)
 
-To change the view, just select either of other two icons. The yellow bar beside the icon indicates which view is active.
+Para cambiar la vista, seleccione cualquiera de los otros dos iconos. La barra amarilla situada junto al icono indica la vista que está activa.
 
-Power BI Desktop can combine data from multiple sources into a single report, at any time during the modelling process. To add additional sources to an existing report, select <bpt id="p1">**</bpt>Edit Queries<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon and then select <bpt id="p3">**</bpt>New Source<ept id="p3">**</ept> in <bpt id="p4">**</bpt>Query Editor<ept id="p4">**</ept>.
+Power BI Desktop puede combinar datos de varios orígenes en un único informe en cualquier momento durante el proceso de modelado. Para agregar orígenes adicionales a un informe existente, seleccione **Editar consultas** en la **Inicio** la cinta de opciones y, a continuación, seleccione **nuevo origen** en **Editor de consultas**.
 
-There are many different possible data sources you can use in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, including Folders. By connecting to a folder, you can import data from multiple files at once, such as a series of Excel files of CSV files. The files contained within your selected folder appear in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> as binary content, and clicking the double-arrow icon at the top of the <bpt id="p2">**</bpt>Content<ept id="p2">**</ept> column loads their values.
+Hay muchas diferentes posibles orígenes de datos puede usar en **Power BI Desktop**, incluidas las carpetas. Al conectarse a una carpeta, puede importar datos de varios archivos a la vez, como una serie de archivos de Excel de los archivos CSV. Los archivos contenidos en la carpeta seleccionada aparecen en **Editor de consultas** como contenido binario y haga clic en el icono de flecha doble en la parte superior de la **contenido** columna carga sus valores.
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_2.png)
 
-One of Power BI's most useful tools is its <bpt id="p1">*</bpt>Filters<ept id="p1">*</ept>. For example, selecting the drop-down arrow next to a column opens a checklist of text filters that you can use to remove values from your model.
+Una de las herramientas más útiles de Power BI es su *filtros*. Por ejemplo, seleccione la flecha de lista desplegable junto a una columna, abre una lista de comprobación de filtros de texto que puede utilizar para quitar valores de su modelo.
 
-You can also merge and append queries, and turn multiple tables (or data from various files, in folders) into a single table that contains just the data you want. You can use the <bpt id="p1">**</bpt>Append Queries<ept id="p1">**</ept> tool to add the data from a new table to an existing query. Power BI Desktop attempt to match up the columns in your queries, which you can then adjust as necessary in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>.
+También puede combinar y anexar las consultas y activar varias tablas (o datos de varios archivos, en carpetas) en una única tabla que contiene sólo los datos que desee. Puede usar el **consultas anexar** herramienta para agregar los datos de una nueva tabla a una consulta existente. Power BI Desktop intenta hacer coincidir las columnas en las consultas, que, a continuación, se pueden ajustar según sea necesario en **Editor de consultas**.
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_3.png)
 
-Finally, the <bpt id="p1">**</bpt>Add Custom Column<ept id="p1">**</ept> tool gives advanced users the option of writing query expressions from scratch using the powerful M language. You can add a custom column based on M query language statements, and get your data just the way you want it.
+Por último, el **Agregar columna personalizada** herramienta ofrece a los usuarios avanzados en la opción de escribir expresiones de consulta desde cero mediante el lenguaje M. Puede agregar una columna personalizada según las instrucciones de lenguaje de consulta de M y obtener los datos igual que desee.
 
 ![](media/powerbi-learning-1-4-advanced-data-sources-and-transformation/1-4_4.png)

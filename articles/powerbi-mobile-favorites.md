@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Favorite Power BI dashboards and Reporting Services mobile reports in the Power BI apps"
-   description="Read about making and viewing your favorite Power BI dashboards, along with Reporting Services KPIs and mobile reports, in the Power BI mobile apps."
+   pageTitle="Paneles de Power BI favoritos y móviles informes de Reporting Services en las aplicaciones de Power BI"
+   description="Obtenga información acerca de la creación y visualización de los paneles de Power BI favoritos, junto con Reporting Services KPI e informes móviles, en las aplicaciones móviles de Power BI."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,67 +20,68 @@
    ms.date="09/29/2016"
    ms.author="maggies"/>
 
-# Favorite Power BI dashboards, and Reporting Services KPIs and mobile reports in the Power BI mobile apps 
+# Paneles de Power BI favoritos y Reporting Services KPI y móviles informes en las aplicaciones móviles de Power BI 
 
-When you make a dashboard a <bpt id="p1">*</bpt>favorite<ept id="p1">*</ept> in the Power BI mobile apps, you can access it from all of your devices, including the Power BI service. You can view all of your favorite Power BI dashboards, together with Reporting Services KPIs and mobile reports, on the Favorites page in the mobile apps.
+Al realizar un panel un *favorito* en las aplicaciones móviles de Power BI, puede tener acceso desde todos los dispositivos, incluido el servicio Power BI. Puede ver todos los paneles de Power BI favoritos, junto con Reporting Services KPI e informes móviles, en la página Favoritos de las aplicaciones móviles.
 
-You can also <bpt id="p1">[</bpt>make a Power BI dashboard a favorite in the Power BI service<ept id="p1">](powerbi-service-favorite-dashboards.md)</ept>. Then you see it on the Favorites page in the mobile app.
+También puede [realizar un panel de Power BI favorito en el servicio de Power BI](powerbi-service-favorite-dashboards.md). A continuación, se vea en la página Favoritos en la aplicación móvil.
 
-> <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The Favorites page is available in all the Power BI mobile apps, and you can manage your favorites in the Power BI mobile apps for iOS and Windows 10 devices.
+> 
+            **Nota**: favoritos de la página está disponible en todas las aplicaciones móviles de Power BI y puede administrar los favoritos en las aplicaciones móviles de Power BI para iOS y dispositivos Windows 10.
  
 ![](media/powerbi-mobile-favorites/power-bi-mobile-favorites-no-callouts.png)
 
-## Make a Power BI dashboard a favorite in the mobile apps
-You can make a dashboard a favorite from the list of dashboards or from the dashboard itself, in the Power BI mobile app for iOS and Windows 10 devices.
+## Convertir un panel de Power BI favorita en las aplicaciones móviles
+Puede establecer un panel favorito en la lista de paneles o del panel, en la aplicación móvil de Power BI para iOS y dispositivos Windows 10.
 
-* In the list of dashboards in the mobile app, tap the empty star next to the dashboard name <ph id="ph1">![](media/powerbi-mobile-favorites/power-bi-mobile-not-favorite-icon.png)</ph>. The star turns yellow <ph id="ph1">![](media/powerbi-mobile-favorites/power-bi-mobile-yes-favorite-icon.png)</ph>.
+* En la lista de los paneles de la aplicación móvil, toque la estrella vacía situada junto al nombre de panel ![](media/powerbi-mobile-favorites/power-bi-mobile-not-favorite-icon.png). La estrella cambia a amarilla ![](media/powerbi-mobile-favorites/power-bi-mobile-yes-favorite-icon.png).
 
     ![](media/powerbi-mobile-favorites/power-bi-mobile-make-dashboard-favorite.png)
 
-* On the dashboard, tap the empty star in the ribbon at the top <ph id="ph1">![](media/powerbi-mobile-favorites/power-bi-mobile-not-favorite-icon.png)</ph>. The star turns yellow <ph id="ph1">![](media/powerbi-mobile-favorites/power-bi-mobile-yes-favorite-icon.png)</ph>.
+* En el panel, toque la estrella vacía en la cinta de opciones en la parte superior ![](media/powerbi-mobile-favorites/power-bi-mobile-not-favorite-icon.png). La estrella cambia a amarilla ![](media/powerbi-mobile-favorites/power-bi-mobile-yes-favorite-icon.png).
 
     ![](media/powerbi-mobile-favorites/power-bi-mobile-favorite-selected.png)
 
-## View your favorite Power BI dashboards, and Reporting Services mobile reports and KPIs
+## Ver informes de Reporting Services móviles y su KPI paneles de Power BI favoritos y
 
-*   Tap the top navigation menu <ph id="ph1">![](media/powerbi-mobile-favorites/power-bi-windows-10-navigation-pane-icon.png)</ph>, then tap <bpt id="p1">**</bpt>Favorites<ept id="p1">**</ept>.
+*   Puntee en el menú de navegación superior ![](media/powerbi-mobile-favorites/power-bi-windows-10-navigation-pane-icon.png), a continuación, puntee **favoritos**.
 
     ![](media/powerbi-mobile-favorites/power-bi-favorites-menu.png)
 
-    Now you see all your favorite Power BI dashboards, plus your favorite Reporting Services mobile reports and KPIs, together in one place.
+    Ahora ver todos los paneles de Power BI favoritos, además de sus informes favoritos de móvil de Reporting Services y KPI juntos en un solo lugar.
 
     ![](media/powerbi-mobile-favorites/power-bi-mobile-favorites.png)
 
-## Make a Reporting Services mobile report or KPI a favorite
+## Hacer que un informe de Reporting Services móvil o KPI favorito
 
-You don't make Reporting Services mobile reports or KPIs favorites in the Power BI mobile apps, but you can view them in the mobile apps. 
+No realice informes de Reporting Services móviles o Favoritos de KPI en las aplicaciones móviles de Power BI, pero puede verlos en las aplicaciones móviles. 
 
-1. Open your web browser. 
+1. Abra el explorador web. 
 
-2. In the address bar of the web browser, type the web portal URL.
+2. En la barra de direcciones del explorador web, escriba el portal web de dirección URL.
  
-    By default, the URL is http://[ComputerName]/reports.
+    De forma predeterminada, la dirección URL es http://[ComputerName]/reports.
 
-1. Navigate to the KPI or mobile report that you want to make a favorite, select the ellipsis (<bpt id="p1">**</bpt>…<ept id="p1">**</ept>) in the upper-right corner, and select <bpt id="p2">**</bpt>Add to Favorites<ept id="p2">**</ept>.
+1. Desplácese hasta el KPI o informe móvil que desea realizar un favorito, seleccione el botón de puntos suspensivos (**...**) en la esquina superior derecha y seleccione **Agregar a favoritos**.
 
     ![](media/powerbi-mobile-favorites/power-bi-reporting-services-make-favorite-kpi.png)
 
-2. Select <bpt id="p1">**</bpt>Favorites<ept id="p1">**</ept> on the web portal ribbon to see it along with your other favorites on the Favorites page in the web portal.
+2. Seleccione **favoritos** en la cinta de opciones de portal web para ver junto con los otros favoritos en la página Favoritos en el portal web.
 
     ![](media/powerbi-mobile-favorites/power-bi-reporting-services-favorites.png)
 
-    And now you can see it along with your Power BI dashboard favorites in the mobile app.
+    Y ahora puede ver junto con los favoritos del panel de Power BI en la aplicación móvil.
 
 ### Consulte también
 
-* [Favorite dashboards in the Power BI service](powerbi-service-favorite-dashboards.md) 
+* [Paneles de favoritos en el servicio Power BI](powerbi-service-favorite-dashboards.md) 
 
-View Reporting Services mobile reports and KPIs in: 
+Ver informes de Reporting Services móviles y KPI en: 
 
-* [The iPad app (Power BI for iOS)](powerbi-mobile-ipad-kpis-mobile-reports.md)
-* [The iPhone app (Power BI for iOS)](powerbi-mobile-iphone-kpis-mobile-reports.md)
-* [The Android app for Power BI](powerbi-mobile-android-kpis-mobile-reports.md)
-* [The Power BI mobile app for Windows 10](powerbi-mobile-win10-kpis-mobile-reports.md)
+* [La aplicación de iPad (Power BI para iOS)](powerbi-mobile-ipad-kpis-mobile-reports.md)
+* [La aplicación de iPhone (Power BI para iOS)](powerbi-mobile-iphone-kpis-mobile-reports.md)
+* [La aplicación Android para Power BI](powerbi-mobile-android-kpis-mobile-reports.md)
+* [La aplicación móvil de Power BI para Windows 10](powerbi-mobile-win10-kpis-mobile-reports.md)
 
-### Questions? 
-[Try asking the Power BI Community](http://community.powerbi.com/)
+### ¿Tiene preguntas? 
+[Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

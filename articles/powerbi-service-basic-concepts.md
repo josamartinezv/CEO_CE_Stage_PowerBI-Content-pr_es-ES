@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI - basic concepts"
-   description="Power BI - basic concepts"
+   pageTitle="Power BI: conceptos básicos"
+   description="Power BI: conceptos básicos"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,186 +21,194 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Power BI - basic concepts for Power BI service
+# Power BI: conceptos básicos de servicio Power BI
 
-When you first open Power BI service, you'll see your workspace. Prominently displayed will be your <bpt id="p1">***</bpt>dashboard<ept id="p1">***</ept>, which is something that differentiates Power BI service from Power BI Desktop.
+Cuando abra por primera vez el servicio de Power BI, verá el área de trabajo. Aparece de forma destacada será su ***panel***, que es algo que diferencia el servicio Power BI de Power BI Desktop.
 
 ![](media/powerbi-service-basic-concepts/completeNewer.png)
-Your Power BI service workspace is made up of:
+El área de trabajo del servicio de Power BI se compone de:
 
 1.  barra de navegación
-2.  dashboard with tiles
-3.  Q&amp;A question box
-4.  help and feedback buttons
-5.  dashboard title
-6.  Office 365 app launcher
-7.  Power BI home buttons
-8. Additional dashboard actions
+2.  panel con iconos
+3.  Cuadro de pregunta de preguntas y respuestas
+4.  botones de ayuda y comentarios
+5.  título del panel
+6.  Iniciador de aplicaciones de Office 365
+7.  Botones de inicio de Power BI
+8. Acciones adicionales
 
-We'll dig into these later, but first let's review some Power BI concepts.
+Haremos esto más adelante, pero primero vamos a revisar algunos conceptos de Power BI.
 
-Or, you might want to watch this video first before reading the rest of this article.  In the video, Will reviews the basic concepts and gives a tour of Power BI service.
+O bien, puede ver este vídeo antes de leer primero el resto de este artículo.  En el vídeo, revisa los conceptos básicos y le ofrece una visita de servicio Power BI.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y4sRWbo8JcE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-## Power BI concepts
+## Conceptos de Power BI
 
-The 3 major building blocks of Power BI are: <bpt id="p1">***</bpt>dashboards<ept id="p1">***</ept>, <bpt id="p2">***</bpt>reports<ept id="p2">***</ept>, and <bpt id="p3">***</bpt>datasets<ept id="p3">***</ept>. You can't have dashboards or reports without data (well, you can have empty dashboards and empty reports, but they're not very useful until they have data), so let's start with <bpt id="p1">**</bpt>datasets<ept id="p1">**</ept>.
+Son los pilares principales 3 de Power BI: ***paneles***, ***informes***, y ***conjuntos de datos***. No se puede tener paneles o informes sin datos (bueno, puede tener paneles vacíos e informes vacíos, pero no son muy útiles hasta que tengan datos), así pues, comencemos con **conjuntos de datos**.
 
 ## Conjuntos de datos
 
-A <bpt id="p1">*</bpt>dataset<ept id="p1">*</ept> is something that you <bpt id="p2">*</bpt>import<ept id="p2">*</ept> or <bpt id="p3">*</bpt>connect<ept id="p3">*</ept> to. Power BI lets you connect to all sorts of datasets and bring all of it together in one place.  
+Un *conjunto de datos* es algo que *importar* o *Conectar* a. Power BI le permite conectarse a todo tipo de conjuntos de datos y poner todo junto en un solo lugar.  
 
-In the navigation bar, the datasets you've connected to are listed under the <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> heading. Each listed dataset represents a single source of data, for example, an Excel workbook on OneDrive, or an on-premises SSAS tabular dataset, or a Salesforce dataset. There are many different data sources supported, and we’re adding new ones all the time. <bpt id="p1">[</bpt>See the list of dataset types that can be used with Power BI<ept id="p1">](powerbi-service-get-data.md)</ept>.
+En la barra de navegación, se enumeran los conjuntos de datos que se haya conectado a bajo la **conjuntos de datos** encabezado. Cada conjunto de datos de lista representa un único origen de datos, por ejemplo, un libro de Excel en OneDrive, o un conjunto de datos local SSAS tabular o un conjunto de datos de Salesforce. Hay muchos distintos orígenes de datos compatibles y estamos agregando nuevos todo el tiempo. 
+            [Consulte la lista de tipos de conjunto de datos que se pueden usar con Power BI](powerbi-service-get-data.md).
 
-<bpt id="p1">**</bpt>ONE<ept id="p1">**</ept> dataset...
-- can be used over and over.
-- can be used in many different reports.
-- Visualizations from that one dataset can display on many different dashboards.
+
+            **UN** conjunto de datos...
+- puede utilizarse una y otra vez.
+- puede utilizarse en muchos informes diferentes.
+- Pueden mostrar visualizaciones de ese conjunto de datos en muchos paneles diferentes.
 
   ![](media/powerbi-service-basic-concepts/Drawing2.png)
 
-To <bpt id="p1">[</bpt>connect to a dataset<ept id="p1">](powerbi-service-get-data.md)</ept>, select <bpt id="p2">**</bpt>Get Data<ept id="p2">**</ept> (at the bottom of the navigation bar) or select the plus icon next to the <bpt id="p3">**</bpt>Datasets<ept id="p3">**</ept> heading. Follow the instructions to connect to the specific source and add the dataset to your workspace. New datasets are added to the left navigation bar and marked with a yellow asterisk. The work you do in Power BI does not change the underlying dataset.
+Para [conectarse a un conjunto de datos](powerbi-service-get-data.md), seleccione **obtener datos** (en la parte inferior de la barra de navegación) o seleccione el icono del signo más junto a la **conjuntos de datos** encabezado. Siga las instrucciones para conectarse al origen específico y agregar el conjunto de datos al área de trabajo. Nuevos conjuntos de datos se agregan a la barra de navegación izquierdo y marcados con un asterisco amarillo. El trabajo que realice en Power BI no cambia el conjunto de datos subyacente.
 
-Datasets can be refreshed, renamed, explored and removed. To explore a dataset, select it. What you're actually doing is opening the dataset in the report editor where you can really start digging into the data and creating visualizations. So, let's move on to the next topic -- reports. 
+Conjuntos de datos se pueden actualizar, cambia el nombre, explorado y quitar. Para explorar un conjunto de datos, selecciónela. Lo que realmente está haciendo es abrir el conjunto de datos en el editor de informes donde puede empezar realmente profundizar en los datos y crear visualizaciones. Por lo tanto, vamos a pasar al tema siguiente--informes. 
 
-### Dig deeper:
+### Investigar un poco más:
 
--   [Power BI Pro content - what is it?](powerbi-power-bi-pro-content-what-is-it.md)
--   [Get data for Power BI](powerbi-service-get-data.md)
--   [Sample datasets and content packs for Power BI](powerbi-sample-datasets.md)
+-   [Contenido de BI Pro Power - ¿qué es?](powerbi-power-bi-pro-content-what-is-it.md)
+-   [Obtener datos para Power BI](powerbi-service-get-data.md)
+-   [Módulos de conjuntos de datos y contenido de ejemplo para Power BI](powerbi-sample-datasets.md)
 
 ## Reports
 
-A Power BI report is one or more pages of visualizations (charts, graphs and images). All of the visualizations in a report come from a single dataset. Reports can be created from scratch within Power BI, can be imported with dashboards that colleagues share with you, or can be created for you when you connect to datasets from Excel, Power BI Desktop, databases, SaaS applications and <bpt id="p1">[</bpt>content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>.  For example, when you connect to an Excel workbook that contains Power View sheets, Power BI creates a report based on those sheets. And when you connect to an SaaS application, Power BI imports a pre-built report.
+Un informe de Power BI es una o más páginas de visualizaciones (gráficos, gráficos e imágenes). Todas las visualizaciones en un informe proceden de un único conjunto de datos. Informes pueden crearse desde cero en Power BI, se pueden importar con paneles que sus colegas compartan con usted o pueden crearse automáticamente cuando se conecte a conjuntos de datos desde Excel, Power BI Desktop, bases de datos, aplicaciones de SaaS y [paquetes de contenido](powerbi-service-organizational-content-packs-introduction.md).  Por ejemplo, cuando se conecta a un libro de Excel que contiene hojas de Power View, Power BI crea un informe basado en dichas hojas. Y cuando se conecta a una aplicación SaaS, Power BI importa un informe previamente creado.
 
-There are 2 modes to view and interact with reports: <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-open-a-report-in-reading-view.md)</ept> and <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>.  Only the person who created the report, co-owners, and those granted permission, have access to all of the exploring, designing, building, and sharing capabilities of <bpt id="p1">***</bpt>Editing View<ept id="p1">***</ept> for that report. And the people they share the report with can explore and interact with the report using <bpt id="p1">***</bpt>Reading View<ept id="p1">***</ept>.   
+Existen 2 modos para ver e interactuar con los informes: [vista lectura](powerbi-service-open-a-report-in-reading-view.md) y [vista de edición de](powerbi-service-interact-with-a-report-in-editing-view.md).  Sólo la persona que creó el informe, copropietarios y los permisos, tener acceso a todas la exploración, diseñar, crear y compartir las capacidades de ***vista de edición de*** para el informe. Y las personas que comparten el informe con pueden exploración e interactúan con el informe usando ***vista lectura***.   
 
-In the navigation pane, your reports are listed under the <bpt id="p1">**</bpt>Reports heading<ept id="p1">**</ept>. Each listed report represents 1 or more pages of visualizations based on 1 of the underlying datasets. All of the reports listed here can be opened in both Reading View and Editing View. To open a report, simply select it. By default, the report opens in Reading View first.  Just select <bpt id="p1">**</bpt>Edit report<ept id="p1">**</ept> to open it in Editing View.  If a shared dashboard has reports, you will NOT see the report listed in the navigation bar. 
+En el panel de navegación, los informes aparecen en la **informa de encabezado**. Cada informe de la lista representa 1 o más páginas de visualizaciones basadas en 1 de los conjuntos de datos subyacente. Todos los informes que se muestran aquí se pueden abrir en la vista de lectura y vista de edición. Para abrir un informe, simplemente selecciónela. De forma predeterminada, el informe se abre en la vista de lectura en primer lugar.  Simplemente seleccione **Editar informe** para abrirlo en la vista de edición.  Si un panel compartido tiene informes, NO verá el informe aparece en la barra de navegación. En su lugar, abra informes compartidos directamente desde el panel compartido seleccionando un icono de panel (más adelante).
 
-<bpt id="p1">**</bpt>ONE<ept id="p1">**</ept> report...
--  can be associated with multiple dashboards (tiles pinned from that one report can appear on multiple dashboards).
--  can be created using data from one dataset. (the slight exception to this is that Power BI Desktop can combine more than 1 dataset into a single report and that report can be imported into Power BI)
+
+            **UNA** informe...
+-  se puede asociar con varios paneles (los iconos anclados desde el informe pueden aparecer en varios paneles).
+-  pueden crearse utilizando los datos de un conjunto de datos. (la excepción a esto es que Power BI Desktop puede combinar más de 1 conjunto de datos en un único informe y que se puede importar el informe en Power BI)
 
   ![](media/powerbi-service-basic-concepts/Drawing3new.png)
 
 ## Paneles
 
-A <bpt id="p1">*</bpt>dashboard<ept id="p1">*</ept> is something you create or something a colleague creates and shares with you. It is a single canvas that contains zero or more tiles and widgets. Each tile displays a single <bpt id="p1">[</bpt>visualization<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept> that was created from a dataset and pinned to the dashboard. There are many ways to add tiles to your dashboard; too many to be covered in this overview topic. To learn more, see <bpt id="p1">[</bpt>Dashboard tiles in Power BI<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>. 
+Un *panel* es algo que crea o algo un colega crea y comparte con usted. Es un lienzo individual que contiene cero o más mosaicos y widgets. Cada mosaico muestra una sola [visualización](powerbi-service-visualizations-for-reports.md) que se ha creado a partir de un conjunto de datos y Anclar al panel. Hay muchas maneras de agregar iconos al escritorio; Hay demasiados se tratan en este tema de información general. Para obtener más información, consulte [panel en mosaico en Power BI](powerbi-service-dashboard-tiles.md). 
 
-In the navigation bar, "your" dashboards are listed under the <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> heading. "Your" means that you have access to them, not necessarily that you created them. Each  dashboard represents a customized view of some subset of the underlying datasets.  If you own the dashboard, you'll also have access to the underlying dataset(s) and they'll appear in the navbar under <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept>.  If the dashboard was shared with you, it has a sharing icon <ph id="ph1">![](media/powerbi-service-basic-concepts/sharing-icon.png)</ph> next to it, and depending on how it was shared, you may or may not see the underlying datasets listed in your navbar.
+En la barra de navegación "sus" paneles se enumeran bajo el **paneles** encabezado. "Su" significa que tiene acceso a ellas, no necesariamente que se crearon. Cada panel representa una vista personalizada de un subconjunto de los conjuntos de datos subyacente.  Si usted es el propietario del panel, también tendrá acceso a los conjuntos de datos subyacente y aparecerán en la barra de exploración en **conjuntos de datos**.  Si el panel se ha compartido con usted, tiene un icono para compartir ![](media/powerbi-service-basic-concepts/sharing-icon.png) junto a ella y dependiendo de cómo se comparten, puede o no puede ver los conjuntos de datos subyacentes que aparece en la barra de exploración.
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Pinning and tiles are covered in more detail below under the heading "Dashboard tiles."
+>
+            **NOTA**: fijar y mosaicos se tratan con más detalle a continuación bajo el encabezado "Iconos del escritorio."
 
-<bpt id="p1">**</bpt>ONE<ept id="p1">**</ept> dashboard...
-- can display visualizations from many different datasets
-- can display visualizations from many different reports
+
+            **UNA** panel...
+- puede mostrar visualizaciones de muchos conjuntos de datos diferentes
+- puede mostrar visualizaciones de muchos informes diferentes
 
 ![](media/powerbi-service-basic-concepts/Drawing1.png)
 
-### Dig deeper:
+### Investigar un poco más:
 
-<bpt id="p1">**</bpt>A dashboard can be <bpt id="p2">[</bpt>created from scratch<ept id="p2">](powerbi-service-create-a-dashboard.md)</ept><ept id="p1">**</ept> -- create a new blank dashboard and then get some data. 
 
-<bpt id="p1">**</bpt>You, or a colleague, can create a dashboard and <bpt id="p2">[</bpt>share it<ept id="p2">](powerbi-service-share-unshare-dashboard.md)</ept><ept id="p1">**</ept> -  when you accept the invitation, the shared dashboard (and any associated report and dataset) is added to your navigation bar. 
+            **Puede ser un panel [creado desde cero](powerbi-service-create-a-dashboard.md)** : crear un nuevo panel en blanco y, a continuación, obtener algunos datos. 
 
-<bpt id="p1">**</bpt>Sometimes dashboards are imported with the dataset or are created as you connect to the dataset<ept id="p1">**</ept>. For example, the <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> wizard for Salesforce asks you if you'd like a dashboard and/or report to be created from the dataset. 
 
-**Why do people create dashboards?**  Here are just some of the reasons:
+            **Usted o un colega, puede crear un panel y [compartirlo](powerbi-service-share-unshare-dashboard.md)** ; al aceptar la invitación, el panel compartido (y cualquier informe asociado y el conjunto de datos) se agregan a la barra de navegación. 
 
--   to see, in one glance, all the information needed to make decisions
--   to monitor the most-important information about their business
--   to ensure all colleagues are on the same page, viewing and using the same information
--   to monitor the health of a business or product or business unit or marketing campaign, etc.
--   to create a personalized view of a larger dashboard -- all the metrics that matter to me
 
-## My Workspace
-We've circled back to your Power BI dashboard and workspace. Let's take a closer look at the pieces that make up the top-level page for Power BI service; we call it <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+            **Algunas veces los paneles se importan con el conjunto de datos o se crean cuando se conecta al conjunto de datos**. Por ejemplo, el **obtener datos** de Salesforce le preguntará si desea que un panel o informe crear a partir del conjunto de datos. 
+
+**¿Por qué se crean los paneles?**  Estos son sólo algunas de las razones:
+
+-   Para ver, en una sola mirada, toda la información necesaria para tomar decisiones
+-   para supervisar la información más importante sobre sus negocios
+-   para asegurarse de que todos los compañeros están en la misma página, ver y utilizar la misma información
+-   para supervisar el estado de un negocio o producto o unidad de negocio o campaña de marketing, etc.
+-   Para crear una vista personalizada de un panel más grande: todas las métricas importantes para usted
+
+## Mi área de trabajo
+Hemos marcado a su panel de Power BI y el área de trabajo. Echemos un vistazo a las partes que componen la página de nivel superior para el servicio de Power BI; lo llamamos **Mi área de trabajo**.
 
 ![](media/powerbi-service-basic-concepts/completeNewer.png)
 
-### 1. 
+### 1. **Barra de navegación** (barra de exploración)
 
-Use the navbar to move between the Power BI building blocks: dashboards, reports, and datasets.  
+Utilice la barra de exploración para desplazarse entre los bloques de creación de Power BI: paneles, informes y conjuntos de datos.  
 
   ![](media/powerbi-service-basic-concepts/navpane-new.png)
 
--   Select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> to <bpt id="p2">[</bpt>add datasets to Power BI<ept id="p2">](powerbi-service-get-data.md)</ept>.
+-   Seleccione **obtener datos** a [Agregar conjuntos de datos a Power BI](powerbi-service-get-data.md).
 
-- Expand and collapse the navbar with this icon <ph id="ph1">![](media/powerbi-service-basic-concepts/expand-icon.png)</ph>.
+- Expandir y contraer en la barra de exploración con este icono ![](media/powerbi-service-basic-concepts/expand-icon.png).
 
--   Use <bpt id="p1">**</bpt>Search<ept id="p1">**</ept> to find specific items in the navbar.
+-   Use **búsqueda** para buscar elementos específicos en la barra de exploración.
 
--   Select a plus icon <ph id="ph1">![](media/powerbi-service-basic-concepts/pbi_Nancy_plus.png)</ph> to create a new dashboard or get a new dataset.
+-   Seleccione un icono del signo más ![](media/powerbi-service-basic-concepts/pbi_Nancy_plus.png) para crear un nuevo panel u obtener un nuevo conjunto de datos.
 
--   The listed <bpt id="p1">**</bpt>Dashboards, Reports,<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Datasets<ept id="p2">**</ept> are available for you to use.  Shared dashboards are read-only and display the shared icon <ph id="ph1">![](media/powerbi-service-basic-concepts/sharing-icon.png)</ph> .
+-   La lista **paneles, informes,** y **conjuntos de datos** están disponibles para su uso.  Paneles compartidos son de solo lectura y mostrar el icono de ![](media/powerbi-service-basic-concepts/sharing-icon.png) .
 
--   Dashboard, report, and dataset names usually match the name of the underlying dataset file -- but you can <bpt id="p1">[</bpt>rename them<ept id="p1">](powerbi-service-rename-a-dashboard.md)</ept>.
+-   Los nombres de panel, informe y conjunto de datos suelen coincidir con el nombre del archivo de conjunto de datos subyacente, pero puede [cambiarles el nombre](powerbi-service-rename-a-dashboard.md).
 
--   Right-click a dashboard, report or dataset to display the context-sensitive menu. 
+-   Haga clic en un panel, el informe o el conjunto de datos para mostrar el menú contextual. 
 
     ![](media/powerbi-service-basic-concepts/menu.png)
 
 
-Single-click
+Solo clic
 
--   a heading to collapse or expand it
--   a dashboard to display it
--   a report to open it in Reading View
--   a dataset to explore it
+-   un encabezado para contraer o expandir
+-   un panel para mostrarlo
+-   un informe para abrirlo en la vista de lectura
+-   un conjunto de datos para explorarlo
 
-### 2. 
+### 2. **Panel con iconos**
 
-Dashboards are composed of <bpt id="p1">[</bpt>tiles<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>.  Tiles are created either in report Editing View or Q&amp;A. A special type of tile called a <bpt id="p1">[</bpt>widget<ept id="p1">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept> is added directly onto the dashboard. The tiles that appear on a dashboard were specifically put there by a report creator/owner.  The act of adding a tile to a dashboard is called <bpt id="p1">*</bpt>pinning<ept id="p1">*</ept>.
+Los paneles se componen de [mosaicos](powerbi-service-dashboard-tiles.md).  Los iconos se crean alguno de los informes en vista de edición o preguntas y respuestas. Un tipo especial de mosaico llama un [widget](powerbi-service-add-a-widget-to-a-dashboard.md) se agrega directamente en el panel. Los iconos que aparecen en un panel fueron colocados específicamente ahí por un creador o propietario del informe.  La acción de agregar un icono a un panel se denomina *anclaje*.
 
 ![](media/powerbi-service-basic-concepts/canvas.png)
 
-For more information, see <bpt id="p1">**</bpt>[Dashboards]<ept id="p1">**</ept> (above).
+Para obtener más información, consulte **[paneles]** (arriba).
 
-### 3. 
+### 3. **Cuadro de pregunta de preguntas y respuestas**
 
-One way to explore your data is to ask a question and let Power BI Q&amp;A give you an answer, in the form of a visualization. Q&amp;A cannot be used to add content to a report -- only to add content, in the form of tiles, to dashboards.
+Es una manera de explorar los datos que se deben formular que una pregunta y permitir que Power BI Q & A dar una respuesta en forma de una visualización. Preguntas y respuestas no se puede usar para agregar contenido a un informe, sólo para agregar contenido, en forma de mosaico, a los paneles.
 
-Q&amp;A looks for an answer in the dataset(s) connected to the dashboard.  A connected dataset is one that has at least one tile pinned to that dashboard.
+Preguntas y respuestas busca respuestas en los conjuntos de datos conectados al panel.  Un conjunto de datos conectado es aquel que tiene al menos un mosaico anclado a ese panel.
 
 ![](media/powerbi-service-basic-concepts/qna.png)
 
-As soon as you start to type your question, Q&amp;A takes you to the Q&amp;A page. As you type, Q&amp;A helps you ask the right question and find the best answer with rephrasings, autofill, suggestions, and more. When you have a visualization (answer) you like, pin it to your dashboard. For more information, see <bpt id="p1">[</bpt>Q&amp;A in Power BI<ept id="p1">](powerbi-service-q-and-a.md)</ept>.
+En cuanto empiece a escribir su pregunta, preguntas y respuestas le lleva a la página de preguntas y. A medida que escribe, preguntas y ayuda a formular la pregunta correcta y encontrar la mejor respuesta con rephrasings, autorrelleno, sugerencias y mucho más. Cuando tenga una visualización (respuesta) le gusta, anclar al panel. Para obtener más información, consulte [preguntas y respuestas en Power BI](powerbi-service-q-and-a.md).
 
-### 4. 
+### 4. **Pantalla completa, ayuda y comentarios**
 
-The icons in the top right corner are your resources for settings, downloads, getting help, and providing feedback to the Power BI team. Select the double arrow to open the dashboard in <bpt id="p1">**</bpt>Full screen<ept id="p1">**</ept> m.  
+Los iconos en la esquina superior derecha son los recursos para la configuración, descargas, obtener ayuda y proporcionar comentarios al equipo de Power BI. Seleccione la flecha doble para abrir el panel de **pantalla completa** m.  
 
 ![](media/powerbi-service-basic-concepts/help-new.png)
 
-### 5. 
+### 5. **Título del panel** (también conocido como panel está activo?)
 
-It's not always easy to figure out which dashboard is active.  The dashboard title appears on the dashboard view page, on the Q&amp;A page, in report Editing View and report Reading View, and when you open a dataset.   
+No siempre es fácil averiguar qué panel está activo.  El título del panel aparece en la página de vista de panel, en la p & una página, en la vista de edición y vista de lectura del informe y abrir un conjunto de datos.   
 
 ![](media/powerbi-service-basic-concepts/dash-title-new.png)
 
-### 6. 
+### 6. **Iniciador de aplicaciones de Office 365**
 
-The app launcher is designed to help you get to your Office 365 apps.
+El iniciador de aplicaciones está diseñado para ayudarle a obtener acceso a las aplicaciones de Office 365.
 
 ![](media/powerbi-service-basic-concepts/basicconcepts2-newer.png)
 
-### 7. 
+### 7. **Página principal de Power BI**
 
-Selecting this returns you to the dashboard that you viewed most recently.
+Seleccionar esta opción, devuelve al panel que haya visto recientemente.
 
    ![](media/powerbi-service-basic-concepts/version-new.png)
 
 ### 8. **Opciones**
 
-This area of the workspace contains icons for interacting with the dashboard.  Besides <bpt id="p1">**</bpt>add widget<ept id="p1">**</ept> and <bpt id="p2">**</bpt>share dashboard<ept id="p2">**</ept> selecting the ellipses reveals options for duplicating, printing, and refreshing the dashboard and more.
+Esta área de trabajo contiene iconos para interactuar con el escritorio.  Además **Agregar un widget** y **Compartir panel** seleccionando el botón de puntos suspensivos revela opciones para duplicar, imprimir y actualizar el panel y mucho más.
 
    ![](media/powerbi-service-basic-concepts/options.png)
 
 ## Consulte también
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Introducción a Power BI](powerbi-service-get-started.md)
 
-[Power BI videos](powerbi-videos.md)
+[Vídeos de Power BI](powerbi-videos.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

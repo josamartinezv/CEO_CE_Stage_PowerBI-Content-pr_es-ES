@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Page display settings in a Power BI report"
-   description="Page display settings in a Power BI report"
+   pageTitle="Configuración de pantalla de página en un informe de Power BI"
+   description="Configuración de pantalla de página en un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,53 +21,57 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Page display settings in a Power BI report
+# Configuración de pantalla de página en un informe de Power BI
 
-We understand it is critical to keep your report layout pixel perfect. Sometimes, it can be challenging, because you and your colleagues view those reports on screens with different aspect ratios and sizes. 
+Sabemos que es fundamental para mantener el píxel de diseño de informe perfecto. En ocasiones, puede resultar complicado, ya que usted y sus colegas ver esos informes en pantallas con diferentes proporciones de aspecto y tamaños. 
 
-The default display view is <bpt id="p1">**</bpt>Fit to page<ept id="p1">**</ept> and the default display size is <bpt id="p2">**</bpt>16:9<ept id="p2">**</ept>. If you want to lock in a different aspect ratio, or want to fit your report in a different way, there are two tools to help you: <bpt id="p1">***</bpt>Page View<ept id="p1">***</ept> settings and <bpt id="p2">***</bpt>Page Size<ept id="p2">***</ept> settings.
+La vista de pantalla predeterminada es **Ajustar a la página** y el tamaño de presentación predeterminado es **16:9**. Si desea bloquear en una relación de aspecto diferente o desea ajustar su informe de manera diferente, existen dos herramientas que le ayudarán a: ***Vista página*** configuración y ***tamaño de página*** configuración.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5tg-OXzxe2g" frameborder="0" allowfullscreen></iframe>
 
 
-## Page View settings
+## Configuración de la vista de página
 
 ![](media/powerbi-service-change-report-display-settings/pbi-change-page-view.png)
 
 
 
-The <bpt id="p1">*</bpt>Page View<ept id="p1">*</ept> settings let you control the display of your report page relative to the browser window.  You can choose between:
+El *Vista página* configuración permite controlar la visualización de la página del informe en relación con la ventana del explorador.  Puede elegir entre:
 
--   <bpt id="p1">**</bpt>Fit to Page<ept id="p1">**</ept> (default): contents are scaled to best fit the page
--   <bpt id="p1">**</bpt>Fit to Width<ept id="p1">**</ept>: contents are scaled to fit within the width of the page
--   <bpt id="p1">**</bpt>Actual Size<ept id="p1">**</ept>: contents are displayed at full size
+-   
+            **Ajustar a la página** (valor predeterminado): se escala para ajustarse mejor a la página de contenido
+-   
+            **Ajustar a ancho**: contenido se escala para que encaje dentro del ancho de la página
+-   
+            **Tamaño real**: se muestra el contenido en tamaño completo
 
-Page View settings are available in both <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept> and <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>. In Editing View, a report owner can assign a Page View setting to individual report pages, and those settings are saved with the report. When a colleague opens that report in Reading View, she sees the report pages display using the owner's settings.  However, while working with the report in Reading View, she can temporarily change the Page View settings.  Once she leaves the report, the Page View settings revert back to those that were set by the report owner.
+Configuración de la vista de página está disponible tanto en [vista lectura](powerbi-service-interact-with-a-report-in-reading-view.md) y [vista de edición de](powerbi-service-interact-with-a-report-in-editing-view.md). En la vista de edición, el propietario de un informe puede asignar a una configuración de vista de página a páginas del informe individuales y esas configuraciones se guardan con el informe. Cuando un compañero abre ese informe en la vista de lectura, ve las páginas del informe se muestran con la configuración del propietario.  Sin embargo, al trabajar con el informe en la vista de lectura, temporalmente puede cambiar la configuración de la vista de página.  Una vez que deja el informe, la configuración de vista de página volver a aquellos que fueron establecidos por el propietario del informe.
 
-## Page Size settings
+## Configuración de tamaño de página
 
 ![](media/powerbi-service-change-report-display-settings/pbi-change-page-size.png)
 
-The <bpt id="p1">*</bpt>Page Size<ept id="p1">*</ept> settings control the display ratio and actual size (in pixels).  Page Size settings are only available in Editing View.
+El *tamaño de página* opciones controlan la relación de visualización y el tamaño real (en píxeles).  Configuración de tamaño de página sólo está disponibles en la vista de edición.
 
--   4:3 ratio
+-   proporción de 4:3
 
--   16:9 ratio (default)
+-   relación de 16:9 (valor predeterminado)
 
 -   Cortana
 
--   Letter
+-   Letra
 
--   Custom (height and width in pixels)
+-   Personalizado (alto y ancho en píxeles)
 
 ## Paso siguiente
 
-<bpt id="p1">[</bpt>Learn how to use Page View and Page Size settings in your own Power BI reports<ept id="p1">](powerbi-service-tutorial-change-report-display-settings.md)</ept>.
+
+            [Aprenda a usar la configuración de vista de página y el tamaño de página en sus propios informes de Power BI](powerbi-service-tutorial-change-report-display-settings.md).
 
 ## Consulte también
 
-Read more about <bpt id="p1">[</bpt>reports in Power B<ept id="p1">](powerbi-service-reports.md)</ept>
+Obtenga más información sobre [informes en Power B](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

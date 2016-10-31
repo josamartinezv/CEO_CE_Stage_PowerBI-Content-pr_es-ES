@@ -1,67 +1,67 @@
-<properties pageTitle="Documentation Example - Special Characters" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Special Characters" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación: caracteres especiales" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Special Characters" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Special Characters #
+# Por ejemplo, caracteres especiales #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the use of various characters so that you can see how they will be rendered within azure.microsoft.com.  
+El contenido entre las líneas siguientes muestra el uso de varios caracteres para que puedan ver cómo se representará en azure.microsoft.com.  
 
-http://www.ascii.cl/htmlcodes.htm
+http://www.ASCII.CL/htmlcodes.htm
 
 
 ---
-## Special Characters in this heading: &amp; &lt; &gt; « » √ – — ™ © ® ‘ ’ “ ”#
+## Caracteres especiales en este título: & < > «» √ –:™ ©® ' ' ""#
 
 
-| Character     |  Valor  |  HTML Code | Descripción |
+| Character     |  Valor  |  Código HTML | Descripción |
 |--------------|----------|---------|------|
-| &#38;        |   &     | `&#38;` | ampersand |
+| &#38;        |   &     | `&#38;` | símbolo de y comercial |
 | &#60;        |   <     | `&#60;` | Menor que |
 | &#62;        |   >     | `&#62;` | mayor que |
-| « » |   « »   | n/a | chevrons |
-| &amp;#x2713;       |   √     | `&#x2713;` | checkmark |
-| &#8211;       |   –     | `&#8211;` | en dash |
-| &#8212;       |   —     | `&#8212;` | em dash |
-| &#8482;       |   ™     | `&#8482;`  | trade mark sign |
-| &#169;       |   ©     | `&#169;` | copyright sign |
-| &#174;       |   ®     | `&#174;` | registered trade mark sign |
-| &#8218;       |   “     | `&#8218;` | left single quotation mark |
-| &#8219;       |   ”     | `&#8219;` | right single quotation mark |
-| &#8220;       |   “     | `&#8220;` | left double quotation mark |
-| &#8221;       |   ”     | `&#8221;` | right double quotation mark |
-| &euro;        |   €     | `&euro;` | euro sign |
+| « » |   « »   | n/a | comillas angulares |
+| & #x 2713;       |   √     | `&#x2713;` | checkmark |
+| &#8211;       |   –     | `&#8211;` | guión corto |
+| &#8212;       |   —     | `&#8212;` | guión largo |
+| &#8482;       |   ™     | `&#8482;`  | símbolo de marca comercial |
+| &#169;       |   ©     | `&#169;` | signo de copyright |
+| &#174;       |   ®     | `&#174;` | inicio de sesión de marcas registradas |
+| &#8218;       |   “     | `&#8218;` | comilla simple |
+| &#8219;       |   ”     | `&#8219;` | comilla simple de cierre |
+| &#8220;       |   “     | `&#8220;` | comilla doble |
+| &#8221;       |   ”     | `&#8221;` | comilla doble |
+| &euro;        |   €     | `&euro;` | signo de euro |
 
 ---
 
-## Numbered list with special characters
+## Lista numerada con caracteres especiales
 
 1. Lista numerada
 2. & < > « » √ – — ™ © ® ‘ ’ “ ”
-3. End of numbered list
+3. Final de la lista numerada
 
 ---
 
-## Bullet list with special characters
+## Lista con viñetas con caracteres especiales
 
-- Bullet list
+- Lista con viñetas
 - & < > « » √ – — ™ © ® ‘ ’ “ ”
-- End of bullet list
+- Final de la lista con viñetas
 
 ---
 
-## Note with special characters
+## Tenga en cuenta con caracteres especiales
 
-> [AZURE.NOTE] A note with special characters:  &lt; &gt; « » √ – — ™ © ® ‘ ’ “ ”
-
----
-
-## Link with special characters
-
-[a link with special characters: &lt; &gt; « » √ – — ™ © ® ‘ ’ “ ”](http://azure.microsoft.com/)
+> [AZURE.NOTE] Una nota con caracteres especiales: < > «» √ –:™ ©® ' ' ""
 
 ---
 
-## Code with special characters
+## Vincular con caracteres especiales
+
+[un vínculo con caracteres especiales: < > «» √ –:™ ©® ' ' ""](http://azure.microsoft.com/)
+
+---
+
+## Código con caracteres especiales
 
 `Inline with special characters: < > « » √ – — ™ © ® ‘ ’ “ ”`
 

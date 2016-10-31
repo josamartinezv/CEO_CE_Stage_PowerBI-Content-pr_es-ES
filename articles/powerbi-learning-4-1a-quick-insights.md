@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Quick Insights in Power BI"
-   description="Learn how to get Quick Insights and visuals in a few clicks"
+   pageTitle="Visión rápida de Power BI"
+   description="Aprenda a obtener una visión rápida y elementos visuales en unos pocos clics"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,24 +23,24 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Use Quick Insights in the Power BI service
+# Utilice la información rápidamente en el servicio Power BI
 
-When you're working with a dashboard, report, or dataset in the Power BI service, you can have Power BI look for quick insights into the data. In Power BI, from the <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> section in the left pane, select the <bpt id="p2">*</bpt>ellipses<ept id="p2">*</ept> (the three dots) beside the dataset you're interested in. A menu of options appears, and on the far right you'll see an option called <bpt id="p1">**</bpt>Quick Insights<ept id="p1">**</ept>.
+Cuando trabaja con un panel, un informe o un conjunto de datos en el servicio Power BI, puede tener que Power BI busque información rápidamente en los datos. En Power BI, desde el **conjuntos de datos** sección en el panel izquierdo, seleccione el *elipses* (tres puntos) al lado del conjunto de datos que le interesan. Aparece un menú de opciones y, en el extremo derecho, verá una opción denominada **profundas**.
 
 ![](media/powerbi-learning-4-1a-quick-insights/4-1a_1.png)
 
-When you select Quick Insights, Power BI performs some machine learning and searches the data, analyzing it to find quick insights. You'll see a notification in the upper-right side of the service that indicated Power BI is working on finding insights.
+Cuando se selecciona información rápidamente, Power BI realiza algunos aprendizaje automático y busca los datos, analizarlos para buscar información rápidamente. Verá una notificación en la esquina superior derecha del servicio que indicó Power BI está trabajando en búsqueda de visión.
 
 ![](media/powerbi-learning-4-1a-quick-insights/4-1a_2.png)
 
-After fifteen seconds or so, the notification changes to let you know that Power BI found some insights.
+Después de quince segundos o más, la notificación cambia para que sepa que Power BI encontró algo de información.
 
 ![](media/powerbi-learning-4-1a-quick-insights/4-1a_3.png)
 
-When you select the <bpt id="p1">**</bpt>View insights<ept id="p1">**</ept> button on the notification, you're presented with a page of visuals that show the insights that Power BI found, similar to what you see in the following image. There are a bunch of insights, which you can scroll down through the page to view and consider.
+Cuando se selecciona el **Ver visión** botón en la notificación, se le presenta una página de elementos visuales que muestran la información que Power BI encontró similar a lo que ve en la siguiente imagen. Hay un montón de visión, lo que puede desplazarse hacia abajo por la página para ver y tener en cuenta.
 
 ![](media/powerbi-learning-4-1a-quick-insights/4-1a_4.png)
 
-Like any other visual, you can interact with the visuals in the Quick Insights page, and you can also pin any of them to a dashboard that you might have, or further filter one or more of them (or as many as you like), to search for additional insights that might be waiting on your curiosity to uncover.
+Al igual que cualquier otro objeto visual, puede interactuar con los elementos visuales en la página de información rápidamente y también puede anclar cualquiera de ellos a un panel que es posible que tenga, o filtrar uno o varios de ellos (o tantas como desee), para buscar información adicional que podría estar esperando su curiosidad de descubrir.
 
-With <bpt id="p1">**</bpt>Quick Insights<ept id="p1">**</ept>, you can let Power BI do the work to spot outliers and trends in your data, then use those findings in your dashboards, or further refine and filter them to get to the insights that are most important to you.
+Con **profundas**, puede permitir que Power BI realizan el trabajo para detectar valores atípicos y tendencias en los datos, a continuación, utilice las conclusiones de los paneles o perfeccionar y filtrarlos para obtener acceso a la información que son más importante para usted.

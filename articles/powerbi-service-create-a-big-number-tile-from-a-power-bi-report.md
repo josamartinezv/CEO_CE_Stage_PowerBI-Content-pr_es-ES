@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a big number tile from a Power BI report"
-   description="Create a big number tile from a Power BI report"
+   pageTitle="Crear un icono de número grande de un informe de Power BI"
+   description="Crear un icono de número grande de un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,56 +19,56 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Create a big number tile from a Power BI report
+# Crear un icono de número grande de un informe de Power BI
 
-Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can create a big number tile by <bpt id="p1">[</bpt>asking a question in the Q&amp;A box<ept id="p1">](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)</ept>, or in a Power BI report. This article explains how to create one in a report.
+A veces un único número es lo más importante que desea realizar un seguimiento en el panel de Power BI, como ventas totales, mercado recurso compartido de un año a año u oportunidades total. Puede crear un icono grande número por [una pregunta en el cuadro de preguntas y respuestas](powerbi-service-create-a-big-number-tile-for-a-dashboard.md), o en un informe de Power BI. Este artículo explica cómo crear uno en un informe.
 
-1.  Create a <bpt id="p1">[</bpt>dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept> and <bpt id="p2">[</bpt>get data<ept id="p2">](powerbi-service-get-data.md)</ept>.
+1.  Crear un [panel](powerbi-service-dashboards.md) y [obtener datos](powerbi-service-get-data.md).
 
-    If you want data to practice on, try <bpt id="p1">[</bpt>downloading the Retail Analysis sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept>. 
+    Si desea practicar sobre datos, intente [descargar el ejemplo de análisis de venta](powerbi-sample-retail-analysis-take-a-tour.md). 
 
-2.  Open the report in <bpt id="p1">[</bpt>Editing view<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>.
+2.  Abra el informe en [vista de edición](powerbi-service-go-from-reading-view-to-editing-view.md).
 
-4.  In the report, find a page with some blank space, or <bpt id="p1">[</bpt>add a new page to the report<ept id="p1">](powerbi-service-add-a-page-to-a-report.md)</ept>.
+4.  En el informe, busque una página con espacio en blanco o [Agregar una nueva página al informe](powerbi-service-add-a-page-to-a-report.md).
 
-5.  In the Fields list, select the number field you want to display.
+5.  En la lista de campos, seleccione el campo de número que desea mostrar.
 
-    In this example, <bpt id="p1">**</bpt>Open Store count<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Store<ept id="p2">**</ept> table. Power BI creates a column chart with the one number.
+    En este ejemplo, **recuento Abrir almacén** en el **almacén** tabla. Power BI crea un gráfico de columnas con el uno número.
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_RptNumberTileChart.png)
 
-6.  In the Visualizations pane, select the Card icon.
+6.  En el panel de visualizaciones, seleccione el icono de la tarjeta.
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_ChangeChartCard.png)
 
-7.  Select the pin icon <ph id="ph1">![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_PinTile.png)</ph> in the upper-right corner to add the tile to the dashboard. 
+7.  Seleccione el icono de pin ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_PinTile.png) en la esquina superior derecha para agregar el icono al escritorio. 
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/PBI_DashNumberTileReport.png)
 
-8.  Pin the tile to an existing dashboard or to a new dashboard. 
+8.  Anclar el mosaico a un panel existente o a un nuevo panel. 
 
-    -   Existing dashboard: select the name of the dashboard from the dropdown.
+    -   Panel existente: seleccione el nombre del panel en la lista desplegable.
 
-    -   New dashboard: type the name of the new dashboard.
+    -   Nuevo panel: escriba el nombre del nuevo panel.
 
-9.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+9.  Seleccione **Pin**.
 
-    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
+    Un mensaje de confirmación (cerca de la esquina superior derecha) le permite conocer que la visualización se ha agregado, como un icono al escritorio.
 
     ![](media/powerbi-service-create-a-big-number-tile-from-a-power-bi-report/pinSuccess.png)
 
-10. From the navigation pane, select the dashboard with the new tile. There, you can <bpt id="p1">[</bpt>edit and move<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept> the pinned visualization.
+10. En el panel de navegación, seleccione el panel con el nuevo icono. Allí, puede [Editar y mover](powerbi-service-edit-a-tile-in-a-dashboard.md) la visualización anclada.
 
 
 
 ## Consulte también
 
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
+[Iconos de panel en Power BI](powerbi-service-dashboard-tiles.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
 [](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Annotate and share a tile from the Android app"
-   description="Annotate and share a tile from the Android app for Power BI"
+   pageTitle="Anotar y compartir un icono de la aplicación Android"
+   description="Anotar y compartir un icono de la aplicación Android para Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,40 +19,41 @@
    ms.workload="powerbi"
    ms.date="09/26/2016"
    ms.author="maggies"/>
-# Annotate and share a tile from the Android app for Power BI
+# Anotar y compartir un icono de la aplicación Android para Power BI
 
-When you share a snapshot of a tile from the <bpt id="p1">[</bpt>Android app for Microsoft Power BI<ept id="p1">](powerbi-mobile-android-app-get-started.md)</ept>, your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
+Cuando comparta una instantánea de un mosaico de la [aplicación Android para Microsoft Power BI](powerbi-mobile-android-app-get-started.md), los destinatarios ven la instantánea del mosaico exactamente igual que cuando se envió el correo. No pueden abrir el panel. Instantáneas de iconos puede enviar a cualquier persona, no sólo compañeros en el mismo dominio de correo electrónico.
 
-You can add annotations — lines, comments, or stickers — to a tile before you share a snapshot.
+Puede agregar anotaciones, etiquetas, comentarios o líneas, a un mosaico antes de compartir una instantánea.
 
 ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/pbi_and_annotate.png)
 
-1. Open a <bpt id="p1">[</bpt>dashboard in the Android app<ept id="p1">](powerbi-mobile-dashboards-in-the-android-app.md)</ept> for Power BI.
+1. Abrir un [panel en la aplicación Android](powerbi-mobile-dashboards-in-the-android-app.md) para Power BI.
 
-    Need to <bpt id="p1">[</bpt>download the Android app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept> first?
+    ¿Necesita [Descargar la aplicación Android](http://go.microsoft.com/fwlink/?LinkID=544867) primera?
 
-2. Tap a tile to open it in focus mode.
+2. Puntee en un mosaico para abrirlo en modo de enfoque.
 
-3. Tap the share icon <ph id="ph1">![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/PBI_Andr_ShareSnapIcon.png)</ph> in the upper-right corner of the tile.
+3. Puntee en el icono de recurso compartido ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/PBI_Andr_ShareSnapIcon.png) en la esquina superior derecha del mosaico.
 
-4. To annotate the tile, tap an icon in the lower bar in the Edit window.
+4. Para anotar el mosaico, puntee en un icono en la barra inferior de la ventana de edición.
 
     ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-android-app/power-bi-android-annotate-bar.png)
 
-    -   Tap the paintbrush to draw lines of different colors and thicknesses, then tap <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.
+    -   Puntee en la herramienta Pincel para dibujar líneas de espesores y colores diferentes, a continuación, puntee en **realiza**.
 
-    -   Tap the smiley face to add stickers (like emoticons) on the tile, then tap <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.
+    -   Puntee en la cara sonriente para agregar etiquetas (por ejemplo, iconos gestuales) en el icono, a continuación, puntee en **realiza**.
 
-    -   Tap the <bpt id="p1">**</bpt>AA<ept id="p1">**</ept> to type comments, then tap <bpt id="p2">**</bpt>Done<ept id="p2">**</ept>.
+    -   Puntee en el **AA** Escriba comentarios, a continuación, puntee en **realiza**.
 
-    -   Tap the microphone to record a message, which is displayed as text on your tile. Then tap <bpt id="p1">**</bpt>Done<ept id="p1">**</ept>.
+    -   Puntee en el micrófono para grabar un mensaje que se muestra como texto en el icono. A continuación, puntee **realiza**.
 
-5. After annotating, tap <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> in the upper-right corner and send, using any sharing app you have on your Android phone.
+5. Después de anotar, puntee **recurso compartido** en la esquina superior derecha y envío, mediante cualquier aplicación de uso compartido tiene en su teléfono Android.
 
 ### Consulte también
 
--  <bpt id="p1">[</bpt>Download the Android app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept> from Google play
--  [Share a dashboard from the Android app](powerbi-mobile-share-a-dashboard-from-the-android-app.md)
--  [Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)
--  [Get started with Power BI](powerbi-service-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+-  
+            [Descargue la aplicación Android](http://go.microsoft.com/fwlink/?LinkID=544867) de Google play
+-  [Compartir un panel de la aplicación Android](powerbi-mobile-share-a-dashboard-from-the-android-app.md)
+-  [Introducción a la aplicación Android para Power BI](powerbi-mobile-android-app-get-started.md)
+-  [Introducción a Power BI](powerbi-service-get-started.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

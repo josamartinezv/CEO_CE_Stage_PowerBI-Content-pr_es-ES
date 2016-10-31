@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Integrate a Power BI tile into an app"
-   description="Walkthrough to integrate a tile into an app, sample code"
+   pageTitle="Integrar un mosaico de Power BI en una aplicación"
+   description="Tutorial para integrar un mosaico en una aplicación, el código de ejemplo"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,40 +20,43 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Integrate a tile into an app
+# Integrar un mosaico en una aplicación
 
 ## Introducción
 
-In this walkthrough, you integrate, or embed, a tile into a web app using C# and the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> API, some JavaScript code, and an IFrame.
+En este tutorial, integrar o incrustar un icono en una aplicación web con C# y el **Power BI** API, algún código JavaScript y un IFrame.
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: To get started with this walkthrough, you need a <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> account. If you don't have an account, see <bpt id="p1">[</bpt>Sign up for Power BI<ept id="p1">]( powerbi-admin-free-with-custom-azure-directory.md)</ept>.
+>
+            **NOTA**: para empezar a trabajar con este tutorial, necesita un **Power BI** cuenta. Si no tiene una cuenta, consulte [suscribirse en Power BI]( powerbi-admin-free-with-custom-azure-directory.md).
 
-To integrate a tile into a web app, you use the <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> API, and an Azure Active Directory (AD) authorization <bpt id="p2">**</bpt>access token<ept id="p2">**</ept> to get a dashboard and tile. Then, you load the tile into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept> using the same access token. The <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> API provides programmatic access to certain <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> resources. See <bpt id="p1">[</bpt>Overview of Power BI REST API<ept id="p1">](https://msdn.microsoft.com/library/dn877544.aspx)</ept>. The illustration below shows the general flow to integrate a tile.
+Para integrar un mosaico en una aplicación web, utiliza el **Power BI** API y una autorización de Azure Active Directory (AD) **token de acceso** para obtener un panel y el mosaico. A continuación, cargar el mosaico en un **IFrame** usando el mismo token de acceso. El **Power BI** API proporciona acceso mediante programación a ciertos **Power BI** recursos. Consulte [información general sobre la API de REST de Power BI](https://msdn.microsoft.com/library/dn877544.aspx). La siguiente ilustración muestra el flujo general para integrar un mosaico.
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-flow.png)
 
-Here are the steps to integrate, or embed, a tile into a web page.
+Estos son los pasos para integrar o incrustar un icono en una página web.
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: This article shows the code used in the <bpt id="p2">[</bpt>Integrate a tile sample<ept id="p2">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)</ept> on GitHub. To follow along with this walkthrough, you should download the sample. To run the sample, see <bpt id="p1">[</bpt>Configure the integrate a tile sample<ept id="p1">](powerbi-developer-integrate-tile-register.md#configure-sample)</ept> in the Register a web app with Azure AD step .
+>
+            **NOTA**: este artículo muestra el código usado en el [integrar un ejemplo de mosaico](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app) en GitHub. Para seguir este tutorial, debe descargar el ejemplo. Para ejecutar el ejemplo, vea [Configurar la integración de un mosaico de ejemplo](powerbi-developer-integrate-tile-register.md#configure-sample) en el registro de una aplicación web con el paso de Azure AD.
 
-## Steps to integrate a tile into an app
+## Pasos para integrar un mosaico en una aplicación
 
-- <bpt id="p1">[</bpt>Step 1: Register a web app with Azure AD<ept id="p1">](powerbi-developer-integrate-tile-register.md)</ept>. You need to register your web app with <bpt id="p1">**</bpt>Azure Active Directory (AD)<ept id="p1">**</ept> so that Azure AD can identify your application when you need to access <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> tiles.
-- [Step 2: Get a Power BI dashboard](powerbi-developer-integrate-tile-get-dashboard.md)
-- [Step 3: Get a Power BI tile](powerbi-developer-integrate-tile-get-tile.md)
-- [Step 4: Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)
-- [Integrate a tile into an app code listing](powerbi-developer-integrate-tile-code.md)
+- 
+            [Paso 1: Registrar una aplicación web con Azure AD](powerbi-developer-integrate-tile-register.md). Debe registrar su aplicación web con **Azure Active Directory (AD)** para que Azure AD pueda identificar su aplicación necesita tener acceso a **Power BI** mosaicos.
+- [Paso 2: Obtener un panel de Power BI](powerbi-developer-integrate-tile-get-dashboard.md)
+- [Paso 3: Obtener un mosaico de Power BI](powerbi-developer-integrate-tile-get-tile.md)
+- [Paso 4: Cargar un mosaico de Power BI en un IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)
+- [Integrar un mosaico en un listado de código de aplicación](powerbi-developer-integrate-tile-code.md)
 
 ## Paso siguiente
 
-In the next step, you learn how to <bpt id="p1">[</bpt>Register a web app with Azure AD<ept id="p1">](powerbi-developer-integrate-tile-register.md)</ept> to get a <bpt id="p2">**</bpt>Client ID<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Client Secret<ept id="p3">**</ept> to authenticate the web app with <bpt id="p4">**</bpt>Azure AD<ept id="p4">**</ept>. A Client ID and Client Secret is used to identify your app in Azure AD. After you get a <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Client Secret<ept id="p2">**</ept>, you can configure the <bpt id="p3">[</bpt>Integrate a tile sample<ept id="p3">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)</ept>. See <bpt id="p1">[</bpt>Configure the integrate a tile sample<ept id="p1">](powerbi-developer-integrate-tile-register.md#configure-sample)</ept>.
+En el paso siguiente, aprenderá cómo [registrar una aplicación web con Azure AD](powerbi-developer-integrate-tile-register.md) para obtener un **Id. de cliente** y **secreto de cliente** para autenticar la aplicación web con **Azure AD**. Un identificador de cliente y el secreto del cliente se utiliza para identificar la aplicación en Azure AD. Después de obtener un **Id. de cliente** y **secreto de cliente**, puede configurar la [integrar un mosaico de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app). Consulte [Configurar la integración de un mosaico de ejemplo](powerbi-developer-integrate-tile-register.md#configure-sample).
 
-[Next Step &gt;](powerbi-developer-integrate-tile-register.md)
+[Siguiente paso >](powerbi-developer-integrate-tile-register.md)
 
 ## Consulte también
 
-[Sign up for Power BI]( powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
-[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)  
-[Step 1: Register a web app with Azure AD](powerbi-developer-integrate-tile-register.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Registrarse para Power BI]( powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrar un mosaico de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
+[Configurar la integración de un mosaico de ejemplo](powerbi-developer-integrate-tile-register.md#configure-sample)  
+[Paso 1: Registrar una aplicación web con Azure AD](powerbi-developer-integrate-tile-register.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

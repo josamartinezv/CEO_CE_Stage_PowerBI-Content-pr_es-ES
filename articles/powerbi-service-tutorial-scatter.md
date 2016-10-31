@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Scatter Charts in Power BI"
-   description="Tutorial: Scatter Charts in Power BI"
+   pageTitle="Tutorial: Dispersión gráficos en Power BI"
+   description="Tutorial: Dispersión gráficos en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,99 +21,99 @@
    ms.date="08/29/2016"
    ms.author="mihart"/>
 
-# Tutorial: scatter charts and bubble charts in Power BI  
+# Tutorial: dispersión diagramas y gráficos de burbujas en Power BI  
 
-A scatter chart always has two value axes to show one set of numerical data along a horizontal axis and another set of numerical values along a vertical axis. The chart displays points at the intersection of an x and y numerical value, combining these values into single data points. These data points may be distributed evenly or unevenly across the horizontal axis, depending on the data.
+Un gráfico de dispersión siempre tiene dos ejes de valores para mostrar un conjunto de datos numéricos en un eje horizontal y otro conjunto de valores numéricos a lo largo de un eje vertical. Valor numérico de y, la combinación de estos valores en datos puntos y el gráfico muestra los puntos en la intersección de una x. Estos puntos de datos pueden estar distribuidos uniformemente o de forma desigual entre el eje horizontal, dependiendo de los datos.
 
-A bubble chart replaces the data points with bubbles, with the bubble <bpt id="p1">*</bpt>size<ept id="p1">*</ept> representing an additional dimension of the data.
+Un gráfico de burbujas reemplaza los puntos de datos de burbujas, con la burbuja *tamaño* que representa una dimensión adicional de los datos.
 
 
-## When to use a scatter chart or bubble chart
+## Cuándo utilizar un gráfico de dispersión o gráfico de burbujas
 
-### Scatter charts are a great choice:
+### Los gráficos de dispersión son una excelente opción:
 
--  to show relationships between 2 (scatter) or 3 (bubble) <bpt id="p1">**</bpt>numerical<ept id="p1">**</ept> values.
+-  para mostrar las relaciones entre 2 (Dispersión) o 3 (burbuja) **numérico** valores.
 
--  To plot two groups of numbers as one series of xy coordinates.
+-  Para trazar dos grupos de números como una serie de coordenadas xy.
 
--  instead of a line chart when you want to change the scale of the horizontal axis    
+-  en lugar de un gráfico de líneas si desea cambiar la escala del eje horizontal    
 
-- to turn the horizontal axis into a logarithmic scale.
+- para convertir el eje horizontal en una escala logarítmica.
 
-- to display worksheet data that includes pairs or grouped sets of values. In a scatter chart, you can adjust the independent scales of the axes to reveal more information about the grouped values.
+- para mostrar los datos de hoja de cálculo que incluyen pares o conjuntos de valores agrupan. En un gráfico de dispersión, puede ajustar las escalas independientes de los ejes para obtener más información acerca de los valores agrupados.
 
-- to show patterns in large sets of data, for example by showing linear or non-linear trends, clusters, and outliers.
+- para mostrar patrones en grandes conjuntos de datos, por ejemplo, mostrando los valores atípicos, clústeres y tendencias lineales o no lineal.
 
-- to compare large numbers of data points without regard to time    The more data that you include in a scatter chart, the better the comparisons that you can make.
+- para comparar grandes números de puntos de datos sin tener en cuenta en el tiempo de los datos más que tener en cuenta gráfico, mejor las comparaciones que se pueden realizar.
 
-### Bubble charts are a great choice:
+### Los gráficos de burbujas son una excelente opción:
 
-- if your data has 3 data series that each contain a set of values.
+- Si los datos tienen 3 series de datos que contienen un conjunto de valores.
 
-- to present financial data.  Different bubble sizes are useful to visually emphasize specific values.
+- para presentar los datos financieros.  Los tamaños de burbuja diferentes son útiles para resaltar visualmente los valores específicos.
 
-- to use with quadrants.
+- Para utilizar con cuadrantes.
 
-## Create a scatter chart
+## Crear un gráfico de dispersión
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PVcfPoVE3Ys?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1.  Open the Retail Analysis Sample in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept> and <bpt id="p2">[</bpt>add a new report page<ept id="p2">](powerbi-service-add-a-page-to-a-report.md)</ept>.
+1.  Abra el ejemplo de análisis de venta directa en [vista de edición](powerbi-service-interact-with-a-report-in-editing-view.md) y [Agregar una nueva página de informe](powerbi-service-add-a-page-to-a-report.md).
 
-2. From the Fields pane, select <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Sales Per Sq Ft<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Sales<ept id="p3">**</ept><ph id="ph2"> &gt; </ph><bpt id="p4">**</bpt>Total Sales Variance %<ept id="p4">**</ept>.
+2. En el panel de campos, seleccione **ventas** > **ventas por Sq Ft** y **ventas** > **% del Total de ventas varianza**.
 
-3. From the Fields pane, select <bpt id="p1">**</bpt>District &gt; District<ept id="p1">**</ept>.
+3. En el panel de campos, seleccione **distrito > distrito**.
 
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_pre_convert.png)
 
-4. Convert to a scatter chart. In the Visualization pane, select the Scatter chart icon.
+4. Convertir a un gráfico de dispersión. En el panel de visualización, seleccione el icono de gráfico de dispersión.
  ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_icon.png).
 
-5. Drag <bpt id="p1">**</bpt>District<ept id="p1">**</ept> from <bpt id="p2">**</bpt>Details<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Legend<ept id="p3">**</ept>.
+5. Arrastre **distrito** desde **detalles** a **leyenda**.
 
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_new.png)
 
-We now have a scatter chart that plots Total Sales Variance % along the Y axis, and plots Sales Per Square Feet along the X axis.  The data point colors represent districts.  Now let's add a third dimension.
+Ahora tenemos un gráfico de dispersión que traza el Total de ventas de varianza % a lo largo del eje Y y gráficos de ventas por pies cuadrados en el eje X.  Colores representan distritos de punto de datos.  Ahora vamos a agregar una tercera dimensión.
 
-## Create a bubble chart
+## Crear un gráfico de burbujas
 
-1.  From the Fields pane, drag <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>This Year Sales<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Value<ept id="p3">**</ept> to the <bpt id="p4">**</bpt>Size<ept id="p4">**</ept> area. 
+1.  En el panel de campos, arrastre **ventas** > **ventas de este año** > **valor** a la **tamaño** área. 
 
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_size.png)
 
-2. Hover over a bubble.  The size of the bubble reflects the value of <bpt id="p1">**</bpt>This Year Sales<ept id="p1">**</ept>.
+2. Mantenga el mouse sobre una burbuja.  El tamaño de la burbuja refleja el valor de **ventas de este año**.
 
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_chart_hover.png)
 
-3. Optionally, <bpt id="p1">[</bpt>format the visualization colors, labels, titles, background, and more<ept id="p1">](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)</ept>.
+3. Opcionalmente, [dar formato a los colores de visualización, etiquetas, títulos, fondo y](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md).
 
 ## Solucionar problemas
 
-### **Your scatter chart has only one data point**  
+### **El gráfico de dispersión tiene sólo un punto de datos**  
 
-Does your scatter chart have only one data point that aggregates all the values on the X and Y axes?  Or maybe it aggregates all the values along a single horizontal or vertical line?
+¿El gráfico de dispersión tiene sólo un punto de datos que agrega todos los valores de los ejes X e Y?  ¿O quizás agrega todos los valores a lo largo de una sola línea horizontal o vertical?
 
 ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot1.png)
 
-Add a field to the <bpt id="p1">**</bpt>Details<ept id="p1">**</ept> area to tell Power BI how to group the values. The field must be unique for each point you want to plot.  
+Agregar un campo a la **detalles** área para indicar cómo se agruparán los valores de Power BI. El campo debe ser único para cada punto de trazado.  
 
-* Like a simple row number or ID field:
+* Como el número de fila simple o un campo de Id.:
 
     ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot.png)
 
-* Or if you don’t have that in your data, you can create a field that concatenates your X and Y values together into something unique per point: <ph id="ph1">  ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)</ph>
+* O bien, si no tiene en los datos, puede crear un campo que concatena los valores X e Y en un valor exclusivo por cada punto:   ![](media/powerbi-service-tutorial-scatter/PBI_scatter_tshoot2.png)
 
-   Use the Query Editor to add an Index Column to your dataset.  Then add this column to the <bpt id="p1">**</bpt>Details<ept id="p1">**</ept> area of your visualization.
+   Utilice el Editor de consultas para agregar una columna de índice para el conjunto de datos.  A continuación, agregar esta columna a la **detalles** área de su visualización.
 
-  For more information, see <bpt id="p1">[</bpt>Aggregates in reports<ept id="p1">](powerbi-service-aggregates.md)</ept>.
+  Para obtener más información, consulte [agregados en los informes](powerbi-service-aggregates.md).
 
 ## Consulte también  
- [Add a visualization to a report](powerbi-service-add-visualizations-to-a-report-i.md)  
+ [Agregar una visualización a un informe](powerbi-service-add-visualizations-to-a-report-i.md)  
 
- [Visualization types in Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+ [Tipos de visualización en Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
 
- [Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+ [Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
 
-[Try it out -- it's free!](https://powerbi.com/)  
+[¡Probar--es gratuito!](https://powerbi.com/)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

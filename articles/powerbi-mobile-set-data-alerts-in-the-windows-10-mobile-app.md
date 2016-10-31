@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Set data alerts in the Power BI mobile app for Windows 10"
-   description="Learn to set alerts to notify you when data in a dashboard changes beyond limits you set in the Power BI mobile app for Windows 10 and in the Power BI service."
+   pageTitle="Establecer alertas de datos en la aplicación móvil de Power BI para Windows 10"
+   description="Aprenda a configurar alertas para recibir notificaciones cuando cambian los datos en un panel más allá de los límites se configuran en la aplicación móvil de Power BI para Windows 10 y el servicio Power BI."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -20,86 +20,88 @@
    ms.date="10/04/2016"
    ms.author="maggies"/>
 
-# Set data alerts in the Power BI mobile app for Windows 10  
+# Establecer alertas de datos en la aplicación móvil de Power BI para Windows 10  
 
-You can set alerts in the Power BI mobile app for Windows 10 and in the Power BI service to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges. You can set data alerts in the Power BI mobile app and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
+Puede establecer alertas en la aplicación móvil de Power BI para Windows 10 y en el servicio Power BI para notificar cuando cambian los datos en un panel más allá de los límites establece. Funcionan las alertas en los mosaicos que incluye un número único, como las tarjetas y medidores. Puede establecer alertas de datos en la aplicación móvil de Power BI y verlos en el servicio Power BI y viceversa. Sólo puede ver las alertas de datos que se establece, aunque compartan un panel o una instantánea de un mosaico.
 
-> [AZURE.WARNING] Data-driven alert notifications provide information about your data. If your device gets stolen, we recommend going to the Power BI service to turn off all data-driven alert rules. 
+> [AZURE.WARNING] Notificaciones de alerta controlada por datos proporcionan información acerca de los datos. Si roban el dispositivo, se recomienda pasar al servicio Power BI para desactivar todas las reglas de alertas controlada por datos. 
 > 
-> Learn more about <bpt id="p1">[</bpt>managing data alerts in the Power BI service<ept id="p1">](powerbi-service-set-data-alerts.md)</ept>.
+> Obtenga más información sobre [Administrar alertas de datos en el servicio Power BI](powerbi-service-set-data-alerts.md).
 
-## Set data alerts
+## Establecer alertas de datos
 
-1.  Tap a number or gauge tile in a dashboard to open it.  
+1.  Puntee en un número o medidor mosaico en un panel para abrirlo.  
 
-2.  Tap the bell icon <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-off.png)</ph> to add an alert.  
+2.  Puntee en el icono de campana ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-off.png) para agregar una alerta.  
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-tap-alert.png)
 
-3.  Tap the plus icon (+).
+3.  Puntee en el icono del signo más (+).
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-no-alerts-yet.png)
 
-4.  Choose to receive alerts above or below a value, and type the value.
+4.  Elija esta opción para recibir alertas por encima o por debajo de un valor y escriba el valor.
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-set-alert.png)
 
-4.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
+4.  Decidir si desea recibir cada hora o alertas diarias y si también desea recibir un correo electrónico cuando se recibe la alerta.
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
+    >
+            **Nota**: no recibir alertas cada hora o cada día a menos que realmente se actualizan los datos en ese momento.
 
-6.  You can change the alert title, too.
+6.  También puede cambiar el título de la alerta.
 
-6.  Tap the check mark.
+6.  Puntee en la marca de verificación.
 
-7.  A single tile can have alerts for values both above and below thresholds. In <bpt id="p1">**</bpt>Manage alerts<ept id="p1">**</ept>, tap the plus sign (+).
+7.  Un solo mosaico puede tener alertas para los valores por encima y por debajo de los umbrales. En **Administrar alertas**, puntee en el signo más (+).
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-add-another-alert.png)
 
-## Receiving alerts
+## Recepción de alertas
 
-You receive alerts in the Power BI <bpt id="p1">[</bpt>Notification Center<ept id="p1">](powerbi-mobile-notification-center.md)</ept> in the Power BI mobile app or in the Power BI service, along with notifications about new dashboards that someone has shared with you.
+Recibir alertas en Power BI [Centro de notificaciones](powerbi-mobile-notification-center.md) en la aplicación móvil de Power BI o en el servicio Power BI, junto con las notificaciones de los nuevos paneles que alguien ha compartido con usted.
 
-Data sources are often set to refresh daily, although some refresh more often. When the data in the dashboard is refreshed, if the data being tracked reaches one of the thresholds you've set, several things will happen.
+Orígenes de datos a menudo se establecen para actualizar diariamente, aunque algunos con más frecuencia de actualización. Cuando se actualizan los datos en el panel, si los datos de seguimiento llegan a uno de los umbrales que ha establecido, se realizará varias acciones.
 
-1.  Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent.
+1.  Power BI se comprueba ver si han pasado más de una hora o más de 24 horas (según la opción seleccionada) desde la última alerta se envió.
 
-    As long as the data is past the threshold, you'll get an alert every hour or every 24 hours.
+    Siempre que los datos están más allá del umbral, obtendrá una alerta cada hora o cada 24 horas.
 
-2.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
+2.  Si ha establecido la alerta para enviar un correo electrónico, encontrará algo parecido a esto en su Bandeja de entrada.
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/powerbi-alerts-email.png)
 
-3.  Power BI adds a message to your <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Notification center<ept id="p2">**</ept><ept id="p1">](powerbi-mobile-notification-center.md)</ept> <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-alert-notifications-icon.png)</ph> and adds a new alert icon to the applicable tile <ph id="ph2">![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/powerbi-alert-tile-notification-icon.png)</ph> .
+3.  Power BI agrega un mensaje a su [**Centro de notificaciones**](powerbi-mobile-notification-center.md) ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-alert-notifications-icon.png) y agrega un nuevo icono de alerta en el mosaico aplicable ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/powerbi-alert-tile-notification-icon.png) .
 
-4. Open your Notification center to see the alert details.
+4. Abra el centro de notificaciones para ver los detalles de alerta.
 
-><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
+>
+            **Nota**: las alertas sólo funcionan en los datos que se actualizan. Cuando los datos se actualicen, Power BI busca para ver si se ha configurado una alerta para los datos. Si los datos ha alcanzado un umbral de alerta, se activará una alerta.
 
 ## Administrar alertas
 
-You can manage individual alerts in the Power BI mobile app or <bpt id="p1">[</bpt>manage all your alerts in the Power BI service<ept id="p1">](powerbi-service-set-data-alerts.md)</ept>.
+Puede administrar las alertas individuales en la aplicación móvil de Power BI o [administrar todas las alertas en el servicio Power BI](powerbi-service-set-data-alerts.md).
 
-### Manage alerts in the Power BI mobile app
+### Administrar alertas en la aplicación móvil de Power BI
 
-1.  In a dashboard, tap a card or gauge tile that has an alert.  
+1.  En un panel, puntee en una tarjeta o medidor mosaico con una alerta.  
 
-2.  Tap the bell icon <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-on.png)</ph>.  
+2.  Puntee en el icono de campana ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-alert-bell-on.png).  
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-has-alerts.png)
 
-3. Tap the alert to change a value or turn it off.
+3. Puntee en la alerta para cambiar un valor o desactivarlo.
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-windows-10-mobile-app/power-bi-windows-10-add-another-alert.png)
 
-4. To delete the alert altogether, right-click or tap and hold &gt; <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.
+4. Para eliminar por completo la alerta, haga clic en o tap y hold > **Eliminar**.
 
-## Tips and troubleshooting
-- Alerts currently aren't supported for Bing tiles or card tiles with date/time measures.
-- Alerts only work with numeric data.
-- Alerts only work on data that is refreshed. They don't work on static data.
+## Sugerencias y solución de problemas
+- Las alertas no se admiten actualmente para mosaicos de Bing o iconos de tarjeta con medidas de fecha y hora.
+- Las alertas sólo funcionan con datos numéricos.
+- Las alertas sólo funcionan en los datos que se actualizan. No funcionan con datos estáticos.
 
 ### Consulte también  
-- [Manage your alerts in the Power BI service](powerbi-service-set-data-alerts.md)
-- [Power BI Mobile Notification Center](powerbi-mobile-notification-center.md)
-- [Get started with Power BI](powerbi-service-get-started.md)  
+- [Administrar las alertas en el servicio Power BI](powerbi-service-set-data-alerts.md)
+- [Centro de notificaciones de Power BI Mobile](powerbi-mobile-notification-center.md)
+- [Introducción a Power BI](powerbi-service-get-started.md)  

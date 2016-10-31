@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Filter a report by location in the Power BI mobile apps for iOS"
-   description="Learn how you can filter a report by your location in the Microsoft Power BI  mobile apps for iOS, if the report owner set geographic tags."
+   pageTitle="Filtrar un informe por la ubicación en las aplicaciones móviles de Power BI para iOS"
+   description="Aprenda cómo puede filtrar un informe por su ubicación en las aplicaciones móviles de Microsoft Power BI para iOS, si el propietario del informe establece etiquetas geográficas."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,26 +19,29 @@
    ms.date="10/12/2016"
    ms.author="maggies"/>
 
-# <a name="filter-a-report-by-location-in-the-power-bi-mobile-apps-for-ios"></a>Filter a report by location in the Power BI mobile apps for iOS
+# <a name="filter-a-report-by-location-in-the-power-bi-mobile-apps-for-ios"></a>Filtrar un informe por la ubicación en las aplicaciones móviles de Power BI para iOS
 
-When you look at a Power BI report on your iPad, iPhone, or iPod Touch, do you see a little pushpin icon in the upper-right corner? If so, then you can filter that report based on your geographic location.
+¿Al examinar un informe de Power BI en su iPad, iPhone o iPod Touch, no verá un pequeño icono de alfiler en la esquina superior derecha? Si es así, puede filtrar ese informe según su ubicación geográfica.
 
-> [AZURE.NOTE] You can only filter by location if the geographic names in the report are in English&amp;#150;for example, "New York City" or "Germany".
+> [AZURE.NOTE] Puede que solo filtrar por ubicación si los nombres geográficos en el informe en inglés & #150; por ejemplo, "Nueva York" o "Germany".
 
-## <a name="filter-your-report-by-your-location"></a>Filter your report by your location
+## <a name="filter-your-report-by-your-location"></a>Filtrar el informe por su ubicación
 
-1. Open a report in the Power BI mobile app on your iOS device.
+1. Abra un informe en la aplicación móvil de Power BI en el dispositivo iOS.
 
-3. Tap the push pin <ph id="ph1">![](media/powerbi-mobile-geofiltering/power-bi-mobile-geo-icon.png)</ph> in the upper-right corner. You can filter on either city, state/province, or country/region, depending on how the report creator set up the report. The filter only lists options that match your current location.
+3. Puntee en el icono de alfiler ![](media/powerbi-mobile-geofiltering/power-bi-mobile-geo-icon.png) en la esquina superior derecha. Puede filtrar en Ciudad, estado o provincia o país o región, dependiendo de la configuración del informe el creador del informe. El filtro sólo muestra opciones que coincidan con la ubicación actual.
 
     ![](media/powerbi-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
-## <a name="why-do-only-some-reports-have-location-tags?"></a>Why do only some reports have location tags?
-When you or your colleagues create reports in Power BI Desktop, you can categorize geographical data for a column. Then, when you view that report in the Power BI mobile app for iOS, Power BI automatically provides geographical filters that match where you are.
+## <a name="why-do-only-some-reports-have-location-tags?"></a>¿Por qué sólo algunos informes tienen etiquetas de ubicación?
+Cuando usted o sus colegas creación informes en Power BI Desktop, puede clasificar los datos geográficos para una columna. A continuación, al ver el informe en la aplicación móvil de Power BI para iOS, Power BI proporciona automáticamente geográficos filtros que coinciden con el que se encuentre.
 
-Read more about <bpt id="p1">[</bpt>setting up geographic filtering<ept id="p1">](powerbi-desktop-mobile-geofiltering.md)</ept> in Power BI Desktop.
+Obtenga más información sobre [Configurar filtrado geográfica](powerbi-desktop-mobile-geofiltering.md) en Power BI Desktop.
 
 ### <a name="see-also"></a>Consulte también  
-- <bpt id="p1">[</bpt>Connect to Power BI data from the real world<ept id="p1">](powerbi-mobile-data-in-real-world-context.md)</ept> with the mobile apps
-- <bpt id="p1">[</bpt>Data categorization in Power BI Desktop<ept id="p1">](powerbi-desktop-data-categorization.md)</ept> 
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [Conectarse a los datos de Power BI del mundo real](powerbi-mobile-data-in-real-world-context.md) con las aplicaciones móviles
+- 
+            [Categorización de datos en Power BI Desktop](powerbi-desktop-data-categorization.md) 
+- ¿Tiene preguntas? 
+            [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

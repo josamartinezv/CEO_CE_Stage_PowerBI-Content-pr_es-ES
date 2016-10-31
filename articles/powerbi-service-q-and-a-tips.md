@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tips and tricks for asking questions with Q&amp;A in Power BI"
-   description="Tips and tricks for asking questions with Q&amp;A in Power BI"
+   pageTitle="Sugerencias y trucos para hacer preguntas con preguntas y respuestas en Power BI"
+   description="Sugerencias y trucos para hacer preguntas con preguntas y respuestas en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="jastru"
@@ -20,90 +20,109 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Tips for asking questions in Power BI Q&amp;A
+# Sugerencias para hacer preguntas acerca de Power BI Q & A
 
-##  Words and terminology that Q&amp;A recognizes
+##  Palabras y la terminología que reconoce preguntas y respuestas
 
-This list of keywords is not exhaustive.  The best way to see if Power BI recognizes a keyword, is to try it out by typing it in the question box.  If the word or term is greyed out, then Power BI does not recognize it, or doesn’t recognize it in the current context.
+Esta lista de palabras clave no es exhaustiva.  Es la mejor forma de ver si Power BI reconoce una palabra clave, prueben escribiendo en el cuadro de pregunta.  Si la palabra o término aparece atenuada, a continuación, Power BI no reconoce o no se reconoce en el contexto actual.
 
-The list below uses present tense, but all tenses are recognized in most cases. For example, “is” includes are, was, were, will be, have, has, had, will have, has got, do, does, did.  And “sort” includes sorted and sorting.  Also, PowerBI recognizes and includes singular and plural versions of a word. For example, Power BI recognizes “year” and “years”.
+La lista siguiente utiliza tiempo verbal presente, pero todos los tiempos se reconocen en la mayoría de los casos. Por ejemplo, "es" incluyen son, era, fueron, será, tiene, tiene, tenía, tendrá, tiene, hacer, does, hizo.  Y "sort" incluye ordenado y ordenación.  Además, Power BI reconoce e incluye versiones en singular y plurales de una palabra. Por ejemplo, Power BI reconoce "year" y "años".
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: If you are the owner of a dataset, add phrasings and synonyms to improve the Q&amp;A results for your customers.
+>
+            **NOTA**: si el propietario de un conjunto de datos, agregar expresiones y sinónimos para mejorar los resultados de preguntas y respuestas para sus clientes.
 
-<bpt id="p1">**</bpt>Aggregates<ept id="p1">**</ept>: total, sum, amount, number, quantity, count, average, most, least, fewest, largest, smallest, highest, biggest, maximum, max, greatest, lowest, littlest, minimum, min
 
-<bpt id="p1">**</bpt>Articles<ept id="p1">**</ept>: a, an, the
+            **Agregados**: total, suma, cantidad, número, cantidad, recuento, promedio, máximo, mínimo, menor, más grande, más pequeño, más alto, mayor, máximo, max, mayor, menor, littlest, como mínimo, min
 
-<bpt id="p1">**</bpt>Blank and Boolean<ept id="p1">**</ept>: blank, empty, null, prefixed with “non” or “non-“, empty string, empty text, true, t, false, f
 
-<bpt id="p1">**</bpt>Comparisons<ept id="p1">**</ept>: vs, versus, compared to, compared with
+            **Artículos**: una, una, el
 
-<bpt id="p1">**</bpt>Conjunctions<ept id="p1">**</ept>: and, or, each of, with, versus, &amp;, and, but, nor, along with, in addition to
 
-<bpt id="p1">**</bpt>Contractions<ept id="p1">**</ept>: Q&amp;A recognizes almost all contractions, try it out.  Here are a few examples: didn’t, haven’t, he’d, he’s, isn’t, it’s, she’ll, they’d, weren’t, where’ll, who’s, won’t, wouldn’t.
+            **En blanco y booleano**: en blanco, vacío, null, con el prefijo "no" o "no", una cadena vacía, texto vacío, es true, t, false, f
 
-<bpt id="p1">**</bpt>Dates<ept id="p1">**</ept>: Power BI recognizes most date terms (day, week, month, year, quarter, decade, etc…) and dates written in many different formats (see below). Power BI also recognizes the following keywords: MonthName, Days 1-31, decade.
 
-Examples: January 3rd of 1995, January 3rd 1995, jan 03 1995, 3 Jan 1995, the 3rd of January, January 1995, 1995 January, 1995-01, 01/1995, names of months.
+            **Las comparaciones**: vs, frente a, en comparación con, en comparación con
 
-<bpt id="p1">**</bpt>Relative dates<ept id="p1">**</ept>: today, right now, current time, yesterday, tomorrow, the current, next, the coming, last, previous, ago, before now, sooner than, after, later than, from, at, on, from now, after now, in the future, past, last, previous, within, in, over, N days ago, N days from now, next, once, twice.
 
-Example: count of orders in the past 6 days.
+            **Conjunciones**: y, o bien, cada una, con, frente a & y, pero ni, junto con además
 
-<bpt id="p1">**</bpt>Equality (Range)<ept id="p1">**</ept>: in, equal to, =, after, is more than, in, between, before
 
-Examples: Order year is before 2012? Price equals between 10 and 20? Is the age of John greater than 40? Total sales in 200-300?
+            **Contracciones**: preguntas y respuestas reconoce casi todas las contracciones, pruébelo.  Estos son algunos ejemplos: no, todavía no ha tenido, es, no lo tiene, ella, no tenía, eran, donde podrá, que de, no, no.
 
-<bpt id="p1">**</bpt>Equality (Value)<ept id="p1">**</ept>:  is, equal, equal to, in, of, for, within, is in, is on
 
-Examples: Which products are green? Order date equals 2012. Is the age of John 40? Total sales that is not equal to 200? Order date of 1/1/2016. 10 in price? Green for color? 10 in price?
+            **Fechas**: Power BI reconoce la mayoría de los términos de la fecha (día, semana, mes, año, trimestre, diez años, etc.) y las fechas escritas en muchos formatos diferentes (ver abajo). Power BI también reconoce las palabras clave siguientes: MonthName días 1-31, década.
 
-<bpt id="p1">**</bpt>Names<ept id="p1">**</ept>: If a column in the dataset contains the phrase "name" (e.g., EmployeeName), Q&amp;A understands the values in that column are names and you can ask questions like "which employees are named robert."
+Ejemplos: 3ª de enero de 1995, 3 de enero de 1995, de 1995 03 de enero, 3 de enero de 1995, el 3 de enero, de enero de 1995, de enero de 1995, 1995-01, 01/1995, nombres de meses.
 
-<bpt id="p1">**</bpt>Pronouns<ept id="p1">**</ept>: he, him, himself, his, she, herself, her, hers, it, itself, its, they, their, them, themselves, theirs, this, these, that, those
 
-<bpt id="p1">**</bpt>Query commands<ept id="p1">**</ept>: sorted, sort by, direction, group, group by, by, show, list, display, give me, name, just, only, arrange, rank, compare, to, with, against, alphabetically, ascending, descending, order
+            **Las fechas relativas**: hoy, ahora, hora actual, ayer, mañana, actual, a continuación, las próximas, por último, anterior, hace ahora, antes de que, después, a más tardar, en, en, desde ahora, después de ahora, en el futuro, pasado, la última, anterior, en, en, sobre N días atrás, N días de una vez a continuación, ahora, dos veces.
 
-<bpt id="p1">**</bpt>Range<ept id="p1">**</ept>: greater, more, larger, above, over, &gt;, less, smaller, fewer, below, under, &lt;,  at least, no less than, &gt;=, at most, no more than, &lt;=, in, between, in the range of, from, later, earlier, sooner, after, on, at, later than, after, since, starting with, starting from, ending with
+Ejemplo: el número de pedidos en los 6 últimos días.
 
-<bpt id="p1">**</bpt>Times<ept id="p1">**</ept>: am, pm, o'clock, noon, midnight, hour, minute, second, hh:mm:ss
 
-Examples: 10 pm, 10:35 pm, 10:35:15 pm, 10 oclock, noon, midnight, hour, minute, second.
+            **Igualdad (intervalo)**:, igual a, =, después, es más que, in, between, antes
 
-<bpt id="p1">**</bpt>Top N<ept id="p1">**</ept> (order, ranking): top, bottom, highest, lowest, first, last, next, earliest, newest, oldest, latest, most recent, next
+Ejemplos: Order year es antes 2012? ¿Es igual un precio entre 10 y 20? ¿Es mayor que 40 la edad de Juan? ¿Total de ventas en 200-300?
 
-<bpt id="p1">**</bpt>Visual types<ept id="p1">**</ept>: all visual types native to Power BI.  If it's an option in the Visualizations pane, then you can include it in your question.  The exception to this is <bpt id="p1">[</bpt>custom visuals<ept id="p1">](powerbi-custom-visuals.md)</ept> that you've manually added to the Visualization pane.
 
-Example: show districts by month and sales total as bar chart
+            **Igualdad (valor)**: es, dentro, es igual, igual que, de, para, de, se encuentra en
 
-<bpt id="p1">**</bpt>Wh (relationship, qualified)<ept id="p1">**</ept>: when, where, which, who, whom, how many, how much, how many times, how often, how frequently, amount, number, quantity, how long, what
+Ejemplos: Qué productos son verdes? Fecha de pedido es igual a 2012. ¿Es de John 40 años? ¿Total de ventas que no es igual a 200? Fecha de pedido de 1/1/2016. ¿10 de precio? ¿Verde para color? ¿10 de precio?
 
-## Q&amp;A helps you phrase the question
 
-Q&amp;A does its best to ensure that the answer accurately reflects the question being asked. It does this in several ways. For all of these, you can accept the action in full, in part, or not at all. As you type your question, Q&amp;A:
+            **Nombres de**: si una columna del conjunto de datos contiene la frase "name" (por ejemplo, EmployeeName), preguntas y respuestas comprende los valores de esa columna son nombres y puede pedir a preguntas como "qué empleados se denominan robert".
 
-* auto-completes words and questions. It uses various strategies, including auto-completing recognizable words, popular questions for the underlying workbooks, and previously-used questions that returned valid responses. If more than one auto-complete option is available, they are presented in a dropdown list.
 
-* corrects spelling.
+            **Pronombres**:, le, sí, su, Julia, su propio, suya,, en sí mismo, sus,, sus, ellos, ellos mismos, suyo, esto, estos, ese, dichos
 
-* provides a preview of the answer in the form of a visualization. The visualization updates as you type and edit the question (it doesn't wait for you to press Enter).
 
-* auto-suggests replacement terms from the underlying dataset(s) when you move the cursor back in the question box.
+            **Comandos de consulta**: ordenados, ordenar por dirección, grupo, grupo, de mostrar, enumerar, mostrar, me da, nombre, simplemente, solo, organizar, clasificar, comparar,, por orden alfabético, ascendente, descendente, pedido
 
-* restates the question based on the data in the underlying dataset(s). This helps ensure Q&amp;A understood your question as Q&amp;A replaces the words you used with synonyms from the underlying dataset(s).
 
-* dims words it does not understand.
+            **Intervalo**: mayor, más y más grandes, arriba, sobre, >, menos, más pequeño, menos, a continuación, en, <, al menos, no menor que, > =, como máximo, no más de < =, entre, en el intervalo de, más adelante, anteriormente, antes, después,, más tarde que, después, debido a que, a partir de, a partir de, terminando con
 
-## Combine results from more than one dataset
-One of Power BI's most powerful features is the ability to combine data from different datasets.  So don't limit your questions to a single dataset -- ask questions that retrieve data from more than one dataset. For example, if my dashboard has tiles from the Retail Analysis Sample and a state population dataset, I can ask <bpt id="p1">*</bpt>show count of stores by state population as bar chart descending<ept id="p1">*</ept>.
 
-## Don't stop now
-After Q&amp;A displays your results, keep the conversation going! Use the interactive features of the visualization and of Q&amp;A to uncover more insights.
+            **Tiempos de**: Estoy p.m. en punto, mediodía, medianoche, hora, minuto, segundo, hh: mm:
+
+Ejemplos: 10 p.m., 10:35 p.m., 10:35:15 pm 10 punto, mediodía, medianoche, hora, minuto, segundo.
+
+
+            **Top N** (orden de clasificación): superior, inferior, superior, inferior, en primer lugar, por último, a continuación, siguiente más antiguo, más reciente, más antiguo, más reciente, más reciente
+
+
+            **Tipos de Visual**: visuales y todos los tipos nativos en Power BI.  Si es una opción en el panel de visualizaciones, puede incluir en su pregunta.  La excepción a esto es [elementos visuales personalizados](powerbi-custom-visuals.md) que haya agregado manualmente en el panel de visualización.
+
+Ejemplo: mostrar los distritos por mes y ventas total como gráfico de barras
+
+
+            **Qu (relación, calificado)**: cuando, where, que, a quién, quién, cuántos, cuánto, cuántas veces, con qué frecuencia, con qué frecuencia, importe, número, cantidad, cuánto tiempo, lo que
+
+## Preguntas y respuestas le ayuda a formular la pregunta
+
+Preguntas y respuestas hará todo lo posible para garantizar que la respuesta refleja con exactitud la pregunta. Puede hacerlo de varias maneras. Para todos ellos, puede aceptar la acción en su totalidad, en parte o no en absoluto. A medida que escribe su pregunta, preguntas y respuestas:
+
+* completa automáticamente las palabras y preguntas. Usa diversas estrategias, incluidos Autocompletar reconocidas palabras, las preguntas más frecuentes para los libros subyacentes y preguntas usadas previamente que devuelven las respuestas válidas. Si hay más de una opción de Autocompletar, que aparecen en una lista desplegable.
+
+* corrige la ortografía.
+
+* Proporciona una vista previa de la respuesta en forma de una visualización. Actualiza la visualización a medida que escribe y edite la pregunta (no espera a que presione ENTRAR).
+
+* Auto-sugiere términos de reemplazo de los conjuntos de datos subyacente cuando mueve el cursor en el cuadro de pregunta.
+
+* Confirma la pregunta basándose en los datos en los conjuntos de datos subyacente. Esto ayuda a asegurarse de preguntas y respuestas entienden su pregunta como preguntas y respuestas un reemplaza las palabras utilizadas con los sinónimos de los conjuntos de datos subyacente.
+
+* se atenúa palabras que no comprenda.
+
+## Combinar resultados de más de un conjunto de datos
+Una de las características más eficaces de Power BI es la capacidad de combinar datos de diferentes conjuntos de datos.  Para no limitar sus preguntas a un único conjunto de datos: preguntas que recuperan datos de más de un conjunto de datos. Por ejemplo, si Mi panel tiene iconos de la muestra de análisis de venta y un conjunto de datos de población de estado, puedo solicitar *Mostrar recuento de almacenes de población de estados como gráfico de barras descendente*.
+
+## No se detenga ahora
+Después de p & una muestra los resultados, mantenga el curso de la conversación! Usar las características interactivas de la visualización y preguntas y respuestas para revelar más información.
 
 
 ## Consulte también
-Back to <bpt id="p1">[</bpt>Q&amp;A in Power BI<ept id="p1">](powerbi-service-q-and-a.md)</ept>  
+Volver al [preguntas y respuestas en Power BI](powerbi-service-q-and-a.md)  
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

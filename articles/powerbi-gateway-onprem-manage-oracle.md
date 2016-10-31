@@ -1,6 +1,6 @@
 <properties
-pageTitle="Manage your data source - Oracle"
-description="How to manage the on-premises data gateway and data sources that belong to that gateway."
+pageTitle="Administrar el origen de datos - Oracle"
+description="Cómo administrar los locales puerta de enlace y los datos de orígenes de datos que pertenecen a dicha puerta de enlace."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,33 +19,33 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="08/26/2016"
 ms.author="asaxton"/>
-# Manage your data source - Oracle
+# Administrar el origen de datos - Oracle
 
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Oracle data source either for scheduled refresh or for DirectQuery.
+Una vez haya instalado la puerta de enlace de datos local, debe agregar los orígenes de datos que se pueden usar con la puerta de enlace. En este artículo se describe cómo trabajar con orígenes de datos y las puertas de enlace. Puede usar el origen de datos de Oracle para la actualización programada o DirectQuery.
 
-## Download and install the gateway
+## Descargue e instale la puerta de enlace
 
-You can download the gateway from the Power BI service. Select <bpt id="p1">**</bpt>Downloads<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Data Gateway<ept id="p2">**</ept>, or by going to the <bpt id="p3">[</bpt>gateway download page<ept id="p3">](https://go.microsoft.com/fwlink/?LinkId=698861)</ept>.
+Puede descargar la puerta de enlace desde el servicio Power BI. Seleccione **descargas** > **puerta de enlace de datos**, o yendo a la [página de descarga de la puerta de enlace](https://go.microsoft.com/fwlink/?LinkId=698861).
 
 ![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
 
-> [AZURE.WARNING] In order for the gateway to be able to connect to your Oracle server, the Oracle Data Provider for .NET (ODP.NET) needs to be installed and configured. This is part of the Oracle Data Access Components (ODAC). For more information on how to download the Oracle provider, see <bpt id="p1">[</bpt>Installing the Oracle Client<ept id="p1">](#installing-the-oracle-client)</ept> below.
+> [AZURE.WARNING] La puerta de enlace poder conectarse al servidor de Oracle, el proveedor de datos de Oracle para .NET (ODP.NET) debe estar instalado y configurado. Esto forma parte de los componentes de acceso de datos de Oracle (ODAC). Para obtener más información acerca de cómo descargar el proveedor de Oracle, vea [instalar el cliente de Oracle](#installing-the-oracle-client) a continuación.
 
-## Installing the Oracle client
+## Instalar al cliente de Oracle
 
-For <bpt id="p1">**</bpt>32-bit<ept id="p1">**</ept> versions of Power BI Desktop, use the following link to download and install the <bpt id="p2">**</bpt>32-bit<ept id="p2">**</ept> Oracle client:
+Para **32 bits** versiones de Power BI Desktop, utilice el siguiente vínculo para descargar e instalar la **32 bits** de cliente de Oracle:
 
--   [32-bit Oracle Data Access Components (ODAC) with Oracle Developer Tools for Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
+-   [Data Access Components (ODAC) para Oracle de 32 bits con Oracle Developer Tools para Visual Studio (12.1.0.2.4)](http://www.oracle.com/technetwork/topics/dotnet/utilsoft-086879.html)
 
-For <bpt id="p1">**</bpt>64-bit<ept id="p1">**</ept> versions of Power BI Desktop, or for the On-Premises Data Gateway, use the following link to download and install the <bpt id="p2">**</bpt>64-bit<ept id="p2">**</ept> Oracle client:
+Para **64-bit** versiones de Power BI Desktop o la puerta de enlace de datos local, utilizan el siguiente vínculo para descargar e instalar la **64-bit** de cliente de Oracle:
 
--   [64-bit ODAC 12c Release 4 (12.1.0.2.4) Xcopy for Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
+-   [64 bits ODAC 12C versión 4 (12.1.0.2.4) Xcopy para Windows x64](http://www.oracle.com/technetwork/database/windows/downloads/index-090165.html)
 
-Once that is installed, you will need to configure your tnsnames.ora file with the proper information for your database. Power BI Desktop and the gateway will go off of the net_service_name defined in the tnsnames.ora file. If it isn't configured, you will not be able to connect. The default path for tnsnames.ora is the following: <ph id="ph1">`[Oracle Home Directory]\Network\Admin\tnsnames.ora`</ph>. For more information about how to configure tnsnames.ora files, see <bpt id="p1">[</bpt>Oracle: Local Naming Parameters (tnsnames.ora)<ept id="p1">](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm)</ept>.
+Una vez instalado, debe configurar el archivo tnsnames.ora con la información correcta para la base de datos. Cierre el net_service_name definido en el archivo tnsnames.ora pasará Power BI Desktop y la puerta de enlace. Si no está configurada, no podrá conectarse. La ruta predeterminada para tnsnames.ora es la siguiente: `[Oracle Home Directory]\Network\Admin\tnsnames.ora`. Para obtener más información acerca de cómo configurar los archivos de tnsnames.ora, consulte [Oracle: parámetros de nombres locales (tnsnames.ora)](https://docs.oracle.com/cd/B28359_01/network.111/b28317/tnsnames.htm).
 
-### Example tnsnames.ora file entry
+### Entrada de archivo tnsnames.ora de ejemplo
 
-The basic format of an entry in tnsname.ora is the following.
+El formato básico de una entrada de tnsname.ora es el siguiente.
 
 ```
 net_service_name= 
@@ -55,7 +55,7 @@ net_service_name=
      (SERVICE_NAME=service_name))) 
 ```
 
-Here is an example of the server and port information filled in.
+Este es un ejemplo de la información del servidor y puerto rellenado.
 
 ```
 CONTOSO =
@@ -68,113 +68,114 @@ CONTOSO =
   )
 ```
 
-## Add a gateway
+## Agregar una puerta de enlace
 
-To add a Gateway, simply <bpt id="p1">[</bpt>download<ept id="p1">](https://go.microsoft.com/fwlink/?LinkId=698861)</ept> and install the gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+Para agregar una puerta de enlace, simplemente [descargar](https://go.microsoft.com/fwlink/?LinkId=698861) e instalar la puerta de enlace en un servidor en su entorno. Después de haber instalado la puerta de enlace, se mostrará en la lista de puertas de enlace en **Administrar puertas de enlace**.
 
-> [AZURE.NOTE] <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept> will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> [AZURE.NOTE] 
+            **Administrar las puertas de enlace** no se mostrará hasta que son el Administrador de al menos una puerta de enlace. Esto puede suceder ya sea por que se agrega como un administrador o instalar y configurar una puerta de enlace.
 
-## Remove a gateway
+## Quitar una puerta de enlace
 
-Removing a gateway will also delete any data sources under that gateway.  This will also break any dashboards and reports that rely on those data sources.
+Quitar una puerta de enlace también se eliminan los orígenes de datos en dicha puerta de enlace.  Esto también interrumpirá cualquier paneles e informes que dependen de esos orígenes de datos.
 
-1.  Select the gear icon <ph id="ph1">![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png)</ph> in the upper-right corner &gt; <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+1.  Seleccione el icono de engranaje ![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png) en la esquina superior derecha > **Administrar puertas de enlace**.
 
-2.  Gateway &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>
+2.  Puerta de enlace > **quitar**
 
     ![](media/powerbi-gateway-enterprise-manage/datasourcesettings7.png)
 
-## Add a data source
+## Agregar un origen de datos
 
-You can add a data source by either selecting a gateway and click <bpt id="p1">**</bpt>Add data source<ept id="p1">**</ept>, or go to Gateway &gt; <bpt id="p2">**</bpt>Add data source<ept id="p2">**</ept>.
+Puede agregar un origen de datos seleccionando una puerta de enlace y haga clic en **Agregar origen de datos**, o ir a la puerta de enlace > **Agregar origen de datos**.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings1.png)
 
-You can then select the <bpt id="p1">**</bpt>Data Source Type<ept id="p1">**</ept> from the list.
+A continuación, puede seleccionar el **el tipo de origen de datos** de la lista.
 
 ![](media/powerbi-gateway-enterprise-manage/data-source-oracle.png)
 
-You will then want to fill in the information for the data source which includes the <bpt id="p1">**</bpt>Server<ept id="p1">**</ept> and the <bpt id="p2">**</bpt>Database<ept id="p2">**</ept>.  
+A continuación, deberá rellenar la información del origen de datos que incluye el **Server** y **base de datos**.  
 
-You will also need to choose an <bpt id="p1">**</bpt>Authentication Method<ept id="p1">**</ept>.  This can either be <bpt id="p1">**</bpt>Windows<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Basic<ept id="p2">**</ept>.  You would want to choose <bpt id="p1">**</bpt>Basic<ept id="p1">**</ept> if you are going to use an account that is created within Oracle instead of Windows Authentication. Then enter the credentials that will be used for this data source.
+También deberá elegir una **método de autenticación**.  Esto puede ser **Windows** o **básica**.  ¿Desea elegir **básica** Si va a utilizar una cuenta que se crea dentro de Oracle en lugar de la autenticación de Windows. A continuación, escriba las credenciales que se utilizará para este origen de datos.
 
-> [AZURE.NOTE] All queries to the data source will run using these credentials. For more information, see the main on-premises data gateway article to learn more about how <bpt id="p1">[</bpt>credentials<ept id="p1">](powerbi-gateway-onprem.md#credentials)</ept> are stored.
+> [AZURE.NOTE] Todas las consultas al origen de datos se ejecutan con estas credenciales. Para obtener más información, consulte el artículo de puerta de enlace de datos principal local para obtener más información acerca de cómo [credenciales](powerbi-gateway-onprem.md#credentials) se almacenan.
 
 ![](media/powerbi-gateway-enterprise-manage/data-source-oracle2.png)
 
-You can click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> after you have everything filled in.  You can now use this data source for scheduled refresh, or DirectQuery, against an Oracle server that is on-premises. You will see <bpt id="p1">*</bpt>Connection Successful<ept id="p1">*</ept> if it succeeded.
+Puede hacer clic en **Agregar** después de que todo lo rellena dispone de.  Ahora puede usar este origen de datos para la actualización programada o DirectQuery, en un servidor de Oracle es local. Verá *conexión correcta* Si se ha ejecutado correctamente.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
 
 ### Configuración avanzada
 
-You can configure the privacy level for your data source. This controls how data can be mashed up. This is only used for scheduled refresh. It does not apply to DirectQuery. [Obtener más información](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
+Puede configurar el nivel de privacidad para el origen de datos. Controla cómo se pueden puré los datos de. Sólo se utiliza para la actualización programada. No se aplica a DirectQuery. [Obtener más información](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings9.png)
 
-## Remove a data source
+## Quitar un origen de datos
 
-Removing a data source will break any dashboards or reports that rely on the given data source.  
+Quitar un origen de datos se interrumpen cualquier paneles o informes que se basan en el origen de datos determinado.  
 
-To remove a Data Source, go to the Data Source &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.
+Para quitar un origen de datos, vaya al origen de datos > **quitar**.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings6.png)
 
-## Manage administrators
+## Administrar administradores
 
-On the Administrators tab, for the gateway, you can add, and remove, users that can administer the gateway. You can only add users at this time. Security groups cannot be added.
+En la ficha de administradores, la puerta de enlace, puede agregar y quitar usuarios que pueden administrar la puerta de enlace. Sólo puede agregar usuarios en este momento. No se puede agregar grupos de seguridad.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings8.png)
 
 ## Administrar usuarios
 
-On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
+En la pestaña usuarios, el origen de datos, puede agregar y quitar usuarios o grupos de seguridad, que pueden usar este origen de datos.
 
-> [AZURE.NOTE] The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users. Users that are consuming the report or dashboard do not need to be in the users list.
+> [AZURE.NOTE] Sólo los controles que tienen permiso para publicar informes de lista de los usuarios. Los propietarios de informes pueden crear paneles o paquetes de contenido y compartir con otros usuarios. Los usuarios que están consumiendo el informe o el panel no es necesario en la lista de usuarios.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings5.png)
 
-## Using the data source
+## Usar el origen de datos
 
-After you have created the data source, it will be available to use with either DirectQuery connections, or through scheduled refresh. 
+Después de haber creado el origen de datos, estará disponible para usarse con cualquier conexiones DirectQuery o a través de la actualización programada. 
 
-> [AZURE.WARNING] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway gateway!
+> [AZURE.WARNING] Servidor y el nombre de la base de datos deben coincidir entre Power BI Desktop y el origen de datos dentro de la puerta de enlace de puerta de enlace de datos local.
 
-The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match! For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. This name also has to match an alias defined within the tnsnames.ora file. For more information about the tnsnames.ora file, see <bpt id="p1">[</bpt>Installing the Oracle Client<ept id="p1">](#installing-the-oracle-client)</ept>.
+El vínculo entre el conjunto de datos y el origen de datos dentro de la puerta de enlace se basa en el nombre del servidor y el nombre de la base de datos. Estos tienen que coincidir. Por ejemplo, si proporciona una dirección IP para el nombre del servidor, en Power BI Desktop, debe utilizar la dirección IP del origen de datos dentro de la configuración de puerta de enlace. Este nombre también tiene que coincidir con un alias definido en el archivo tnsnames.ora. Para obtener más información acerca del archivo tnsnames.ora, consulte [instalar el cliente de Oracle](#installing-the-oracle-client).
 
-This is the case for both DirectQuery and scheduled refresh.
+Este es el caso de DirectQuery y actualización programada.
 
-### Using the data source with DirectQuery connections
+### Utilizar el origen de datos con conexiones de DirectQuery
 
-You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the gateway. You will also need to make sure your user is listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source in order to publish DirectQuery datasets. The selection, for DirectQuery, occurs within Power BI Desktop when you first import data. [Obtener más información](powerbi-desktop-use-directquery.md)
+Debe asegurarse de que las coincidencias de nombre servidor y base de datos entre Power BI Desktop y el origen de datos configurado para la puerta de enlace. También necesitará asegurarse de que el usuario aparece en el **usuarios** ficha del origen de datos para poder publicar conjuntos de datos de DirectQuery. La selección de DirectQuery, se produce dentro de Power BI Desktop al importar los datos primero. [Obtener más información](powerbi-desktop-use-directquery.md)
 
-After you publish, either from Power BI Desktop or <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>, your reports should start working. It may take several minutes, after creating the data source within the gateway, for the connection to be usable.
+Después de publicar, desde Power BI Desktop o **obtener datos**, los informes deben empezar a trabajar. Puede tardar varios minutos, después de crear el origen de datos dentro de la puerta de enlace para la conexión ser utilizable.
 
-### Using the data source with scheduled refresh
+### Usar el origen de datos con la actualización programada
 
-If you are listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source configured within the gateway, and the server and database name match, you will see the gateway as an option to use with scheduled refresh.
+Si se enumeran en el **usuarios** ficha del origen de datos configurado dentro de la puerta de enlace y la coincidencia de nombre de servidor y base de datos, verá la puerta de enlace como una opción para usar con la actualización programada.
 
 ![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## Solucionar problemas
 
-You may encounter serveral errors from Oracle when the naming syntax is either incorrect or not configured properly.
+Puede encontrar varios errores de Oracle cuando la sintaxis de nomenclatura es incorrecto o no está configurado correctamente.
 
-- ORA-12154: TNS: could not resolve the connect identifier specified  
-- ORA-12514: TNS listener does not currently know of service requested in connect descriptor  
-- ORA-12541: TNS: no listener  
-- ORA-12170: TNS:Connect timeout occurred  
-- ORA-12504: TNS listener was not given the SERVICE_NAME in CONNECT_DATA  
+- ORA-12154: TNS: no se pudo resolver el identificador de conexión especificado  
+- ORA-12514: TNS listener no actualmente sabe de servicio solicitado en el descriptor de conexión  
+- ORA-12541: TNS: ningún agente de escucha  
+- ORA-12170: TNS: tiempo de espera de conexión se ha producido  
+- ORA-12504: TNS listener no se proporcionó el SERVICE_NAME en CONNECT_DATA  
 
-These errors could occur if either the Oracle client is not installed, or if it is not configured properly. If it is installed, you will want to verify the tnsnames.ora file is properly configured and you are using the proper net_service_name. You will also need to make sure that the net_service_name is the same between the machine using Power BI Desktop and the machine that is running the gateway. For more information, see <bpt id="p1">[</bpt>Installing the Oracle Client<ept id="p1">](#installing-the-oracle-client)</ept>.
+Estos errores se producen si no está instalado el cliente de Oracle, o si no está configurado correctamente. Si está instalado, deberá comprobar el archivo tnsnames.ora está configurado correctamente y está utilizando la net_service_name adecuada. También necesitará asegurarse de que el net_service_name es el mismo entre la máquina con Power BI Desktop y el equipo que ejecuta la puerta de enlace. Para obtener más información, consulte [instalar el cliente de Oracle](#installing-the-oracle-client).
 
-> [AZURE.NOTE] You may also be hitting an issue due to compatability between the Oracle server version and the Oracle client version. Typically you want these to match.
+> [AZURE.NOTE] También puede alcanzar un problema debido a la compatibilidad entre la versión del servidor de Oracle y la versión de cliente de Oracle. Normalmente desea hacer coincidir.
 
-For additional troubleshooting information relating to the gateway, see <bpt id="p1">[</bpt>Troubleshooting the On-premises Data Gateway<ept id="p1">](powerbi-gateway-onprem-tshoot.md)</ept>.
+Para obtener información sobre solución de problemas relativos a la puerta de enlace, vea [solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md).
 
 ## Véase también
 
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Puerta de enlace de datos local](powerbi-gateway-onprem.md)  
+[Puerta de enlace de datos - profundidad local](powerbi-gateway-onprem-indepth.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

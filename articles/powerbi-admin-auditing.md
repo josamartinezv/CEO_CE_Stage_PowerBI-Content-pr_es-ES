@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Auditing Power BI in your organization"
-   description="Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and compliance center or use PowerShell."
+   pageTitle="Auditoría de Power BI en su organización"
+   description="Obtenga información acerca de cómo puede utilizar la auditoría con Power BI para supervisar e investigar las acciones realizadas. Puede utilizar el centro de seguridad y cumplimiento de normas o usar PowerShell."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -19,139 +19,139 @@
    ms.workload="powerbi"
    ms.date="10/11/2016"
    ms.author="asaxton"/>
-# Auditing Power BI in your organization
+# Auditoría de Power BI en su organización
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zj4kA39jV_4?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Learn how you can use auditing with Power BI to monitor and investigate actions taken. You can use the Security and compliance center or use PowerShell.
+Obtenga información acerca de cómo puede utilizar la auditoría con Power BI para supervisar e investigar las acciones realizadas. Puede utilizar el centro de seguridad y cumplimiento de normas o usar PowerShell.
 
-Knowing who is taking what action on which item in your Power BI tenant can be critical in helping your organization fulfill its requirements, such as meeting regulatory compliance and records management.
+Saber quién tiene qué acción en cada elemento de Power BI inquilino puede ser crítico para ayudar a su organización a cumplir sus requisitos, como la administración de registros y cumplimiento de normas de reunión.
 
-You can filter the audit data by date range, user, dashboard, report, dataset and activity type. You can also download the activities in a csv (comma separated value) file to analyze offline.
+Puede filtrar los datos de auditoría por intervalo de fechas, usuario, escritorio, tipo de informe, el conjunto de datos y la actividad. También puede descargar las actividades en un archivo de csv (valores separados por comas) para analizar sin conexión.
 
-> [AZURE.NOTE] The auditing feature in Power BI is in preview and is available in all data regions except those in Austrailia and Europe.
+> [AZURE.NOTE] La característica de auditoría en Power BI está en vista previa y está disponible en todas las regiones de datos excepto los de Austrailia y Europa.
 
-## Enabling auditing functionality in the Power BI admin portal
+## Habilitar la funcionalidad de auditoría en el portal de administración de Power BI
 
-You will need to enable auditing for your organization in order to work with the reports. You can do this within the tenant settings of the admin portal.
+Debe habilitar la auditoría de su organización con el fin de trabajar con los informes. Puede hacerlo con el inquilino de configuración del portal de administración.
 
-1.  Select the <bpt id="p1">**</bpt>gear icon<ept id="p1">**</ept> in the upper right.
+1.  Seleccione el **icono de engranaje** en la esquina superior derecha.
 
-2.  Select <bpt id="p1">**</bpt>Admin Portal<ept id="p1">**</ept>.
+2.  Seleccione **Portal de administración de**.
 
     ![](media/powerbi-admin-auditing/powerbi-admin.png)
 
-3.  Select <bpt id="p1">**</bpt>Tenant Settings<ept id="p1">**</ept>.
+3.  Seleccione **configuración de inquilinos**.
 
     ![](media/powerbi-admin-auditing/powerbi-admin-tenant-settings.png)
 
-4.  Switch on <bpt id="p1">**</bpt>Create audit logs for internal activity auditing and compliance purposes<ept id="p1">**</ept>.
+4.  Activar **de registros de auditoría de creación para fines de auditoría y cumplimiento de la actividad interna**.
 
-5.  Select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.
+5.  Seleccione **aplicar**.
 
-Power BI will start logging various activities that your users perform in Power BI. The logs take up to 48 hours to show up in the O365 Security &amp; Compliance Center. For more information about what activities are logged, see <bpt id="p1">[</bpt>List of activities audited by Power BI<ept id="p1">](#list-of-activities-audited-by-power-bi)</ept>.
+Power BI iniciará el registro de diversas actividades que realizan los usuarios en Power BI. Los registros de tardar hasta 48 horas para que aparezcan en el centro de cumplimiento y seguridad de Office 365. Para obtener más información acerca de qué actividades se registran, consulte [lista de actividades controladas por Power BI](#list-of-activities-audited-by-power-bi).
 
-## Licensing requirements
+## Requisitos de licencia
 
-Auditing is a Power BI Pro feature and auditing events are only available for Power BI Pro users.  Users with Power BI (free) licenses will be displayed as <bpt id="p1">**</bpt>Free User<ept id="p1">**</ept>.
+La auditoría es una característica de Power BI Pro y eventos de auditoría sólo están disponibles para los usuarios de Power BI Pro.  Los usuarios con licencias de Power BI (gratuitas) se mostrará como **gratuitos de usuario**.
 
-For more information on how you can acquire and assign Power BI Pro licenses to users in your organization, see <bpt id="p1">[</bpt>Purchasing Power BI Pro<ept id="p1">](powerbi-admin-purchasing-powerb-bi-pro.md)</ept>.
+Para obtener más información sobre cómo adquirir y asignar licencias Power BI Pro para los usuarios de su organización, consulte [compras Power BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md).
 
-For more information on how to restrict free users from signing up, see <bpt id="p1">[</bpt>Enable, or disable, individual user sign up in Azure Active Directory<ept id="p1">](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory)</ept>.
+Para obtener más información acerca de cómo impedir que los usuarios gratuitos suscribirse, consulte [Habilitar o deshabilitar, cada usuario de inicio de sesión de Azure Active Directory](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-azure-active-directory).
 
-> [AZURE.NOTE] To enable auditing for Power BI in your tenant, you need at least one exchange mailbox license in your tenant.
+> [AZURE.NOTE] Para habilitar la auditoría para Power BI en su inquilino, necesita al menos una licencia de buzón de exchange en el inquilino.
 
-## Accessing your audit logs
+## Obtener acceso a los registros de auditoría
 
-To audit your Power BI logs, you must visit the O365 Security &amp; Compliance Center.
+Para auditar los registros de Power BI, visite el centro de cumplimiento y seguridad de Office 365.
 
-1.  Select the <bpt id="p1">**</bpt>gear icon<ept id="p1">**</ept> in the upper right.
+1.  Seleccione el **icono de engranaje** en la esquina superior derecha.
 
-2.  Select <bpt id="p1">**</bpt>Admin Portal<ept id="p1">**</ept>.
+2.  Seleccione **Portal de administración de**.
 
     ![](media/powerbi-admin-auditing/powerbi-admin.png)
 
-3.  Select <bpt id="p1">**</bpt>Audit Logs<ept id="p1">**</ept>.
+3.  Seleccione **registros de auditoría**.
 
-4.  Select <bpt id="p1">**</bpt>Go to O365 Admin Center<ept id="p1">**</ept>.
+4.  Seleccione **vaya al centro de administración de Office 365**.
 
     ![](media/powerbi-admin-auditing/audit-log-o365-admin-center.png)
 
-Alternatively, you can browse to <bpt id="p1">[</bpt>Office 365 | Security &amp; Compliance<ept id="p1">](https://protection.office.com/#/unifiedauditlog)</ept>.
+Como alternativa, puede dirigirse a [Office 365 | Seguridad y cumplimiento](https://protection.office.com/#/unifiedauditlog).
 
-> [AZURE.NOTE] To provide non-administrator accounts with access to the audit log, you will need to assign permissions within the Exchange Online Admin Center. For example, you could assign a user to an existing role group, such as Organization Management, or you could create a new role group with the Audit Logs role. For more information, see <bpt id="p1">[</bpt>Permissions in Exchange Online<ept id="p1">](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx)</ept>.
+> [AZURE.NOTE] Para las cuentas de administrador no tengan acceso al registro de auditoría, debe asignar permisos en el centro de administración de Exchange en línea. Por ejemplo, podría asignar a un usuario a un grupo existente de la función, como la administración de la organización, o puede crear un nuevo grupo de funciones con la función de los registros de auditoría. Para obtener más información, consulte [permisos en Exchange Online](https://technet.microsoft.com/library/jj200692\(v=exchg.150\).aspx).
 
-## Search only Power BI activities
+## Buscar sólo las actividades de Power BI
 
-You can restrict results to only Power BI activities by doing the following.
+Puede restringir los resultados a sólo las actividades de Power BI haciendo lo siguiente.
 
-1.  On the <bpt id="p1">**</bpt>Audit log search<ept id="p1">**</ept> page, select the drop down for <bpt id="p2">**</bpt>Activities<ept id="p2">**</ept> under <bpt id="p3">**</bpt>Search<ept id="p3">**</ept>.
+1.  En el **búsqueda de registros de auditoría** de página, seleccione la lista desplegable para **actividades** en **búsqueda**.
 
-2.  Select <bpt id="p1">**</bpt>PowerBI activities<ept id="p1">**</ept>.
+2.  Seleccione **actividades de PowerBI**.
 
     ![](media/powerbi-admin-auditing/audit-log-search-filter-by-powerbi.png)
 
-3.  Select anywhere outside of the selection box to close it.
+3.  Seleccione esta opción en cualquier lugar fuera del cuadro de selección para cerrarlo.
 
-Your searches will now be filtered to only Power BI activities.
+Ahora se filtrarán las búsquedas a sólo las actividades de Power BI.
 
-## Search the audit logs by date
+## Buscar los registros de auditoría por fecha
 
-You can search the logs by date range using the “Start date” and “End date” field. The last seven days are selected by default. The date and time are presented in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
+Puede buscar los registros por intervalo de fechas mediante la "Fecha de inicio" y el campo "Fecha de finalización". De forma predeterminada, se seleccionan los últimos siete días. La fecha y hora se presentan en formato de hora Universal coordinada (UTC). El intervalo de fecha máximo que puede especificar es de 90 días. Si el intervalo de fechas seleccionado es mayor que 90 días, se muestra un error.
 
-> [AZURE.NOTE] If you're using the maximum date range of 90 days, select the current time for the Start date. Otherwise, you'll receive an error saying that the start date is earlier than the end date. If you've turned on auditing within the last 90 days, the maximum date range can't start before the date that auditing was turned on.
+> [AZURE.NOTE] Si utiliza el intervalo de fecha máxima de 90 días, seleccione la hora actual de la fecha de inicio. De lo contrario, recibirá un error que indica que la fecha de inicio es anterior a la fecha de finalización. Si ha activado la auditoría en los últimos 90 días, no se puede iniciar el intervalo de fecha máximo antes de la fecha que se ha activado la auditoría.
 
 ![](media/powerbi-admin-auditing/search-audit-log-by-date.png)
 
-## Search the audit logs by users
+## Buscar en los registros de auditoría de los usuarios
 
-You can search for audit log entries for activities performed by specific users. To do this, enter one or more user names in the “Users” field.  This would be the username that they sign into Power BI with. It looks like an email address.
-Leave this box blank to return entries for all users (and service accounts) in your organization.
+Puede buscar entradas de registro de auditoría para actividades realizadas por usuarios específicos. Para ello, escriba uno o más nombres de usuario en el campo "Usuarios".  Éste podría ser el nombre de usuario que inician sesión en Power BI con. Se parece a una dirección de correo electrónico.
+Deje este cuadro en blanco para devolver las entradas para todos los usuarios (y las cuentas de servicio) de su organización.
 
 ![](media/powerbi-admin-auditing/search-audit-log-by-user.png)
 
-## Viewing search results
+## Ver los resultados de búsqueda
 
-Once you hit the search button, the search results are loaded and after a few moments they are displayed under Results. When the search is finished, the number of results found is displayed. 
+Una vez que se presiona el botón de búsqueda, se cargan los resultados de búsqueda y después de unos momentos se mostrarán en resultados. Cuando haya finalizado la búsqueda, se muestra el número de resultados encontrados. 
 
-> [AZURE.NOTE] A maximum of 1000 events will be displayed; if more than 1000 events meet the search criteria, the newest 1000 events are displayed.
+> [AZURE.NOTE] Se mostrará un máximo de 1000 eventos; Si más de 1000 eventos cumplen los criterios de búsqueda, se muestran los eventos más recientes de 1000.
 
-The results contain the following information about each event returned by the search.
+Los resultados contienen la siguiente información sobre cada evento devuelto por la búsqueda.
 
 |**Columna**|**Definición**|
 |---|---|
-|Fecha|The date and time (in UTC format) when the event occurred.|
-|Dirección IP|The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.|
-|User|The user (or service account) who performed the action that triggered the event.|
-|Actividad|The activity performed by the user. This value corresponds to the activities that you selected in the Activitiesdrop down list. For an event from the Exchange admin audit log, the value in this column is an Exchange cmdlet.|
-|Elemento|The object that was created or modified as a result of the corresponding activity. For example, the file that was viewed or modified or the user account that was updated. Not all activities have a value in this column.|
-|Detalles|Additional detail about an activity. Again, not all activities will have a value.|
+|Fecha|La fecha y la hora (en formato UTC) cuando se produjo el evento.|
+|Dirección IP|La dirección IP del dispositivo que se utilizó cuando se registró la actividad. La dirección IP se muestra en formato de dirección de un IPv4 o IPv6.|
+|User|El usuario (o la cuenta de servicio) que realiza la acción que desencadenó el evento.|
+|Actividad|La actividad realizada por el usuario. Este valor corresponde a las actividades que seleccionó en el Activitiesdrop hacia abajo de la lista. Para un evento desde el registro de auditoría de administración de Exchange, el valor de esta columna es un cmdlet de Exchange.|
+|Elemento|El objeto que se creó o modificó como resultado de la actividad correspondiente. Por ejemplo, el archivo que se ven o se modificó o la cuenta de usuario que se ha actualizado. No todas las actividades tienen un valor en esta columna.|
+|Detalles|Detalles adicionales sobre una actividad. Nuevamente, no todas las actividades tendrán un valor.|
 
-> [AZURE.NOTE] Select a column header under Results to sort the results. You can sort the results from A to Z or Z to A. Click the Date header to sort the results from oldest to newest or newest to oldest.
+> [AZURE.NOTE] Seleccione un encabezado de columna en resultados para ordenar los resultados. Puede ordenar los resultados de la A Z o Z a r. Haga clic en el encabezado de fecha para ordenar los resultados de más antiguo a más reciente o más reciente al más antiguo.
 
-## View the details for an event
+## Ver los detalles de un evento
 
-You can view more details about an event by selecting the event record in the list of search results. A details page is displayed that contains the detailed properties from the event record. The properties that are displayed depend on the Office 365 service in which the event occurs. To display additional details, select <bpt id="p1">**</bpt>More information<ept id="p1">**</ept>.
+Puede ver más detalles acerca de un evento seleccionando el registro de eventos en la lista de resultados de búsqueda. Se muestra una página de detalles que contiene las propiedades detalladas del registro de eventos. Las propiedades que se muestran dependen del servicio Office 365 en el que se produce el evento. Para mostrar detalles adicionales, seleccione **obtener más información**.
 
-Here are some possible details that are displayed.
+Aquí encontrará algunos detalles posibles que se muestran.
 
 |**Parámetro**|**Descripción**|
 |---|---|
-|Id|Unique identifier of an audit record.|
-|RecordType|The type of operation indicated by the record. See the AuditLogRecordType table for details on the types of audit log records.|
-|CreationTime|The date and time in Coordinated Universal Time (UTC) when the user performed the activity.|
-|Operación|The name of the user or admin activity.|
-|OrganizationId|The GUID for your organization's Office 365 service where the event occurred.|
-|UserType|The type of user that performed the operation. See the User Type table for details on the types of users.|
-|UserKey|The Passport Unique ID of the user who performed the activity.|
-|ResultStatus|Indicates whether the action (specified in the Operation property) was successful or not. Possible values are Succeeded, PartiallySucceded, or Failed.|
-|ObjectId|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user.|
-|UserId|The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged; for example, my_name@my_domain_name. Note that records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included.|
-|ClientIp|The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.|
+|Id|Identificador único de un registro de auditoría.|
+|Tipo de registro|El tipo de operación indicado en el registro. Consulte la tabla AuditLogRecordType para obtener más información sobre los tipos de registros de auditoría.|
+|CreationTime|La fecha y hora en hora Universal coordinada (UTC) cuando el usuario ha realizado la actividad.|
+|Operación|El nombre de la actividad del usuario o administrador.|
+|OrganizationId|El GUID de servicio de Office 365 de su organización donde se produjo el evento.|
+|UserType|El tipo de usuario que realizó la operación. Consulte la tabla de tipo de usuario para obtener más información sobre los tipos de usuarios.|
+|UserKey|Identificador único de Passport del usuario que realizó la actividad.|
+|ResultStatus|Indica si la acción (especificada en la propiedad de operación) se realizó correctamente o no. Los valores posibles son Succeeded, PartiallySucceded o error.|
+|ObjectId|Para SharePoint y OneDrive para la actividad de negocio, el nombre de ruta de acceso completa del archivo o carpeta que tiene acceso el usuario.|
+|UserId|El UPN (nombre Principal del usuario) del usuario que realizó la acción (especificada en la propiedad de operación) que dan como resultado del registro que se ha iniciado; Por ejemplo, my_name@my_domain_name. Tenga en cuenta que también se incluyen los registros de la actividad de cuentas del sistema (como SHAREPOINT\system o NT AUTHORITY\SYSTEM).|
+|IP de cliente|La dirección IP del dispositivo que se utilizó cuando se registró la actividad. La dirección IP se muestra en formato de dirección de un IPv4 o IPv6.|
 
-## Using PowerShell to search
+## Uso de PowerShell para buscar
 
-You can use PowerShell to access the audit logs based on your login. This is done by accessing Exchange Online. Here is an example of a command to pull Power BI audit log entries.
+Puede usar PowerShell para tener acceso a los registros de auditoría basándose en el inicio de sesión. Esto se hace mediante el acceso a Exchange Online. Este es un ejemplo de un comando para extraer las entradas de registro de auditoría de Power BI.
 
 ```
 Set-ExecutionPolicy RemoteSigned
@@ -164,55 +164,55 @@ Import-PSSession $Session
 Search-UnifiedAuditLog -StartDate 9/11/2016 -EndDate 9/15/2016 -RecordType PowerBI -ResultSize 1000 | Format-Table | More
 ```
 
-For more information on connecting to Exchange Online, see <bpt id="p1">[</bpt>Connect to Exchange Online PowerShell<ept id="p1">](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx)</ept>.
+Para obtener más información acerca de cómo conectarse a Exchange Online, consulte [conectarse a Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx).
 
-For more information about parameters and usage of the Search-UnifiedAuditLog command, see <bpt id="p1">[</bpt>Search-UnifiedAuditLog<ept id="p1">](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx)</ept>.
+Para obtener más información acerca del uso del comando UnifiedAuditLog de búsqueda y parámetros, consulte [UnifiedAuditLog de búsqueda](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx).
 
-## Export the Power BI audit log
+## Exportar el registro de auditoría de Power BI
 
-You can export the Power BI audit log to a csv file.
+Puede exportar el registro de auditoría de Power BI en un archivo csv.
 
-1.  Select <bpt id="p1">**</bpt>Export results<ept id="p1">**</ept>.
+1.  Seleccione **Exportar resultados**.
 
-2.  Select either <bpt id="p1">**</bpt>Save loaded results<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Download all results<ept id="p2">**</ept>.
+2.  Seleccione **Guardar carga resultados** o **Descargar todos los resultados**.
 
     ![](media/powerbi-admin-auditing/export-auditing-results.png)
 
-## Record and user types
+## Tipos de registro y de usuario
 
-Audit log entries will have a RecordType and UserType as part of the details for the entry. All Power BI entries will have a RecordType of 20.
+Las entradas de registro de auditoría tendrá un tipo de registro y UserType como parte de los detalles de la entrada. Todas las entradas de Power BI tendrá un tipo de registro de 20.
 
-For a full listing, see <bpt id="p1">[</bpt>Detailed properties in the Office 365 audit log<ept id="p1">](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)</ept>
+Para obtener una lista completa, consulte [registro de auditoría de las propiedades detalladas en Office 365](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)
 
-## List of activities audited by Power BI
+## Lista de actividades controladas por Power BI
 
 |Actividad|Descripción|Detalles adicionales|
 |---|---|---|
-|CreateDashboard|This activity is logged every time a new dashboard is created.|- Dashboard name.|
-|EditDashboard|This activity is logged every time a dashboard is renamed.|- Dashboard name.|
-|DeleteDashboard|This activity is logged every time a dashboard is deleted.|- Dashboard name.|
-|PrintDashboard|This event is logged every time that a dashboard is printed.|- Dashboard name.<br/>- Dataset name|
-|ShareDashboard|This activity is logged every time a dashboard is shared.|- Dashboard name.<br/>-Recipient Email.<br/>- Dataset name.<br>- Reshare permissions.|
-|ViewDashboard|This activity is logged every time a dashboard is viewed.|- Dashboard name.|
-|ExportTile|This event is logged every time data is exported from a dashboard tile.|- Tile name.<br/>- Dataset name.|
-|DeleteReport|This activity is logged every time a report is deleted.|- Report name.|
-|ExportReport|This event is logged every time data is exported from a report tile.|- Report name.<br/>- Dataset name.|
-|PrintReport|This event is logged every time that a report is printed.|- Report name.<br/>- Dataset name.|
-|PublishToWebReport|This event is logged every time that a report is Published To Web.|- Report Name.<br/>- Dataset name.|
-|ViewReport|This activity is logged every time a report is viewed.|- Report name.|
-|ExploreDataset|This event is logged every time you explore a dataset by selected it.|- Dataset name|
-|DeleteDataset|This event is logged every time a dataset is deleted.|- Dataset name.|
-|CreateOrgApp|This activity is logged every time an organizational content pack is created.|- Organizational Content Pack name.<br/>- Dashbaord names.<br/>- Report names.<br/>- Dataset names.|
-|CreateGroup|This activity is fired every time a group is created.|- Group name.|
-|AddGroupMembers|This activity is logged every time a member is added to a Power BI group workspace.|- Group name.<br/>- Email addresses.|
-|UpdatedAdminFeatureSwitch|This event is logged every time an admin feature switch is changed.|- Switch name.<br/>- New switch state.|
+|CreateDashboard|Esta actividad se registra cada vez que se crea un nuevo panel.|-Nombre del panel.|
+|Editar panel|Esta actividad se registra cada vez que se cambia el nombre de un panel.|-Nombre del panel.|
+|DeleteDashboard|Esta actividad se registra cada vez que se elimina un panel.|-Nombre del panel.|
+|PrintDashboard|Este evento se registra cada vez que se imprime un panel.|-Nombre del panel.<br/>: Nombre del conjunto de datos|
+|ShareDashboard|Esta actividad se registra cada vez que se comparte un panel.|-Nombre del panel.<br/>-El correo electrónico destinatario.<br/>: Nombre el conjunto de datos.<br>-Vuelva a compartir permisos.|
+|ViewDashboard|Esta actividad se registra cada vez que se visualiza un panel.|-Nombre del panel.|
+|ExportTile|Este evento se registra cada vez que los datos se exportan desde un icono de panel.|-Nombre de mosaico.<br/>: Nombre el conjunto de datos.|
+|DeleteReport|Esta actividad se registra cada vez que se elimina un informe.|-Nombre del informe.|
+|ExportReport|Este evento se registra cada vez que los datos se exportan desde un icono de informe.|-Nombre del informe.<br/>: Nombre el conjunto de datos.|
+|PrintReport|Este evento se registra cada vez que se imprime un informe.|-Nombre del informe.<br/>: Nombre el conjunto de datos.|
+|PublishToWebReport|Este evento se registra cada vez que es un informe publicado en Web.|-Nombre del informe.<br/>: Nombre el conjunto de datos.|
+|ViewReport|Esta actividad se registra cada vez que se ve un informe.|-Nombre del informe.|
+|ExploreDataset|Este evento se registra cada vez explorar un conjunto de datos por seleccionado.|: Nombre del conjunto de datos|
+|DeleteDataset|Este evento se registra cada vez que se elimina un conjunto de datos.|: Nombre el conjunto de datos.|
+|CreateOrgApp|Esta actividad se registra cada vez que se crea un paquete de contenido de organización.|-Organización nombre del paquete de contenido.<br/>-Panel nombres.<br/>-Los nombres de informes.<br/>-El conjunto de datos nombres.|
+|CreateGroup|Esta actividad se desencadena cada vez que se crea un grupo.|-Nombre del grupo.|
+|AddGroupMembers|Esta actividad se registra cada vez que se agrega un miembro a un área de trabajo del grupo de Power BI.|-Nombre del grupo.<br/>-Direcciones de correo electrónico.|
+|UpdatedAdminFeatureSwitch|Este evento se registra cada vez que cambia un conmutador de característica de administración.|-Cambiar nombre.<br/>-Nuevo estado del conmutador.|
 
 ## Consulte también
 
-[Power BI Admin Portal](powerbi-admin-portal.md)  
-[Purchasing Power BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md)  
-[Permissions in Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx)  
-[Connect to Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx)  
-[Search-UnifiedAuditLog](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx)  
-[Detailed properties in the Office 365 audit log](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Portal de administración de Power BI](powerbi-admin-portal.md)  
+[Poder adquisitivo BI Pro](powerbi-admin-purchasing-powerb-bi-pro.md)  
+[Permisos en Exchange Online](https://technet.microsoft.com/library/jj200692(v=exchg.150).aspx)  
+[Conectarse a Exchange Online PowerShell](https://technet.microsoft.com/library/jj984289\(v=exchg.160\).aspx)  
+[Búsqueda UnifiedAuditLog](https://technet.microsoft.com/library/mt238501\(v=exchg.160\).aspx)  
+[Registro de auditoría de las propiedades detalladas en Office 365](https://support.office.com/article/Detailed-properties-in-the-Office-365-audit-log-ce004100-9e7f-443e-942b-9b04098fcfc3)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

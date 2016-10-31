@@ -1,49 +1,49 @@
 <properties
 title=""
-pageTitle="Power BI technical content contributors' guide Searh page curation guidance" description="SEO tips for powerbi.microsoft.com." metaKeywords="" services="" solutions="" documentationCenter="" authors="maggies" videoId="" scriptId="" manager="mblythe" />
+pageTitle="Guía de selección de una página de búsqueda de guía de Power BI contenidos colaboradores técnicos" description="Sugerencias SEO para powerbi.microsoft.com." metaKeywords="" services="" solutions="" documentationCenter="" authors="maggies" videoId="" scriptId="" manager="mblythe" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="06/01/2016" ms.author="maggies" />
 
 
-# Power BI search page curation guidance
+# Guía de selección de una página búsqueda de Power BI
 
-These days we need to think of Google (or other search engines, but mainly Google) as the home page for our content. The way our articles look in a list of search results is key to getting people to the right article, which is in turn key to making people happy with the articles they read. These guidelines are for optimizing the way our content looks in search results.
+Estos días debemos considerar la página principal de nuestro contenido de Google (u otros motores de búsqueda, pero principalmente Google). La apariencia de nuestros artículos en una lista de resultados de búsqueda es clave para que los empleados para el artículo correcto, que es a su vez clave para hacer que la gente satisfecho con los artículos que leen. Estas instrucciones son para optimizar el aspecto de nuestro contenido en los resultados de búsqueda.
 
-## pageTitle (Property)
-This is the search result title.
+## pageTitle (propiedad)
+Este es el título de resultados de búsqueda.
 
-- 39 maximum char + “ | Microsoft Power BI” (60 total char max, including spaces).
-- Brand/site identifier is typed: space pipe space Microsoft Power BI
-- Important keywords at the front.
-- Opt.: Your title can be up to 59 chars, if the title works with the site identifier truncated.
+- máximo de 39 caracteres + "| Microsoft Power BI"(60 total char max, incluidos los espacios).
+- Identificador de la marca o el sitio se ha escrito: espacio espacio canalización Microsoft Power BI
+- Palabras clave importantes en la parte delantera.
+- OPT.: Su título puede ser hasta 59 caracteres, si el título no funciona con el identificador de sitio que se trunca.
 
-## Description (Property)
-- At least 130 characters long. 160 characters maximum, including spaces.  
-- Important keywords at the front.
-- Include phrases like “Learn about”,  “How to…”, “Find out about…”, “See steps for…”, “Get help with…”, and others to signal that this is documentation and people are going to learn something. As opposed to specs or marketing info. Something like: “Learn how to create a Power BI dashboard to visualize….”
-- In CAPS, the template has no Description property, so the first paragraph will be the description, so it should follow these guidelines.
+## Description (propiedad)
+- Mínimo de 130 caracteres de longitud. máximo de 160 caracteres, incluidos espacios.  
+- Palabras clave importantes en la parte delantera.
+- Incluyen frases como "Conocer", "Cómo...", "Buscar out acerca de...", "Ver pasos for...", "Obtener ayuda con..." y otros para indicar que se trata de documentación y personas van a aprender algo. En lugar de especificaciones o información de marketing. Algo como: "Aprenda a crear un panel de Power BI para visualizar..."
+- En MAYÚSCULAS, la plantilla tiene ninguna propiedad de descripción, por lo que el primer párrafo será la descripción, por lo que debe seguir estas directrices.
 
 ## (H1)
-(If editable apart from page title; this is the title at the top of the article.)
+(Si es editable aparte de título de la página; es el título en la parte superior del artículo.)
 
-- Recommended: 100 char max
-- Don’t repeat the page title text verbatim.
-- Strongest keywords at the beginning of the heading.
+- Recomendado: max 100 char
+- No repita literalmente el texto del título de página.
+- Palabras clave más seguros al principio de la partida.
 
-## 1st paragraph
-- Use your strongest keywords in the first words of this paragraph.  - Make it short.
-- Answer: What will the user learn or otherwise accomplish with this article?
-- If the article has a good meta description, you can repeat it here.
-- In CAPS, the template has no Description property, so this first paragraph will be the description and should follow the Description guidelines.
+## párrafo 1
+- Utilice las palabras clave más eficaz en las primeras palabras de este párrafo.  -Facilitan corto.
+- Respuesta: ¿Qué se el usuario obtenga o lograr lo contrario con este artículo?
+- Si el artículo tiene una buena descripción de metadatos, puede repetir aquí.
+- En MAYÚSCULAS, la plantilla no tiene ninguna propiedad de descripción, por lo que será la descripción de este primer párrafo y debe seguir las directrices de descripción.
 
-## Image file names
-- Descriptive, real words, not abbreviations.
-- 80-char pub system limit
-- No underscores; use dashes.
-    -  YES: report-builder-parameter-tutorial-design.png
+## Nombres de archivo de imagen
+- Palabras descriptivas, reales, no las abreviaturas.
+- límite del sistema pub 80 char
+- Ningún carácter de subrayado; usar guiones.
+    -  SÍ: informe de generador-parámetro-tutorial-design.png
     -  NO: ssRB_ParamTut_Desgn.png
     -  NO: ssReportBuilderParameterTutorialDesign.png
 
-## Image Alt text (Properties)
-- 70 char maximum, including spaces
-- Use your strongest keywords up front.
+## Texto alternativo de imagen (propiedades)
+- máximo de 70 caracteres, incluyendo espacios en blanco
+- Utilice las palabras clave más fuertes por adelantado.

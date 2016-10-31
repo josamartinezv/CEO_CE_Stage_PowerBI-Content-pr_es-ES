@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Download the Power BI industry samples (Excel workbooks)"
-   description="Download the Power BI industry samples (Excel workbooks)"
+   pageTitle="Descargar los ejemplos de la industria de Power BI (libros de Excel)"
+   description="Descargar los ejemplos de la industria de Power BI (libros de Excel)"
    services="powerbi"
    documentationCenter=""
    authors="amac"
@@ -20,74 +20,88 @@
    ms.date="05/24/2016"
    ms.author="amac"/>
 
-# <a name="download-the-power-bi-industry-samples-(excel-workbooks)"></a>Download the Power BI industry samples (Excel workbooks)
+# <a name="download-the-power-bi-industry-samples-(excel-workbooks)"></a>Descargar los ejemplos de la industria de Power BI (libros de Excel)
 
-Microsoft has created sample content for you to use with Power BI. Each of these samples is available as a content pack and as a separate Excel workbook. <bpt id="p1">**</bpt>This topic provides instructions for downloading the Excel workbooks<ept id="p1">**</ept>.
+Microsoft ha creado contenido de ejemplo para su uso con Power BI. Cada uno de estos ejemplos está disponible como un paquete de contenido, como un libro de Excel independiente. 
+            **Este tema proporciona instrucciones para descargar los libros de Excel**.
 
-To learn more about the types of samples available, see <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-datasets.md)</ept>.
+Para obtener más información acerca de los tipos de ejemplos disponibles, consulte [ejemplos de Power BI](powerbi-sample-datasets.md).
 
-## <a name="usage-guidelines-for-the-power-bi-sample-excel-workbooks"></a>Usage guidelines for the Power BI sample Excel workbooks
+## <a name="usage-guidelines-for-the-power-bi-sample-excel-workbooks"></a>Instrucciones de uso de los libros de Excel de ejemplo de Power BI
 
->[AZURE.IMPORTANT]   Please read this information before <bpt id="p1">[</bpt>downloading the Power BI sample Excel workbooks<ept id="p1">](#Download-the-Power-BI-sample-workbooks)</ept>.
+>[AZURE.IMPORTANT]   Lea esta información antes de [descargar los libros de Excel de ejemplo de Power BI](#Download-the-Power-BI-sample-workbooks).
 
- ©2015 Microsoft Corporation. Todos los derechos reservados. The documents and workbooks are provided "as-is." Information and views expressed in the workbooks, including URL and other Internet Web site references, may change without notice. Al utilizarlas, acepta el riesgo que ello conlleva. Some examples are for illustration only and are fictitious. No real association is intended or inferred. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+ © 2015 Microsoft Corporation. Todos los derechos reservados. Se proporcionan los documentos y libros "como-es." Información y opiniones expresadas en los libros, incluidas direcciones URL y otras referencias a sitios Web de Internet, pueden cambiar sin previo aviso. Al utilizarlas, acepta el riesgo que ello conlleva. Algunos ejemplos son únicamente con fines ilustrativos y son ficticios. Está diseñada ni inferir ninguna asociación real. Microsoft no otorga garantías, expresas o implícitas, con respecto a la información proporcionada aquí.
 
-The workbooks do not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this workbook for your internal, reference purposes.
+Los libros no proporcionan ningún derecho legal de propiedad intelectual de ningún producto de Microsoft. Puede copiar y usar este libro para su uso interno, con fines de referencia.
 
-The workbooks and related data are provided by obviEnce. <bpt id="p1">[</bpt>www.obvience.com<ept id="p1">](http://www.obvience.com)</ept>
+Los libros y los datos relacionados se proporcionan por obviEnce. 
+            [www.obvience.com](http://www.obvience.com)
 
-ObviEnce is an ISV and an Intellectual Property (IP) Incubator focused on Microsoft Business Intelligence. ObviEnce works closely with Microsoft to develop best practices and thought leadership for jump-starting and deploying Microsoft Business Intelligence solutions.
+ObviEnce es un ISV y una incubadora de propiedad intelectual (PI) centrada en Microsoft Business Intelligence. ObviEnce trabaja en estrecha colaboración con Microsoft para desarrollar mejores prácticas y liderazgo intelectual para impulsar e implementar soluciones de inteligencia empresarial de Microsoft.
 
-The workbooks and data are property of obviEnce, LLC and have been shared solely for the purpose of demonstrating Power BI functionality with industry sample data.
+Los libros y datos son propiedad de obviEnce, LLC y se han compartido con el propósito de demostrar la funcionalidad de Power BI con datos de ejemplo del sector.
 
-Any uses of the workbooks and/or data must include the above attribution (that is also on the Info worksheet included with each workbook). The workbook and any visualizations must be accompanied by the following copyright notice: obviEnce ©.
+Todos los usos de los libros y los datos deben incluir la atribución anterior (que también está en la hoja de cálculo de la información incluida con cada libro). El libro y las visualizaciones deben ir acompañadas por el siguiente aviso de copyright: obviEnce ©.
 
-By clicking any of the links below to download the Excel workbook files, you are agreeing to the terms above.
+Al hacer clic en cualquiera de los siguientes vínculos para descargar los archivos de libro de Excel, acepta las condiciones anteriores.
 
-## <a name="download-the-power-bi-sample-workbooks"></a>Download the Power BI sample workbooks
+## <a name="download-the-power-bi-sample-workbooks"></a>Descargue los libros de ejemplo de Power BI
 
-Download the individual samples files using the links below, or <bpt id="p1">[</bpt>download a zip file of all the sample files<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=535020)</ept>.  Once downloaded, you can open these in Excel and you can connect to them from Power BI service.
+Descargar los archivos de ejemplos individuales mediante los vínculos siguientes, o [descargar un archivo zip de todos los archivos de ejemplo](http://go.microsoft.com/fwlink/?LinkId=535020).  Una vez descargado, puede abrir en Excel y pueden conectarse a ellos desde el servicio Power BI.
 
--   <bpt id="p1">[</bpt>Retail Analysis Sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=529778)</ept>
+-   
+            [Ejemplo de análisis de venta directa](http://go.microsoft.com/fwlink/?LinkId=529778)
 
--   <bpt id="p1">[</bpt>Supplier Quality Analysis Sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=529779)</ept>
+-   
+            [Ejemplo de análisis de calidad de proveedores](http://go.microsoft.com/fwlink/?LinkId=529779)
 
--   <bpt id="p1">[</bpt>Human Resources Sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=529780)</ept>
+-   
+            [Ejemplo de recursos humanos](http://go.microsoft.com/fwlink/?LinkId=529780)
 
--   <bpt id="p1">[</bpt>Customer Profitability Sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=529781)</ept>
+-   
+            [Ejemplo de rentabilidad del cliente](http://go.microsoft.com/fwlink/?LinkId=529781)
 
--   <bpt id="p1">[</bpt>Opportunity Tracking Sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=529782)</ept>
+-   
+            [Ejemplo de seguimiento de oportunidad](http://go.microsoft.com/fwlink/?LinkId=529782)
 
--   <bpt id="p1">[</bpt>IT Spend Analysis Sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=529783)</ept>
+-   
+            [TI ejemplo de análisis de gastos](http://go.microsoft.com/fwlink/?LinkId=529783)
 
--   <bpt id="p1">[</bpt>Procurement Analysis Sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=529784)</ept>
+-   
+            [Ejemplo de análisis de compras](http://go.microsoft.com/fwlink/?LinkId=529784)
 
--   <bpt id="p1">[</bpt>Sales and Marketing Sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=529785)</ept>
+-   
+            [Ejemplo de Marketing y ventas](http://go.microsoft.com/fwlink/?LinkId=529785)
 
-## <a name="tips-and-troubleshooting"></a>Tips and troubleshooting
+## <a name="tips-and-troubleshooting"></a>Sugerencias y solución de problemas
 
-When you first open a sample workbook in Excel, you may see two warnings.
+Al abrir un libro de ejemplo en Excel, verá dos advertencias.
 
--   The first says the workbook is in Protected View. Select <bpt id="p1">**</bpt>Enable Editing<ept id="p1">**</ept>.
+-   La primera indica que el libro está en Vista protegida. Seleccione **Habilitar edición**.
 
--   The second says the workbook has external data connections. Select <bpt id="p1">**</bpt>Enable Content<ept id="p1">**</ept>.
+-   La segunda indica que el libro tiene conexiones de datos externos. Seleccione **Habilitar contenido**.
 
-Each workbook contains several sheets:
+Cada libro contiene varias hojas:
 
--   The Info tab provides information about obviEnce, the company that created the sample.
+-   La ficha información proporciona información sobre obviEnce, la compañía que creó el ejemplo.
 
--   The other tabs are Power View sheets with the report visuals. You may need to <bpt id="p1">[</bpt>enable the Power View add-in<ept id="p1">](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957)</ept>.
+-   Las otras pestañas son hojas de Power View con visualizaciones de los informes. Puede que necesite [Habilitar el complemento de Power View](https://support.office.com/article/Create-a-Power-View-sheet-in-Excel-2013-B23D768D-7586-47FE-97BD-89B80967A405#__toc328591957).
 
-The workbook contains the actual data, but it's in the data model, not in worksheets.
+El libro contiene los datos reales, pero se encuentra en el modelo de datos, no en hojas de cálculo.
 
--   To see the data, on the <bpt id="p1">**</bpt>PowerPivot<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Manage Data Model<ept id="p2">**</ept>.
+-   Para ver los datos en el **PowerPivot** ficha, seleccione **administrar el modelo de datos**.
 
-    Don't see the PowerPivot tab? <bpt id="p1">[</bpt>Enable the Power Pivot add-in<ept id="p1">](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8)</ept>. 
+    ¿No aparece la ficha de PowerPivot? 
+            [Habilitar el complemento Power Pivot](https://support.office.com/article/Start-Power-Pivot-in-Microsoft-Excel-2013-add-in-A891A66D-36E3-43FC-81E8-FC4798F39EA8). 
 
 ## <a name="see-also"></a>Consulte también
 
-<bpt id="p1">[</bpt>Sample datasets<ept id="p1">](powerbi-sample-datasets.md)</ept>
 
-<bpt id="p1">[</bpt>Get data for Power BI<ept id="p1">](powerbi-service-get-data.md)</ept>
+            [Conjuntos de datos de ejemplo](powerbi-sample-datasets.md)
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+
+            [Obtener datos para Power BI](powerbi-service-get-data.md)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

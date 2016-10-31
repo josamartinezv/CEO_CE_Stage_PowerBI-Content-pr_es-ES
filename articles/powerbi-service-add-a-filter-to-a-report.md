@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add a filter to a report in Power BI"
-   description="Add a filter to a report in Power BI"
+   pageTitle="Agregar un filtro a un informe en Power BI"
+   description="Agregar un filtro a un informe en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,91 +20,93 @@
    ms.date="08/21/2016"
    ms.author="mihart"/>
 
-# Add a filter to a Power BI report (in Editing view)
+# Agregar un filtro a un informe de Power BI (en la vista de edición)
 
-><bpt id="p1">**</bpt>TIP<ept id="p1">**</ept>:   We recommend first reading <bpt id="p2">[</bpt>About filters and highlighting in Power BI reports<ept id="p2">](powerbi-service-about-filters-and-highlighting-in-reports.md)</ept>.
+>
+            **SUGERENCIA**: se recomienda leer primero [sobre los filtros y resaltado en informes de Power BI](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
 
-##  What is the difference between report filters in Editing View versus Reading View
+##  ¿Cuál es la diferencia entre los filtros de informe en la vista de edición frente a la vista de lectura
 
-There are two modes for interacting with reports: <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept> and <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>.  And the filtering capabilities available to you depend on which mode you're in.
+Existen dos modos para interactuar con los informes: [vista lectura](powerbi-service-interact-with-a-report-in-reading-view.md) y [vista de edición de](powerbi-service-interact-with-a-report-in-editing-view.md).  Y las capacidades de filtrado disponibles dependen de qué modo se encuentra en.
 
--   In Editing View, you can add report, page, and visual filters. When you save the report, the filters are saved with it. People looking at the report in Reading View can interact with the filters you added, but not save their changes.
+-   En la vista de edición, puede agregar informes, página y filtros visuales. Al guardar el informe, los filtros se guardan con él. Examinando el informe en la vista de lectura puedan interactuar con los filtros que ha agregado, pero no guardar sus cambios.
 
--   In Reading View, you can interact with any page and visual filters that already exist in the report, but you won't be able to save your filter changes.
+-   En la vista de lectura, puede interactuar con cualquier página y filtros visuales que ya existen en el informe, pero no podrá guardar los cambios del filtro.
 
-<bpt id="p1">**</bpt>NOTE:<ept id="p1">**</ept>  This article describes how to create filters in report <bpt id="p2">**</bpt>Editing View<ept id="p2">**</ept>.  For more information on filters in Reading VIew, see <bpt id="p1">[</bpt>interacting with filters in report Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept>.
 
-##  Visual filters, page filters, and report filters
-A <bpt id="p1">**</bpt>page filter<ept id="p1">**</ept> applies to all the visuals on the report page. A <bpt id="p1">**</bpt>visual filter<ept id="p1">**</ept> applies to a single visual on a report page. And a <bpt id="p1">**</bpt>report filter<ept id="p1">**</ept> applies to all pages in the report.
+            **NOTA:**  este artículo describe cómo crear filtros de informe **vista de edición de**.  Para obtener más información acerca de los filtros en la vista de lectura, consulte [interactuar con los filtros en la vista de lectura informe](powerbi-service-interact-with-a-report-in-reading-view.md).
+
+##  Filtros visuales, página filtros y filtros de informe
+Un **filtro de página** se aplica a todos los elementos visuales en la página del informe. Un **filtro visual** se aplica a un único objeto visual en una página del informe. Y un **filtro de informe** se aplica a todas las páginas del informe.
 
 ![](media/powerbi-service-add-a-filter-to-a-report/power-bi-add-filter-reading-view.png)
 
-## Add a filter to a specific visualization (aka visual filter)
+## Agregar un filtro a una visualización específica (también conocido como filtro visual)
 
-### By filtering the fields already in the chart
+### Mediante el filtrado de los campos en el gráfico
 
-1.  Open your <bpt id="p1">[</bpt>report in Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>.
+1.  Abra su [informes en la vista de edición de](powerbi-service-go-from-reading-view-to-editing-view.md).
 
-2.  Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
+2.  Abra el panel de visualizaciones y los filtros y el panel de campos (si no está ya abiertos).
 
-3.  Select a visual to make it active. All the fields being used by the visual are identified in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane and also listed in the <bpt id="p2">**</bpt>Filters<ept id="p2">**</ept> pane, under the <bpt id="p3">**</bpt>Visual Level Filters<ept id="p3">**</ept> heading.
+3.  Seleccione un elemento visual para activarlo. Todos los campos que se utiliza el objeto visual se identifican en la **campos** panel y también aparece en el **filtros** panel, en el **filtros de nivel Visual** encabezado.
 
-4.  Select the field you want to add as a new visual level filter, and drag it into the Visual Level Filters area.  Set either <bpt id="p1">**</bpt>Basic<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Advanced<ept id="p2">**</ept> filtering controls (see <bpt id="p3">[</bpt>How to use report filters<ept id="p3">](powerbi-service-how-to-use-a-report-filter.md)</ept>).
+4.  Seleccione el campo que desea agregar como un nuevo filtro de nivel visual y arrástrelo al área de filtros de nivel Visual.  Establecer **básica** o **avanzadas** controles de filtrado (consulte [cómo usar filtros de informe](powerbi-service-how-to-use-a-report-filter.md)).
 
     ![](media/powerbi-service-add-a-filter-to-a-report/vizFilter.png)
 
-The visual changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
+El visual cambia para reflejar el nuevo filtro. Si guarda el informe con el filtro, los lectores de informes pueden interactuar con el filtro en la vista de lectura, activando o desactivando valores.
 
-## Add a filter to an entire page (aka page view filter)
+## Agregar un filtro a una página completa (también conocido como filtro de vista de página)
 
-1.  Open your <bpt id="p1">[</bpt>report in Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>.
+1.  Abra su [informes en la vista de edición de](powerbi-service-go-from-reading-view-to-editing-view.md).
 
-2.  Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
+2.  Abra el panel de visualizaciones y los filtros y el panel de campos (si no está ya abiertos).
 
-3.  Select a field in the field list in the report and drag it below <bpt id="p1">**</bpt>Page Level Filters<ept id="p1">**</ept>.
+3.  Seleccione un campo en la lista de campos en el informe y arrástrelo por debajo **filtros de nivel de página**.
 
-4.  Select the values you want to filter and set either  <bpt id="p1">**</bpt>Basic<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Advanced<ept id="p2">**</ept> filtering controls (see <bpt id="p3">[</bpt>How to use report filters<ept id="p3">](powerbi-service-how-to-use-a-report-filter.md)</ept>).
+4.  Seleccione los valores que desea filtrar y establecer  **básica** o **avanzadas** controles de filtrado (consulte [cómo usar filtros de informe](powerbi-service-how-to-use-a-report-filter.md)).
 
-    The visualization changes to reflect the new filter. 
+    Los cambios de visualización para reflejar el nuevo filtro. 
 
     ![](media/powerbi-service-add-a-filter-to-a-report/filterPage.gif)
 
-If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
+Si guarda el informe con el filtro, los lectores de informes pueden interactuar con el filtro en la vista de lectura, activando o desactivando valores.
 
-## Add a filter to an entire report (aka Report filter)
+## Agregar un filtro a un informe completo (también conocido como filtro de informe)
 
-1. Open your <bpt id="p1">[</bpt>report in Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>.
+1. Abra su [informes en la vista de edición de](powerbi-service-go-from-reading-view-to-editing-view.md).
 
-2. Open the Visualizations and Filters pane and the Fields pane (if they're not already open).
+2. Abra el panel de visualizaciones y los filtros y el panel de campos (si no está ya abiertos).
 
-3. Select a field in the field list and drag it below <bpt id="p1">**</bpt>Report Level Filters<ept id="p1">**</ept>.
+3. Seleccione un campo en la lista de campos y arrástrelo por debajo **filtros de nivel de informe**.
 
-4. Select the values you want to filter (see <bpt id="p1">[</bpt>How to use report filters<ept id="p1">](powerbi-service-how-to-use-a-report-filter.md)</ept>).
+4. Seleccione los valores que desea filtrar (vea [cómo usar filtros de informe](powerbi-service-how-to-use-a-report-filter.md)).
 
-The visuals on the active page, and on all pages in the report, changes to reflect the new filter. If you save your report with the filter, report readers can interact with the filter in Reading View, selecting or clearing values.
+Los elementos visuales en la página activa y en todas las páginas del informe cambia para reflejar el nuevo filtro. Si guarda el informe con el filtro, los lectores de informes pueden interactuar con el filtro en la vista de lectura, activando o desactivando valores.
 
 ##  Solucionar problemas
 
-### Why your visual level filter and page level filter may return different results
+### ¿Por qué el filtro nivel visual a un filtro y la página de nivel puede devolver resultados diferentes
 
-When you add a visual level filter, Power BI filters on the aggregated results.  The default aggregation is Sum, but you can <bpt id="p1">[</bpt>change the aggregation type<ept id="p1">](powerbi-service-aggregates.md)</ept>.  
+Al agregar un filtro de nivel visual, Power BI filtros en los resultados agregados.  La agregación predeterminada es la suma, pero puede [cambiar el tipo de agregación](powerbi-service-aggregates.md).  
 
-When you add a page level filter, Power BI filters without aggregating.  It does this because a page can have many visuals which can each utilize different aggregation types.  So the filter is applied on each data row.
+Al agregar un filtro de nivel de página, filtros de Power BI sin agregación.  Esto consigue porque una página puede tener muchos elementos visuales que pueden utilizar los tipos de agregación diferente cada uno.  Por lo que el filtro se aplica en cada fila de datos.
 
 
 ## Consulte también
 
- [How to use report filters](powerbi-service-how-to-use-a-report-filter.md)
+ [Cómo usar filtros de informe](powerbi-service-how-to-use-a-report-filter.md)
 
-  [Filters and highlighting in reports](powerbi-service-about-filters-and-highlighting-in-reports.md)
+  [Filtros y resaltado en informes](powerbi-service-about-filters-and-highlighting-in-reports.md)
 
-[Interact with filters and highlighting in report Reading View](powerbi-service-interact-with-a-report-in-reading-view.md)
+[Interactuar con los filtros y resaltado en la vista de lectura de informe](powerbi-service-interact-with-a-report-in-reading-view.md)
 
-[Change how report visuals cross-filter and cross-highlight each other](powerbi-service-visual-interactions.md)
+[Cambiar elementos visuales de informe filtro cruzado y resaltan entre sí](powerbi-service-visual-interactions.md)
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

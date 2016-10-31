@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tips for designing a great Power BI dashboard"
-   description="Tips for designing a great Power BI dashboard"
+   pageTitle="Sugerencias para diseñar un excelente panel de Power BI"
+   description="Sugerencias para diseñar un excelente panel de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,69 +20,75 @@
    ms.date="08/11/2016"
    ms.author="mihart"/>
 
-# Tips for designing a great Power BI dashboard  
+# Sugerencias para diseñar un excelente panel de Power BI  
 
-Now that you've created a dashboard and added some tiles, think about how to make your dashboard not just pretty, but also functional. In general, that means making the most important information stand out, and making it clean and uncluttered﻿.
+Ahora que ha creado un panel y agrega algunos iconos, piense en cómo hacer que el panel no sólo bastante pero funcional. En general, esto significa comprobar el soporte de la información más importante out y facilitando limpio y ordenado.
 
-Here are a few tips.
+Estas son algunas sugerencias.
 
-### Consider your audience  
-What are the key metrics that will help them make decisions? How will the dashboard be used? What learned or cultural assumptions may affect design choices? What information does your audience need to be successful?
+### Tenga en cuenta la audiencia  
+¿Cuáles son las métricas clave que le ayudarán a tomar decisiones? ¿Cómo se utilizará el panel? ¿Lo aprendido o suposiciones culturales pueden afectar a las opciones de diseño? ¿Qué información necesita el público tenga éxito?
 
-Keep in mind that the dashboard is an overview, a single place to monitor the current state of the data. The dashboard is based on underlying reports and datasets, and those can contain loads of details. Your readers can drill into the reports from your dashboard. So don't put the detail on the dashboard unless that's what your readers need to monitor.
+Tenga en cuenta que el panel de información general, un único lugar para supervisar el estado actual de los datos. El panel se basa en conjuntos de datos e informes subyacentes y los pueden contener cargas de detalles. Los lectores pueden profundizar en los informes desde el panel. Por lo que no incluya los detalles en el panel a menos que sea lo que necesitan supervisar los lectores.
 
-Where is the dashboard going to be displayed? If it will be on a large monitor, you can put more content on it. If readers will view it on their tablets, then fewer tiles will be more readable.
+¿En el panel va a mostrarse? Si va a ser en un monitor de gran tamaño, pueden incluir más contenido en ella. Si los lectores se lo puede ver en tabletas, mosaicos menos será más legibles.
 
-### Tell a story and keep it to one screen  
-Because dashboards are meant to show important information at a glance, having all the tiles on one screen is best. Can you avoid scroll bars on your dashboard?
+### Contar una historia y mantener en una pantalla  
+Debido a los paneles están diseñados para mostrar información importante de un vistazo, con todos los mosaicos en una pantalla es mejor. ¿Puede evitar las barras de desplazamiento en el panel?
 
-Is the dashboard too cluttered?  Remove all but essential information that can be easily read and interpreted.
+¿El panel demasiado desordenado?  Quitar información prácticamente esencial que se puede leer e interpretar fácilmente.
 
-### Make use of full screen mode
-Display your dashboard in <bpt id="p1">[</bpt>full screen<ept id="p1">](powerbi-service-dash-and-reports-fullscreen.md)</ept> without distractions.
+### Asegúrese de usar de modo de pantalla completa
+Mostrar el panel en [pantalla completa](powerbi-service-dash-and-reports-fullscreen.md) sin distracciones.
 
-### Make the most important information biggest  
-If the text and visualizations on your dashboard are all the same size, your readers will have a hard time focusing on what's most important. For example, card visualizations are a good way to display an important number prominently:  
+### Hacer que la información más importante mayores  
+Si el texto y visualizaciones en el panel son del mismo tamaño, los lectores tendrá un disco duro centrarse en lo que es más importante. Por ejemplo, visualizaciones de tarjeta son una buena forma de mostrar un número importante de forma destacada:  
 ![](media/powerbi-service-tips-for-designing-a-great-dashboard/PBI_card.png)
 
-But be sure to provide context.  
+Pero asegúrese de proporcionar un contexto.  
 
-Read about <bpt id="p1">[</bpt>creating a tile with just a number<ept id="p1">](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)</ept>.
+Lea acerca de [crear un mosaico con tan sólo un número](powerbi-service-create-a-big-number-tile-for-a-dashboard.md).
 
-### Put the most important information in the upper corner
-Most people read from top to bottom, so put the highest level of detail at the top and show more detail as you move in the direction the audience uses for reading (left-to-right, right-to-left).
+### Coloque la información más importante en la esquina superior
+Mayoría de las personas que se lea de arriba a abajo, por lo que coloca el mayor nivel de detalle en la parte superior y mostrar más detalle a medida que se mueve en la dirección de la audiencia se utiliza para leer (de izquierda a derecha, de derecha a izquierda).
 
-### Use the right visualization for the data and format it for easy reading  
-Avoid visualization variety for the sake of variety.  Visualizations should paint a picture and be easy to "read" and interpret.  For some data and visualizations, a simple graphic visualization is enough. But other data may call for a more-complex visualization - be sure to make use of titles and labels and other customization to help the reader.  
+### Utilice la visualización correcta de los datos y formato para facilitar la lectura  
+Evite la variedad de visualización en aras de la serie.  Visualizaciones deben pintar una imagen y ser fáciles de "lectura" e interpretar.  Para algunos datos y visualizaciones, una visualización gráfica simple es suficiente. Pero pueden llamar otros datos para una visualización más complejo: asegúrese de hacer uso de títulos y etiquetas y otra personalización para ayuda al lector.  
 
-- <bpt id="p1">[</bpt>Choose appropriate data visualizations<ept id="p1">](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx)</ept>. Be careful using charts that distort reality i.e. 3-D charts. Keep in mind that it is difficult for the human brain to interpret circular shapes. Pie charts, donut charts, gauges and other circular chart types may look pretty but they are not a data visualization best practice.
+- 
+            [Elija las visualizaciones de datos adecuado](http://blogs.msdn.com/b/microsoft_business_intelligence1/archive/2012/10/08/best-practices-in-data-visualization.aspx). Tenga cuidado al utilizar gráficos que se distorsionen gráficos 3D, es decir, de verdad. Tenga en cuenta que es difícil para el cerebro humano interpretar formas circulares. Los gráficos circulares, gráficos de anillos, medidores y otros tipos de gráfico circular pueden parecer bastante pero no son una práctica recomendada de visualización de datos.
 
-- Be consistent with chart scales on axes, chart dimension ordering and also the colors used for dimension values within charts.
+- Ser coherente con la escala de gráfico en los ejes, orden de dimensión de gráfico y también los colores utilizados para los valores de gráficos.
 
-- Be sure to encode quantitative data nicely. Don’t exceed three or four numerals when displaying numbers. Display measures to one or two numerals left of the decimal point and scale for thousands or millions i.e. 3.4 million not 3,400,000.
+- Asegúrese de codificar datos cuantitativos perfectamente. No superar los tres o cuatro números para mostrar números. Mostrar medidas a uno o dos números izquierdos del separador decimal y escala de miles o millones, es decir, 3.4 millones no 3,400,000.
 
-- Don’t mix levels of precision and time. Make sure that time frames are well understood.  Don’t have one chart that has last month next to filtered charts from a specific month of the year.
+- No mezcle los niveles de precisión y tiempo. Asegúrese de que comprende perfectamente plazos de tiempo.  No tiene un gráfico que tiene el mes pasado situado junto a gráficos filtrados de un mes específico del año.
 
-- Don’t mix big and small measures on the same scale, such as on a line or bar chart.  For example one measure can be in the millions and the other measure in the thousands.  With such a large scale, it would be difficult to see the differences of the measure that is in the thousands.  If you need to mix, choose a visualization that allows the use of a second axis.
+- No mezcle medidas grandes y pequeñas en la misma escala, como en una línea o un gráfico de barras.  Por ejemplo, una medida puede estar en los millones y la otra medida miles.  Con una escala grande, sería difícil ver las diferencias de la medida que se encuentra en miles.  Si tiene que mezclar, elija una visualización que permite el uso de un segundo eje.
 
-- Don’t clutter your charts with data labels that are not needed. The values in bar charts are usually well understood without displaying the actual number.
+- No se alteran los gráficos con etiquetas de datos que no son necesarios. Los valores de los gráficos de barras se entienden bien normalmente sin mostrar el número real.
 
-- Pay attention to how <bpt id="p1">[</bpt>charts are sorted<ept id="p1">](powerbi-service-change-how-a-chart-is-sorted.md)</ept>.  If you want to draw attention to the highest or lowest number, sort by the measure.  If you want people to be able to quickly find a particular category within many other categories, sort by the axis.  
+- Preste atención a cómo [gráficos se ordenan](powerbi-service-change-how-a-chart-is-sorted.md).  Si desea llamar la atención sobre el número mayor o menor, ordene por la medida.  Si desea que los usuarios puedan encontrar rápidamente una categoría determinada en muchas otras categorías, ordenar por el eje.  
 
-- Pie charts are best if they have fewer than eight categories. Because you can't compare values side by side, it’s harder to compare values in a pie chart than in bar and column charts. Pie charts can be good for viewing part-to-whole relationships rather than for comparing the parts. And Gauge charts are great for displaying the current status in the context of a goal.
+- Los gráficos circulares son mejores si tienen menos de ocho categorías. Dado que no se pueden comparar valores en paralelo, es más difícil comparar valores en un gráfico circular que en gráficos de barras y columnas. Gráficos circulares puede ser útil para ver las relaciones de la parte a todo en lugar de comparar los elementos. Y gráficos de medidor son ideales para mostrar el estado actual en el contexto de un objetivo.
 
-For more visualization-specific guidance, see <bpt id="p1">[</bpt>Visualization types in Power BI<ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept>.  
+Para obtener ayuda específica de visualización, consulte [tipos de visualización en Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md).  
 
-## Learning More about Best Practice Dashboard Design  
-To master the art of excellent dashboard design, consider learning basic Gestalt Principles of visual perception and how to clearly communicate actionable information in context. Luckily, there is a plethora of resources already widely available and sprinkled within our blogs. A few of our favorite books include:
+## Obtener más información sobre el diseño del panel de prácticas recomendado  
+Para dominar el arte del diseño de panel excelente, considere la posibilidad de aprender los principios básicos de Gestalt de percepción visual y cómo comunicar claramente información procesable en contexto. Por suerte, hay una gran cantidad de recursos ya esparcido dentro de nuestro blogs y ampliamente disponibles. Algunos de nuestros libros favoritos incluyen:
 
-- <bpt id="p1">*</bpt>Information Dashboard Design<ept id="p1">*</ept> by Stephen Few  
-- <bpt id="p1">*</bpt>Show Me the Numbers<ept id="p1">*</ept> by Stephen Few  
-- <bpt id="p1">*</bpt>Now You See It<ept id="p1">*</ept> by Stephen Few  
-- <bpt id="p1">*</bpt>Envisioning Information<ept id="p1">*</ept> by Edward Tufte  
-- <bpt id="p1">*</bpt>Advanced Presentations<ept id="p1">*</ept> by Design by Andrew Abela   
+- 
+            *Diseño del panel de información* por Stephen algunos  
+- 
+            *Mostrar los números* por Stephen algunos  
+- 
+            *Ahora verá* por Stephen algunos  
+- 
+            *Visualización de la información* por Edward Tufte  
+- 
+            *Advanced presentaciones* por diseño por Andrew Abela   
 
 ## Consulte también  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Paneles de Power BI](powerbi-service-dashboards.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

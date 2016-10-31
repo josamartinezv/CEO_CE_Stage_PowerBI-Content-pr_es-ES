@@ -1,15 +1,15 @@
-<properties pageTitle="Documentation Example - Inline code" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Inline code" authors="jamescon" solutions="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación: código en línea" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Inline code" authors="jamescon" solutions="" videoId="" scriptId="" />
 
-# Example - Code #
-This is a sample documentation article that is used to test and validate the publishing system for Azure.com.  
+# Ejemplo: código #
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para Azure.com.  
 
-The content between the lines below demonstrates the highlight sections inside a code snippet using the <ph id="ph1">&lt;mark&gt;</ph> tag.
+El contenido entre las líneas siguientes muestra en las secciones de resaltado dentro de un fragmento de código mediante la <mark> etiqueta.
 
 ---
 
-1. Inline code snippet `console.log(<mark>"sometext"</mark>)` 
+1. Fragmento de código en línea `console.log(<mark>"sometext"</mark>)` 
 
-1. Code block created with  <bpt id="p1">**</bpt>PRE<ept id="p1">**</ept> and <bpt id="p2">**</bpt>CODE<ept id="p2">**</ept> tags
+1. Bloque de código creado con  **PRE** y **CÓDIGO** etiquetas
 
 <pre><code>
 static private IAsset CreateEmptyAsset(string assetName, AssetCreationOptions assetCreationOptions)
@@ -24,7 +24,7 @@ static private IAsset CreateEmptyAsset(string assetName, AssetCreationOptions as
 }
 </code></pre>
 
-1. Code block created with  <ph id="ph1">\`\`\`\`</ph> (4) syntax
+1. Bloque de código creado con  \`\`\`\` sintaxis (4)
 
 ````C#
 static private IAsset CreateEmptyAsset(string assetName, AssetCreationOptions assetCreationOptions)
@@ -39,7 +39,7 @@ static private IAsset CreateEmptyAsset(string assetName, AssetCreationOptions as
 }
 ````
 
-1. Code block created with  <ph id="ph1">\`\`\`</ph> (3) syntax
+1. Bloque de código creado con  \`\`\` sintaxis (3)
 
 ```C#
 static private IAsset CreateEmptyAsset(string assetName, AssetCreationOptions assetCreationOptions)

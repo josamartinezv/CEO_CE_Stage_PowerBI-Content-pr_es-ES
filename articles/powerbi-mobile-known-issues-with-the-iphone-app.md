@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Known issues with the iPhone app"
-   description="Known issues with the iPhone app (Power BI for iOS)"
+   pageTitle="Problemas conocidos relacionados con la aplicación de iPhone"
+   description="Problemas conocidos relacionados con la aplicación de iPhone (Power BI para iOS)"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,20 +19,20 @@
    ms.workload="powerbi"
    ms.date="10/03/2016"
    ms.author="maggies"/>
-# Known issues with the iPhone app (Power BI for iOS)
+# Problemas conocidos relacionados con la aplicación de iPhone (Power BI para iOS)
 
 
-## "We encountered communication failures"
+## "Se encontró errores de comunicación"
 
-“We encountered communication failures. The failures might be related to proxy settings on your Wi-Fi connection. Switching to a  different Wi-Fi connection may resolve the issue.”
+"Se encontró errores de comunicación. Los errores pueden deberse a que la configuración de proxy en la conexión Wi-Fi. Cambiar a otra conexión Wi-Fi puede resolver el problema."
 
-You may see this message if your iPhone internet connection requires a mandatory explicit HTTP proxy configured, either manual or automatic. In this case, the Power BI app won’t work on your iPhone.
+Puede aparecer este mensaje si la conexión a internet iPhone requiere obligatorio explícita HTTP configurado un proxy, manual o automática. En este caso, la aplicación Power BI no funcionará en su iPhone.
 
 ### Solución alternativa
 
-Switch the iPhone to another connection that doesn’t require an explicit HTTP proxy setting (i.e., one configured as HTTP Proxy is Off).
+Cambie el iPhone a otra conexión que no requiere a un proxy HTTP explícito configuración (es decir, uno configurado como HTTP Proxy está desactivado).
 
-## Other issues?
-Try asking the <bpt id="p1">[</bpt>Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>.
+## ¿Otros problemas?
+Pruebe a formular la [Power BI Comunidad](http://community.powerbi.com/).
 
 

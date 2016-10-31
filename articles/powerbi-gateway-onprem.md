@@ -1,6 +1,6 @@
 <properties
-pageTitle="On-premises data gateway"
-description="This is an overview of the On-premises data gateway for Power BI. You can use this gateway to work with DirectQuery data sources. You can also use this gateway to refresh cloud datasets with on-premises data."
+pageTitle="Puerta de enlace de datos local"
+description="Se trata de una visión general de la puerta de enlace de datos local para Power BI. Puede utilizar esta puerta de enlace para trabajar con orígenes de datos de DirectQuery. También puede utilizar esta puerta de enlace para actualizar conjuntos de datos de nube con datos locales."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,62 +19,62 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/12/2016"
 ms.author="asaxton"/>
-# On-premises data gateway
+# Puerta de enlace de datos local
 
-The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that is not in the cloud) and the Power BI, Microsoft Flow, Logic Apps, and PowerApps services.
+La puerta de enlace de datos local actúa como un puente, proporcionando la transferencia de datos rápida y segura entre los datos locales (datos que no están en la nube) y los servicios de Power BI, Microsoft Flow, aplicaciones lógicas y PowerApps.
 
-You can use a single gateway with different services at the same time. If you are using Power BI, as well as PowerApps, a single gateway and be used for both. It is dependent on the account you sign in with.
+Puede utilizar una sola puerta de enlace con servicios diferentes al mismo tiempo. Si está utilizando Power BI, así como PowerApps, una sola puerta de enlace y para ambos. Es dependiente de la cuenta que inicie sesión con.
 
 <!-- Shared Requirements Include -->
 [AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-requirements-include.md)]
 
-### Limitations of Analysis Services live connections
+### Limitaciones de conexiones activas de Analysis Services
 
-You can use a live connection against tabular or multidimensional instances.
+Puede utilizar una conexión activa con instancias tabulares o multidimensionales.
 
-|**Server version**|**Required SKU**|
+|**Versión del servidor**|**SKU necesario**|
 |---|---|
-|2012 SP1 CU4 or later|Business Intelligence and Enterprise SKU|
-|2014|Business Intelligence and Enterprise SKU|
-|2016|Standard SKU or higher|
+|2012 SP1 CU4 o posterior|SKU Business Intelligence y Enterprise|
+|2014|SKU Business Intelligence y Enterprise|
+|2016|SKU estándar o superior|
 
-- Cell level Formatting and translation features are not supported.
-- Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
+- Formato de nivel de celda y no se admiten características de traducción.
+- Acciones y conjuntos con nombre no están expuestos a Power BI, pero todavía puede conectarse a los cubos multidimensionales que también contienen conjuntos de acciones o con nombre y crear elementos visuales y los informes.
 
 <!-- Shared Install steps Include -->
 [AZURE.INCLUDE [gateway-onprem-datasources-include](../includes/gateway-onprem-datasources-include.md)]
  
-## Download and install the On-premises data gateway
+## Descargue e instale la puerta de enlace de datos local
 
-To download the gateway, select <bpt id="p1">**</bpt>Data Gateway<ept id="p1">**</ept> under the Downloads menu. Download the <bpt id="p1">[</bpt>On-premises data gateway<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=820925)</ept>.
+Para descargar la puerta de enlace, seleccione **puerta de enlace de datos** en el menú de descargas. Descargue el [puerta de enlace de datos local](http://go.microsoft.com/fwlink/?LinkID=820925).
 
 ![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
 
 <!-- Shared Install steps Include -->
 [AZURE.INCLUDE [gateway-onprem-install-include](../includes/gateway-onprem-install-include.md)]
 
-## Install the gateway in personal mode 
+## Instale la puerta de enlace en modo personal 
 
-> [AZURE.NOTE] Personal will only work with Power BI.
+> [AZURE.NOTE] Personal sólo funcionará con Power BI.
 
-After the personal gateway is installed, you will need to launch the <bpt id="p1">**</bpt>Power BI Gateway - Personal Configuration Wizard<ept id="p1">**</ept>.
+Después de instala la puerta de enlace personal, debe iniciar el **Power BI Gateway - Asistente para la configuración Personal**.
 
 ![](media/powerbi-gateway-onprem/personal-gateway-launch-configuration.png)
 
-You will then need to sign into Power BI to register the gateway with the cloud service.
+A continuación, debe iniciar sesión en Power BI para registrar la puerta de enlace con el servicio de nube.
 
 ![](media/powerbi-gateway-onprem/personal-gateway-signin.png)
 
-You will also need to supply the windows user name and password that the windows service will run as. You can specify a different Windows account from your own. The gateway service will run using this account.
+También debe proporcionar el nombre de usuario de windows y la contraseña que se ejecutará el servicio de windows. Puede especificar una cuenta de Windows diferente de su propia. El servicio de puerta de enlace se ejecutará con esta cuenta.
 
 ![](media/powerbi-gateway-onprem/personal-gateway-windows-service.png)
 
-After the installation is complete, you will need to go to your datasets within Power BI and make sure credentials are entered for your on-premises data sources.
+Una vez completada la instalación, debe ir a los conjuntos de datos en Power BI y asegúrese de que se escriben las credenciales para los orígenes de datos locales.
 
 <a name="credentials">
-## Storing encrypted credentials in the cloud
+## Almacenar credenciales cifradas en la nube
 
-When you add a data source to the gateway, you need to provide credentials for that data source. All queries to the data source will run using these credentials. The credentials are encrypted securely, using asymmetric encryption so that they cannot be decrypted in the cloud, before they are stored in the cloud. The credentials are sent to the machine, running the gateway, on-premises where they are decrypted when the data sources are accessed.
+Cuando se agrega un origen de datos a la puerta de enlace, debe proporcionar credenciales para ese origen de datos. Todas las consultas al origen de datos se ejecutan con estas credenciales. Las credenciales se cifran de forma segura, mediante el cifrado asimétrico no puede descifrarse en la nube, antes de que se almacenen en la nube. Las credenciales se envían al equipo, ejecuta la puerta de enlace local donde descifrarlas cuando se tiene acceso a los orígenes de datos.
 
 <!-- Account and Port information -->
 [AZURE.INCLUDE [gateway-onprem-accounts-ports-more](../includes/gateway-onprem-accounts-ports-more.md)]
@@ -84,18 +84,18 @@ When you add a data source to the gateway, you need to provide credentials for t
 
 ## Solucionar problemas
 
-If you’re having trouble when installing and configuring a gateway, be sure to see <bpt id="p1">[</bpt>Troubleshooting the Power BI Gateway - Enterprise<ept id="p1">](powerbi-gateway-enterprise-tshoot.md)</ept>. If you think you are having an issue with your firewall, see the <bpt id="p1">[</bpt>firewall or proxy<ept id="p1">](powerbi-gateway-enterprise-tshoot.md#firewall-or-proxy)</ept> section in the troubleshooting article.
+Si tiene problemas al instalar y configurar una puerta de enlace, asegúrese de ver [solución de problemas de la puerta de enlace de Power BI - Enterprise](powerbi-gateway-enterprise-tshoot.md). Si cree que tiene un problema con el servidor de seguridad, consulte la [firewall o proxy](powerbi-gateway-enterprise-tshoot.md#firewall-or-proxy) sección en el artículo de solución de problemas.
 
-If you think you are encountering proxy issues, with the gateway, see <bpt id="p1">[</bpt>Configuring proxy settings for the Power BI Gateways<ept id="p1">](powerbi-gateway-proxy.md)</ept>.
+Si piensa que ha experimentado problemas de proxy, con la puerta de enlace, consulte [configuración de proxy para las puertas de enlace de Power BI](powerbi-gateway-proxy.md).
 
 ## Consulte también
 
-[Manage your data source - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
-[Manage your data source - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
-[Manage your data source - SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
-[Manage your data source - Oracle](powerbi-gateway-onprem-manage-oracle.md)  
-[Manage your data source - Import/Scheduled refresh](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
-[On-premises Data Gateway in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Configuring proxy settings for the On-Premises Data Gateway](powerbi-gateway-proxy.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Administrar el origen de datos - Analysis Services](powerbi-gateway-enterprise-manage-ssas.md)  
+[Administrar el origen de datos - SAP HANA](powerbi-gateway-enterprise-manage-sap.md)  
+[Administrar el origen de datos: SQL Server](powerbi-gateway-enterprise-manage-sql.md)  
+[Administrar el origen de datos - Oracle](powerbi-gateway-onprem-manage-oracle.md)  
+[Administrar el origen de datos - actualización programada o importar](powerbi-gateway-enterprise-manage-scheduled-refresh.md)  
+[Puerta de enlace de datos exhaustiva local](powerbi-gateway-onprem-indepth.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+[Configuración de proxy para la puerta de enlace de datos local](powerbi-gateway-proxy.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

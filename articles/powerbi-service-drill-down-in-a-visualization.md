@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Drill down in a visualization in Power BI"
-   description="This document shows how to drill down in a visualization in Microsoft Power BI service and Power BI Desktop."
+   pageTitle="Vea los detalles en una visualización en Power BI"
+   description="Este documento muestra cómo explorar en profundidad en una visualización en el servicio de Microsoft Power BI y Power BI Desktop."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,76 +20,78 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Drill down in a visualization in Power BI
+# Vea los detalles en una visualización en Power BI
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/MNAaHw4PxzE?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-  ><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: To learn how to create hierarchies using Power BI Desktop, watch the video <bpt id="p2">[</bpt>How to create and add hierarchies<ept id="p2">](https://youtu.be/q8WDUAiTGeU)</ept>
+  >
+            **NOTA**: para obtener información sobre cómo crear jerarquías con Power BI Desktop, vea el vídeo [cómo crear y agregar jerarquías](https://youtu.be/q8WDUAiTGeU)
 
-##  2 methods to drill down
-There are 2 different way to drill down (and up) in your visualization.  Both are described in this document. Both methods accomplish the same thing, so use whichever one you enjoy most.
+##  2 métodos para explorar en profundidad
+Hay 2 diferente a explorar la visualización (y).  Ambos se describen en este documento. Ambos métodos conseguir lo mismo, por lo que cualquiera que disfrute más.
 
-## Method 1 for drill down
+## Método 1 para explorar en profundidad
 
-1.  In Power BI, open a report in <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-open-a-report-in-reading-view.md)</ept> or <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>. Drill requires a visualization with a hierarchy. 
+1.  En Power BI, abrir un informe en [vista lectura](powerbi-service-open-a-report-in-reading-view.md) o [vista de edición de](powerbi-service-go-from-reading-view-to-editing-view.md). Obtención de detalles requiere una visualización con una jerarquía. 
 
-    A hierarchy is shown below.  The <bpt id="p1">*</bpt>Profit by Product <ept id="p1">*</ept>visualization has a hierarchy made up of <bpt id="p2">**</bpt>Product <ept id="p2">**</ept>and <bpt id="p3">**</bpt>Segment<ept id="p3">**</ept>; each product has one or more segments. By default, the visualization displays only the product data, because <bpt id="p1">*</bpt>Product <ept id="p1">*</ept>appears in the Axis bucket above <bpt id="p2">*</bpt>Segment<ept id="p2">*</ept>.
+    A continuación se muestra una jerarquía.  El *de beneficios por producto *visualización tiene una jerarquía formada por **producto **y **segmento**; cada producto tiene uno o más segmentos. De forma predeterminada, la visualización muestra sólo los datos del producto, porque *producto *aparece en el depósito de eje anterior *segmento*.
 
-2.  To enable drill down, select the arrow icon in the top right corner of the visualization. When the icon is dark, drill is enabled.
+2.  Para habilitar la obtención de detalles hacia abajo, seleccione el icono de flecha en la esquina superior derecha de la visualización. Si el icono es oscuro, se habilita la obtención de detalles.
 
-    ><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: The animation below shows using drilldown in Editing View.  Editing View allows us to see the hierarchy -- the two fields in the Axis bucket.
+    >
+            **NOTA**: la animación se muestra con la obtención de detalles en la vista de edición.  Vista de edición permite ver la jerarquía, los dos campos en el eje de depósito.
 
     ![](media/powerbi-service-drill-down-in-a-visualization/PBI_drilldown.png)
 
-3.  To drill down one field at a time, double-click one of the chart bars. 
+3.  Para desglosar un campo a la vez, haga doble clic en una de las barras del gráfico. 
 
     ![](media/powerbi-service-drill-down-in-a-visualization/drillGA.gif)
 
-4.  To drill down all fields at once, select the double arrow in the top left corner of the visualization.
+4.  Para explorar en profundidad todos los campos a la vez, seleccione la flecha doble en la esquina superior izquierda de la visualización.
 
     ![](media/powerbi-service-drill-down-in-a-visualization/PBI_drillAll.png)
 
-5.  To drill back up, select the up arrow in the top left corner of the visualization.
+5.  Para obtener detalles de copia de seguridad, seleccione la flecha hacia arriba en la esquina superior izquierda de la visualización.
 
     ![](media/powerbi-service-drill-down-in-a-visualization/PBI_drillup2.png)
 
 
-## Method 2 for drill down
+## Método 2 para explorar en profundidad
 
 
-1.  In Power BI, open a report in <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-open-a-report-in-reading-view.md)</ept> or <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>. Drill requires a visualization with a hierarchy. 
+1.  En Power BI, abrir un informe en [vista lectura](powerbi-service-open-a-report-in-reading-view.md) o [vista de edición de](powerbi-service-go-from-reading-view-to-editing-view.md). Obtención de detalles requiere una visualización con una jerarquía. 
 
-    A hierarchy is from the Financial sample is shown below.  The <bpt id="p1">*</bpt>Profit by Product <ept id="p1">*</ept>visualization has a hierarchy made up of <bpt id="p2">**</bpt>Product <ept id="p2">**</ept>and <bpt id="p3">**</bpt>Segment<ept id="p3">**</ept>; each product has one or more segments. By default, the visualization displays only the product data, because <bpt id="p1">*</bpt>Product <ept id="p1">*</ept>appears in the Axis bucket above <bpt id="p2">*</bpt>Segment<ept id="p2">*</ept>.
+    Una jerarquía es desde la financiero muestra a continuación.  El *de beneficios por producto *visualización tiene una jerarquía formada por **producto **y **segmento**; cada producto tiene uno o más segmentos. De forma predeterminada, la visualización muestra sólo los datos del producto, porque *producto *aparece en el depósito de eje anterior *segmento*.
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-menu.png)
 
-2.  To enable drill down, select <bpt id="p1">**</bpt>Explore<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Drill Down<ept id="p2">**</ept>. The yellow bar next to <bpt id="p1">**</bpt>Drill Down<ept id="p1">**</ept> let's you know it's enabled.  
+2.  Para habilitar la obtención de detalles hacia abajo, seleccione **Explorar** > **explorar hacia abajo**. La barra amarilla junto a **detalle** le permite saber está habilitado.  
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-enable-drill.png)
 
-3.  Once enabled, drill down one field at a time by double-clicking one of the chart bars. In this example, I've double-clicked the product named <bpt id="p1">**</bpt>Velo<ept id="p1">**</ept> to see profit for Velo by Segment.
+3.  Una vez habilitado, explorar en profundidad un campo a la vez haciendo doble clic en una de las barras del gráfico. En este ejemplo, hice doble clic el producto denominado **Velo** para ver la ganancia Velo por segmento.
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drilldown.png)
 
-4.  To drill down all fields at once, select <bpt id="p1">**</bpt>Expand all<ept id="p1">**</ept>.
+4.  Para explorar en profundidad todos los campos a la vez, seleccione **Expandir todo**.
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-expand-all.png)
 
-5.  To drill back up, select <bpt id="p1">**</bpt>Drill Up<ept id="p1">**</ept>.
+5.  Para obtener detalles de copia de seguridad, seleccione **Detalles de**.
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-drill-up.png)
 
-6.  To see the data being used to create the visual, select <bpt id="p1">**</bpt>See data<ept id="p1">**</ept>. The data is displayed in a pane below the visual. This pane remains as you continue drilling through the visual.
+6.  Para ver los datos que se utiliza para crear el objeto visual, seleccione **Ver datos**. Los datos se muestran en un panel debajo del objeto visual. Este panel permanece continuar la profundidad del objeto visual.
 
     ![](media/powerbi-service-drill-down-in-a-visualization/power-bi-see-data.png)
 
 
 ### Consulte también
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
-[Power BI Preview reports](powerbi-service-reports.md)
+[Informes de Power BI Preview](powerbi-service-reports.md)
 
-[Power BI Preview - Basic Concepts](powerbi-service-basic-concepts.md)
+[Vista previa de Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

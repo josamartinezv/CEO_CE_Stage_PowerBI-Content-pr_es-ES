@@ -1,20 +1,20 @@
 ## Requisitos
 
-**Minimum Requirements:**
+**Requisitos mínimos:**
 
-- .NET 4.5 Framework
-- 64-bit version of Windows 7 / Windows Server 2008 R2 (or later)
+- 4.5 de .NET framework
+- versión de 64 bits de Windows 7 y Windows Server 2008 R2 (o posterior)
 
 **Recomendado:**
 
-- 8 Core CPU
-- 8 GB Memory
-- 64-bit version of Windows 2012 R2 (or later)
+- CPU de 8 núcleos
+- 8 GB de memoria
+- versión de 64 bits de Windows 2012 R2 (o posterior)
 
-**Related Considerations:**
+**Otras consideraciones relacionadas:**
 
-- The gateway cannot be installed on a domain controller
+- La puerta de enlace no puede instalarse en un controlador de dominio
 
-- You shouldn't install a gateway on a computer, such a laptop, that may be turned off, asleep, or not connected to the Internet because the gateway can't run under any of those circumstances. In addition, gateway performance might suffer over a wireless network.
+- Se debe instalar una puerta de enlace en un equipo portátil que puede desactivarse, suspensión, o no está conectado a Internet porque la puerta de enlace no se puede ejecutar en cualquiera de las circunstancias. Además, podría afectar al rendimiento de la puerta de enlace en una red inalámbrica.
 
-- Analysis Services is not required to use the gateway. You can use the gateway to connect to an Analysis Services data source.
+- Analysis Services no es necesario utilizar la puerta de enlace. Puede utilizar la puerta de enlace para conectarse a un origen de datos de Analysis Services.

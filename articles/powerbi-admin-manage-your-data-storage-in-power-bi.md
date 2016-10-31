@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Manage your data capacity in Power BI"
-   description="Manage your data capacity and storage in Power BI"
+   pageTitle="Administrar la capacidad de datos en Power BI"
+   description="Administrar la capacidad de datos y almacenamiento en Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -19,101 +19,106 @@
    ms.workload="powerbi"
    ms.date="08/15/2016"
    ms.author="asaxton"/>
-# Manage your data capacity in Power BI
+# Administrar la capacidad de datos en Power BI
 
-Power BI offers two licenses, Power BI (free) and Power BI Pro, with different data capacity limits:
+Power BI ofrece dos licencias, Power BI (gratuito) y Power BI Pro con límites de capacidad de datos diferentes:
 
--   Free users have a maximum 1 GB data capacity.
+-   Los usuarios gratuitos tienen una capacidad máxima de datos de 1 GB.
 
--   Pro users of Power BI Pro have 10 GB maximum capacity.
+-   Los usuarios profesionales de Power BI Pro tienen 10 GB de capacidad máxima.
 
--   Pro users can create groups, with a maximum 10 GB data capacity each.
+-   Los usuarios profesionales pueden crear grupos, con una capacidad máxima de 10 GB datos cada.
 
-At the tenant level, total usage can’t exceed 10 GB per Pro user across all Pro users and groups in the tenant. 
+En el nivel del inquilino, uso total no puede superar los 10 GB por usuario Pro en todos los usuarios de Pro y grupos en el inquilino. 
 
-Read about other features of the <bpt id="p1">[</bpt>Power BI pricing model<ept id="p1">](https://powerbi.microsoft.com/pricing)</ept>.
+Obtenga información acerca de otras características de la [Power BI, modelo de precios](https://powerbi.microsoft.com/pricing).
 
-Included in your data capacity are your own datasets and Excel reports, and those that someone has shared with you. Datasets are any of the data sources you’ve uploaded or connected to, including Power BI Desktop files and Excel workbooks you’re using. The following are also included in your data capacity.
+Incluido en la capacidad de datos son sus propios conjuntos de datos y los informes de Excel y las que alguien ha compartido con usted. Conjuntos de datos son cualquiera de los orígenes de datos ha cargado o conectado, incluidos los archivos de Power BI Desktop y libros de Excel que esté utilizando. A continuación también se incluye en la capacidad de datos.
 
--   Excel ranges pinned to dashboard.
+-   Rangos de Excel Anclar al panel.
 
--   Reporting Services on-premises visualizations pinned to a Power BI dashboard.
+-   Reporting Services local visualizaciones anclados a un panel de Power BI.
 
--   Uploaded images.
+-   Imágenes cargadas.
 
-The size of a dashboard that you share will vary depending on what is pinned to it. For example, if you pin items from two reports that are part of two different datasets, the size will include both datasets.
+El tamaño de un panel que compartir variará dependiendo de qué está anclado a ella. Por ejemplo, si anclar elementos de dos informes que forman parte de dos conjuntos de datos diferentes, el tamaño incluirá dos conjuntos de datos.
 
 <a name="manage"/>
-## Manage items owned by you
+## Administrar elementos de su propiedad
 
-See how much data capacity you’re using in your Power BI account, and manage your account.
+Ver cuánta capacidad de datos se está usando en su cuenta de Power BI y administrar su cuenta.
 
-1.  To manage your own storage, go to <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept> at the top of the left navigation pane. 
+1.  Para administrar su propio almacenamiento, vaya a **Mi área de trabajo** en la parte superior del panel de navegación izquierdo. 
 
     ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_MyWorkspace.png)
 
-2.  Select the gear icon <ph id="ph1">![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png)</ph> in the upper-right corner <ph id="ph2">\&gt;</ph> <bpt id="p1">**</bpt>Manage Personal Storage<ept id="p1">**</ept>. 
+2.  Seleccione el icono de engranaje ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png) en la esquina superior derecha \> **Administrar almacenamiento Personal**. 
 
-    The top bar shows how much of your storage limit you’ve used.
+    La barra superior muestra cuánto ha usado el límite de almacenamiento.
 
     ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_PersnlStorage.png)
 
-    The datasets and reports are separated onto two tabs:
+    Los informes y conjuntos de datos se separan en dos pestañas:
 
-    <bpt id="p1">**</bpt>Owned by Me:<ept id="p1">**</ept> These are reports and datasets you’ve uploaded to your Power BI account, including service datasets such as Salesforce and Dynamics CRM.
-    <bpt id="p1">**</bpt>Owned by Others:<ept id="p1">**</ept> Others have shared these reports and datasets with you.
+    
+                **Propiedad por mí:** son informes y conjuntos de datos que se haya cargado en la cuenta de Power BI, incluidos los conjuntos de datos de servicio como Salesforce y Dynamics CRM.
 
-3.  To delete a dataset or report, select the trash can icon <ph id="ph1">![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_DeleteIcon.png)</ph>.
+            **Propiedad de otros usuarios:** estos informes y conjuntos de datos de otras personas hayan compartido con usted.
+
+3.  Para eliminar un conjunto de datos o un informe, seleccione el icono de la Papelera ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_DeleteIcon.png).
 
 
-Keep in mind that you or someone else may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
+Tenga en cuenta que usted u otra persona puede tener informes y paneles basados en un conjunto de datos. Si elimina el conjunto de datos, los informes y paneles no funcionarán ya.
 
-## Manage your group
+## Administrar el grupo
 
-1.  Select the arrow next to <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> select the name of the group.
+1.  Seleccione la flecha situada junto a **Mi área de trabajo** \> Seleccione el nombre del grupo.
 
     ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GroupWorkspaces.png)
 
-2.  Select the gear icon <ph id="ph1">![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png)</ph> in the upper-right corner <ph id="ph2">\&gt;</ph> <bpt id="p1">**</bpt>Manage Group Storage<ept id="p1">**</ept>.
+2.  Seleccione el icono de engranaje ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png) en la esquina superior derecha \> **Administrar almacenamiento de información de grupo**.
 
-    The top bar shows how much of the group’s storage limit is used.
+    La barra superior muestra la cantidad de límite de almacenamiento del grupo se utiliza.
 
     ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GroupStorage.png)
 
-    The datasets and reports are separated onto two tabs:
+    Los informes y conjuntos de datos se separan en dos pestañas:
 
-    <bpt id="p1">**</bpt>Owned by Us:<ept id="p1">**</ept> These are reports and datasets you or someone else has uploaded to the group’s Power BI account, including service datasets such as Salesforce and Dynamics CRM.
-    <bpt id="p1">**</bpt>Owned by Others:<ept id="p1">**</ept> Others have shared these reports and datasets with your group.
+    
+                **Propiedad nos:** son informes y conjuntos de datos que usted u otra persona ha cargado en la cuenta del grupo Power BI, incluidos los conjuntos de datos de servicio como Salesforce y Dynamics CRM.
 
-3.  To delete a dataset or report, select the trash can icon <ph id="ph1">![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_DeleteIcon.png)</ph>.
-    ><bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> Any member of the group has permissions to delete datasets and reports from the group storage.
+            **Propiedad de otros usuarios:** otras personas hayan compartido estos informes y conjuntos de datos con el grupo.
 
-Keep in mind that you or someone else in the group may have reports and dashboards based on a dataset. If you delete the dataset, those reports and dashboards won’t work anymore.
+3.  Para eliminar un conjunto de datos o un informe, seleccione el icono de la Papelera ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_DeleteIcon.png).
+    >
+            **Nota:** cualquier miembro del grupo tiene permisos para eliminar informes y conjuntos de datos desde el almacenamiento de información de grupo.
 
-## Dataset limits
+Tenga en cuenta que usted u otra persona del grupo puede tener informes y paneles basados en un conjunto de datos. Si elimina el conjunto de datos, los informes y paneles no funcionarán ya.
 
-There is a 1 GB limit, per dataset, that is imported into Power BI. If you have chosen to keep the Excel experience, instead of importing the data, you will be limited to 250 MB for the dataset.
+## Límites de conjunto de datos
 
-## What happens when you hit a limit
+Hay un límite de 1 GB por cada conjunto de datos que se importa en Power BI. Si ha elegido mantener la experiencia de Excel, en lugar de importar los datos, estará limitado a 250 MB para el conjunto de datos.
 
-When you hit the data capacity limit of what you can do, you will see prompts within the service. 
+## ¿Qué ocurre cuando se alcanza un límite
 
-When you select the gear icon <ph id="ph1">![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png)</ph>, you will see a red bar indicating you are over your data capacity limit.
+Cuando se alcanza el límite de capacidad de datos de lo que puede hacer, verá mensajes en el servicio. 
+
+Al seleccionar el icono de engranaje ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/PBI_GearIcon.png), verá una barra que indica superó su límite de capacidad de datos de color rojo.
 
 ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/manage-storage-limit.png)
 
-You will also see this indicated within <bpt id="p1">**</bpt>Manage personal storage<ept id="p1">**</ept>.
+También verá esto indica dentro de **Administrar almacenamiento personal**.
 
  ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/manage-storage-limit2.png)
  
- When you try to perform an action that will hit one of the limits, you will see a prompt indicating you are over the limit. For free users, you will have an opportunity to try Pro. Both free and pro users will be able to <bpt id="p1">[</bpt>manage<ept id="p1">](#manage)</ept> their storage.
+ Cuando intenta realizar una acción que se alcance uno de los límites, verá un mensaje que indica que está por encima del límite. De forma gratuita los usuarios, tendrá una oportunidad de probar Pro. Usuarios gratuitas y profesionales podrán [administrar](#manage) su almacenamiento.
  
- **Free dialog**
+ **Cuadro de diálogo libre**
  
  ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/powerbi-free-over-limit.png)
  
- **Pro dialog** 
+ **Cuadro de diálogo Pro** 
  
  ![](media/powerbi-admin-manage-your-data-storage-in-power-bi/powerbi-pro-over-limit.png)
 
- More questions? [Try the Power BI Community](http://community.powerbi.com/)
+ ¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

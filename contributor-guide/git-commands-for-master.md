@@ -1,78 +1,79 @@
-<properties pageTitle="Comandos de Git para crear un nuevo artículo o actualizar uno existente" description="Steps for working with the Power BI technical content GitHub repositories." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
+<properties pageTitle="Comandos de Git para crear un nuevo artículo o actualizar uno existente" description="Pasos para trabajar con la técnica de Power BI GitHub repositorios de contenido." metaKeywords="" services="" solutions="" documentationCenter="" authors="mblythe" videoId="" scriptId="" manager="dongill" />
 
 <tags ms.service="contributor-guide" ms.devlang="" ms.topic="article" ms.tgt_pltfrm="" ms.workload="" ms.date="09/09/2015" ms.author="mblythe" />
 
 # Comandos de Git para crear un nuevo artículo o actualizar uno existente
 
 
-## Standard process (working from master)
-Follow the steps in this article to create a local working branch on your computer so that you can create a new article for the technical documentation section of powerbi.microsoft.com or update an existing article.
+## Proceso estándar (trabajo maestro)
+Siga los pasos de este artículo para crear una bifurcación de trabajo local en el equipo para que pueda crear un nuevo artículo de la sección de documentación técnica de powerbi.microsoft.com o actualizar un artículo existente.
 
 ![](./media/git-commands-for-master/githubcommands1.png)
 
-1. Start Git Bash (or the command-line tool you use for Git).
+1. Iniciar Git Bash (o la herramienta de línea de comandos que use para Git).
 
- <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> If you are working in the public repository, change powerbi-content-pr to powerbi-content in all the commands.
+ 
+            **Nota:** Si está trabajando en el repositorio público, cambiar el contenido de Power BI de pr al contenido de Power BI de todos los comandos.
 
-2. Change to powerbi-content-pr:
+2. Cambie a pr de contenido de Power BI:
 
         cd powerbi-content-pr
-3. Check out the master branch:
+3. Revise la bifurcación principal:
 
         git checkout master
 
-4. Create a fresh local working branch derived from the master branch:
+4. Crear una bifurcación de trabajo local nueva derivada de la bifurcación principal:
 
         git pull upstream master:<working branch>
 
 
-5. Move into the new working branch:
+5. Mover a la nueva bifurcación de trabajo:
 
         git checkout <working branch>
 
-6. Let your fork know you created the local working branch:
+6. Avise a la bifurcación que creó la bifurcación de trabajo local:
 
         git push origin <working branch>
 
-7. Cree el nuevo artículo o modifique uno que ya exista. Use Windows Explorer to open and create new markdown files, and use Atom (http://atom.io) as your markdown editor. Una vez que haya creado o modificado el artículo y las imágenes, avance al siguiente paso.
+7. Cree el nuevo artículo o modifique uno que ya exista. Utilice el Explorador de Windows para abrir y crear nuevos archivos de descuento y usar Atom (http://atom.io) como editor de descuento. Una vez que haya creado o modificado el artículo y las imágenes, avance al siguiente paso.
 
-8. Add and commit the changes you made:
+8. Agregar y confirmar los cambios realizados:
 
         git add .
         git commit –m "<comment>"
         
-   Or, to add only the specific files you modified:
+   O bien, agregar sólo la específica de archivos modificado:
 
         git add <file path>
         git commit –m "<comment>"
 
-9. Update your local working branch with changes from upstream:
+9. Actualice su bifurcación de trabajo local con los cambios de nivel superior:
 
         git pull upstream master
 
-10. Push the changes to your fork on GitHub:
+10. Inserte los cambios en la bifurcación en GitHub:
 
         git push origin <working branch>
 
-12. When you are ready to submit your content to the upstream master branch for staging, validation, and/or publishing, in the GitHub UI, create a pull request from your fork to the master branch.
+12. Cuando esté listo para enviar el contenido a la rama principal de nivel superior para la publicación, o de ensayo, validación, en la UI de GitHub, cree una solicitud de extracción desde la bifurcación en la bifurcación principal.
 
-13. The pull request acceptor reviews your pull request, provides feedback, and/or accepts your pull request. 
+13. El receptor de la solicitud de extracción revisa la solicitud de extracción, proporciona comentarios o acepta la solicitud de extracción. 
 
-14. Verify your published article or changes at
+14. Compruebe el artículo publicado o cambios en
 
- http://powerbi.microsoft.com/documentation/articles/<bpt id="p1">*</bpt>name-of-your-article-without-the-MD-extension<ept id="p1">*</ept>
+ http://powerbi.Microsoft.com/documentation/articles/*name-of-your-article-without-the-MD-extension*
 
 **Notas:**
 
-- At this time, technical articles are published once daily around 10 AM Pacific Standard Time (PST), Monday-Friday. Remember, your pull request has to be accepted before changes are included in the next scheduled publishing run.
-- If you are an employee working in the private repository, all pull requests are subject to validation rules that need to be addressed before the pull request can be accepted. 
-- In the private repo, the changes you submit are automatically staged, and a staging link is written to the pull request. Please review your staged content and sign off in the pull request comments to indicate the changes are ready to be pushed live. If you don't want the pull request to be accepted - if you are just staging the changes - add that note to the pull request.
+- En este momento, artículos técnicos se publican una vez al día en torno a 10 A.M. hora estándar del Pacífico (PST), de lunes a viernes. Recuerde que su solicitud de extracción debe aceptarse antes de cambios incluidos en la siguiente publicación programada que se ejecute.
+- Si es un empleado que trabaja en el repositorio privado, todas las solicitudes de extracción están sujetos a reglas de validación que deban solucionarse antes de que se puede aceptar la solicitud de extracción. 
+- En el repositorio privado, los cambios que se envíe automáticamente se almacenan provisionalmente y un vínculo de ensayo se escribe en la solicitud de extracción. Revise el contenido de ensayo y firmar en los comentarios de la solicitud de extracción para indicar que los cambios están listos para insertarse en vivo. Si no desea que la solicitud de extracción para que se acepte - si solo se prueba cambios - agregar esa nota a la solicitud de extracción.
 
-## Working with release branches
+## Trabajar con bifurcaciones de versión
 
-When you are working with a release branch, the best way to create a local working branch from the release branch is to use this command syntax:
+Cuando se trabaja con una bifurcación de la versión, la mejor manera de crear una bifurcación de trabajo local de la bifurcación de versión es utilizar esta sintaxis de comando:
 
     git checkout upstream/<upstream branch name> -b <local working branch name>
 
-This creates the local branch directly from the upstream branch, avoiding any local merging.
+Esto crea la bifurcación local directamente desde la rama de nivel superior, evitar cualquier combinación local.
 

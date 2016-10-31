@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Group interactions among visualizations"
-   description="Specify which visuals interact on a dashboard, and which do not"
+   pageTitle="Grupo de interacciones entre visualizaciones"
+   description="Especificar qué elementos visuales interactúan en un panel y cuáles no"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,26 +23,26 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create Complex Interactions Between Visualizations
+# Crear interacciones complejas entre visualizaciones
 
-When you have multiple visualizations on the same report page, selecting a particular segment by clicking or using a slicer will affect all the visuals on that page. In some cases, though, you may want to slice only specific visuals. This is particularly true when using elements such as scatter plots, where limiting the data to a specific segment will remove crucial meaning. Fortunately, Power BI Desktop lets you control how interactions flow between visuals.
+Cuando haya varias visualizaciones en la misma página de informe, seleccionar un segmento en particular haciendo clic o usando una segmentación de datos afectará a todos los elementos visuales en la página. En algunos casos, sin embargo, puede segmentar elementos visuales específicos. Esto es especialmente cierto cuando se utilizan elementos como los gráficos de dispersión, donde limitar los datos a un segmento específico se quitará el significado crucial. Afortunadamente, Power BI Desktop le permite controlar cómo fluyen las interacciones entre objetos visuales.
 
-To change the interaction between your visualizations, select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> from the Visuals section of the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> ribbon to toggle <bpt id="p3">**</bpt>Edit Mode<ept id="p3">**</ept> on.
+Para cambiar la interacción entre las visualizaciones, seleccione **Editar** desde la sección de elementos visuales de la **Inicio** la cinta de opciones para activar o desactivar **del modo de edición** en.
 
-> Note: The <bpt id="p1">**</bpt>Edit Interactions<ept id="p1">**</ept> icon in Power BI Desktop has changed since the video was recorded.
+> Nota: La **Editar interacciones** icono en Power BI Desktop ha cambiado desde que se grabó el vídeo.
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_1.png)
 
-Now when you select a visual on your report canvas, you'll see a small opaque <bpt id="p1">*</bpt>filter<ept id="p1">*</ept> icon in the top right-hand corner of every other visual it will affect. To exclude a visual from the interaction, click the <bpt id="p1">*</bpt>None<ept id="p1">*</ept> symbol in the upper right corner, near the <bpt id="p2">*</bpt>filter<ept id="p2">*</ept> icon.
+Ahora, cuando se selecciona un elemento visual en el lienzo de informe, verá un pequeño opaco *filtro* icono en la esquina superior derecha de cada otro visual se verá afectado. Para excluir un elemento visual de la interacción, haga clic en el *Ninguno* símbolo en la esquina superior derecha, cerca de la *filtro* icono.
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_2.png)
 
-In some instances you can adjust the type of filter interaction that happens between visuals. With <bpt id="p1">**</bpt>Edit Mode<ept id="p1">**</ept> toggled on, select the visual you use to filter. If you can change the type of interaction on another visual, a <bpt id="p1">*</bpt>pie chart<ept id="p1">*</ept> icon will appear next to the filter icon in the top right-hand corner.
+En algunos casos puede ajustar el tipo de interacción de filtro que se produce entre los elementos visuales. Con **del modo de edición** Activar o desactivar en, seleccione el objeto visual se utiliza para filtrar. Si puede cambiar el tipo de interacción en otro visual, un *gráfico circular* icono aparecerá junto al icono de filtro en la esquina superior derecha.
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_3.png)
 
-Click the <bpt id="p1">*</bpt>pie chart<ept id="p1">*</ept> icon to highlight the segmented data. Otherwise, the data will be filtered. As before, you can click the <bpt id="p1">*</bpt>None<ept id="p1">*</ept> icon to remove all interaction.
+Haga clic en el *gráfico circular* icono para resaltar los datos segmentados. De lo contrario, se filtrarán los datos. Como antes, puede hacer clic en el *Ninguno* icono para eliminar toda la interacción.
 
-A useful design tip is to draw a transparent shape around visuals that interact with each other, so it's clear to the user that they have an interactive relationship.
+Una sugerencia útil es dibujar una forma transparente alrededor de objetos visuales que interactúan entre sí, por lo que resulta evidente para el usuario que tienen una relación interactiva.
 
 ![](media/powerbi-learning-3-11a-create-interaction-between-visualizations/3-11a_4.png)

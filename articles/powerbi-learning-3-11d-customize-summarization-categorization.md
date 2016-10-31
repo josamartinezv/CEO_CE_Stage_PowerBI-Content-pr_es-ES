@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Summarization and Category options"
-   description="Define how your visuals summarize their data"
+   pageTitle="Opciones de resumen y categoría"
+   description="Definir cómo resumen los objetos visuales sus datos"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,30 +23,30 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Customize Visuals with Summarization and Category Options
+# Personalizar elementos visuales con resúmenes y opciones de la categoría
 
-Power BI has properties that you can assign for fields in your model, which can help report and visualize and present data in ways that provide more clarity. For example, sometimes you want to average a list of numbers, but Power BI automatically sums the list. With Power BI, you can adjust how those lists of numbers are summarized.
+Power BI tiene propiedades que se pueden asignar campos en el modelo, que pueden ayudar a los informes y visualizar y presentar los datos de maneras que proporcionan más claridad. Por ejemplo, en ocasiones, deseará promedio de una lista de números, pero Power BI suma automáticamente la lista. Con Power BI, puede ajustar cómo se resumen estas listas de números.
 
-## Numeric Control over summarization
+## Control numérico sobre resumen
 
-Let's take an example, and demonstrate how to control the way Power BI summarizes numeric data fields.
+Observemos un ejemplo y muestran cómo controlar la forma en que Power BI resume los campos de datos numéricos.
 
-Select a visual on your report canvas, and then select a field in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane. The <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab appears in the ribbon and displays options for formatting data, and data properties.
+Seleccione un elemento visual en el lienzo de informe y, a continuación, seleccione un campo en la **campos** panel. El **modelado** ficha aparece en la cinta de opciones y muestra las opciones de formato de datos y propiedades de datos.
 
 ![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_1.png)
 
-You can select the type of currency symbol used, by selecting the currency symbol drop down, which is shown in the following image.
+Puede seleccionar el tipo de símbolo de moneda, seleccionando el símbolo de moneda de lista desplegable, que se muestra en la siguiente imagen.
 
 ![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_2.png)
 
-There are many different options for formatting fields. For example, you can change the format from currency to percentage.
+Hay muchas opciones diferentes para dar formato a campos. Por ejemplo, puede cambiar el formato de moneda en porcentaje.
 
-You can change how Powwer BI summarizes the data, too. Select the <bpt id="p1">**</bpt>Default Summarization<ept id="p1">**</ept> icon to change how a field is summarized, including displaying a sum, a count, or an average.
+Puede cambiar cómo Powwer BI resume los datos demasiado. Seleccione el **resumen predeterminado** icono para cambiar cómo se resume un campo, incluida la visualización de una suma, un recuento o un promedio.
 
 ![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_3.png)
 
-## Manage and clarify your location data
+## Administrar y aclarar los datos de ubicación
 
-You can make similar changes when plotting locations on a map. Select your map, and then select the field in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane that you use for the <bpt id="p2">*</bpt>Location<ept id="p2">*</ept> value. On the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept> and then choose the category that represents your location data from the drop-down menu. For example, select state, county, or city.
+Puede realizar modificaciones similares al trazar ubicaciones en un mapa. Seleccione la asignación y, a continuación, seleccione el campo en la **campos** panel que se utiliza para la *ubicación* valor. En el **modelado** ficha, seleccione **categoría datos** y, a continuación, elija la categoría que representa los datos de ubicación en el menú desplegable. Por ejemplo, seleccione el estado, provincia o ciudad.
 
 ![](media/powerbi-learning-3-11d-customize-summarization-categorization/3-11d_4.png)

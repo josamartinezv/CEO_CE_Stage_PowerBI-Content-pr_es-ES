@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Update Content Packs"
-   description="Easily push content packs changes to others in your organization"
+   pageTitle="Actualizar paquetes de contenido"
+   description="Insertar fácilmente los cambios de los paquetes de contenido a otros usuarios de su organización"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,32 +23,32 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Edit a content pack in Power BI
+# Editar un paquete de contenido de Power BI
 
-In this lesson, we're going to edit the original content pack we created previously, and see how that updates the other people who've connected to it.
+En esta lección, va a editar el paquete de contenido original que se ha creado previamente y vea cómo que actualiza las personas que se han conectado a ella.
 
-I'm back in My Workspace, editing my original dashboard.
+Soy nuevo en Mi área de trabajo, editar Mi panel original.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04myworkspace.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04myworkspace.png)
 
-Anytime I make any change to the dashboard, I get this reminder that I've changed something that I've shared with others in a content pack, and prompting me to update the shared version.
+Cada vez que realizar cualquier cambio en el panel, aparece este aviso que he cambiado algo que he compartido con otras personas en un paquete de contenido, y se me solicita que actualice la versión compartida.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04uvmadechanges.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04uvmadechanges.png)
 
-I go back to the settings icon and select <bpt id="p1">**</bpt>View content pack<ept id="p1">**</ept> to see the content packs I've already published.
+Volver atrás en el icono de configuración y seleccione **Ver el paquete de contenido de** para ver los paquetes de contenido ya he publicado.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04viewcontpk.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04viewcontpk.png)
 
-I see the content pack I made. This little icon tells me I've changed something in the content pack, and I need to edit the content pack so others can see my changes.
+Veo que el paquete de contenido realizados. Este pequeño icono indica que he cambiado algo en el paquete de contenido, y tengo que modificar el paquete de contenido, por lo que otros usuarios puedan ver los cambios.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04updatecontpk.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04updatecontpk.png)
 
-When I select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>, I'm back at the screen where I can edit the title and description, but this time it has an <bpt id="p2">**</bpt>Update<ept id="p2">**</ept> button, so I select that.
+Cuando se selecciona **Editar**, soy nuevo en la pantalla donde puedo editar el título y la descripción, pero esta vez tiene una **actualización** button, por lo que seleccionar.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04contpksuccess.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-4-update-content-packs/pbi_learn06_04contpksuccess.png)
 
-Power BI takes those changes and publishes the updated content pack to the content pack gallery.
+Power BI toma los cambios y publica el paquete de contenido actualizado en la Galería del paquete de contenido.
 
-Anybody who has connected to my content pack gets a message that the content pack has changed, and asks if they want to accept the changes or keep the older version.
+Toda persona que se ha conectado a mi paquete de contenido Obtiene un mensaje que el paquete de contenido ha cambiado y le preguntará si desea aceptar los cambios o mantener la versión anterior.
 
-So as the content pack owner, you can manage the versions that your colleagues are using.
+Como propietario del paquete de contenido, puede administrar las versiones que están usando sus colegas.

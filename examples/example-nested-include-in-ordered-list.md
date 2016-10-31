@@ -1,10 +1,10 @@
-<properties linkid="nested-include-in-ordered-list" urlDisplayName="List with Nested Include Example" pageTitle="List with Nested Include Example" title="List with Nested Include Example" metaKeywords="southworks" description="Tests for the Includes feature." metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" documentationCenter="" authors="" videoId="" scriptId="" />
+<properties linkid="nested-include-in-ordered-list" urlDisplayName="List with Nested Include Example" pageTitle="Lista con anidada se incluyen" title="List with Nested Include Example" metaKeywords="southworks" description="Comprueba si la característica de inclusión." metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" documentationCenter="" authors="" videoId="" scriptId="" />
 
-# Ordered List with Nested Include Example
+# Lista ordenada con anidados se incluyen
 
 *Sintaxis*
 
-**Main document**
+**Documento principal**
 
 ```
 1. Item ONE
@@ -21,10 +21,10 @@
 
 <hr />
 
-## My Items
+## Mis elementos
 
-1. Item ONE
+1. Elemento UNO
 
     [AZURE.INCLUDE [innerlist](../includes/inner-list.md)]
 
-1. Item FOUR
+1. Elemento CUATRO

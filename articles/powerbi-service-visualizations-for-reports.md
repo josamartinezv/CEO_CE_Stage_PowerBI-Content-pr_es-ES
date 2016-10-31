@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Visualizations in Power BI"
-   description="Documentation about visualizations (visuals) in Microsoft Power BI."
+   pageTitle="Visualizaciones en Power BI"
+   description="Documentación sobre visualizaciones (elementos visuales) en Microsoft Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,38 +21,42 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Visualizations in Power BI  
+# Visualizaciones en Power BI  
 
-Data visualizations (aka visuals) allow you to interact with your data to find business insights. Create and modify visualizations in your reports, and then pin them to your dashboards.   
+Visualizaciones de datos (también conocido como elementos visuales) le permiten interactuar con los datos para buscar información empresarial. Crear y modificar visualizaciones en los informes y, a continuación, anclar en los paneles.   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYk_gWrtKvM?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
-#####  If you're new to Power BI, or need a refresher, use the links below to learn the basics of Power BI visualizations.  Alternately, use our Table of Contents (along the left side of this article) to find even more helpful information.
+#####  Si está familiarizado con Power BI o necesita un actualizador, utilice los siguientes vínculos para aprender los conceptos básicos de las visualizaciones de Power BI.  Como alternativa, puede utilizar la tabla de contenido (en el lado izquierdo de este artículo) para buscar la información más útil.
 
-## Add a visualization in Power BI  
-<bpt id="p1">[</bpt>Create visualizations<ept id="p1">](powerbi-service-add-visualizations-to-a-report-i.md)</ept> on the pages of your reports. Browse the <bpt id="p1">[</bpt>list of available visualizations and available visualization tutorials.<ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept> 
+## Agregar una visualización en Power BI  
 
-## Upload a custom visualization and use it in Power BI
-Add a custom visualization that you created yourself or that you found in the <bpt id="p1">[</bpt>community gallery<ept id="p1">](http://visuals.powerbi.com)</ept>. Feeling creative? Dig into our source code and use our developer tools to create a new visualization type and <bpt id="p1">[</bpt>share it with the community<ept id="p1">](http://visuals.powerbi.com)</ept>
+            [Crear visualizaciones](powerbi-service-add-visualizations-to-a-report-i.md) en las páginas de los informes. Examinar el [lista de visualizaciones disponibles y los tutoriales de visualización disponible.](powerbi-service-visualization-types-for-reports-and-q-and-a.md) 
 
-## Change the visualization type  
-Try <bpt id="p1">[</bpt>changing the type of visualization<ept id="p1">](powerbi-service-change-the-type-of-visualization-in-a-report.md)</ept> to see which works best with your data.
+## Cargar una visualización personalizada y utilizarla en Power BI
+Agregar una visualización personalizada que haya creado usted mismo o que encuentra en la [Galería de la Comunidad](http://visuals.powerbi.com). ¿Se siente creativo? Profundizar en el código fuente y use nuestras herramientas para desarrolladores para crear un nuevo tipo de visualización y [compartir con la Comunidad](http://visuals.powerbi.com)
 
-## Pin the visualization  
-When you have the visualization the way you want it, you can <bpt id="p1">[</bpt>pin it to a dashboard<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept> as a tile. If you change the visualization in the report after you pin it, the tile on the dashboard doesn't change.
+## Cambiar el tipo de visualización  
+Intente [cambiar el tipo de visualización](powerbi-service-change-the-type-of-visualization-in-a-report.md) para ver cuál funciona mejor con sus datos.
 
-## Copy and paste a visualization  
-<bpt id="p1">[</bpt>Copy and paste visualizations<ept id="p1">](powerbi-service-copy-and-paste-a-visualization.md)</ept>on the same report page or on new report pages. 
+## La visualización de PIN  
+Cuando se tiene la visualización de la forma que desea, puede [Anclar a un panel](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) como un icono. Si cambia la visualización del informe después de que lo ancla, no cambia el icono en el panel.
 
-## Change how a visualization is sorted  
-You can <bpt id="p1">[</bpt>sort a visualization<ept id="p1">](powerbi-service-change-how-a-chart-is-sorted.md)</ept> by the different fields in the visualization, or reverse the order -- A to Z or Z to A.
+## Copie y pegue una visualización  
 
-## Delete a visualization  
-<bpt id="p1">[</bpt>Remove unwanted visualizations<ept id="p1">](powerbi-service-delete-a-visualization.md)</ept>from your report.
+            [Copie y pegue visualizaciones](powerbi-service-copy-and-paste-a-visualization.md)en la misma página de informes o en las páginas del informe. 
+
+## Cambiar cómo se ordena una visualización  
+Puede [Ordenar una visualización](powerbi-service-change-how-a-chart-is-sorted.md) por los distintos campos en la visualización o invertir el orden, A Z o Z a.
+
+## Eliminar una visualización  
+
+            [Quitar visualizaciones no deseados](powerbi-service-delete-a-visualization.md)desde el informe.
 
 ## Consulte también  
-<bpt id="p1">[</bpt>Visualization types in Power BI<ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept><ph id="ph1">
-</ph><bpt id="p2">[</bpt>Reports in Power BI<ept id="p2">](powerbi-service-reports.md)</ept>  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+            [Tipos de visualización en Power BI](powerbi-service-visualization-types-for-reports-and-q-and-a.md)
+[informes de Power BI](powerbi-service-reports.md)  
+[Paneles de Power BI](powerbi-service-dashboards.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Part I, Add visualizations to a Power BI report"
-   description="Tutorial: Part I, Add visualizations to a Power BI report"
+   pageTitle="Tutorial: Parte I, agregue visualizaciones a un informe de Power BI"
+   description="Tutorial: Parte I, agregue visualizaciones a un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,66 +21,74 @@
    ms.date="10/09/2016"
    ms.author="mihart"/>
 
-# Tutorial: Part I, Add visualizations to a Power BI report
+# Tutorial: Parte I, agregue visualizaciones a un informe de Power BI
 
-This article gives a quick introduction to creating a visualization in a report.  For more-advanced content, please <bpt id="p1">[</bpt>see Part II<ept id="p1">](powerbi-service-add-visualizations-to-a-report-ii.md)</ept>. In the video below, Will shows you a few different ways to create, edit, and format visuals on the report canvas.
+Este artículo proporciona una introducción rápida a la creación de una visualización en un informe.  Obtener el contenido más avanzados, [vea parte II](powerbi-service-add-visualizations-to-a-report-ii.md). En el vídeo siguiente, se muestran algunas maneras diferentes de crear, modificar y dar formato a elementos visuales en el informe de lienzo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rnMyiA6Nt6Y?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
 
-Now use the <bpt id="p1">[</bpt>Sales and Marketing sample<ept id="p1">](powerbi-sample-datasets.md)</ept> to create your own report.
+Ahora utilice el [de ventas y Marketing de ejemplo](powerbi-sample-datasets.md) para crear su propio informe.
 
-1.  Open a <bpt id="p1">[</bpt>report in Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>. This tutorial uses the Sales and Marketing sample.
+1.  Abrir un [informes en la vista de edición de](powerbi-service-go-from-reading-view-to-editing-view.md). Este tutorial utiliza las ventas y Marketing de ejemplo.
 
-2.  If the Fields pane isn't visible, select the arrow icon to open it. 
+2.  Si el panel campos no está visible, seleccione el icono de flecha para abrirlo. 
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/pbi_Nancy_FieldsFiltersArrow.png)
 
-3.  <bpt id="p1">[</bpt>Add a blank page to the report<ept id="p1">](powerbi-service-add-a-page-to-a-report.md)</ept>.
+3.  
+            [Agregar una página en blanco al informe](powerbi-service-add-a-page-to-a-report.md).
 
-4.  Create a visualization by selecting a field from the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane.  
+4.  Crear una visualización seleccionando un campo desde la **campos** panel.  
 
-    <bpt id="p1">**</bpt>Start with a numeric field: Power BI creates a column chart with a single column<ept id="p1">**</ept>.
+    
+            **Comience con un campo numérico: Power BI crea un gráfico de columnas con una sola columna**.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/PBI_OneColChart.png)
 
-    <bpt id="p1">**</bpt>Start with a category field<ept id="p1">**</ept>, such as Name or City: Power BI creates a Table and adds that field to the <bpt id="p2">**</bpt>Values<ept id="p2">**</ept> well.
+    
+            **Comience con un campo de categoría**, como nombre o ciudad: Power BI crea una tabla y agrega ese campo a la **valores** bien.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/PBI_Agif_CreateChart3.gif)
 
-5.  Select other fields to add to the visualization.  Select <bpt id="p1">**</bpt>Count of<ept id="p1">**</ept> <bpt id="p2">**</bpt>Product<ept id="p2">**</ept> to add it to the <bpt id="p3">**</bpt>Values<ept id="p3">**</ept> well.
+5.  Seleccione otros campos que desee agregar a la visualización.  Seleccione **recuento de** **producto** para agregarlo a la **valores** bien.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/part1table1.png)
 
-6.  Change the visualization to a column chart by selecting the column chart icon.
+6.  Cambiar la visualización a un gráfico de columnas seleccionando el icono de gráfico de columna.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/part1ConvertToColumn.png)
 
-7.  When you create visualizations in your report, you can <bpt id="p1">[</bpt>pin them to your dashboard<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept>. To pin the visualization, select the pin icon <ph id="ph1">![](media/powerbi-service-add-visualizations-to-a-report-i/pinNoOutline.png)</ph>.
+7.  Al crear visualizaciones en el informe, puede [Anclar en el panel de](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md). Para anclar la visualización, seleccione el icono de pin ![](media/powerbi-service-add-visualizations-to-a-report-i/pinNoOutline.png).
 
     ![](media/powerbi-service-add-visualizations-to-a-report-i/part1Pin1.png)
 
-8.  Now you can:
+8.  Ahora puede:
 
-    Continue on to <bpt id="p1">[</bpt>Part 2: Add visualizations to a Power BI report<ept id="p1">](powerbi-service-add-visualizations-to-a-report-ii.md)</ept>
+    Ir a [parte 2: agregar visualizaciones a un informe de Power BI](powerbi-service-add-visualizations-to-a-report-ii.md)
 
-    <bpt id="p1">[</bpt>C<ept id="p1">](powerbi-service-change-the-type-of-visualization-in-a-report.md)</ept><bpt id="p2">[</bpt>hange the visualization type<ept id="p2">](powerbi-service-change-the-type-of-visualization-in-a-report.md)</ept><bpt id="p3">[</bpt>.<ept id="p3">](powerbi-service-change-the-type-of-visualization-in-a-report.md)</ept>
+    
+            [C](powerbi-service-change-the-type-of-visualization-in-a-report.md)[cambiar el tipo de visualización](powerbi-service-change-the-type-of-visualization-in-a-report.md)[.](powerbi-service-change-the-type-of-visualization-in-a-report.md)
 
-    <bpt id="p1">[</bpt>Pin the visualization<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept> to your dashboard as a tile.
+    
+            [Anclar la visualización](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md) al panel de mosaico.
 
-    <bpt id="p1">[</bpt>Interact with the visualizations<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept> in the report.
+    
+            [Interactuar con las visualizaciones](powerbi-service-interact-with-a-report-in-reading-view.md) en el informe.
 
-    <bpt id="p1">[</bpt>Do even more with visualizations<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>.
+    
+            [Hacer más con visualizaciones](powerbi-service-visualizations-for-reports.md).
 
-    <bpt id="p1">[</bpt>Save your report<ept id="p1">](powerbi-service-save-a-report.md)</ept>.
+    
+            [Guardar el informe](powerbi-service-save-a-report.md).
 
 
 ## Consulte también
 
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>.
+Más información sobre [visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md).
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

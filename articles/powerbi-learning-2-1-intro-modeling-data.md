@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Introduction to Modeling Your Data"
-   description="Get ready to connect many different data sources"
+   pageTitle="Introducción a los datos de modelo"
+   description="Prepárese para conectarse a varios orígenes de datos diferentes"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,16 +23,16 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Modeling
-Welcome to the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Guided Learning<ept id="p2">**</ept> course for Power BI. This section shows you how to get your connected data ready for use, using Power BI Desktop. Often, you'll connect to more than one data source to create your reports, and you'll need all of that data to work together. Modeling is how you get it there.
+# Modelado
+Bienvenido a la **modelado** sección de la **aprendizaje guiado** curso para Power BI. En esta sección se muestra cómo preparar los datos conectados para su uso, con Power BI Desktop. A menudo, se conectará a más de un origen de datos para crear informes y necesitará todos esos datos trabajen juntos. El modelado es cómo conseguirlo.
 
-To create a logical connection between different data sources, you create a <bpt id="p1">**</bpt>relationship<ept id="p1">**</ept>. A relationship between data sources enables Power BI to know how those tables relate to one another, allowing you to create interesting visuals and reports. This section explains <bpt id="p1">*</bpt>relationships<ept id="p1">*</ept> (only the data-centric ones, though), and even shows you how to create relationships when none exists.
+Para crear una conexión lógica entre diferentes orígenes de datos, debe crear un **relación**. Una relación entre los orígenes de datos permite Power BI para saber cómo esas tablas se relacionan entre sí, lo que le permite crear informes y elementos visuales interesantes. Esta sección se explica *relaciones* (solo aquellos centradas en datos, aunque) e incluso muestra cómo crear relaciones cuando no existe ninguno.
 
-As always in this course, your learning journey follows the same path as the flow of work in Power BI. We'll still be in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> for most of this section, but the work done here has direct affect on working in the Power BI service.
+Como siempre, en este curso, su viaje de aprendizaje sigue la misma ruta que el flujo de trabajo en Power BI. Seguiremos aún en **Power BI Desktop** para la mayor parte de esta sección, pero el trabajo aquí tiene repercusión directa sobre el trabajo en el servicio Power BI.
 
 
-## Introduction to Modeling Your Data
+## Introducción a los datos de modelo
 
-Now that we've reviewed how to import your data and transform it, it's time to start modeling.
+Ahora que hemos revisado cómo importar los datos y transformarla, es momento de comenzar a modelar.
 
-One of Power BI's strengths is that you don't need to flatten your data into one table. Instead, you can use multiple tables from multiple sources, and define the <bpt id="p1">**</bpt>relationship<ept id="p1">**</ept> between them. You can also create your own custom calculations and assign new metrics to view specific segments of your data, and use these new measures in visualizations for easy modeling.
+Uno de los puntos fuertes de Power BI es que no es necesario simplificar los datos en una tabla. En su lugar, puede utilizar varias tablas de varios orígenes y definir la **relación** entre ellos. También puede crear sus propios cálculos personalizados y asignar nuevas métricas para ver los segmentos específicos de los datos y usar estas nuevas medidas en las visualizaciones de fácil modelado.

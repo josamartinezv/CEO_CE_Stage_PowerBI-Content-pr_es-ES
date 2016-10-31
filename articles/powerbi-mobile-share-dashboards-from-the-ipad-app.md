@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Share dashboards from the iPad app"
-   description="Read how you can invite colleagues to view your dashboards and snapshots of tiles from the Power BI app for iOS on your iPad."
+   pageTitle="Compartir paneles de la aplicación de iPad"
+   description="Lea cómo puede invitar a compañeros para ver sus paneles e instantáneas de iconos de la aplicación de Power BI para iOS en su iPad."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,58 +20,62 @@
    ms.date="10/12/2016"
    ms.author="maggies"/>
 
-# Share dashboards from the iPad app (Power BI for iOS)
+# Compartir paneles de la aplicación de iPad (Power BI para iOS)
 
-You can invite colleagues to view and interact with your dashboards from the Power BI app for iOS on your iPad. You can also share <bpt id="p1">[</bpt>snapshots of tiles<ept id="p1">](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)</ept> with anyone, in or out of your email domain.
+Puede invitar a compañeros para ver e interactuar con sus paneles desde la aplicación de Power BI para iOS en su iPad. También puede compartir [instantáneas de iconos](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) con nadie, dentro o fuera de su dominio de correo electrónico.
 
-## Share a dashboard with colleagues
+## Compartir un panel con sus colegas
 
-> [AZURE.NOTE]  The people you share dashboards with need to <bpt id="p1">[</bpt>sign up for Power BI<ept id="p1">](https://powerbi.microsoft.com)</ept>, too.
+> [AZURE.NOTE]  Las personas compartir paneles con necesidad de [suscribirse en Power BI](https://powerbi.microsoft.com), demasiado.
 
-1.  Tap the <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png)</ph> icon in the upper-right corner of your dashboard.
+1.  Puntee en el **compartido** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) en la esquina superior derecha del panel del icono.
 
-2.  Tap <bpt id="p1">**</bpt>Invite a colleague<ept id="p1">**</ept>, then type email addresses and a message to accompany your dashboard invitation.
+2.  Puntee en **Invitar a un colega**, a continuación, escriba las direcciones de correo electrónico y un mensaje para acompañar a la invitación del panel.
 
-3.  To allow resharing, leave <bpt id="p1">**</bpt>Allow recipients to share this dashboard<ept id="p1">**</ept> selected.
+3.  Para permitir volver a compartir, dejar **Permitir a los destinatarios a compartir este panel** seleccionado.
 
-    > [AZURE.NOTE]    Allowing your colleagues to reshare means they can forward the email invitation to other colleagues, either through the web or the mobile apps. See <bpt id="p1">[</bpt>Notes about sharing dashboards<ept id="p1">](powerbi-mobile-share-dashboards-from-the-ipad-app.md#notes-about-sharing-dashboards)</ept>, below.
+    > [AZURE.NOTE]    Permitir que sus colegas para compartir medios puede reenviar la invitación por correo electrónico a otros compañeros, ya sea a través de la web o las aplicaciones móviles. Consulte [notas acerca de cómo compartir paneles](powerbi-mobile-share-dashboards-from-the-ipad-app.md#notes-about-sharing-dashboards), más adelante.
 
-4.  Tap <bpt id="p1">**</bpt>Send<ept id="p1">**</ept> in the upper-right corner.
+4.  Puntee en **Enviar** en la esquina superior derecha.
 
-Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it, in a browser or in one of the mobile apps, it's added to their Power BI.
+Sus compañeros obtienen una invitación de correo electrónico con un vínculo directo al escritorio. La invitación expira transcurrido un mes. Cuando abra, en un explorador o en una de las aplicaciones móviles, se agrega a sus Power BI.
 
-## Unshare a dashboard
+## Dejar de compartir un panel
 
-You can only unshare a dashboard if you're the dashboard owner.
+Sólo se puede hacer que un panel si eres el propietario del panel.
 
-1.  Tap the <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png)</ph> icon in the upper-right corner of your dashboard.
+1.  Puntee en el **compartido** ![](media/powerbi-mobile-share-dashboards-from-the-ipad-app/pbi_ipad_shareiconblk.png) en la esquina superior derecha del panel del icono.
 
-    You see the list of colleagues with whom you've shared this dashboard. Below their names are these words:
+    Consulte la lista de compañeros con los que ha compartido este panel. A continuación sus nombres son estas palabras:
 
-    -   <bpt id="p1">**</bpt>Pending<ept id="p1">**</ept>: They haven't viewed the dashboard yet.
+    -   
+            **Pendiente**: aún no ven el panel aún.
 
-    -   <bpt id="p1">**</bpt>Can View<ept id="p1">**</ept>: They can view the dashboard but not share it.
+    -   
+            **Puede ver**: puede ver el panel pero no comparta.
 
-    -   <bpt id="p1">**</bpt>Can View &amp; Invite<ept id="p1">**</ept>: They can view the dashboard and share it with other colleagues.
+    -   
+            **Puede ver & Invitar**: puede ver el panel y compartirla con otros colegas.
 
-2.  Tap <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept>.
+2.  Puntee en **Editar**.
 
-3.  To unshare, tap the red circle next to a name and tap <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.
+3.  Para dejar de compartir, puntee en el círculo rojo junto al nombre y en **Eliminar**.
 
-## Notes about sharing dashboards
+## Notas acerca de cómo compartir paneles
 
-You and your colleagues see the same data in the dashboard. Thus, if you have permissions to see more data than they do, they'll be able to see all your data in your dashboard.
+Usted y sus colegas ver los mismos datos en el panel. Por lo tanto, si tiene permisos para ver más datos que lo hacen, podrá ver todos los datos en el panel.
 
--   If your colleagues haven't signed up for Power BI yet, they need to do so to see your dashboard.
+-   Si sus compañeros de trabajo no han registrado en Power BI aún, deben hacerlo para ver el panel.
 
--   Your colleagues can see your dashboard and even see changes you make in the Power BI service online, after you save those changes.
+-   Sus colegas pueden ver su panel e incluso ver los cambios realizados en línea, el servicio de Power BI después de guardar los cambios.
 
--   You can share snapshots of tiles with anyone, in or out of your email domain. You can share with users who have the same email domain as you, and with users whose domain is different but registered within the tenant. For example, say you have the domains contoso.com and contoso2.com registered in the tenant. If your email address is konrads@contoso.com, you can share with ravali@contoso.com, and also with gustav@contoso2.com.
+-   Instantáneas de iconos puede compartir con nadie, dentro o fuera de su dominio de correo electrónico. Puede compartir con los usuarios que tienen el mismo dominio de correo electrónico que usted y con los usuarios cuyo dominio es diferente pero registrados en el inquilino. Por ejemplo, supongamos que tiene los dominios contoso.com y contoso2.com registrados en el inquilino. Si su dirección de correo electrónico es konrads@contoso.com, puede compartir con ravali@contoso.com y también con gustav@contoso2.com.
 
 ### Consulte también
 
-- [Dashboards in the iPad app](powerbi-mobile-dashboards-on-the-ipad-app.md)
-- [Annotate and share a snapshot of a tile from the iPad app](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
-- [Share a dashboard in Power BI](powerbi-service-share-unshare-dashboard.md)
-- <bpt id="p1">[</bpt>The iPad app<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept> for Power BI for iOS
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Paneles de la aplicación de iPad](powerbi-mobile-dashboards-on-the-ipad-app.md)
+- [Anotar y compartir una instantánea de un mosaico de la aplicación de iPad](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)
+- [Compartir un panel en Power BI](powerbi-service-share-unshare-dashboard.md)
+- 
+            [La aplicación de iPad](powerbi-mobile-iphone-app-get-started.md) para Power BI para iOS
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

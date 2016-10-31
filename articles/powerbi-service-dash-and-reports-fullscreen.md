@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Display dashboards and reports in Full Screen mode (TV mode)"
-   description="Display dashboards and reports in TV mode, aka Full Screen Mode."
+   pageTitle="Mostrar paneles e informes en modo de pantalla completa (el modo de televisión)"
+   description="Mostrar paneles e informes en el modo de televisión, también conocido como modo de pantalla completa."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,78 +21,79 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Display dashboards and reports in Full Screen mode (TV mode)
+# Mostrar paneles e informes en modo de pantalla completa (el modo de televisión)
 
-## What is Full Screen mode?
+## ¿Qué es el modo de pantalla completa?
 
-Display your dashboards, reports, tiles, and visuals without the distraction of menus and navigation buttons.  You get an unadulterated, full view of your business at a glance, all the time. This is sometimes referred to as TV Mode.
+Mostrar los paneles, informes, mosaicos y efectos visuales sin la distracción de los menús y botones de navegación.  Obtenga una vista completa puro de su negocio de un vistazo, todo el tiempo. A veces se denomina modo de televisión.
 
-Some uses for Full Screen mode are:
+Algunos usos de modo de pantalla completa son:
 
-- presenting your dashboard, tile, visual, or report at a meeting or conference
-- displaying in an office on a dedicated large screen or projector
-- viewing on a small screen
-- reviewing in locked mode -- you can touch the screen or mouse over tiles without opening the underlying report or dashboard
+- presentar el escritorio, icono visual o informe en una reunión o conferencia
+- mostrar en una oficina en una pantalla grande dedicado o un proyector
+- ver en una pantalla pequeña
+- Revisar en modo de bloqueado, puede tocar la pantalla o el mouse sobre los iconos sin tener que abrir el informe subyacente o el panel
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Full Screen mode is different than <bpt id="p2">[</bpt>Focus (Pop out) mode<ept id="p2">](powerbi-service-display-dash-in-focus-mode.md)</ept>.
+>
+>            **NOTA**: modo de pantalla completa es diferente de [modo de enfoque (Pop out)](powerbi-service-display-dash-in-focus-mode.md).
 
-Watch Amanda open and navigate her dashboard in fullscreen mode and then apply some URL parameters to control the default display. Then follow the step-by-step instructions below the video to try it out yourself.
+Vea Amanda abrir y vaya a su panel en modo de pantalla completa y, a continuación, aplicar algunos parámetros de dirección URL para controlar la presentación predeterminada. A continuación, siga las instrucciones detalladas a continuación el vídeo para probarlo usted mismo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/c31gZkyvC54" frameborder="0" allowfullscreen></iframe>
 
-## To turn Full Screen mode on (and off) for a dashboard or report
+## Para activar el modo de pantalla completa (y desactivar) para un panel o informe
 
-1. From the Power BI menu bar above your dashboard or report, select the <bpt id="p1">**</bpt>Full Screen<ept id="p1">**</ept> icon.
+1. En la barra de menús de Power BI por encima de un panel o informe, seleccione la **pantalla completa** icono.
 
       ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TvModeIcon-new.jpg)
 
-2. Your dashboard or report page fills the entire screen.
+2. La página panel o informe ocupe toda la pantalla.
 
       ![](media/powerbi-service-dash-and-reports-fullscreen/PBI_TVMode.jpg)
 
-3. Use the <bpt id="p1">**</bpt>Back<ept id="p1">**</ept> button to navigate to the previous page in your browser. If the previous page was a Power BI service page, it will display in Full Screen mode.  Full Screen mode will persist until you close Full Screen.
+3. Utilice la **Atrás** botón para navegar a la página anterior en el explorador. Si la página anterior era una página de servicio de Power BI, se mostrará en modo de pantalla completa.  Modo de pantalla completa se conservará hasta que cierre la pantalla completa.
 
-3. To exit Full Screen mode, select the <bpt id="p1">**</bpt>Close Full Screen<ept id="p1">**</ept> icon.
+3. Para salir del modo de pantalla completa, seleccione el **Cerrar pantalla completa** icono.
 
       ![](media/powerbi-service-dash-and-reports-fullscreen/exit-fullscreen-new.png)
 
-## To turn Full Screen mode on (and off) for a dashboard tile or report visual
+## Para activar el modo de pantalla completa (y desactivada) de un icono de panel o informe visual
 
-1. While in Full Screen mode for a report or a dashboard, select the Focus mode icon <ph id="ph1">![](media/powerbi-service-display-dash-in-focus-mode/PBI_popOut.jpg)</ph>  for a specific tile or specific visual. The tile or visual will display full screen without menus or chrome.
+1. En el modo de pantalla completa para un informe o un panel, seleccione el icono de modo de enfoque ![](media/powerbi-service-display-dash-in-focus-mode/PBI_popOut.jpg)  de un mosaico concreto o visual específica. El mosaico o visual mostrará una pantalla completa sin menús ni chrome.
 
     ![](media/powerbi-service-dash-and-reports-fullscreen/fullscreen-tile.png)
 
-2. To exit, hover to reveal the options menu and select the Exit icon to return to the dashboard (for tiles) or to the report (for visuals).
+2. Para salir, mantenga el mouse para mostrar el menú de opciones y seleccione el icono de salida para devolver al panel (para los mosaicos) o del informe (para elementos visuales).
 
     ![](media/powerbi-service-dash-and-reports-fullscreen/viz-fullscreen-menu-new.png)
 
 
-## Dashboards in Full Screen mode
+## Paneles en modo de pantalla completa
 
-### Fit to screen
-Full Screen mode for dashboards offers some display options that are not available for reports.
+### Ajustar a la pantalla
+Modo de pantalla completa para los paneles ofrece algunas opciones de presentación que no están disponibles para los informes.
 
-Sometimes dashboards will display in Full Screen mode with scrollbars (see above). To remove scrollbars, move your cursor to an empty area on your screen to reveal the Full Screen options menu.  
+A veces los paneles se mostrarán en modo de pantalla completa con barras de desplazamiento (véase más arriba). Para quitar las barras de desplazamiento, mueva el cursor a un área vacía de la pantalla para mostrar el menú de opciones de pantalla completa.  
 ![](media/powerbi-service-dash-and-reports-fullscreen/menu-options-new.png)
 
-  And select the <bpt id="p1">**</bpt>Fit to screen<ept id="p1">**</ept> icon.
+  Y seleccione el **Ajustar a la pantalla** icono.
     ![](media/powerbi-service-dash-and-reports-fullscreen/fit-to-screen-new.png)
 
-### Fit to width
-And sometimes you don't care about scrollbars, but want the dashboard or report to fill the entire width of the available space.  Select the <bpt id="p1">**</bpt>Fit to width<ept id="p1">**</ept> icon. ![](media/powerbi-service-dash-and-reports-fullscreen/fit-to-width.png)
+### Ajustar a ancho
+Y a veces no importa barras de desplazamiento, pero desea que el panel o informe para llenar todo el ancho del espacio disponible.  Seleccione el **Ajustar a ancho** icono. ![](media/powerbi-service-dash-and-reports-fullscreen/fit-to-width.png)
 
 ### Impresión
-To print a dashboard from Full Screen mode, select the Print icon.
+Para imprimir un panel de modo de pantalla completa, seleccione el icono de impresión.
 ![](media/powerbi-service-dash-and-reports-fullscreen/print-icon.png)
 
-## Reports in Full Screen mode
-### Display report pages
-Full Screen reports don't have the option to print or the options for <bpt id="p1">**</bpt>Fit to screen<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Fit to width<ept id="p2">**</ept>.  However, when a report is in Full Screen mode, you can use the forward and reverse arrows to move through the report pages.
+## Informes en modo de pantalla completa
+### Mostrar las páginas del informe
+Informes de pantalla completos no tienen la opción de imprimir o las opciones de **Ajustar a la pantalla** o **Ajustar a ancho**.  Sin embargo, cuando el informe está en modo de pantalla completa, puede utilizar las flechas directa e inversas para desplazarse por las páginas del informe.
 
   ![](media/powerbi-service-dash-and-reports-fullscreen/menu-options-reports.png).
 
 ## Consulte también  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-pageTitle="Manage your data source - Analysis Services"
-description="How to manage the on-premises data gateway and data sources that belong to that gateway. This is for Analysis Services in both Multidimensional and Tabular mode."
+pageTitle="Administrar el origen de datos - Analysis Services"
+description="Cómo administrar los locales puerta de enlace y los datos de orígenes de datos que pertenecen a dicha puerta de enlace. Esto es para Analysis Services en modo Tabular y Multidimensional."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,209 +19,210 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/12/2016"
 ms.author="asaxton"/>
-# Manage your data source - Analysis Services
+# Administrar el origen de datos - Analysis Services
 
-Once you have installed the On-premises Data Gateway, you will need to add data sources that can be used with the gateway. This article will look at how to work with gateways and data sources. You can use the Analysis Services data source either for scheduled refresh or for live connections.
+Una vez haya instalado la puerta de enlace de datos local, debe agregar los orígenes de datos que se pueden usar con la puerta de enlace. En este artículo se describe cómo trabajar con orígenes de datos y las puertas de enlace. Puede usar el origen de datos de Analysis Services para la actualización programada o conexiones directas.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ownIGbcRAAU" frameborder="0" allowfullscreen></iframe>
 
-## Download and install the gateway
+## Descargue e instale la puerta de enlace
 
-You can download the gateway from the Power BI service. Select <bpt id="p1">**</bpt>Downloads<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Data Gateway<ept id="p2">**</ept>, or by going to the <bpt id="p3">[</bpt>gateway download page<ept id="p3">](https://go.microsoft.com/fwlink/?LinkId=698861)</ept>.
+Puede descargar la puerta de enlace desde el servicio Power BI. Seleccione **descargas** > **puerta de enlace de datos**, o yendo a la [página de descarga de la puerta de enlace](https://go.microsoft.com/fwlink/?LinkId=698861).
 
 ![](media/powerbi-gateway-onprem/powerbi-download-data-gateway.png)
 
-## Limitations of Analysis Services live connections
+## Limitaciones de conexiones activas de Analysis Services
 
-You can use a live connection against tabular or multidimensional instances.
+Puede utilizar una conexión activa con instancias tabulares o multidimensionales.
 
-|**Server version**|**Required SKU**|
+|**Versión del servidor**|**SKU necesario**|
 |---|---|
-|2012 SP1 CU4 or later|Business Intelligence and Enterprise SKU|
-|2014|Business Intelligence and Enterprise SKU|
-|2016|Standard SKU or higher|
+|2012 SP1 CU4 o posterior|SKU Business Intelligence y Enterprise|
+|2014|SKU Business Intelligence y Enterprise|
+|2016|SKU estándar o superior|
 
-- Cell level Formatting and translation features are not supported.
-- Actions and Named Sets are not exposed to Power BI, but you can still connect to multidimensional cubes that also contain Actions or Named sets and create visuals and reports.
+- Formato de nivel de celda y no se admiten características de traducción.
+- Acciones y conjuntos con nombre no están expuestos a Power BI, pero todavía puede conectarse a los cubos multidimensionales que también contienen conjuntos de acciones o con nombre y crear elementos visuales y los informes.
 
-## Add a gateway
+## Agregar una puerta de enlace
 
-To add a Gateway, simply <bpt id="p1">[</bpt>download<ept id="p1">](https://go.microsoft.com/fwlink/?LinkId=698861)</ept> and install the enterprise gateway on a server in your environment. After you have installed the gateway, it will show in the lists of gateways under <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+Para agregar una puerta de enlace, simplemente [descargar](https://go.microsoft.com/fwlink/?LinkId=698861) e instalar la puerta de enlace de la empresa en un servidor en su entorno. Después de haber instalado la puerta de enlace, se mostrará en la lista de puertas de enlace en **Administrar puertas de enlace**.
 
-> [AZURE.NOTE] <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept> will not show up until you are the admin of at least one gateway. This can happen either by being added as an admin or you installing and configuring a gateway.
+> [AZURE.NOTE] 
+            **Administrar las puertas de enlace** no se mostrará hasta que son el Administrador de al menos una puerta de enlace. Esto puede suceder ya sea por que se agrega como un administrador o instalar y configurar una puerta de enlace.
 
-## Remove a gateway
+## Quitar una puerta de enlace
 
-Removing a gateway will also delete any data sources under that gateway.  This will also break any dashboards and reports that rely on those data sources.
+Quitar una puerta de enlace también se eliminan los orígenes de datos en dicha puerta de enlace.  Esto también interrumpirá cualquier paneles e informes que dependen de esos orígenes de datos.
 
-1.  Select the gear icon <ph id="ph1">![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png)</ph> in the upper-right corner &gt; <bpt id="p1">**</bpt>Manage gateways<ept id="p1">**</ept>.
+1.  Seleccione el icono de engranaje ![](media/powerbi-gateway-enterprise-manage/pbi_gearicon.png) en la esquina superior derecha > **Administrar puertas de enlace**.
 
-2.  Gateway &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>
+2.  Puerta de enlace > **quitar**
 
     ![](media/powerbi-gateway-enterprise-manage/datasourcesettings7.png)
 
-## Add a data source
+## Agregar un origen de datos
 
-You can add a data source by either selecting a gateway and click <bpt id="p1">**</bpt>Add data source<ept id="p1">**</ept>, or go to Gateway &gt; <bpt id="p2">**</bpt>Add data source<ept id="p2">**</ept>.
+Puede agregar un origen de datos seleccionando una puerta de enlace y haga clic en **Agregar origen de datos**, o ir a la puerta de enlace > **Agregar origen de datos**.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings1.png)
 
-You can then select the <bpt id="p1">**</bpt>Data Source Type<ept id="p1">**</ept> from the list. Select Analysis Services if you are connecting to either a Multidimensional or Tabular server.
+A continuación, puede seleccionar el **el tipo de origen de datos** de la lista. Seleccione Analysis Services si se conecta a un servidor Tabular o de acceso Multidimensional.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings2-ssas.png)
 
-You will then want to fill in the information for the data source which includes the <bpt id="p1">**</bpt>Server<ept id="p1">**</ept> and the <bpt id="p2">**</bpt>Database<ept id="p2">**</ept>.  
+A continuación, deberá rellenar la información del origen de datos que incluye el **Server** y **base de datos**.  
 
-The <bpt id="p1">**</bpt>Username<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Password<ept id="p2">**</ept> that you enter will be used by the gateway to connect to the Analysis Services instance. 
+El **nombre de usuario** y **contraseña** que especifique se utilizará la puerta de enlace para conectarse a la instancia de Analysis Services. 
 
-> [AZURE.NOTE] The Windows account you enter must have Server Administrator permissions for the instance you are connecting to. If this account’s password is set to expire, users could get a connection error if the password isn’t updated for the data source. For more information, see the main on-premises data gateway article to learn more about how <bpt id="p1">[</bpt>credentials<ept id="p1">](powerbi-gateway-onprem.md#credentials)</ept> are stored.
+> [AZURE.NOTE] La cuenta de Windows especificada debe tener permisos de administrador del servidor para la instancia que se está conectando. Si se establece la contraseña de la cuenta para que caduque, los usuarios podrían obtener un error de conexión si no se actualiza la contraseña para el origen de datos. Para obtener más información, consulte el artículo de puerta de enlace de datos principal local para obtener más información acerca de cómo [credenciales](powerbi-gateway-onprem.md#credentials) se almacenan.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings3-ssas.png)
 
-You can click <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> after you have everything filled in.  You can now use this data source for scheduled refresh, or live connections, against an Analysis Services instance that is on premises.  You will see <bpt id="p1">*</bpt>Connection Successful<ept id="p1">*</ept> if it succeeded.
+Puede hacer clic en **Agregar** después de que todo lo rellena dispone de.  Ahora puede usar este origen de datos para la actualización programada o live conexiones con una instancia de Analysis Services que sea local.  Verá *conexión correcta* Si se ha ejecutado correctamente.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings4.png)
 
 ### Configuración avanzada
 
-You can configure the privacy level for your data source. This controls how data can be mashed up. This is only used for scheduled refresh. It does not apply to live connections. [Obtener más información](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
+Puede configurar el nivel de privacidad para el origen de datos. Controla cómo se pueden puré los datos de. Sólo se utiliza para la actualización programada. No se aplica a las conexiones de live. [Obtener más información](https://support.office.com/article/Privacy-levels-Power-Query-CC3EDE4D-359E-4B28-BC72-9BEE7900B540)
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings9.png)
 
-## 'Get Data' experience for Analysis Services in Power BI site
+## 'Obtener datos de' experiencia para Analysis Services en el sitio de Power BI
 
-A unique option for Analysis Services is to use Get Data within the Power BI service directly. You can connect to a live Analysis Services data source that is configured within the gateway without needing Power BI Desktop. Your account needs to be listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab for the data source, under the gateway, for it to show up in the list. To connect to the data source, you can do the following.
+Una única opción para Analysis Services es usar la obtención de datos dentro del servicio Power BI directamente. Puede conectarse a un origen de datos de Analysis Services en directo que se configura en la puerta de enlace sin necesidad de Power BI Desktop. La cuenta debe aparecer en el **usuarios** ficha del origen de datos, en la puerta de enlace para que se muestre en la lista. Para conectarse al origen de datos, puede hacer lo siguiente.
 
-1. Within the Power BI service, select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>.
+1. Dentro del servicio Power BI, seleccione **obtener datos**.
 
-2. Select <bpt id="p1">**</bpt>Databases<ept id="p1">**</ept>.
+2. Seleccione **bases de datos**.
 
-3. Select <bpt id="p1">**</bpt>SQL Server Analysis Services<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.
+3. Seleccione **SQL Server Analysis Services** > **Conectar**.
 
-4. Select a data source from the list. Any Analysis Services data source that you have access to will be listed here.
+4. Seleccione un origen de datos de la lista. Cualquier origen de datos de Analysis Services que tienen acceso a aparecerá aquí.
 
-5. Select the model that you want to connect to. Then select <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>.
+5. Seleccione el modelo que desea conectarse. A continuación, seleccione **Conectar**.
 
-You will see a dataset show up with the name of the server. You can then select that dataset and begin to create reports on it. This will be working against live data.
+Verá un conjunto de datos aparecen con el nombre del servidor. A continuación, puede seleccionar ese conjunto de datos y empezar a crear informes en él. Esto funcionará respecto a datos activos.
 
-## Usernames with Analysis Services
+## Nombres de usuario con Analysis Services
 
-Each time a user interacts with a report connected to Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The email address, that you sign into Power BI with, is what we will pass to Analysis Services as the effective user. This is passed in the connection property <bpt id="p1">[</bpt>EffectiveUserName<ept id="p1">](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth)</ept>. This email address should match a defined UPN within the local Active Directory Domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role. If a match cannot be found, in Active Directory, the login will not be successful. [Obtener más información](https://msdn.microsoft.com/library/ms677605.aspx)
+Cada vez que un usuario interactúa con un informe conectado a Analysis Services, el nombre de usuario efectivo se pasa a la puerta de enlace y, a continuación, en el servidor de Analysis Services local. La dirección de correo electrónico, iniciar sesión en Power BI, es lo que se pasará a Analysis Services como el usuario efectivo. Se pasa la propiedad de conexión [EffectiveUserName](https://msdn.microsoft.com/library/dn140245.aspx#bkmk_auth). Esta dirección de correo electrónico debe coincidir con un UPN definido en el dominio de Active Directory local. El UPN es una propiedad de una cuenta de Active Directory. A continuación, esa cuenta de Windows debe estar presente en una función de Analysis Services. Si no se encuentra una coincidencia en Active Directory, el inicio de sesión no será correcta. [Obtener más información](https://msdn.microsoft.com/library/ms677605.aspx)
 
-You can also map your Power BI sign in name with a local directory UPN. [Obtener más información](powerbi-gateway-enterprise-manage-ssas.md#map-user-names)
+También puede asignar su nombre con un UPN de directorio local de inicio de sesión de Power BI. [Obtener más información](powerbi-gateway-enterprise-manage-ssas.md#map-user-names)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qb5EEjkHoLg" frameborder="0" allowfullscreen></iframe>
 
-### How do I tell what my UPN is?
+### ¿Cómo se puede saber qué es mi UPN?
 
-You may not know what your UPN is, and you may not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
+Puede que no sepa qué es el UPN y puede que no sea un administrador de dominio. Puede utilizar el siguiente comando desde la estación de trabajo para averiguar el UPN de la cuenta.
 
     whoami /upn
 
-The result will look similar to an email address, but this is the UPN that is on your domain account. If you are using an Analysis Services data source for live connections, and If this doesn't match the email address you sign into Power BI with, you may want to look at how to <bpt id="p1">[</bpt>Map user names<ept id="p1">](#map-user-names)</ept>.
+El resultado tendrá un aspecto similar a una dirección de correo electrónico, pero esto es el UPN de la cuenta de dominio. Si está utilizando un origen de datos de Analysis Services para las conexiones en directo y si esto no coincide con la dirección de correo electrónico que inicie sesión en Power BI con, puede mirar cómo [asignar nombres de usuario](#map-user-names).
 
-## Map user names
+## Asignar nombres de usuario
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eATPS-c7YRU" frameborder="0" allowfullscreen></iframe>
 
-For Analysis Services data sources, you can configure custom User Principal Name (UPN) rules. This will help you if your Power BI service login names do not match your local directory UPN. For example, if you sign into Power BI with john@contoso.com, but your local directory UPN is john@contoso.local, you can configure a mapping rule to have john@contoso.local passed to Analysis Services.
+Para orígenes de datos de Analysis Services, puede configurar reglas personalizadas de nombre Principal de usuario (UPN). Esto le ayudará si los nombres de inicio de sesión del servicio de Power BI no coinciden con su directorio local UPN. Por ejemplo, si inicia sesión en Power BI mediante john@contoso.com, pero su directorio local UPN es john@contoso.local, puede configurar una regla de asignación para que john@contoso.local pasa a Analysis Services.
 
-To get to the UPN Mapping screen, do the following.
+Para llegar a la pantalla de asignación de UPN, haga lo siguiente.
 
-1. Go to the <bpt id="p1">**</bpt>gear icon<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>Manage Gateways<ept id="p2">**</ept>.
+1. Vaya a la **icono de engranaje** y seleccione **Administrar puertas de enlace**.
 
-2. Expand the gateway that contains the Analysis Services data source. Of, if you haven't created the Analysis Services data source, you can do that at this point.
+2. Expanda la puerta de enlace que contiene el origen de datos de Analysis Services. Si no ha creado el origen de datos de Analysis Services, puede hacerlo en este momento.
 
-3. Select the data source and then select the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab.
+3. Seleccione el origen de datos y, a continuación, seleccione la **usuarios** ficha.
 
-4. Select <bpt id="p1">**</bpt>Map user names<ept id="p1">**</ept>.
+4. Seleccione **asignar nombres de usuario**.
 
     ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names.png)
     
-You will then see options to add rules as well as test for a given user.
+A continuación, verá opciones para agregar reglas, así como de prueba para un usuario determinado.
 
-> [AZURE.NOTE] You may inadvertantly change a user that you didn't intend to. For example, if your <bpt id="p1">**</bpt>Replace (original value)<ept id="p1">**</ept> is <bpt id="p2">*</bpt>@contoso.com<ept id="p2">*</ept> and your <bpt id="p3">**</bpt>With (New name)<ept id="p3">**</ept> is <bpt id="p4">*</bpt>@contoso.local<ept id="p4">*</ept>, all users with a sign in that contains <bpt id="p5">*</bpt>@contoso.com<ept id="p5">*</ept> will then be replaced with <bpt id="p6">*</bpt>@contoso.local<ept id="p6">*</ept>. Also, if your <bpt id="p1">**</bpt>Replace (Original name)<ept id="p1">**</ept> is <bpt id="p2">*</bpt>dave@contoso.com<ept id="p2">*</ept> and your <bpt id="p3">**</bpt>With (New name)<ept id="p3">**</ept> is <bpt id="p4">*</bpt>dave@contoso.local<ept id="p4">*</ept>, a user with the sign in of v-dave@contoso.com would be sent as v-dave<bpt id="p5">*</bpt>@contoso.local<ept id="p5">*</ept>.
+> [AZURE.NOTE] Es posible cambiar involuntariamente un usuario que no era su intención. Por ejemplo, si su **Reemplazar (valor original)** es *@contoso.com* y su **con (nombre)** es *@contoso.local*, todos los usuarios con un inicio de sesión que contiene *@contoso.com* se reemplazará con *@contoso.local*. Además, si su **Reemplazar (nombre Original)** es *dave@contoso.com* y su **con (nombre)** es *dave@contoso.local*, un usuario con el inicio de sesión de v-dave@contoso.com se enviaría como v dave*@contoso.local*.
 
-Currently you can only supply rules for <bpt id="p1">**</bpt>Effective user names<ept id="p1">**</ept>.
+Actualmente solo se pueden proporcionar reglas para **los nombres de usuario efectivo**.
 
-### Working with mapping rules
+### Trabajar con reglas de asignación
 
-To create a mapping rule, enter a value for <bpt id="p1">**</bpt>Original name<ept id="p1">**</ept> and <bpt id="p2">**</bpt>New Name<ept id="p2">**</ept> and then select <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.
+Para crear una regla de asignación, escriba un valor para **nombre Original** y **nuevo nombre** y, a continuación, seleccione **Agregar**.
 
 |Campo|Descripción
 |---|---|
-|Replace (Orignal name)|The email address that you signed into Power BI with.|
-|With (New Name)|The value you want to replace it with. The result of the replacement is what will be passed to the <bpt id="p1">*</bpt>EffectiveUserName<ept id="p1">*</ept> property for the Analysis Services connection.|
+|Replace (nombre originales)|La dirección de correo electrónico que ha iniciado sesión en Power BI con.|
+|(Nuevo nombre)|El valor que desea reemplazarlo. El resultado de la sustitución es lo que se pasará a la *EffectiveUserName* propiedad para la conexión de Analysis Services.|
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-effective-user-names.png)
 
-When you select an item in the list, you can choose to re-order it by using the <bpt id="p1">**</bpt>chevron icons<ept id="p1">**</ept>, or <bpt id="p2">**</bpt>Delete<ept id="p2">**</ept> the entry.
+Cuando se selecciona un elemento en la lista, puede reordenar utilizando la **iconos de angular**, o **Eliminar** la entrada.
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-map-user-names-entry-selected.png)
 
-### Using Wildcard(*)
+### Uso de Wildcard(*)
 
-You can use a wildcard for your <bpt id="p1">**</bpt>Replace (Original name)<ept id="p1">**</ept> string. It can only be used on its own and not with any other string part. This will allow you to take all users and pass a single value to the data source. This is useful when you want all users in your organization to use the same user in your local environment.
+Puede utilizar un carácter comodín para su **Reemplazar (nombre Original)** cadena. Sólo puede utilizarse por sí mismo y no con cualquier otra parte de la cadena. Esto le permitirá tomar todos los usuarios y pasar un valor único para el origen de datos. Esto es útil si desea que todos los usuarios de su organización para usar el mismo usuario en su entorno local.
 
-### Test a mapping rule
+### Probar una regla de asignación
 
-You can validate what an original name will be replaced with by entering a value for <bpt id="p1">**</bpt>Original name<ept id="p1">**</ept> and selecting <bpt id="p2">**</bpt>Test rule<ept id="p2">**</ept>.
+Puede validar un nombre original que se reemplazará con especificando un valor para **nombre Original** y seleccionando **Probar regla**.
 
 ![](media/powerbi-gateway-enterprise-manage/gateway-enterprise-test-mapping-rule.png)
 
-> [AZURE.NOTE] Rules that are saved will take a few minutes for the service to start using them. Within the browser, the rule will work immediately.
+> [AZURE.NOTE] Las reglas que se guardan tardará unos minutos para el servicio de comenzar a usarlos. En el explorador, la regla funcionará inmediatamente.
 
-### Limitations for mapping rules
+### Limitaciones de las reglas de asignación
 
-- Mapping is for the specific data source that is being configured. It is not a global settings. If you have multiple Analysis Services data sources, you will have to map the users for each data source.
+- La asignación es para el origen de datos específico que se está configurando. No es una configuración global. Si tiene varios orígenes de datos de Analysis Services, tendrá que asignar los usuarios para cada origen de datos.
 
-## Remove a data source
+## Quitar un origen de datos
 
-Removing a data source will break any dashboards or reports that rely on the given data source.  
+Quitar un origen de datos se interrumpen cualquier paneles o informes que se basan en el origen de datos determinado.  
 
-To remove a Data Source, go to the Data Source &gt; <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.
+Para quitar un origen de datos, vaya al origen de datos > **quitar**.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings6.png)
 
-## Manage administrators
+## Administrar administradores
 
-On the Administrators tab, for the gateway, you can add, and remove, users that can administer the gateway. You can only add users at this time. Security groups cannot be added.
+En la ficha de administradores, la puerta de enlace, puede agregar y quitar usuarios que pueden administrar la puerta de enlace. Sólo puede agregar usuarios en este momento. No se puede agregar grupos de seguridad.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings8.png)
 
 ## Administrar usuarios
 
-On the Users tab, for the data source, you can add, and remove, users, or security groups, that can use this data source.
+En la pestaña usuarios, el origen de datos, puede agregar y quitar usuarios o grupos de seguridad, que pueden usar este origen de datos.
 
-> [AZURE.NOTE] The users list only controls who are allowed to publish reports. The report owners can create dashboards, or content packs, and share those with other users.
+> [AZURE.NOTE] Sólo los controles que tienen permiso para publicar informes de lista de los usuarios. Los propietarios de informes pueden crear paneles o paquetes de contenido y compartir con otros usuarios.
 
 ![](media/powerbi-gateway-enterprise-manage/datasourcesettings5.png)
 
-## Using the data source
+## Usar el origen de datos
 
-After you have created the data source, it will be available to use with either live connections, or through scheduled refresh. 
+Después de haber creado el origen de datos, estará disponible para usarse con cualquier conexiones en directo o a través de la actualización programada. 
 
-> [AZURE.NOTE] Server and database name have to match between Power BI Desktop and the data source within the on-premises data gateway!
+> [AZURE.NOTE] Servidor y el nombre de la base de datos deben coincidir entre Power BI Desktop y el origen de datos dentro de la puerta de enlace de datos local.
 
-The link between your dataset and the data source within the gateway is based on your server name and database name. These have to match. For example, if you supply an IP Address for the server name, within Power BI Desktop, you will need to use the IP Address for the data source within the gateway configuration. If you use <bpt id="p1">*</bpt>SERVER\INSTANCE<ept id="p1">*</ept>, in Power BI Desktop, you will need to use the same within the data source configured for the gateway.
+El vínculo entre el conjunto de datos y el origen de datos dentro de la puerta de enlace se basa en el nombre del servidor y el nombre de la base de datos. Estos tienen que coincidir. Por ejemplo, si proporciona una dirección IP para el nombre del servidor, en Power BI Desktop, debe utilizar la dirección IP del origen de datos dentro de la configuración de puerta de enlace. Si utiliza *servidor*, en Power BI Desktop, debe usar el mismo origen de datos configurado para la puerta de enlace.
 
-This is the case for both live connections and scheduled refresh.
+Este es el caso de conexiones activas y actualización programada.
 
-### Using the data source with live connections
+### Usar el origen de datos con conexiones dinámicas
 
-You will need to make sure the server and database name matches between Power BI Desktop and the configured data source for the gateway. You will also need to make sure your user is listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source in order to publish live connection datasets. The selection, for live connections, occurs within Power BI Desktop when you first import data.
+Debe asegurarse de que las coincidencias de nombre servidor y base de datos entre Power BI Desktop y el origen de datos configurado para la puerta de enlace. También necesitará asegurarse de que el usuario aparece en el **usuarios** ficha del origen de datos para poder publicar los conjuntos de datos de la conexión activa. La selección de las conexiones activas, se produce dentro de Power BI Desktop al importar datos en primer lugar.
 
-After you publish, either from Power BI Desktop or <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>, your reports should start working. It may take several minutes, after creating the data source within the gateway, for the connection to be usable.
+Después de publicar, desde Power BI Desktop o **obtener datos**, los informes deben empezar a trabajar. Puede tardar varios minutos, después de crear el origen de datos dentro de la puerta de enlace para la conexión ser utilizable.
 
-### Using the data source with scheduled refresh
+### Usar el origen de datos con la actualización programada
 
-If you are listed in the <bpt id="p1">**</bpt>Users<ept id="p1">**</ept> tab of the data source configured within the gateway, and the server and database name match, you will see the gateway as an option to use with scheduled refresh.
+Si se enumeran en el **usuarios** ficha del origen de datos configurado dentro de la puerta de enlace y la coincidencia de nombre de servidor y base de datos, verá la puerta de enlace como una opción para usar con la actualización programada.
 
 ![](media/powerbi-gateway-enterprise-manage/powerbi-gateway-enterprise-schedule-refresh.png)
 
 ## Véase también
 
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-[On-premises Data Gateway - in-depth](powerbi-gateway-onprem-indepth.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Puerta de enlace de datos local](powerbi-gateway-onprem.md)  
+[Puerta de enlace de datos - profundidad local](powerbi-gateway-onprem-indepth.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

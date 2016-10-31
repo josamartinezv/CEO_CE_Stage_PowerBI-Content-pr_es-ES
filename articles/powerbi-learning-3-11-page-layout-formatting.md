@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Page Layout and Formatting"
-   description="Display your reports and dashboards how you want them"
+   pageTitle="Diseño de página y el formato"
+   description="Mostrar los informes y paneles cómo desea"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,20 +23,20 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Style Your Reports With page layout and formatting
+# Los informes con el diseño de página y el formato de estilo
 
-Power BI Desktop gives you the ability to control the layout and formatting of your report pages, such as size and orientation.
+Power BI Desktop proporciona la capacidad de controlar el diseño y el formato de las páginas del informe, como el tamaño y orientación.
 
-Use the <bpt id="p1">**</bpt>Page View<ept id="p1">**</ept> menu from the Home tab to change the way your report pages scale. The available options include <bpt id="p1">**</bpt>Fit To Page<ept id="p1">**</ept> (default), <bpt id="p2">**</bpt>Fit To Width<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Actual Size<ept id="p3">**</ept>.
+Utilice la **Vista página** menú desde la ficha Inicio para cambiar la forma en la escala de páginas del informe. Las opciones disponibles incluyen **Ajustar a la página** (valor predeterminado), **Ajustar a ancho**, y **tamaño real**.
 
 ![](media/powerbi-learning-3-11-page-layout-formatting/3-11_1.png)
 
-You can also change the pages size itself. By default, report pages are 16:9. To change the page size, make sure no visuals are selected, then select the paintbrush icon in the Visualizations pane, then select <bpt id="p1">**</bpt>Page Size<ept id="p1">**</ept> to expand that section.
+También puede cambiar el tamaño de páginas por sí mismo. De forma predeterminada, las páginas de informe son 16:9. Para cambiar el tamaño de página, asegúrese de que no hay elementos visuales están seleccionados, a continuación, seleccione el icono de pincel en el panel de visualizaciones y, a continuación, seleccione **tamaño de página** para expandir esa sección.
 
 ![](media/powerbi-learning-3-11-page-layout-formatting/3-11_2.png)
 
-Options for page size include 4x3 (more square aspect ratio), and Dynamic (the page will stretch to fill the available space). There's a standard letter size for reports as well. Keep in mind that you may need to resize your visuals after changing the page size to ensure that they're completely on the canvas.
+Opciones de tamaño de página incluyen 4 x 3 (relación de aspecto cuadrado más) y dinámico (la página se estirará para rellenar el espacio disponible). Hay un tamaño de carta estándar para los informes también. Tenga en cuenta que puede que necesite cambiar el tamaño de los objetos visuales después de cambiar el tamaño de página para asegurarse de que está completamente en el lienzo.
 
-You can also specify a custom page size, setting the size by inches or pixels, and change the background color of the entire report.
+También puede especificar un tamaño de página personalizado, establecer el tamaño en pulgadas o en píxeles y cambiar el color de fondo de todo el informe.
 
-Another option is to select Cortana, which sizes the report so that it can be used as a result for searches using Cortana.
+Otra opción consiste en Seleccionar Cortana, que cambia el tamaño del informe para que pueda usarse como resultado de búsquedas con Cortana.

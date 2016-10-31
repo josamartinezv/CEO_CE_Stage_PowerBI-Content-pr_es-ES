@@ -1,6 +1,6 @@
 <properties
-   pageTitle="What's new in the latest Power BI Desktop update?"
-   description="What's new in the latest Power BI Desktop update?"
+   pageTitle="Novedades en la última actualización de Power BI Desktop"
+   description="Novedades en la última actualización de Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,82 +19,86 @@
    ms.workload="powerbi"
    ms.date="09/30/2016"
    ms.author="davidi"/>
-# What's new in the latest Power BI Desktop update?
+# Novedades en la última actualización de Power BI Desktop
 
-## September 2016 Update (2.39.4526.362)
+## Actualización de septiembre de 2016 (2.39.4526.362)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Ahora puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-September cultivated another crop of new features for Power BI Desktop. With this month's updates, we're continuing to add links beside new updates:
+Septiembre cultivados recortar otra de las nuevas características de Power BI Desktop. Con las actualizaciones de este mes, seguimos trabajando para agregar vínculos al lado de las nuevas actualizaciones:
 
--   <bpt id="p1">**</bpt>[video]<ept id="p1">**</ept> excerpts play in a new browser tab, when the feature is being discussed.
--   Some features have an <bpt id="p1">**</bpt>[article]<ept id="p1">**</ept> that provides more detail.
--   Most features are explained in the monthly update <bpt id="p1">**</bpt>[blog]<ept id="p1">**</ept> post.
--   Lastly, some features are self-explanatory and don't need and article or video.
+-   
+            **[vídeo]** extractos de reproducción en una nueva pestaña de explorador, cuando se trata la característica.
+-   Algunas características tienen una **[artículo]** que proporciona más detalles.
+-   Mayoría de las características se explica en la actualización mensual **[blog]** registrar.
+-   Por último, algunas características no necesitan explicación y no necesite y artículo o vídeo.
 
-You can also watch the <bpt id="p1">**</bpt>Latest Updates<ept id="p1">**</ept> video from the beginning, right inside this article, by clicking on the <bpt id="p2">**</bpt>play<ept id="p2">**</ept> icon on the video image found below the list of updates.
+También puede ver el **últimas actualizaciones** vídeo desde el principio, dentro de este artículo, haciendo clic en la **Reproducir** situado en la imagen de vídeo que se encuentra debajo de la lista de actualizaciones.
 
-The following updates are new to Power BI Desktop this month:
+Las actualizaciones siguientes son nuevas para Power BI Desktop este mes:
 
-### Report View:
+### Vista de informe:
 
--   ArcGIS Maps for Power BI (Preview) <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=2m8s)</ept>
--   Mobile report layout (Preview) <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>  <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=3m59s)</ept>
--   Updated drill behavior <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-inline-hierarchy-labels.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/pcUr6E8g_KI?t=5m6s)</ept>
+-   Mapas de ArcGIS para Power BI (vista previa) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[vídeo]](https://youtu.be/pcUr6E8g_KI?t=2m8s)
+-   Diseño del informe móvil (vista previa) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)[[vídeo]](https://youtu.be/pcUr6E8g_KI?t=3m59s)
+-   Actualiza el comportamiento de obtención de detalles [[artículo]](powerbi-desktop-inline-hierarchy-labels.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[vídeo]](https://youtu.be/pcUr6E8g_KI?t=5m6s)
 
 
 ### Análisis
 
--   Forecasting (Preview) <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-analytics-pane.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/pcUr6E8g_KI?t=6m6s)</ept>
--   Use your own R IDE <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=6m56s)</ept>
+-   Pronóstico (vista previa) [[artículo]](powerbi-desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[vídeo]](https://youtu.be/pcUr6E8g_KI?t=6m6s)
+-   Utilice su propio IDE R [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[vídeo]](https://youtu.be/pcUr6E8g_KI?t=6m56s)
 
 
-### Data Connectors:
+### Conectores de datos:
 
--   New data connectors:
-    -   Snowflake connector DirectQuery support <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
-    -   ProjectPlace connector <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-connect-impala.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Improvements to existing connectors:
-    -   Oracle connector - improved Navigator previews performance <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
-    -   OData connector - support for <bpt id="p1">*</bpt>Select Related Tables<ept id="p1">*</ept> option <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
-    -   SAP Business Warehouse and SAP HANA connectors - enhancements to parameter input interface <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-sap-bw-connector.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
-    -   Web connector - support for specifying HTTP request headers within the dialog <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=8m5s)</ept>
+-   Nuevos conectores de datos:
+    -   Conector de copo de nieve DirectQuery soporte [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+    -   Conector de ProjectPlace [[artículo]](powerbi-desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Mejoras en los conectores existentes:
+    -   Conector de Oracle: rendimiento de vistas previas navegador mejorada [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+    -   Conector de OData - compatibilidad con *Seleccionar tablas relacionadas* opción [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+    -   Conectores SAP Business Warehouse y SAP HANA - mejoras al parámetro de entrada interfaz [[artículo]](powerbi-desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+    -   Conector de Web: compatibilidad para especificar encabezados de solicitud HTTP en el cuadro de diálogo [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[vídeo]](https://youtu.be/pcUr6E8g_KI?t=8m5s)
 
 
-### Query Editor improvements:
+### Mejoras del Editor de consultas:
 
--   Query Dependencies view <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/pcUr6E8g_KI?t=8m37s)</ept>
--   Show Errors experience <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Query Editor ribbon support for scalar values <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Add function invocation column <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Expand &amp; Aggregate columns - support for <bpt id="p1">*</bpt>Load More<ept id="p1">*</ept> values <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   New transform - convert Table Column to a list <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
--   Keyboarding - support for <bpt id="p1">*</bpt>smart typing<ept id="p1">*</ept> in drop-down menus <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>
+-   Vista de las dependencias de la consulta [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[vídeo]](https://youtu.be/pcUr6E8g_KI?t=8m37s)
+-   Mostrar errores experiencia [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Compatibilidad con la cinta de Editor de consultas de valores escalares [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Agregar columna de invocación de función [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Expandir & columnas de agregado: compatibilidad para *más carga* valores [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Nueva transformación: convertir la columna de tabla a una lista [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
+-   Teclado - compatibilidad con *inteligente escribiendo* en los menús desplegables [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)
 
 
 ### Otras mejoras
 
--   In-product links to the <bpt id="p1">**</bpt>Power BI Community<ept id="p1">**</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept> <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/0VvG7Eqoke8?t=16m9s)</ept>
+-   En el producto se vincula a la **Comunidad de Power BI** [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=16m9s)
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>NOTA: También puede [desproteger todos los orígenes de datos disponibles para Power BI Desktop](powerbi-desktop-data-sources.md); nuestra lista siempre está creciendo, por lo que consúltela con frecuencia.
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/)</ept>, where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-september-feature-summary/), donde puede obtener información más detallada sobre cada una de estas nuevas características (este es el mismo blog post referencias en la lista anterior).
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pcUr6E8g_KI" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>NOTA: También se interesa [Novedades en el servicio Power BI](powerbi-service-whats-new.md), y consulte también [Novedades en las aplicaciones móviles para Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
-## More videos
+## Más vídeos
 
-Like learning about Power BI through videos and other engaging content? Check out the following collection of video sources and content.
+¿Como el aprendizaje acerca de Power BI a través de vídeos y otros contenidos atractivas? Consulte la siguiente colección de orígenes de vídeo y contenido.
 
--   <bpt id="p1">[</bpt>Power BI channel<ept id="p1">](https://www.youtube.com/user/mspowerbi)</ept> - Power BI on YouTube
--   <bpt id="p1">[</bpt>Guy in a Cube channel<ept id="p1">](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w)</ept> - fresh videos on Power BI features and capabilities
--   <bpt id="p1">[</bpt>Guided Learning for Power BI<ept id="p1">](https://powerbi.microsoft.com/guided-learning/)</ept> - a sequential learning tour of Power BI, in bite-size pieces
+-   
+            [Canal de Power BI](https://www.youtube.com/user/mspowerbi) -Power BI en YouTube
+-   
+            [Guy en un canal de cubo](https://www.youtube.com/channel/UCFp1vaKzpfvoGai0vE5VJ0w) -vídeos frescas en Power BI características y capacidades
+-   
+            [Guiada de aprendizaje para Power BI](https://powerbi.microsoft.com/guided-learning/) - a secuencial paseo de Power BI, en unidades de tamaño pequeño de aprendizaje
 
-## Previous months' updates
+## Actualizaciones de meses anteriores
 
-Looking for previous months' updates? You can find them in the <bpt id="p1">[</bpt>Power BI Desktop Monthly Updates archive<ept id="p1">](powerbi-desktop-latest-update-archive.md)</ept> article.
+¿Buscando actualizaciones de meses anteriores? Puede encontrarlos en el [archivar las actualizaciones mensuales de Power BI Desktop](powerbi-desktop-latest-update-archive.md) artículo.

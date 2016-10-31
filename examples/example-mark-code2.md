@@ -1,13 +1,13 @@
-<properties pageTitle="Documentation Example - Mark code" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Inline code" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación: marcar código" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Inline code" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Mark Code #
+# Ejemplo: marcar código #
 
-This sample has been taken from http://www.asp.net/mvc/tutorials/mvc-5/introduction/adding-a-view to show how to add mark tags inside a snippet
+En este ejemplo se ha tomado de http://www.asp.net/mvc/tutorials/mvc-5/introduction/adding-a-view para mostrar cómo agregar etiquetas de marca dentro de un fragmento de código
 
 ---
 ...
 
-When we first created the Views\HelloWorld\Index.cshtml file, it contained the following code:
+Cuando se creó el archivo Views\HelloWorld\Index.cshtml, incluye el código siguiente:
 
 ````
 @{
@@ -15,7 +15,7 @@ When we first created the Views\HelloWorld\Index.cshtml file, it contained the f
 }
 ````
     
-The Razor code above is explicted setting the layout page. Examine the Views<ph id="ph1">\_</ph>ViewStart.cshtml file, it contains the exact same Razor markup. TheViews<ph id="ph1">\_</ph>ViewStart.cshtml file defines the common layout that all views will use, therefore you can comment out or remove that code from the  Views\HelloWorld\Index.cshtml file.
+El código Razor anterior es explicted establecer la página de diseño. Examinar las vistas\_archivo ViewStart.cshtml, que contiene el mismo marcado exacto de Razor. TheViews\_ViewStart.cshtml archivo define el diseño común que usan todas las vistas, por lo tanto, puede comentar o elimine ese código desde el archivo Views\HelloWorld\Index.cshtml.
 
 ````
 <mark>@*@{
@@ -31,11 +31,11 @@ The Razor code above is explicted setting the layout page. Examine the Views<ph 
 <p>Hello from our View Template!</p>
 ````
 
-You can use the Layout property to set a different layout view, or set it to null so no layout file will be used.
+Se puede utilizar la propiedad de diseño para establecer la vista de diseño diferente o se establece en null de modo que no se usará ningún archivo de diseño.
 
-Now, let's change the title of the Index view.
+Ahora, vamos a cambiar el título de la vista de índice.
 
-Open MvcMovie\Views\HelloWorld\Index.cshtml. There are two places to make a change: first, the text that appears in the title of the browser, and then in the secondary header (the <ph id="ph1">&amp;lt;</ph>h2<ph id="ph2">&amp;gt;</ph> element). You'll make them slightly different so you can see which bit of code changes which part of the app.
+Abra MvcMovie\Views\HelloWorld\Index.cshtml. Hay dos lugares para realizar un cambio: en primer lugar, el texto que aparece en el título del explorador y, a continuación, en el encabezado secundario (el &lt;h2&gt; elemento). Hará que ligeramente diferente para que pueda ver qué parte de código cambia qué parte de la aplicación.
 
 ````
 @{
@@ -47,7 +47,7 @@ Open MvcMovie\Views\HelloWorld\Index.cshtml. There are two places to make a chan
 <p>Hello from our View Template!</p>
 ````
 
-To indicate the HTML title to display, the code above sets a Title property of the ViewBag object (which is in the Index.cshtml view template). Notice that the layout template  ( Views\Shared<ph id="ph1">\_</ph>Layout.cshtml ) uses this value in the <ph id="ph2">&amp;lt;</ph>title<ph id="ph3">&amp;gt;</ph> element as part of the <ph id="ph4">&amp;lt;</ph>head<ph id="ph5">&amp;gt;</ph> section of the HTML that we modified previously.
+Para indicar el título HTML para mostrar, el código anterior establece una propiedad Title del objeto ViewBag (que se encuentra en la plantilla de vista de Index.cshtml). Observe que la plantilla de diseño (Views\Shared\_Layout.cshtml) usa este valor en el &lt;título&gt; elemento como parte de la &lt;head&gt; sección del código HTML que hemos modificado anteriormente.
 
 ````
 <!DOCTYPE html>
@@ -61,11 +61,11 @@ To indicate the HTML title to display, the code above sets a Title property of t
 </head>
 ````
 
-Using this ViewBag approach, you can easily pass other parameters between your view template and your layout file.
+Con este enfoque ViewBag, puede pasar fácilmente otros parámetros entre la plantilla de vista y el archivo de diseño.
 
-Ejecute la aplicación. Notice that the browser title, the primary heading, and the secondary headings have changed. (If you don't see changes in the browser, you might be viewing cached content.  
+Ejecute la aplicación. Observe que el título del explorador, el encabezado principal y los títulos secundarios han cambiado. (Si no ve los cambios en el explorador, puede que esté viendo contenido almacenado en caché. Presione CTRL+F5 en el explorador para forzar la respuesta del servidor al que se va a cargar.) El título del explorador se crea con el ViewBag.Title se establece en la plantilla de vista de Index.cshtml y adicionales "-aplicación de película" agregado en el archivo de diseño.
 
-Also notice how the content in the Index.cshtml view template was merged with the _Layout.cshtml view template and a single HTML response was sent to the browser. Layout templates make it really easy to make changes that apply across all of the pages in your application.
+Observe también que el contenido de la plantilla de vista de Index.cshtml se combinó con la plantilla de vista _Layout.cshtml y una sola respuesta HTML se envía al explorador. Plantillas de diseño facilitan realmente realizar cambios que se aplicarán a todas las páginas de la aplicación.
 
 ...
 

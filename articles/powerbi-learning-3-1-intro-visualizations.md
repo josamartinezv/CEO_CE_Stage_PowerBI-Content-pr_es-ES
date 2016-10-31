@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Introduction to Visuals in Power BI"
-   description="Visuals are at the heart of Power BI"
+   pageTitle="Introducción a los elementos visuales en Power BI"
+   description="Elementos visuales están en el centro de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,22 +23,22 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Visualizations
+# Visualizaciones
 
-Welcome to the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Guided Learning<ept id="p2">**</ept> course for Power BI. Get ready for a fun, interesting, and enlightening tour of the many, many visualizations Power BI has to offer. And this isn't all of them - there are more visualizations coming all the time!
+Bienvenido a la **visualizaciones** sección de la **aprendizaje guiado** curso para Power BI. Prepárese para un divertido, interesante y guiar el recorrido de las visualizaciones de muchos que Power BI tiene que ofrecer. Y esto no todas ellas: hay más visualizaciones procedentes de todo el tiempo.
 
 ![](media/powerbi-learning-3-1-intro-visualizations/3-1_1.png)
 
-Of course, visuals are the end-result of any business intelligence undertaking... we want to take data, present it in a compelling and insightful way, and <bpt id="p1">*</bpt>show<ept id="p1">*</ept> what stands out. And Power BI has all sorts of compelling visuals - and a nearly limitless way to customize them - so this is an important section!
+Por supuesto, son el resultado final de cualquier empresa... que deseamos obtener datos, presentar de manera atractiva y revelador de business intelligence y *Mostrar* lo que destaque. Y Power BI tiene todo tipo de aspecto atractivo - y una forma casi ilimitada para personalizarlos: se trata de una importante sección!
 
-It might seem like there are lots of topics in this section, but don't worry: each topic is short, filled with (you guessed it) visuals, and easy to absorb. You'll likely find yourself cruising through this section, and imagining how you'll make these visuals present your own data.
+Puede parecer que hay una gran cantidad de temas de esta sección, pero no se preocupe: cada tema es breve, rellenada con efectos visuales (usted acertó) y fácil de absorber. Probablemente encontrará usted mismo desplazándose a través de esta sección y pensar en cómo realizará estos objetos visuales presentar sus propios datos.
 
-We'll start with the mainstays of visualizations - the simple visuals we're all familiar with - and make sure you know the ins and outs. Then we'll get more advanced, or at least a little less common, and fill up your report-creating toolbox.
+Comenzaremos con los principales pilares de visualizaciones - los simples elementos visuales que estamos familiarizados con - saber y asegúrese de que conoce las ventajas y desventajas. A continuación, crearemos obtener más avanzados, o al menos un poco menos común y, llenar su cuadro de herramientas de creación de informes.
 
-Have fun - there's a lot to learn here!
+Diviértase: no hay mucho que aprender aquí.
 
-## Introduction to Visuals in Power BI
+## Introducción a los elementos visuales en Power BI
 
-Visualizing data is one of the core parts of Power BI - a basic building block as we defined it earlier in this course - and creating visuals is the easiest way to find and share your insights.
+Visualización de los datos es una de las partes principales de Power BI: un bloque de creación básico que definimos anteriormente en este curso - y crear elementos visuales es la manera más fácil de encontrar y compartir la información.
 
-Power BI has a whole range of visualizations available by default, from simple bar charts to pie charts to maps, and even more esoteric offerings like waterfalls, funnels, gauges, and more. Power BI Desktop also offers extensive page formatting tools, such as shapes and images, that help bring your report to life.
+Power BI tiene toda una gama de visualizaciones disponibles de forma predeterminada, de los gráficos de barras simples a los gráficos circulares mapas y incluso más esotéricas ofertas como cascadas, chimeneas, medidores y mucho más. Power BI Desktop también ofrece una amplia formato herramientas como formas e imágenes, que ayudan a que el informe de vida de la página.

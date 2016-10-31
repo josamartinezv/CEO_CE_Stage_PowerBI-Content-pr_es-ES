@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Load a Power BI report into an IFrame"
-   description="Walkthrough to Integrate a report into an app - Load a report into an IFrame"
+   pageTitle="Cargar un informe de Power BI en un IFrame"
+   description="Tutorial para integrar un informe en una aplicación - cargar un informe en un IFrame"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,17 +20,17 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 3: Load a report into an IFrame
+# Paso 3: Cargar un informe en un IFrame
 
 ## Introducción
 
-In <bpt id="p1">**</bpt>step 2<ept id="p1">**</ept> of Integrate a report into an app, <bpt id="p2">[</bpt>Get a Power BI report<ept id="p2">](powerbi-developer-integrate-report-get-report.md)</ept>, you get a Power BI report. In this step, you load a report into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>.
+En **paso 2** de integración de un informe en una aplicación [obtener un informe de Power BI](powerbi-developer-integrate-report-get-report.md), obtendrá un informe de Power BI. En este paso, carga un informe en un **IFrame**.
 
 ![](media\powerbi-developer-integrate-report\integrate-report-load-report-iframe.png)
 
-To load a report into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>, you set the <bpt id="p2">**</bpt>src<ept id="p2">**</ept> attribute of an <bpt id="p3">**</bpt>IFrame<ept id="p3">**</ept> to the <bpt id="p4">**</bpt>embedUrl<ept id="p4">**</ept> property of a <bpt id="p5">**</bpt>report<ept id="p5">**</ept>, and create an <bpt id="p6">**</bpt>onload<ept id="p6">**</ept> handler to post a message with an <bpt id="p7">**</bpt>access token<ept id="p7">**</ept> to get access to the report visual. Below is JavaScript code to load a report into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>.
+Para cargar un informe en un **IFrame**, Establece el **src** atributo de un **IFrame** a la **embedUrl** propiedad de un **informe**, y crear un **onload** controlador para enviar un mensaje con un **token de acceso** para obtener acceso al informe visual. A continuación se muestra código JavaScript para cargar un informe en un **IFrame**.
 
-**Load a report into an IFrame**
+**Cargar un informe en un IFrame**
 
 ```
 //Configure IFrame for the report after you have an Access Token. See Default.aspx.cs to learn how to get an Access Token
@@ -66,18 +66,18 @@ function postActionLoadReport() {
 }
 ```
 
-If you downloaded and ran the <bpt id="p1">[</bpt>Integrate a report sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)</ept>, the sample will look similar to below.
+Si ha descargado y ejecutado el [integrar un informe de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app), el ejemplo tendrá un aspecto parecido al siguiente.
 
 ![](media\powerbi-developer-integrate-report\integrate-report-sample.png)
 
 ## Conclusión
-In this walkthrough you learned how to integrate a report into an app by getting a report, and then loading the report into an <bpt id="p1">**</bpt>IFrame<ept id="p1">**</ept>. You can download the complete <bpt id="p1">[</bpt>Integrate a report sample<ept id="p1">](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)</ept>  which shows all the parts working to embed a report into an ASP.NET web app. You can also view the complete <bpt id="p1">[</bpt>Integrate a report into an app code listing<ept id="p1">](powerbi-developer-integrate-report-code.md)</ept>.
+En este tutorial ha aprendido cómo integrar un informe en una aplicación mediante la obtención de un informe y, a continuación, cargar el informe en un **IFrame**. Puede descargar la completa [integrar un informe de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  que muestra todos los elementos de trabajo para incrustar un informe en una aplicación web ASP.NET. También puede ver la sección completa [integrar un informe en un listado de código de la aplicación](powerbi-developer-integrate-report-code.md).
 
 ## Consulte también
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)  
-[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
-[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)  
-[Get Reports operation](https://msdn.microsoft.com/library/mt634543.aspx)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Registrarse para Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrar un informe en un tutorial de la aplicación](powerbi-developer-integrate-report.md)  
+[Integrar un informe de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
+[Configurar la integración de un informe de ejemplo](powerbi-developer-integrate-report-register.md#configure-sample)  
+[Operación de informes de obtención de](https://msdn.microsoft.com/library/mt634543.aspx)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

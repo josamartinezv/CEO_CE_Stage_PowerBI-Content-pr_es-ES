@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a custom visual with the custom visual developer tools"
-   description="Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools."
+   pageTitle="Crear un objeto visual personalizado con las herramientas de desarrollo visual personalizado"
+   description="Elementos visuales personalizados permiten satisfacer las necesidades de los usuarios y coincide con el diseño de su aplicación. Obtenga información acerca de cómo crear un objeto visual personalizado para Power BI mediante las herramientas de desarrollo."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,31 +20,31 @@
    ms.date="09/23/2016"
    ms.author="asaxton"/>
 
-# Create a custom visual with the custom visual developer tools
+# Crear un objeto visual personalizado con las herramientas de desarrollo visual personalizado
 
-Custom visuals allow you to meet your users' needs and match your app's design. Learn how to create a custom visual for Power BI using the developer tools.
+Elementos visuales personalizados permiten satisfacer las necesidades de los usuarios y coincide con el diseño de su aplicación. Obtenga información acerca de cómo crear un objeto visual personalizado para Power BI mediante las herramientas de desarrollo.
 
-> [AZURE.NOTE] You can use this document to get up and running. For more in-depth information, see the reference information within the <bpt id="p1">[</bpt>Power BI Visuals git repo<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals)</ept>.
+> [AZURE.NOTE] Puede utilizar este documento para poner en funcionamiento. Para obtener información detallada, consulte la información de referencia dentro de la [repositorio de git de elementos visuales de BI energía](https://github.com/Microsoft/PowerBI-visuals).
 
 ## Requisitos
 
-- NodeJS 4.0+ Required (5.0 or later recommended) <bpt id="p1">[</bpt>Download NodeJS<ept id="p1">](https://nodejs.org)</ept>
+- NodeJS requiere 4.0 + (5.0 o posterior recomendado) [Descargar NodeJS](https://nodejs.org)
 
-## Install NodeJS and the Power BI tools
+## Instalar NodeJS y las herramientas de BI de energía
 
-In order to create a custom visual, you will need to install NodeJS. NodeJS is required to run the command line tools.
+Para crear un objeto visual personalizado, debe instalar NodeJS. NodeJS es necesario para ejecutar las herramientas de línea de comandos.
 
-1. Download and install <bpt id="p1">[</bpt>NodeJS<ept id="p1">](https://nodejs.org)</ept>. Version 4.0 or later is required but it is recommended to have 5.0 or later.
+1. Descargue e instale [NodeJS](https://nodejs.org). Se requiere la versión 4.0 o posterior, pero se recomienda tener 5.0 o posterior.
 
-2. Install the command line tools. Run the following command from a command prompt.
+2. Instale las herramientas de línea de comandos. Ejecute el siguiente comando desde un símbolo del sistema.
 
         npm install -g powerbi-visuals-tools
 
-3. You can confirm that the tools are installed by running the following command without any parameters.
+3. Puede confirmar que las herramientas se instalan al ejecutar el siguiente comando sin parámetros.
 
         pbiviz
 
-    You should see the help output.
+    Debería ver el resultado de la Ayuda.
 
     <pre><code>
          +syyso+/
@@ -68,123 +68,123 @@ In order to create a custom visual, you will need to install NodeJS. NodeJS is r
 
        PowerBI Custom Visual Tool
 
-    Usage: pbiviz [options] [command]
+    Uso: pbiviz [opciones] [command]
 
-    Commands:
+    Comandos:
 
-    new [name]        Create a new visual info              Display info about the current visual start             Start the current visual package           Package the current visual into a pbiviz file update [version]  Updates the api definitions and schemas in the current visual. Changes the version if specified help [cmd]        display help for [cmd]
+    nuevas actualizaciones de crear una nueva información visual, mostrar información acerca del inicio actual de visual inicio el paquete visual actual paquete visual actual en una actualización del archivo pbiviz [versión] [nombre] las definiciones de api y esquemas en el actual objeto visual. Cambia la versión si ayuda especificada [cmd] Mostrar la Ayuda de [cmd]
 
     Opciones:
 
-    -h, --help      output usage information -V, --version   output the version number --install-cert  Install localhost certificate
+    -h,--help información de uso de salida -V,--version salida el número de versión--certificado localhost de instalación de instalar certificado
     </code></pre>
 
-&lt;a name"ssl-setup"&gt;</a>
-### Server Certificate setup
+< un nombre "ssl-setup" ></a>
+### Programa de instalación del certificado de servidor
 
-To enable a live preview of your visual, a trusted https server is needed. Before you can start, you will need to install an SSL certificate which will allow visual assets to load in your web browser. 
+Para habilitar una vista previa activa de su visual, se necesita un servidor de confianza https. Antes de empezar, debe instalar un certificado SSL que le permitirá activos visuales cargar en el explorador web. 
 
-> [AZURE.NOTE] This is a one-time setup for your developer workstation.
+> [AZURE.NOTE] Se trata de una configuración única de su estación de trabajo de desarrollador.
 
-To <bpt id="p1">*</bpt>add<ept id="p1">*</ept> a certificate, run the following command.
+Para *Agregar* un certificado, ejecute el siguiente comando.
 
     pbiviz --install-cert
 
-**Windows OS**
+**Sistema operativo Windows**
 
-1. Select <bpt id="p1">**</bpt>Install Certificate...<ept id="p1">**</ept>*.
+1. Seleccione **Instalar certificado...***.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows.png)
 
-2. Select <bpt id="p1">**</bpt>Current User<ept id="p1">**</ept> and then select <bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.
+2. Seleccione **usuario actual** y, a continuación, seleccione **siguiente**.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows2.png)
 
-3. Select <bpt id="p1">**</bpt>Place all certificate in the following store<ept id="p1">**</ept> and select <bpt id="p2">**</bpt>Browse...<ept id="p2">**</ept>.
+3. Seleccione **colocar todos los certificados en el siguiente almacén** y seleccione **Examinar...**.
 
-4. Select <bpt id="p1">**</bpt>Trusted Root Certification Authorities<ept id="p1">**</ept> and then select <bpt id="p2">**</bpt>OK<ept id="p2">**</ept>. Select <bpt id="p1">**</bpt>Next<ept id="p1">**</ept>.
+4. Seleccione **entidades emisoras raíz de confianza** y, a continuación, seleccione **Aceptar**. Seleccione **siguiente**.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows3.png)
 
-5. Select <bpt id="p1">**</bpt>Finish<ept id="p1">**</ept>.
+5. Seleccione **Finalizar**.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows4.png)
 
-6. Select <bpt id="p1">**</bpt>Yes<ept id="p1">**</ept> on the security warning dialog.
+6. Seleccione **Sí** en el cuadro de diálogo de advertencia de seguridad.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-windows5.png)
 
-7. Close any browsers that you have open.
+7. Cierre los exploradores que esté abierta.
 
-> [AZURE.NOTE] If the certificate is not recognized, you may need to restart your computer.
+> [AZURE.NOTE] Si no se reconoce el certificado, debe reiniciar el equipo.
 
 **OSX**
 
-1. If the lock in the upper left is locked, select it to unlock. Search for <bpt id="p1">*</bpt>localhost<ept id="p1">*</ept> and double click on the certificate.
+1. Si está bloqueado el bloqueo en la parte superior izquierda, selecciónela para desbloquear. Buscar *localhost* y haga doble clic en el certificado.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx.png)
 
 
-2. Select <bpt id="p1">**</bpt>Always Trust<ept id="p1">**</ept> and close the window.
+2. Seleccione **siempre de confianza** y cierre la ventana.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx2.png)
 
-3. Escriba su nombre de usuario y su contraseña. Select <bpt id="p1">**</bpt>Update Settings<ept id="p1">**</ept>.
+3. Escriba su nombre de usuario y su contraseña. Seleccione **actualizar la configuración de**.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/install-ssl-certificate-osx3.png)
 
-4. Close any browsers that you have open.
+4. Cierre los exploradores que esté abierta.
 
-> [AZURE.NOTE] If the certificate is not recognized, you may need to restart your computer.
+> [AZURE.NOTE] Si no se reconoce el certificado, debe reiniciar el equipo.
 
-## Enable live preview of developer visual
+## Habilitar vista previa activa de desarrolladores visual
 
-To enable a live preview of your custom visual, follow these steps. This allows the visual to be used within the Power BI service when editing reports.
+Para habilitar una vista previa activa de su objeto visual personalizado, siga estos pasos. Esto permite que el objeto visual que se utilizará en el servicio Power BI al editar informes.
 
-1. Browse and sign into <bpt id="p1">[</bpt>app.powerbi.com<ept id="p1">](https://app.powerbi.com)</ept>.
+1. Busque e inicie sesión en [app.powerbi.com](https://app.powerbi.com).
 
-2. Select the <bpt id="p1">**</bpt>gear icon<ept id="p1">**</ept> and then select <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept>.
+2. Seleccione el **icono de engranaje** y, a continuación, seleccione **configuración**.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-settings.png)
 
-3. Select <bpt id="p1">**</bpt>Developer<ept id="p1">**</ept> and then select <bpt id="p2">**</bpt>Enable developer visual for testing<ept id="p2">**</ept>.
+3. Seleccione **Developer** y, a continuación, seleccione **developer Enable visual para las pruebas**.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-settings-enable-developer-live-preview.png)
 
-4. Select the <bpt id="p1">**</bpt>Developer Visual<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Visualization<ept id="p2">**</ept> pane.
+4. Seleccione el **Developer Visual** en la **visualización** panel.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
-    > [AZURE.NOTE] This requires that you have run <ph id="ph1">`pbiviz start`</ph> from the visual folder on your development machine. For more information on creating your visual, see <bpt id="p1">[</bpt>Placeholder<ept id="p1">](#placeholder)</ept> in this article.
+    > [AZURE.NOTE] Esto requiere que se ejecute `pbiviz start` desde la carpeta visual en el equipo de desarrollo. Para obtener más información acerca de cómo crear el objeto visual, vea [marcador de posición](#placeholder) en este artículo.
 
-5. Select the visual in the report canvas. You can bind data in the same way you do other visuals.
+5. Seleccione el objeto visual en el lienzo de informes. Puede enlazar datos de la misma forma que otros elementos visuales.
 
-You can now begin developing your visual.
+Ahora puede comenzar a desarrollar su visual.
 
-## Create a new visual
+## Crear un nuevo objeto visual
 
-You can create a new visual project by running the following command.
+Puede crear un nuevo proyecto visual, ejecute el comando siguiente.
 
 ```
 pbiviz new My Visual name
 ```
 
-You can replace <bpt id="p1">*</bpt>My Visual Name<ept id="p1">*</ept> with the name you want to give the visual. This can be changed later by modifying the <ph id="ph1">`name`</ph> and <ph id="ph2">`displayName`</ph> fields within the generated <ph id="ph3">`pbiviz.json`</ph> file.
+Puede reemplazar *Mi nombre Visual* con el nombre que desee asignar el objeto visual. Esto se puede cambiar posteriormente mediante la modificación de la `name` y `displayName` campos de generado `pbiviz.json` archivo.
 
-This command will create a new folder in the direct where the command was run. It will generate a basic starter template for your visual. Once the command completes, you can open the directory and use your favorite editor to start working on your new visual.
+Este comando creará una nueva carpeta en donde se ejecutó el comando directamente. Genera una plantilla de inicio básico para el objeto visual. Una vez completado el comando, puede abrir el directorio y utilizar su editor favorito para empezar a trabajar en el nuevo objeto visual.
 
-## Testing your visual in Power BI
+## Probar su visual en Power BI
 
-You can test your visual within the Power BI service within reports and dashboards.
+Puede probar su visual dentro del servicio Power BI en informes y paneles.
 
 <a name="running-your-visual"></a>
-### Running your visual
+### Ejecuta el objeto visual
 
-You can run your visual by doing the following.
+Puede ejecutar su visual haciendo lo siguiente.
 
-1. Open a prompt.
+1. Abra un símbolo del sistema.
 
-2. Change your directory to be your visual folder. This is the folder that contains the <ph id="ph1">`pbiviz.json`</ph> file.
+2. Cambie el directorio para que sea la carpeta visual. Esta es la carpeta que contiene el `pbiviz.json` archivo.
 
 3. Ejecute el siguiente comando:
 
@@ -194,7 +194,7 @@ You can run your visual by doing the following.
 
     ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-start-visual.png)
 
-If you are in the wrong location, you will see an error similar to the following.
+Si se encuentra en una ubicación incorrecta, verá un error similar al siguiente.
 
 ```
     error  LOAD ERROR Error: pbiviz.json not found. You must be in the root of a visual project to run this command.
@@ -210,35 +210,35 @@ If you are in the wrong location, you will see an error similar to the following
         at run (bootstrap_node.js:394:7)
 ```
 
-### Viewing your visual in Power BI
+### Ver el objeto visual en Power BI
 
-To view your visual in a report, go to that report and select the visual within the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane.
+Para ver el objeto visual en un informe, vaya a dicho informe y seleccione el objeto visual en la **visualizaciones** panel.
 
-> [AZURE.NOTE] You must run the <ph id="ph1">`pbiviz start`</ph> command before doing this as discribed in the <bpt id="p1">[</bpt>Running your visual<ept id="p1">](#running-your-visual)</ept> section.
+> [AZURE.NOTE] Debe ejecutar el `pbiviz start` comando antes de hacerlo como discribed en la [ejecuta su visual](#running-your-visual) sección.
 
 ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
-You will then see the starter template for the visual.
+A continuación, verá la plantilla de inicio para el objeto visual.
 
 ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-visual.png)
 
-|Toolbar item|Descripción|
+|Elemento de barra de herramientas|Descripción|
 |---|---|
-|Refresh visual|Manually refresh the visual if auto reload is disabled.|
-|Toggle auto reload|When turned on, the visual will automatically update every time you save your visual file.|
-|Show dataview|Shows the visual's underlying data view for debugging|
-|Obtener ayuda|Documentation within GitHub|
-|Send feedback|Let us know if there is anyway we can improve the experience! (Requires GitHub account)|
+|Actualizar visual|Actualizar manualmente el objeto visual si la recarga automática está deshabilitada.|
+|Volver a cargar automáticamente de alternancia|Cuando se activa, el objeto visual se actualizará automáticamente cada vez que guarde el archivo de visual.|
+|Mostrar dataview|Muestra la vista de datos subyacente del objeto visual para la depuración|
+|Obtener ayuda|Documentación en GitHub|
+|Enviar comentarios|Háganos saber si hay cualquier forma que podemos mejorar la experiencia! (Requiere cuenta de GitHub)|
 
-## Package your visual for use in Power BI Desktop and distribution
+## El objeto visual para su uso en Power BI Desktop y la distribución del paquete
 
-Before you can load your visual into <bpt id="p1">[</bpt>Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop/)</ept>, or share it with the community in the <bpt id="p2">[</bpt>Power BI Visual gallery<ept id="p2">](https://visuals.powerbi.com)</ept>, you'll need to generate a <ph id="ph1">`pbiviz`</ph> file.
+Para poder cargar el objeto visual en [Power BI Desktop](https://powerbi.microsoft.com/desktop/), o compartir con la Comunidad en la [Galería Power BI Visual](https://visuals.powerbi.com), debe generar un `pbiviz` archivo.
 
-You can package your visual by doing the following.
+Puede empaquetar su visual haciendo lo siguiente.
 
-1. Open a prompt.
+1. Abra un símbolo del sistema.
 
-2. Change your directory to be your visual folder. This is the folder that contains the <ph id="ph1">`pbiviz.json`</ph> file.
+2. Cambie el directorio para que sea la carpeta visual. Esta es la carpeta que contiene el `pbiviz.json` archivo.
 
 3. Ejecute el siguiente comando:
 
@@ -246,15 +246,15 @@ You can package your visual by doing the following.
     pbiviz package
     ```
 
-This command will create a <ph id="ph1">`pbiviz`</ph> in the <ph id="ph2">`dist/`</ph> directory of your visual project. If there is already a <ph id="ph1">`pbiviz`</ph> file present, it will be overwritten.
+Este comando creará un `pbiviz` en la `dist/` directorio del proyecto visual. Si ya existe un `pbiviz` archivo está presente, se sobrescribirá.
 
-## Updating the visuals API version
+## Actualización de la versión de API de elementos visuales
 
-When you create a visual using <ph id="ph1">`pbiviz new`</ph>, a copy of the appropriate API type definitions and json schemas are copied into your visual's directory. You can use the <ph id="ph1">`pbiviz update`</ph> command to update these files if needed. This can be useful if we release a fix for a past API version or if you want to update to the latest API version.
+Al crear una mediante visual `pbiviz new`, una copia de las definiciones de tipo adecuadas de API y los esquemas de json se copian en el directorio de su objeto visual. Puede usar el `pbiviz update` comando para actualizar estos archivos si es necesario. Esto puede ser útil si lanzamos una revisión para una versión anterior de la API o si desea actualizar a la última versión de API.
 
-### Updating your existing API version
+### Actualizar la versión existente de la API
 
-If we release an update to an existing API, you can get the latest version by doing the following.
+Si se lance una actualización a una API existente, puede obtener la versión más reciente mediante el procedimiento siguiente.
 
 ```
 #Update your version of pbiviz
@@ -264,11 +264,11 @@ npm install -g powerbi-visuals-tools
 pbiviz update
 ```
 
-This will download the latest tools from npm which include the updated type definitions and schemas. Using <ph id="ph1">`pbiviz update`</ph> will overwrite the <ph id="ph2">`apiVersion`</ph> property in your <bpt id="p1">*</bpt>pbiviz.json<ept id="p1">*</ept> fiel with the latest version.
+Esto descargará las herramientas más recientes de npm que incluyen los esquemas y definiciones de tipo actualizadas. Mediante `pbiviz update` sobrescribirá el `apiVersion` propiedad en su *pbiviz.json* campo o con la versión más reciente.
 
-### Upgrading to a different API version
+### Actualizar a una versión diferente de la API
 
-You can update to a different API version by using the same steps as mentioned above. You can explicitly specify the API version you want to use.
+Puede actualizar a una versión de API diferente utilizando los mismos pasos, como se mencionó anteriormente. Puede especificar explícitamente la versión de API que desea utilizar.
 
 ```
 #Update your version of pbiviz
@@ -278,31 +278,31 @@ npm install -g powerbi-visuals-tools
 pbiviz update 1.2.0
 ```
 
-This would update yoru visual to API version 1.2.0. You can replace <ph id="ph1">`1.2.0`</ph> with whatever version your wanting to use.
+Esto actualizaría yoru visual a API versión 1.2.0. Puede reemplazar `1.2.0` con cualquier versión que desea usar.
 
-> [AZURE.WARNING] The default API version used by the tools will always be the stable version of the API. Any versions later than the default API version are unstable and subject to change. They may have unexpected behaviors and behave differently between the Power BI service and Power BI Desktop. For the current stable API version, see the <bpt id="p1">[</bpt>change log<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals/blob/master/ChangeLog.md)</ept>. For more information about pre-release versions, see the <bpt id="p1">[</bpt>roadmap<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals/blob/master/Roadmap/README.md)</ept>.
+> [AZURE.WARNING] La versión de API predeterminada utilizada por las herramientas siempre será la versión estable de la API. Las versiones posteriores a la versión de API predeterminada son inestables y sujeto a cambiarán. Pueden tener un comportamiento inesperado y se comportan de forma diferente entre el servicio Power BI y Power BI Desktop. Para la versión actual de la API estable, consulte el [cambiar el registro](https://github.com/Microsoft/PowerBI-visuals/blob/master/ChangeLog.md). Para obtener más información acerca de las versiones preliminares, consulte el [plan](https://github.com/Microsoft/PowerBI-visuals/blob/master/Roadmap/README.md).
 
-## Inside the visual project
+## Dentro del proyecto visual
 
-Your visual project is the folder that gets created when you run the <ph id="ph1">`pbiviz new`</ph> command. 
+El proyecto de visual es la carpeta que se crea al ejecutar el `pbiviz new` comando. 
 
 ### Estructura de archivos
 
 |Elemento|Descripción|
 |---|---|
-|assets/|Used to store visual assets (icon, screenshots, etc).|
-|dist/|When you run <ph id="ph1">`pbiviz package`</ph>, the pbiviz file will be generated here.|
-|src/|Typescript code for your visual.|
-|style/|Less styles for your visual.|
-|.gitignore|Tells git to ignore files that shouldn't be tracked in the repository.|
-|capabilities.json|Used to define the <bpt id="p1">[</bpt>capabilities<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/Capabilities.md)</ept> of your visual.|
-|package.json|Used by <bpt id="p1">[</bpt>npm<ept id="p1">](https://www.npmjs.com/)</ept> to manage modules.|
-|pbiviz.json|Main configuration file.|
-|tsconfig.json|Typescript compiler settings. Learn more about <bpt id="p1">[</bpt>tsconfig.json<ept id="p1">](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)</ept>.|
+|activos /|Se utiliza para almacenar activos visuales (icono, capturas de pantalla, etc.).|
+|Dist /|Al ejecutar `pbiviz package`, se generará el archivo pbiviz aquí.|
+|src /|Código máquina para el objeto visual.|
+|estilo /|Menos estilos para el objeto visual.|
+|.gitignore|Indica a git que omita los archivos que no deben realizar el seguimiento en el repositorio.|
+|Capabilities.JSON|Permite definir la [capacidades](https://github.com/Microsoft/PowerBI-visuals/blob/master/Capabilities/Capabilities.md) de su visual.|
+|Package.JSON|Utilizado por [npm](https://www.npmjs.com/) para administrar los módulos.|
+|pbiviz.JSON|Archivo de configuración principal.|
+|TSConfig.JSON|Configuración de compilador de typescript. Obtenga más información sobre [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).|
 
-### pbiviz.json
+### pbiviz.JSON
 
-This file is the main configuration file for your visual. It contains metadata, as well as information about your files, needed to build your visual.
+Este archivo es el archivo de configuración principal para el objeto visual. Contiene metadatos, así como información acerca de los archivos, necesarios para compilar el proyecto.
 
 ```
 {
@@ -329,66 +329,66 @@ This file is the main configuration file for your visual. It contains metadata, 
 }
 ```
 
-### Visual source (TypeScript)
+### Origen Visual (TypeScript)
 
-Visual code should be written in TypeScript, which is a superset of JavaScript that support more advanced features and early access to ES6/ES7 functionality.
+Código de Visual debe escribirse en TypeScript, que es un superconjunto de JavaScript que admiten características más avanzadas y acceso anticipado a la funcionalidad de ES6/ES7.
 
-All TypeScript files should be stored in the <ph id="ph1">`src/`</ph> directory and added to the <ph id="ph2">`files`</ph> array in <ph id="ph3">`tsconfig.json`</ph>. This allows the TypeScript compiler to load them and in what order.
+Todos los archivos de máquina deben almacenarse en el `src/` directorio y agregados a la `files` de matriz en `tsconfig.json`. Esto permite que el compilador de TypeScript cargar ellos y en qué orden.
 
-When your visual is built, all of the TypeScript will be compiled into a single JavaScript file. This allows you to reference exported elements from other files without needing to manually <ph id="ph1">`require`</ph> them as long as both files are listed in the tsconfig.
+Cuando se crea el objeto visual, todos de la máquina se compilarán en un único archivo de JavaScript. Esto le permite hacer referencia a los elementos exportados desde otros archivos sin necesidad de manualmente `require` ellos siempre que ambos archivos se muestran en la tsconfig.
 
-You can create as many files and classes as you need to create your visual.
+Puede crear todos los archivos y las clases que necesitan crear el objeto visual.
 
-Learn more about <bpt id="p1">[</bpt>TypeScript<ept id="p1">](http://www.typescriptlang.org/)</ept>.
+Obtenga más información sobre [TypeScript](http://www.typescriptlang.org/).
 
-### Visual style (Less)
+### Estilo visual (menor)
 
-Visual styling is handled using cascading style sheets (CSS).  
+Estilo visuales se administra mediante hojas de estilos en cascada (CSS). Para su convience, usamos el menos precompilador que admite algunas características avanzadas como el anidamiento, variables, mixins, condiciones, bucles, etc.. Si no desea utilizar ninguna de estas características, puede escribir simplemente CSS corriente en el archivo menor.
 
-All Less files should be stored in the <ph id="ph1">`style/`</ph> directory. The file specified under the <ph id="ph1">`style`</ph> field within your <ph id="ph2">`pbiviz.json`</ph> file will be loaded. Any additional files should be loaded using <ph id="ph1">`@import`</ph>.
+Todo menos archivos deben estar almacenados en el `style/` directory. El archivo especificado en el `style` campo dentro de su `pbiviz.json` se cargará el archivo. Los archivos adicionales se deben cargar mediante `@import`.
 
-Learn more about <bpt id="p1">[</bpt>Less<ept id="p1">](http://lesscss.org/)</ept>.
+Obtenga más información sobre [menos](http://lesscss.org/).
 
 ## Depuración
 
-For tips about debugging your custom visual, see the <bpt id="p1">[</bpt>debugging guide<ept id="p1">](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md)</ept>.
+Para obtener sugerencias sobre cómo depurar el objeto visual personalizado, consulte el [Guía de depuración](https://github.com/Microsoft/PowerBI-visuals/blob/master/tools/debugging.md).
 
-## Submit your visual to the Power BI custom visual gallery
+## Enviar el objeto visual en la galería visual personalizado de Power BI
 
-You can <bpt id="p1">[</bpt>submit your visual<ept id="p1">](https://app.powerbi.com/visuals/info#submit)</ept> to be included in the Power BI visuals gallery. This involves sending an email with your pbiviz file attached.
+Puede [enviar su visual](https://app.powerbi.com/visuals/info#submit) que se incluirán en la Galería de elementos visuales de Power BI. Esto implica el envío de un correo electrónico con el archivo pbiviz adjunto.
 
 ## Solucionar problemas
 
-**Pbiviz command not found (or similar errors)**
+**No se encontró el comando de Pbiviz (o errores similares)**
 
-If you run <ph id="ph1">`pbiviz`</ph> in your terminal / command line, you should see the help screen. If not, it is not installed correctly. Make sure you have at least the 4.0 version of NodeJS installed.
+Si ejecuta `pbiviz` en su terminal / línea de comandos, verá la pantalla de ayuda. De lo contrario, no está instalado correctamente. Asegúrese de que tiene al menos la versión 4.0 de NodeJS instalado.
 
-For more information, see <bpt id="p1">[</bpt>Install NodeJS and the Power BI tools<ept id="p1">](#install-nodejs-and-the-power-bi-tools)</ept>...
+Para obtener más información, consulte [instalar NodeJS y las herramientas de BI energía](#install-nodejs-and-the-power-bi-tools)...
 
-**Cannot find the debug visual in the Visualizations tab**
+**No se puede encontrar la depuración visual en la ficha de visualizaciones**
 
-The debug visual looks like a prompt icon within the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> tab.
+La depuración visual es similar a un icono de símbolo del sistema dentro de la **visualizaciones** ficha.
 
 ![](media/powerbi-custom-visuals-getting-started-with-developer-tools/powerbi-developer-visual-selection.png)
 
-If you don't see it, make sure you have enabled it within the Power BI settings. 
+Si no aparece, asegúrese de que ha habilitado en la configuración de Power BI. 
 
-> [AZURE.NOTE] The debug visual is currently only available in the Power BI service and not in Power BI Desktop or the mobile app. The packaged visual will still work everywhere.
+> [AZURE.NOTE] La depuración visual actualmente sólo está disponible en el servicio Power BI y no en Power BI Desktop o la aplicación móvil. El paquete visual seguirá funcionando en todas partes.
 
-For more information, see <bpt id="p1">[</bpt>Enable live preview of developer visual<ept id="p1">](#enable-live-preview-of-developer-visual)</ept>...
+Para obtener más información, consulte [Habilitar la vista previa activa de desarrolladores visual](#enable-live-preview-of-developer-visual)...
 
-**Can't contact visual server**
+**No puede ponerse en contacto con el servidor de visual**
 
-Run the visual server with the command <ph id="ph1">`pbiviz start`</ph> in your terminal / command line from the root of your visual project. If the server is running, it is likely that your SSL vertificates weren't installed correctly.
+Ejecute el servidor visual con el comando `pbiviz start` en su terminal / línea de comandos desde la raíz del proyecto visual. Si el servidor se está ejecutando, es probable que su vertificates SSL no se instalaron correctamente.
 
-For more information, see <bpt id="p1">[</bpt>Running your visual<ept id="p1">](#running-your-visual)</ept> or <bpt id="p2">[</bpt>Server certificate setup<ept id="p2">](#ssl-setup)</ept>.
+Para obtener más información, consulte [ejecuta su visual](#running-your-visual) o [el programa de instalación del certificado de servidor](#ssl-setup).
 
 
 ## Consulte también
 
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
+[Visualizaciones en Power BI](powerbi-service-visualizations-for-reports.md)  
+[Visualizaciones personalizadas en Power BI](powerbi-custom-visuals.md)  
+[La Galería de elementos visuales personalizados de Power BI](https://app.powerbi.com/visuals)  
 [TypeScript](http://www.typescriptlang.org/)  
-[Less CSS](http://lesscss.org/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Menos CSS](http://lesscss.org/)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

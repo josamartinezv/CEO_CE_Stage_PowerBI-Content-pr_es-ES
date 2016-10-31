@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get a Power BI tile"
-   description="Walkthrough - Integrate a tile into an app - Register a web app with Azure AD"
+   pageTitle="Obtener un mosaico de Power BI"
+   description="Tutorial: integrar un mosaico en una aplicación: registrar una aplicación web con Azure AD"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,28 +20,31 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 3: Get a tile
+# Paso 3: Obtener un mosaico
 
 ## Introducción
 
-In <bpt id="p1">**</bpt>step 2<ept id="p1">**</ept> of Integrate a tile into an app, <bpt id="p2">[</bpt>Get a Power BI dashboard<ept id="p2">](powerbi-developer-integrate-tile-get-dashboard.md)</ept>, you get a Power BI dashboard. In this step, you get a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> tile from a dashboard.
+En **paso 2** de integración de un mosaico en una aplicación [un panel de Power BI](powerbi-developer-integrate-tile-get-dashboard.md), obtendrá un panel de Power BI. En este paso, obtendrá un **Power BI** icono desde un panel.
 
 ![](media\powerbi-developer-integrate-tile\integrate-tile-get-tile.png)
 
-To get a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> tile you need an authentication <bpt id="p2">**</bpt>access token<ept id="p2">**</ept>. To learn how to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>, see [Get an authentication access token]((powerbi-developer-integrate-tile-get-dashboard.md#get-token) in Step 2: Get a Power BI dashboard. You use an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> to authenticate to <bpt id="p2">**</bpt>Azure AD<ept id="p2">**</ept> to gain access to <bpt id="p3">**</bpt>Power BI<ept id="p3">**</ept> tiles.
+Para obtener un **Power BI** mosaico necesita una autenticación **token de acceso**. Para obtener información sobre cómo obtener un **token de acceso**, consulte [obtener un token]((powerbi-developer-integrate-tile-get-dashboard.md#get-token) de acceso de autenticación en el paso 2: un panel de Power BI. Utiliza un **token de acceso** para autenticarse en **Azure AD** para tener acceso a **Power BI** mosaicos.
 
-Here are the steps to get a Power BI tile.
+Estos son los pasos para obtener un mosaico de Power BI.
 
-- <bpt id="p1">**</bpt>Step 1:<ept id="p1">**</ept> Get an authorization code from Azure AD. See <bpt id="p1">[</bpt>Get an authorization code from Azure AD<ept id="p1">](powerbi-developer-integrate-tile-get-dashboard.md#auth-code)</ept> in Step 2: Get a Power BI dashboard.
-- <bpt id="p1">**</bpt>Step 2:<ept id="p1">**</ept> Get an access token. See <bpt id="p1">[</bpt>Get an access token from authorization code<ept id="p1">](powerbi-developer-integrate-tile-get-dashboard.md#access-token)</ept> Step 2: Get a Power BI dashboard.
-- <bpt id="p1">**</bpt>Step 3:<ept id="p1">**</ept> <bpt id="p2">[</bpt>Get a Power BI tile<ept id="p2">](#get-tile)</ept>
+- 
+            **Paso 1:** obtener un código de autorización de Azure AD. Consulte [obtener un código de autorización de Azure AD](powerbi-developer-integrate-tile-get-dashboard.md#auth-code) en el paso 2: un panel de Power BI.
+- 
+            **Paso 2:** obtener un token de acceso. Consulte [obtener un acceso token del código de autorización](powerbi-developer-integrate-tile-get-dashboard.md#access-token) paso 2: un panel de Power BI.
+- 
+            **Paso 3:** [obtener un mosaico de Power BI](#get-tile)
 
 <a name="get-tile"/>
-## Get a Power BI tile using access token
+## Obtener un mosaico de Power BI con access token
 
-In step 2 of the <bpt id="p1">[</bpt>Integrate a tile into an app walkthrough<ept id="p1">](powerbi-developer-integrate-tile.md)</ept>, you get an <bpt id="p2">**</bpt>access token<ept id="p2">**</ept> to get a dashboard. You can use this <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> to also get a tile. You get a tile with the <bpt id="p1">[</bpt>Get Tiles<ept id="p1">](https://msdn.microsoft.com/library/mt465741.aspx)</ept>  operation which returns a list of tiles in a <bpt id="p2">**</bpt>dashboard<ept id="p2">**</ept>. Below is a C# method to get a tile. Once you have a <bpt id="p1">**</bpt>tile<ept id="p1">**</ept>, you can load the tile into an <bpt id="p2">**</bpt>IFrame<ept id="p2">**</ept>. See <bpt id="p1">[</bpt>Load a Power BI tile into an IFrame<ept id="p1">](powerbi-developer-integrate-tile-load-tile-iframe.md)</ept>.
+En el paso 2 de la [integrar un mosaico en un tutorial de la aplicación](powerbi-developer-integrate-tile.md), obtendrá un **token de acceso** a un panel. Puede utilizar este **token de acceso** también obtener un mosaico. Obtener un icono con el [obtener mosaicos](https://msdn.microsoft.com/library/mt465741.aspx)  operación que devuelve una lista de mosaicos en un **panel**. A continuación se muestra un método de C# para obtener un mosaico. Una vez que tenga una **icono**, puede cargar el mosaico en un **IFrame**. Consulte [cargar un mosaico de Power BI en un IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md).
 
-**Get tile**
+**Obtener el mosaico**
 
 ```
 //Get a tile from a dashboard. In this sample, you get the first tile.
@@ -89,17 +92,17 @@ public class PBITile
 
 ## Paso siguiente
 
-To integrate a tile into an app, you load a tile into an IFrame. In the next step, you learn how to <bpt id="p1">[</bpt>Load a tile into an IFrame<ept id="p1">](powerbi-developer-integrate-tile-load-tile-iframe.md)</ept>.
+Para integrar un mosaico en una aplicación, carga un mosaico en un IFrame. En el paso siguiente, aprenderá cómo [cargar un mosaico en un IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md).
 
-[Next Step &gt;](powerbi-developer-integrate-tile-load-tile-iframe.md)
+[Siguiente paso >](powerbi-developer-integrate-tile-load-tile-iframe.md)
 
 ## Consulte también
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)  
-[Integrate a tile sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
-[Configure the integrate a tile sample](powerbi-developer-integrate-tile-register.md#configure-sample)  
-[Get Dashboards operation](https://msdn.microsoft.com/library/mt465739.aspx)  
-[Get Tiles operation](https://msdn.microsoft.com/library/mt465741.aspx)  
-[Step 4: Load a Power BI tile into an IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Registrarse para Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrar un mosaico en un tutorial de la aplicación](powerbi-developer-integrate-tile.md)  
+[Integrar un mosaico de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-tile-web-app)  
+[Configurar la integración de un mosaico de ejemplo](powerbi-developer-integrate-tile-register.md#configure-sample)  
+[Paneles de la operación de obtención](https://msdn.microsoft.com/library/mt465739.aspx)  
+[Iconos de la operación de obtención](https://msdn.microsoft.com/library/mt465741.aspx)  
+[Paso 4: Cargar un mosaico de Power BI en un IFrame](powerbi-developer-integrate-tile-load-tile-iframe.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

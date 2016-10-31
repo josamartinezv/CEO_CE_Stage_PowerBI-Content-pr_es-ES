@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="View report page tiles in the Power BI mobile app for Windows 10"
-   description="Read about viewing and interacting with live report tiles in a dashboard in the Power BI mobile app for Windows 10."
+   pageTitle="Ver los iconos de página de informe en la aplicación móvil de Power BI para Windows 10"
+   description="Lea acerca de cómo ver e interactuar con iconos de informe activo en un panel en la aplicación móvil de Power BI para Windows 10."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,22 +20,24 @@
    ms.date="10/14/2016"
    ms.author="maggies"/>
 
-# <a name="view-report-page-tiles-in-the-power-bi-mobile-app-for-windows-10"></a>View report page tiles in the Power BI mobile app for Windows 10
+# <a name="view-report-page-tiles-in-the-power-bi-mobile-app-for-windows-10"></a>Ver los iconos de página de informe en la aplicación móvil de Power BI para Windows 10
 
-When you <bpt id="p1">[</bpt>create a dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept> in the Power BI service, you add individual visuals from Power BI reports as live tiles on the dashboard. You can also <bpt id="p1">[</bpt>pin a whole Power BI report page as a live tile<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx#reportpin)</ept>. You can view these report tiles in the Power BI mobile app for Windows 10.
+Cuando se [crear un panel](powerbi-service-dashboards.md) en el servicio Power BI, agregar efectos visuales individuales de los informes de Power BI como iconos dinámicos en el panel. También puede [Anclar una página de informe de Power BI completa como un icono dinámico](http://blogs.msdn.com/b/powerbi/archive/2015/12/10/power-bi-weekly-service-update-1210.aspx#reportpin). Puede ver estos iconos de informe en la aplicación móvil de Power BI para Windows 10.
 
-1.  When you open a <bpt id="p1">[</bpt>dashboard in the Power BI mobile app for Windows 10<ept id="p1">](powerbi-mobile-dashboards-in-the-win10phone-app.md)</ept>, you see a small image of the report.
+1.  Cuando se abre un [panel en la aplicación móvil de Power BI para Windows 10](powerbi-mobile-dashboards-in-the-win10phone-app.md), verá una pequeña imagen del informe.
 
     ![](media/powerbi-mobile-report-page-tiles-in-the-win10phone-app/power-bi-windows-10-report-tile.png)
 
-2. Tap the tile. The pinned report page opens in landscape mode. 
+2. Puntee en el icono. Se abre la página de informe anclado en modo horizontal. 
 
     ![](media/powerbi-mobile-report-page-tiles-in-the-win10phone-app/power-bi-windows-10-report-tile-open.png)
 
-3.   Tap the back arrow or the back button to close the tile and return to the dashboard.
+3.   Puntee en la flecha hacia atrás o en el botón Atrás para el icono de cerrar y volver al panel.
 
 ### <a name="see-also"></a>Consulte también
 
-- <bpt id="p1">[</bpt>Tiles in the Power BI mobile app for Windows 10<ept id="p1">](powerbi-mobile-tiles-in-the-win10phone-app.md)</ept>
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [Iconos de la aplicación móvil de Power BI para Windows 10](powerbi-mobile-tiles-in-the-win10phone-app.md)
+- ¿Tiene preguntas? 
+            [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)
 

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Customize X-axis and Y-axis properties"
-   description="Tutorial: Customize X-axis and Y-axis properties"
+   pageTitle="Tutorial: Personalizar las propiedades del eje x y el eje y"
+   description="Tutorial: Personalizar las propiedades del eje x y el eje y"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,143 +19,144 @@
    ms.workload="powerbi"
    ms.date="10/08/2016"
    ms.author="mihart"/>
-# Tutorial: Customize X-axis and Y-axis properties
+# Tutorial: Personalizar las propiedades del eje x y el eje y
 
-In this tutorial you'll learn many different ways to customize the X-axis and Y-axis of your visuals. Not all visuals have axes or can be customized; Pie charts, for example, don't have axes. And customization options vary from visual to visual, too many options to cover in a single article. So we'll take a look at some of the most-used axes customizations and get you comfortable using the visual formatting tab in the Power BI report canvas.  
+En este tutorial aprenderá diferentes formas de personalizar los ejes x y y de los objetos visuales. No todos los elementos visuales tienen ejes o se pueden personalizar; Por ejemplo, los gráficos circulares no tienen ejes. Y opciones de personalización varían visual a visual demasiadas opciones que trataré en un solo artículo. Por lo tanto, echaremos un vistazo a algunas de las personalizaciones de ejes más usados y obtener se siente cómodo usando la ficha formato visual en el lienzo de informe de Power BI.  
 
->[AZURE.NOTE] This page applies to both Power BI service and Power BI Desktop. These customizations, which are available when the <bpt id="p1">**</bpt>Format<ept id="p1">**</ept> (the paint roller icon <ph id="ph1">![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png)</ph> ) is selected, are also available in Power BI Desktop.  
+>[AZURE.NOTE] Esta página se aplica al servicio Power BI y Power BI Desktop. Estas personalizaciones, que están disponibles cuando el **formato** (el icono de rodillos de pintura ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) está seleccionada, también están disponibles en Power BI Desktop.  
 
-## Customizing visualization X-axes in reports
+## Personalizar la visualización de ejes x en informes
 
-Sign in to the Power BI service and open the <bpt id="p1">**</bpt>Retail Analysis Sample<ept id="p1">**</ept> report in <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>. To follow along, <bpt id="p1">[</bpt>connect to the Retail Analysis sample<ept id="p1">](powerbi-sample-downloads.md)</ept>.
+Inicie sesión en el servicio Power BI y abra el **ejemplo de análisis de venta directa** informes en [vista de edición de](powerbi-service-interact-with-a-report-in-editing-view.md). Para continuar, [conectarse a la muestra de análisis de venta](powerbi-sample-downloads.md).
 
-1.  Create a new column chart that shows this year's sales and last year's sales by fiscal month. 
+1.  Cree un nuevo gráfico de columna que muestra este año de ventas y ventas del último año por mes fiscal. 
 
-2. Convert it to a Stacked column chart.
+2. Convertir a un gráfico de columnas apiladas.
 
-3.  In the Visualizations and Filters pane, select <bpt id="p1">**</bpt>Format<ept id="p1">**</ept> (the paint roller icon <ph id="ph1">![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png)</ph> ) to reveal the customization options.
+3.  En el panel de visualizaciones y los filtros, seleccione **formato** (el icono de rodillos de pintura ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) para mostrar las opciones de personalización.
 
-4.  Expand the X-Axis options.
+4.  Expanda las opciones del eje x.
 
-5.  Turn the X-axis on and off by selecting the On (or Off) slider. For now, leave it <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.  Turning the X-axis off removes the X-axis label and saves space for more data.
+5.  Activar el eje x y desactivar seleccionando el On (o desactivar) control deslizante. Por ahora, deje **en**.  Desactivar el eje x quita la etiqueta del eje x y ahorra espacio más datos.
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/onoffslider.png)
 
-6.  Turn the X-axis title <bpt id="p1">**</bpt>On<ept id="p1">**</ept> and display the name of the X axis -- in this case, <bpt id="p2">**</bpt>FiscalMonth<ept id="p2">**</ept>.  
+6.  Activar el título del eje x **en** y mostrar el nombre del eje X, en este caso, **FiscalMonth**.  
 
-    After all these customizations, your column chart should look something like this:
+    Después de todas estas personalizaciones, el gráfico de columnas debe tener un aspecto similar al siguiente:
 
      ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-customizexaxisnew.png)
 
-    >[AZURE.NOTE] If the X-axis is categorized by the report owner as a date type, the <bpt id="p1">**</bpt>Type<ept id="p1">**</ept> option will display and you can select between continuous or categorical. 
+    >[AZURE.NOTE] Si el eje x está clasificado por el propietario del informe como un tipo de fecha, la **tipo** mostrará la opción y puede seleccionar entre continuas o de categorías. 
 
-To revert all the X-axis customization you've done so far, select <bpt id="p1">**</bpt>Revert To Default <ept id="p1">**</ept>at the bottom of the <bpt id="p2">**</bpt>X-axis<ept id="p2">**</ept> customization pane.
+Para revertir toda la personalización del eje x ha hecho hasta ahora, seleccione **Revertir predeterminado **en la parte inferior de la **eje x** panel personalización.
 
-## Customizing visualization Y-axes in reports
+## Personalizar la visualización de ejes en los informes
 
-Some visualizations have Y-axes and these too can be customized. There are even some visualizations that have dual Y-axes, and you'll learn how to customize those as well.
+Algunas visualizaciones tienen ejes y éstos también se pueden personalizar. Hay incluso algunas visualizaciones que tienen dos ejes y aprenderá a personalizarlos así.
 
-1.  From the <bpt id="p1">**</bpt>New Stores<ept id="p1">**</ept> tab of the Retail Analysis Sample report, select the chart "This Year Sales by FiscalMonth."
+1.  Desde el **nuevo almacenes** ficha del informe de ejemplo de análisis de venta directa, seleccione el gráfico "Ventas de este año por FiscalMonth".
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/powerbi-chart.png)
 
-2. From the Fields pane, select <bpt id="p1">**</bpt>Store<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Name<ept id="p2">**</ept> to add it as a <bpt id="p3">**</bpt>Legend<ept id="p3">**</ept>.
+2. En el panel de campos, seleccione **almacén** > **nombre** para agregarlo como un **leyenda**.
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/linechart2new.png)
 
-3.  In the Visualizations and Filters pane, select <bpt id="p1">**</bpt>Format<ept id="p1">**</ept> (the paint roller icon.
-    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) to reveal the customization options.
+3.  En el panel de visualizaciones y los filtros, seleccione **formato** (el icono de rodillos de pintura.
+    ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-paintroller.png) ) para mostrar las opciones de personalización.
 
-4. Expand the Y-Axis options and ensure that the Y-Axis slider is toggled to <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.
+4. Expanda las opciones del eje y y asegúrese de que el control deslizante de eje y se cambia a **en**.
 
      ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/onoffslider.png)
 
-4.  Turn the Title <bpt id="p1">**</bpt>On<ept id="p1">**</ept> so that colleagues can see at-a-glance what is being measured. And set the <bpt id="p1">**</bpt>Style<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Show title<ept id="p2">**</ept> <bpt id="p3">**</bpt>only<ept id="p3">**</ept> (instead of <bpt id="p4">**</bpt>Show both<ept id="p4">**</ept> or <bpt id="p5">**</bpt>Show unit only<ept id="p5">**</ept>) since the Y-axis already shows that the unit of measurement is thousands of dollars.
+4.  Activar el título **en** para que pueden ver sus colegas un vistazo lo que se va a medir. Y establecer el **estilo** a **Mostrar título** **sólo** (en lugar de **Mostrar ambos** o **Mostrar unidad sólo**) desde el eje y muestra ya que la unidad de medida es miles de dólares.
 
-3.  Change the Y-axis Position to <bpt id="p1">**</bpt>Right<ept id="p1">**</ept> to move it away from the legend and easier to read.
+3.  Cambiar la posición del eje y a **derecha** para moverlo fuera de la leyenda y más fácil de leer.
 
-4.  Change the Start and End range to display only the companies with the higher sales.
+4.  Cambiar el intervalo de inicio y finalización para mostrar sólo las compañías con las ventas mayores.
 
-    -   Set Start to <bpt id="p1">**</bpt>35,000<ept id="p1">**</ept>
+    -   Establecer inicio en **35.000**
 
-    -   Set End to <bpt id="p1">**</bpt>100,000<ept id="p1">**</ept>
+    -   Extremo del conjunto **100.000**
 
-6.  After all these customizations, your line chart should look like this:
+6.  Después todas estas personalizaciones, el gráfico de líneas debe ser similar al siguiente:
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/customizeyaxisnew.png)
 
-    To revert all the Y-axis customization you've done so far, select <bpt id="p1">**</bpt>Revert To Default<ept id="p1">**</ept>, at the bottom of the <bpt id="p2">**</bpt>Y-axis<ept id="p2">**</ept> customization pane.
+    Para revertir toda la personalización de eje y ha hecho hasta ahora, seleccione **Revertir predeterminado**, en la parte inferior de la **eje y** panel personalización.
 
-## Customizing visualizations with dual Y-axes
+## Personalizar visualizaciones con dos ejes
 
-First you'll create a Combo chart that looks at the impact store count has on sales.  This is the same chart that is created in the <bpt id="p1">[</bpt>Combo chart Tutorial<ept id="p1">](powerbi-service-tutorial-combo-chart-merge-visualizations.md)</ept>. Then you'll format the dual Y-axes.
+Primero creará un gráfico combinado que busca en el recuento de almacén de impacto tiene en ventas.  Este es el mismo gráfico que se crea en el [gráfico combinado de Tutorial](powerbi-service-tutorial-combo-chart-merge-visualizations.md). A continuación, aplicará formato a los dos ejes.
 
-### Create a chart with two Y-axes
+### Crear un gráfico con dos ejes y
 
-1.  Create a new line chart that tracks <bpt id="p1">**</bpt>Sales &gt; Gross Margin last year %<ept id="p1">**</ept> by <bpt id="p2">**</bpt>Time &gt; Month<ept id="p2">**</ept>. 
+1.  Crear un nuevo gráfico de líneas que realiza un seguimiento de **ventas > margen bruto último año %** por **tiempo > mes**. 
 
-2. Sort the visual by month by selecting the ellipses (...) and choosing <bpt id="p1">**</bpt>Sort by Month<ept id="p1">**</ept>
+2. Ordenar el objeto visual por mes, seleccione el botón de puntos suspensivos (...) y elija **Ordenar por mes**
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/combo1_new.png)
 
-3. In January GM% was 35%, peaked at 45% in April, dropped in July and peaked again in August. Will we see a similar pattern in sales last year and this year?
+3. En enero GM % fue 35%, máximo es 45% en abril, colocado en julio y Tec en agosto. ¿Se verá un patrón similar en ventas año anterior y este año?
 
-4.  Add <bpt id="p1">**</bpt>This Year Sales &gt; Value<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Last Year Sales<ept id="p2">**</ept> to the line chart. The scale of <bpt id="p1">**</bpt>GM% Last Year<ept id="p1">**</ept> is much smaller than the scale of <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept> which makes it difficult to compare.      
+4.  Agregar **ventas de este año > valor** y **ventas del último año** para el gráfico de líneas. La escala de **% último año de GM** es mucho menor que la escala de **ventas** lo que hace difícil comparar.      
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/flatline_new.png)
 
-5.  To make the visual easier to read and interpret, convert the line chart to a Line and Stacked Column chart.
+5.  Para que el objeto visual fáciles de leer e interpretar, convertir el gráfico de líneas en un gráfico de líneas y columnas apiladas.
 
     ![](media/powerbi-service-tutorial-combo-chart-merge-visualizations/converttocombo_new.png)
 
-4.  Drag <bpt id="p1">**</bpt>Gross Margin Last Year %<ept id="p1">**</ept> from <bpt id="p2">**</bpt>Column Values<ept id="p2">**</ept> into <bpt id="p3">**</bpt>Line Values<ept id="p3">**</ept>. Power BI creates two axes, thus allowing the datasets to be scaled differently; the left measures dollars and the right measures percentage.
+4.  Arrastre **margen bruto último año %** de **valores de columna** en **línea valores**. Power BI crea dos ejes, lo que permite a los conjuntos de datos se escale de manera diferente; la izquierda mide dólares y el porcentaje de las medidas adecuadas.
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/combochart3done.png)
 
   
-### Format the secondary Y-axis
+### Dar formato al eje y secundario
 
-1.  In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the paint roller icon to display the formatting options.
+1.  En el **visualizaciones** panel, seleccione el icono de rodillos de pintura para mostrar el formato opciones.
 
-2.  Expand the Y-Axis options by selecting the down arrow.
+2.  Expanda las opciones del eje y seleccionando la flecha hacia abajo.
 
-3.  Scroll through the list until you find the options for <bpt id="p1">**</bpt>Show secondary<ept id="p1">**</ept>. Toggle <bpt id="p1">**</bpt>Show Secondary<ept id="p1">**</ept> from <bpt id="p2">**</bpt>Off<ept id="p2">**</ept> to <bpt id="p3">**</bpt>On<ept id="p3">**</ept>.
+3.  Desplácese por la lista hasta que encuentre las opciones de **Mostrar secundario**. Alternar **Mostrar secundaria** desde **desactivar** a **en**.
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/combo3.png)
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-dual-axes.png)
 
-4.  (Optional) Customize the two axes. If you switch <bpt id="p1">**</bpt>Position<ept id="p1">**</ept> for either the column axis or the line axis, then the two axes switch sides.
+4.  (Opcional) Personalizar los dos ejes. Si cambia **posición** para el eje de columna o el eje de la línea, a continuación, los dos ejes intercambiar lados.
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-y-axes-options.png)
 
-### Add titles to both axes
+### Agregar títulos a los ejes
 
-With a visualization this complicated, it helps to add axes titles.  Titles help your colleagues understand the story your visualization is telling.
+Con una visualización de que este complicado, ayuda a agregar títulos de eje.  Títulos a sus colegas comprender la historia que está indicando la visualización.
 
-1.  Toggle <bpt id="p1">**</bpt>Title<ept id="p1">**</ept> to <bpt id="p2">**</bpt>On<ept id="p2">**</ept> for <bpt id="p3">**</bpt>Y-Axis (Column)<ept id="p3">**</ept> and the <bpt id="p4">**</bpt>Y-Axis (Line)<ept id="p4">**</ept>.
+1.  Alternar **título** a **en** de **eje y (columna)** y **eje y (línea)**.
 
-2.  Set <bpt id="p1">**</bpt>Style<ept id="p1">**</ept> to <bpt id="p2">**</bpt>Show title only<ept id="p2">**</ept>.
+2.  Establecer **estilo** a **Mostrar título sólo**.
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/yaxissettings.png)
 
-3.  Your Combo chart now displays dual axes, both with titles.
+3.  Gráfico combinado muestra ahora los dos ejes, ambos con títulos.
 
     ![](media/powerbi-service-tutorial-customize-x-axis-and-y-axis-properties/power-bi-dual-titles.png)
 
 
-For more information, see <bpt id="p1">[</bpt>Tips and tricks for color formatting, labeling, and axis properties<ept id="p1">](powerbi-service-tips-and-tricks-for-color-formatting.md)</ept>.
+Para obtener más información, consulte [sugerencias y trucos para las propiedades de formato, el etiquetado y el eje de color](powerbi-service-tips-and-tricks-for-color-formatting.md).
 
 ## Consulte también
 
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>
+Más información sobre [visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
 
 
-<bpt id="p1">[</bpt>Customize t<ept id="p1">](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)</ept><bpt id="p2">[</bpt>itles, backgrounds, and legends<ept id="p2">](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)</ept>
 
-[Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
+            [Personalizar t](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)[itles, fondos y leyendas](powerbi-service-tutorial-customize-visualization-title-background-and-legend.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Personalizar los colores y las propiedades del eje](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
+
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="KPI visuals"
-   description="create KPI in power bi"
+   pageTitle="Elementos visuales KPI"
+   description="crear KPI en power bi"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,64 +21,68 @@
    ms.date="08/23/2016"
    ms.author="mihart"/>
 
-# KPIs in Power BI
+# KPI en Power BI
 
-A Key Performance Indicator (KPI) is a visual cue that communicates the amount of progress made toward a measurable goal. For more information about KPIs, see <bpt id="p1">[</bpt>Microsoft Developer Network<ept id="p1">](https://msdn.microsoft.com/library/hh272050)</ept>.
+Un indicador clave de rendimiento (KPI) es una indicación visual que comunica el incremento del progreso realizado hacia un objetivo cuantificable. Para obtener más información acerca de los KPI, vea [Microsoft Developer Network](https://msdn.microsoft.com/library/hh272050).
 
-##  When to use a KPI
-KPIs are a great choice:
+##  Cuándo usar un KPI
+Los KPI son una excelente opción:
 
--   to measure progress (what am I ahead or behind on?)
+-   para medir el progreso (¿voy adelantado o retrasado?)
 
--   to measure distance to a goal (how far ahead or behind am I?)   
+-   para medir la distancia a un objetivo (cómo adelanto o retraso am I?)   
 
-##  KPI visual requirements
-A Key Performance Indicator (KPI) is based on a specific measure and is designed to help you evaluate the current value and status of a metric against a defined target. Therefore, a KPI visual requires a <bpt id="p1">*</bpt>base<ept id="p1">*</ept> measure that evaluates to a value and a <bpt id="p2">*</bpt>target<ept id="p2">*</ept> measure or value, and a threshold or goal.
+##  Requisitos de visual de KPI
+Un indicador clave de rendimiento (KPI) se basa en una medida específica y está diseñado para ayudarle a evaluar el valor actual y el estado de una métrica con respecto a un destino definido. Por lo tanto, se requiere un objeto visual KPI un *base* medida que se evalúa como un valor y un *destino* medida o de valor y un umbral u objetivo.
 
->[AZURE.NOTE] Currently, a KPI dataset needs to contain goal values for a KPI. This can be done by adding an excel sheet with goals to your data model or PBIX file.
+>[AZURE.NOTE] Actualmente, un conjunto de datos KPI debe contener valores de objetivo de un KPI. Esto puede hacerse mediante la adición de una hoja de excel con los objetivos para el modelo de datos o el archivo PBIX.
 
-##  How to create a KPI  
+##  Cómo crear un KPI  
 
-To follow along, sign in to Power BI and select <bpt id="p1">**</bpt>Get Data &gt; Samples &gt; Retail Analysis Sample<ept id="p1">**</ept>. We'll create a KPI that measures the progress we've made toward a sales goal.
+Para continuar, inicie sesión Power BI y seleccione **obtener datos > Muestras > ejemplo de análisis de venta**. Vamos a crear un KPI que mide el progreso que hemos hecho para lograr un objetivo de ventas.
 
-Or watch Will show you how to create single metric visuals: gauges, cards, and KPIs.
+O inspección le mostrará cómo crear elementos visuales de métrica únicos: medidores, tarjetas y KPI.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xmja6EpqaO0?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-1.  Select <bpt id="p1">**</bpt>Sales &gt; Total Units This Year<ept id="p1">**</ept>.  This will be the indicator.
+1.  Seleccione **ventas > Total de unidades de este año**.  Se trata del indicador.
 
-2.  Add <bpt id="p1">**</bpt>Time &gt; Month<ept id="p1">**</ept>.  This will be represent the trend.
+2.  Agregar **tiempo > mes**.  Esto se representará la tendencia.
 
-2. Convert the visual to a KPI by selecting the KPI icon from the Visualization pane.
+2. Convertir el objeto visual a un KPI seleccionando el icono KPI en el panel de visualización.
 
     ![](media/powerbi-service-tutorial-kpi/kpi-icon.png)
 
-3. Add a goal. Add last years sales as the goal. Drag <bpt id="p1">**</bpt>Total Units Last Year<ept id="p1">**</ept> to the <bpt id="p2">**</bpt>Target goals<ept id="p2">**</ept> field.
+3. Agregar un objetivo. Agregar ventas últimos años como objetivo. Arrastre **el año pasado unidades Total** a la **objetivos de destino** campo.
 
     ![](media/powerbi-service-tutorial-kpi/kpi-new.png)
 
-4.  Optionally, format the KPI by selecting the paintbrush icon to open the Formatting pane.
+4.  Opcionalmente, formato de KPI, seleccione el icono de pincel para abrir el panel de formato.
 
-    -   <bpt id="p1">**</bpt>Indicator<ept id="p1">**</ept> - controls the indicator’s display units and decimal places.
+    -   
+            **Indicador** -controla las unidades de visualización del indicador y decimales.
 
-    -   <bpt id="p1">**</bpt>Trend axis<ept id="p1">**</ept> - when set to <bpt id="p2">**</bpt>On<ept id="p2">**</ept>, the trend axis is displayed as the background of the KPI visual.  
+    -   
+            **Eje de tendencia** -cuando se establece en **en**, se muestra el eje de tendencia como el fondo del objeto visual KPI.  
 
-    -   <bpt id="p1">**</bpt>Goals<ept id="p1">**</ept> - when set to <bpt id="p2">**</bpt>On<ept id="p2">**</ept>, the visual displays the goal and the distance from the goal as a percentage.
+    -   
+            **Objetivos** -cuando se establece en **en**, el objeto visual muestra el objetivo y la distancia desde el objetivo como un porcentaje.
 
-    -   <bpt id="p1">**</bpt>Status<ept id="p1">**</ept> - some KPIs are considered <bpt id="p2">*</bpt>better<ept id="p2">*</ept> for higher values and some are considered <bpt id="p3">*</bpt>better<ept id="p3">*</ept> for lower values. For example, earnings VS. wait time. Typically a higher value of earnings is better versus a higher value of wait time – that is usually considered as worse. This toggle allows the selection of a KPI behavior. The status selection defaults to <bpt id="p1">**</bpt>high is better<ept id="p1">**</ept>.
+    -   
+            **Estado** : algunos KPI se consideran *mejor* para valores mayor y algunas se consideran *mejor* con valores más bajos. Por ejemplo, las ganancias VS. tiempo de espera. Normalmente un valor mayor de ingresos es mejor en comparación con un valor más alto de tiempo de espera, que normalmente se considera como algo peor. Esta opción permite la selección de un comportamiento KPI. El estado de la opción predeterminada es **alto es mejor**.
 
-6.  When you have the KPI as you want it, <bpt id="p1">[</bpt>pin it to a dashboard<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept>.
+6.  Cuando tenga el KPI como desee, [Anclar a un panel](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md).
 
 
-KPIs are also available on your mobile devices – keeping you always connected to your businesses heartbeat
+KPI también están disponibles en los dispositivos móviles: mantiene su siempre conectados a su latido de empresas
 
 
 
 ##  Consulte también
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

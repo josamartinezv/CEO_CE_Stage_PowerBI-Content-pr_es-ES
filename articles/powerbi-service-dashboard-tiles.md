@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Dashboard tiles in Power BI"
-   description="All about dashboard tiles in Power BI. This includes tiles that are created from SQL Server Reporting Services (SSRS)."
+   pageTitle="Iconos de panel en Power BI"
+   description="Todo acerca de los iconos de panel en Power BI. Esto incluye iconos que se crean desde SQL Server Reporting Services (SSRS)."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,107 +20,127 @@
    ms.date="10/24/2016"  
    ms.author="mihart"/>
 
-# <a name="dashboard-tiles-in-power-bi"></a>Dashboard tiles in Power BI
-## <a name="dashboard-tiles"></a>Dashboard tiles
+# <a name="dashboard-tiles-in-power-bi"></a>Iconos de panel en Power BI
+## <a name="dashboard-tiles"></a>Iconos de panel
 
-A tile is a snapshot of your data, pinned to the dashboard. A tile can be created from a report, dataset, dashboard, from the Q&amp;A box, Excel, and from SQL Server Reporting Services (SSRS), and more.  The screenshot below shows many different tiles pinned to a dashboard.
+Un mosaico es una instantánea de los datos, anclados al panel. Puede crearse un mosaico de un informe, conjunto de datos, panel de las preguntas y respuestas, un cuadro de Excel y de SQL Server Reporting Services (SSRS) y mucho más.  Captura de pantalla siguiente muestra muchos iconos diferentes anclados a un panel.
 
-Besides pinning, standalone tiles can be created directly on the dashboard using <bpt id="p1">[</bpt>Add tile<ept id="p1">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept>. Standalone tiles include: text boxes, images, videos, and web content.
+Además de anclaje, mosaicos independiente pueden crearse directamente en el panel utilizando [Agregar mosaico](powerbi-service-add-a-widget-to-a-dashboard.md). Incluyen iconos independiente: cuadros de texto, imágenes, vídeos y contenido web.
 
 ![](media/powerbi-service-dashboard-tiles/PBI_DashFull_new.png)
 
-Need help understanding the building blocks that make up Power BI?  See <bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>.
+¿Necesita ayuda para comprender los bloques de creación que conforman Power BI?  Consulte [BI: conceptos básicos de energía](powerbi-service-basic-concepts.md).
 
->[AZURE.NOTE] If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
-
-
-## <a name="pin-a-tile-from..."></a>Pin a tile from...
-
-Tiles can be pinned from:
-
--   <bpt id="p1">[</bpt>Power BI Q&amp;A<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)</ept>
-
--   <bpt id="p1">[</bpt>a report<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)</ept>
-
--   <bpt id="p1">[</bpt>another dashboard<ept id="p1">](powerbi-pin-a-tile-from-one-dashboard-to-another.md)</ept>
-
-- <bpt id="p1">[</bpt>Excel workbook on OneDrive for Business<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)</ept>
-
-- <bpt id="p1">[</bpt>Power BI publisher for Excel<ept id="p1">](powerbi-publisher-for-excel.md)</ept>
+>[AZURE.NOTE] Si la visualización original utilizado para crear los cambios de mosaico, no cambia el mosaico.  Por ejemplo, si agregó un gráfico de líneas de un informe y, a continuación, cambiar el gráfico de líneas a un gráfico de barras, el icono Panel de sigue mostrando un gráfico de líneas. Las actualizaciones de los datos, pero la visualización no es de tipo.
 
 
-- <bpt id="p1">[</bpt>Quick Insights<ept id="p1">](powerbi-service-auto-insights.md)</ept>
+## <a name="pin-a-tile-from..."></a>Anclar un mosaico de...
 
--   <bpt id="p1">[</bpt>SSRS<ept id="p1">](https://msdn.microsoft.com/library/mt604784.aspx)</ept>
+Pueden anclar mosaicos desde:
 
-And standalone tiles for images, text boxes, videos, and web content can be created directly on the dashboard using <bpt id="p1">[</bpt>Add tile<ept id="p1">](powerbi-service-add-a-widget-to-a-dashboard.md)</ept>.
+-   
+            [Power BI Q & A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)
+
+-   
+            [un informe](powerbi-service-pin-a-tile-to-a-dashboard-from-a-report.md)
+
+-   
+            [otro panel](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+
+- 
+            [Libro de Excel en OneDrive para la empresa](powerbi-service-pin-a-tile-to-a-dashboard-from-excel.md)
+
+- 
+            [Publicador de Power BI para Excel](powerbi-publisher-for-excel.md)
+
+
+- 
+            [Información rápida](powerbi-service-auto-insights.md)
+
+-   
+            [SSRS](https://msdn.microsoft.com/library/mt604784.aspx)
+
+Independiente de mosaicos de imágenes, cuadros de texto, vídeos y contenido web se puede crear directamente en el panel utilizando [Agregar mosaico](powerbi-service-add-a-widget-to-a-dashboard.md).
 
   ![](media/powerbi-service-dashboard-tiles/add_widgetnew.png)
 
 
-## <a name="interacting-with-tiles-on-a-dashboard"></a>Interacting with tiles on a dashboard
+## <a name="interacting-with-tiles-on-a-dashboard"></a>Interactuar con mosaicos en un panel
 
-### <a name="move-and-resize-a-tile"></a>Move and resize a tile
+### <a name="move-and-resize-a-tile"></a>Mover y cambiar el tamaño de un mosaico
 
-Grab a tile and <bpt id="p1">[</bpt>move it around on the dashboard<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>. Hover and select the handle <ph id="ph1">![](media/powerbi-service-dashboard-tiles/resize-handle.jpg)</ph> to resize the tile.
+Tomar un mosaico y [moverse en el panel](powerbi-service-edit-a-tile-in-a-dashboard.md). Mantenga el mouse y seleccione el identificador de ![](media/powerbi-service-dashboard-tiles/resize-handle.jpg) para cambiar el tamaño del mosaico.
 
-### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Hover over a tile to change the appearance and behavior
+### <a name="hover-over-a-tile-to-change-the-appearance-and-behavior"></a>Mantenga el mouse sobre un icono para cambiar la apariencia y comportamiento
 
 
-1. Hover over the tile to display the ellipses.
+1. Mantenga el mouse sobre el icono para mostrar el botón de puntos suspensivos.
 
     ![](media/powerbi-service-dashboard-tiles/ellipses_new.png)
-2. Select the ellipses to open the tile action menu.
+2. Seleccione el botón de puntos suspensivos para abrir el menú de acción de mosaico.
 
     ![](media/powerbi-service-dashboard-tiles/tile-menu.png)
 
-    From here you can:
+    Desde aquí puede:
 
-  - <bpt id="p1">[</bpt>Edit title and subtitle, add a hyperlink, display last refresh time<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept> <ph id="ph1">![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)</ph>
-  - <bpt id="p1">[</bpt>Export the data used in the tile<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept><ph id="ph1">![](media/powerbi-service-dashboard-tiles/export-icon.png)</ph>
+  - 
+            [Editar el título y el subtítulo, agregar un hipervínculo, mostrar la hora última actualización](powerbi-service-edit-a-tile-in-a-dashboard.md) ![](media/powerbi-service-dashboard-tiles/pencil-icon.jpg)
+  - 
+            [Exportar los datos utilizados en el mosaico](powerbi-service-edit-a-tile-in-a-dashboard.md)![](media/powerbi-service-dashboard-tiles/export-icon.png)
 
-  - <bpt id="p1">[</bpt>View in Focus mode<ept id="p1">](powerbi-service-display-dash-in-focus-mode.md)</ept> <ph id="ph1">![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)</ph>
+  - 
+            [Vista en modo de enfoque](powerbi-service-display-dash-in-focus-mode.md) ![](media/powerbi-service-dashboard-tiles/fullscreen-icon.jpg)
 
-  - <bpt id="p1">[</bpt>Pin the tile to another dashboard<ept id="p1">](powerbi-pin-a-tile-from-one-dashboard-to-another.md)</ept><ph id="ph1">
- </ph><ph id="ph2">![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)</ph>
+  - 
+             [Anclar el mosaico a otro panel](powerbi-pin-a-tile-from-one-dashboard-to-another.md)
+![](media/powerbi-service-dashboard-tiles/pin-icon.jpg)
 
-  - <bpt id="p1">[</bpt>Remove the tile<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept><ph id="ph1">
- </ph><ph id="ph2">![](media/powerbi-service-dashboard-tiles/trash-icon.png)</ph>
+  - 
+             [Quitar el mosaico](powerbi-service-edit-a-tile-in-a-dashboard.md)
+![](media/powerbi-service-dashboard-tiles/trash-icon.png)
 
-3. To close the action menu, select the X icon <ph id="ph1">![](media/powerbi-service-dashboard-tiles/delete-icon.jpg)</ph>.
+3. Para cerrar el menú Acción, seleccione el icono X ![](media/powerbi-service-dashboard-tiles/delete-icon.jpg).
 
-### <a name="select-(click)-a-tile"></a>Select (click) a tile
-When you select a tile, what happens next depends on how the tile was created and if it has a <bpt id="p1">[</bpt>custom link<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>. If it has a custom link, selecting the tile takes you to that link. Otherwise, selecting the tile takes you to the report, Excel Online workbook, SSRS report that is on-premises, or Q&amp;A question that was used to create the tile.
+### <a name="select-(click)-a-tile"></a>Seleccione (haga clic en) un mosaico
+Cuando se selecciona un mosaico, ¿qué sucede después depende de cómo se creó el mosaico y si tiene una [vínculo personalizado](powerbi-service-edit-a-tile-in-a-dashboard.md). Si tiene un vínculo personalizado, seleccione el icono le lleva a ese vínculo. En caso contrario, al seleccionar el mosaico pasa al informe, el libro de Excel en línea, informe de SSRS es local o pregunta de preguntas y respuestas que se usó para crear el mosaico.
 
->[AZURE.NOTE] The exception to this is video tiles created directly on the dashbaord using <bpt id="p1">**</bpt>Add tile<ept id="p1">**</ept>. Selecting a video tile (that was created this way) causes the video to play right there on the dashboard.   
+>[AZURE.NOTE] La excepción a esto es mosaicos de vídeo creados directamente en el panel utilizando **Agregar mosaico**. Si se selecciona un icono de vídeo (que se creó este modo), el vídeo se reproduzca aquí en el panel.   
 
 
-## <a name="tips-and-troubleshooting"></a>Tips and troubleshooting  
+## <a name="tips-and-troubleshooting"></a>Sugerencias y solución de problemas  
 
-- If the report that was used to create the visualization was not saved, then selecting the tile produces no action.
+- Si no se ha guardado el informe que se usó para crear la visualización, a continuación, seleccione el icono no produce ninguna acción.
 
-- If the tile was created from a workbook in Excel Online, and you do not have at least Read permissions for that workbook, selecting the tile will not open the workbook in Excel Online.
+- Si se creó el icono de un libro en Excel en línea, y no tiene al menos permisos de lectura para ese libro, seleccione el icono no se abrirá el libro en Excel Online.
 
-- For tiles created directly on the dashboard using <bpt id="p1">**</bpt>Add tile<ept id="p1">**</ept>, if a custom hyperlink has been set, selecting the title, subtitle, and or tile will open that URL.  Otherwise, by default, selecting one of these tiles created directly on the dashboard for an image, web code, or text box produces no action.
+- En los mosaicos que se crean directamente en el panel utilizando **Agregar mosaico**, si se ha establecido un hipervínculo personalizado, seleccione el título, subtítulo y o mosaico abrirá esa dirección URL.  De lo contrario, de forma predeterminada, al seleccionar uno de estos iconos que se crean directamente en el panel de una imagen, código web o cuadro de texto no produce ninguna acción.
 
-- If you don't have permission to the report within SSRS, selecting a tile created from SSRS will produce a page indicating you don't have access (rsAccessDenied).
+- Si no tiene permiso para el informe de SSRS, seleccionando un mosaico creado desde SSRS producen una página que indica que no tiene acceso (rsAccessDenied).
 
-- If you don't have access to the network where the SSRS server is located, selecting a tile created from SSRS will product a page that will indicate it cannot locate the server (HTTP 404). Your device needs to have network access to the report server to view the report.
+- Si no tiene acceso a la red donde se encuentra el servidor de SSRS, seleccionar un icono creado a partir de SSRS producto una página que indicará no se buscará el servidor (HTTP 404). El dispositivo debe tener acceso a la red al servidor de informes para ver el informe.
 
-- If the original visualization used to create the tile changes, the tile doesn't change.  For example, if you pinned a line chart from a report and then you change the line chart to a bar chart, the dashboard tile continues to show a line chart. The data refreshes, but the visualization type does not.
+- Si la visualización original utilizado para crear los cambios de mosaico, no cambia el mosaico.  Por ejemplo, si agregó un gráfico de líneas de un informe y, a continuación, cambiar el gráfico de líneas a un gráfico de barras, el icono Panel de sigue mostrando un gráfico de líneas. Las actualizaciones de los datos, pero la visualización no es de tipo.
 
 ## <a name="see-also"></a>Consulte también  
-<bpt id="p1">[</bpt>Create a big number tile from a report<ept id="p1">](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)</ept>
 
-<bpt id="p1">[</bpt>Create a big number tile from Q&amp;A<ept id="p1">](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)</ept>
+            [Crear un icono de número grande de un informe](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)
 
-<bpt id="p1">[</bpt>Dashboards in Power BI<ept id="p1">](powerbi-service-dashboards.md)</ept>  
-<bpt id="p1">[</bpt>Data refresh<ept id="p1">](powerbi-refresh-data.md)</ept>
 
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
+            [Crear un mosaico gran número de preguntas y respuestas](powerbi-service-create-a-big-number-tile-for-a-dashboard.md)
 
-<bpt id="p1">[</bpt>Export a tile to Power Point<ept id="p1">](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)</ept>
 
-<bpt id="p1">[</bpt>Pin Reporting Services items to Power BI Dashboards<ept id="p1">](https://msdn.microsoft.com/library/mt604784.aspx)</ept>
+            [Paneles de Power BI](powerbi-service-dashboards.md)  
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [Actualización de datos](powerbi-refresh-data.md)
+
+
+            [Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
+
+
+            [Exportar un mosaico a PowerPoint](http://blogs.msdn.com/b/powerbidev/archive/2015/09/28/integrating-power-bi-tiles-into-office-documents.aspx)
+
+
+            [PIN elementos de Reporting Services para paneles de Power BI](https://msdn.microsoft.com/library/mt604784.aspx)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

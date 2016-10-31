@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Text boxes in Power BI reports"
-   description="Documentation about adding and creating text boxes in a Microsoft Power BI report."
+   pageTitle="Cuadros de texto en los informes de Power BI"
+   description="Documentación sobre cómo agregar y crear cuadros de texto en un informe de Microsoft Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,35 +19,35 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Text Boxes in Power BI reports
+# Cuadros de texto en los informes de Power BI
 
-In Editing View, add a text box to a report and then pin it to a dashboard. 
+En la vista de edición, agregue un cuadro de texto a un informe y, a continuación, se ancla a un panel. 
 
-##  Add a text box to a report
-1.  Place your cursor anywhere on the report canvas and select <bpt id="p1">**</bpt>Text Box<ept id="p1">**</ept>.
+##  Agregar un cuadro de texto a un informe
+1.  Coloque el cursor en cualquier lugar del lienzo del informe y seleccione **cuadro de texto**.
 
     ![](media/powerbi-service-text-boxes-in-reports/PBI_textBox.png)
 
-2.  Type your text into the text box and, optionally, format font, color, and text alignment. 
+2.  Escriba el texto en el cuadro de texto y, opcionalmente, alineación de texto, color y fuente de formato. 
 
     ![](media/powerbi-service-text-boxes-in-reports/PBI_textBox2.png)
 
-3.  To position the text box, select the grey area at the top and drag. And to resize the Text Box, select and drag any of the outline handles. 
+3.  Para colocar el cuadro de texto, seleccione el área gris de la parte superior y arrastre. Y para cambiar el tamaño del cuadro de texto, seleccione y arrastre cualquiera de los identificadores de esquema. 
 
     ![](media/powerbi-service-text-boxes-in-reports/TextBoxSmaller.gif)
 
-4.  To close the text box, select any blank space on the report canvas.
+4.  Para cerrar el cuadro de texto, seleccione cualquier espacio en blanco en el lienzo de informe.
 
-5.  Select the pin icon  <ph id="ph1">![](media/powerbi-service-text-boxes-in-reports/PBI_PinTile.png)</ph> to pin the text box to a dashboard. 
+5.  Seleccione el icono de pin  ![](media/powerbi-service-text-boxes-in-reports/PBI_PinTile.png) para anclar el cuadro de texto a un panel. 
 
 ### Consulte también
 
-[Add a hyperlink to a text box](powerbi-service-add-a-hyperlink-to-a-text-box.md)
+[Agregar un hipervínculo a un cuadro de texto](powerbi-service-add-a-hyperlink-to-a-text-box.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Visualizations in Power BI reports](powerbi-service-visualizations-for-reports.md)
+[Visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: ArcGIS in Power BI"
-   description="Tutorial: ArcGIS in Power BI"
+   pageTitle="Tutorial: ArcGIS en Power BI"
+   description="Tutorial: ArcGIS en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,12 +21,12 @@
    ms.date="09/26/2016"
    ms.author="mihart"/>
 
-# Tutorial: ArcGIS maps in Power BI (Preview)
+# Tutorial: ArcGIS asigna en Power BI (vista previa)
 
-ArcGIS Maps for Power BI (Preview) by <bpt id="p1">[</bpt>Esri<ept id="p1">](https://www.Esri.com/powerbi)</ept> geo-enables Power BI. ArcGIS Maps offer enhanced mapping capability, demographic data, and even more compelling map visualizations so you can tell your best story.
+Mapas de ArcGIS para Power BI (vista previa) por [Esri](https://www.Esri.com/powerbi) geográfica habilita Power BI. Mapas de ArcGIS ofrecen aún más atractiva visualizaciones de mapas, datos demográficos y capacidad de asignación por lo que puede indicar la narración mejor.
 
-## User consent
-ArcGIS Maps for Power BI is provided by <bpt id="p1">[</bpt>Esri<ept id="p1">](https://www.esri.com)</ept>. Your use of ArcGIS Maps for Power BI is subject by Esri's terms and privacy policy. Power BI users wishing to use the ArcGIS Maps for Power BI visual, need to accept the consent dialog.
+## Consentimiento del usuario
+Proporciona asignaciones de ArcGIS para Power BI [Esri](https://www.esri.com). El uso de mapas de ArcGIS de Power BI está sujeto a los términos y directiva de privacidad de Esri. Power BI a los usuarios que deseen utilizar las asignaciones de ArcGIS para visual, necesidad de Power BI para aceptar el cuadro de diálogo de consentimiento.
 
 **Recursos**
 
@@ -34,174 +34,181 @@ ArcGIS Maps for Power BI is provided by <bpt id="p1">[</bpt>Esri<ept id="p1">](h
 
 [Directiva de directiva](https://go.microsoft.com/fwlink/?LinkID=826323)
 
-[ArcGIS Maps for Power BI product page](https://www.esri.com/powerbi)
+[Asignaciones de ArcGIS para página de producto de Power BI](https://www.esri.com/powerbi)
 
-## Enable the ArcGIS map preview
+## Habilitar la vista previa de mapa de ArcGIS
 
-The ArcGIS map visual is in preview, and must be enabled in Power BI. This tutorial uses the <bpt id="p1">[</bpt>Retail Analysis sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept>. To enabled <bpt id="p1">**</bpt>ArcGIS Maps for Power BI<ept id="p1">**</ept>:
+El mapa de ArcGIS visual está en vista previa y debe estar habilitado en Power BI. Este tutorial utiliza el [ejemplo de análisis de venta](powerbi-sample-retail-analysis-take-a-tour.md). Habilitado **ArcGIS mapas para Power BI**:
 
-1. Select <bpt id="p1">**</bpt>File &gt; Options and Settings &gt; Options &gt; Preview Features<ept id="p1">**</ept>.
+1. Seleccione **archivo > Opciones y configuración > Opciones > características preliminares**.
 
-2. Select the <bpt id="p1">**</bpt>ArcGIS Maps for Power BI<ept id="p1">**</ept> checkbox. You'll need to restart Power BI after you make the selection.
+2. Seleccione el **ArcGIS mapas para Power BI** casilla de verificación. Debe reiniciar Power BI después de realizar la selección.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-preview-dialog2.png)
 
-3. Open a report in Editing view and select the ArcGIS Maps for Power BI icon from the Visualizations pane.
+3. Abrir un informe en la vista de edición y seleccione las asignaciones de ArcGIS de icono de Power BI en el panel de visualizaciones.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-viz-pane2.png)
 
-4. Power BI displays the user consent dialog, select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to continue.
+4. Power BI muestra el cuadro de diálogo de consentimiento de usuario, seleccione **Aceptar** para continuar.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-consent2.png)
 
-5. Power BI adds an empty ArcGIS map template to the report canvas.
+5. Power BI agrega una plantilla de asignación de ArcGIS vacía al lienzo del informe.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-placeholder2.png)
 
-## Create an AcrGIS map visual
-Take the following steps to create a <bpt id="p1">**</bpt>ArcGIS Maps for Power BI<ept id="p1">**</ept>.
+## Crear un mapa AcrGIS visual
+Siga estos pasos para crear un **ArcGIS mapas para Power BI**.
 
-1. From the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, drag a data field to the <bpt id="p2">**</bpt>Location<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Latitude<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Longitude<ept id="p4">**</ept> buckets.
+1. Desde el **campos** panel, arrastre un datos campo a la **ubicación** o **Latitude** y **longitud** depósitos.
 
-    >[AZURE.NOTE] Power BI will automatically detect if the fields you've selected are best viewed as a shape or a point on a map. You can adjust the default in the settings (see below).
+    >[AZURE.NOTE] Power BI detectará automáticamente si los campos que ha seleccionado se ven mejor como una forma o un punto en un mapa. Puede ajustar el valor predeterminado en la configuración (ver abajo).
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-fields-pane2.png)
 
-2.  From the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, drag a measure to the <bpt id="p2">**</bpt>Size<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Color<ept id="p3">**</ept> buckets to adjust how the data is shown.
+2.  Desde el **campos** arrastre una medida para el **tamaño** o **Color** depósitos para ajustar cómo se muestran los datos.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-point-map-size2.png)
 
 
-## Settings and formatting for AcrGIS maps
-To access <bpt id="p1">**</bpt>ArcGIS Maps for Power BI<ept id="p1">**</ept> formatting features:
+## Opciones y formatos de mapas de AcrGIS
+Para tener acceso a **ArcGIS mapas para Power BI** las características de formato:
 
-1. Select the In-Focus edit mode icon within the visual.
+1. Seleccione el icono de modo de edición en foco dentro del objeto visual.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-edit-mode-icon2.png)
 
-2. Access additional features through the ribbon contained within the visual. Each feature, when selected, opens a task pane that provides detailed options.
+2. Características adicionales de acceso a través de la cinta de opciones dentro del objeto visual. Cada característica, cuando se selecciona, abre un panel de tareas que proporciona opciones detalladas.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-ribbon-options2.png)
 
-   >  [AZURE.NOTE]  For more information about the settings and features, see <bpt id="p1">**</bpt>Detailed documentation<ept id="p1">**</ept> below.
+   >  [AZURE.NOTE]  Para obtener más información sobre la configuración y características, vea **documentación detallada** a continuación.
 
-3. To return to the report, select <bpt id="p1">**</bpt>Back to Report<ept id="p1">**</ept> from the top-left corner of your report canvas.
+3. Para volver al informe, seleccione **volver a informe** desde la esquina superior izquierda del lienzo del informe.
 
-## Detailed documentation
-<bpt id="p1">**</bpt>Esri<ept id="p1">**</ept> provides <bpt id="p2">[</bpt>comprehensive documentation<ept id="p2">](https://go.microsoft.com/fwlink/?LinkID=828772)</ept> on the feature set of <bpt id="p3">**</bpt>ArcGIS Maps for Power BI<ept id="p3">**</ept>.
+## Documentación detallada
 
-### Features overview
+            **ESRI** ofrece [documentación exhaustiva](https://go.microsoft.com/fwlink/?LinkID=828772) en el conjunto de características de **ArcGIS mapas para Power BI**.
 
-#### Base Maps
-Four base maps are provided: Dark Gray Canvas, Light Gray Canvas, OpenStreetMap, and Streets.  Streets is ArcGIS's standard base map.
+### Información general de características
 
-To apply a base map select it in the task pane.
+#### Mapas de base
+Se proporcionan cuatro asignaciones bases: lienzo de color gris oscuro, lienzo de color gris claro, OpenStreetMap y calles.  Calles es el mapa base estándar de ArcGIS.
+
+Para aplicar una asignación base seleccionar en el panel de tareas.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-base-maps2.png)
 
-#### Location type
-ArgGIS Maps for Power BI automatically detects the best way to show data on the map. It selects from Points or Boundaries. The Location type options allow you to fine tune these selections.
+#### Tipo de ubicación
+Mapas de ArgGIS para Power BI detecta automáticamente la mejor manera de mostrar datos en el mapa. Selecciona desde puntos o los límites. Las opciones de tipo de ubicación permiten ajustar estas selecciones.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-location-types2.png)
 
-<bpt id="p1">**</bpt>Boundaries<ept id="p1">**</ept> will only work if your data contains standard geographic values. Esri automatically figures out the shape to show on the map.    
 
-#### Map theme
-Four map themes are provided. Location only and Size themes are automatically chosen based on the fields you bind to the location and size buckets in the Fields pane. We're currently using <bpt id="p1">**</bpt>Size<ept id="p1">**</ept>, so let's change to <bpt id="p2">**</bpt>Heat map<ept id="p2">**</ept>.  
+            **Los límites** sólo funcionará si los datos contienen valores geográficos estándar. ESRI imagina automáticamente la forma que se va a mostrar en el mapa. Valores geográficos estándar incluyen países, provincias, códigos postales, etc.. Pero, al igual que con coordenadas geográficas, Power BI puede no detectar el campo debe ser un límite de forma predeterminada, o puede que no tenga un límite para los datos.  
+
+#### Tema del mapa
+Se proporcionan cuatro temas de mapa. Sólo en la ubicación y los temas de tamaño se eligen automáticamente basándose en los campos que se enlaza a los depósitos de ubicación y el tamaño en el panel campos. Actualmente estamos usando **tamaño**, por lo que vamos a cambiar a **mapa de calor**.  
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-map-theme2.png)
 
 <table>
-<tr><th>Theme</th><th>Descripción</th>
+<tr><th>Tema</th><th>Descripción</th>
 <tr>
-<td>Location Only</td>
-<td>Plots data points or filled boundaries on the map based on the settings in Location Type.</td>
+<td>Sólo en la ubicación</td>
+<td>Los puntos de datos trazados o rellena los límites del mapa según la configuración de tipo de ubicación.</td>
 </tr>
 <tr>
-<td>Heat Map</td>
-<td>Plots an intensity plot of data on the map.</td>
+<td>Mapa de calor</td>
+<td>Traza un trazado de intensidad de los datos en el mapa.</td>
 </tr>
 <tr>
 <td>Tamaño</td>
-<td>Plots data points on the map based that are sized based on the value in the size bucket in the fields pane.</td>
+<td>Puntos de datos trazados en el mapa según tamaño en función del valor en el depósito de tamaño en el panel campos.</td>
 </tr>
 <tr>
 <td>Agrupación en clústeres</td>
-<td>Plot the count of data points in regions on the map. </td>
+<td>Trazar el recuento de puntos de datos en las regiones en el mapa. </td>
 </tr>
 </table>
 
-#### Symbol style
-Symbol styles enable you to fine tune how data is presented on the map. Symbol styles are context sensitive based on the selected Location type and Map theme.
+#### Estilo de los símbolos
+Estilos de símbolos le permiten ajustar con precisión cómo se presentan los datos en el mapa. Símbolo estilos dependen del contexto según el tipo de ubicación seleccionado y el tema del mapa.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-symbol-style2.png)
 
-### Reference Layer
-####  Reference layer - Demographics
-ArcGIS Maps for Power BI provides a selection of demographic layers that help contextualize data from Power BI.
+### Capa de referencia
+####  Capa de referencia - datos demográficos
+Mapas de ArcGIS para Power BI proporciona una selección de capas demográficas que ayudan a contextualize datos de Power BI.
 
-1. Select the <bpt id="p1">**</bpt>Reference layer<ept id="p1">**</ept> tab and choose <bpt id="p2">**</bpt>Demographics<ept id="p2">**</ept>.
+1. Seleccione el **capa de referencia** ficha y elija **datos demográficos**.
 
-2. Each layer listed has a checkbox. Add a checkmark to add that layer to the map.  In this example we've added average household income.
+2. Cada capa aparece tiene una casilla de verificación. Agregar una marca de verificación para agregar esa capa al mapa.  En este ejemplo hemos agregado promedio de ingresos doméstico.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics1.png)
 
-2. Each layer is interactive as well. Just as you can hover over a bubble to see the details, you can click a shaded area on the map to see the details.
+2. Cada capa también es interactivo. Tal como se puede desplazar el puntero sobre una burbuja para ver los detalles, puede hacer clic en un área sombreada en el mapa para ver los detalles.
    ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-reference-layer-demographics2.png)
 
 
-#### Reference layer - ArcGIS
-ArcGIS Online provides the ability for organizations to publish public web maps. Additionally, Esri provides a curated set of web maps through Living Atlas. In the ArcGIS tab, you can search all public web maps or Living Atlas maps, and add them to the map as reference layers.
+#### Capa de referencia - ArcGIS
+ArcGIS Online proporciona la capacidad de las organizaciones la publicación web pública mapas. Además, Esri proporciona un vasto conjunto de asignaciones de web a través de vivir Atlas. En la pestaña de ArcGIS, puede buscar todos los mapas de web pública o vivir Atlas y agregar al mapa como capas de referencia.
 
-1. Select the <bpt id="p1">**</bpt>Reference layer<ept id="p1">**</ept> tab and choose <bpt id="p2">**</bpt>ArcGIS<ept id="p2">**</ept>.
+1. Seleccione el **capa de referencia** ficha y elija **ArcGIS**.
 
-2. Enter search terms and then select a map layer. In this example we've chosen USA Congressional districts.
+2. Especifique los términos de búsqueda y, a continuación, seleccione una capa de mapa. En este ejemplo hemos elegido distritos congreso de EE.
 
     ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-demographics-esri2.png)   
-3. To see the details, select a shaded area to open the <bpt id="p1">_</bpt>Select from reference layer<ept id="p1">_</ept>: Use the reference layer selection tool to selection boundaries or objects on the reference layer.
+3. Para ver los detalles, seleccione un área sombreada para abrir el _Seleccione de la capa de referencia_: utilice la herramienta de selección de capa de referencia en los límites de la selección o los objetos de la capa de referencia.
 
-## Selecting Data points
-ArcGIS Maps for Power BI allows three selection modes.
+## Selección de puntos de datos
+Mapas de ArcGIS para Power BI permite tres modos de selección.
 
-Change the selection mode using switch:
+Cambiar el modo de selección mediante conmutador:
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-tools2.png)
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png) Select individual data points.
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-single2.png) Seleccione los puntos de datos individuales.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png) Draws a rectangle on the map and selects the contained data points.
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-marquee2.png) Dibuja un rectángulo en el mapa y selecciona los puntos de datos independientes.
 
-![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png) Allows boundaries or polygons within reference layers to be used to select contained data points.
+![](media/powerbi-service-tutorial-arcgis/power-bi-esri-selection-reference-layer2.png) Permite los límites o polígonos en capas de referencia que se utilizan para seleccionar puntos de datos independientes.
 
-<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> a maximum of 250 data points can be selected at a time.
 
-## Getting help
-<bpt id="p1">**</bpt>Esri<ept id="p1">**</ept> provides <bpt id="p2">[</bpt>comprehensive documentation<ept id="p2">](https://go.microsoft.com/fwlink/?LinkID=828772)</ept> on the feature set of <bpt id="p3">**</bpt>ArcGIS Maps for Power BI<ept id="p3">**</ept>.
+            **Nota:** se puede seleccionar un máximo de puntos de datos de 250 a la vez.
 
-You can ask questions and find answers on the Power BI <bpt id="p1">[</bpt>community thread related to <bpt id="p2">**</bpt>ArcGIS Maps for Power BI<ept id="p2">**</ept><ept id="p1">](https://go.microsoft.com/fwlink/?LinkID=828771)</ept> to find the latest information or to report issues.
+## Obtención de ayuda
 
-If you have a suggestion for an improvement, please submit them to <bpt id="p1">[</bpt>Power BI's ideas list<ept id="p1">](https://ideas.powerbi.com)</ept>.
+            **ESRI** ofrece [documentación exhaustiva](https://go.microsoft.com/fwlink/?LinkID=828772) en el conjunto de características de **ArcGIS mapas para Power BI**.
 
-## Managing use of ArcGIS Maps for Power BI within your organization
+Puede hacer preguntas y encuentre respuestas en Power BI [relacionados con subprocesos de la Comunidad **ArcGIS mapas para Power BI**](https://go.microsoft.com/fwlink/?LinkID=828771) para buscar la información más reciente o notificar problemas.
 
-Power BI provides the ability for users, tenant administrators, and IT administrators to manage whether to use ArcGIS Maps for Power BI.
+Si tiene alguna sugerencia para una mejora, envíelos a [lista de ideas de Power BI](https://ideas.powerbi.com).
 
-<bpt id="p1">**</bpt>User options<ept id="p1">**</ept> In Power BI Desktop, users can stop using ArcGIS Maps for Power BI by disabling it on the security tab in options. When disabled, ArcGIS Maps will not load by default.
+## Administrar el uso de asignaciones de ArcGIS para Power BI dentro de su organización
+
+Power BI proporciona la capacidad de administrar si desea utilizar mapas de ArcGIS para Power BI para usuarios, administradores de inquilinos y los administradores de TI.
+
+
+            **Opciones de usuario** en Power BI Desktop, los usuarios pueden detener mediante mapas de ArcGIS para Power BI deshabilitando en la ficha seguridad en las opciones. Cuando se deshabilita, mapas de ArcGIS no cargará de forma predeterminada.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-desktop-security-dialog2.png)
 
-In Power BI service, users can stop using ArcGIS Maps for Power BI by disabling it on the ArcGIS Maps for Power BI (Preview) tab in user Settings. When disabled, ArcGIS Maps will not load by default.
+En el servicio de Power BI, los usuarios pueden detener mediante mapas de ArcGIS para Power BI deshabilitando en las asignaciones de ArcGIS de ficha de Power BI (vista previa) en la configuración de usuario. Cuando se deshabilita, mapas de ArcGIS no cargará de forma predeterminada.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-service-user-settings2.png)
 
-<bpt id="p1">**</bpt>Tenant admin options<ept id="p1">**</ept> In PowerBI.com, tenant administrators can prevent all tenant users from using ArcGIS Maps for Power BI by disabling. When this happens, Power BI will no longer see the ArcGIS Maps for Power BI icon in the visualizations pane.
+
+            **Opciones de administración de inquilinos** en PowerBI.com, los administradores de inquilinos pueden evitar que todos los usuarios del inquilino mediante mapas de ArcGIS para Power BI deshabilitando. Cuando esto sucede, Power BI ya no verá las asignaciones de ArcGIS de icono de Power BI en el panel de visualizaciones.
 
 ![](media/powerbi-service-tutorial-arcgis/power-bi-arcgis-admin-portal2.png)
 
-<bpt id="p1">**</bpt>IT Administrator options<ept id="p1">**</ept> Power BI Desktop supports using <bpt id="p2">**</bpt>Group Policy<ept id="p2">**</ept> to disable ArcGIS Maps for Power BI across an organization's deployed computers.
+
+            **Opciones del Administrador de TI** Power BI Desktop admite el uso de **Directiva de grupo** para deshabilitar ArcGIS mapas de equipos de implementación de Power BI en toda la organización.
 
 <table>
 <tr><th>Atributo</th><th>Valor</th>
 </tr>
 <tr>
 <td>key</td>
-<td>Software\Policies\Microsoft\Power BI Desktop\</td>
+<td>Software\Policies\Microsoft\Power BI escritorio\</td>
 </tr>
 <tr>
 <td>valueName</td>
@@ -209,11 +216,11 @@ In Power BI service, users can stop using ArcGIS Maps for Power BI by disabling 
 </tr>
 </table>
 
-A value of 1 (decimal) enables ArcGIS Maps for Power BI.
+Un valor de 1 (decimal) permite que las asignaciones de ArcGIS para Power BI.
 
-A value of 0 (decimal) disable ArcGIS Maps for Power BI.
+Un valor de 0 (decimal) deshabilita ArcGIS mapas de Power BI.
 
-You can use the provided <bpt id="p1">**</bpt>Group Policy<ept id="p1">**</ept> templates to quickly add the required configuration to your <bpt id="p2">**</bpt>Group Policy<ept id="p2">**</ept>.
+Puede usar el **Directiva de grupo** plantillas para agregar rápidamente la configuración necesaria para su **Directiva de grupo**.
 
 **Plantilla**
 
@@ -222,16 +229,17 @@ You can use the provided <bpt id="p1">**</bpt>Group Policy<ept id="p1">**</ept> 
 [PowerBIEsri.admx](./groupPolicyTemplates/PowerBIEsri.admx)
 
 ## Preguntas frecuentes
-**Is there any charge for using ArcGIS Maps for Power BI?**
+**¿Hay ningún cargo por mediante mapas de ArcGIS para Power BI?**
 
-The ArcGIS Map for Power BI (Preview) is available to all Power BI users at no additional cost. It is a component provided by <bpt id="p1">**</bpt>Esri<ept id="p1">**</ept> and your use is subject to the terms and privacy policy provided by <bpt id="p2">**</bpt>Esri<ept id="p2">**</ept> as noted earlier in this article.
+El mapa de ArcGIS para Power BI (vista previa) está disponible para todos los usuarios de Power BI sin costo adicional. Es un componente proporcionado por **Esri** y su uso está sujeto a los términos y directiva de privacidad proporcionada por **Esri** como se indicó anteriormente en este artículo.
 
-**Does ArcGIS Maps for Power BI support Esri Shapefiles?**
+**¿ArcGIS mapas para Power BI admite Esri Shapefiles?**
 
-ArcGIS Maps for Power BI automatically detects standard boundaries like countries/regions, states/provinces, and zip/postal codes. If you need to provide your own shapes you can do so using the <bpt id="p1">[</bpt>Shape Maps for Power BI Desktop (Preview)<ept id="p1">](powerbi-desktop-shape-map.md)</ept>.
+Mapas de ArcGIS para Power BI detecta automáticamente los límites estándares como países o regiones, Estados o provincias y códigos postales. Si necesita proporcionar sus propias formas puede hacerlo mediante el [asignaciones de formas para Power BI Desktop (vista previa)](powerbi-desktop-shape-map.md).
 
-**Can I connect to my ArcGIS Online account from Power BI?**
+**¿Puedo conectar a mi cuenta Online de ArcGIS desde Power BI?**
 
-Todavía no. <bpt id="p1">[</bpt>Vote for this idea<ept id="p1">](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases )</ept> and we'll send you an email when we start working on this feature.  
+Todavía no. 
+            [Voto para esta idea](https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9154765-arcgis-geodatabases ) y te enviaremos un correo electrónico cuando se empiezan a trabajar en esta característica.  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

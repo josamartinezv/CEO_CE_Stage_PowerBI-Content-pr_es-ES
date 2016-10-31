@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Pin a tile to a Power BI dashboard from the Q&amp;A question box"
-   description="Documentation on how to pin a tile to a Power BI dashboard from the Q&amp;A question box"
+   pageTitle="Anclar un mosaico a un panel de Power BI desde el cuadro de pregunta de preguntas y respuestas"
+   description="Documentación sobre cómo anclar un mosaico a un panel de Power BI desde el cuadro de pregunta de preguntas y respuestas"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,42 +20,43 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Pin a tile to a Power BI dashboard from the Q&amp;A question box  
-## How to pin a tile from Q&amp;A
-Q&amp;A is the Power BI ad hoc reporting tool. Need to find a particular insight? Ask a question about your data, and receive an answer in the form of a visualization.
+# Anclar un mosaico a un panel de Power BI desde el cuadro de pregunta de preguntas y respuestas  
+## Cómo anclar un mosaico de preguntas y respuestas
+Preguntas y respuestas es la herramienta de creación de informes ad hoc de Power BI. ¿Necesita buscar una determinada información? Formule una pregunta sobre los datos y recibir una respuesta de la forma de una visualización.
 
-1.  Create a <bpt id="p1">[</bpt>dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept> and <bpt id="p2">[</bpt>get data<ept id="p2">](powerbi-service-get-data.md)</ept>.
+1.  Crear un [panel](powerbi-service-dashboards.md) y [obtener datos](powerbi-service-get-data.md).
 
-2.  In the question box at the top of your dashboard, start typing what you want to know about your data.  
+2.  En el cuadro de pregunta en la parte superior del panel del, comience a escribir lo que desea saber acerca de los datos.  
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_QnAQuestionBoxNew.png)
 
-3.  For example, as you type "last year sales by month and territory"...  
+3.  Por ejemplo, se puede especificar "ventas del último año, mes y territorio"...  
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/power-bi-type-q-and-a.png)
 
-    the question box gives you suggestions "
+    el cuadro de pregunta ofrece sugerencias"
 
-4.  To add the chart to your dashboard as a tile, select the pin <ph id="ph1">![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_PinTile.png)</ph> on the top-right side of the canvas.
+4.  Para agregar el gráfico a su panel de mosaico, seleccione el pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/PBI_PinTile.png) en la parte superior derecha del lienzo.
 
-5.  Pin the tile to an existing dashboard or to a new dashboard. 
+5.  Anclar el mosaico a un panel existente o a un nuevo panel. 
 
-    -   Existing dashboard: select the name of the dashboard from the dropdown.
+    -   Panel existente: seleccione el nombre del panel en la lista desplegable.
 
-    -   New dashboard: type the name of the new dashboard.
+    -   Nuevo panel: escriba el nombre del nuevo panel.
 
-6.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+6.  Seleccione **Pin**.
 
-    A success message (near the top-right corner) lets you know the visualization was added, as a tile, to your dashboard.  
+    Un mensaje de confirmación (cerca de la esquina superior derecha) le permite conocer que la visualización se ha agregado, como un icono al escritorio.  
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box/pinSuccess.png)
 
-7.  From the navigation pane, select the dashboard with the new tile. There, you can <bpt id="p1">[</bpt>rename, resize, add a hyperlink, and reposition the tile, and more<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept> on your dashboard. 
+7.  En el panel de navegación, seleccione el panel con el nuevo icono. Allí, puede [cambiar el nombre, cambiar el tamaño, agregar un hipervínculo y volver a colocar el mosaico y más](powerbi-service-edit-a-tile-in-a-dashboard.md) en el panel. 
 
-## Tips for using Q&amp;A  
--   When you start typing a question, Q&amp;A immediately begins searching for the best answer from all datasets associated with the current dashboard.  The "current dashboard" is the dashboard highlighted in the navigation pane.
+## Sugerencias para usar preguntas y respuestas  
+-   Al comenzar a escribir una pregunta, preguntas y respuestas inmediatamente comienza a buscar la mejor respuesta de todos los conjuntos de datos asociados con el panel actual.  Panel"actual" es el panel resaltado en el panel de navegación.
 
--   <bpt id="p1">**</bpt>How does Q&amp;A know which datasets to use<ept id="p1">**</ept>?  Q&amp;A has access to all datasets that have visualizations pinned to that dashboard.
+-   
+            **¿Cómo preguntas y respuestas sabe qué conjuntos de datos para usar**?  Preguntas y respuestas tienen acceso a todos los conjuntos de datos con visualizaciones anclados a ese panel.
 
 ## Véase también  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Q&amp;A in Power BI](powerbi-service-q-and-a.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Paneles de Power BI](powerbi-service-dashboards.md)  
+[Preguntas y respuestas en Power BI](powerbi-service-q-and-a.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

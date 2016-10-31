@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Review custom visuals for security and privacy"
-   description="Before you enable a custom visual, you should review that visual for security and privacy to make sure if will fit your organization's standards."
+   pageTitle="Revise los elementos visuales personalizados para la seguridad y privacidad"
+   description="Antes de habilitar un objeto visual personalizado, debe revisar que visual para la seguridad y privacidad para hacer seguro if ajustará los estándares de su organización."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,105 +20,106 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# Review custom visuals for security and privacy
+# Revise los elementos visuales personalizados para la seguridad y privacidad
 
-Before you enable a custom visual, you should review that visual for security and privacy to make sure if will fit your organization's standards.
+Antes de habilitar un objeto visual personalizado, debe revisar que visual para la seguridad y privacidad para hacer seguro if ajustará los estándares de su organización.
 
-## Enable a custom visual
+## Habilitar un objeto visual personalizado
 
-<a name="enable"></a>A custom visual in the report is disabled until you choose <bpt id="p1">**</bpt>Enable custom visuals<ept id="p1">**</ept> as shown below.  
+<a name="enable"></a>Un objeto visual personalizado en el informe está deshabilitado hasta que usted decida **Habilitar elementos visuales personalizados** tal como se muestra a continuación.  
 
 ![](media/powerbi-custom-visuals-review-for-security-and-privacy/EmptyVisual.png)
 
-## Considerations before you enable a custom visual  
+## Consideraciones antes de habilitar un objeto visual personalizado  
 <a name="considerations"></a>
 
-> [AZURE.WARNING] A custom visual could contain code with security or privacy risks; therefore, a custom visual in the report is disabled until you choose Enable custom visuals. Here are some considerations to decide whether to enable a custom visual:
+> [AZURE.WARNING] Un objeto visual personalizado podría contener código con seguridad o riesgos de privacidad; por lo tanto, un objeto visual personalizado en el informe está deshabilitado hasta que usted decida elementos visuales personalizados de habilitar. Estas son algunas consideraciones para decidir si desea habilitar un objeto visual personalizado:
 
-1. Ensure you trust the author and the source of the custom visuals used in the report
+1. Asegúrese de que confía en el autor y el origen de los elementos visuales personalizados utilizados en el informe
 
-2. If you are unsure what to do, you should reach out to your IT team to weigh in on whether you should enable custom visuals for reports you view.
+2. Si no está seguro de qué hacer, que debe llegar a su equipo de TI sopesan si debe habilitar elementos visuales personalizados para ver los informes.
 
-3. If someone shares a report with you that contains a custom visual, even if they're a close co-worker, do not feel obligated to enable the custom visual. It's okay to step back and consider whether it is essential to the task at hand. It's always okay to ask someone to provide you a report without custom visuals if you don't feel confident about the custom visual.
+3. Si un usuario comparte un informe con usted que contiene un objeto visual personalizado, incluso si tienen un colega cerrar, no se sienta obligado a habilitar el objeto visual personalizado. Está bien retroceder y tener en cuenta si es esencial para la tarea en cuestión. Siempre es correcto pida a alguien que proporcionan un informe sin elementos visuales personalizados si prefiere no molestarse plena confianza en el objeto visual personalizado.
 
-## Security best practices for IT Professionals to enable a custom visual  
+## Prácticas recomendadas de seguridad para profesionales de TI habilitar un objeto visual personalizado  
 <a name="security"></a>
 
-> [AZURE.WARNING] A custom visual could contain code with security or privacy risks; therefore, a custom visual in the report is disabled until you choose Enable custom visuals. There are several best practices you can follow to evaluate a custom visual for security and privacy.
+> [AZURE.WARNING] Un objeto visual personalizado podría contener código con seguridad o riesgos de privacidad; por lo tanto, un objeto visual personalizado en el informe está deshabilitado hasta que usted decida elementos visuales personalizados de habilitar. Hay varios procedimientos recomendados que puede seguir para evaluar un objeto visual personalizado de seguridad y privacidad.
 
-1.  Implement a vetting process for custom visuals within the organization. Vetted custom visuals would be shared with internal users through an internal website, such as a SharePoint document library or OneNote document.
-2.  Provide guidance for business users on appropriate use of custom visuals and an email group for business users to send security and privacy questions to.
-3.  Evaluate the JavaScript code in the custom visual pbiviz file.
+1.  Implementar un proceso vetting para elementos visuales personalizados dentro de la organización. Cuenta elementos visuales personalizados se podrían compartir con los usuarios internos a través de un sitio Web interno, como una biblioteca de documentos de SharePoint o un documento de OneNote.
+2.  Proporcionar instrucciones para los usuarios empresariales en uso adecuado de los elementos visuales personalizados y un grupo de correo electrónico para los usuarios empresariales enviar preguntas sobre la privacidad a y seguridad.
+3.  Evalúe el código de JavaScript en el archivo pbiviz visual personalizado.
 
-**To evaluate the JavaScript code in a custom visual**
+**Para evaluar el código JavaScript en un objeto visual personalizado**
 
-A custom visual uses JavaScript and can therefore contain security or privacy risks. If you receive a custom visual or a pbix file with a custom visual from an unknown source, you may want to look at the JavaScript to see if it is safe.
+Un objeto visual personalizado usa JavaScript y, por tanto, puede contener los riesgos de seguridad o privacidad. Si recibe un objeto visual personalizado o un archivo pbix con un objeto visual personalizado de un origen desconocido, puede mirar el código JavaScript para ver si es seguro.
 
-To evaluate the JavaScript code in a custom visual, extract the custom visual code. Here’s how to extract the code:  
+Para evaluar el código JavaScript en un objeto visual personalizado, extraiga el código visual personalizado. Aquí se muestra cómo extraer el código:  
 
-1. Save the .pbiviz file to a folder.
+1. Guarde el archivo .pbiviz en una carpeta.
 
-2. Rename the file to a .zip file.
+2. Cambie el nombre a un archivo zip.
 
-3. Extract the zip file to a local folder.
+3. Extraiga el archivo zip en una carpeta local.
 
-## Custom visual file contents
+## Contenido del archivo visual personalizado
 
-The following are the contents of a pbiviz file:
+El siguiente es el contenido de un archivo pbiviz:
 
 | **Archivo**                     | **Descripción**                                                                                                                                                           |
 |:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ./package.json               | A manifest file that indicates which files to load for the custom visual.                                                                                                 |
-| ./resources                  | Contains the CSS, TypeScript, and JavaScript used by the custom visual.                                                                                                   |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name&gt;     | &lt;name<ph id="ph1">&amp;gt;</ph> is the name of the custom visual.                                                                                                                            |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name<ph id="ph2">&amp;gt;</ph>.css | The css resource file for the custom visual.                                                                                                                              |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name<ph id="ph2">&amp;gt;</ph>.js  | The code that executes when a user clicks Enable custom visuals or after a user Imports a custom visual. Warning JavaScript code could contain security or privacy risks. |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name<ph id="ph2">&amp;gt;</ph>.ts  | The JavaScript source code for the visual in TypeScript format. Warning JavaScript or TypeScript code could contain security or privacy risks.                            |
-| ./resources/<ph id="ph1">&amp;lt;</ph>name<ph id="ph2">&amp;gt;</ph>.png | The icon shown to the user for the visual.                                                                                                                                |
+| ./Package.JSON               | Un archivo de manifiesto que indica qué archivos de carga para el objeto visual personalizado.                                                                                                 |
+| . / recursos                  | Contiene la CSS, TypeScript y JavaScript utilizados por el objeto visual personalizado.                                                                                                   |
+| ./resources/&lt;nombre&gt;     | &lt;nombre&gt; es el nombre del objeto visual personalizado.                                                                                                                            |
+| ./resources/&lt;nombre&gt;.css | El archivo de recursos de css para el objeto visual personalizado.                                                                                                                              |
+| ./resources/&lt;nombre&gt;.js  | El código que se ejecuta cuando un usuario hace clic en elementos visuales personalizados de habilitar o después de que un usuario importa un objeto visual personalizado. Advertencia de código JavaScript podría contener riesgos la seguridad o privacidad. |
+| ./resources/&lt;nombre&gt;.ts  | El código fuente de JavaScript para el objeto visual en formato de TypeScript. Código de advertencia JavaScript o TypeScript podría contener los riesgos de seguridad o privacidad.                            |
+| ./resources/&lt;nombre&gt;.png | El icono que se muestra al usuario para el objeto visual.                                                                                                                                |
 
-After you extract the pbiviz file, you can evaluate the code. Here are some best practices and threats to look for.
+Después de extraer el archivo pbiviz, puede evaluar el código. Estas son algunas prácticas recomendadas y las amenazas a buscar.
 
-## Best practices to evaluate the JavaScript or TypeScript code
+## Mejores prácticas para evaluar el código de JavaScript o TypeScript
 
-<bpt id="p1">**</bpt>JavaScript<ept id="p1">**</ept> or <bpt id="p2">**</bpt>TypeScript<ept id="p2">**</ept> code could contain security or privacy risks. Here are some best practices and threats to look for.
 
-### Best practices to evaluate JavaScript code
+            **JavaScript** o **TypeScript** código podría contener los riesgos de seguridad o privacidad. Estas son algunas prácticas recomendadas y las amenazas a buscar.
 
--  Always evaluate the .js file contents. This is the code that actually runs. It could be that the contents of the .ts file don't compile to the .js file included in the custom visual.
+### Mejores prácticas para evaluar el código JavaScript
 
--  Always evaluate the .ts file contents. You can load the .ts file into the <bpt id="p1">**</bpt>Developer Tools<ept id="p1">**</ept>, export the visual and compare the resulting .js file in the newly create .pbiviz file to the original .js file contained in the visual
+-  Siempre se evaluará el contenido del archivo .js. Este es el código que se ejecuta realmente. Es posible que el contenido del archivo .ts no se compila en el archivo .js que se incluyen en el objeto visual personalizado.
 
--  Check that the icon for the custom visual does not resemble too closely other visuals the user is familiar with.
+-  Siempre se evaluará el contenido del archivo .ts. Puede cargar el archivo .ts en la **Developer Tools**, exportar el objeto visual y comparar el archivo .js resultante el recién creado archivo .pbiviz en el archivo .js original contenido en el objeto visual
 
--  Always evaluate the visual in a test account that has minimal privileges and does not have access to any sensitive data. Ideally the test account would be a local account with no sign-in information to services other than Power BI.
+-  Compruebe que el icono para el objeto visual personalizado no se parecen a demasiado estrechamente otros elementos visuales que está familiarizado con el usuario.
 
-### Threats to look for in JavaScript code
+-  Siempre se evaluará el objeto visual en una cuenta de prueba que tiene los privilegios mínimos y no tiene acceso a los datos confidenciales. Lo ideal es que la cuenta de prueba podría ser una cuenta local sin información de inicio de sesión para los servicios que no sean de Power BI.
 
--  Check network activity when the visual is being used in both edit and view mode. Ensure you're satisfied with the requests that are being made. You should not see requests to resources outside the Power BI domain unless the visual author has communicated this ahead of time.
+### Amenazas para buscar en el código de JavaScript
 
--  Any data you see leaving the Power BI domain should match your expectations for what 'normal' use would be. For example - if the visual implements a video player that uses an iFrame to view a video from another site, some information should travel in the IFrame requests to render the video correctly. However, if you see the entire data set being sent across the wire, you might investigate further if this is required and desired.
+-  Comprobar la actividad de red cuando se usa el objeto visual en modo de edición y de vista. Asegúrese de que está satisfecho con las solicitudes que se realizan. No debería ver las solicitudes a recursos fuera del dominio de Power BI a menos que el autor visual ha comunicado de antemano.
 
--  Check if personally identifiable data is being sent or stored by the custom visual.
+-  Los datos que verá que abandonar el dominio de Power BI deben coincidir con sus expectativas para el uso de 'normal' sería. Por ejemplo: si el objeto visual implementa un Reproductor de vídeo que utiliza un iFrame para ver un vídeo desde otro sitio, debe incluir cierta información en las solicitudes de IFrame para representar el vídeo correctamente. Sin embargo, si ve el conjunto de datos que se envían a través de la red, podría investigar aún más si esto es necesario y que desee.
 
--  Check if the custom visual is trying to access local machine resources such as writing files to disk or accessing cookies.
+-  Compruebe si personalmente identificables datos se están enviado o almacenados por el objeto visual personalizado.
 
--  Check if the custom visual has what appears to be obfuscated code or code without a clear purpose.
+-  Compruebe si el objeto visual personalizado está intentando obtener acceso a recursos de la máquina local, como la escritura de archivos en disco o tiene acceso a las cookies.
 
--  Save copies of each visual you reviewed in the past.
+-  Compruebe si el objeto visual personalizado tiene lo que parece ser confusa código o sin un objetivo claro.
 
--  If you are reviewing an update to a visual you previously reviewed, ensure to check for changes. Always apply equal rigor to updates as you did the first time you received the visual for review
+-  Guardar copias de cada visual revisado en el pasado.
 
--  If you find something suspicious or unclear, please reach out to us we're here to help.
+-  Si está revisando una actualización de un elemento visual que ha examinado previamente, asegúrese de comprobar los cambios. Siempre se aplican rigor igual a las actualizaciones al igual que la primera vez que recibe el objeto visual para su revisión
+
+-  Si encuentra algo sospechoso o confuso, póngase en contacto out nos estamos aquí para ayudarle.
 
 ## Consulte también
 
-[Visualizations in Power BI](powerbi-service-visualizations-for-reports.md)  
-[Custom Visualizations in Power BI](powerbi-custom-visuals.md)  
-[The Power BI custom visuals gallery](https://app.powerbi.com/visuals)  
-[Add a custom visualizations to a report (Power BI Desktop)](powerbi-custom-visuals-use.md)  
-[Add a custom visualization to a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)  
-[Download custom visualizations from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)  
-[Create and submit a visualization to the gallery](powerbi-custom-visuals-create-for-the-gallery.md)  
-[Getting started with custom visuals developer tools (Preview)](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
-[Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Visualizaciones en Power BI](powerbi-service-visualizations-for-reports.md)  
+[Visualizaciones personalizadas en Power BI](powerbi-custom-visuals.md)  
+[La Galería de elementos visuales personalizados de Power BI](https://app.powerbi.com/visuals)  
+[Agregar una visualización personalizada a un informe (Power BI Desktop)](powerbi-custom-visuals-use.md)  
+[Agregar una visualización personalizada a un informe (servicio Power BI)](powerbi-custom-visuals-add-to-report.md)  
+[Descargar visualizaciones personalizadas de la Galería](powerbi-custom-visuals-download-from-the-gallery.md)  
+[Crear y enviar una visualización en la Galería](powerbi-custom-visuals-create-for-the-gallery.md)  
+[Introducción a las herramientas de desarrollo de elementos visuales personalizados (vista previa)](powerbi-custom-visuals-getting-started-with-developer-tools.md)  
+[Vídeo: Crear visualizaciones personalizadas para Power BI con Sachin Patney y Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get Power BI Desktop"
-   description="Download and install Power BI Desktop"
+   pageTitle="Obtener Power BI Desktop"
+   description="Descargue e instale Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,48 +19,53 @@
    ms.workload="powerbi"
    ms.date="09/29/2016"
    ms.author="davidi"/>
-# Get Power BI Desktop
+# Obtener Power BI Desktop
 
-<bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> provides advanced query, modeling, and report creation features that enables you to build data models, create reports, and share your work by publishing to the Power BI service.
 
-To download the most recent version of Power BI Desktop, you can select the download icon from the Power BI service, and select <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>.
+            **Power BI Desktop** proporciona consultas avanzadas, modelado y las características de creación de informes que le permite crear modelos de datos, crean informes y compartan su trabajo mediante la publicación en el servicio Power BI.
+
+Para descargar la versión más reciente de Power BI Desktop, puede seleccionar el icono de descarga en el servicio de Power BI y seleccione **Power BI Desktop**.
 
 ![](media/powerbi-desktop-get-the-desktop/GetPBID_Downloads.png)
 
-You can also download the latest version of Power BI Desktop directly from <bpt id="p1">[</bpt>this download link<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+También puede descargar la versión más reciente de Power BI Desktop directamente desde [este vínculo para descargar](https://powerbi.microsoft.com/desktop).
 
-Either way, once <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> is downloaded, you're prompted to run the installation file:
+En cualquier caso, una vez **Power BI Desktop** descargado, se le pide que ejecute el archivo de instalación:
 
 ![](media/powerbi-desktop-get-the-desktop/GetPBID_3.png)
 
-<bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> is installed as an application, and runs on your desktop.
+
+            **Power BI Desktop** se instala como una aplicación y se ejecuta en el escritorio.
 
 ![](media/powerbi-desktop-getting-started/Designer_GSG_Install.png)
 
-When you launch <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, a <bpt id="p2">*</bpt>Welcome<ept id="p2">*</ept> screen is displayed.
+Al iniciar **Power BI Desktop**, un *bienvenida* se muestra la pantalla.
 
 ![](media/powerbi-desktop-getting-started/Designer_GSG_StartSplashScreen.png)
 
-From there, you can begin creating data models or reports, then share them with others on the Power BI service. Check out the <bpt id="p1">**</bpt>More information<ept id="p1">**</ept> links at the end of this article for links to guides that can help you get started using <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept>.
+Desde allí, puede empezar a crear informes o modelos de datos y luego compartirlos con otras personas en el servicio Power BI. Consulte la **obtener más información** vincula al final de este artículo para vínculos a guías que le ayudarán a empezar a usar **Power BI Desktop**.
 
 ## Requisitos mínimos
 
-The following list provides the minimum requirements to run <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>:
+La lista siguiente describe los requisitos mínimos para ejecutar **Power BI Desktop**:
 
--    Windows 7 / Windows Server 2008 R2, or later
+-    Windows 7 o Windows Server 2008 R2 o posterior
 -    .NET 4.5
 -    Internet Explorer 9 o posterior
--    <bpt id="p1">**</bpt>Memory (RAM):<ept id="p1">**</ept> At least 1 GB available, 1.5 GB or more recommended.
--    <bpt id="p1">**</bpt>Display:<ept id="p1">**</ept> At least 1440x900 or 1600x900 (16:9) recommended. Lower resolutions such as 1024x768 or 1280x800 are not recommended, as certain controls (such as closing the startup screen) display beyond those resolutions.
--    <bpt id="p1">**</bpt>CPU:<ept id="p1">**</ept> 1 gigahertz (GHz) or faster x86- or x64-bit processor recommended.
+-    
+            **Memoria (RAM):** disponible al menos 1 GB, 1,5 GB o más recomendado.
+-    
+            **Mostrar:** al menos 1440 x 900 o 1600 x 900 (16:9) recomienda. No se recomiendan las resoluciones más bajas como 1024 x 768 o 1280 x 800, como determinado mostrar controles (por ejemplo, para cerrar la pantalla de inicio) más allá de las soluciones.
+-    
+            **CPU:** 1 gigahercio (GHz) o más rápido x86-o x 64-bit se recomienda un procesador.
 
 ## Más información
 
-Once you get <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> installed, the following content can help you get up and running quickly:
+Una vez que obtenga **Power BI Desktop** instalado, el contenido siguiente puede ayudarle a trabajar rápidamente:
 
--   [Getting Started with Power BI Desktop](powerbi-desktop-getting-started.md)
--   [Query Overview with Power BI Desktop](powerbi-desktop-query-overview.md)
--   [Data Sources in Power BI Desktop](powerbi-desktop-data-sources.md)
--   [Connect to Data in Power BI Desktop](powerbi-desktop-connect-to-data.md)
--   [Shape and Combine Data with Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
--   [Common Query Tasks in Power BI Desktop](powerbi-desktop-common-query-tasks.md)   
+-   [Introducción a Power BI Desktop](powerbi-desktop-getting-started.md)
+-   [Información general sobre consultas con Power BI Desktop](powerbi-desktop-query-overview.md)
+-   [Orígenes de datos en Power BI Desktop](powerbi-desktop-data-sources.md)
+-   [Conectarse a datos de Power BI Desktop](powerbi-desktop-connect-to-data.md)
+-   [La forma y combinar datos con Power BI Desktop](powerbi-desktop-shape-and-combine-data.md)
+-   [Tareas comunes de consultas en Power BI Desktop](powerbi-desktop-common-query-tasks.md)   

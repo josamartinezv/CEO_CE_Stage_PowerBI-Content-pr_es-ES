@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI get started with third party apps"
-   description="Power BI get started with third party apps"
+   pageTitle="Power BI empezar a trabajar con aplicaciones de terceros"
+   description="Power BI empezar a trabajar con aplicaciones de terceros"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,43 +20,43 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# Get started with third party apps
+# Introducción a las aplicaciones de terceros
 
-With Power BI, you can use an app built by a company or individual other than Microsoft. For example, you might use a third party app which integrates Power BI tiles into a custom built web application. When you use a third party app, you will be asked to grant that application certain permissions to your Power BI account and resources. It is important that you only grant permissions to applications that you know and trust. Permissions to an application can be revoked at any time. See <bpt id="p1">[</bpt>Revoke third party app permissions<ept id="p1">](#revoke)</ept>.
+Con Power BI, puede usar una aplicación compilada por una empresa o individual que no sea Microsoft. Por ejemplo, podría utilizar una aplicación de terceros que integra los mosaicos de Power BI en una aplicación web integrada personalizada. Cuando se utiliza una aplicación de terceros, deberá conceder a esa aplicación determinados permisos para la cuenta de Power BI y los recursos. Es importante que sólo se concedan permisos a las aplicaciones que son de confianza. Pueden revocar los permisos a una aplicación en cualquier momento. Consulte [revocar los permisos de la aplicación de terceros](#revoke).
 
-Here are the types of access an application can request.
+Estos son los tipos de una aplicación puede solicitar el acceso.
 
-## Power BI App permissions
+## Permisos de Power BI App
 
--   **View all Dashboards (preview)**
+-   **Ver todos los paneles (vista previa)**
 
-  - This permission gives an application the ability to view all dashboards you have access to. This includes dashboards that you own, have gotten from content packs, and have been shared to you and are in groups that you belong to. The application cannot make any modifications to the dashboard. Among other things, this permission can be used by an application to embed your dashboard content into its experiences.
+  - Este permiso otorga a una aplicación la capacidad para ver todos los paneles que tienen acceso a. Esto incluye los paneles que posee, han de paquetes de contenido y se han compartido para usted y se encuentran en grupos que pertenecen a. La aplicación no puede realizar ninguna modificación en el panel. Entre otras cosas, este permiso se puede utilizar una aplicación para incrustar el contenido del panel en sus experiencias.
 
--   **View all Reports (preview)**
+-   **Ver todos los informes (vista previa)**
 
-  - This permission gives an application the ability to view all reports you have access to. This includes reports that you own, have gotten from content packs, and are in groups that you belong to. Part of viewing the report, means that the application can also see the data within it. The application cannot make any modifications to the reports themselves. Among other things, this permission can be used by an application to embed your report content into its experiences.
+  - Este permiso otorga a una aplicación la capacidad para ver todos los informes a que tienen acceso. Esto incluye los informes que posee, han de paquetes de contenido y se encuentran en grupos que pertenecen a. Parte de ver el informe, significa que la aplicación también puede ver los datos en él. La aplicación no puede realizar ninguna modificación en los informes en Sí. Entre otras cosas, este permiso se puede utilizar una aplicación para incrustar el contenido del informe en sus experiencias.
 
--   **View all Datasets**
+-   **Ver todos los conjuntos de datos**
 
-  - This permission gives an application the ability to list all datasets that you have access to. This includes datasets that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read the data in a dataset. The permission does not give the application rights to add or make changes to a dataset.
+  - Este permiso otorga a una aplicación la capacidad para enumerar todos los conjuntos de datos que tienen acceso a. Esto incluye los conjuntos de datos que posee, han de paquetes de contenido y se encuentran en grupos que pertenecen a. Una aplicación puede ver los nombres de todos los conjuntos de datos, así como su estructura incluidos los nombres de tabla y columna. Este permiso otorga derechos para leer los datos de un conjunto de datos. El permiso no otorga derechos para agregar o modificar un conjunto de datos a la aplicación.
 
--   **Read and Write all Datasets**
+-   **Leer y escribir todos los conjuntos de datos**
 
-  - This permission gives an application the ability to list all datasets that you have access to. This includes datasets that you own, have gotten from content packs, and are in groups that you belong to. An application can see the names of all your datasets as well as their structure including table and column names. This permission gives rights to read and write the data in a dataset. The application can also create new datasets, or make modifications to existing ones. This is commonly used by an application to send to data directly to Power BI.
+  - Este permiso otorga a una aplicación la capacidad para enumerar todos los conjuntos de datos que tienen acceso a. Esto incluye los conjuntos de datos que posee, han de paquetes de contenido y se encuentran en grupos que pertenecen a. Una aplicación puede ver los nombres de todos los conjuntos de datos, así como su estructura incluidos los nombres de tabla y columna. Este permiso otorga derechos para leer y escribir los datos en un conjunto de datos. La aplicación también puede crear nuevos conjuntos de datos o realizar modificaciones en las existentes. Esto se utiliza normalmente por una aplicación para enviar datos directamente a Power BI.
 
--   **View user's Groups**
+-   **Ver grupos del usuario**
 
-  -  This permission gives the application the ability to list all groups that you are a member of. It can use this permission along with some of the other permissions listed to view or update content for that particular group. The application cannot make modifications to the group itself.
+  -  Este permiso otorga la capacidad de mostrar todos los grupos que son miembros de la aplicación. Puede usar este permiso junto con algunos de los otros permisos para ver o actualizar el contenido de ese grupo en particular. La aplicación no puede realizar modificaciones en el propio grupo.
 
 <a name="revoke"/>
-## Revoke third party app permissions
+## Revocar permisos de la aplicación de terceros
 
-You revoke permissions for a third party app by going to the Office 365 My Apps site.
+Revocar permisos para una aplicación de terceros, vaya al sitio de mis aplicaciones de Office 365.
 
-On the <bpt id="p1">**</bpt>Office 365 My apps<ept id="p1">**</ept> site, here's how to revoke third party permissions:
+En el **Office 365 mis aplicaciones** de sitio, aquí se muestra cómo revocar los permisos de otros fabricantes:
 
-1. Go to <bpt id="p1">[</bpt>Office 365 My Apps site<ept id="p1">](https://portal.office.com/myapps)</ept>.
-2. On the <bpt id="p1">**</bpt>My apps<ept id="p1">**</ept> page, locate the third party app.
-3. Hover over the app tile, click the <bpt id="p1">**</bpt>(...)<ept id="p1">**</ept> button, and click <bpt id="p2">**</bpt>Remove<ept id="p2">**</ept>.
+1. Vaya a [sitio de mis aplicaciones de Office 365](https://portal.office.com/myapps).
+2. En el **Mis aplicaciones** página, busque la aplicación de terceros.
+3. Mantenga el mouse sobre el icono de la aplicación, haga clic en el **(...)** y haga clic en **quitar**.
 
   ![](media/powerbi-service-power-bi-get-started-third-party-apps/remove.png)

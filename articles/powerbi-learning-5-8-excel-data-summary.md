@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Excel in Power BI - summary"
-   description="Recap how easily Excel and Power BI work together"
+   pageTitle="Excel en Power BI: resumen"
+   description="Resumen de cómo Excel y Power BI trabajan juntos con facilidad"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,16 +22,16 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Excel data in Power BI summary
+# Datos de resumen de Power BI en Excel
 
-In this collection of topics, you learned how easy it is to leverage your existing Excel workbook files by uploading and exploring them in Power BI. You can upload Excel workbooks with simple tables or workbooks created with Excel's more advanced BI features like Power Pivot and Power View.
+En esta serie de temas, ha visto lo fácil que es aprovechar los archivos de libro de Excel existentes mediante la carga y exploración de en Power BI. Puede cargar libros de Excel con tablas simples o los libros creados con características de BI más avanzadas de Excel como PowerPivot y Power View.
 
-You also learned how to connect to <bpt id="p1">**</bpt>Excel<ept id="p1">**</ept> files that reside on <bpt id="p2">**</bpt>OneDrive for Business<ept id="p2">**</ept>, and use Power BI's <bpt id="p3">**</bpt>automatic<ept id="p3">**</ept> refresh features to keep your reports and dashboards up-to-date as you make changes in your workbook.
+También ha aprendido cómo conectarse a **Excel** archivos que residen en **OneDrive para la empresa**, y usar Power BI **automática** actualizar características para mantener actualizados los informes y paneles cuando se realizan cambios en el libro.
 
-## What's Next
+## Próxima Novedades
 
-**Enhorabuena.** You've completed the <bpt id="p1">**</bpt>Power BI and Excel<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Guided Learning<ept id="p2">**</ept> course for Power BI. That was easy, wasn't it? Power BI and Excel make a great team, and makes it easy for you to use them together.
+**Enhorabuena.** Ha completado la **Power BI y Excel** sección de la **aprendizaje guiado** curso para Power BI. Eso fue sencillo, ¿verdad? Power BI y Excel hacer un gran equipo y facilita la utilizarlos juntos.
 
-With all the knowledge you've gained, and your ability to create compelling visuals in reports and dashboards, you're probably ready to share your masterpieces. The next section, <bpt id="p1">**</bpt>Publishing and Sharing<ept id="p1">**</ept>, shows you how to do just that.
+Con todos los conocimientos que ha adquirido y su capacidad para crear un aspecto atractivo en informes y paneles, está probablemente listo para compartir sus obras maestras. La siguiente sección, **publicar y compartir**, se muestra cómo hacerlo.
 
-See you in the next section!
+Ver, en la sección siguiente.

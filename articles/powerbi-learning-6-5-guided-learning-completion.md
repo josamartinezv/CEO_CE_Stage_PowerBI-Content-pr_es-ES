@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Completion of Power BI Guided Learning"
-   description="Way to go - plus a summary and lots of useful links"
+   pageTitle="Finalización de Power BI guiada de aprendizaje"
+   description="Camino por recorrer - además un resumen y una gran cantidad de vínculos útiles"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,34 +23,36 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Congratulations - and what's next for you
+# Enhorabuena - y pasos adicionales para usted
 
-You did it! **Enhorabuena.** You've completed the <bpt id="p1">**</bpt>Guided Learning<ept id="p1">**</ept> course for Power BI. You've come full circle from learning the basic elements of Power BI, taken a tour through its software features and elements, and learned how they all work together.
+¡Lo logró! **Enhorabuena.** Ha completado la **aprendizaje guiado** curso para Power BI. Ha proceden los elementos básicos de Power BI de aprendizaje de círculo completo, realiza un recorrido por sus elementos y características del software y aprendió cómo funcionan en conjunto.
 
 ![](media/powerbi-learning-0-0-what-is-power-bi/c0a0_2.png)
 
-This is the last section (and the final topic, unless you want to learn DAX) in the course, so if you went through all of these sections in order, take a moment to pat yourself on the back. Good job! You're now well versed in all these <bpt id="p1">**</bpt>important concepts<ept id="p1">**</ept>:
+Se trata de la última sección (y el tema final, a menos que desee saber más sobre DAX) en el curso, por lo que si ha realizado a través de todas estas secciones en orden, dedique un momento a felicitarán usted mismo. ¡Buen trabajo! Ahora está bien versado en todos estos **conceptos importantes**:
 
--   What <bpt id="p1">[</bpt>Power BI is<ept id="p1">](powerbi-learning-0-0-what-is-power-bi.md)</ept>
--   The <bpt id="p1">[</bpt>building blocks<ept id="p1">](powerbi-learning-0b-building-blocks-power-bi.md)</ept> of Power BI
--   <bpt id="p1">[</bpt>Getting<ept id="p1">](powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop.md)</ept> and <bpt id="p2">[</bpt>modeling<ept id="p2">](powerbi-learning-2-1-intro-modeling-data.md)</ept> data
--   [Visualizations](powerbi-learning-3-1-intro-visualizations.md)
--   <bpt id="p1">[</bpt>Exploring data<ept id="p1">](powerbi-learning-4-0-intro-power-bi-service.md)</ept> in the Power BI service
--   Using <bpt id="p1">[</bpt>Excel and Power BI<ept id="p1">](powerbi-learning-5-1-intro-excel-data.md)</ept> together
--   And <bpt id="p1">[</bpt>publishing and sharing<ept id="p1">](powerbi-learning-6-0-intro-content-packs-groups.md)</ept> your work
+-   ¿Qué [Power BI](powerbi-learning-0-0-what-is-power-bi.md)
+-   El [pilares](powerbi-learning-0b-building-blocks-power-bi.md) de Power BI
+-   
+            [Obtener](powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop.md) y [modelado](powerbi-learning-2-1-intro-modeling-data.md) datos
+-   [Visualizaciones](powerbi-learning-3-1-intro-visualizations.md)
+-   
+            [Exploración de datos](powerbi-learning-4-0-intro-power-bi-service.md) en el servicio Power BI
+-   Mediante [Excel y Power BI](powerbi-learning-5-1-intro-excel-data.md) juntos
+-   Y [publicar y compartir](powerbi-learning-6-0-intro-content-packs-groups.md) su trabajo
 
-That's a lot of knowledge, and now that you have all this in your head, you're ready to go put it to use! Here are some <bpt id="p1">**</bpt>links to downloads<ept id="p1">**</ept> or to get your browser <bpt id="p2">**</bpt>connected to the Power BI service<ept id="p2">**</ept>:
+Es una gran cantidad de conocimientos y ahora que tiene todo esto en mente, está preparado para comenzar a usarlo. Estos son algunos **vínculos a descargas** u obtener el explorador **conectado al servicio Power BI**:
 
--   You can always <bpt id="p1">[</bpt>get the latest Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>
--   Heading to the <bpt id="p1">[</bpt>Power BI service<ept id="p1">](https://powerbi.microsoft.com/)</ept> is easy
--   Getting <bpt id="p1">[</bpt>mobile apps for Power BI<ept id="p1">](https://powerbi.microsoft.com/mobile/)</ept> is a tap away
+-   Siempre puede [obtener la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop)
+-   Título para el [servicio Power BI](https://powerbi.microsoft.com/) es fácil
+-   Obtener [aplicaciones móviles para Power BI](https://powerbi.microsoft.com/mobile/) es una derivación ausente
 
-There's more <bpt id="p1">**</bpt>help and reference<ept id="p1">**</ept> content available, too. Just go to the top of this page, and select <bpt id="p1">**</bpt>Learning &gt; Documentation<ept id="p1">**</ept> to see our extensive set of Power BI reference content.
+Hay más **Ayuda y hacer referencia a** de contenido disponibles, demasiado. Simplemente vaya a la parte superior de esta página y seleccione **aprendizaje > documentación** para ver el amplio conjunto de contenido de referencia de Power BI.
 
 ![](media/powerbi-learning-6-5-guided-learning-completion/6-5_1.png)
 
-We hope you've enjoyed your journey through this <bpt id="p1">**</bpt>Power BI Guided Learning<ept id="p1">**</ept> experience. Best of luck to you, and may your Power BI visuals always be immersive and compelling.
+Esperamos que haya disfrutado de su viaje a través de este **aprendizaje guiado de Power BI** experimentar. Mejor para usted y mayo los objetos visuales de Power BI siempre sea envolventes y atractivas.
 
-## One more section for DAX users
+## Una sección más para los usuarios DAX
 
-Still want more? Interested in using <bpt id="p1">**</bpt>DAX (Data Analysis Expressions)<ept id="p1">**</ept> to create, filter, or use custom columns and tables in Power BI? There's one more section targeted at people inclined to do some code work in Power BI, and it's called <bpt id="p1">**</bpt>Introduction to DAX<ept id="p1">**</ept>. Take a look if you're interested - it uses the same friendly approach as the rest of Guided Learning.
+¿Aún desea más? ¿Está interesado en usar **DAX (expresiones de análisis de datos)** para crear, filtrar o utilizar tablas y columnas personalizadas en Power BI? Hay una sección más dirigida a los desarrolladores tender a realizar algún trabajo de código en Power BI y se llama **Introducción a DAX**. Si está interesado, sino que usa el mismo enfoque descriptivo como el resto de aprendizaje guiado, eche un vistazo.

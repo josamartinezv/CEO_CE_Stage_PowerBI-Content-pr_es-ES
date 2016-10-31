@@ -1,67 +1,69 @@
-<properties pageTitle="Documentation Example - Text Styles" description="This is an example document" title="Documentation Example - Text Styles" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación: estilos de texto" description="Esto es un ejemplo de documento" title="Documentation Example - Text Styles" services="" documentationCenter="" metaKeywords="" solutions="" authors="" videoId="" scriptId="" />
 
 
-# Example - Text Styles #
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+# Por ejemplo, los estilos de texto #
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the use of various formatting and styles for text content.
+El contenido entre las líneas siguientes muestra el uso de diversos formatos y estilos para el contenido de texto.
 
 ---
 
-## Bold text ##
+## Texto en negrita ##
 
-The following Markdown syntax is used to create bold text:
+La siguiente sintaxis de descuento se utiliza para crear el texto en negrita:
 
 ````
 **This is bold** text
 ````
 
-<bpt id="p1">**</bpt>This is bold<ept id="p1">**</ept> text
 
-## Italic text ##
+            **Esto está en negrita** texto
 
-The following Markdown syntax is used to apply italics to text:
+## Texto en cursiva ##
+
+La siguiente sintaxis de descuento se utiliza para aplicar cursiva al texto:
 
 ````
 *This is in italics*
 ````
 
-*This is in italics*
+*Esto es en cursiva*
 
 ---
 
-## Bold and Italics text ##
+## Negrita y cursiva texto ##
 
-The following Markdown syntax is used to apply bold and italic formatting to text:
+La siguiente sintaxis de descuento se utiliza para aplicar formato de negrita y cursiva al texto:
 
 ````
 This content is in ***bold italics***
 ````
 
-This content is in <bpt id="p1">***</bpt>bold italics<ept id="p1">***</ept>
+Este contenido está en ***negrita cursiva***
 
 ---
 
-## Bold and Italics text on the same line ##
+## Negrita y cursiva texto en la misma línea ##
 
-The following Markdown syntax is used to apply bold and italic formatting to text right next to each other:
+La siguiente sintaxis de descuento se utiliza para aplicar formato de negrita y cursiva al texto a la derecha junto a la otra:
 
 ````
 **bold***italics* together
 ````
 
-<bpt id="p1">**</bpt>bold<ept id="p1">**</ept><bpt id="p2">*</bpt>italics<ept id="p2">*</ept> together
+
+            **negrita***cursiva* juntos
 
 ---
 
 ## Blockquote ##
 
-The following Markdown syntax is used to create a blockquote:
+La siguiente sintaxis de descuento se utiliza para crear un blockquote:
 
 ````
 > This is content within a Blockquote
 ````
 
-> This is content within a Blockquote
+> Se trata de contenido dentro de un Blockquote
 
 ---

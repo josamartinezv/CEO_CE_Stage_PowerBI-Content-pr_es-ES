@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Change the display settings for a page in a Power BI report"
-   description="Tutorial: Change the display settings for a page in a Power BI report"
+   pageTitle="Tutorial: Cambiar la configuración de pantalla de una página en un informe de Power BI"
+   description="Tutorial: Cambiar la configuración de pantalla de una página en un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,100 +20,101 @@
    ms.date="08/15/2016"
    ms.author="mihart"/>
 
-# Tutorial: Change the display settings for a page in a Power BI report
+# Tutorial: Cambiar la configuración de pantalla de una página en un informe de Power BI
 
-In the <bpt id="p1">[</bpt>previous article and video<ept id="p1">](powerbi-service-change-report-display-settings.md)</ept> you learned about two different ways to control page display in Power BI reports: <bpt id="p2">**</bpt>View<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Page Size<ept id="p3">**</ept>. Now let's try it ourselves.
+En el [anterior artículo y vídeo](powerbi-service-change-report-display-settings.md) aprendido acerca de dos maneras distintas de controlar la presentación de página en los informes de Power BI: **vista** y **tamaño de la página**. Ahora vamos a intentarlo nosotros mismos.
 
-## First, let's change the page View setting
+## En primer lugar, vamos a cambiar la configuración de la vista de página
 
-1.  Open a report in Editing View. This example uses the "New Stores" page of the <bpt id="p1">[</bpt>Retail Analysis sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept>.  By default, pages display using the <bpt id="p1">**</bpt>Fit to Page<ept id="p1">**</ept> setting.  In this case, Fit to Page displays the report page without scrollbars, but some of the detail and titles are too small to read.
+1.  Abra un informe en la vista de edición. Este ejemplo usa la página de "New almacenes" de la [ejemplo de análisis de venta](powerbi-sample-retail-analysis-take-a-tour.md).  De forma predeterminada, las páginas se muestran con el **Ajustar a la página** configuración.  En este caso, ajustar a la página muestra la página del informe sin barras de desplazamiento, pero algunos de los detalles y los títulos son demasiado pequeños para leerlo.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_fit_to_page.png)
 
-2.  Make sure that no visualizations are selected on the canvas. Select <bpt id="p1">**</bpt>View<ept id="p1">**</ept> and review the display options.
+2.  Asegúrese de que ninguna de las visualizaciones se seleccionan en el lienzo. Seleccione **vista** y revise las opciones de presentación.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-change-page-view.png)
 
-3.  Let's see how the page looks using the <bpt id="p1">**</bpt>Actual size<ept id="p1">**</ept> setting.
+3.  Veamos cómo se ve la página con el **tamaño real** configuración.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
 
-    Not great, the dashboard now has double scrollbars.
+    No muy bien, el panel tiene ahora las dobles barras de desplazamiento.
 
-4.  Switch to <bpt id="p1">**</bpt>Fit to Width<ept id="p1">**</ept>.
+4.  Cambiar a **Ajustar a ancho**.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/pbi_fit_to_width.png)
 
-   Looks better, we now have scrollbars but it's easier to read the detail.
+   Tiene un mejor aspecto, que ahora tiene barras de desplazamiento, pero es más fácil de leer los detalles.
 
-## Change the default view for a report page
+## Cambiar la vista predeterminada de una página de informe
 
-All Power BI reports default to <bpt id="p1">**</bpt>Fit to page<ept id="p1">**</ept> view. But what if you want this report page to always open in <bpt id="p1">**</bpt>Actual size<ept id="p1">**</ept> view?
+Todos los predeterminados de informes de Power BI para **Ajustar a la página** vista. Pero ¿qué ocurre si desea que esta página del informe para que siempre se abra en **tamaño real** vista?
 
-1.  On the <bpt id="p1">**</bpt>New stores<ept id="p1">**</ept> page of the report, switch back to <bpt id="p2">**</bpt>Actual size<ept id="p2">**</ept> view.
+1.  En el **nuevos almacenes** página del informe, cambie a **tamaño real** vista.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actual-size.png)
 
-2.  Save the report with a different name by selecting <bpt id="p1">**</bpt>File &gt; Save as<ept id="p1">**</ept>. You now have 2 copies of this report; in the original report, <bpt id="p1">**</bpt>New stores<ept id="p1">**</ept> will continue to open in the default view but in the new report it will open in <bpt id="p2">**</bpt>Actual size<ept id="p2">**</ept> view. Let's go see.
+2.  Guardar el informe con un nombre diferente al seleccionar **archivo > Guardar como**. Ahora tiene 2 copias del informe. en el informe original, **nuevos almacenes** continuará abriendo en la vista predeterminada, pero en el nuevo informe se abrirá en **tamaño real** vista. Vamos a ver.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-save-as.png)
 
-3.  Return to the <bpt id="p1">**</bpt>Retail Analysis Sample<ept id="p1">**</ept> dashboard by selecting it in the navigation pane. Scroll down to the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> section and find the new report (it will have a yellow asterisk).  
+3.  Vuelva a la **ejemplo de análisis de venta directa** panel seleccionándola en el panel de navegación. Desplácese hacia abajo hasta la **informes** sección y busque el nuevo informe (tendrá un asterisco amarillo).  
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-new-report.png)
 
-4.  Select the report to open it and choose the <bpt id="p1">**</bpt>New stores<ept id="p1">**</ept> page. It opens in <bpt id="p1">**</bpt>Actual size<ept id="p1">**</ept> view!
+4.  Seleccione el informe para abrirlo y elija el **nuevos almacenes** página. Se abre en **tamaño real** vista!
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-actal-size2.png)
 
-## Now, let's explore the <bpt id="p1">*</bpt>page size<ept id="p1">*</ept> setting
+## Ahora, vamos a explorar la *tamaño de página* configuración
 
-1.  Open the "District monthly sales" page of the <bpt id="p1">[</bpt>Retail Analysis sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept> in Editing View.
+1.  Abra la página "Del distrito de ventas mensuales" de la [ejemplo de análisis de venta](powerbi-sample-retail-analysis-take-a-tour.md) en la vista de edición.
 
-2.  Make sure that no visualizations are selected on the canvas.  In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the paintbrush icon <ph id="ph1">![](media/powerbi-service-tutorial-change-report-display-settings/PBI_paintbrush.jpg)</ph>.
+2.  Asegúrese de que ninguna de las visualizaciones se seleccionan en el lienzo.  En el **visualizaciones** panel, seleccione el icono de pincel ![](media/powerbi-service-tutorial-change-report-display-settings/PBI_paintbrush.jpg).
 
-3.  Select <bpt id="p1">**</bpt>Page Size<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Type<ept id="p2">**</ept> to display the page size options.
+3.  Seleccione **tamaño de página** &gt; **tipo** para mostrar las opciones de tamaño de página.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-page-size-menu.png)
 
-4.  Select <bpt id="p1">**</bpt>Letter<ept id="p1">**</ept>.  On the canvas, only the contents that fit within 816 x 1056 pixels (Letter size) remain on the white portion of the canvas.
+4.  Seleccione **letra**.  En el lienzo, sólo el contenido que se ajustan a 816 x 1056 píxeles (tamaño carta) permanece en la parte en blanco del lienzo.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-letter.png)
 
-5.  If we change <bpt id="p1">**</bpt>View<ept id="p1">**</ept> to "Fit to Width," our canvas now displays only the page contents that fit into the letter size.
+5.  Si cambiamos **vista** a "Ajustar a ancho", nuestro lienzo ahora muestra sólo el contenido de la página que caben en el tamaño de letra.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-fit-to-width.png)
 
-6.  Select <bpt id="p1">**</bpt>16:9<ept id="p1">**</ept> page ratio.
+6.  Seleccione **16:9** relación.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-16-to-9.png)
 
-    The report page displays using a ratio of 16 wide by 9 high. To see the actual pixel size being used, take a look at the greyed out Width and Height fields (1280x720). There is a lot of empty space around the report canvas; this is because we previously set <bpt id="p1">**</bpt>View<ept id="p1">**</ept> to "Fit to width".
+    La página del informe se muestra mediante una relación de 16 amplia 9 alta. Para ver el tamaño de píxeles reales que se usa, eche un vistazo atenuado ancho y alto campos (1280 x 720). Hay una gran cantidad de espacio vacío que rodea el lienzo de informes; Esto es porque se ha establecido previamente **vista** a "Ajustar a ancho".
 
-7.  Continue exploring the <bpt id="p1">**</bpt>Page Size<ept id="p1">**</ept> options.
+7.  Continuar explorando el **tamaño de página** Opciones.
 
-## Using page View and Page Size together
+## Uso conjunto de vista de la página y el tamaño de página
 
-Use page View and Page Size together to create a report that looks its best when embedded in another application.
+Usar tamaño de página y la vista de la página juntos para crear un informe que el mejor aspecto cuando se incrusta en otra aplicación.
 
-In this exercise, you'll create a report page that will display in an application that has space for 500 pixels wide by 750 pixels high.
+En este ejercicio, creará una página de informe que se mostrará en una aplicación que tenga espacio para 500 píxeles de ancho por 750 píxeles de alto.
 
-Remember in the previous step we saw that our report page is currently displaying at 1280 wide by 720 high. So we know that we'll need to do a lot of resizing and rearranging if we want all of our visuals to fit.
+En el paso anterior, recuerde que vimos que nuestra página de informe está mostrando actualmente en la amplia 1280 por 720 alta. Por lo que sabemos que necesitaremos hacer una gran cantidad de cambio de tamaño y reorganizar si queremos que todos nuestros gráficos para ajustarse.
 
-1. Resize and move the visuals so that they fit in less than half of the current canvas area.
+1. Cambiar el tamaño y mover los elementos visuales para que se ajusten en menos de la mitad del área de lienzo actual.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom-view.gif)
 
-2. Select <bpt id="p1">**</bpt>Page Size<ept id="p1">**</ept> <ph id="ph1">&amp;gt;</ph> <bpt id="p2">**</bpt>Custom<ept id="p2">**</ept>.
+2. Seleccione **tamaño de página** &gt; **personalizado**.
 
-3. Set Width to 500 and set Height to 750.
+3. Establezca el ancho en 500 y establezca el alto a 750.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-custom.png)
 
-4. Tweak the report page so that it looks its best. Switch between <bpt id="p1">**</bpt>View &gt; Actual size<ept id="p1">**</ept> and <bpt id="p2">**</bpt>View &gt; Fit to page<ept id="p2">**</ept> to make adjustments.
+4. Ajustar la página informe de forma que parezca que el mejor rendimiento. Cambiar entre **Ver > tamaño real** y **Vista > Ajustar a la página** para realizar ajustes.
 
     ![](media/powerbi-service-tutorial-change-report-display-settings/power-bi-final.png)
 
 ## Consulte también
-<bpt id="p1">[</bpt>Create reports for Cortana<ept id="p1">](powerbi-service-cortana-desktop-entity-cards.md)</ept> Back to <bpt id="p2">[</bpt>Page display settings in a Power BI report<ept id="p2">](powerbi-service-change-report-display-settings.md)</ept> Read more about  <bpt id="p3">[</bpt>reports in Power B <ept id="p3">](powerbi-service-reports.md)</ept><ph id="ph1">
-</ph><bpt id="p4">[</bpt>Power BI - Basic Concepts<ept id="p4">](powerbi-service-basic-concepts.md)</ept> More questions? [Try the Power BI Community](http://community.powerbi.com/)
+
+            [¿Crear informes de Cortana](powerbi-service-cortana-desktop-entity-cards.md) a [configuración de pantalla de página en un informe de Power BI](powerbi-service-change-report-display-settings.md) Obtenga más información sobre  [informes en Power B ](powerbi-service-reports.md)
+[Power BI: conceptos básicos de](powerbi-service-basic-concepts.md) más preguntas? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

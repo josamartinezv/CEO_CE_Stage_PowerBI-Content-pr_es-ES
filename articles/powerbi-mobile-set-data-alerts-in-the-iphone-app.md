@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Set data alerts in the Power BI app for iOS on the iPhone and iPad"
-   description="Learn to set alerts to notify you when data in a dashboard changes beyond limits you set in the Power BI mobile app for iOS and in the Power BI service."
+   pageTitle="Establecer alertas de datos en la aplicación de Power BI para iOS en iPhone y iPad"
+   description="Aprenda a configurar alertas para recibir notificaciones cuando cambian los datos en un panel más allá de los límites se configuran en la aplicación móvil de Power BI para iOS y el servicio Power BI."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -20,86 +20,88 @@
    ms.date="10/10/2016"
    ms.author="maggies"/>
 
-# Set data alerts in the Power BI app for iOS on the iPhone and iPad
+# Establecer alertas de datos en la aplicación de Power BI para iOS en iPhone y iPad
 
-You can set alerts in the Power BI mobile app on the iPhone and iPad, and in the Power BI service, to notify you when data in a dashboard changes beyond limits you set. Alerts work for tiles featuring a single number, such as cards and gauges. You can set data alerts on your iPhone or iPad and see them in the Power BI service, and vice versa. Only you can see the data alerts you set, even if you share a dashboard or a snapshot of a tile.
+Puede establecer alertas en la aplicación móvil de Power BI en iPhone y iPad y en el servicio Power BI recibir una notificación cuando cambian los datos en un panel más allá de los límites establezca. Funcionan las alertas en los mosaicos que incluye un número único, como las tarjetas y medidores. Puede establecer alertas de datos en su iPhone o iPad y verlos en el servicio Power BI y viceversa. Sólo puede ver las alertas de datos que se establece, aunque compartan un panel o una instantánea de un mosaico.
 
-> [AZURE.WARNING] Data-driven alert notifications provide information about your data. If your device gets stolen, we recommend going to the Power BI service to turn off all data-driven alert rules. 
+> [AZURE.WARNING] Notificaciones de alerta controlada por datos proporcionan información acerca de los datos. Si roban el dispositivo, se recomienda pasar al servicio Power BI para desactivar todas las reglas de alertas controlada por datos. 
 > 
-> Learn more about <bpt id="p1">[</bpt>managing data alerts in the Power BI service<ept id="p1">](powerbi-service-set-data-alerts.md)</ept>.
+> Obtenga más información sobre [Administrar alertas de datos en el servicio Power BI](powerbi-service-set-data-alerts.md).
 
-## Set an alert
+## Establecer una alerta
 
-1.  Tap a number or gauge tile in a dashboard to open it in focus mode.  
+1.  Puntee en un número o medidor mosaico en un panel para abrirlo en modo de enfoque.  
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-card-visual.png)
 
-2.  Tap the bell icon <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-alert-icon.png)</ph> to add an alert.  
+2.  Puntee en el icono de campana ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-alert-icon.png) para agregar una alerta.  
 
-3.  Tap <bpt id="p1">**</bpt>Add alert rule<ept id="p1">**</ept>.
+3.  Puntee en **Agregar regla de alerta**.
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-add-alert-rule.png)
 
-4.  Choose to receive alerts above or below a value, then set the value.
+4.  Elija esta opción recibir alertas por encima o por debajo de un valor, a continuación, establezca el valor.
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-set-alert-threshold.png)
 
-4.  Decide whether to receive hourly or daily alerts, and whether to also receive an email when you get the alert.
+4.  Decidir si desea recibir cada hora o alertas diarias y si también desea recibir un correo electrónico cuando se recibe la alerta.
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: You don't receive alerts every hour or every day unless the data has actually refreshed in that time.
+    >
+            **Nota**: no recibir alertas cada hora o cada día a menos que realmente se actualizan los datos en ese momento.
 
-6.  You can change the alert title, too.
+6.  También puede cambiar el título de la alerta.
 
-6.  Tap <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.
+6.  Puntee en **Guardar**.
 
-7.  A single tile can have alerts for values both above and below thresholds. In <bpt id="p1">**</bpt>Manage alerts<ept id="p1">**</ept>, tap <bpt id="p2">**</bpt>Add alert rule<ept id="p2">**</ept>.
+7.  Un solo mosaico puede tener alertas para los valores por encima y por debajo de los umbrales. En **Administrar alertas**, puntee **Agregar regla de alerta**.
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-add-another-alert-rule.png)
 
-## Receiving alerts
+## Recepción de alertas
 
-You receive alerts in the Power BI <bpt id="p1">[</bpt>Notification Center<ept id="p1">](powerbi-mobile-notification-center.md)</ept> on your mobile device or in the Power BI service, along with notifications about new dashboards that someone has shared with you.
+Recibir alertas en Power BI [Centro de notificaciones](powerbi-mobile-notification-center.md) en su dispositivo móvil o en el servicio Power BI, junto con las notificaciones de los nuevos paneles que alguien ha compartido con usted.
 
-Data sources are often set to refresh daily, although some refresh more often. When the data in the dashboard is refreshed, if the data being tracked reaches one of the thresholds you've set, several things will happen.
+Orígenes de datos a menudo se establecen para actualizar diariamente, aunque algunos con más frecuencia de actualización. Cuando se actualizan los datos en el panel, si los datos de seguimiento llegan a uno de los umbrales que ha establecido, se realizará varias acciones.
 
-1.  Power BI checks to see if it's been more than an hour or more than 24 hours (depending on the option you selected) since the last alert was sent.
+1.  Power BI se comprueba ver si han pasado más de una hora o más de 24 horas (según la opción seleccionada) desde la última alerta se envió.
 
-    As long as the data is past the threshold, you'll get an alert every hour or every 24 hours.
+    Siempre que los datos están más allá del umbral, obtendrá una alerta cada hora o cada 24 horas.
 
-2.  If you've set the alert to send you an email, you'll find something like this in your Inbox.
+2.  Si ha establecido la alerta para enviar un correo electrónico, encontrará algo parecido a esto en su Bandeja de entrada.
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/powerbi-alerts-email.png)
 
-3.  Power BI adds a message to your <bpt id="p1">**</bpt>Notification center<ept id="p1">**</ept> and adds a new alert icon to the applicable tile <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/powerbi-alert-tile-notification-icon.png)</ph>.
+3.  Power BI agrega un mensaje a su **Centro de notificaciones** y agrega un nuevo icono de alerta en el mosaico aplicable ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/powerbi-alert-tile-notification-icon.png).
 
 
-4. Tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-alert-global-nav-button.png)</ph> to <bpt id="p1">[</bpt>open your <bpt id="p2">**</bpt>Notification center<ept id="p2">**</ept><ept id="p1">](powerbi-mobile-notification-center.md)</ept> and see the alert details.
+4. Puntee en el botón de navegación global ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-alert-global-nav-button.png) a [abrir su **Centro de notificaciones**](powerbi-mobile-notification-center.md) y ver los detalles de alerta.
 
      ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-notifications.png) 
 
-><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Alerts only work on data that is refreshed. When data refreshes, Power BI looks to see if an alert is set for that data. If the data has reached an alert threshold, an alert is triggered.
+>
+            **Nota**: las alertas sólo funcionan en los datos que se actualizan. Cuando los datos se actualicen, Power BI busca para ver si se ha configurado una alerta para los datos. Si los datos ha alcanzado un umbral de alerta, se activará una alerta.
 
-## Manage alerts on your iPhone or iPad
+## Administrar alertas en su iPhone o iPad
 
-You can manage individual alerts on your mobile device or <bpt id="p1">[</bpt>manage all your alerts in the Power BI service<ept id="p1">](powerbi-service-set-data-alerts.md)</ept>.
+Puede administrar las alertas individuales en el dispositivo móvil o [administrar todas las alertas en el servicio Power BI](powerbi-service-set-data-alerts.md).
 
-1.  In a dashboard, tap a number or gauge tile that has an alert.  
+1.  En un panel, puntee en un número o medidor mosaico con una alerta.  
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-card-visual.png)
 
-2.  Tap the bell icon <ph id="ph1">![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-has-alert-icon.png)</ph>.  
+2.  Puntee en el icono de campana ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-has-alert-icon.png).  
 
-3. Tap the name of the alert to edit it, tap the slider to turn off email alerts, or tap the garbage can to delete the alert.
+3. Puntee en el nombre de la alerta para editarlo, puntee en el control deslizante para desactivar las alertas de correo electrónico o puntee en el puede de elementos no utilizados para eliminar la alerta.
 
     ![](media/powerbi-mobile-set-data-alerts-in-the-iphone-app/power-bi-iphone-edit-delete-alert.png)
 
-## Tips and troubleshooting
-- Alerts currently aren't supported for Bing tiles or card tiles with date/time measures.
-- Alerts only work with numeric data.
-- Alerts only work on data that is refreshed. They don't work on static data.
+## Sugerencias y solución de problemas
+- Las alertas no se admiten actualmente para mosaicos de Bing o iconos de tarjeta con medidas de fecha y hora.
+- Las alertas sólo funcionan con datos numéricos.
+- Las alertas sólo funcionan en los datos que se actualizan. No funcionan con datos estáticos.
 
 ### Consulte también  
-- [Manage your alerts in the Power BI service](powerbi-service-set-data-alerts.md)
-- [Power BI Mobile Notification Center](powerbi-mobile-notification-center.md)
-- [Get started with Power BI](powerbi-service-get-started.md)  
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Administrar las alertas en el servicio Power BI](powerbi-service-set-data-alerts.md)
+- [Centro de notificaciones de Power BI Mobile](powerbi-mobile-notification-center.md)
+- [Introducción a Power BI](powerbi-service-get-started.md)  
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

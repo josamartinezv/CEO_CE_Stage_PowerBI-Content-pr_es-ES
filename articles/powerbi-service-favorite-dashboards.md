@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Favorite dashboards in Power BI"
-   description="Documentation on how to dashboards as favorites in Power BI"
+   pageTitle="Paneles Favoritos de Power BI"
+   description="Documentación sobre cómo paneles como favoritos de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,38 +20,38 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Favorite dashboards in Power BI
+# Paneles Favoritos de Power BI
 
-When you make a dashboard a <bpt id="p1">*</bpt>favorite<ept id="p1">*</ept>,  you'll be able to access it from all of your workspaces.  Favorite dashboards are typically those that you visit most often.
+Al realizar un panel un *favorito*,  podrá acceder a él desde todas las áreas de trabajo.  Los paneles Favoritos normalmente son aquellos que visita con más frecuencia.
 
->[AZURE.NOTE] You can also select a single dashboard as a <bpt id="p1">[</bpt>Featured dashboard<ept id="p1">](powerbi-service-featured-dashboards.md)</ept> in Power BI.
+>[AZURE.NOTE] También puede seleccionar un único panel como un [destacados panel](powerbi-service-featured-dashboards.md) en Power BI.
 
-## Add dashboards as "favorites"
+## Agregar paneles como "Favoritos"
 
-1.  In the left navigation pane, select a dashboard.
+1.  En el panel de navegación izquierdo, seleccione un panel.
 
-2.  From the top-right corner, select <bpt id="p1">**</bpt>Favorite<ept id="p1">**</ept>.
+2.  En la esquina superior derecha, seleccione **favorito**.
 
     ![](media/powerbi-service-favorite-dashboards/powerbi-dashboard-favorite.png)
 
-3. To see all the dashboards that you have added as favorites, in the left navpane, select <bpt id="p1">**</bpt>Favorites<ept id="p1">**</ept>.
+3. Para ver todos los paneles que ha agregado como favoritos, en del panel de navegación izquierdo, seleccione **favoritos**.
 
     ![](media/powerbi-service-favorite-dashboards/powerbi-dashboard-select-favorite-full.png)
 
-  From here you can select a dashboard to open it, or share a dashboard with colleagues.
+  Desde aquí puede seleccionar un panel para abrirlo o compartir un panel con sus colegas.
 
-## Unfavorite a dashboard
+## Quitar de Favoritos un panel
 
-No longer use a dashboard as much as you used to?  You can unfavorite it.
+¿No usar un panel como solía?  Puede quitar de favoritos.
 
-1.  In the left navigation pane, select the dashboard.
+1.  En el panel de navegación izquierdo, seleccione el panel.
 
-2.  From the top-right corner, select <bpt id="p1">**</bpt>Unfavorite<ept id="p1">**</ept>.  The dashboard is removed from your Favorites but not from your Power BI.
+2.  En la esquina superior derecha, seleccione **Unfavorite**.  El panel se quita de sus favoritos, pero no desde su Power BI.
 
 ## Consulte también
 
-[Get Started with Power BI](powerbi-service-get-started.md)
+[Introducción a Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

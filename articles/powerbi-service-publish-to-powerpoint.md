@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Export reports from Power BI to PowerPoint (Preview)"
-   description="Learn how to export a Power BI report to PowerPoint."
+   pageTitle="Exportación de informes de Power BI para PowerPoint (vista previa)"
+   description="Obtenga información acerca de cómo exportar un informe de Power BI a PowerPoint."
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,73 +20,77 @@
    ms.date="10/04/2016"
    ms.author="davidi"/>
 
-# <a name="export-reports-from-power-bi-to-powerpoint-(preview)"></a>Export reports from Power BI to PowerPoint (Preview)
+# <a name="export-reports-from-power-bi-to-powerpoint-(preview)"></a>Exportación de informes de Power BI para PowerPoint (vista previa)
 
-With Power BI, you can now publish your report to <bpt id="p1">**</bpt>Microsoft PowerPoint<ept id="p1">**</ept>, and easily create a slide deck based on your Power BI report. When you <bpt id="p1">**</bpt>export to PowerPoint<ept id="p1">**</ept>, the following occurs:
+Con Power BI, ahora puede publicar el informe para **Microsoft PowerPoint**, y crear fácilmente una presentación de diapositivas basado en el informe de Power BI. Cuando se **Exportar a PowerPoint**, ocurre lo siguiente:
 
--   Each page in the Power BI report becomes an individual slide in PowerPoint
--   Each visual in the Power BI report is exported as a high resolution image in PowerPoint
--   Text boxes in the Power BI report become editable text boxes in PowerPoint
--   A link is created in PowerPoint that links to the Power BI report
+-   Cada página del informe de Power BI se convierte en una diapositiva de PowerPoint
+-   Cada visual en el informe de Power BI se exporta como una imagen de alta resolución en PowerPoint
+-   Cuadros de texto en el informe de Power BI se convierten en cuadros de texto editable en PowerPoint
+-   Se crea un vínculo en PowerPoint que se vincula al informe de Power BI
 
-Getting your <bpt id="p1">**</bpt>Power BI report<ept id="p1">**</ept> exported into <bpt id="p2">**</bpt>PowerPoint<ept id="p2">**</ept> is easy. Just follow the steps outlined in the next section.
+Obtener el **informe de Power BI** exportado en **PowerPoint** es fácil. Siga los pasos descritos en la sección siguiente.
 
-## <a name="how-to-export-your-power-bi-report-to-powerpoint"></a>How to export your Power BI report to PowerPoint
+## <a name="how-to-export-your-power-bi-report-to-powerpoint"></a>Cómo exportar el informe de Power BI a PowerPoint
 
-In the Power BI service, select the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> section in the left navigation pane to expand that section, then select your report to display it on the canvas. You can also select a report from your <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept> section, or your <bpt id="p2">**</bpt>Favorites<ept id="p2">**</ept>, if the report is in either of those locations.
+En el servicio Power BI, seleccione la **informes** sección en el panel de navegación izquierdo para expandir esa sección, a continuación, seleccione el informe para mostrar en el lienzo. También puede seleccionar un informe desde su **Mi área de trabajo** sección, o su **favoritos**, si el informe está en ninguna de estas ubicaciones.
 
 ![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_0.png)
 
-When the report you want to export to PowerPoint is displayed on the canvas, select <bpt id="p1">**</bpt>File &gt; Export to PowerPoint (Preview)<ept id="p1">**</ept> from the menu bar in the Power BI service, as shown in the following image.
+Cuando se muestre el informe que desea exportar a PowerPoint en el lienzo, seleccione **archivo > Exportar a PowerPoint (vista previa)** desde la barra de menús en el servicio Power BI, tal como se muestra en la siguiente imagen.
 
 ![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_1.png)
 
-You'll see a notification banner in the upper right corner of the Power BI service browser window that the report is being exported to PowerPoint. This might take a few minutes, and you can continue to work in Power BI while the report is being exported.
+Verá un banner de notificaciones en la esquina superior derecha de la ventana del explorador de servicio Power BI que se exporta el informe a PowerPoint. Esto puede tardar unos minutos y puede continuar trabajando en Power BI mientras se exporta el informe.
 
 ![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_2.png)
 
-Once complete, the notification banner changes to let you know that the Power BI service has finished the export process.
+Cuando haya terminado, los cambios de la pancarta de notificación para informarle de que el servicio Power BI ha terminado el proceso de exportación.
 
 ![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_3.png)
 
-Your file is then available where your browser displays downloaded files. In the following image, it's shown as a download banner along the bottom of the browser window.
+El archivo está disponible cuando el explorador muestra los archivos descargados. En la siguiente imagen, se muestra como una pancarta de descarga a lo largo de la parte inferior de la ventana del explorador.
 
 ![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_4.png)
 
-And that's all there is to it. You can download the file, open it with PowerPoint, and then modify or enhance it just like you would any other PowerPoint deck.
+Y eso es todo esto. Puede descargar el archivo, abrir con PowerPoint y, a continuación, modificar o mejorar, tal como lo haría con cualquier otro grupo de PowerPoint.
 
-## <a name="checking-out-your-exported-powerpoint-file"></a>Checking out your exported PowerPoint file
+## <a name="checking-out-your-exported-powerpoint-file"></a>Desproteger el archivo exportado de PowerPoint
 
-When you open the PowerPoint file that Power BI exported, you find a few cool and useful elements. Take a look at the following image, then check out the numbered elements below that describe some of those cool features.
+Al abrir el archivo de PowerPoint que exportó de Power BI, encontrar unos cuantos elementos útiles y atractivos. Eche un vistazo a la siguiente imagen, a continuación, desproteger los elementos numerados a continuación se describen algunas de esas características interesantes.
 
 ![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_5.png)
 
-1.  The first page of the slide deck includes the name of your report, and a link so that you can <bpt id="p1">**</bpt>View in Power BI<ept id="p1">**</ept> the report on which the slide deck is based.
+1.  La primera página de la presentación de diapositivas incluye el nombre del informe y un vínculo para que pueda **vista en Power BI** el informe en el que se basa el juego de diapositivas.
 
-2.  You get some useful information about the report, too, including the <bpt id="p1">*</bpt>last data refresh<ept id="p1">*</ept> on which the exported report is based, and the <bpt id="p2">*</bpt>downloaded at<ept id="p2">*</ept> time and date, which is the time and date when the Power BI report was exported into a PowerPoint file.
+2.  Obtendrá información útil acerca del informe, incluidos los *última actualización de datos* en el que se basa el informe exportado y *descargar en* hora y fecha, que es la hora y fecha cuando se exportó el informe de Power BI en un archivo de PowerPoint.
 
-3.  Each report page is a separate slide, as shown in the left navigation pane.
+3.  Cada página del informe es una diapositiva independiente, como se muestra en el panel de navegación izquierdo.
 
-When you go into an individual slide, you'll notice that each visual is an independent image (as mentioned before). That way you can copy that image, and paste it into another slide, or anywhere else you would like.
+Cuando vaya a una diapositiva individual, observará que cada visual es una imagen independiente (como se mencionó anteriormente). De este modo, puede copiar esa imagen y pegarlo en otra diapositiva o cualquier otro lugar que desea.
 
 ![](media/powerbi-service-publish-to-powerpoint/powerbi_to_powerpoint_6.png)
 
-What you do with your PowerPoint deck from there, or any of the high resolution images, is up to you!
+Qué hacer con la presentación de PowerPoint desde allí, o cualquiera de las imágenes de alta resolución, depende de usted!
 
 ## <a name="limitations"></a>Limitaciones
-There are a few considerations and limitations to keep in mind when working with the <bpt id="p1">**</bpt>Export to PowerPoint<ept id="p1">**</ept> feature.
+Hay algunas consideraciones y limitaciones a tener en cuenta al trabajar con el **Exportar a PowerPoint** característica.
 
--   <bpt id="p1">**</bpt>Custom visuals<ept id="p1">**</ept>, and <bpt id="p2">**</bpt>R visuals<ept id="p2">**</ept>, are not currently supported. Any such visuals are exported as a blank image into PowerPoint.
--   Reports with more than 15 report pages can't currently be exported.
--   The process of exporting the report to PowerPoint may take a few minutes to complete, so please be patient. Factors that can impact the time required include the structure of the report, and the current load on the Power BI service.
--   If the <bpt id="p1">**</bpt>Export to PowerPoint (Preview)<ept id="p1">**</ept> menu item isn't available in the Power BI service, it's likely because your tenant administrator has disabled the feature. Please contact your tenant administrator for details.
--   Background images will be cropped with the chart's bounding area. It's highly recommended that you remove background images before exporting to PowerPoint.
--   <bpt id="p1">**</bpt>In-session interactivity<ept id="p1">**</ept> such as highlighting and filtering, drill-down, and so on, are not yet supported when exporting to PowerPoint. The exported PowerPoint shows the original visuals as they were saved in the report.
+-   
+            **Elementos visuales personalizados**, y **elementos visuales de R**, no se admiten actualmente. Cualquier tales elementos visuales se exportan como una imagen en blanco en PowerPoint.
+-   Actualmente no se puede exportar informes con más de 15 páginas del informe.
+-   El proceso de exportar el informe a PowerPoint puede tardar unos minutos en completarse, lo espere. Factores que influyen en el tiempo necesario incluyen la estructura del informe y la carga actual en el servicio Power BI.
+-   Si el **Exportar a PowerPoint (vista previa)** elemento de menú no está disponible en el servicio Power BI, es probable porque el Administrador de inquilinos ha deshabilitado la característica. Póngase en contacto con el Administrador de inquilinos para obtener más información.
+-   Imágenes de fondo se recortará con área de límite del gráfico. Se recomienda quitar imágenes de fondo antes de exportar a PowerPoint.
+-   
+            **En la sesión de interactividad** como resaltado y filtrado, profundidad y así sucesivamente, no se admiten al exportar a PowerPoint. PowerPoint exportada muestra los elementos visuales originales tal como se hayan guardado en el informe.
 
 
 
 ## <a name="see-also"></a>Consulte también
 
-<bpt id="p1">[</bpt>Analyze in Excel<ept id="p1">](articles/powerbi-service-analyze-in-excel.md)</ept>
 
-<bpt id="p1">[</bpt>Excel data in Power BI<ept id="p1">](articles/powerbi-service-excel-data.md)</ept>
+            [Analizar en Excel](articles/powerbi-service-analyze-in-excel.md)
+
+
+            [Datos de Excel en Power BI](articles/powerbi-service-excel-data.md)

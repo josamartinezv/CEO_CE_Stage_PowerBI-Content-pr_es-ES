@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get a Power BI report"
-   description="Walkthrough to Integrate a report into an app - Get a Power BI report"
+   pageTitle="Obtener un informe de Power BI"
+   description="Tutorial para integrar un informe en una aplicación - obtener un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,33 +20,35 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 2: Get a report
+# Paso 2: Obtener un informe
 
 ## Introducción
 
-In <bpt id="p1">**</bpt>step 1<ept id="p1">**</ept> of Integrate a report into an app, <bpt id="p2">[</bpt>Register a web app with Azure AD<ept id="p2">](powerbi-developer-integrate-report-register.md)</ept>, you register a web app so that your app can authenticate to <bpt id="p3">**</bpt>Azure Active Directory<ept id="p3">**</ept>. In this step, you use an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>, and the <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> API to get a report.
+En **paso 1** de integración de un informe en una aplicación [registrar una aplicación web con Azure AD](powerbi-developer-integrate-report-register.md), registrar una aplicación web para que la aplicación pueda autenticar a **Azure Active Directory**. En este paso, usará un **token de acceso**, y el **Power BI** API para obtener un informe.
 
 ![](media\powerbi-developer-integrate-report\integrate-report-get-report.png)
 
-To get a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> report, you use the <bpt id="p2">[</bpt>Get Reports<ept id="p2">](https://msdn.microsoft.com/library/mt634543.aspx)</ept> operation which gets a list of <bpt id="p3">**</bpt>Power BI<ept id="p3">**</ept> reports. From the list of reports, you can get a report <bpt id="p1">**</bpt>embedUrl<ept id="p1">**</ept>. Once you have a report <bpt id="p1">**</bpt>embedUrl<ept id="p1">**</ept>, you can load a report into an <bpt id="p2">**</bpt>IFrame<ept id="p2">**</ept>.
+Para obtener un **Power BI** de informes, utiliza el [obtener informes](https://msdn.microsoft.com/library/mt634543.aspx) operación que obtiene una lista de **Power BI** informes. En la lista de informes, puede obtener un informe **embedUrl**. Una vez que tenga un informe **embedUrl**, puede cargar un informe en un **IFrame**.
 
-Before you can call the <bpt id="p1">[</bpt>Get Reports<ept id="p1">](https://msdn.microsoft.com/library/mt634543.aspx)</ept> operation, or any other <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> operation, you need to get an Azure Active Directory <bpt id="p3">**</bpt>authentication access token<ept id="p3">**</ept> (access token). An <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> is used to allow your app access to <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> reports. To learn more about Azure Active Directory <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> flow, see <bpt id="p2">[</bpt>Azure AD Authorization Code Grant Flow<ept id="p2">](https://msdn.microsoft.com/library/azure/dn645542.aspx)</ept>. The next section shows you how to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> in a web app.
+Para poder llamar el [obtener informes](https://msdn.microsoft.com/library/mt634543.aspx) operación o cualquier otro **Power BI** operación, debe obtener un Azure Active Directory **token de acceso de autenticación** (token de acceso). Un **token de acceso** se utiliza para permitir que su aplicación acceso a **Power BI** informes. Para obtener más información acerca de Azure Active Directory **token de acceso** flujo, consulte [flujo de concesión de código de autorización de AD Azure](https://msdn.microsoft.com/library/azure/dn645542.aspx). La sección siguiente muestra cómo obtener un **token de acceso** en una aplicación web.
 
 <a name="get-token"/>
-## Get an authentication access token
+## Obtener un acceso de autenticación token
 
-Here's how to get an authentication access token to call a <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> operation.
+Aquí se muestra cómo obtener un token de acceso de autenticación para llamar a un **Power BI** operación.
 
--   <bpt id="p1">**</bpt>Step 1:<ept id="p1">**</ept> <bpt id="p2">[</bpt>Get an authorization code from Azure AD<ept id="p2">](#auth-code)</ept>
--   <bpt id="p1">**</bpt>Step 2:<ept id="p1">**</ept> <bpt id="p2">[</bpt>Get an access token from authorization code<ept id="p2">](#access-token)</ept>
+-   
+            **Paso 1:** [obtener un código de autorización de Azure AD](#auth-code)
+-   
+            **Paso 2:** [obtener un acceso token del código de autorización](#access-token)
 
 <a name="auth-code"/>
-### Step 1: Get an authorization code from Azure AD
+### Paso 1: Obtener un código de autorización de Azure AD
 
-The first step to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> is to get an authorization code from <bpt id="p2">**</bpt>Azure AD<ept id="p2">**</ept>. To do this, you construct a query string with the following properties, and redirect to <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept>.
+El primer paso para obtener un **token de acceso** consiste en obtener un código de autorización de **Azure AD**. Para ello, cree una cadena de consulta con las siguientes propiedades y redirigir a **Azure AD**.
 
 
-**Authorization code query string**
+**Cadena de consulta del código de autorización**
 
 ```
 var @params = new NameValueCollection
@@ -68,9 +70,9 @@ var @params = new NameValueCollection
 };
 ```
 
-After you construct a query string, you redirect to <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> to get an <bpt id="p2">**</bpt>authorization code<ept id="p2">**</ept>.  Below is a complete C# method to construct an <bpt id="p1">**</bpt>authorization code<ept id="p1">**</ept> query string, and redirect to <bpt id="p2">**</bpt>Azure AD<ept id="p2">**</ept>. In the next step, you get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept> using the <bpt id="p2">**</bpt>authorization code<ept id="p2">**</ept>.
+Después de construir una cadena de consulta, redirige a **Azure AD** para obtener un **código de autorización**.  A continuación se muestra un método C# completando para construir un **código de autorización** la cadena de consulta y redirigir a **Azure AD**. En el paso siguiente, obtendrá un **token de acceso** utilizando la **código de autorización**.
 
-**Get authorization code**
+**Obtener código de autorización**
 
 ```
 public void GetAuthorizationCode()
@@ -114,11 +116,11 @@ public void GetAuthorizationCode()
 ```
 
 <a name="access-token"/>
-### Step 2: Get an access token from authorization code
+### Paso 2: Obtener un token de acceso del código de autorización
 
-In step 1 to get an authentication access token, you get an <bpt id="p1">**</bpt>authorization code<ept id="p1">**</ept> from Azure AD. Once <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> redirects back to your web app with an <bpt id="p2">**</bpt>authorization code<ept id="p2">**</ept>, you use the <bpt id="p3">**</bpt>authorization code<ept id="p3">**</ept> to get an access token. Below is a C# method to get an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>. In the next section, you get a <bpt id="p1">**</bpt>report<ept id="p1">**</ept> using an <bpt id="p2">**</bpt>access token<ept id="p2">**</ept>.
+En el paso 1 para obtener un acceso de autenticación token, obtendrá un **código de autorización** de Azure AD. Una vez **Azure AD** redirecciones hacia su aplicación web con un **código de autorización**, utiliza la **código de autorización** para obtener un token de acceso. A continuación se muestra un método de C# para obtener un **token de acceso**. En la sección siguiente, obtendrá un **informe** mediante un **token de acceso**.
 
-**Get access token**
+**Obtener token de acceso**
 
 ```
 public string GetAccessToken(string authorizationCode, string clientID, string clientSecret, string redirectUri)
@@ -142,11 +144,11 @@ public string GetAccessToken(string authorizationCode, string clientID, string c
 }
 ```
 
-## Get report using access token
+## Obtener el token con acceso de informe
 
-Now that you have an <bpt id="p1">**</bpt>access token<ept id="p1">**</ept>, you can call the <bpt id="p2">[</bpt>Get Reports<ept id="p2">](https://msdn.microsoft.com/library/mt634543.aspx)</ept> operation. The <bpt id="p1">[</bpt>Get Reports<ept id="p1">](https://msdn.microsoft.com/library/mt634543.aspx)</ept> operation returns a list of reports. You can get a report from the list of reports. Below is a complete C# method to get a report. Once you have a <bpt id="p1">**</bpt>report<ept id="p1">**</ept>, you can load it into an <bpt id="p2">**</bpt>IFrame<ept id="p2">**</ept>. See <bpt id="p1">[</bpt>Step 3: Load a Power BI report into an IFrame<ept id="p1">](powerbi-developer-integrate-report-load-report-iframe.md)</ept>.
+Ahora que tiene un **token de acceso**, puede llamar a la [obtener informes](https://msdn.microsoft.com/library/mt634543.aspx) operación. El [obtener informes](https://msdn.microsoft.com/library/mt634543.aspx) operación devuelve una lista de informes. Puede obtener un informe de la lista de informes. A continuación se muestra un método C# completo para obtener un informe. Una vez que tenga una **informe**, se pueden cargar en un **IFrame**. Consulte [paso 3: cargar un informe de Power BI en un IFrame](powerbi-developer-integrate-report-load-report-iframe.md).
 
-**Get report**
+**Obtener informe**
 
 ```
 protected void GetReport(int index)
@@ -193,17 +195,17 @@ public class PBIReport
 
 ## Paso siguiente
 
-To integrate a report into an app, you load a report into an IFrame. In the next step, you learn how to <bpt id="p1">[</bpt>Load a report into an IFrame<ept id="p1">](powerbi-developer-integrate-report-load-report-iframe.md)</ept>.
+Para integrar un informe en una aplicación, cargue un informe en un IFrame. En el paso siguiente, aprenderá cómo [cargar un informe en un IFrame](powerbi-developer-integrate-report-load-report-iframe.md).
 
-[Next Step &gt;](powerbi-developer-integrate-report-load-report-iframe.md)
+[Siguiente paso >](powerbi-developer-integrate-report-load-report-iframe.md)
 
 ## Consulte también
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)  
-[Integrate a report sample](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
-[Configure the integrate a report sample](powerbi-developer-integrate-report-register.md#configure-sample)  
-[Azure AD Authorization Code Grant Flow](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
-[Get Reports operation](https://msdn.microsoft.com/library/mt634543.aspx)  
-[Step 3: Load a Power BI report into an IFrame](powerbi-developer-integrate-report-load-report-iframe.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Registrarse para Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Integrar un informe en un tutorial de la aplicación](powerbi-developer-integrate-report.md)  
+[Integrar un informe de ejemplo](https://github.com/Microsoft/PowerBI-CSharp/tree/master/samples/webforms/integrate-report-web-app)  
+[Configurar la integración de un informe de ejemplo](powerbi-developer-integrate-report-register.md#configure-sample)  
+[Flujo de concesión de código de autorización de Azure AD](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
+[Operación de informes de obtención de](https://msdn.microsoft.com/library/mt634543.aspx)  
+[Paso 3: Cargar un informe de Power BI en un IFrame](powerbi-developer-integrate-report-load-report-iframe.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Reference lines in your report"
-   description="Reference lines in your report"
+   pageTitle="Líneas de referencia en el informe"
+   description="Líneas de referencia en el informe"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,68 +21,69 @@
    ms.date="08/23/2016"
    ms.author="mihart"/>
 
-# Reference lines in your report
-##  Two methods to create reference lines
+# Líneas de referencia en el informe
+##  Dos métodos para crear líneas de referencia
 
-Many charts are tracking performance against some goal or target, not just a comparison across categories. In these cases, plotting one or more lines that represents targets or goals is useful. These are <bpt id="p1">*</bpt>reference lines<ept id="p1">*</ept>.
+Muchos de los gráficos seguimiento del rendimiento en algunos objetivo o de destino, no sólo una comparación entre las distintas categorías. En estos casos, es útil trazar una o más líneas que representa los destinos o sus objetivos. Estos son *referencia líneas*.
 
-Reference lines can be added to Line, Column, Bar, Area, Waterfall, and Scatter charts.
+Líneas de referencia se pueden agregar a línea, columna, gráficos de barras, área, cascada y dispersión.
 
-There are 2 ways to create references lines; one is by adding reference lines as you need them and the other is by using Power BI Desktop to create a reusable field in your dataset.
+Existen 2 formas para crear líneas de referencias; una es mediante la adición de líneas de referencia como necesite y la otra es mediante el uso de Power BI Desktop para crear un campo reutilizable en el conjunto de datos.
 
-Scroll to the end to see Will create a reference line in Power BI service.
+Desplácese hasta el final para ver creará una línea de referencia de servicio Power BI.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zcAFP9U3d30?#t-2m30s" frameborder="0" allowfullscreen></iframe>
 
-## Reference lines as you need them
+## Hacer referencia a las líneas según sea necesario
 
-This example uses the Retail Analysis Sample.
+Este ejemplo utiliza el ejemplo de análisis de venta directa.
 
- 1. With your chart selected, select the paintbrush icon to open the Formatting pane.
+ 1. Con el gráfico seleccionado, seleccione el icono de pincel para abrir el panel de formato.
 
     ![](media/powerbi-service-reference-lines-in-your-report/formatting-pane.png)
 
- 2. Expand the <bpt id="p1">**</bpt>Reference lines<ept id="p1">**</ept> area and move the slider to <bpt id="p2">**</bpt>On<ept id="p2">**</ept>.
+ 2. Expanda el **referencia líneas** área y mueva el control deslizante para **en**.
 
- 3. Add a reference line at -$75K by entering  <bpt id="p1">**</bpt>-75000<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Value<ept id="p2">**</ept> field.
+ 3. Agregar una línea de referencia en - 75K escribiendo  **-75000** en la **valor** campo.
 
     ![](media/powerbi-service-reference-lines-in-your-report/reference-lines.png)  
 
 
-## Reusable reference lines in a dataset
+## Líneas de referencia reutilizables en un conjunto de datos
 
-Use Power BI Desktop to create a new field (column) in your dataset. Then use that field over and over again in visuals based on that dataset.
+Usar Power BI Desktop para crear un nuevo campo (columna) en el conjunto de datos. A continuación, usar ese campo una y otra vez en objetos visuales basada en ese conjunto de datos.
 
- In this example you'll add a new field to the <bpt id="p1">[</bpt>Financial Sample<ept id="p1">](powerbi-sample-download-the-financial-sample-workbook.md)</ept>.
+ En este ejemplo se agregará un nuevo campo a la [ejemplo financiera](powerbi-sample-download-the-financial-sample-workbook.md).
 
-1. Open the <bpt id="p1">**</bpt>financials<ept id="p1">**</ept> table.  This is where you'll create the new field (column).
+1. Abra la **financials** tabla.  Esto es donde se creará el nuevo campo (columna).
 
-2.  Select which column to use as the basis for the reference line.  In this example we'll use the reference line to show <bpt id="p1">**</bpt>Units Sold<ept id="p1">**</ept> above 200,000.
+2.  Seleccione la columna para usarla como base de la línea de referencia.  En este ejemplo vamos a usar la línea de referencia para mostrar **unidades vendidas** anteriormente 200.000.
 
-2. From the ribbon, select <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>New Column<ept id="p2">**</ept>.
+2. En la cinta de opciones, seleccione **modelado** > **nueva columna**.
 
     ![](media/powerbi-service-reference-lines-in-your-report/PBI_reference_line_new-column-new.png)
 
-3. In the formula bar, type the following:
+3. En la barra de fórmulas, escriba lo siguiente:
 
-    **Unit Sales target = 2000**
+    **Objetivo de ventas de unidad = 2000**
 
     ![](media/powerbi-service-reference-lines-in-your-report/PBI_reference_line_field_list_new2.png)
 
-    This calculated column will return the value 2000 regardless of where it is used.  <bpt id="p1">**</bpt>Unit Sales target<ept id="p1">**</ept> will show up in your Field list along with all the other fields from this dataset, and can be added to any visual that supports reference lines. 
+    Esto calcula la columna devolverá el valor 2000 independientemente de donde se utiliza.  
+            **Objetivo de ventas de la unidad** se mostrarán en la lista de campos, junto con todos los campos de este conjunto de datos y se pueden agregar en cualquier elemento visual que admite las líneas de referencia. 
 
-4. Add the Unit Sales target to a line chart to show how any series relates to that specific reference line.    
+4. Agregar el destino de ventas de unidad a un gráfico de líneas para mostrar cómo se relaciona cualquier serie a una línea de referencia específica.    
 
     ![](media/powerbi-service-reference-lines-in-your-report/reference-lines-show.png)
 
-    >[AZURE.NOTE] Make sure <bpt id="p1">**</bpt>Unit Sales target<ept id="p1">**</ept> isn't being aggregated, for example, summed or counted. In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, right-click <bpt id="p2">**</bpt>Unit Sales target<ept id="p2">**</ept> and select <bpt id="p3">**</bpt>Average<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Minimum<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Maximum<ept id="p5">**</ept>, or <bpt id="p6">**</bpt>Median<ept id="p6">**</ept>.
+    >[AZURE.NOTE] Asegúrese de que **objetivo de ventas de unidad** no agregada, por ejemplo, sumar o contar. En el **visualizaciones** panel, haga clic en **objetivo de ventas de unidad** y seleccione **Media**, **mínimo**, **máximo**, o **mediana**.
 
     ![](media/powerbi-service-reference-lines-in-your-report/power-bi-reference-lines.png)
 
 ##  Solucionar problemas
 
-If you're using a field value as a reference line, and it's not displaying correctly, make sure it isn't being aggregated.  Power BI automatically aggregates values, making its best guess of how you want to use the value. For example, if Power BI sums the value, you'll get a sloping line.  See step 4 above for instructions for setting the proper aggregation for your reference line.
+Si está utilizando un valor de campo como una línea de referencia y no se muestra correctamente, asegúrese de que no se agreguen.  Power BI agrega automáticamente valores, que hace la mejor estimación de cómo desea utilizar el valor. Por ejemplo, si Power BI suma el valor, obtendrá una línea pendiente.  Consulte el paso 4 anterior para obtener instrucciones sobre la configuración de la agregación adecuada para la línea de referencia.
 
 ##  Consulte también
-[Learn more about calculated columns](powerbi-desktop-calculated-columns.md)
+[Obtener más información acerca de las columnas calculadas](powerbi-desktop-calculated-columns.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

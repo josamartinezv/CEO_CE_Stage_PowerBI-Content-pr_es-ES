@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Closing your Power BI Account"
-   description="Closing your Power BI Account"
+   pageTitle="Cierre de la cuenta de Power BI"
+   description="Cierre de la cuenta de Power BI"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -19,40 +19,41 @@
    ms.workload="powerbi"
    ms.date="10/10/2016"
    ms.author="asaxton"/>
-# Closing your Power BI Account
+# Cierre de la cuenta de Power BI
 
-If you don't want to use Power BI any longer, you can ask us to close your Power BI account.  After your account is closed, you can no longer sign in to Power BI.  Also, any customer data you uploaded, or created, in Power BI is deleted according to the data retention policy in the Power BI Terms of Service.
+Si no desea usar más de Power BI, formule cerrar su cuenta de Power BI.  Después de cerrar su cuenta, ya no puede iniciar sesión en Power BI.  También se elimina cualquier dato del cliente cargan o creado en Power BI según la directiva de retención de datos en las condiciones de servicio de Power BI.
 
-## Power BI (free) or individual Power BI Pro users
+## Power BI (gratis) o usuarios individuales de Power BI Pro
 
-If you have a free account, or are paying for the individual Power BI Pro subscription, you close your account from the settings screen.
+Si tiene una cuenta gratuita, o va a pagar por la suscripción de Power BI Pro individual, cerrar su cuenta desde la pantalla de configuración.
 
-1. Select the gear <ph id="ph1">![](media/powerbi-admin-closing-your-account/gear.png)</ph> in the upper right.
+1. Seleccione el engranaje ![](media/powerbi-admin-closing-your-account/gear.png) en la esquina superior derecha.
 
-2. Select <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
+2. Seleccione **configuración**.
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings.png)
 
-3. <bpt id="p1">**</bpt>General<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Close Account<ept id="p2">**</ept>
+3. 
+            **General** > **Cerrar cuenta**
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings2.png)
     
-4. Select a reason from the  <bpt id="p1">**</bpt>Why are you closing your account?<ept id="p1">**</ept> (1) dropdown.  You can optionally provide further information (2). Then select <bpt id="p1">**</bpt>Close account<ept id="p1">**</ept>.
+4. Seleccione un motivo de la  **¿por qué cierra su cuenta?** (1) desplegable.  Opcionalmente, puede obtener más información (2). A continuación, seleccione **Cerrar cuenta**.
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings3.png)
     
-5. Confirm that you want to close your account.
+5. Confirme que desea cerrar su cuenta.
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings4.png)
     
-6. You will see a confirmation that your account is closed. You will also be given a link to reopen your account.
+6. Aparecerá una confirmación de que la cuenta está cerrada. También se le proporcionará un vínculo para volver a abrir tu cuenta.
 
     ![](media/powerbi-admin-closing-your-account/closeaccount-settings5.png)
 
-## Managed tenant users
+## Usuarios del inquilino administrado
 
-You will need to contact your tenant admin and ask them to unassign the license from your account.
+Debe ponerse en contacto con su administrador de inquilinos y pídale que quitar la asignación de la licencia de su cuenta.
 
 ![](media/powerbi-admin-closing-your-account/closeaccountmanaged.png)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

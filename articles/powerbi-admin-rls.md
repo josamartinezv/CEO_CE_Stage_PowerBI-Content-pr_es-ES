@@ -1,6 +1,6 @@
 <properties
-pageTitle="Row-level security (RLS) with Power BI"
-description="How to configure row-level security for imported datasets, and DirectQuery, within the Power BI service."
+pageTitle="Seguridad de nivel de fila (RLS) con Power BI"
+description="Cómo configurar la seguridad de nivel de fila de los conjuntos de datos importados y DirectQuery, dentro del servicio Power BI."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,79 +19,79 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/18/2016"
 ms.author="asaxton"/>
-# <a name="row-level-security-(rls)-with-power-bi"></a>Row-level security (RLS) with Power BI
+# <a name="row-level-security-(rls)-with-power-bi"></a>Seguridad de nivel de fila (RLS) con Power BI
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/67fK0GoVQ80?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-Row-level security (RLS) with Power BI can be used to restrict data access for given users. Filters restrict data at the row level. You can define filters within roles.
+Seguridad de nivel de fila (RLS) con Power BI puede utilizarse para restringir el acceso a datos para los usuarios. Los filtros restringen los datos en el nivel de fila. Puede definir filtros en roles.
 
-> [AZURE.NOTE] RLS is a Pro feature. You can read more about what <bpt id="p1">[</bpt>Pro content<ept id="p1">](powerbi-power-bi-pro-content-what-is-it.md)</ept> is.
+> [AZURE.NOTE] RLS no es una característica de Pro. Puede leer más sobre qué [contenido Pro](powerbi-power-bi-pro-content-what-is-it.md) es.
 
-You can now configure RLS for data models imported into Power BI with Power BI Desktop. You can also configure RLS on datasets that are using DirectQuery, such as SQL Server. Previously, you were only able to implement RLS within on-premises Analysis Services models outside of Power BI. For Analysis Services live connections, you configure Row-level security on the on-premises model. The security option will not show up for live connection datasets.
+Ahora puede configurar RLS para modelos de datos importados en Power BI con Power BI Desktop. También puede configurar RLS en conjuntos de datos que utilizan DirectQuery, como SQL Server. Anteriormente, podía sólo implementar RLS dentro de modelos de Analysis Services local fuera de Power BI. Para las conexiones en directo de Analysis Services, configurar la seguridad de nivel de fila en el modelo en local. La opción de seguridad no mostrará los conjuntos de datos de la conexión activa.
 
 [AZURE.INCLUDE [include-short-name](../includes/rls-desktop-define-roles.md)]
 
 [AZURE.INCLUDE [include-short-name](../includes/rls-desktop-view-as-roles.md)]
 
-## <a name="manage-security-on-your-model"></a>Manage security on your model
+## <a name="manage-security-on-your-model"></a>Administrar la seguridad en el modelo
 
-To manage security on your data model, you will want to do the following.
+Para administrar la seguridad en el modelo de datos, deberá hacer lo siguiente.
 
-1.  Select the <bpt id="p1">**</bpt>ellipse (…)<ept id="p1">**</ept> for a dataset.
-2.  Select <bpt id="p1">**</bpt>Security<ept id="p1">**</ept>.
+1.  Seleccione el **puntos suspensivos (...)** para un conjunto de datos.
+2.  Seleccione **seguridad**.
 
     ![](media/powerbi-admin-rls/rls-security.png)
  
-This will take you to the RLS page for you to add members to a role you created in Power BI Desktop. Only the owners of the dataset will see Security available. If the dataset is in a Group, only Administrators of the group will see the security option. 
+Esto le llevará a la página RLS para agregar miembros a un rol creado en Power BI Desktop. Sólo los propietarios del conjunto de datos verán seguridad disponible. Si el conjunto de datos está en un grupo, sólo los administradores del grupo verán la opción de seguridad. 
 
-You can only create or modify roles within Power BI Desktop.
+Sólo puede crear o modificar roles de Power BI Desktop.
 
-## <a name="working-with-members"></a>Working with members
+## <a name="working-with-members"></a>Trabajar con miembros
 
-### <a name="add-members"></a>Add members
+### <a name="add-members"></a>Agregar miembros
 
-You can add a member to the role by typing in the email address, or name, of the user, security group or distribution list you want to add. This member has to be within your organization. You cannot add Groups created within Power BI.
+Puede agregar un miembro a la función escribiendo la dirección de correo electrónico o el nombre del usuario, seguridad de grupo o lista de distribución que desee agregar. Este miembro debe estar dentro de su organización. No se puede agregar que grupos se crean en Power BI.
 
 ![](media/powerbi-admin-rls/rls-add-member.png)
  
-You can also see how many members are part of the role by the number in parenthesis next to the role name, or next to Members.
+También puede ver cuántos miembros forman parte de la función por el número entre paréntesis junto al nombre del rol o junto a los miembros.
 
 ![](media/powerbi-admin-rls/rls-member-count.png)
  
-### <a name="remove-members"></a>Remove members
+### <a name="remove-members"></a>Quitar miembros
 
-You can remove members by selecting the X next to their name. 
+Puede quitar a los miembros seleccionando la X junto a su nombre. 
  
 ![](media/powerbi-admin-rls/rls-remove-member.png)
 
-## <a name="validating-the-role-within-the-power-bi-service"></a>Validating the role within the Power BI service
+## <a name="validating-the-role-within-the-power-bi-service"></a>Validar el rol en el servicio Power BI
 
-You can validate that the role you defined is working correctly by testing the role. 
+Puede validar que la función definida por el que funciona correctamente mediante la comprobación de la función. 
 
-1. Select the <bpt id="p1">**</bpt>ellipse (...)<ept id="p1">**</ept> next to the role.
-2. Select <bpt id="p1">**</bpt>Test data as role<ept id="p1">**</ept>
+1. Seleccione el **puntos suspensivos (...)** junto a la función.
+2. Seleccione **datos como función de prueba**
 
 ![](media/powerbi-admin-rls/rls-test-role.png)
 
-You will then see reports that are available for this role. Dashboards are not presented in this view. In the blue bar above, you will see what is being applied.
+A continuación, verá los informes que están disponibles para este rol. Los paneles no se presentan en esta vista. En la barra azul anterior, verá lo que se aplica.
 
 ![](media/powerbi-admin-rls/rls-test-role2.png)
 
-You can test other roles, or combination of roles, by selecting <bpt id="p1">**</bpt>Now viewing as<ept id="p1">**</ept>.
+Puede probar otras funciones o combinación de funciones, seleccionando **Ver ahora como**.
 
 ![](media/powerbi-admin-rls/rls-test-role3.png)
 
-You can choose to view data as a specific person, or you can select a combination of available roles to validate they are working. 
+Puede elegir ver los datos como una persona específica o puede seleccionar una combinación de roles disponibles para validar que están trabajando. 
 
-To return to normal viewing, select <bpt id="p1">**</bpt>Back to Row-Level Security<ept id="p1">**</ept>.
+Para volver a la vista normal, seleccione **a la seguridad de nivel de fila**.
 
 [AZURE.INCLUDE [include-short-name](../includes/rls-usernames.md)]
 
-## <a name="using-rls-with-groups-in-power-bi"></a>Using RLS with Groups in Power BI
+## <a name="using-rls-with-groups-in-power-bi"></a>Uso de RLS con grupos de Power BI
 
-If you publish your Power BI Desktop report to a group within the Power BI service, the roles will be applied to read-only members. You will need to indicate that members can only view Power BI content within the group settings.
+Si publica un informe de Power BI Desktop a un grupo en el servicio Power BI, los roles se aplica a los miembros de sólo lectura. Debe indicar que los miembros solo pueden ver contenido de Power BI dentro de la configuración del grupo.
 
-> [AZURE.WARNING] If you have configured the Group so that members have edit permissions, the RLS roles will not be applied to them. Users will be able to see all of the data.
+> [AZURE.WARNING] Si ha configurado el grupo para que los miembros tienen permisos de edición, los roles RLS no se aplicará a ellos. Los usuarios podrán ver todos los datos.
 
 ![](media/powerbi-admin-rls/rls-group-settings.png)
 
@@ -101,5 +101,7 @@ If you publish your Power BI Desktop report to a group within the Power BI servi
 
 ## <a name="see-also"></a>Consulte también
 
-<bpt id="p1">[</bpt>Row-level security (RLS) with Power BI Desktop<ept id="p1">](powerbi-desktop-rls.md)</ept>  
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+
+            [Seguridad de nivel de fila (RLS) con Power BI Desktop](powerbi-desktop-rls.md)  
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

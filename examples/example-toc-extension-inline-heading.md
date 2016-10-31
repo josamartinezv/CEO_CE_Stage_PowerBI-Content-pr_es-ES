@@ -1,28 +1,28 @@
-<properties linkid="example-toc-extension-inline-heading" urlDisplayName="TOC Markdown Extension Test" pageTitle="TOC Markdown Extension Test" title="TOC Markdown Extension Test" metaKeywords="southworks" description="Tests for the TOC Markdown Extension." metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" documentationCenter="" authors="" videoId="" scriptId="" />
+<properties linkid="example-toc-extension-inline-heading" urlDisplayName="TOC Markdown Extension Test" pageTitle="Prueba de la extensión de TDC descuento" title="TOC Markdown Extension Test" metaKeywords="southworks" description="Comprueba si la extensión de descuento de tabla de Contenido." metaCanonical="" disqusComments="1" umbracoNaviHide="0" writer="f2bo" services="" solutions="" documentationCenter="" authors="" videoId="" scriptId="" />
 
-# TOC Markdown Extension Test
+# Prueba de la extensión de TDC descuento
 
-###**Inline Heading**
+###**Encabezado alineado**
 
 *Sintaxis*
 
-&lbrack;AZURE.TOC <ph id="ph1">&amp;quot;</ph>Table of Contents&quot;&rbrack;
+&lbrack;AZURE. TDC &quot;tabla de contenido&quot;&rbrack;
 
 <hr />
 
-[AZURE.TOC "Table of Contents"]
+[AZURE. Tabla de Contenido "Tabla de contenido"]
 
-## Heading One
+## Encabezado uno
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 
 Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
 
-## Heading Two
+## Encabezado dos
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 
-## Heading Three
+## Encabezado de tres
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 
 Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.

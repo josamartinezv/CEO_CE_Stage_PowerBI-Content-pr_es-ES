@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Authenticate a client app"
-   description="Authenticate a client app"
+   pageTitle="Autenticar una aplicación cliente"
+   description="Autenticar una aplicación cliente"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,66 +20,77 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Authenticate a client app
+# Autenticar una aplicación cliente
 
-<bpt id="p1">[</bpt>Download the .NET client app sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=619280)</ept><ph id="ph1"> | </ph><bpt id="p2">[</bpt>View the code on GitHub<ept id="p2">](http://go.microsoft.com/fwlink/?LinkId=619429)</ept>
 
-This article shows you how to authenticate a Power BI client app. It includes examples in C#; however, the authentication process is the same for other programming languages.
+            [Descargue el ejemplo de aplicación de cliente .NET](http://go.microsoft.com/fwlink/?LinkId=619280) | [Ver el código de GitHub](http://go.microsoft.com/fwlink/?LinkId=619429)
 
-For a complete C# sample that shows how to authenticate a Power BI client app, see <bpt id="p1">[</bpt>Client app sample<ept id="p1">](https://msdn.microsoft.com/library/mt186159.aspx)</ept>.
+En este artículo se muestra cómo autenticar una aplicación de cliente de Power BI. Incluye ejemplos de C#; Sin embargo, el proceso de autenticación es el mismo para otros lenguajes de programación.
 
-Power BI client apps use <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept> (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your client app in AAD, you register your app with AAD. When you register a client app in AAD, you give your app access to the Power BI APIs. To learn how to register your Power BI client app, see <bpt id="p1">[</bpt>Register a client app<ept id="p1">](powerbi-developer-register-a-client-app.md)</ept>.
+Para un completo ejemplo de C# que muestra cómo autenticar una aplicación de cliente de Power BI, consulte [ejemplo de aplicación de cliente](https://msdn.microsoft.com/library/mt186159.aspx).
 
-Power BI REST API calls are made on behalf of an authenticated user by passing a token in the "Authorization" header of the request. The token is acquired through Azure Active Directory.
+Uso de aplicaciones de cliente de BI de energía **Azure Active Directory** (AAD) para autenticar a los usuarios y proteger las aplicaciones. La autenticación es el proceso de identificar una aplicación o usuario. Para identificar la aplicación cliente en AAD, registre la aplicación con AAD. Al registrar una aplicación cliente en AAD, concede a la aplicación acceso a las API de Power BI. Para obtener información sobre cómo registrar la aplicación de cliente de Power BI, consulte [registrar una aplicación de cliente](powerbi-developer-register-a-client-app.md).
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept> For Power BI Private Preview, apps are created as multi-tenant apps using the Azure Management Portal.
+Llamadas de API de REST de BI de energía se realizan en nombre de un usuario autenticado pasando un token en el encabezado "Autorización" de la solicitud. El token se adquiere a través de Azure Active Directory.
+
+
+            **Nota** para Power BI Preview privada, se crean aplicaciones como aplicaciones de varios inquilinos mediante el Portal de administración.
 
 <a name="What"></a>
-## What you need to authenticate a Power BI client app
-To authenticate a Power BI client app and perform a REST web request, you need to:
+## Lo que necesita para autenticar una aplicación de cliente de Power BI
+Para autenticar una aplicación de cliente de Power BI y realizar una solicitud web REST, necesitará:
 
-1. <bpt id="p1">**</bpt>Register your client app<ept id="p1">**</ept> - To register a Power BI client app, see <bpt id="p2">[</bpt>Register a client app<ept id="p2">](powerbi-developer-register-a-client-app.md)</ept>.   When you register a client app in <bpt id="p1">**</bpt>Azure Active Directory<ept id="p1">**</ept>, you give your app access to the Power BI APIs.
-2. <bpt id="p1">**</bpt>Assign the client id for your app<ept id="p1">**</ept> - To get the client id for your app, see <bpt id="p2">[</bpt>How to get a client app id<ept id="p2">](powerbi-developer-register-a-client-app.md#clientID)</ept>. The Client ID is used by the application to identify themselves to the users that they are requesting permissions from.
-    - In your client app code, assign the <bpt id="p1">**</bpt>clientID<ept id="p1">**</ept> variable to the client id of your Azure application.
-3. <bpt id="p1">**</bpt>Assign the redirect Uri<ept id="p1">**</ept> - For a client app, a redirect uri gives AAD more details about the specific application it will authenticate. A uniform resource identifier (URI) is a value to identify a name of a resource.
-    - In your client app code, assign the <bpt id="p1">**</bpt>redirectUri<ept id="p1">**</ept> to "https://login.live.com/oauth20_desktop.srf". Since a client app does not have an external service to redirect to, this URI is the standard placeholder for client apps.
+1. 
+            **Registrar la aplicación cliente** : para registrar una aplicación de cliente de Power BI, consulte [registrar una aplicación de cliente](powerbi-developer-register-a-client-app.md).   Al registrar una aplicación cliente en **Azure Active Directory**, concede a la aplicación acceso a la API de Power BI.
+2. 
+            **Asignar el identificador de cliente para la aplicación** : para obtener el identificador de cliente para la aplicación, consulte [cómo obtener un identificador de la aplicación cliente](powerbi-developer-register-a-client-app.md#clientID). El identificador de cliente se utiliza la aplicación para identificarse ante los usuarios que están solicitando permisos.
+    - En el código de la aplicación cliente, asigne el **clientID** variable al identificador de cliente de la aplicación de Azure.
+3. 
+            **Asignar el Uri de redireccionamiento** -para una aplicación cliente, un uri de redireccionamiento da a AAD más detalles acerca de la aplicación específica que autenticará. Un identificador uniforme de recursos (URI) es un valor para identificar un nombre de un recurso.
+    - En el código de aplicación cliente, asigne el **redirectUri** a "https://login.live.com/oauth20_desktop.srf". Puesto que una aplicación cliente no tiene un servicio externo para redirigir a, este identificador URI es el marcador de posición estándar para las aplicaciones cliente.
 
-4. <bpt id="p1">**</bpt>Assign the resource Uri for Power BI API<ept id="p1">**</ept> - The resource Uri identifies the Power BI API resource.
-    - In your client app code, assign the <bpt id="p1">**</bpt>resourceUri<ept id="p1">**</ept> to "https://analysis.windows.net/powerbi/api".
-5. <bpt id="p1">**</bpt>Assign the OAuth2 authority uri<ept id="p1">**</ept> - The authority Uri identifies the OAuth2 authority resource.
-    - In your client app code, assign an authority Uri to "https://login.windows.net/common/oauth2/authorize".
-6. <bpt id="p1">**</bpt>Assign the dataset Uri for the Power BI API datasets<ept id="p1">**</ept> - The datasets Uri identifies the Power BI API datasets resource.
-    - In your client app code, assign the <bpt id="p1">**</bpt>datasetsUri<ept id="p1">**</ept> to "https://api.powerbi.com/v1.0/myorg/datasets".
+4. 
+            **Asignar el Uri de recurso para la API de Power BI** : el Uri de recurso identifica el recurso de la API de Power BI.
+    - En el código de aplicación cliente, asigne el **resourceUri** a "https://analysis.windows.net/powerbi/api".
+5. 
+            **Asignar el uri de autoridad OAuth2** : el Uri de autoridad identifica el recurso de autoridad OAuth2.
+    - En el código de la aplicación cliente, asigne un Uri de la entidad a "https://login.windows.net/common/oauth2/authorize".
+6. 
+            **Asignar el Uri del conjunto de datos para los conjuntos de datos de la API de Power BI** -los conjuntos de datos Uri identifican el recurso de conjuntos de datos de la API de Power BI.
+    - En el código de aplicación cliente, asigne el **datasetsUri** a "https://api.powerbi.com/v1.0/myorg/datasets".
 
-To make a data request to the Power BI REST service, you need to supply an access token. In a .NET client app, you use the <bpt id="p1">[</bpt>Azure AD Authentication Library for .NET nuget package<ept id="p1">](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)</ept> to get an access token. Here’s the process. Below is an example <bpt id="p1">**</bpt>AccessToken()<ept id="p1">**</ept> method.
+Para realizar una solicitud de datos en el servicio REST de Power BI, deberá suministrar un token de acceso. En una aplicación de cliente. NET, se utiliza el [biblioteca de autenticación de Azure AD para paquete de nuget de .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) para obtener un token de acceso. Este es el proceso. A continuación se muestra un ejemplo **AccessToken()** método.
 
-If you do not have Windows Azure Authentication Library (ADAL), see <bpt id="p1">[</bpt>How to add Azure Active Directory Authentication Library<ept id="p1">](#Library)</ept>.
+Si no tiene la biblioteca de autenticación de Windows Azure (AAL), vea [cómo agregar biblioteca de autenticación de Azure Active Directory](#Library).
 
-<bpt id="p1">**</bpt>Important<ept id="p1">**</ept> To authenticate a client app, you must add a reference to <bpt id="p2">**</bpt>Microsoft.IdentityModel.Clients.ActiveDirectory<ept id="p2">**</ept> which is included in the Windows Azure Authentication Library (ADAL).
 
-## Steps to get an access token
-1. <bpt id="p1">**</bpt>Create an instance of AuthenticationContext<ept id="p1">**</ept> - AuthenticationContext is the main class representing the token issuing authority for Azure AD resources. The constructor takes:
-    - An OAuth2 authorityUri
+            **Importante** para autenticar una aplicación cliente, debe agregar una referencia a **Microsoft.IdentityModel.Clients.ActiveDirectory** que se incluye en la biblioteca de autenticación de Windows Azure (ADAL).
+
+## Pasos para obtener un token de acceso
+1. 
+            **Cree una instancia de AuthenticationContext** -AuthenticationContext es la clase principal que representa el token de emisión de autoridad para recursos de Azure AD. El constructor toma:
+    - Un authorityUri OAuth2
 
     ```
             //OAuth2 authority Uri
             string authorityUri = "https://login.windows.net/common/oauth2/authorize";
     AuthenticationContext  authContext = new AuthenticationContext(authorityUri);
     ```
-2. <bpt id="p1">**</bpt>Call AuthenticationContext.AcquireToken() to get a token<ept id="p1">**</ept> -  The method takes:
+2. 
+            **Llame a authenticationcontext.acquiretoken () para obtener un token** -el método toma:
     - Power BI API resourceUri
-    - Your Power BI app clientID
-    - Your Power BI app redirectUri
+    - El clientID de aplicación Power BI
+    - Su redirectUri de aplicación Power BI
 
     ```
     string token = authContext.AcquireToken(resourceUri, clientId, new Uri(redirectUri), PromptBehavior.RefreshSession).AccessToken;
     ```
 
-For more information about what AuthenticationContext does to get a token, see <bpt id="p1">[</bpt>Azure Authentication Context Flow<ept id="p1">](#Flow)</ept>.
+Para obtener más información acerca de qué AuthenticationContext para obtener un token, consulte [flujo de contexto de autenticación de Azure](#Flow).
 
-## C# example - Get access token
+## Ejemplo de C#: token de acceso Get
 
-In a .NET client app, you use <bpt id="p1">**</bpt>AuthenticationContext<ept id="p1">**</ept> to get an access token.
+En una aplicación de cliente. NET, se utiliza **AuthenticationContext** para obtener un token de acceso.
 
 ```
       static string AccessToken()
@@ -113,9 +124,9 @@ In a .NET client app, you use <bpt id="p1">**</bpt>AuthenticationContext<ept id=
       }
 ```
 <a name="Datarequest"></a>
-## Make a data request to Power BI REST API using a token
+## Realizar una solicitud de datos a la API de REST de Power BI utilizando un token
 
-After you get an access token from Active Directory (AAD), you use the token to make a web request to the Power BI REST API. To create a Power BI REST web request, you add an access token to the request header as:
+Después de obtener un token de acceso de Active Directory (AAD), use el token para realizar una solicitud web en la API de REST de Power BI. Para crear una solicitud web de REST de Power BI, agregar un token de acceso para el encabezado de solicitud como:
 
 
 ```
@@ -123,9 +134,9 @@ request.Headers.Add("Authorization", String.Format("Bearer {0}", AccessToken()))
 ```
 
 
-## C# example - Power BI REST API data request using a token
+## Ejemplo de C#: solicitud de datos de la API de REST de Power BI mediante un token
 
-For a complete C# sample that shows how to authenticate a Power BI client app and call all Power BI REST operations, see <bpt id="p1">[</bpt>Client app sample<ept id="p1">](https://msdn.microsoft.com/library/mt186159.aspx)</ept> or <bpt id="p2">[</bpt>view the code on GitHub<ept id="p2">](http://go.microsoft.com/fwlink/?LinkId=619429)</ept>.
+Para un completo ejemplo de C# que muestra cómo autenticar una aplicación de cliente de Power BI y llamar a todas las operaciones de REST de Power BI, consulte [ejemplo de aplicación cliente](https://msdn.microsoft.com/library/mt186159.aspx) o [Ver el código en GitHub](http://go.microsoft.com/fwlink/?LinkId=619429).
 
 ```
         static dataset[] GetDatasets()
@@ -179,42 +190,44 @@ public class dataset
 
 ```
 <a name="Flow"></a>
-## Azure Authentication Context Flow
-In a .NET client app, you use <bpt id="p1">**</bpt>AuthenticationContext<ept id="p1">**</ept> to acquire an Azure access token. <bpt id="p1">**</bpt>AuthenticationContext<ept id="p1">**</ept> is the main class representing the token issuing authority for Azure AD resources. <bpt id="p1">**</bpt>AuthenticationContext<ept id="p1">**</ept> does the following:
+## Flujo de contexto de autenticación de Azure
+En una aplicación de cliente. NET, se utiliza **AuthenticationContext** para adquirir un token de acceso de Azure. 
+            **AuthenticationContext** es la clase principal que representa el token de emisión de autoridad para recursos de Azure AD. 
+            **AuthenticationContext** hace lo siguiente:
 
-1. AuthenticationContext starts the flow by redirecting the user agent to the Azure Active Directory authorization endpoint. El usuario se autentica y da su consentimiento, si este se requiere.
+1. AuthenticationContext inicia el flujo redirigiendo el agente de usuario para el extremo de autorización de Azure Active Directory. El usuario se autentica y da su consentimiento, si este se requiere.
 
-2. The Azure Active Directory authorization endpoint redirects the user agent back to the AuthenticationContext with an authorization code. The user agent returns an authorization code to the client application’s redirect URI.
+2. El extremo de autorización de Azure Active Directory redirige al usuario a AuthenticationContext con un código de autorización. El agente de usuario, devuelve un código de autorización al URI de redireccionamiento de la aplicación cliente.
 
-3. The AuthenticationContext requests an access token from the Azure Active Directory token issuance endpoint. Presenta el código de autorización para demostrar que el usuario ha dado su consentimiento.
+3. AuthenticationContext solicita un token de acceso desde el extremo de emisión de tokens de Azure Active Directory. Presenta el código de autorización para demostrar que el usuario ha dado su consentimiento.
 
-4. The Azure Active Directory token issuance endpoint returns an access token.
+4. El extremo de emisión de tokens de Azure Active Directory devuelve un token de acceso.
 
 5. La aplicación cliente usa el token de acceso para autenticar la API web.
 
-6. After authenticating the client application, the Power BI REST API returns the requested data.
+6. Después de autenticar la aplicación cliente, la API de REST de Power BI devuelve los datos solicitados.
 
 
-To learn more about Azure Active Directory (Azure AD) authorization flow, see <bpt id="p1">[</bpt>Authorization Code Grant Flow<ept id="p1">](https://msdn.microsoft.com/library/azure/dn645542.aspx)</ept>.
+Para obtener más información acerca del flujo de autorización de Azure Active Directory (Azure AD), consulte [flujo de concesión de código de autorización](https://msdn.microsoft.com/library/azure/dn645542.aspx).
 
 <a name="Library"></a>
-## How to add Azure Active Directory Authentication Library
+## Cómo agregar la biblioteca de autenticación de Azure Active Directory
 
-In a .NET client app, you use <bpt id="p1">**</bpt>AuthenticationContext<ept id="p1">**</ept> in the <bpt id="p2">**</bpt>Active Directory Authentication Library<ept id="p2">**</ept> to acquire an Azure access token. You can install the <bpt id="p1">**</bpt>Active Directory Authentication Library<ept id="p1">**</ept> NuGet package from Visual Studio. When you install a NuGet package, Visual Studio creates a reference to the required assemblies.
+En una aplicación de cliente. NET, se utiliza **AuthenticationContext** en el **biblioteca de autenticación de Active Directory** para adquirir un token de acceso de Azure. Puede instalar el **biblioteca de autenticación de Active Directory** paquete de NuGet desde Visual Studio. Cuando se instala un paquete de NuGet, Visual Studio crea una referencia a los ensamblados necesarios.
 
-1. Right click a solution.
+1. Haga clic una solución.
 
-2. Choose <bpt id="p1">**</bpt>Manage NuGet Packages<ept id="p1">**</ept>.
+2. Elija **Administrar paquetes de NuGet**.
 
-3. Search for <bpt id="p1">**</bpt>Active Directory Authentication Library<ept id="p1">**</ept>.
+3. Buscar **biblioteca de autenticación de Active Directory**.
 
-4. Choose <bpt id="p1">**</bpt>Active Directory Authentication Library<ept id="p1">**</ept> in the list of packages, and click <bpt id="p2">**</bpt>Install<ept id="p2">**</ept>.
+4. Elija **biblioteca de autenticación de Active Directory** en la lista de paquetes y haga clic en **instalar**.
 
 ## Consulte también
 
-[Azure AD Authentication Library for .NET nuget package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
-[Active Directory Authentication Library (ADAL) v1 for .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)  
+[Biblioteca de autenticación de Azure AD para paquete de nuget de .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
+[Autenticación de Active Directory Library (ADAL) v1 para .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)  
 [OAuth 2.0 en Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx)  
 [Flujo de concesión de códigos de autorización](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
 [Escenarios de autenticación en Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

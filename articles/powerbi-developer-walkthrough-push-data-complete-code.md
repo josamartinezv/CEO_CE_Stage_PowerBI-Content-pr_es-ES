@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Complete code listing"
-   description="Walkthrough to push data - Complete code listing"
+   pageTitle="Lista de código completa"
+   description="Tutorial para insertar datos: código completo"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -21,13 +21,13 @@
    ms.author="asaxton"/>
 
 
-# Push data to a dashboard complete code listing
+# Insertar datos en un panel de código completo
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+Este artículo forma parte de un tutorial paso a paso para [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md).
 
-After you follow Steps 2 to 5 in <bpt id="p1">**</bpt>Push data into a dashboard<ept id="p1">**</ept>, your complete source code should look like the following.
+Después de seguir los pasos del 2 al 5 en **Insertar datos en un panel**, el código fuente completo debe ser similar al siguiente.
 
-## Push data to dashboard code
+## Insertar datos en el código del panel
 
       using System;
       using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -231,13 +231,13 @@ After you follow Steps 2 to 5 in <bpt id="p1">**</bpt>Push data into a dashboard
 
 ## Consulte también
 
-[Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)  
-[Walkthrough - Push data into a Power BI dashboard](powerbi-developer-walkthrough-push-data.md)  
-[Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
-[Get an authentication access token](powerbi-developer-walkthrough-push-data-get-token.md)  
-[Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)  
-[Get a dataset to add rows into a Power BI table](powerbi-developer-walkthrough-push-data-get-datasets.md)  
-[Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)  
-[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Insertar datos en un panel de Power BI](powerbi-developer-walkthrough-push-data.md)  
+[Tutorial: insertar datos en un panel de Power BI](powerbi-developer-walkthrough-push-data.md)  
+[Registrar una aplicación con Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)  
+[Obtener un acceso de autenticación token](powerbi-developer-walkthrough-push-data-get-token.md)  
+[Crear un conjunto de datos en un panel de Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md)  
+[Obtiene un conjunto de datos para agregar filas a una tabla de Power BI](powerbi-developer-walkthrough-push-data-get-datasets.md)  
+[Agregar filas a una tabla de Power BI](powerbi-developer-walkthrough-push-data-add-rows.md)  
+[Referencia de API de REST de BI de energía](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Información general sobre la API de REST de Power BI](powerbi-developer-overview-of-power-bi-rest-api.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

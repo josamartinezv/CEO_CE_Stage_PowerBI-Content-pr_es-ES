@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Forgot your password for Power BI?"
-   description="Forgot your password for Power BI?"
+   pageTitle="¿Olvidó su contraseña para Power BI?"
+   description="¿Olvidó su contraseña para Power BI?"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -19,18 +19,18 @@
    ms.workload="powerbi"
    ms.date="10/04/2016"
    ms.author="asaxton"/>
-# Forgot your password for Power BI?
+# ¿Olvidó su contraseña para Power BI?
 
-If you've forgotten your password, you can use the following link to request a password reset.
+Si ha olvidado su contraseña, puede utilizar el siguiente vínculo para solicitar un restablecimiento de contraseña.
 
 <https://passwordreset.microsoftonline.com>
 
-If you're told that your account is not enabled for password reset, you'll need to contact your Office 365 administrator. If you're using the free trial, the administrator is the first person in your organization who signed up.
+Si se le indica que la cuenta no está habilitada para restablecer la contraseña, debe ponerse en contacto con el Administrador de Office 365. Si utiliza la versión de prueba gratuita, el administrador es la primera persona de su organización que registró.
 
-If you are still having issues accessing your account you can try contacting the support team at:
+Si sigue teniendo problemas de acceso a su cuenta puede intentar ponerse en contacto con el equipo de soporte:
 
 *1-800-642-7676*
 
-> [AZURE.NOTE] Please note, support is provided during the eastern standard time (EST) time zone. Support is provided during business hours and currently only supported in English.
+> [AZURE.NOTE] Por favor, tenga en cuenta que se admiten durante la zona horaria de hora estándar (EST). Soporte técnico se proporciona durante el horario laboral y actualmente solo admite en inglés.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

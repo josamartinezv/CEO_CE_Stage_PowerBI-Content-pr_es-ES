@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Share dashboards and reports with colleagues and others"
-   description="How to share Power BI dashboards and reports with colleagues in and out of your organization, and what you need to know about sharing."
+   pageTitle="Compartir paneles e informes con colegas etc."
+   description="Cómo compartir informes y paneles de Power BI con colegas dentro y fuera de su organización, y lo que necesita saber acerca del uso compartido."
    services="powerbi"
    documentationCenter=""
    authors="ajayan"
@@ -21,165 +21,176 @@
    ms.date="10/13/2016"
    ms.author="maggies"/>
 
-# <a name="share-a-dashboard-and-reports-with-colleagues-and-others"></a>Share a dashboard and reports with colleagues and others
+# <a name="share-a-dashboard-and-reports-with-colleagues-and-others"></a>Compartir un panel y los informes con sus colegas y otros
 
-You can share your dashboards and reports with colleagues in and out of your organization. If they haven't signed up for <bpt id="p1">[</bpt>Power BI<ept id="p1">](http://powerbi.com)</ept>, they'll need to do so to see your dashboard.
+Puede compartir sus paneles e informes con colegas dentro y fuera de su organización. Si no han iniciado sesión en [Power BI](http://powerbi.com), deberá hacerlo para ver el panel.
 
-What you can share and who you can share it with depends on your and their Power BI licenses. See <bpt id="p1">[</bpt>Licensing requirements for sharing<ept id="p1">](powerbi-service-share-unshare-dashboard.md#licensing-requirements-for-sharing)</ept> below for details.
+¿Qué se puede compartir y que puede compartir con depende sus y sus licencias de Power BI. Consulte [requisitos de licencias para uso compartido](powerbi-service-share-unshare-dashboard.md#licensing-requirements-for-sharing) a continuación para obtener más información.
 
-Dashboards and reports that are shared with you are read-only.  You can't save-as to personalize them. On the other hand, you can make your own copy of dashboards and reports in <bpt id="p1">[</bpt>organizational content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>.  See <bpt id="p1">[</bpt>How should I share my dashboard<ept id="p1">](powerbi-service-how-should-i-share-my-dashboard.md)</ept>? to decide which is best for your situation.
+Paneles e informes que se comparten con los son de sólo lectura.  No se puede guardar-en cuanto a personalizarlos. Por otro lado, puede realizar su propia copia de paneles e informes en [paquetes de contenido organizativo](powerbi-service-organizational-content-packs-introduction.md).  Consulte [¿Cómo debo compartir mi panel](powerbi-service-how-should-i-share-my-dashboard.md)? para decidir cuál es mejor para su situación.
 
-><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: You share dashboards and reports from the Power BI service or the Power BI mobile apps, but not from Power BI Desktop.
+>
+            **Nota**: compartir paneles e informes desde el servicio Power BI o las aplicaciones móviles de Power BI, pero no desde Power BI Desktop.
 
-Watch Amanda share her dashboard with colleagues inside and outside her company. Then follow the step-by-step instructions below the video to try it out yourself.
+Vea Amanda compartir su escritorio con colegas dentro y fuera de su empresa. A continuación, siga las instrucciones detalladas a continuación el vídeo para probarlo usted mismo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0tUwn8DHo3s?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-## <a name="share-a-dashboard"></a>Share a dashboard
+## <a name="share-a-dashboard"></a>Compartir un panel
 
-1.   Open the dashboard and select <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-service-share-unshare-dashboard/pbi_share_icon.png)</ph>.
+1.   Abrir el panel y seleccione **Share** ![](media/powerbi-service-share-unshare-dashboard/pbi_share_icon.png).
 
-2.  Select <bpt id="p1">**</bpt>In﻿vite<ept id="p1">**</ept> and type the email addresses in the top box and, optionally, modify the message.
+2.  Seleccione **en vite** y escriba las direcciones de correo electrónico en el cuadro superior y, opcionalmente, modifique el mensaje.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-dashboard.png)  
 
-    You can share with people whose addresses are outside your organization, but you'll see a warning.
+    Puede compartir con personas cuyas direcciones están fuera de su organización, pero verá una advertencia.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-share-outside-organization.png)  
 
-3.  To allow your colleagues to reshare your dashboard with others, check <bpt id="p1">**</bpt>Allow recipients to share your dashboard<ept id="p1">**</ept>.
+3.  Para permitir que sus colegas para compartir su escritorio con otras personas, active **Permitir que los destinatarios compartan su panel**.
 
-    Only colleagues in your organization can reshare your dashboard. People outside your organization can view your dashboard but not reshare it.
+    Sólo los compañeros de su organización pueden volver a compartir el panel. Personas fuera de su organización pueden ver el panel pero no compartirlo.
 
-4.  Select <bpt id="p1">**</bpt>Share.<ept id="p1">**</ept>
+4.  Seleccione **recurso compartido.**
 
-    Power BI sends an email invitation with a link to the shared dashboard. Clicking the link adds the dashboard to your colleague's Power BI service. They see this icon <ph id="ph1">![](media/powerbi-service-share-unshare-dashboard/PBI_SharedWithYouIcon.png)</ph> next to the shared dashboard, indicating the dashboard is shared with them.
+    Power BI envía una invitación de correo electrónico con un vínculo al panel compartido. Al hacer clic en el vínculo, se agrega el panel servicio de Power BI de su colega. Verán este icono ![](media/powerbi-service-share-unshare-dashboard/PBI_SharedWithYouIcon.png) junto al panel compartido, que indica el panel se comparte con ellos.
 
-    If they haven't yet signed up for Power BI, they can create an account after they click the link.
+    Si no lo ha hecho todavía registrado en Power BI, pueden crear una cuenta después de hacer clic en el vínculo.
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: The sharing experience is different for people outside your organization. See <bpt id="p1">[</bpt>When you share with people outside your organization<ept id="p1">](powerbi-service-share-unshare-dashboard.md#when-you-share-your-dashboard-with-people-outside-your-organization)</ept> below for details.
+    >
+            **Nota**: la experiencia de uso compartida es diferente para las personas fuera de su organización. Consulte [cuando se comparte con personas fuera de su organización](powerbi-service-share-unshare-dashboard.md#when-you-share-your-dashboard-with-people-outside-your-organization) a continuación para obtener más información.
 
-5.  To see who you've already shared the dashboard with, select <bpt id="p1">**</bpt>Access<ept id="p1">**</ept>.
+5.  Para ver que ya ha compartido el panel con, seleccione **acceso**.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-shared-with.png)
 
-    People outside your organization are listed as <bpt id="p1">**</bpt>Guest<ept id="p1">**</ept>.
+    Personas fuera de la organización se muestran como **invitado**.
 
-## <a name="notes-about-sharing-a-dashboard"></a>Notes about sharing a dashboard
+## <a name="notes-about-sharing-a-dashboard"></a>Notas acerca de cómo compartir un panel
 
-When you share a dashboard:
+Al compartir un panel:
 
--   Everyone you share it with can see your dashboard and interact with your reports in <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-open-a-report-in-reading-view.md)</ept>. They can't create new reports or save changes to existing reports.
+-   Todos los usuarios comparten con pueden ver el panel e interactuar con los informes en [vista lectura](powerbi-service-open-a-report-in-reading-view.md). Que no pueden crear nuevos informes o guardar los cambios en los informes existentes.
 
--   Everyone can even see the changes you make.
+-   Incluso todos pueden ver los cambios que realice.
 
--   No-one can see or download the dataset.
+-   Nadie puede ver o descargar el conjunto de datos.
 
--   Everyone can manually <bpt id="p1">[</bpt>refresh the dashboard data<ept id="p1">](powerbi-refresh-data.md)</ept>.
+-   Todo el mundo puede manualmente [actualizar los datos del panel](powerbi-refresh-data.md).
 
-### <a name="when-you-share-your-dashboard-with-colleagues"></a>When you share your dashboard with colleagues
+### <a name="when-you-share-your-dashboard-with-colleagues"></a>Cuando comparta su panel con sus colegas
 
--   If you use Office 365 for email, you can share with members of a distribution group by entering the email address associated with the distribution group.
+-   Si utiliza Office 365 para correo electrónico, puede compartir con los miembros de un grupo de distribución escribiendo la dirección de correo electrónico asociada con el grupo de distribución.
 
--   Colleagues who have the same email domain as you, and colleagues whose domain is different but registered within the tenant, can reshare the dashboard. For example, say the domains contoso.com and contoso2.com are registered in the tenant. If your email address is <ph id="ph1">konrads@contoso.com,</ph> then both <ph id="ph2">ravali@contoso.com</ph> and <ph id="ph3">gustav@contoso2.com</ph> can reshare.
+-   Colegas que tengan el mismo dominio de correo electrónico como y colegas cuyo dominio es diferente pero registrados en el inquilino, pueden volver a compartir el panel. Por ejemplo, supongamos que los dominios contoso.com y contoso2.com están registrados en el inquilino. Si su dirección de correo electrónico es konrads@contoso.com, a continuación, ambos ravali@contoso.com y gustav@contoso2.com puede compartirlo.
 
-    <bpt id="p1">**</bpt>Tip:<ept id="p1">**</ept> If your colleagues already have access to a specific dashboard, you can send a direct link to that dashboard just by copying the URL when you're on the dashboard. Por ejemplo:   
+    
+            **Sugerencia:** si sus compañeros ya tienen acceso a un panel específico, puede enviar un vínculo directo a ese panel copiando la dirección URL cuando se encuentra en el panel. Por ejemplo:   
 
-    https://powerbi.com/dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx
+    https://powerbi.com/Dashboards/g12466b5-a452-4e55-8634-xxxxxxxxxxxx
 
 
-## <a name="when-you-share-your-dashboard-with-people-outside-your-organization"></a>When you share your dashboard with people outside your organization
+## <a name="when-you-share-your-dashboard-with-people-outside-your-organization"></a>Al compartir el escritorio con personas fuera de su organización
 
-When you share with people outside your organization, they get an email with a link to the shared dashboard. They have to sign in to Power BI to see the dashboard. If they don't have a Power BI account, they can create one after clicking the link.
+Cuando se comparte con personas fuera de su organización, recibe un correo electrónico con un vínculo al panel compartido. Tienen que iniciar sesión en Power BI para ver el panel. Si no tienen una cuenta de Power BI, puede crear uno al hacer clic en el vínculo.
 
-After they sign in, they see the shared dashboard in its own browser window without the left navigation pane, not in their usual Power BI portal. They have to bookmark the link to access this dashboard in the future.
+Una vez que inicien sesión, podrán ver el panel compartido en su propia ventana del explorador sin el panel de navegación izquierdo, no en el portal de Power BI habitual. Tienen que marcar el vínculo para obtener acceso a este panel en el futuro.
 
-They can't edit any content in this dashboard or report. They can interact with the charts in the report (cross-highlight) and change any filters/slicers available on the reports connected to the dashboard.
+No pueden editar contenido en este panel o informe. Pueden interactuar con los gráficos en el informe (resaltan) y cambiar los filtros o segmentaciones de datos disponibles en los informes conectados al panel.
 
-Only your direct recipients can see the shared dashboard. In the example above, only <ph id="ph1">Vicki@contoso.com</ph> can see the dashboard. No-one else can see that dashboard, even if they have the link, and Vicki has to use the same email address to access that dashboard. If she signs up with any other email address, she won't have access to the dashboard either.
+Sólo los destinatarios directos pueden ver el panel compartido. En el ejemplo anterior, solo Vicki@contoso.com puede ver el panel. Nadie más puede ver el panel de control, incluso si tienen el vínculo y Vicki tiene que utilizar la misma dirección de correo electrónico para tener acceso a ese panel. Si se suscribe a cualquier otra dirección de correo electrónico, o bien, no tendrá acceso al panel.
 
-People outside your organization can't see any data if role- or row-level security is implemented on Analysis Services tabular models on-premises.
+Personas fuera de su organización no pueden ver los datos si se implementa la seguridad de nivel de fila o de rol en los modelos tabulares de Analysis Services en local.
 
-## <a name="share-just-a-report"></a>Share just a report
-We've seen that when you share a dashboard that has tiles that link to reports, those reports are also shared at the same time. But what if you want to share just a report? Simply send the report page URL to your colleagues. As long as they are members of the same distribution group, in the same email domain as you, or have at least one dashboard that links to that same report (the dashboard has tiles that were pinned from that report), they'll be able to open the report.
+## <a name="share-just-a-report"></a>Compartir sólo un informe
+Hemos visto que al compartir un panel que dispone de iconos que se vinculan a los informes, los informes también están compartidos al mismo tiempo. Pero, ¿qué sucede si desea compartir solamente un informe? Simplemente envía la dirección URL de página de informe a sus compañeros. Mientras que son miembros del mismo grupo de distribución, en el mismo dominio de correo electrónico que usted, o tienen al menos un panel que se vincula a ese mismo informe (el panel muestra iconos que se han fijado de ese informe), podrá abrir el informe.
 
-See <bpt id="p1">[</bpt>When you share with colleagues, above<ept id="p1">](powerbi-service-share-unshare-dashboard.md#when-you-share-your-dashboard-with-colleagues)</ept>.
+Consulte [al compartir con compañeros, anteriormente](powerbi-service-share-unshare-dashboard.md#when-you-share-your-dashboard-with-colleagues).
 
-### <a name="share-a-filtered-version-of-a-report"></a>Share a filtered version of a report
-What if you want to share a filtered version of a report? Maybe a report that only shows data for a specific city or salesperson or year. This can be done by creating a custom URL.
+### <a name="share-a-filtered-version-of-a-report"></a>Compartir una versión filtrada de un informe
+¿Qué sucede si desea compartir una versión filtrada de un informe? Quizás un informe que muestra solamente los datos de una determinada ciudad o vendedor o año. Esto puede hacerse mediante la creación de una dirección URL personalizada.
 
-1.   Open the report in <bpt id="p1">[</bpt>Editing view<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept> and apply the filter. In this example we're filtering the <bpt id="p1">[</bpt>Retail Analysis sample<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept> to show only District FD-01.
+1.   Abra el informe en [vista de edición](powerbi-service-go-from-reading-view-to-editing-view.md) y aplicar el filtro. En este ejemplo que estamos filtrando el [ejemplo de análisis de venta](powerbi-sample-tutorial-connect-to-the-samples.md) para mostrar solo distrito FD-01.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-filter-report2.png)
 
-2.  Add the following to the end of the report page URL:
+2.  Agregue lo siguiente al final de la URL de la página de informe:
 
-    ?filter=tablename/fieldname eq value
+    ? Filtro = valor tablename/fieldname eq
 
-    In our example, the name of the table is <bpt id="p1">**</bpt>Store<ept id="p1">**</ept>, the name of the field is <bpt id="p2">**</bpt>Territory<ept id="p2">**</ept>, and the value we want to filter on is <bpt id="p3">**</bpt>NC<ept id="p3">**</ept>.
+    En nuestro ejemplo, el nombre de la tabla es **almacén**, el nombre del campo es **territorio**, y es el valor que desea filtrar en **NC**.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-filter-url3.png)
 
-    Your browser adds some special characters to represent slashes and spaces, so you end up with:
+    El explorador agrega algunos caracteres especiales para representar espacios y barras diagonales para acabar con:
 
-    app.powerbi.com/groups/me/reports/010ae9ad-a9ab-4904-a7a1-10a61f70f2f5/ReportSection2?filter=Store%252FTerritory%20eq%20NC
+    App.powerbi.com/Groups/me/Reports/010ae9ad-a9ab-4904-a7a1-10a61f70f2f5/ReportSection2?Filter=Store%252FTerritory%20eq%20NC
 
-    >[AZURE.NOTE]The field must be of type <bpt id="p1">**</bpt>string<ept id="p1">**</ept> and neither the tablename or fieldname can contain spaces.
+    >[AZURE.NOTE]El campo debe ser de tipo **cadena** y ni el tablename ni el nombre de campo puede contener espacios.
 
-3.  Send this URL to your colleagues. When they click on the link, Power BI will open a read-only version of the filtered report.
+3.  Enviar esta dirección URL a sus compañeros. Cuando hacen clic en el vínculo, Power BI se abrirá una versión de solo lectura del informe filtrado.
 
-## <a name="licensing-requirements-for-sharing"></a>Licensing requirements for sharing
+## <a name="licensing-requirements-for-sharing"></a>Requisitos de licencias para uso compartido
 
-Sharing content inside and outside your organization both have the same licensing requirements.
+Uso compartido de contenido dentro y fuera de su organización tienen los mismos requisitos de licencias.
 
-If you create your dashboard  with only free Power BI features, your recipients just need a free Power BI license to view the content. If you use Power BI Pro features like groups or on-premises connectivity, your recipients need a Power BI Pro license to view the content.
+Si crea el panel con sólo las características de Power BI libres, los destinatarios sólo necesitan una licencia gratuita de Power BI para ver el contenido. Si usa características de Power BI Pro como grupos o conectividad local, los destinatarios necesitan una licencia de Power BI Pro para ver el contenido.
 
-See <bpt id="p1">[</bpt>Power BI Pro content - what is it?<ept id="p1">](powerbi-power-bi-pro-content-what-is-it.md)</ept> for a more complete list.
+Consulte [contenido de Power BI Pro - ¿qué es?](powerbi-power-bi-pro-content-what-is-it.md) para obtener una lista completa.
 
-This Power BI pricing page, <bpt id="p1">[</bpt>Use Power BI for free or buy Power BI Pro<ept id="p1">](https://powerbi.microsoft.com/pricing)</ept>, is also a useful comparison of the two options.
+Esta página, precios de Power BI [Use Power BI para liberar o comprar Power BI Pro](https://powerbi.microsoft.com/pricing), es también una útil comparación de las dos opciones.
 
-## <a name="resharing"></a>Resharing
+## <a name="resharing"></a>Volver a compartir
 
-Resharing allows your colleagues to forward the email invitation to others in your organization (the invitation expires after one month). Colleagues can also reshare through the Power BI service and mobile apps. As the owner of the dashboard, you can turn off resharing and you can also revoke resharing on an individual basis (see below).
+Volver a compartir permite que sus colegas reenviar la invitación de correo electrónico a otras personas de su organización (la invitación expira transcurrido un mes). También pueden compartir colegas a través del servicio Power BI y aplicaciones móviles. Como propietario del panel, puede desactivar volver a compartir y también se pueden revocar usos compartidos de forma individual (ver abajo).
 
-People outside your organization can't reshare.
+No se pueden volver a compartir personas fuera de su organización.
 
-## <a name="unshare-a-dashboard"></a>Unshare a dashboard
+## <a name="unshare-a-dashboard"></a>Dejar de compartir un panel
 
-1.  Open the dashboard and select <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-service-share-unshare-dashboard/pbi_share_icon.png)</ph>.
+1.  Abrir el panel y seleccione **Share** ![](media/powerbi-service-share-unshare-dashboard/pbi_share_icon.png).
 
-2.  Select <bpt id="p1">**</bpt>Access<ept id="p1">**</ept> to see the complete list of people.
+2.  Seleccione **acceso** para ver la lista completa de las personas.
 
     ![](media/powerbi-service-share-unshare-dashboard/power-bi-shared-with.png)
 
-3.  Select the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) next to <bpt id="p2">**</bpt>Can view<ept id="p2">**</ept> and select:
+3.  Seleccione los puntos suspensivos (**...**) junto a **puede ver** y seleccione:
 
     ![](media/powerbi-service-share-unshare-dashboard/pbi_stop_sharing.png)
 
-    -   <bpt id="p1">**</bpt>Stop sharing<ept id="p1">**</ept> with that person or
+    -   
+            **Dejar de compartir** con esa persona o
 
-    -   <bpt id="p1">**</bpt>Disable reshares<ept id="p1">**</ept> to keep that person from sharing with anyone else.
+    -   
+            **Deshabilitar volver a compartir** para impedir que esa persona comparta con nadie más.
 
-    -   Or if the person hasn't yet accepted your share invitation, <bpt id="p1">**</bpt>Cancel Invite<ept id="p1">**</ept>.
+    -   O si la persona todavía no ha aceptado la invitación de uso compartido, **Cancelar invitación**.
 
-## <a name="turn-off-resharing"></a>Turn off resharing
+## <a name="turn-off-resharing"></a>Desactivar volver a compartir
 
-Only the dashboard owner can turn resharing on and off.
+Sólo el propietario del panel puede activar y desactivar volver a compartir.
 
--   If you haven't sent the sharing invitation yet, clear the <bpt id="p1">**</bpt>Allow recipients to share your dashboard<ept id="p1">**</ept> check box at the bottom of the invitation.
+-   Si todavía no ha enviado la invitación para compartir, desactive la **Permitir que los destinatarios compartan su panel** casilla de verificación en la parte inferior de la invitación.
 
--   If colleagues haven't accepted your sharing invitation yet, cancel the invitation and invite them again without selecting <bpt id="p1">**</bpt>Allow recipients to share your dashboard<ept id="p1">**</ept>.
+-   Si compañeros no han aceptado el uso compartido de invitación aún, cancelar la invitación e invitarlos nuevamente sin seleccionar **Permitir que los destinatarios compartan su panel**.
 
--   If they have accepted your sharing invitation, select <bpt id="p1">**</bpt>Access<ept id="p1">**</ept>, select the ellipsis (<bpt id="p2">**</bpt>...<ept id="p2">**</ept>) next to <bpt id="p3">**</bpt>Can view<ept id="p3">**</ept> and click <bpt id="p4">**</bpt>Stop sharing<ept id="p4">**</ept>.
+-   Si ha aceptado su invitación para compartir, seleccione **acceso**, seleccione los puntos suspensivos (**...**) junto a **puede ver** y haga clic en **dejar de compartir**.
 
     ![](media/powerbi-service-share-unshare-dashboard/pbi_stop_sharing.png)
 
 
 ### <a name="see-also"></a>Consulte también
 
-- <bpt id="p1">[</bpt>How should I share my dashboard?<ept id="p1">](powerbi-service-how-should-i-share-my-dashboard.md)</ept>
-- <bpt id="p1">[</bpt>Share a dashboard that links to an Excel file<ept id="p1">](powerbi-service-share-dashboard-that-links-to-excel.md)</ept>
-- <bpt id="p1">[</bpt>Power BI Pro content - what is it?<ept id="p1">](powerbi-power-bi-pro-content-what-is-it.md)</ept>
-- <bpt id="p1">[</bpt>Use Power BI for free or buy Power BI Pro<ept id="p1">](https://powerbi.microsoft.com/pricing)</ept>
-- <bpt id="p1">[</bpt>Get Started with Power BI<ept id="p1">](powerbi-service-get-started.md)</ept>
-- More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>.
+- 
+            [¿Cómo debo compartir mi panel?](powerbi-service-how-should-i-share-my-dashboard.md)
+- 
+            [Compartir un panel que se vincula a un archivo de Excel](powerbi-service-share-dashboard-that-links-to-excel.md)
+- 
+            [Contenido de BI Pro Power - ¿qué es?](powerbi-power-bi-pro-content-what-is-it.md)
+- 
+            [Uso de Power BI gratuitamente o comprar Power BI Pro](https://powerbi.microsoft.com/pricing)
+- 
+            [Introducción a Power BI](powerbi-service-get-started.md)
+- ¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/).

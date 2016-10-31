@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Show Categories with no Data"
-   description="Learn how to display empty columns in your visualizations"
+   pageTitle="Mostrar categorías sin datos"
+   description="Obtenga información acerca de cómo mostrar las columnas vacías en las visualizaciones"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,18 +23,18 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Show Categories With No Data
+# Mostrar categorías sin datos
 
-By default, column headings are only displayed in your reports if they contain data. For example, if you were displaying revenue by country and had no sales in Norway, then Norway would not appear anywhere in your visualization.
+De forma predeterminada, los encabezados de columna sólo se muestran en los informes si contienen datos. Por ejemplo, si estuviera mostrando los ingresos por país y ha habido ventas en Noruega, a continuación, Noruega no aparecerán en cualquier parte en la visualización.
 
-To display empty categories, click on the down-arrow in the field you want to change in the  <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, and select <bpt id="p2">**</bpt>Show items with no data<ept id="p2">**</ept>.
+Para mostrar las categorías vacías, haga clic en la flecha abajo en el campo que desee cambiar en el  **visualizaciones** panel y seleccione **Mostrar elementos sin datos**.
 
 ![](media/powerbi-learning-3-11c-display-empty-categories/3-11c_1.png)
 
-Any empty columns now appear in your visual with blank values.
+Las columnas vacías aparecen ahora en el objeto visual con valores en blanco.
 
 ![](media/powerbi-learning-3-11c-display-empty-categories/3-11c_2.png)
 
-Once you select <bpt id="p1">**</bpt>Show items with no data<ept id="p1">**</ept> for any field in the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane, it applies to all fields displayed in the Visualizations pane. So if you add another field, any items that have no data will also be shown, without having to revisit the drop-down menu.
+Una vez que selecciona **Mostrar elementos sin datos** para cualquier campo de la **visualizaciones** panel, se aplica a todos los campos que se muestran en el panel de visualizaciones. Por lo que si agrega otro campo, todos los elementos que no tienen datos también será mostrado, sin tener que volver a visitar el menú desplegable.
 
 ![](media/powerbi-learning-3-11c-display-empty-categories/3-11c_3.png)

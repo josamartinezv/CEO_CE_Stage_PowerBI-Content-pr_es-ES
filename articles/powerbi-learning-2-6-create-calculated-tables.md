@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Calculated Tables"
-   description="Build calculated tables based on DAX formulas and expressions"
+   pageTitle="Crear tablas calculadas"
+   description="Crear tablas calculadas basadas en expresiones y fórmulas DAX"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,20 +23,20 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create Calculated Tables
+# Crear tablas calculadas
 
-Calculated tables are a function within DAX that allows you to express a whole range of new modeling capabilities. For example, if you want to do different types of merge joins or create new tables on the fly based on the results of a functional formula, calculated tables are the way to accomplish that.
+Tablas calculadas son una función de DAX que permite expresar toda una gama de nuevas capacidades de modelado. Por ejemplo, si desea realizar diferentes tipos de combinaciones de mezcla o crear nuevas tablas sobre la marcha basándose en los resultados de una fórmula funcional, tablas calculadas son la manera de conseguirlo.
 
-To create a calculated table, go to <bpt id="p1">**</bpt>Data view<ept id="p1">**</ept> in Power BI Desktop, which you can activate from the left side of the report canvas.
+Para crear una columna calculada, vaya a **vista datos** en Power BI Desktop, puede activar desde el lado izquierdo del lienzo del informe.
 
 ![](media/powerbi-learning-2-6-create-calculated-tables/2-6_1.png)
 
-Select <bpt id="p1">**</bpt>New Table<ept id="p1">**</ept> from the Modeling tab to open the formula bar.
+Seleccione **nueva tabla** desde la ficha de modelado para abrir la barra de fórmulas.
 
 ![](media/powerbi-learning-2-6-create-calculated-tables/2-6_1b.png)
 
-Type the name of your new table on the left side of the equal sign, and the calculation that you want to use to form that table on the right. When you're finished your calculation, the new table appears in the Fields pane in your model.
+Escriba el nombre de la nueva tabla en el lado izquierdo del signo igual y el cálculo que desea usar para formar la tabla de la derecha. Cuando termine el cálculo, la nueva tabla aparece en el panel de campos en el modelo.
 
 ![](media/powerbi-learning-2-6-create-calculated-tables/2-6_2.png)
 
-Once created, you can use your calculated table as you would any other table in relationships, formulas, and reports.
+Una vez creado, puede utilizar la tabla calculada como haría con cualquier otra tabla de relaciones, las fórmulas y los informes.

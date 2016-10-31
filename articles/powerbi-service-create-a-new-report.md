@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a new Power BI report"
-   description="Create a new Power BI report"
+   pageTitle="Crear un nuevo informe de Power BI"
+   description="Crear un nuevo informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,77 +19,79 @@
    ms.workload="powerbi"
    ms.date="10/05/2016"
    ms.author="mihart"/>
-# Create a new Power BI report
+# Crear un nuevo informe de Power BI
 
-There are many different ways to create a new report. This topic shows you two of them.
+Hay muchas maneras diferentes de crear un nuevo informe. Este tema muestra dos de ellos.
 
--   From a dataset
+-   Un conjunto de datos
 
--   From an existing report
+-   Desde un informe existente
 
-## Create a new report from a dataset
+## Crear un informe desde un conjunto de datos
 
-This method creates a new report from scratch. To follow along, <bpt id="p1">[</bpt>download the Retail Analysis sample<ept id="p1">](powerbi-sample-downloads.md)</ept>.
+Este método crea un nuevo informe desde cero. Para continuar, [descargar el ejemplo de análisis de venta](powerbi-sample-downloads.md).
 
-1.  Start in Power BI service and select a dataset to open it. Opening a dataset actually opens the report editor.  You'll see a blank canvas and the report editing tools.
+1.  Iniciar servicio Power BI y seleccione un conjunto de datos para abrirla. Abrir un conjunto de datos realmente abre el editor de informes.  Verá un lienzo en blanco y el informe de herramientas de edición.
 
     ![](media/powerbi-service-create-a-new-report/powerbi-select-datasetnew.png)
 
-2.  Explore your data and <bpt id="p1">[</bpt>add visuals<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>. For this report, let's add a Gauge visual that tracks this year's sales.
+2.  Explorar los datos y [Agregar efectos visuales](powerbi-service-visualizations-for-reports.md). Para este informe, vamos a agregar un medidor elemento visual que realiza un seguimiento de las ventas de este año.
 
-   -  In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, select <bpt id="p2">**</bpt>Sales<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>This Year Sales<ept id="p3">**</ept> &gt; Value.
+   -  En la **campos** panel, seleccione **ventas** > **ventas de este año** > valor.
 
         ![](media/powerbi-service-create-a-new-report/powerbi-report-step1.png)
 
-   -  Convert the visual to a Gauge by selecting the Gauge template <ph id="ph1">![](media/powerbi-service-create-a-new-report/powerbi-gauge-icon.png)</ph> from the <bpt id="p1">**</bpt>VIsualizations<ept id="p1">**</ept> pane.
+   -  Convertir el objeto visual en un medidor seleccionando la plantilla medidor ![](media/powerbi-service-create-a-new-report/powerbi-gauge-icon.png) desde el **visualizaciones** panel.
 
         ![](media/powerbi-service-create-a-new-report/powerbi-report-step2.png)
 
-   -  Drag <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>This Year Sales<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Goal<ept id="p3">**</ept> to the <bpt id="p4">**</bpt>Target value<ept id="p4">**</ept> well.
+   -  Arrastre **ventas** > **ventas de este año** > **objetivo** a la **valor de destino** bien.
 
         ![](media/powerbi-service-create-a-new-report/powerbi-report-step3.png)
 
-3.  Optionally, continue adding visuals, and then <bpt id="p1">[</bpt>save your report<ept id="p1">](powerbi-service-save-a-report.md)</ept>.
+3.  Opcionalmente, continúe agregando elementos visuales y luego [guardar su informe](powerbi-service-save-a-report.md).
 
     ![](media/powerbi-service-create-a-new-report/powerbi-save.png)
 
 
-## Create a new report from an existing report
-Maybe you have a report that already connects to your dataset and has some visuals that you'd like to re-use or modify.  Why not simply copy that report as a basis for a new report?  To do that:
+## Crear un nuevo informe desde un informe existente
+Quizá tenga un informe que ya se conecta al conjunto de datos y tiene algunos efectos visuales que le gustaría volver a utilizar o modificar.  ¿Por qué no simplemente copiar ese informe como base para un nuevo informe?  Siga estos pasos:
 
-1.  <bpt id="p1">[</bpt>Open a report<ept id="p1">](powerbi-service-open-a-report-in-reading-view.md)</ept>.
+1.  
+            [Abrir un informe](powerbi-service-open-a-report-in-reading-view.md).
 
-2.  From the <bpt id="p1">**</bpt>File<ept id="p1">**</ept> menu, select <bpt id="p2">**</bpt>Save As<ept id="p2">**</ept>.
+2.  Desde el **archivo** menú, seleccione **Guardar como**.
 
     ![](media/powerbi-service-create-a-new-report/powerbi-save-as.png)
 
-3.  Type a name for the new report and select <bpt id="p1">**</bpt>Save<ept id="p1">**</ept>.
+3.  Escriba un nombre para el nuevo informe y seleccione **Guardar**.
 
     ![](media/powerbi-service-create-a-new-report/SaveReport.png)
 
-    A Success message lets you know that the new report was saved to Power BI.
+    Un mensaje de confirmación le permite saber que se guardó el nuevo informe en Power BI.
 
     ![](media/powerbi-service-create-a-new-report/saveSuccess1.png)
 
-4.  Back in your Power BI navigation pane, select the new report to open it. Optionally, delete visuals you don't want to keep, modify other visuals, and add new ones.
+4.  En el panel de navegación de Power BI, seleccione el nuevo informe para abrirlo. Opcionalmente, eliminar elementos visuales que no desea mantener, modificar otros elementos visuales y agregar nuevos.
 
     ![](media/powerbi-service-create-a-new-report/newReportNavPane.png)
 
-5.  Have fun updating and editing your new report.
+5.  Diviértase actualizar y editar el nuevo informe.
 
 
-## Next Steps:
+## Pasos siguientes:
 
-[Create new visualizations](powerbi-service-add-visualizations-to-a-report-ii.md)
+[Crear nuevas visualizaciones](powerbi-service-add-visualizations-to-a-report-ii.md)
 
-<bpt id="p1">[</bpt>Delete visualizations<ept id="p1">](powerbi-service-delete-a-visualization.md)</ept> you don't need
+
+            [Eliminar las visualizaciones](powerbi-service-delete-a-visualization.md) no es necesario
 
 ## Consulte también
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)
 
-[Get started with Power BI](powerbi-service-get-started.md)
+[Introducción a Power BI](powerbi-service-get-started.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

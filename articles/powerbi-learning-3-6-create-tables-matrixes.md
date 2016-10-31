@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Matrixes and tables"
-   description="Sometimes a matrix or table is the visual you need"
+   pageTitle="Tablas y matrices"
+   description="A veces una tabla o matriz es el elemento visual que necesita"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,21 +23,21 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# How to Use Tables and Matrixes
+# Uso de tablas y matrices
 
-In addition to an abundance of charts, Power BI Desktop also supports more tabular visualizations. In fact, when you grab a categorical field or text field and drag it onto the report canvas, you get a table of results by default. You can scroll up and down through the table, and initially it will be sorted alphabetically.
+Además de una gran cantidad de gráficos, Power BI Desktop también admite más visualizaciones tabulares. De hecho, al tomar un campo de categoría o campo de texto y arrástrelo al lienzo del informe, obtendrá una tabla de resultados de forma predeterminada. Puede desplazarse hacia arriba y hacia abajo por la tabla e inicialmente se ordenarán alfabéticamente.
 
 ![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_1.png)
 
 
-If you have numerical information in a table, such as revenue, a total sum will appear at the bottom. You can manually sort by each column by clicking on its header to toggle ascending or descending order. If a column is not wide enough to display all of its contents, click and drag the header sideways to expand it.
+Si tiene información numérica en una tabla, como los ingresos, una suma total aparecerá en la parte inferior. Puede ordenar manualmente por cada columna haciendo clic en el encabezado para alternar el orden ascendente o descendente. Si una columna no es lo suficientemente ancha para mostrar todo su contenido, haga clic y arrastre el encabezado lateralmente para expandirla.
 
-The order of the fields in the <bpt id="p1">*</bpt>Values<ept id="p1">*</ept> bucket in the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane determines the order in which they appear in your table.
+El orden de los campos de la *valores* depósito en el **visualizaciones** panel determina el orden en que aparecen en la tabla.
 
 ![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_2.png)
 
-A <bpt id="p1">**</bpt>matrix<ept id="p1">**</ept> is similar to a table, but it has different category headers on the columns and rows. As with tables, numerical information will be automatically totaled along the bottom and right side of the matrix.
+Un **matriz** es similar a una tabla, pero tiene encabezados de categoría diferente en las columnas y filas. Al igual que con las tablas, la información numérica se suprimirán automáticamente a lo largo de la parte inferior y el lado derecho de la matriz.
 
 ![](media/powerbi-learning-3-6-create-tables-matrixes/3-6_3.png)
 
-There are many cosmetic options available for matrixes, such as auto-sizing columns, toggling row and column totals, setting colors, and more. When creating a matrix, make sure your categorical data (the non-number data) is on the left of the matrix, and the numeric files on the right to ensure the horizontal scroll bar appears, and to make sure that scrolling behavior works properly.
+Hay muchas opciones de cosméticos para matrices, como columnas de tamaño automático, Alternar fila totales de columna, establecer los colores y mucho más. Cuando se crea una matriz, asegúrese de que los datos de categorías (los datos no numérico) están a la izquierda de la matriz y los archivos numéricos a la derecha para asegurarse de la barra de desplazamiento horizontal aparece y para asegurarse de que ese comportamiento de desplazamiento funciona correctamente.

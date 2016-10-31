@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Use Shape Maps in Power BI Desktop (Preview)"
-   description="Create relative comparisons to regions using shape maps in Power BI Desktop"
+   pageTitle="Usar asignaciones de formas en Power BI Desktop (vista previa)"
+   description="Crear comparaciones relativas a las regiones con asignaciones de formas en Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,113 +20,116 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Shape Maps in Power BI Desktop (Preview)
+# Asignaciones de formas en Power BI Desktop (vista previa)
 
-In Power BI Desktop, you create a <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visual to show relative comparisons of regions on a map by applying different colors to different regions. In contrast to the <bpt id="p1">**</bpt>Map<ept id="p1">**</ept> visual, <bpt id="p2">**</bpt>Shape Map<ept id="p2">**</ept> cannot show precise geographical locations of data points on a map; instead, its main purpose is to show relative comparisons of regions on a map by coloring them differently.
+En Power BI Desktop, se crea un **mapa de forma** visual para mostrar comparaciones relativas de las regiones en un mapa aplicando colores diferentes para distintas regiones. Diferencia el **mapa** visual, **mapa de forma** no se puede mostrar precisa señala las ubicaciones geográficas de los datos en un mapa; en su lugar, su propósito principal es mostrar comparaciones relativas de las regiones en un mapa mediante colores ellos de forma diferente.
 
-<bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visuals are based on ESRI/TopoJSON maps which have the compelling ability to use custom maps that you can create, such as geographical, seating arrangements, floor plans, and others. The ability to use custom maps is not available in this Preview release of <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>, but custom maps will be enabled when this features comes out of Preview, which is expected with the next Power BI Desktop monthly update.
 
-## Creating Shape Maps
+            **Mapa de forma** elementos visuales se basan en los mapas ESRI/TopoJSON que tienen la capacidad atractiva para utilizar asignaciones personalizadas que se pueden crear como geográfica, disposiciones de ubicación, planos y otros. La capacidad de usar mapas personalizados no está disponible en esta versión preliminar de **mapa de forma**, pero asignaciones personalizadas se habilitará cuando esta función se extrae en vista previa, que se espera con la siguiente actualización mensual de Power BI Desktop.
 
-You can test the <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> control with the maps that are shipping with this Preview release, or you can use your own custom map as long as it meets the requirements outlined in the following section called <bpt id="p2">**</bpt>Use Custom Maps<ept id="p2">**</ept>.
+## Crear asignaciones de formas
 
-The <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visual is in Preview, and must be enabled in Power BI Desktop. To enabled <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>File &gt; Options and Settings &gt; Options &gt; Preview Features<ept id="p2">**</ept>, then select the <bpt id="p3">**</bpt>Shape Map<ept id="p3">**</ept> checkbox. You'll need to restart Power BI Desktop after you make the selection.
+Puede probar el **mapa de forma** control con los mapas que se entrega con esta versión de vista previa, o puede usar su propio mapa personalizado siempre que cumpla los requisitos descritos en la sección siguiente llamada **utilizar mapas personalizados**.
+
+El **mapa de forma** visual está en vista previa y debe estar habilitado en Power BI Desktop. Habilitado **mapa de forma**, seleccione **archivo > Opciones y configuración > Opciones > características de vista previa**, a continuación, seleccione la **mapa de forma** casilla de verificación. Debe reiniciar Power BI Desktop después de realizar la selección.
 
 ![](media/powerbi-desktop-shape-map/shape-map_1a.png)
 
-Once <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> is enabled, click the <bpt id="p2">**</bpt>Shape Map<ept id="p2">**</ept> control from the <bpt id="p3">**</bpt>Visualizations<ept id="p3">**</ept> pane.
+Una vez **mapa de forma** está habilitado, haga clic en el **mapa de forma** control desde el **visualizaciones** panel.
 
 ![](media/powerbi-desktop-shape-map/shape-map_2.png)
 
-Power BI Desktop creates an empty <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visual design canvas.
+Power BI Desktop crea vacío **mapa de forma** lienzo de diseño visual.
 
 ![](media/powerbi-desktop-shape-map/shape-map_3.png)
 
-Take the following steps to create a <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>:
+Siga estos pasos para crear un **mapa de forma**:
 
-1.  In the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, drag a data field that has the region names (or abbreviations) onto the <bpt id="p2">**</bpt>Location<ept id="p2">**</ept> bucket, and a data measure field into the <bpt id="p3">**</bpt>Values<ept id="p3">**</ept> bucket (you won't see a map yet).
+1.  En la **campos** panel, arrastre un campo de datos que tiene los nombres de región (o abreviaturas) la **ubicación** depósito y una medida de datos de campo en el **valores** depósito (no verá un mapa todavía).
 
-    > <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> See the section titled <bpt id="p2">**</bpt>Getting Map Data<ept id="p2">**</ept>, below, for information on how to quickly get map data to test <bpt id="p3">**</bpt>Shape Map<ept id="p3">**</ept>.
+    > 
+            **Nota:** consulte la sección **obtener datos del mapa**, a continuación, para obtener información sobre cómo obtener rápidamente los datos de mapa para probar **mapa de forma**.
 
     ![](media/powerbi-desktop-shape-map/shape-map_3a.png)
 
-2.  In the <bpt id="p1">**</bpt>Format<ept id="p1">**</ept> settings pane, expand <bpt id="p2">**</bpt>Shape<ept id="p2">**</ept>, and select from the <bpt id="p3">**</bpt>Standard Maps<ept id="p3">**</ept> drop-down to show your data. At this point the rendering appears, as shown in the following image.
+2.  En el **formato** panel Configuración, expanda **forma**, y seleccione uno de los **mapas estándar** desplegable para mostrar los datos. En este momento la representación aparece como se muestra en la siguiente imagen.
 
     ![](media/powerbi-desktop-shape-map/shape-map_3b.png)
 
-    > <bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> In the <bpt id="p2">**</bpt>Region Keys<ept id="p2">**</ept> section at the end of this article is a collection of tables that have map regions keys you can use to test the <bpt id="p3">**</bpt>Shape Map<ept id="p3">**</ept> visual.
+    > 
+            **Nota:** en la **claves región** sección al final de este artículo es una colección de tablas que tienen claves de regiones de asignación que puede usar para probar el **mapa de forma** visual.
 
-3.  You can then modify the map projection and zooming settings, as well as the colors of data points, from the <bpt id="p1">**</bpt>Format<ept id="p1">**</ept> settings pane. You can also modify zoom settings. For example, you can change colors, set maximums and minimums, and so on.
+3.  A continuación, puede modificar la proyección del mapa y hacer zoom de configuración, así como los colores de los puntos de datos, desde el **formato** panel Configuración. También puede modificar la configuración del zoom. Por ejemplo, puede cambiar los colores, conjunto de máximos y mínimos y así sucesivamente.
 
     ![](media/powerbi-desktop-shape-map/shape-map_3d.png)
 
-4.  You can also add a category data column to the <bpt id="p1">**</bpt>Legend<ept id="p1">**</ept> bucket, and classify the map regions based on categories.
+4.  También puede agregar una columna de datos de la categoría a la **leyenda** depósito y clasificar las áreas de mapa basadas en categorías.
 
-## Use Custom Maps
+## Usar asignaciones personalizadas
 
-You can use custom maps with <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> as long as they are in the <bpt id="p2">**</bpt>TopoJSON<ept id="p2">**</ept> format. If your map is in another format, you can use online tools such as <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Map Shaper<ept id="p2">**</ept><ept id="p1">](http://mapshaper.org/)</ept> to convert your <bpt id="p3">*</bpt>shapefiles<ept id="p3">*</ept> or your <bpt id="p4">*</bpt>GeoJSON<ept id="p4">*</ept> maps into the <bpt id="p5">**</bpt>TopoJSON<ept id="p5">**</ept> format.
+Puede utilizar asignaciones personalizadas con **mapa de forma** mientras están en el **TopoJSON** formato. Si la asignación está en otro formato, puede usar herramientas en línea como [**Modelador de mapa**](http://mapshaper.org/) para convertir su *archivos de forma* o la *GeoJSON* asigna a la **TopoJSON** formato.
 
-To use your <bpt id="p1">**</bpt>TopoJSON<ept id="p1">**</ept> map file, add a ShapeMap visual to your report and add some data to the <bpt id="p2">*</bpt>Location<ept id="p2">*</ept> and <bpt id="p3">*</bpt>Values<ept id="p3">*</ept> buckets. Then, in the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane with the <bpt id="p2">**</bpt>Format<ept id="p2">**</ept> section selected (the paintbrush icon, shown as (1) in the following image), expand the <bpt id="p3">**</bpt>Shape<ept id="p3">**</ept> section and select <bpt id="p4">**</bpt>+ Add Map<ept id="p4">**</ept>.
+Para usar su **TopoJSON** archivo de asignación, agregue un elemento visual ShapeMap al informe y agregue algunos datos a la *ubicación* y *valores* depósitos. A continuación, en la **visualizaciones** panel con el **formato** sección seleccionada (el pincel icono, se muestra como (1) en la imagen siguiente), expanda el **forma** sección y seleccione **+ Agregar asignación**.
 
 ![](media/powerbi-desktop-shape-map/shape-map_6.png)
 
 
-## Getting Map Data
+## Obtener datos de mapa
 
-To quickly get data into a model so you can test <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>, you can copy one of the tables at the end of this article, then select <bpt id="p2">**</bpt>Enter Data<ept id="p2">**</ept> from the <bpt id="p3">**</bpt>Home<ept id="p3">**</ept> ribbon.
+Para obtener rápidamente los datos en un modelo para que pueda probar **mapa de forma**, puede copiar una de las tablas al final de este artículo y luego seleccione **Escriba datos** desde el **Inicio** cinta de opciones.
 
 ![](media/powerbi-desktop-shape-map/shape-map_4.png)
 
-You can then paste the table into Power BI Desktop. The top row is automatically identified as a header.
+A continuación, puede pegar la tabla en Power BI Desktop. La fila superior se identifica automáticamente como un encabezado.
 
 ![](media/powerbi-desktop-shape-map/shape-map_5.png)
 
-You can enter a new column simply by typing a new column name (in the blank column to the right), then add values in each cell, just like you can do in Excel. When finished, select <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> and the table is added to the data model for Power BI Desktop.
+Puede especificar una nueva columna escribiendo un nuevo nombre de columna (en la columna en blanco a la derecha) y luego agregar valores en cada celda, igual que puede hacer en Excel. Cuando termine, seleccione **carga** y la tabla se agrega al modelo de datos para Power BI Desktop.
 
 
-## Preview Behavior and Requirements
+## Comportamiento de vista previa y requisitos
 
-There are a few considerations and requirements for this Preview release of <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>:
+Hay algunas consideraciones y requisitos para esta vista previa de la versión de **mapa de forma**:
 
--   The <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> visual is in Preview, and must be enabled in Power BI Desktop. To enabled <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>File &gt; Options and Settings &gt; Options &gt; Preview Features<ept id="p2">**</ept>, then select the <bpt id="p3">**</bpt>Shape Map<ept id="p3">**</ept> checkbox.
+-   El **mapa de forma** visual está en vista previa y debe estar habilitado en Power BI Desktop. Habilitado **mapa de forma**, seleccione **archivo > Opciones y configuración > Opciones > características de vista previa**, a continuación, seleccione la **mapa de forma** casilla de verificación.
 
--   Currently, you must also have the <bpt id="p1">**</bpt>Values<ept id="p1">**</ept> bucket set in order for the <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> classification to work properly. We anticipate improving this behavior in the final release of <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept>.
+-   Actualmente, también debe tener la **valores** depósito establecido para el **leyenda** clasificación funcione correctamente. Prevemos que mejorar este comportamiento en la versión final de **mapa de forma**.
 
--   The release version of <bpt id="p1">**</bpt>Shape Map<ept id="p1">**</ept> will have a user interface that shows the map keys of the currently selected map; in this Preview, you can reference the map region keys in the tables found in the following <bpt id="p2">**</bpt>Region Keys<ept id="p2">**</ept> section of this article.
+-   La versión de lanzamiento **mapa de forma** tendrán una interfaz de usuario que muestra las claves de asignación de la asignación seleccionada; en esta vista previa, puede hacer referencia a las claves de la región de asignación en las tablas que se encuentra en la siguiente **claves región** sección de este artículo.
 
-## Region Keys
+## Claves de región
 
-Use the following <bpt id="p1">**</bpt>Region Keys<ept id="p1">**</ept> in this Preview release to test <bpt id="p2">**</bpt>Shape Map<ept id="p2">**</ept>.
+Utilice el siguiente **claves región** en esta versión de vista previa para probar **mapa de forma**.
 
-### Australia: States
+### Australia: Estados
 
-|id|abbr|iso|name|postal|
+|id|abbr|ISO|name|postal|
 |---|---|---|---|---|
-|au-wa| WA| AU-WA|  Western Australia|  WA|
-|au-vic|Vic|AU-VIC| Victoria|   VIC|
-|au-tas |Tas|AU-TAS|    Tasmania    |TAS|
-|au-sa  |SA |AU-SA  |South Australia|   SA|
-|au-qld |Qld|AU-QLD |Queensland|    QLD|
-|au-nt  |NT |AU-NT  |Northern Territory|    NT|
-|au-nsw |NSW|AU-NSW |New South Wales|   NSW|
-|au-act |ACT|AU-ACT |Australian Capital Territory|  ACT|
+|AU wa| WA| AU WA|  Australia occidental|  WA|
+|vic au|Vic|VIC AU| Victoria|   VIC|
+|AU-tarea |Tareas|AU-TAREA|    Tasmania    |TAREAS|
+|AU-sa  |SA |AU-SA  |Australia meridional|   SA|
+|AU-Box |Qld|AU-BOX |Queensland|    QLD|
+|AU-nt  |NT |AU-NT  |Territorio septentrional|    NT|
+|AU-nsw |NSW|AU-NSW |Nueva Gales del sur|   NSW|
+|act au |ACT|ACT AU |Territorio de la Capital Australiana|  ACT|
 
 
-### Austria: States
+### Austria: Estados
 
-|id|    iso|    name|   name-en|    postal|
+|id|    ISO|    name|   en nombre de|    postal|
 |---|---|---|---|---|
-|at-wi| AT-9|   Wien|   Viena| WI|
-|at-vo| AT-8|   Vorarlberg| Vorarlberg| VO|
-|at-tr| AT-7|   Tirol|  Tyrol|  TR|
-|at-st| AT-6|   Steiermark| Styria| ST|
-|at-sz| AT-5|   Salzburg|   Salzburg|   SZ|
-|at-oo| AT-4|   Oberösterreich| Upper Austria|  OO|
-|at-no| AT-3|   Niederösterreich|   Lower Austria|  NO|
-|at-ka| AT-2|   Kärnten|    Carinthia|  KA|
-|at-bu| AT-1|   Burgenland| Burgenland| BU|
+|en wi| AT-9|   Wien|   Viena| WI|
+|en vo| AT-8|   Vorarlberg| Vorarlberg| VO|
+|en tr| AT-7|   : Tirol|  Tyrol|  TR|
+|en st| AT-6|   Steiermark| Styria| ST|
+|en sz| AT-5|   Salzburgo|   Salzburgo|   SZ|
+|en oo| AT-4|   Oberösterreich| Austria superior|  OO|
+|en ningún| AT 3|   Niederösterreich|   Austria inferior|  NO|
+|en ka| AT-2|   Kärnten|    Carinthia|  KA|
+|en unidad de negocio| AT 1|   : Burgenland| : Burgenland| BU|
 
-### Brazil: States
+### Brasil: Estados
 
 |id|
 |---|
@@ -138,9 +141,9 @@ Use the following <bpt id="p1">**</bpt>Region Keys<ept id="p1">**</ept> in this 
 |Santa Catarina
 |Roraima
 |Rondonia
-|Rio Grande do Sul
-|Rio Grande do Norte
-|Rio de Janeiro
+|Río Grande do Sul
+|Río Grande do Norte
+|Río de Janeiro
 |Piaui
 |Parana
 |Paraiba
@@ -148,89 +151,89 @@ Use the following <bpt id="p1">**</bpt>Region Keys<ept id="p1">**</ept> in this 
 |Minas Gerais
 |Mato Grosso
 |Maranhao
-|Mato Grosso do Sul
+|Realice Mato Grosso Sul
 |Distrito Federal
 |Ceara
-|Espirito Santo
+|Espírito Santo
 |Bahia
 |Amazonas
 |Amapa
 |Alagoas
 |Acre
-|Litigated Zone 1
-|Litigated Zone 2
-|Litigated Zone 3
-|Litigated Zone 4
+|Zona litigated 1
+|Zona litigated 2
+|Zona litigated 3
+|Zona litigated 4
 
-### Canada: Provinces
+### Canadá: provincias
 
-|id|    iso |name|  postal|
+|id|    ISO |name|  postal|
 |---|---|---|---|
-|ca-nu| CA-NU|  Nunavut|    NU|
-|ca-nt| CA-NT|  Northwest Territories|  NT
-|ca-yt| CA-YT|  Yukon|  YT
-|ca-sk| CA-SK|  Saskatchewan|   SK
-|ca-qc| CA-QC|  Quebec| QC
-|ca-pe| CA-PE|  Prince Edward Island|   PE
-|ca-on| CA-ON|  Ontario|    ON
-|ca-ns| CA-NS|  Nova Scotia |NS
-|ca-nl| CA-NL|  Newfoundland and Labrador|  NL
-|ca-nb| CA-NB|  New Brunswick| NB
-|ca-mb| CA-MB|  Manitoba|   MB
-|ca-bc| CA-BC|  British Columbia    |BC
-|ca-ab| CA-AB|  Alberta |AB
+|CA nu| CA NU|  Nunavut|    NU|
+|nt de la entidad emisora de certificados| NT DE LA ENTIDAD EMISORA DE CERTIFICADOS|  Territorios del noroeste|  NT
+|CA yt| CA YT|  Yukon|  YT
+|CA-sk| CA-SK|  Saskatchewan|   SK
+|CA qc| CA QC|  Quebec| QC
+|pe de la entidad emisora de certificados| PE DE LA ENTIDAD EMISORA DE CERTIFICADOS|  Isla del Príncipe Eduardo|   PE
+|en CA| EN CA|  Ontario|    ON
+|CA-ns| CA-NS|  Nueva Escocia |NS
+|CA-nl| CA-NL|  Terranova y Labrador|  NL
+|nb de CA| NB DE CA|  Nuevo Brunswick| NB
+|mb de la entidad emisora de certificados| MB DE LA ENTIDAD EMISORA DE CERTIFICADOS|  Manitoba|   MB
+|bc de CA| BC DE CA|  Columbia Británica    |CONTINUIDAD DEL NEGOCIO
+|ab de la entidad emisora de certificados| AB DE LA ENTIDAD EMISORA DE CERTIFICADOS|  Alberta |AB
 
 
-### France: Regions
+### Francia: regiones
 
-|id |name|  name-en|
+|id |name|  en nombre de|
 |---|---|---|
 |Alsace |Alsace|    Alsace
-|Rhone-Alpes|   Rhône-Alpes|    Rhone-Alpes
-|Provence-Alpes-Cote d'Azur|    Provence-Alpes-Côte d'Azur| Provence-Alpes-Cote d'Azur
-|Poitou-Charentes|  Poitou-Charentes|   Poitou-Charentes
+|Alpes Rhone|   Rhône Alpes|    Alpes Rhone
+|Costa de Provence-Alpes d'Azur|    Alpes de Provence de Côte d'Azur| Costa de Provence-Alpes d'Azur
+|Poitou Charentes|  Poitou Charentes|   Poitou Charentes
 |Picardie   |Picardie|  Picardy
-|Pays de la Loire|  Pays de la Loire|   Pays de la Loire
+|Paga de la Loire|  Paga de la Loire|   Paga de la Loire
 |Nord-Pas-de-Calais|    Nord-Pas-de-Calais| Nord-Pas-de-Calais
-|Midi-Pyrenees| Midi-Pyrénées|  Midi-Pyrenees
+|Pirineos MIDI| Pirineos MIDI|  Pirineos MIDI
 |Lorraine|  Lorraine|   Lorraine
 |Limousin|  Limousin|   Limousin
-|Languedoc-Roussillon|  Languedoc-Roussillon|   Languedoc-Roussillon
-|Ile-del-France|    Île-de-France|  Ile-de-France
-|Haute-Normandie|   Haute-Normandie|    Upper Normandy
-|Franche-Comte| Franche-Comté|  Franche-Comte
-|Corse| Corse|  Corsica
-|Champagne-Ardenne| Champagne-Ardenne|  Champagne-Ardenne
-|Centre-Val de Loire|   Centre-Val de Loire|    Centre-Val de Loire
+|Languedoc Rosellón|  Languedoc Rosellón|   Languedoc Rosellón
+|Ile-del-Francia|    Isla-de-France|  Ile
+|Haute Normandie|   Haute Normandie|    Normandía
+|Franche-Comte| Franche Comté|  Franche-Comte
+|Supuesto| Supuesto|  Córcega
+|Champaña Ardenne| Champaña Ardenne|  Champaña Ardenne
+|Loira centro|   Loira centro|    Loira centro
 |Bretagne|  Bretagne|   Brittany
-|Bourgogne| Bourgogne|  Burgundy
-|Basse-Normandie|   Basse-Normandie|    Lower Normandy
+|Borgoña| Borgoña|  Rojo oscuro
+|Basse Normandie|   Basse Normandie|    Normandía inferior
 |Auvergne|  Auvergne|   Auvergne
 |Aquitaine| Aquitaine|  Aquitaine
 
-### Germany: States
+### Alemania: Estados
 
-|id|    iso|    name|   name-en|    postal
+|id|    ISO|    name|   en nombre de|    postal
 |---|---|---|---|---|
-|de-be| DE-BE|  Berlin| Berlin| BE
-|de-th| DE-TH|  Thüringen|  Thuringia|  TH
-|de-st| DE-ST|  Sachsen-Anhalt| Saxony-Anhalt|  ST
-|de-sn| DE-SN|  Sachsen |Saxony|    SN
-|de-mv| DE-MV|  Mecklenburg-Vorpommern| Mecklenburg-Vorpommern| MV
-|de-bb| DE-BB|  Brandenburg |Brandenburg|   BB
+|de-ser| DE-SER|  Berlín| Berlín| SER
+|de-ésimo| DE-ÉSIMO|  Thüringen|  Turingia|  TH
+|de st| DE ST|  Anhalt Sachsen| Sajonia-Anhalt|  ST
+|de-sn| DE-SN|  Sachsen |Sajonia|    SN
+|de mv| DE MV|  Mecklenburg Vorpommern| Mecklenburg Vorpommern| MV
+|bb de| BB DE|  Brandemburgo |Brandemburgo|   BB
 |de-sh| DE-SH|  Schleswig-Holstein| Schleswig-Holstein| SH
-|de-sl| DE-SL|  Saarland|   Saarland|   SL
-|de-rp| DE-RP|  Rheinland-Pfalz|    Rhineland-Palatinate|   RP
-|de-nw| DE-NW|  Nordrhein-Westfalen|    North Rhine-Westphalia| NW
-|de-ni| DE-NI|  Niedersachsen|  Lower Saxony|   NI
-|de-he| DE-HE|  Hessen| Hesse|  HE
-|de-hh| DE-HH|  Hamburg|    Hamburg|    HH
-|de-hb| DE-HB|  Bremen| Bremen| HB
-|de-by| DE-BY|  Bayern| Bavaria|    BY
-|de-bw| DE-BW|  Baden-Württemberg|  Baden-Wurttemberg|  BW
+|de-sl| DE-SL|  Sarre|   Sarre|   SL
+|de usuario de confianza| DE USUARIO DE CONFIANZA|  Rheinland-Pfalz|    Renania Palatinado|   RP
+|de nw| DE NW|  Renania Westfalen|    Renania del Norte-Westfalia| NW
+|ni de| NI DE|  Niedersachsen|  Baja Sajonia|   NI
+|de-he| DE-HE|  Hesse| Literatura seria e inquietante|  ÉL
+|hh de| HH DE|  Hamburgo|    Hamburgo|    HH
+|hb de| HB DE|  Bremen| Bremen| HB
+|de-por| DE-POR|  Bayern| Baviera|    POR
+|de bw| DE BW|  Baden-Wurtemberg|  Baden-Wurttemberg|  BW
 
 
-### Ireland: Counties
+### Irlanda: condados
 
 |id|
 |---|
@@ -256,154 +259,154 @@ Use the following <bpt id="p1">**</bpt>Region Keys<ept id="p1">**</ept> in this 
 |Galway
 |Dublin
 |Donegal
-|Cork
+|Corcho
 |Clare
 |Cavan
 |Carlow
 
 
-### Italy: Regions
+### Italia: regiones
 
-|id|iso|name|name-en|postal|
+|id|ISO|name|en nombre de|postal|
 |---|---|---|---|---|
-|it-vn| IT-34|  Veneto| Veneto| VN
-|it-vd| IT-23|  Valle d'Aosta|  Aosta Valley|   VD
-|it-um| IT-55|  Umbria| Umbria| UM
-|it-tt| IT-32|  Trentino-Alto Adige|    Trentino-South Tyrol|   TT
-|it-tc| IT-52|  Toscana|    Tuscany|    TC
-|it-sc| IT-82|  Sicilia|    Sicily| SC
-|it-sd| IT-88|  Sardegna|   Sardinia|   SD
-|it-pm| IT-21|  Piemonte|   Piedmont|   PM
-|it-ml| IT-67|  Molise| Molise| ML
-|it-mh| IT-57|  Marche| Marche| MH
-|it-lm| IT-25|  Lombardia|  Lombardy|   LM
-|it-lg| IT-42|  Liguria|    Liguria|    LG
-|it-lz| IT-62|  Lazio|  Lazio|  LZ
-|it-fv| IT-36|  Friuli-Venezia Giulia|  Friuli-Venezia Giulia|  FV
-|it-er| IT-45|  Emilia-Romagna| Emilia-Romagna| ER
-|it-cm| IT-72|  Campania|   Campania|   CM
-|it-lb| IT-78|  Calabria|   Calabria|   LB
-|it-bc| IT-77|  Basilicata| Basilicata| BC
-|it-pu| IT-75|  Apulia| Puglia| PU
-|it-ab| IT-65|  Abruzzo|    Abruzzo|    AB
+|vn de TI| 34 DE TI|  Véneto| Véneto| VN
+|TI vd| 23 DE TI|  Aosta|  Valle de Aosta|   VD
+|TI um| TI 55|  Umbría| Umbría| MENSAJERÍA UNIFICADA
+|TI tt| 32 DE TI|  Trentino-Alto Adige|    Tyrol Trentino sur|   TT
+|tc de TI| TI 52|  Toscana|    Toscana|    TC
+|sc de TI| 82 DE TI|  Sicilia|    Sicilia| SC
+|sd de TI| TI 88|  Sardegna|   Cerdeña|   SD
+|TI p.m.| 21 DE TI|  Piemonte|   Piedmont|   P. M.
+|aprendizaje automático de TI| TI 67|  Molise| Molise| APRENDIZAJE AUTOMÁTICO
+|TI AG.| 57 DE TI|  Las marcas| Las marcas| AG
+|lm de TI| 25 DE TI|  Lombardia|  Lombardia|   LM
+|lg de TI| TI 42|  Liguria|    Liguria|    LG
+|TI lz| 62 DE TI|  Lacio|  Lacio|  LZ
+|TI vf| TI 36|  Friul-Venecia Julia|  Friul-Venecia Julia|  VF
+|lo-er| TI 45|  Emilia-Romagna| Emilia-Romagna| ER
+|TI cm| 72 DE TI|  Campania|   Campania|   CM
+|equilibrador de carga de TI| TI 78|  Calabria|   Calabria|   LB
+|TI bc| 77 DE TI|  Basilicata| Basilicata| CONTINUIDAD DEL NEGOCIO
+|pu de TI| TI 75|  Apulia| Puglia| PU
+|TI ab| 65 DE TI|  Abruzzi|    Abruzzi|    AB
 
 
-### Mexico: States
+### México: Estados
 
-|id|    abreviatura|    iso|    name|   name-en|    postal|
+|id|    abreviatura|    ISO|    name|   en nombre de|    postal|
 |---|---|---|---|---|---|
-|mx-zac|    Zac.|   MX-ZAC| Zacatecas|  Zacatecas|  ZA
-|mx-yuc|    Yuc.|   MX-YUC| Yucatán|    Yucatan|    YU
-|mx-ver|    Ver.|   MX-VER| Veracruz|   Veracruz|   VE
-|mx-tla|    Tlax.|  MX-TLA| Tlaxcala|   Tlaxcala|   TL
-|mx-tam|    Tamps.| MX-TAM| Tamaulipas| Tamaulipas| TM
-|mx-tab|    Tab.|   MX-TAB| Tabasco|    Tabasco|    TB
-|mx-son|    Son.|   MX-SON| Sonora| Sonora| SO
-|mx-sin|    Sin.|   MX-SIN| Sinaloa|    Sinaloa|    SI
-|mx-slp|    S.L.P.| MX-SLP| San Luis Potosí|    San Luis Potosi|    SL
-|mx-roo|    Q.R.|   MX-ROO| Quintana Roo|   Quintana Roo|   QR
-|mx-que|    Qro.|   MX-QUE| Querétaro|  Queretaro|  QE
-|mx-pue|    Pue.|   MX-PUE| Puebla| Puebla| PU
-|mx-oax|    Oax.|   MX-OAX| Oaxaca| Oaxaca| OA
-|mx-nle|    N.L.|   MX-NLE| Nuevo León| Nuevo Leon| NL
-|mx-nay|    Nay.|   MX-NAY| Nayarit|    Nayarit|    N/D
-|mx-mor|    Mor.|   MX-MOR| Morelos|    Morelos|    MR
-|mx-mic|    Mich.|  MX-MIC| Michoacán|  Michoacan|  MC
-|mx-mex|    Méx.|   MX-MEX| Estado de México|   Mexico State|   MX
-|mx-jal|    Jal.|   MX-JAL| Jalisco|    Jalisco|    JA
-|mx-hid|    Hgo.|   MX-HID| Hidalgo|    Hidalgo|    ALTO
-|mx-gro|    Gro.|   MX-GRO| Guerrero|   Guerrero|   GR
-|mx-gua|    Gto.|   MX-GUA| Guanajuato| Guanajuato| GT
-|mx-dur|    Dgo.|   MX-DUR| Durango|    Durango|    DU
-|mx-dif|    Col.|   MX-DIF| Ciudad de México|   Mexico City|    DF
-|mx-col|    Coah.|  MX-COL| Colima| Colima| CL
-|mx-coa|    Chis.|  MX-COA| Coahuila|   Coahuila|   CA
-|mx-chh|    Chih.|  MX-CHH| Chihuahua|  Chihuahua|  CH
-|mx-chp|    CDMX.|  MX-CHP| Chiapas|    Chiapas|    CP
-|mx-cam|    Camp.|  MX-CAM| Campeche|   Campeche|   CM
-|mx-bcs|    B.C.S.| MX-BCS| Baja California Sur|    Baja California Sur|    BS
-|mx-bcn|    B.C.|   MX-BCN| Baja California|    Baja California|    BN
-|mx-agu|    Ags.|   MX-AGU| Aguascalientes| Aguascalientes| AG
+|zac MX|    ZAC.|   ZAC MX| Zacatecas|  Zacatecas|  ZA
+|MX yuc|    Yuc.|   MX YUC| Yucatán|    Yucatán|    YU
+|MX-ver|    Ver.|   MX-VER| Veracruz|   Veracruz|   VE
+|MX tla|    Tlax.|  MX TLA| Tlaxcala|   Tlaxcala|   TL
+|tam MX|    Tamps.| TAM MX| TAMAULIPAS| TAMAULIPAS| TM
+|ficha MX|    Ficha.|   FICHA MX| Tabasco|    Tabasco|    TB
+|MX-hijo|    Hijo.|   MX-HIJO| Sonora| Sonora| POR LO QUE
+|seno de MX|    Seno.|   SENO DE MX| Sinaloa|    Sinaloa|    SI
+|slp MX|    S.L.P.| SLP MX| San Luis Potosí|    San Luis Potosí|    SL
+|MX roo|    Q.R.|   MX ROO| Quintana Roo|   Quintana Roo|   QR
+|MX que|    Qro.|   MX QUE| Querétaro|  Queretaro|  QE
+|pue MX|    PUE.|   PUE MX| Puebla| Puebla| PU
+|MX oax|    Oax.|   MX OAX| Oaxaca| Oaxaca| OA
+|edición no lineal de MX|    N.L.|   EDICIÓN NO LINEAL DE MX| Nuevo León| Nuevo León| NL
+|nay MX|    Nay.|   NAY MX| Nayarit|    Nayarit|    N/D
+|MX más|    Mor.|   MX MÁS| Morelos|    Morelos|    SR.
+|MX-mic|    Michigan.|  MX-MIC| Michoacán|  Michoacan|  MC
+|MX mex|    Méx.|   MX MEX| Estado de México|   Estado de México|   MX
+|MX jal|    JAL.|   MX JAL| Jalisco|    Jalisco|    JA
+|ocultó MX|    HgO.|   OCULTÓ MX| Hidalgo|    Hidalgo|    ALTO
+|grupos de MX|    Gro|   GRUPOS DE MX| Guerrero|   Guerrero|   GR
+|gua MX|    Gto.|   GUA MX| Guanajuato| Guanajuato| GT
+|MX-dur|    Dgo.|   MX-DUR| Durango|    Durango|    DU
+|dif MX|    Col.|   DIF MX| Ciudad de México|   Ciudad de México|    DF
+|col MX|    Coah.|  COL MX| Colima| Colima| CL
+|MX coa|    Chis.|  MX COA| Coahuila|   Coahuila|   CA
+|MX chh|    Chih.|  MX CHH| Chihuahua|  Chihuahua|  CH
+|MX chp|    CDMX.|  MX CHP| Chiapas|    Chiapas|    CP
+|cam MX|    Campamento.|  CAM MX| Campeche|   Campeche|   CM
+|bcs MX|    B.C.S.| BCS MX| Baja California Sur|    Baja California Sur|    BS
+|MX bcn|    A. C.|   MX BCN| Baja California|    Baja California|    BN
+|MX agu|    Grupos de disponibilidad.|   MX AGU| Aguascalientes| Aguascalientes| AG
 
 
-### Netherlands: Provinces
+### Países Bajos: provincias
 
-|id|    iso|    name|   name-en|
+|id|    ISO|    name|   en nombre de|
 |---|---|---|---|
-|nl-zh| NL-ZH|  Zuid-Holland|   South Holland
-|nl-ze| NL-ZE|  Zeeland|    Zeeland
-|nl-ut| NL-UT|  Utrecht|    Utrecht
-|nl-ov| NL-OV|  Overijssel| Overijssel
-|nl-nh| NL-NH|  Noord-Holland|  North Holland
-|nl-nb| NL-NB|  Noord-Brabant|  North Brabant
-|nl-li| NL-LI|  Limburg|    Limburg
-|nl-gr| NL-GR|  Groningen|  Groningen
-|nl-ge| NL-GE|  Gelderland| Gelderland
-|nl-fr| NL-FR|  Fryslân|    Friesland
-|nl-fl| NL-FL|  Flevoland|  Flevoland
-|nl-dr| NL-DR|  Drenthe|    Drenthe
+|NL-zh| NL-ZH|  Zuid Holland|   Holanda sur
+|NL-ze| NL-ZE|  Zeelands|    Zeelands
+|NL-ut| NL-UT|  Utrecht|    Utrecht
+|NL ov| NL OV|  Overijssel| Overijssel
+|NL: Centro de notificaciones| NL: CENTRO DE NOTIFICACIONES|  Noord Holanda|  Norte de Holanda
+|NL-nb| NL-NB|  Noord Brabante|  Brabante Norte
+|li NL| LI NL|  Limburg|    Limburg
+|NL-gr| NL-GR|  Groningen Tel.|  Groningen Tel.
+|NL-ge| NL-GE|  Gelderland| Gelderland
+|NL-fr| NL-FR|  Fryslân|    Friesland
+|NL-fl| NL-FL|  Flevoland|  Flevoland
+|NL-dr| NL-DR|  Drenthe|    Drenthe
 
-### UK: Countries
+### Reino Unido: países
 
-|id|    iso|    name|
+|id|    ISO|    name|
 |---|---|---|
-|gb-wls|    GB-WLS| Wales
-|gb-sct|    GB-SCT| Scotland
-|gb-nir|    GB-NIR| Northern Ireland
-|gb-eng|    GB-ENG| England
+|wls GB|    WLS GB| Gales
+|sct GB|    SCT GB| Escocia
+|nir GB|    NIR GB| Irlanda del Norte
+|inglés GB|    INGLÉS GB| Inglaterra
 
-### USA: States
+### Estados UNIDOS: Estados
 
 |id|    name|   postal|
 |---|---|---|
-|us-mi| Michigan|   MI
-|us-ak| Alaska| AK
-|us-hi| Hawaii| ALTO
-|us-fl| Florida|    FL
-|us-la| Louisiana|  LA
-|us-ar| Arkansas|   AR
-|us-sc| South Carolina| SC
-|us-ga| Georgia|    GA
-|us-ms| Mississippi|    SA
-|us-al| Alabama|    AL
-|us-nm| New Mexico| NM
-|us-tx| Texas|  TX
-|us-tn| Tennessee|  TN
-|us-nc| North Carolina| NC
-|us-ok| Oklahoma|   Aceptar
-|us-az| Arizona|    AZ
-|us-mo| Misuri|   MO
-|us-va| Virginia|   VA
-|us-ks| Kansas| KS
-|us-ky| Kentucky|   KY
-|us-co| Colorado|   CO
-|us-md| Maryland|   MD
-|us-wv| West Virginia|  WV
-|us-de| Delaware|   DE
-|us-dc| District of Columbia|   Controlador de dominio
-|us-il| Illinois|   IL
-|us-oh| Ohio|   OH
-|us-ca| California| CA
-|us-ut| Utah|   UT
-|us-nv| Nevada| NV
-|us-in| Indiana|    IN
-|us-nj| New Jersey| NJ
-|us-ri| Rhode Island|   RI
-|us-ct| Connecticut|    CT
-|us-pa| Pennsylvania|   PA
-|us-ny| Nueva York|   NY
-|us-ne| Nebraska|   NE
-|us-ma| Massachusetts|  MA
-|us-ia| Iowa|   IA
-|us-nh| New Hampshire|  NH
-|us-or| Oregon| O BIEN
-|us-mn| Minnesota|  MN
-|us-vt| Vermont|    VT
-|us-id| Idaho|  ID
-|us-wi| Wisconsin|  WI
-|us-wy| Wyoming|    WY
-|us-sd| South Dakota|   SD
-|us-nd| North Dakota|   ND
-|us-me| Maine|  ME
-|us-mt| Montana|    MT
-|us-wa| Washington| WA
+|nos-mi| Michigan|   MI
+|nos-ak| Alaska| AK
+|nos-Hola| Hawai| ALTO
+|nos-fl| Florida|    FL
+|nos-la| Louisiana|  LA
+|nos-ar| Arkansas|   AR
+|nos-sc| Carolina del sur| SC
+|nos-ga| Georgia|    GA
+|nos-ms| Mississippi|    SA
+|nos-al| Alabama|    AL
+|nos-nm| Nuevo México| NM
+|nos-tx| Texas|  TX
+|nos-tn| Tennessee|  TN
+|nos-CN| Carolina del Norte| NC
+|nos-Aceptar| Oklahoma|   Aceptar
+|nos-az| Arizona|    AZ
+|nos-OP| Misuri|   MO
+|nos-Virginia| Virginia|   VA
+|nos-ks| Kansas| KS
+|nos-ki| Kentucky|   KI
+|nos-co| Colorado|   CO
+|nos-md| Maryland|   MD
+|nos-wv| Virginia Occidental|  WV
+|nos-de| Delaware|   DE
+|nos-dc| Distrito de Columbia|   Controlador de dominio
+|nos-il| Illinois|   IL
+|nos-oh| Ohio|   AH
+|nos-ca| California| CA
+|nos-ut| Utah|   UT
+|nos-nv| Nevada| NV
+|US-en| Indiana|    IN
+|nos-nj| Nueva Jersey| NUEVA JERSEY
+|nos-ri| Rhode Island|   RI
+|nos-ct| Connecticut|    CT
+|nos-pa| Pensilvania|   PA
+|nos-ny| Nueva York|   NUEVA YORK
+|nos-ne| Nebraska|   NE
+|nos-ma| Massachusetts|  MA
+|nos-ia| Iowa|   IA
+|nos: Centro de notificaciones| Nueva Hampshire|  CENTRO DE NOTIFICACIONES
+|nos- o| Oregón| O BIEN
+|nos-MN.| Minnesota|  MN
+|nos-vt| Vermont|    VT
+|nos-id| Idaho|  ID
+|nos-wi| Wisconsin|  WI
+|nos-wy| Wyoming|    WY
+|nos-sd| Dakota del sur|   SD
+|nos-nd| Dakota del Norte|   ND
+|nos-me| Maine|  ME
+|nos-mt| Montana|    MT
+|nos-wa| Washington| WA

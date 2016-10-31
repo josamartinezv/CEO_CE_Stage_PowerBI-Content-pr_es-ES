@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Display a dashboard tile in Focus mode"
-   description="Documentation for displaying a Power BI dashboard tile or report visual in Focus mode, aka Pop Out."
+   pageTitle="Mostrar un icono de panel en modo de enfoque"
+   description="Documentación para mostrar un icono de panel de Power BI o un informe visual en el modo de enfoque, también conocido como salir."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,40 +21,41 @@
    ms.date="08/29/2016"
    ms.author="mihart"/>
 
-# Display a dashboard tile or report visual in Focus mode
+# Mostrar un icono de panel o informe visual en modo de enfoque
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dtdLul6otYE" frameborder="0" allowfullscreen></iframe>
 
 
-## What is Focus mode?  
+## ¿Qué es el modo de enfoque?  
 
-<bpt id="p1">***</bpt>Focus<ept id="p1">***</ept> mode lets you expand (pop out) a dashboard tile or report visual to see more detail.  While in Focus mode for a dashboard tile, you can view and modify the filters that were applied when this visual was created.  And while in Focus mode for a report visual, you can view and modify the Visual level and Page level filters.
 
->[AZURE.NOTE] Currently, Focus mode is not available for tiles created from Q&amp;A or for map tiles. 
+            ***Enfoque*** modo le permite expandir (salirse) un icono de panel o informe visual para ver más detalles.  En el modo de foco de un icono de panel, puede ver y modificar los filtros que se aplicaron cuando se creó este objeto visual.  Y en el modo de enfoque para visual de un informe, puede ver y modificar el nivel de Visual y filtros de nivel de página.
 
->[AZURE.NOTE]  &gt;Focus is different from full screen mode.  Full screen mode is available for <bpt id="p1">[</bpt>dashboards and reports <ept id="p1">](powerbi-service-dash-and-reports-fullscreen.md)</ept> and <bpt id="p2">[</bpt>tiles<ept id="p2">](powerbi-service-display-tile-in-full-screen-mode.md)</ept>.
+>[AZURE.NOTE] Actualmente, el modo de foco no está disponible para mosaicos creados a partir de preguntas y respuestas o mosaicos de mapa. 
 
-1.  Hover over the tile or visual and select the <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg)</ph>.  
+>[AZURE.NOTE]  > enfoque es diferente del modo de pantalla completa.  Modo de pantalla completa está disponible para [paneles e informes ](powerbi-service-dash-and-reports-fullscreen.md) y [mosaicos](powerbi-service-display-tile-in-full-screen-mode.md).
+
+1.  Mantenga el mouse sobre el icono o visual y seleccione el **modo de enfoque** icono ![](media/powerbi-service-display-tile-in-full-screen-mode/PBI_popOut.jpg).  
 
     ![](media/powerbi-service-display-dash-in-focus-mode/PBI_hoverTile-new.jpg)
 
-2.  It opens and fills the entire canvas. 
+2.  Se abre y se llena todo el lienzo. 
 
     ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocus-new3.jpg)
 
-3.  Expand the Filters pane to see all filters applied to this visual.  
+3.  Expanda el panel de filtros para ver todos los filtros aplicados a este objeto visual.  
     ![](media/powerbi-service-display-dash-in-focus-mode/PBI_InFocusFilters-new2.jpg)
 
-4.  Explore further by modifying the filters and, if you discover something interesting, pin the visual to a dashboard.   
+4.  Explore aún más mediante la modificación de los filtros y, si observa algo interesante, anclar la visualización a un panel.   
 
-6.  Leave Focus mode and return to the dashboard by selecting the Focus mode icon (in the top left corner of the visual).
+6.  Salir del modo de foco y volver al panel seleccionando el icono de modo de enfoque (en la esquina superior izquierda del objeto visual).
 
-## Go from Focus mode to Full Screen mode
- 
+## Ir de modo enfocado a modo de pantalla completa
+Una vez en modo de enfoque, puede ser, a continuación, el mosaico o visual [Ver en pantalla completa (modo de televisión).](powerbi-service-display-tile-in-full-screen-mode.md) Muestra el modo de pantalla completa sin la distracción de los menús y botones de navegación.
 
 
 ## Consulte también  
-[Dashboards in Power BI](powerbi-service-dashboards.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

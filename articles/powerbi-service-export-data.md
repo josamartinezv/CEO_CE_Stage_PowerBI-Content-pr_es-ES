@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Export data from a visualization"
-   description="Export data from a report visualization and dashboard visualization"
+   pageTitle="Exportar datos de una visualización"
+   description="Exportar datos de una visualización de informes y la visualización del panel"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,50 +21,50 @@
    ms.date="08/25/2016"
    ms.author="mihart"/>
 
-# Export data from Power BI visualizations
-Data can be exported from visuals on a dashboard and in reports.  
+# Exportar datos de visualizaciones de Power BI
+Pueden exportar datos desde objetos visuales en un panel y en los informes.  
 
->[AZURE.NOTE] The maximum number of rows that can be downloaded is 10,000.
+>[AZURE.NOTE] El número máximo de filas que se puede descargar es 10.000.
 
-Watch Amanda export the data used in her dashboard and save it as a .csv file. Then follow the step-by-step instructions below the video to try it out yourself.
+Exportar los datos usados en su escritorio y guárdelo como un archivo .csv, vea Amanda. A continuación, siga las instrucciones detalladas a continuación el vídeo para probarlo usted mismo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jtlLGRKBvXY?start=61" frameborder="0" allowfullscreen></iframe>
 
-## Export a dashboard visual's data
+## Exportar datos de un objeto visual panel
 
-1. Select the ellipses in the top right corner of the visualization.
+1. Seleccione el botón de puntos suspensivos en la esquina superior derecha de la visualización.
 
     ![](media/powerbi-service-export-data/pbi-export-tile3.png)
 
-2. Choose the  <bpt id="p1">**</bpt>Export data<ept id="p1">**</ept> icon.
+2. Elija la  **Exportar datos** icono.
 
     ![](media/powerbi-service-export-data/pbi_export_dash.png)
 
-    The data is exported to a CSV file. If the visual is filtered, then the downloaded data will also be filtered.
+    Los datos se exportan a un archivo CSV. Si el objeto visual está filtrado, también se filtrarán los datos descargados.
 
-3. Open the CSV file in Excel.
+3. Abra el archivo CSV en Excel.
 
     ![](media/powerbi-service-export-data/pbi-export-to-excel.png)
 
-    >[AZURE.NOTE] If there is unicode in the .csv file, the text in Excel may not display properly. Although, opening it in Notepad will work fine. Examples of unicode are currency symbols and foreign words. the workaround for this is to import the csv into Excel, instead of opening the csv directly. To do this: 1. Open Excel 2. From the <bpt id="p1">**</bpt>Data<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Get external data<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>From text<ept id="p3">**</ept>.
+    >[AZURE.NOTE] Si hay unicode en el archivo .csv, el texto de Excel no se muestren correctamente. Aunque, ábralo en el Bloc de notas funcionará correctamente. Ejemplos de unicode son símbolos de moneda y palabras extranjeras. la solución para esto es para importar el archivo csv en Excel, en lugar de abrir el archivo csv directamente. Para ello: 1. Abra Excel 2. Desde el **datos** ficha, seleccione **obtener datos externos** > **de texto**.
 
 
-## Export a report visual's data
+## Exportar datos de un objeto visual informe
 
-1. Select the ellipses in the top right corner of the visualization. Choose  <bpt id="p1">**</bpt>Export data<ept id="p1">**</ept>.
+1. Seleccione el botón de puntos suspensivos en la esquina superior derecha de la visualización. Elija  **Exportar datos**.
 
     ![](media/powerbi-service-export-data/pbi_export_dialog.png)
 
-    >[AZURE.NOTE] The option to remove a visual is only available in <bpt id="p1">[</bpt>report Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept>.
+    >[AZURE.NOTE] La opción para quitar un objeto visual sólo está disponible en [vista de edición de informes](powerbi-service-go-from-reading-view-to-editing-view.md).
 
-2. See step 3 above.
+2. Vea el paso 3 anterior.
 
 ## Consulte también
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

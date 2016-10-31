@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add a custom visualization to a Power BI report"
-   description="Add a custom visual to a Power BI report"
+   pageTitle="Agregar una visualización personalizada a un informe de Power BI"
+   description="Agregar un objeto visual personalizado a un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,68 +20,79 @@
    ms.workload="powerbi"
    ms.date="08/25/2016"
    ms.author="mihart"/>
-# <a name="add-a-custom-visualization-to-a-power-bi-report"></a>Add a custom visualization to a Power BI report
+# <a name="add-a-custom-visualization-to-a-power-bi-report"></a>Agregar una visualización personalizada a un informe de Power BI
 
-You've <bpt id="p1">[</bpt>downloaded a custom visual template<ept id="p1">](powerbi-custom-visuals-download-from-the-gallery.md)</ept> and saved it to your computer or another location.  The next step is to import that visual template into a report so that it is added, as an option, to your Visualization pane.
+Ha [descargado una plantilla personalizada de visual](powerbi-custom-visuals-download-from-the-gallery.md) y guardarlo en el equipo o en otra ubicación.  El paso siguiente consiste en importar esa plantilla visual en un informe para que se agrega como una opción al panel de visualización.
     ![](media/powerbi-custom-visuals-add-to-report/pbi-custom-viz-icon.png)
 
-Watch Will download a custom visual and add it to his report. Then follow the step-by-step instructions below the video to try it yourself.
+Inspección descargará un objeto visual personalizado y agregarlo a su informe. A continuación, siga las instrucciones detalladas a continuación el vídeo para probarlo.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gido6wr5pvE" frameborder="0" allowfullscreen></iframe>
 
-><bpt id="p1">**</bpt>Important<ept id="p1">**</ept>: A custom visual template is added to a specific report when imported. If you'd like to use the visual template in another report, you need to import it into that report as well.
-When a report with a custom visual is saved using the <bpt id="p1">**</bpt>Save As<ept id="p1">**</ept> option, a copy of the custom visual template is saved with the new report.
+>
+            **Importante**: una plantilla personalizada de visual se agrega a un informe específico cuando importa. Si desea utilizar la plantilla visual en otro informe, debe importarlo en ese informe.
+Cuando se guarda un informe con un objeto visual personalizado mediante el **Guardar como** opción, se guarda una copia de la plantilla visual personalizada con el nuevo informe.
 
-1. Open <bpt id="p1">[</bpt>Power BI<ept id="p1">](http://app.powerbi.com)</ept> and select the report where you want to add the custom visualization.  
+1. Abra [Power BI](http://app.powerbi.com) y seleccione el informe que desea agregar la visualización personalizadas.  
 
-2.  Open the report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>.
+2.  Abra el informe en [vista de edición de](powerbi-service-interact-with-a-report-in-editing-view.md).
 
-2. In the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, select the ellipses (...).
+2. En el **visualizaciones** panel, seleccione el botón de puntos suspensivos (...).
 
     ![](media/powerbi-custom-visuals-add-to-report/PBI_customVizEllipses.jpg)
 
-3. Select <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> and navigate to the location where you saved the downloaded custom visualization (.pbiviz file).
+3. Seleccione **importación** y desplácese hasta la ubicación donde guardó la visualización personalizada descargada (archivo .pbiviz).
 
-4. <bpt id="p1">**</bpt>IMPORTANT<ept id="p1">**</ept>: Review the warning and ensure the visual comes from a trustworthy source. Microsoft recommends you work with your IT department if you're not sure whether to use a specific Custom Visual you obtained from the Power BI visuals gallery, through email, or from some other source.
-See <bpt id="p1">[</bpt>Review custom visuals for security and privacy<ept id="p1">](powerbi-custom-visuals-review-for-security-and-privacy.md)</ept>.
+4. 
+            **IMPORTANTE**: Revise la advertencia y asegúrese de que el objeto visual proviene de una fuente de confianza. Microsoft recomienda que trabaje con su departamento de TI si no está seguro de si se usa un personalizado específico Visual que obtuvo desde la Galería de elementos visuales de Power BI, a través de correo electrónico, o de algún otro origen.
+Consulte [Revisar elementos visuales personalizados para la seguridad y privacidad](powerbi-custom-visuals-review-for-security-and-privacy.md).
 
-5. Seleccione **Abrir**. The custom visualization icon (also called <bpt id="p1">*</bpt>template<ept id="p1">*</ept>) is added to the Visualization pane.
+5. Seleccione **Abrir**. El icono de visualización personalizadas (también denominado *plantilla*) se agrega al panel de visualización.
 
     ![](media/powerbi-custom-visuals-add-to-report/PBI_customVizAddedIcon.jpg)
 
-    A custom visual template is added to a specific report's Visualization pane when imported. It is now available for you to select and use in that report.
-    If you'd like to use the visual in another report, you need to import it into that report's Visualization pane as well.
+    Una plantilla personalizada de visual se agrega al panel de visualización de un informe concreto cuando importa. Ahora está disponible para seleccionar y usar en ese informe.
+    Si desea utilizar el objeto visual en otro informe, debe importarlo en el panel de visualización del informe también.
 
-    When a report with a custom visual is saved using the <bpt id="p1">**</bpt>Save As<ept id="p1">**</ept> option, a copy of the custom visual template is saved with the new report.
+    Cuando se guarda un informe con un objeto visual personalizado mediante el **Guardar como** opción, se guarda una copia de la plantilla visual personalizada con el nuevo informe.
 
-    Once you import a custom visual template you cannot remove it from that specific report's Visualization pane. If you've used it to create a visualization, you can remove the visualization; but the icon will remain in the Visualization pane.
+    Una vez que se importa una plantilla visual personalizada no puede quitar del panel de visualización del informe seleccionado. Si se usó para crear una visualización, puede quitar la visualización; pero el icono permanecerá en el panel de visualización.
 
-6. Still in Editing View, select the custom visualization icon.  This adds a watermark (template) to your report canvas.
+6. Todavía en la vista de edición, seleccione el icono de visualización personalizadas.  Esto agrega una marca de agua (plantilla) a su lienzo de informe.
 
     ![](media/powerbi-custom-visuals-add-to-report/PBI_template.jpg)
 
-7. Drag fields onto the template to create the visualization. Optionally, pin the visual to a dashboard. This example shows the Table Heatmap custom visualization.
+7. Arrastre los campos a la plantilla para crear la visualización. También puede anclar la visualización a un panel. Este ejemplo muestra la visualización de mapa de calor de tabla personalizada.
 
     ![](media/powerbi-custom-visuals-add-to-report/PBI_customVizAdded.jpg)
 
-8. Continue to work with and explore this visualization as you would any other (native) visualization in Power BI.
+8. Continuar trabajando con y explorar esta visualización como lo haría con cualquier otra visualización (nativo) en Power BI.
 
 ### <a name="see-also"></a>Consulte también
 
-<bpt id="p1">[</bpt>Microsoft's custom visual playlist on YouTube<ept id="p1">](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)</ept>
 
-<bpt id="p1">[</bpt>Visualizations in Power BI<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>
+            [Visual lista de reproducción personalizada de Microsoft en YouTube](https://www.youtube.com/playlist?list=PL1N57mwBHtN1vIjfvuBIzZllrmKo-Vz6x)
 
-<bpt id="p1">[</bpt>Custom Visualizations in Power BI<ept id="p1">](powerbi-custom-visuals.md)</ept>
 
-<bpt id="p1">[</bpt>The Power BI custom visuals gallery<ept id="p1">](https://app.powerbi.com/visuals)</ept>
+            [Visualizaciones en Power BI](powerbi-service-visualizations-for-reports.md)
 
-<bpt id="p1">[</bpt>Use custom visualizations in Power BI Desktop<ept id="p1">](powerbi-custom-visuals-use.md)</ept>
 
-<bpt id="p1">[</bpt>Review custom visuals for security and privacy<ept id="p1">](powerbi-custom-visuals-review-for-security-and-privacy.md)</ept>
+            [Visualizaciones personalizadas en Power BI](powerbi-custom-visuals.md)
 
-<bpt id="p1">[</bpt>Getting started with custom visuals developer tools (Preview)<ept id="p1">](powerbi-custom-visuals-getting-started-with-developer-tools.md)</ept>
 
-<bpt id="p1">[</bpt>Video: Creating custom visualizations for Power BI with Sachin Patney and Nico Cristache<ept id="p1">](https://www.youtube.com/watch?v=kULc2VbwjCc)</ept>
+            [La Galería de elementos visuales personalizados de Power BI](https://app.powerbi.com/visuals)
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+
+            [Usar visualizaciones personalizadas en Power BI Desktop](powerbi-custom-visuals-use.md)
+
+
+            [Revise los elementos visuales personalizados para la seguridad y privacidad](powerbi-custom-visuals-review-for-security-and-privacy.md)
+
+
+            [Introducción a las herramientas de desarrollo de elementos visuales personalizados (vista previa)](powerbi-custom-visuals-getting-started-with-developer-tools.md)
+
+
+            [Vídeo: Crear visualizaciones personalizadas para Power BI con Sachin Patney y Nico Cristache](https://www.youtube.com/watch?v=kULc2VbwjCc)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

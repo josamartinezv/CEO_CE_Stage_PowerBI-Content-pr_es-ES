@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Power BI Apple Watch app"
-   description="Power BI Apple Watch app"
+   pageTitle="Power BI Apple Watch aplicación"
+   description="Power BI Apple Watch aplicación"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,66 +20,68 @@
    ms.date="10/14/2016"
    ms.author="maggies"/>
 
-# <a name="power-bi-apple-watch-app"></a>Power BI Apple Watch app
+# <a name="power-bi-apple-watch-app"></a>Power BI Apple Watch aplicación
 
-With the Power BI Apple Watch app, you can view KPIs and card tiles from your Power BI dashboards, right on your watch. KPIs and card tiles are best suited to providing a heartbeat measure on the small screen. Check the blog post.
+Con la aplicación Power BI Apple Watch, puede ver los KPI y tarjeta mosaicos desde los paneles de Power BI, justo en el reloj. Los KPI y los iconos de tarjeta son más adecuadas para proporcionar una medida de latido en una pantalla pequeña. Compruebe la entrada de blog.
  
-## <a name="install-the-apple-watch-app"></a>Install the Apple Watch app
-The Power BI Apple Watch app is bundled with the Power BI for iOS app, so when you <bpt id="p1">[</bpt>download the Power BI app to your iPhone<ept id="p1">]</ept><bpt id="p2">(http://go.microsoft.com/fwlink/?LinkId=522062 "</bpt>Download the iPhone app<ept id="p2">")</ept> from the Apple App Store, you're automatically also downloading the Power BI Watch app. The Apple guide explains how to <bpt id="p1">[</bpt>install Apple Watch applications<ept id="p1">](https://support.apple.com/en-us/HT204784)</ept>.
+## <a name="install-the-apple-watch-app"></a>Instalar el Apple Watch aplicación
+La aplicación de Power BI Apple Watch se incluye con la aplicación Power BI para iOS, cuando así se [Descargar la aplicación Power BI en su iPhone](http://go.microsoft.com/fwlink/?LinkId=522062 "Descargar la aplicación de iPhone") desde la tienda de aplicaciones de Apple está automáticamente también descarga la aplicación de Power BI inspección. La Guía de Apple explica cómo [instalar aplicaciones de Apple Watch](https://support.apple.com/en-us/HT204784).
 
-## <a name="sync-your-dashboard-with-power-bi-on-your-apple-watch"></a>Sync your dashboard with Power BI on your Apple Watch
-1. In Power BI on your iPhone, open the dashboard you want to sync with the Apple Watch. 
+## <a name="sync-your-dashboard-with-power-bi-on-your-apple-watch"></a>Sincronizar el panel con Power BI en su Apple Watch
+1. En Power BI en su iPhone, abra el panel que desee sincronizar con el Apple Watch. 
 
-2. Select the ellipsis (...) &gt; <bpt id="p1">**</bpt>Sync with Watch<ept id="p1">**</ept>.
+2. Seleccione los puntos suspensivos (...) > **sincronización con inspección**.
 
-Power BI shows an indicator that the dashboard is synced with the watch.
+Power BI muestra un indicador de que el panel se ha sincronizado con el reloj.
 
-You can only sync one dashboard at a time with the watch.
+Puede sincronizar sólo un panel simultáneamente con la inspección.
 
-> <bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: To view tiles from multiple dashboards on your watch, create a new dashboard in the Power BI service, and pin all the relevant tiles to it.
+> 
+            **Sugerencia**: para ver los iconos de varios paneles en su reloj, cree un nuevo panel en el servicio Power BI y anclar todas las fichas relevantes a él.
 
-## <a name="use-the-power-bi-app-on-the-apple-watch"></a>Use the Power BI app on the Apple Watch
-Get to the Power BI Apple Watch app either from the watch's springboard, or by clicking the Power BI widget (if configured) directly from the watch face.
+## <a name="use-the-power-bi-app-on-the-apple-watch"></a>Utilizar la aplicación de Power BI en el Apple Watch
+Ir a la aplicación de Power BI Apple Watch desde springboard de inspección, o haciendo clic en el widget de Power BI (si está configurado) directamente desde la cara del reloj.
 
 ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_complicatn240arrow.png)
 
-The Power BI Apple Watch app consists of two parts.
+La aplicación de Power BI Apple Watch consta de dos partes.
 
--   The <bpt id="p1">**</bpt>index screen<ept id="p1">**</ept> allows a quick overview of all KPI and card tiles from the synced dashboard.
+-   El **pantalla índice** permite una breve descripción de todos los KPI y tarjeta mosaicos desde el panel sincronizado.
 
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_indexscreen240.png)
 
--   The <bpt id="p1">**</bpt>in-focus tile<ept id="p1">**</ept>: Click a tile on the index screen for an in-depth view of a specific tile.
+-   El **foco mosaico**: haga clic en un icono en la pantalla de índice de una vista detallada de un mosaico concreto.
 
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_kpi.png)
  
-## <a name="set-a-custom-power-bi-widget"></a>Set a custom Power BI widget
-You can also display a specific Power BI tile directly on the Apple Watch face, so it's visible and accessible at all times.
+## <a name="set-a-custom-power-bi-widget"></a>Establecer un widget de Power BI personalizado
+También puede mostrar un icono específico de Power BI directamente en la cara de Apple Watch, por lo que es visible y accesible en todo momento.
 
-The Power BI Apple Watch widget updates close to the time your data updates, keeping your needed information always up to date.
+El widget de Power BI Apple Watch actualiza cerca del momento en las actualizaciones de datos, mantener la información necesaria siempre actualizado.
 
-### <a name="add-a-power-bi-widget-to-your-watch-face"></a>Add a Power BI widget to your watch face
+### <a name="add-a-power-bi-widget-to-your-watch-face"></a>Agregar un widget de Power BI a la cara del reloj
 
-See <bpt id="p1">[</bpt>Customize your Apple Watch face<ept id="p1">](https://support.apple.com/en-us/HT205536)</ept> in the Apple Guide.
+Consulte [personalizar su cara Apple Watch](https://support.apple.com/en-us/HT205536) en la Guía de Apple.
 
-### <a name="change-the-text-on-the-widget"></a>Change the text on the widget
-Given the small space on the Apple Watch face, the Power BI Apple Watch app lets you change the title of the widget to fit the small space.
+### <a name="change-the-text-on-the-widget"></a>Cambiar el texto del widget
+Dado el pequeño espacio en la cara de Apple Watch, la aplicación de Power BI Apple Watch permite cambiar el título del widget para ajustarse al espacio pequeño.
 
--   On your iPhone, go to the Apple Watch control app, select Power BI, navigate to the widget name field, and type a new name.
+-   En su iPhone, vaya a la aplicación de control de Apple Watch, seleccione Power BI, desplácese hasta el campo de nombre de widget y escriba un nombre nuevo.
 
     ![](media/powerbi-mobile-apple-watch/pbi_aplwatch_oniphone.png)
 
  
-> [AZURE.NOTE]  If you don't change the name, the Power BI widget will shorten the name to the number of characters that fit the small space on the watch face. 
+> [AZURE.NOTE]  Si no cambia el nombre, el widget de Power BI Acorte el nombre para el número de caracteres que se ajustan el pequeño espacio en la cara del reloj. 
 
 ### <a name="see-also"></a>Consulte también
 
-Your feedback will help us decide what to implement in the future, so please don’t forget to vote for other features that you would like to see in Power BI mobile apps. 
+Sus comentarios nos ayudarán a decidirlo que lo implemente en el futuro, por favor, no se olvide de votar para otras características que le gustaría ver en aplicaciones móviles de Power BI. 
 
--   Download the <bpt id="p1">[</bpt>Power BI iPhone mobile app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept>
--   Follow <bpt id="p1">[</bpt><ph id="ph1">@MSPowerBI</ph> on Twitter<ept id="p1">](https://twitter.com/MSPowerBI)</ept>
--   Join the conversation at the <bpt id="p1">[</bpt>Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+-   Descargue el [aplicación móvil de iPhone de Power BI](http://go.microsoft.com/fwlink/?LinkId=522062)
+-   Siga [@MSPowerBI en Twitter](https://twitter.com/MSPowerBI)
+-   Únase a la conversación en el [Comunidad de Power BI](http://community.powerbi.com/)
 
-<bpt id="p1">[</bpt>Get started with the iPhone app for Power BI<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept>
+
+            [Introducción a la aplicación de iPhone para Power BI](powerbi-mobile-iphone-app-get-started.md)
 
 

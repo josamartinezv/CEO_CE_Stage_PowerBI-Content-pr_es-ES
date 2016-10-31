@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Types of Quick Insights supported by Power BI"
-   description="Quick Insights with Power BI."
+   pageTitle="Tipos de información rápidamente compatibles con Power BI"
+   description="Rápida visión con Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,65 +21,65 @@
    ms.author="mihart"/>
 
 
-# Types of Quick Insights supported by Power BI
+# Tipos de información rápidamente compatibles con Power BI
 
-## How does Quick Insights work?
+## ¿Cómo funciona la información rápidamente?
 
-Power BI quickly searches different subsets of your dataset while applying a set of sophisticated algorithms to discover potentially-interesting insights. Power BI scans as much of a dataset as possible in an allotted amount of time.
+Power BI busca rápidamente en distintos subconjuntos del conjunto de datos al aplicar un conjunto de algoritmos sofisticados para detectar información potencialmente interesantes. Power BI se analiza como gran parte de un conjunto de datos como sea posible en un intervalo de tiempo asignado.
 
-You can run Quick Insights against a dataset or tile (Related Insights).   
+Puede ejecutar información rápidamente en un conjunto de datos o en mosaico (visión relacionados).   
 
-##  What types of insights can we find?
-These are some of the algorithms we use:
+##  ¿Qué tipos de información se puede buscar?
+Estos son algunos de los algoritmos que se utiliza:
 
-### Majority (Major factors)
-Finds cases where a majority of a total value can be attributed to a single factor when broken down by another dimension.  
+### Mayoría (factores principales)
+Busca los casos donde la mayoría de un valor total puede atribuirse a un único factor cuando desglosadas por otra dimensión.  
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_majority.png)
 
-### Category outliers (top/bottom)
-Highlights cases where, for a measure in the model, one or two members of a dimension have much larger values than other members of the dimension.  
+### Valores atípicos de categoría (superior o inferior)
+Resalta los casos donde, para una medida en el modelo, uno o dos miembros de una dimensión tienen mucho valores mayores que otros miembros de la dimensión.  
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_category_outliers.png)
 
-### Time series outliers
-For data across a time series, detects when there are specific dates or times with values significantly different than the other date/time values.
+### Valores atípicos de series de tiempo
+Para los datos a través de una serie de tiempo, detecta si hay determinadas fechas u horas con valores significativamente diferente de los demás valores de fecha y hora.
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_time_series_outliers.png)
 
-### Overall trends in time series
-Detects upward or downward trends in time series data.
+### Tendencias generales de serie temporal
+Detecta las tendencias hacia arriba o hacia abajo en los datos de serie temporal.
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_trend.png)
 
-### Seasonality in time series
-Finds periodic patterns in time series data, such as weekly, monthly, or yearly seasonality.
+### Estacionalidad en serie temporal
+Busca patrones periódicos de los datos de series temporales, como la estacionalidad semanal, mensual o anual.
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_seasonality_new.png)
 
-### Steady share
-Highlights cases where there is a parent-child correlation between the share of a child value in relation to the overall value of the parent across a continuous variable.
+### Recurso compartido de constante
+Resalta los casos donde hay una correlación de elementos primarios y secundarios entre el recurso compartido de un valor de secundarios en relación con el valor global del elemento primario a través de una variable continua.
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_steadyshare.png)
 
 ### Correlación
-Detects cases where multiple measures show a correlation between each other when plotted against a dimension in the dataset.
+Detecta los casos donde varias medidas muestran una correlación entre sí al registrarse en una dimensión en el conjunto de datos.
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_correlation.png)
 
-### Change points in a time series
-Highlights when there are significant changes in trends in a time series of data.
+### Cambiar los puntos de una serie de tiempo
+Se resalta cuando hay cambios significativos en las tendencias de datos en una serie de tiempo.
 
 ![](media/powerbi-service-auto-insights-types/PBI_auto_insight_types_changepoint.png)
 
 ## Consulte también
 
-[Power BI Quick Insights](powerbi-service-auto-insights.md)
+[Power BI rápida visión](powerbi-service-auto-insights.md)
 
-[Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)
+[Optimizar los datos de visión rápida de Power BI](powerbi-service-auto-insights-optimize.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

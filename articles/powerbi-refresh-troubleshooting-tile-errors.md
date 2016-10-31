@@ -1,6 +1,6 @@
 <properties
-pageTitle="Troubleshooting tile errors"
-description="Common errors that may be encountered when a tile tries to refresh"
+pageTitle="Solución de problemas de errores de mosaico"
+description="Errores comunes que pueden presentarse cuando intente actualizar un mosaico"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,53 +19,53 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="08/15/2016"
 ms.author="asaxton"/>
-# Troubleshooting tile errors
+# Solución de problemas de errores de mosaico
 
-Below are the common errors you may encounter with tiles along with an explanation.
+A continuación se muestran los errores comunes que pueden producirse con mosaicos junto con una explicación.
 
-> [AZURE.NOTE] If you encounter an error that is not listed below, and it is causing you issues, you can ask for further assistance on the <bpt id="p1">[</bpt>community site<ept id="p1">](http://community.powerbi.com/)</ept>, or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerbi.microsoft.com/support/)</ept>.
+> [AZURE.NOTE] Si se produce un error que no se enumera a continuación y está causando problemas, puede pedir ayuda adicional en el [sitio de la Comunidad](http://community.powerbi.com/), o puede crear un [admite vale](https://powerbi.microsoft.com/support/).
 
 ## errores
 
-**Power BI encountered an unexpected error while loading the model. Vuelva a intentarlo más tarde.**
- 
+**Power BI encontró un error inesperado al cargar el modelo. Vuelva a intentarlo más tarde.**
+o **no se pudo recuperar el modelo de datos. Póngase en contacto con el propietario del panel para asegurarse de que los orígenes de datos y el modelo existen y son accesibles.**
 
-We weren't able to access your data because the data source wasn't reachable. This could happen if the data source was removed, renamed, moved, offline, or permissions have changed. Check that the source is still in the location we are pointing to and you still have permission to access it. If that isn't the issue, the source may be slow. Try again later during a time when the load on the source is smaller. If it is an on-premise source, the data source owner may be able to provide more information. 
+No se puede tener acceso a los datos porque el origen de datos no estaba accesible. Esto podría ocurrir si el origen de datos se ha quitado, ha cambiado el nombre, mover, sin conexión o que han cambiado los permisos. Compruebe que el origen aún está en la ubicación que estamos seleccionando y todavía tiene permiso para acceder a ella. Si no es el problema, el origen puede ser lento. Inténtelo de nuevo más tarde durante un tiempo cuando la carga en el origen es menor. Si es un origen local, el propietario del origen de datos puede proporcionar más información. 
 
-**You don’t have permission to view this tile or open the workbook.**
+**No tiene permiso para ver este mosaico o abrir el libro.**
 
-Please contact the dashboard owner to make sure the data sources and model exist and are accessible for your account.
+Póngase en contacto con el propietario del panel para asegurarse de que los orígenes de datos y el modelo existen y son accesibles para su cuenta.
 
-**Data shapes must contain at least one group or calculation that outputs data. Please contact the dashboard owner.**
+**Formas de datos deben contener al menos un grupo o cálculo que envía los datos. Póngase en contacto con el propietario del panel.**
 
-We don't have any data to display because the query is empty. Try adding some fields from the field list to your visual and repinning it.
+No tenemos ningún dato que mostrar porque la consulta está vacía. Intente agregar algunos campos de la lista de campos para el objeto visual y lo anclarlo.
 
-**Can't display the data because Power BI can't determine the relationship between two or more fields.**
+**No se puede mostrar los datos porque Power BI no puede determinar la relación entre dos o más campos.**
 
-You are trying to use two or more fields from tables that are not related. You need to remove the unrelated fields from the visual and then create a relationship between the tables. Once you have done this, you can add the fields back to the visual. This can be done in Power BI Desktop or Power Pivot for Excel. [Obtener más información](powerbi-desktop-create-and-manage-relationships.md)
+Está intentando usar dos o más campos de tablas que no están relacionadas. Debe quitar los campos no relacionados de visual y, a continuación, crear una relación entre las tablas. Cuando haya hecho esto, puede agregar los campos al objeto visual. Esto puede hacerse en Power BI Desktop o PowerPivot para Excel. [Obtener más información](powerbi-desktop-create-and-manage-relationships.md)
 
-**The groups in the primary axis and the secondary axis overlap. Groups in the primary axis can't have the same keys as groups in the secondary axis.**
+**Los grupos en el eje principal y el eje secundario se superponen. Grupos del eje principal no pueden tener las mismas claves como grupos en el eje secundario.**
 
-This is usually a transient issue. This will typically happen when you are moving groups from rows to columns. In this case, the error should disappear when you finish moving all the groups. If you still see the message, try switching fields between the rows and columns or the axis legend or removing fields from the visual.  
+Por lo general, suele ser un problema transitorio. Esto ocurre normalmente cuando mueva los grupos de filas a las columnas. En este caso, el error debería desaparecer cuando haya terminado de mover todos los grupos. Si continúa recibiendo el mensaje, intente campos conmutación entre las filas y columnas o en la leyenda de eje o quitar campos desde el objeto visual.  
 
-**This visual has exceeded the available resources. Try filtering to decrease the amount of data displayed.**
+**Este objeto visual superó los recursos disponibles. Intente filtrar para disminuir la cantidad de datos que se muestran.**
 
-Your visual has attempted to query too much data for us to complete the result with the available resources. Try filtering the visual to reduce the amount of data in the result.
+El objeto visual ha intentado consultar demasiados datos para poder completar el resultado con los recursos disponibles. Intente filtrar visual para reducir la cantidad de datos en el resultado.
 
-**We are not able to identify the following fields: {0}. Please update the visual with fields that exist in the dataset.**
+**No es posible identificar los campos siguientes: {0}. Actualice el objeto visual con campos que existen en el conjunto de datos.**
 
-The field was likely deleted or renamed. You can remove the broken field from the visual, add a different field, and repin it.
+Es probable que el campo se ha eliminado o se ha cambiado. Puede quitar el campo roto de visual, agregue un campo diferente y anclar a.
 
-**Couldn't retrieve the data for this visual. Vuelva a intentarlo más tarde.**
+**No se pudo recuperar los datos para este objeto visual. Vuelva a intentarlo más tarde.**
 
-This is usually a transient issue. If you try again later and you still see this message, please contact support.
+Por lo general, suele ser un problema transitorio. Si lo intenta más tarde y todavía aparece este mensaje, póngase en contacto con el soporte técnico.
 
 ## Póngase en contacto con el soporte técnico.
 
-If you are still having an issue, please <bpt id="p1">[</bpt>contact support<ept id="p1">](https://support.powerbi.com)</ept> to investigate further.
+Si sigue teniendo un problema, inicie [póngase en contacto con soporte técnico](https://support.powerbi.com) investigar más.
 
 ## Consulte también
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Troubleshooting Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+[Solución de problemas de Power BI Personal Gateway](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

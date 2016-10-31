@@ -1,6 +1,6 @@
 <properties
-   pageTitle="DirectQuery for Oracle and Teradata databases"
-   description="DirectQuery for Oracle and Teradata databases"
+   pageTitle="DirectQuery para las bases de datos de Oracle y Teradata"
+   description="DirectQuery para las bases de datos de Oracle y Teradata"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,14 +20,14 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# DirectQuery for Oracle and Teradata Databases
+# DirectQuery para Oracle y bases de datos Teradata
 
-With Power BI Desktop you can connect to Oracle and Teradata databases directly using DirectQuery.
+Con Power BI Desktop puede conectarse a bases de datos Oracle y Teradata directamente mediante DirectQuery.
 
-In this release, you can choose to connect to Oracle or Teradata databases using either <bpt id="p1">**</bpt>Import<ept id="p1">**</ept> or <bpt id="p2">**</bpt>DirectQuery<ept id="p2">**</ept>:
+En esta versión, puede elegir conectarse a bases de datos Oracle o Teradata utilizando **importación** o **DirectQuery**:
 
--   If you connect using <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept>, no data is imported or copied into Power BI Desktop. As you create or interact with a visualization, Power BI Desktop queries the underlying data source to get the necessary data to respond to your interaction, which means you’re always viewing current data. See <bpt id="p1">[</bpt>Use DirectQuery in Power BI Desktop<ept id="p1">](powerbi-desktop-use-directquery.md)</ept> for a description of DirectQuery.
+-   Si se conecta mediante **DirectQuery**, se importan o copian en Power BI Desktop ningún dato. Crear o interactuar con una visualización, Power BI Desktop consulta el origen de datos subyacente para obtener los datos necesarios para responder a la interacción, lo que significa que siempre está viendo los datos actuales. Consulte [DirectQuery de uso en Power BI Desktop](powerbi-desktop-use-directquery.md) para obtener una descripción de DirectQuery.
 
--   If you connect with <bpt id="p1">**</bpt>Import<ept id="p1">**</ept>, data is imported into Power BI Desktop upon connection to the database, and interaction with the data is based on what was imported.
+-   Si se conecta con **importación**, importar datos a Power BI Desktop tras la conexión a la base de datos y la interacción con los datos se basa en lo que se importó.
 
-DirectQuery for Oracle and Teradata databases is available for Power BI Desktop and for the Power BI service.
+DirectQuery para las bases de datos de Oracle y Teradata está disponible para Power BI Desktop y para el servicio Power BI.

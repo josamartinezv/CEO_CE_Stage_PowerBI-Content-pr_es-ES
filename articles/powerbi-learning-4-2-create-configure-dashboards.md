@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create and Configure a Dashboard"
-   description="Customize dashboards in Power BI"
+   pageTitle="Crear y configurar un panel"
+   description="Personalizar los paneles de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,26 +23,28 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create and Configure A Dashboard
+# Crear y configurar un panel
 
-<bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept> in Power BI are one-page collections of visualizations that are created from within the Power BI service. You create dashboards by <bpt id="p1">**</bpt>pinning<ept id="p1">**</ept> visualizations from reports that you authored and published using Power BI Desktop, or visualizations you created within the Power BI service itself. <bpt id="p1">**</bpt>Pinning<ept id="p1">**</ept> a visual to a dashboard is a lot like pinning a picture to a corkboard on a wall - it sticks the visual there, in a particular spot, for others to see. To pin a visual, open its report on the Power BI service. Hover over the visual you want to pin and select the <bpt id="p1">**</bpt>pin<ept id="p1">**</ept> icon.
+
+            **Paneles** en Power BI son colecciones de una página de visualizaciones que se crean desde el servicio Power BI. Crear paneles por **anclaje** visualizaciones de informes que creados y publicados con Power BI Desktop o visualizaciones creadas dentro de Power BI propio servicio. 
+            **Fijar** un objeto visual en un panel es muy similar a fijar una imagen a un corkboard en una pared: lo quedado visual no existe, en una zona determinada, otras personas vean. Para anclar un objeto visual, abra el informe en el servicio Power BI. Mantenga el mouse sobre el elemento visual que desea anclar y seleccione el **pin** icono.
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_1.png)
 
-A dialog appears, where you select a destination dashboard for the visual from the drop-down menu, or you can create a new dashboard. You also get a preview of what the pinned visual will look like in the dashboard. You can pin visualizations from multiple reports and pages to a single dashboard, allowing you to combine different datasets and sources into a single page of insights.
+Aparece un cuadro de diálogo, donde puede seleccionar un panel de destino para el objeto visual en el menú desplegable, o puede crear un nuevo panel. También obtendrá una vista previa del aspecto de visual anclado en el panel. Puede anclar visualizaciones de varias páginas y los informes a un solo panel, lo que le permite combinar diferentes conjuntos de datos y orígenes en una sola página de información.
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_2.png)
 
-On <bpt id="p1">**</bpt>Dashboards<ept id="p1">**</ept>, you can add any sort of visualization including graphs, maps, images, and shapes, by "pinning" them. Once a visual is pinned to a dashboard, it's called a <bpt id="p1">**</bpt>tile<ept id="p1">**</ept>.
+En **paneles**, puede agregar cualquier tipo de visualización de gráficos, mapas, imágenes, formas y, por "fijando" en ellos. Una vez que un elemento visual está anclado a un panel, se llama una **icono**.
 
-Your dashboards, including any new ones, appear in the Dashboards section on the left side of the Power BI service. Select a dashboard from the list to view it.
+Los paneles, incluidos los nuevos aparecen en la sección paneles en el lado izquierdo del servicio Power BI. Seleccione un panel de la lista para verlo.
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_3.png)
 
-You can change the layout of visuals on a dashboard however you'd like. To resize a tile, drag its handles in or out. To move a tile, simply click and drag it to a different location on the dashboard. Hover over a tile and click the <bpt id="p1">**</bpt>pencil<ept id="p1">**</ept> icon to open the <bpt id="p2">**</bpt>Tile Details<ept id="p2">**</ept>, where you can change the <bpt id="p3">**</bpt>Title<ept id="p3">**</ept> or <bpt id="p4">**</bpt>Subtitle<ept id="p4">**</ept>.
+Puede cambiar el diseño de elementos visuales en un panel pero le gustaría. Para cambiar el tamaño de un mosaico, arrastre los controladores o de salida. Para mover un mosaico, haga clic y arrástrelo a una ubicación diferente en el panel. Mantenga el mouse sobre un icono y haga clic en el **lápiz** icono para abrir el **icono detalles**, donde puede cambiar el **título** o **subtítulo**.
 
 ![](media/powerbi-learning-4-2-create-configure-dashboards/4-2_4.png)
 
-Click on a dashboard tile to view the report from which it originated. This lets you quickly view the underlying data beneath a visual. You can also change that link by using the <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> field in <bpt id="p2">**</bpt>Tile Details<ept id="p2">**</ept>.
+Haga clic en un icono de panel para ver el informe de origen. Esto le permite ver rápidamente los datos subyacentes por debajo de un objeto visual. También puede cambiar ese vínculo mediante el **conjunto de vínculos personalizados** campo **Detalles de mosaico**.
 
-You can pin tiles from one dashboard to another, for example if you have a collection of dashboards and want to create one summary board. The process is the same: hover over the tile and select the <bpt id="p1">**</bpt>pin icon<ept id="p1">**</ept>. Dashboards are easy to create, and to change. And you can customize them to make your one-page dashboard show exactly what it should.
+Puede anclar mosaicos desde un panel a otro, por ejemplo, si tiene una colección de paneles y desea crear un panel de resumen. El proceso es el mismo: mantenga el mouse sobre el icono y seleccione la **el icono de alfiler**. Los paneles son fáciles de crear y cambiar. Y puede personalizarlos para hacer que el panel de una página aparezca exactamente lo que debería.

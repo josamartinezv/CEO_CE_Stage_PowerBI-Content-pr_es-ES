@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Troubleshooting unsupported data source for refresh"
-   description="Troubleshooting unsupported data source for refresh"
+   pageTitle="Solucionar problemas de origen de datos no admitidos para la actualización"
+   description="Solucionar problemas de origen de datos no admitidos para la actualización"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,36 +20,36 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
 
-# Troubleshooting unsupported data source for refresh  
+# Solucionar problemas de origen de datos no admitidos para la actualización  
 
-You may see an error when trying to configured a dataset for scheduled refresh.
+Puede ver un error al intentar configurar un conjunto de datos para la actualización programada.
 
         You cannot schedule refresh for this dataset because it gets data from sources that currently don’t support refresh.
 
-This happens when the data source you used, within Power BI Desktop, isn’t supported for refresh. You will need to find the data source that you are using and compare that against the list of supported data sources at <bpt id="p1">[</bpt>Refresh data in Power BI<ept id="p1">](powerbi-refresh-data.md)</ept>. 
+Esto sucede cuando el origen de datos que usó en Power BI Desktop, no se admite para la actualización. Debe buscar el origen de datos que está utilizando y compare eso con la lista de admite orígenes de datos en [Actualizar datos en Power BI](powerbi-refresh-data.md). 
 
-## Find the data source  
-If you aren’t sure what data source was used, you can find that using the following steps within Power BI Desktop.  
+## Buscar el origen de datos  
+Si no está seguro de qué origen de datos se utilizó, encontrará mediante los siguientes pasos en Power BI Desktop.  
 
-1.  In Power BI Desktop, make sure you are on the <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> pane.  
+1.  En Power BI Desktop, asegúrese de que se encuentra en el **informe** panel.  
     ![](media/powerbi-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-report-pane.png)
 
-2.  Select <bpt id="p1">**</bpt>Edit Queries<ept id="p1">**</ept> from the ribbon bar.  
+2.  Seleccione **Editar consultas** desde la barra de la cinta de opciones.  
     ![](media/powerbi-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-edit-queries.png)
 
-3.  Select <bpt id="p1">**</bpt>Advanced Editor<ept id="p1">**</ept>.  
+3.  Seleccione **Editor avanzadas**.  
     ![](media/powerbi-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-advanced-editor.png)
 
-4.  Make note of the provider listed for the source.  In this example, the provider is ActiveDirectory.  
+4.  Tome nota del proveedor para el origen.  En este ejemplo, el proveedor es Active Directory.  
     ![](media/powerbi-admin-troubleshoot-unsupported-data-source-for-refresh/tshoot-provider.png)
 
-5.  Compare the provider with the list of supported data sources found within <bpt id="p1">[</bpt>Refresh data in Power BI<ept id="p1">](powerbi-refresh-data.md)</ept>.  You will find that Active Directory is not a supported data source for refresh.  
+5.  Comparar con la lista de orígenes de datos admitidos se encuentran en el proveedor de [Actualizar datos en Power BI](powerbi-refresh-data.md).  Encontrará que Active Directory no es un origen de datos admitidos para la actualización.  
 
 ## Véase también
 
-[Data Refresh](powerbi-refresh-data.md)  
-[Power BI Gateway - Personal](powerbi-personal-gateway.md)  
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Actualización de datos](powerbi-refresh-data.md)  
+[Puerta de enlace de Power BI - Personal](powerbi-personal-gateway.md)  
+[Puerta de enlace de datos local](powerbi-gateway-onprem.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+[Solución de problemas de la puerta de enlace de Power BI - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

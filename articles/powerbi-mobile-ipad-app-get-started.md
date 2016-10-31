@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Get started with the iPad app"
-   description="The Microsoft Power BI for iOS app on the iPad is a key part of the mobile BI experience for Power BI and Reporting Services."
+   pageTitle="Introducción a la aplicación de iPad"
+   description="Microsoft Power BI para aplicación de iOS en el iPad es una parte clave de la experiencia móvil de BI para Power BI y Reporting Services."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,95 +20,105 @@
    ms.date="10/12/2016"
    ms.author="maggies"/>
 
-# <a name="get-started-with-the-ipad-app-(power-bi-for-ios)"></a>Get started with the iPad app (Power BI for iOS)  
+# <a name="get-started-with-the-ipad-app-(power-bi-for-ios)"></a>Introducción a la aplicación de iPad (Power BI para iOS)  
 
-The iPad app for Microsoft Power BI for iOS is part of the mobile BI experience for Power BI and Reporting Services. With live, touch-enabled mobile access to your important business information on premises and in the cloud, you can view and interact with your company dashboards and reports easily, from anywhere. Explore the data in dashboards, and share them with your colleagues in email or text messages.  
+La aplicación de iPad para Microsoft Power BI para iOS forma parte de la experiencia móvil de BI para Power BI y Reporting Services. Con acceso móvil directo y táctil a la información empresarial importante de forma local y en la nube, puede ver e interactuar con los informes y paneles empresariales fácilmente, desde cualquier lugar. Explorar los datos en paneles y compártalos con sus colegas en mensajes de correo electrónico o texto.  
 
 ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-sample-dashboard.png)
 
-You <bpt id="p1">[</bpt>create dashboards and reports in the Power BI service<ept id="p1">](powerbi-service-get-started.md)</ept> with your data. 
+Se [crear paneles e informes en el servicio de Power BI](powerbi-service-get-started.md) con los datos. 
 
-Then interact with your dashboards and reports, explore the data, and share them, all from the iPad app for Power BI.
+A continuación, interactuar con los paneles e informes, explorar los datos y compartirlos desde la aplicación de iPad para Power BI.
 
-You can also <bpt id="p1">[</bpt>view Reporting Services KPIs and mobile reports for your on-premises data<ept id="p1">](powerbi-mobile-ipad-kpis-mobile-reports.md)</ept> in the iPad app for Power BI. You <bpt id="p1">[</bpt>create those KPIs and mobile reports with the SQL Server Mobile Report Publisher<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept>.
+También puede [Ver informes móviles para los datos locales y Reporting Services KPI](powerbi-mobile-ipad-kpis-mobile-reports.md) en la aplicación de iPad para Power BI. Se [crear los KPI y los informes de dispositivos móviles con el publicador de SQL Server Mobile informe](https://msdn.microsoft.com/library/mt652547.aspx).
 
-Find out <bpt id="p1">[</bpt>what's new in the Power Bi mobile apps<ept id="p1">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+Descubra [Novedades en las aplicaciones móviles de Power Bi](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
-## <a name="download-the-ios-app-for-the-ipad"></a>Download the iOS app for the iPad  
-<bpt id="p1">[</bpt>Download the iPad app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> from the Apple App Store.
+## <a name="download-the-ios-app-for-the-ipad"></a>Descargar la aplicación de iOS para el iPad  
 
-> [AZURE.NOTE]  Your iPad needs to be running at least iOS 9.0. 
+            [Descargue la aplicación de iPad](http://go.microsoft.com/fwlink/?LinkId=522062) desde la tienda de aplicaciones de Apple.
 
-## <a name="sign-up-for-the-power-bi-service"></a>Sign up for the Power BI service
+> [AZURE.NOTE]  Debe ejecutar al menos el iPad iOS 9.0. 
 
-Go to <bpt id="p1">[</bpt>Power BI to sign up<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=513879)</ept> for the service, if you haven't already. It's free.
+## <a name="sign-up-for-the-power-bi-service"></a>Registrarse para el servicio Power BI
 
-## <a name="get-started-with-the-power-bi-app"></a>Get started with the Power BI app 
+Vaya a [Power BI para suscribirse](http://go.microsoft.com/fwlink/?LinkID=513879) para el servicio, si no lo ha hecho ya. Es gratuito.
 
-1.  In the iPad, open the Power BI app.
+## <a name="get-started-with-the-power-bi-app"></a>Introducción a la aplicación Power BI 
+
+1.  En el iPad, abra la aplicación Power BI.
   
-2.  To view your Power BI dashboards and reports, tap <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept>. Sign in with the same credentials as your Power BI account on the web. 
+2.  Para ver los informes y paneles de Power BI, puntee **Power BI**. Inicie sesión con las mismas credenciales de su cuenta de Power BI en la web. 
 
-    To view your Reporting Services mobile reports and KPIs, tap <bpt id="p1">**</bpt>SQL Server Reporting Services<ept id="p1">**</ept>. Sign in with your SQL Server Reporting Services credentials.
+    Para ver los informes de Reporting Services móviles y KPI, puntee **SQL Server Reporting Services**. Inicie sesión con sus credenciales de SQL Server Reporting Services.
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-connect-to.png)
 
-    ><bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: When you're in the app, tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png)</ph> in the upper-left corner to go between the two services. 
+    >
+            **Sugerencia**: cuando se encuentra en la aplicación, puntee en el botón de navegación global ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) en la esquina superior izquierda para desplazarse entre los dos servicios. 
 
-## <a name="try-the-power-bi-and-reporting-services-samples"></a>Try the Power BI and Reporting Services samples  
-Even without signing up, you can play with the Power BI and Reporting Services samples. After you download the app, you can view the samples or get started. Go back to the samples whenever you want from the dashboards home page.
+## <a name="try-the-power-bi-and-reporting-services-samples"></a>Pruebe los ejemplos de Power BI y Reporting Services  
+Incluso sin registrarse, puede reproducir con los ejemplos de Power BI y Reporting Services. Después de descargar la aplicación, puede ver los ejemplos o empezar a trabajar. Volver a los ejemplos siempre que lo desee desde la página principal de paneles.
 
-### <a name="power-bi-samples"></a>Power BI samples
+### <a name="power-bi-samples"></a>Ejemplos de Power BI
 
-You can view and interact with the Power BI dashboard samples, but there are a few things you can't do with them. You can't open the reports behind the dashboards, share the samples with others, or make them your favorites.
+Puede ver e interactuar con los ejemplos de panel de Power BI, pero hay algunas cosas que no puede hacer con ellos. No se puede abrir los informes de los paneles, compartir los ejemplos con otros usuarios o que sean sus favoritos.
 
-1.   Tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png)</ph> in the upper-left corner.
+1.   Puntee en el botón de navegación global ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) en la esquina superior izquierda.
   
-2.   Tap <bpt id="p1">**</bpt>Power BI samples<ept id="p1">**</ept>, then pick a role and explore the sample dashboard for that role.  
+2.   Puntee en **ejemplos de Power BI**, elija un rol y explore el panel de ejemplo para ese rol.  
 
     ![](media/powerbi-mobile-ipad-app-get-started/PBI_iPad_Samples2.png)
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>:  Not all features are available in the samples. For example, you can't view the sample reports that underlie the dashboards. 
+    >
+            **Nota**: no todas las características están disponibles en los ejemplos. Por ejemplo, no puede ver los informes de ejemplo que subyacen a los paneles. 
 
-### <a name="reporting-services-mobile-report-samples"></a>Reporting Services mobile report samples
+### <a name="reporting-services-mobile-report-samples"></a>Ejemplos de Reporting Services informe móvil
 
-1.   Tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png)</ph> in the upper-left corner.
+1.   Puntee en el botón de navegación global ![](media/powerbi-mobile-ipad-app-get-started/power-bi-iphone-global-nav-button.png) en la esquina superior izquierda.
 
-2.  Tap <bpt id="p1">**</bpt>Reporting Services samples<ept id="p1">**</ept>, then open either the Retail Reports or the Sales Reports folder to explore their KPIs and mobile reports.
+2.  Puntee en **ejemplos de Reporting Services**, a continuación, abra los informes de venta directa o la carpeta de informes de ventas para explorar sus KPI y los informes de dispositivos móviles.
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-reporting-services-samples.png)
 
-## <a name="search-for-a-dashboard-or-report"></a>Search for a dashboard or report
+## <a name="search-for-a-dashboard-or-report"></a>Buscar un panel o informe
 
-* Tap the magnifying glass in the upper-right corner <ph id="ph1">![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-search-icon.png)</ph>, then type the term to find.
+* Puntee en la lupa en la esquina superior derecha ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-search-icon.png), a continuación, escriba el término de búsqueda.
 
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-search.png)
 
-    By default it searches all dashboards and reports, but you can search just one or the other.
+    De forma predeterminada busca todos los paneles e informes, pero puede buscar sólo una u otra.
 
 
-## <a name="more-with-power-bi-dashboards-and-reports-in-the-mobile-apps"></a>More with Power BI dashboards and reports in the mobile apps 
-See what else you can do in the iPad app with dashboards and reports in Power BI, and Reporting Services mobile reports and KPIs in the Reporting Services web portal.
+## <a name="more-with-power-bi-dashboards-and-reports-in-the-mobile-apps"></a>Más con paneles de Power BI e informes en las aplicaciones móviles 
+Vea lo que puede hacer con la aplicación de iPad y paneles e informes en Power BI y los informes de Reporting Services móviles y KPI en el portal web de Reporting Services.
 
--   View your <bpt id="p1">[</bpt>Power BI dashboards<ept id="p1">](powerbi-mobile-dashboards-on-the-ipad-app.md)</ept>.
--   Interact with <bpt id="p1">[</bpt>tiles on your Power BI dashboards<ept id="p1">](powerbi-mobile-tiles-in-the-ipad-app.md)</ept>.
--   Open <bpt id="p1">[</bpt>Power BI reports<ept id="p1">](powerbi-mobile-reports-on-the-ipad-app.md)</ept> from your dashboard.
--   <bpt id="p1">[</bpt>Share Power BI dashboards<ept id="p1">](powerbi-mobile-share-dashboards-from-the-ipad-app.md)</ept>.
--   <bpt id="p1">[</bpt>Annotate and share a snapshot<ept id="p1">](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md)</ept> of a tile.
--   View your <bpt id="p1">[</bpt>groups' Power BI dashboards and reports<ept id="p1">](powerbi-service-mobile-groups-in-the-ipad-app.md)</ept>.
--   <bpt id="p1">[</bpt>Set data alerts<ept id="p1">](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)</ept> to get notifications when your data changes.
--   View <bpt id="p1">[</bpt>notifications about updates to your Power BI account<ept id="p1">](powerbi-mobile-notification-center.md)</ept>, such as dashboards that colleagues share with you.
+-   Ver su [paneles de Power BI](powerbi-mobile-dashboards-on-the-ipad-app.md).
+-   Interactuar con [iconos en los paneles de Power BI](powerbi-mobile-tiles-in-the-ipad-app.md).
+-   Abra [informes de Power BI](powerbi-mobile-reports-on-the-ipad-app.md) desde el panel.
+-   
+            [Compartir paneles de Power BI](powerbi-mobile-share-dashboards-from-the-ipad-app.md).
+-   
+            [Anotar y compartir una instantánea](powerbi-mobile-annotate-and-share-a-snapshot-from-the-ipad-app.md) de un mosaico.
+-   Ver su [paneles de Power BI e informes de los grupos](powerbi-service-mobile-groups-in-the-ipad-app.md).
+-   
+            [Establecer alertas de datos](powerbi-mobile-set-data-alerts-in-the-iphone-app.md) para recibir notificaciones cuando los datos cambian.
+-   Vista [notificaciones sobre las actualizaciones a su cuenta de Power BI](powerbi-mobile-notification-center.md), como paneles de colegas compartan con usted.
    
     ![](media/powerbi-mobile-ipad-app-get-started/power-bi-ipad-notifications.png)
 
-## <a name="more-with-reporting-services-mobile-reports-and-kpis"></a>More with Reporting Services mobile reports and KPIs
+## <a name="more-with-reporting-services-mobile-reports-and-kpis"></a>Más con los informes de Reporting Services móviles y KPI
 
-- <bpt id="p1">[</bpt>View Reporting Services mobile reports and KPIs<ept id="p1">](powerbi-mobile-ipad-kpis-mobile-reports.md)</ept> on the Reporting Services web portal.
-- Create <bpt id="p1">[</bpt>KPIs on the Reporting Services web portal<ept id="p1">](https://msdn.microsoft.com/library/mt683632.aspx)</ept>.
-- <bpt id="p1">[</bpt>Create your own mobile reports with the SQL Server Mobile Report Publisher<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept>, and publish them to the Reporting Services web portal.
+- 
+            [Ver informes de Reporting Services móviles y KPI](powerbi-mobile-ipad-kpis-mobile-reports.md) en el portal web de Reporting Services.
+- Crear [KPI en el portal web de Reporting Services](https://msdn.microsoft.com/library/mt683632.aspx).
+- 
+            [Crear sus propios informes móviles con el publicador de informes de SQL Server Mobile](https://msdn.microsoft.com/library/mt652547.aspx), y publíquelos en el portal web de Reporting Services.
 
 ### <a name="see-also"></a>Consulte también  
-- <bpt id="p1">[</bpt>Get started with the iPhone app for Power BI<ept id="p1">](powerbi-mobile-ipad-app-get-started.md)</ept>  
-- <bpt id="p1">[</bpt>Get started with Power BI<ept id="p1">](powerbi-service-get-started.md)</ept>  
-- Questions? Try asking the <bpt id="p1">[</bpt>Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [Introducción a la aplicación de iPhone para Power BI](powerbi-mobile-ipad-app-get-started.md)  
+- 
+            [Introducción a Power BI](powerbi-service-get-started.md)  
+- ¿Tiene preguntas? Pruebe a formular la [Comunidad de Power BI](http://community.powerbi.com/)
 

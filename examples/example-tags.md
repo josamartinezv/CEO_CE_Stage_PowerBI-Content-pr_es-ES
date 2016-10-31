@@ -1,39 +1,49 @@
-<properties pageTitle="Documentation Example - Tags" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Tags" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación - etiquetas" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Tags" solutions="" authors="" videoId="" scriptId="" />
 
 <tags ms.service="AzureWebSites" ms.devlang="CSharp" ms.topic="home-page" ms.tgt_pltfrm="Windows" ms.workload="50" ms.date="06/12/2014" ms.author="maurok;v-nabeni@microsoft.com;lito@mail.com" />
 
-# Example - Tags #
+# Por ejemplo, etiquetas #
 
-This is a sample documentation article that is used to test and validate the publishing system for Azure.com.  
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para Azure.com.  
 
-The example <ph id="ph1">`&lt;tags /&gt;`</ph> element can be found right below the <ph id="ph2">`&lt;properties /&gt;`</ph> element at the beginning of the document.
+El ejemplo `<tags />` se puede encontrar el elemento justo debajo del `<properties />` elemento situado al principio del documento.
 
-Unless otherwise specified (e.g. for ms.date), values should be restricted to alphanumeric  characters and hyphens and the length of the value should be restricted to 30 characters.
+A menos que se especifique lo contrario (por ejemplo, para ms.date), valores deben estar restringidos a caracteres alfanuméricos y guiones y la longitud del valor deben estar restringidos a 30 caracteres.
 
-There are 7 required attributes for the tags element: 
+Hay 7 atributos necesarios para el elemento de etiquetas: 
 
-- <bpt id="p1">**</bpt>ms.service<ept id="p1">**</ept>: Specifies the Azure service, tool, or feature that the article applies to.
+- 
+            **MS.Service**: especifica el servicio de Azure, herramienta o característica que se aplica el artículo.
 
-- <bpt id="p1">**</bpt>ms.devlang<ept id="p1">**</ept>: Specifies the programming language that the article applies to.
+- 
+            **MS.DevLang**: especifica el lenguaje de programación que se aplica el artículo.
 
-- <bpt id="p1">**</bpt>ms.topic<ept id="p1">**</ept>: Specifies the topic type.
+- 
+            **MS.topic**: especifica el tipo de tema.
 
-    > <bpt id="p1">**</bpt>Valid Values<ept id="p1">**</ept>: <bpt id="p2">*</bpt>article, hero-article, reference, index-page, campaign-page, video-page, infographic-page, home-page, service-home-page, dev-center-home-page, site-section-home-page<ept id="p2">*</ept>  
+    > 
+            **Los valores válidos**: *artículo, artículo héroe, referencia, página de índice, página de campaña, página de vídeo, página infografía, página principal, página de inicio del servicio, dev--página principal del centro de, sección-página principal del sitio*  
 
-- <bpt id="p1">**</bpt>ms.tgt_pltfrm<ept id="p1">**</ept>: Specifies the target platform, for instance Windows, Linux, Windows Phone, iOS, or Android.
+- 
+            **MS.tgt_pltfrm**: especifica la plataforma de destino, por ejemplo Windows, Linux, Windows Phone, iOS o Android.
 
-- <bpt id="p1">**</bpt>ms.workload<ept id="p1">**</ept>: Specifies a C&amp;E workload to which the topic applies to.
+- 
+            **MS.Workload**: especifica una carga de trabajo de C & E a la que el tema se aplica a.
 
-- <bpt id="p1">**</bpt>ms.date<ept id="p1">**</ept>: Specifies the last updated date for the topic.
+- 
+            **MS.Date**: especifica la última fecha actualizada para el tema.
 
-    >  “04/10/2014”
+    > 
+            **Los valores válidos**: fechas del formato mm/dd/aaaa, p. ej. “04/10/2014”
 
-- <bpt id="p1">**</bpt>ms.author<ept id="p1">**</ept>: Specifies the author(s) associated with the topic. Para especificar varios valores, debe separarlos por punto y coma.
+- 
+            **MS.author**: especifica los autores asociados al tema. Para especificar varios valores, debe separarlos por punto y coma.
 
-    > <bpt id="p1">**</bpt>Valid Values<ept id="p1">**</ept>: Microsoft aliases and complete email addresses. Length should be no longer than 200 characters.
+    > 
+            **Los valores válidos**: alias de Microsoft y las direcciones de correo electrónico completa. Longitud debe ser no más de 200 caracteres.
 
 
-Here's an example of a valid the tags element:
+Este es un ejemplo de un elemento de etiquetas:
 
 ````XML
 <tags ms.service="AzureWebSites" ms.devlang="CSharp" ms.topic="home-page" ms.tgt_pltfrm="Windows" ms.workload="50" ms.date="06/12/2014" ms.author="maurok;v-nabeni@microsoft.com;lito@mail.com" />

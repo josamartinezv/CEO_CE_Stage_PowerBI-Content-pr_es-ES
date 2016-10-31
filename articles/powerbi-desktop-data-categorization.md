@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Data categorization in Power BI Desktop"
-   description="Data categorization in Power BI Desktop"
+   pageTitle="Categorización de datos en Power BI Desktop"
+   description="Categorización de datos en Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,28 +20,28 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Data categorization in Power BI Desktop  
+# Categorización de datos en Power BI Desktop  
 
-In <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, you can specify the Data Category for a column so Power BI Desktop knows how it should treat its values when in a visualization.
+En **Power BI Desktop**, puede especificar la categoría de datos para una columna para Power BI Desktop sepa cómo debe tratar sus valores en una visualización.
 
-When Power BI Desktop imports data, not only does it get the data itself, it also gets information such as the table and column names, whether it’s a primary key, etc.  With that information, Power BI Desktop makes some assumptions about how to give you a good default experience when creating a visualization. 
+Cuando Power BI Desktop importa datos, no sólo pone los datos en Sí, también obtiene información como los nombres de tabla y columna, ya sea un etc. clave, principal.  Con esa información, Power BI Desktop hace algunas suposiciones acerca de cómo proporcionar una experiencia buena opción predeterminada cuando se crea una visualización. 
 
-Here’s an example: When Power BI Desktop detects a column has numeric values, you’ll probably want to aggregate it in some way, so it’s placed in the Values area. Or, for a column with date time values, it assumes you’ll probably use it as a time hierarchy axis on a line chart.
+Este es un ejemplo: Power BI Desktop detecta una columna tiene valores numéricos, probablemente deseará agregar de alguna manera, por lo que se coloca en el área de valores. O bien, para una columna con valores de fecha y hora, se supone que probablemente va a utilizar como un eje de la jerarquía de tiempo en un gráfico de líneas.
 
-But, there are some cases that are a bit more challenging, like geography. Consider the following table from an Excel worksheet:
+Sin embargo, existen algunos casos que son un poco más complicado, como la geografía. Tenga en cuenta la siguiente tabla desde una hoja de cálculo de Excel:
 
 ![](media/powerbi-desktop-data-categorization/DataCategorizationTable.png)
 
-Should Power BI Desktop treat the codes in the GeoCode column as an abbreviation for a Country or a US State?  It’s not clear because a code like this can mean either one.  For instance, AL can mean Alabama or Albania, AR can mean Arkansas or Argentina, or CA can mean California or Canada. It makes a difference when we go to chart our GeoCode field on a map.  Should Power BI Desktop show a picture of the world with countries highlighted or a picture of the United States with states highlighted?  You can specify a Data Category for data just like this. Data categorization further refines the information Power BI Desktop can use to provide the best visualizations.  
+¿Power BI Desktop tratará los códigos en la columna de código geográfico como una abreviatura para un país o en estado nosotros?  No está claro porque un código como éste puede significar una.  Por ejemplo, puede significar AL Alabama o Albania, AR puede significar Arkansas o Argentina o CA puede significar California o Canadá. Marca la diferencia cuando se vaya a nuestro campo de código geográfico en un mapa del gráfico.  ¿Debe Power BI Desktop mostrar una imagen del mundo con países resaltado o una imagen de los Estados Unidos con Estados resaltado?  Puede especificar una categoría de datos para los datos de esta manera. Aún más la categorización de datos mejora la información de que Power BI Desktop puede utilizar para proporcionar las mejores visualizaciones.  
 
-**To specify a Data Category**
+**Para especificar una categoría de datos**
 
-1.  In Report View or Data View, in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> list, select the field you want to be sorted by a different categorization.
+1.  En la vista de informe o vista de datos, en la **campos** seleccione el campo que desea ordenar por una clasificación diferente.
 
-2.  On the ribbon, in the <bpt id="p1">**</bpt>Data Tools Modeling<ept id="p1">**</ept> tab, click on the <bpt id="p2">**</bpt>Data Category:<ept id="p2">**</ept> drop down list.  This shows the list of possible data categories you can choose for your column.  Some selections might be disabled if they won’t work with the current data type of your column.  For example, if a column is a binary data type, Power BI Desktop won’t let you choose geographic data categories. 
+2.  En la cinta de opciones, en el **Herramientas de modelado de datos** haga clic en el **datos categoría:** lista desplegable.  Esto muestra la lista de categorías de datos posibles que puede elegir para la columna.  Algunas selecciones pueden deshabilitarse si no funcionarán con el tipo de datos actual de la columna.  Por ejemplo, si una columna es un tipo de datos binarios, Power BI Desktop no le permitirá elegir categorías de datos geográficos. 
 
 ![](media/powerbi-desktop-data-categorization/DataCategorization.gif)
 
-And that’s it!  Any behavior that normally accrues to a visual will now work automatically.  
+Y eso es todo!  Cualquier comportamiento que se acumula normalmente en un elemento visual ahora funcionará automáticamente.  
 
-You might also be interested in learning about <bpt id="p1">[</bpt>geographic filtering for Power BI mobile apps<ept id="p1">](powerbi-desktop-mobile-geofiltering.md)</ept>.
+También podría interesados en aprender sobre [filtrado geográfica para aplicaciones móviles de Power BI](powerbi-desktop-mobile-geofiltering.md).

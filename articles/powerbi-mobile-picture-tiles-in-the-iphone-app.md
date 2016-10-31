@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Create picture tiles with your iPhone app"
-   description="You can add any picture on your iPhone to any dashboard you own in the Power BI mobile app for iOS. Learn how."
+   pageTitle="Crear iconos de imagen con la aplicación de iPhone"
+   description="Puede agregar cualquier imagen en su iPhone a cualquier panel que posee en la aplicación móvil de Power BI para iOS. Obtenga información acerca de cómo."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,44 +20,45 @@
    ms.date="10/03/2016"
    ms.author="maggies"/>
 
-# Create picture tiles with your iPhone app (Power BI for iOS)
+# Crear iconos de imagen con la aplicación de iPhone (Power BI para iOS)
 
-You can add any picture on your iPhone to any dashboard you own in the Power BI mobile app for iOS. Power BI adds the picture as the last tile in the dashboard, on your iPhone, and adds it to the lower-right corner of the dashboard in the Power BI service. Everyone who can see your dashboard can see the picture on the dashboard. In the Power BI service, you can move it anywhere you want on the dashboard.
+Puede agregar cualquier imagen en su iPhone a cualquier panel que posee en la aplicación móvil de Power BI para iOS. Power BI agrega la imagen como el último mosaico en el panel, en su iPhone y lo agrega a la esquina inferior derecha del panel en el servicio Power BI. Todos los usuarios que puede ver el panel pueden ver la imagen en el panel. En el servicio Power BI, puede moverlo desde cualquier lugar que desee en el panel.
 
-## Create a picture tile
+## Crear un icono de imagen
 
-1.  Open a <bpt id="p1">[</bpt>dashboard in the iPhone app<ept id="p1">](powerbi-mobile-dashboards-in-the-iphone-app.md)</ept>. You need to have Edit permissions for this dashboard.
+1.  Abrir un [panel en la aplicación de iPhone](powerbi-mobile-dashboards-in-the-iphone-app.md). Debe tener permisos de edición para este panel.
 
-2.  Tap the ellipsis to open the dashboard menu.
+2.  Puntee en el botón de puntos suspensivos para abrir el menú del panel.
 
     ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/power-bi-iphone-dashboard-ellipsis.png)
 
-3.  Tap <bpt id="p1">**</bpt>Add a picture tile<ept id="p1">**</ept>.
+3.  Puntee en **Agregar un mosaico de la imagen**.
 
     ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/power-bi-iphone-add-picture-tile.png)
 
-4.  Allow Power BI to access the camera or your camera roll. 
+4.  Permitir que Power BI tener acceso a la cámara o la rotación. 
 
-4.  Select a picture from your camera roll, or take a new picture.
+4.  Seleccione una imagen en el álbum de cámara o tomar una nueva imagen.
 
     ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/PBI_iPh_PicMenu_nofave.png)
 
-5.  Type a title, if you want one, and tap <bpt id="p1">**</bpt>Add<ept id="p1">**</ept>.
+5.  Escriba un título, si desea uno y puntee **Agregar**.
 
-6.  It may take a little time to upload the image. You can continue exploring your other dashboards and reports in Power BI while you wait.
+6.  Puede tardar un poco de tiempo para cargar la imagen. Puede continuar explorando los otros paneles e informes en Power BI mientras espera.
 
-6.  You see a notification that the picture is ready. Tap the notification to go to the dashboard. Scroll down to the end of the dashboard to see the picture. 
+6.  Verá una notificación de que la imagen está lista. Puntee en la notificación para ir al panel. Desplácese hasta el final del panel para ver la imagen. 
 
      ![](media/powerbi-mobile-picture-tiles-in-the-iphone-app/power-bi-iphone-picture-tile.png)
 
-Picture tiles act the same as other tiles on your iPhone. Puede:  
+Iconos de imagen actúan igual que otros iconos en su iPhone. Puede:  
 
- - Open them in focus mode.
- - <bpt id="p1">[</bpt>Annotate and share them<ept id="p1">](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)</ept> in email. 
+ - Abrir en modo de enfoque.
+ - 
+            [Anotar y compartirlos](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) en correo electrónico. 
 
 
 ### Consulte también
 
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
-- [Get started with Power BI](powerbi-service-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Introducción a la aplicación de iPhone para Power BI](powerbi-mobile-iphone-app-get-started.md)
+- [Introducción a Power BI](powerbi-service-get-started.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

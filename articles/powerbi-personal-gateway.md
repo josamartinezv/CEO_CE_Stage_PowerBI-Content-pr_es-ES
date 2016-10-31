@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Power BI Gateway - Personal"
-   description="Power BI Gateway - Personal"
+   pageTitle="Puerta de enlace de Power BI - Personal"
+   description="Puerta de enlace de Power BI - Personal"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,172 +20,179 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
 
-# Power BI Gateway - Personal
+# Puerta de enlace de Power BI - Personal
 
-Power BI Gatway - Personal acts as a bridge, providing quick and secure data transfer between the Power BI service and on-premises data sources that support <bpt id="p1">[</bpt>refresh<ept id="p1">](powerbi-refresh-data.md)</ept>. This article is meant to provide you with an in-depth understanding of how the gateway works and whether or not a gateway is necessary for you. We've also put together this <bpt id="p1">[</bpt>helpful video<ept id="p1">](https://www.youtube.com/watch?v=de58vROLqZI)</ept> about the personal gateway. 
+Puerta de enlace de Power BI - Personal actúa como un puente, transferencia de datos rápida y segura entre los orígenes de datos de servicio y local de Power BI que admiten [actualizar](powerbi-refresh-data.md). Este artículo pretende proporcionar una comprensión detallada del funcionamiento de la puerta de enlace y si no es necesario que una puerta de enlace. También hemos recopilado esta [vídeo útil](https://www.youtube.com/watch?v=de58vROLqZI) acerca de la puerta de enlace personal. 
 
-The personal gateway is only available with <bpt id="p1">[</bpt>Power BI Pro<ept id="p1">](powerbi-power-bi-pro-content-what-is-it.md)</ept>. It installs and runs as a service on your computer. As a service, it runs using a Windows account you  specify during configuration. In some cases, the Gateway runs as an application. We'll go into more about that later.
+Sólo está disponible con la puerta de enlace personal [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md). Instala y se ejecuta como un servicio en el equipo. Como un servicio, se ejecuta con una cuenta de Windows que se especifica durante la configuración. En algunos casos, la puerta de enlace se ejecuta como una aplicación. Vamos a más información acerca de los más adelante.
 
-When Power BI refreshes data from an on-premises data source, the gateway assures your Power BI account has the right permissions to connect to and query data from the source.
+Cuando Power BI actualiza los datos de un origen de datos local, la puerta de enlace garantiza que su cuenta de Power BI tiene los permisos adecuados para conectarse y consultar datos desde el origen.
 
-Data transfer between Power BI and the gateway is secured through <bpt id="p1">[</bpt>Azure Service Bus<ept id="p1">](http://azure.microsoft.com/documentation/services/service-bus/)</ept>. The Service Bus creates a secure channel between the Power BI service and your computer. Because the gateway provides this secure connection, there’s usually no need to open a port in your firewall.
+Transferir datos entre Power BI y la puerta de enlace se protege mediante [Bus de servicio de Azure](http://azure.microsoft.com/documentation/services/service-bus/). El Bus de servicio, se crea un canal seguro entre el servicio Power BI y el equipo. Dado que la puerta de enlace proporciona esta conexión segura, normalmente es necesario abrir un puerto en el firewall.
 
-Before we go into details about the gateway, let’s look at some terms used in Power BI:
+Antes de entrar en detalles acerca de la puerta de enlace, echemos un vistazo a algunos de los términos utilizados en Power BI:
 
-A <bpt id="p1">*</bpt>dataset<ept id="p1">*</ept> is data uploaded into the Power BI service from an online or on-premises data source. You create a dataset when you use Get Data to connect to and upload data. Datasets appear in the My Workspace pane of your Power BI Workspace in your browser. When you create reports and pin tiles to your dashboards, you’re looking at data from your datasets.
+Un *conjunto de datos* se carga en el servicio Power BI desde una conexión de datos o de orígenes de datos locales. Crear un conjunto de datos cuando utilice obtener datos para conectarse a y carga de datos. Conjuntos de datos aparecen en el panel Mi área de trabajo de su área de trabajo de BI de energía en el explorador. Al crear informes y mosaicos de pin a los paneles, busca en los datos de los conjuntos de datos.
 
-A <bpt id="p1">*</bpt>data source<ept id="p1">*</ept> is where the data you upload into a dataset really comes from.   You can also use Power Query or Power Pivot in Excel to connect to and query data from both online and on-premises data sources, all in the same workbook. With Power BI Desktop, you use Get Data to connect to and query data from both online and on-premises data sources.
+Un *origen de datos* es donde proceden los datos carga en un conjunto de datos realmente. Puede ser prácticamente cualquier cosa; una base de datos, hoja de cálculo de Excel, servicio Web, etc. Con los libros de Excel, puede crear una hoja de cálculo simple con filas de datos y que se considera un origen de datos. También puede usar Power Query o Power Pivot en Excel para conectarse y consultar datos de ambos en línea y los orígenes de datos locales, todo en el mismo libro. Con Power BI Desktop, se utilizan obtener datos para conectarse y consultar datos de ambos en línea y orígenes de datos locales.
 
-The personal gateway is installed through the On-Premises Data Gateay. You can download it on the <bpt id="p1">[</bpt>Power BI Gateway page<ept id="p1">](https://powerbi.microsoft.com/gateway/)</ept>.
+La puerta de enlace personal se instala mediante el Gateay de datos local. Puede descargar en la [página de Power BI Gateway](https://powerbi.microsoft.com/gateway/).
 
-## Do I need a gateway?
+## ¿Se necesita una puerta de enlace?
 
-Before you install a gateway, it's important to know whether or not you really need one. It really depends on your data sources:
+Antes de instalar una puerta de enlace, es importante saber si realmente necesita uno. Realmente depende de los orígenes de datos:
 
-### On-premises data sources
+### Orígenes de datos locales
 
-A personal gateway <bpt id="p1">*</bpt>is required<ept id="p1">*</ept> in order to refresh datasets that get data from a supported on-premises data source in your organization.
+Una puerta de enlace personal *es necesario* para actualizar los conjuntos de datos que obtienen datos de un origen de datos local compatible en su organización.
 
-With a gateway, REFRESH NOW and SCHEDULE REFRESH are supported for datasets uploaded from:
+Con una puerta de enlace, se admiten AHORA la ACTUALIZACIÓN y PROGRAMAR la ACTUALIZACIÓN para conjuntos de datos cargados desde:
 
--   Microsoft Excel 2013 (or later) workbooks where Power Query or Power Pivot is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get External Data in Power Query or Power Pivot support refresh except for Hadoop file (HDFS) and Microsoft Exchange.
+-   2013 (o posteriores) libros de Microsoft Excel en Power Query o Power Pivot se usa para conectarse y consultar datos de un origen de datos local compatible. Todos los locales orígenes de datos que se muestran en obtener datos externos en la actualización de compatibilidad con Power Query o Power Pivot excepto archivo Hadoop (HDFS) y Microsoft Exchange.
 
--   Microsoft Power BI Desktop files where Get Data is used to connect to and query data from a supported on-premises data source. All on-premises data sources shown in Get Data support refresh except for Hadoop file (HDFS) and Microsoft Exchange.
+-   Microsoft Power BI Desktop archivos donde obtener datos se usa para conectarse y consultar datos desde un origen de datos local compatible. Todos los orígenes de datos local que se muestra en la actualización de compatibilidad de obtener datos salvo el archivo Hadoop (HDFS) y Microsoft Exchange.
 
-### Online data sources
+### Orígenes de datos en línea
 
-A personal gateway <bpt id="p1">*</bpt>is not required<ept id="p1">*</ept> in order to refresh datasets that get data only from an online data source.
+Una puerta de enlace personal *no es necesario* para actualizar los conjuntos de datos que recopilar datos desde un origen de datos en línea.
 
-REFRESH NOW and SCHEDULE REFRESH are supported without a gateway for datasets uploaded from:
+Se admiten AHORA la ACTUALIZACIÓN y PROGRAMAR la ACTUALIZACIÓN sin puerta de enlace de conjuntos de datos cargados desde:
 
--   Content packs from online data sources (content packs<ph id="ph1">\\</ph>services). By default, datasets from content packs are automatically updated once a day, but you can also refresh manually or setup a refresh schedule.
+-   Paquetes de orígenes de datos en línea de contenido (paquetes de contenido\\servicios). De forma predeterminada, los conjuntos de datos de paquetes de contenido se actualizan automáticamente una vez al día, pero también puede actualizar manualmente o configurar una programación de actualización.
 
--   Microsoft Excel 2013 (or later) workbooks where Power Query or Power Pivot is used to connect to and query data from an online data source.
+-   2013 (o posteriores) libros de Microsoft Excel en Power Query o Power Pivot se usa para conectarse y consultar datos de un origen de datos en línea.
 
--   Microsoft Power BI Desktop files where Get Data is used to connect to and query data from an online data source.
+-   Microsoft Power BI Desktop archivos donde obtener datos se usa para conectarse y consultar los datos desde un origen de datos en línea.
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What if my Excel workbook or Power BI Desktop file gets data from both online and on-premises data sources?
 
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> A gateway <bpt id="p2">*</bpt>is<ept id="p2">*</ept> required. You will need to install and configure a gateway in order to refresh data from  your on-premises data sources.
+            **Pregunta:** ¿Qué ocurre si mi libro de Excel o un archivo de Power BI Desktop obtiene los datos de ambos en línea y orígenes de datos locales?
 
-<bpt id="p1">**</bpt>Question:<ept id="p1">**</ept> What if my Excel workbook just has rows of data I typed in?**
 
-<bpt id="p1">**</bpt>Answer:<ept id="p1">**</ept> A gateway <bpt id="p2">*</bpt>is not<ept id="p2">*</ept> required. You only need to install and configure a gateway if your workbook uses Power Query or Power Pivot to query and load data to the data model from a supported on-premises data source
+            **Respuesta:** una puerta de enlace *es* necesarios. Debe instalar y configurar una puerta de enlace para actualizar los datos de los orígenes de datos locales.
 
-## Setting up a gateway for the first time
 
-Setting up a gateway for the first time is a three step process:
+            **Pregunta:** ¿Qué ocurre si mi libro de Excel tiene filas de datos se ha escrito en? **
 
-1.  Download and install a gateway
+
+            **Respuesta:** una puerta de enlace *no* necesarios. Sólo debe instalar y configurar una puerta de enlace, si el libro usa Power Query o Power Pivot para consultar y cargar datos en el modelo de datos de un origen de datos local compatible
+
+## Configurar una puerta de enlace por primera vez
+
+Configurar una puerta de enlace por primera vez es un proceso de tres pasos:
+
+1.  Descargue e instale una puerta de enlace
 
 2.  configurar la puerta de enlace
 
-3.  Sign in to data sources in Power BI
+3.  Inicie sesión en orígenes de datos en Power BI
 
-Let’s take a closer look at each step.
+Echemos un vistazo en cada paso.
 
-### Download and install a gateway
+### Descargue e instale una puerta de enlace
 
-You’ll be prompted to install a gateway when you click on REFRESH NOW or SCHEDULE REFRESH for a supported dataset for the first time. Or, to download the gateway, select <bpt id="p1">**</bpt>Data Gateway<ept id="p1">**</ept> under the Downloads menu. Download the <bpt id="p1">[</bpt>On-premises data gateway<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=820925)</ept>.
+Se solicitará que instale una puerta de enlace al hacer clic en ACTUALIZAR AHORA o PROGRAMAR la ACTUALIZACIÓN de un conjunto de datos admitido por primera vez. O bien, para descargar la puerta de enlace, seleccione **puerta de enlace de datos** en el menú de descargas. Descargue el [puerta de enlace de datos local](http://go.microsoft.com/fwlink/?LinkID=820925).
 
-You will want to select <bpt id="p1">**</bpt>Personal Gateway<ept id="p1">**</ept> instead of <bpt id="p2">**</bpt>On-premises data gateway<ept id="p2">**</ept> to have a gateway that is for yourself.
+Desea seleccionar **Personal Gateway** en lugar de **puerta de enlace de datos local** tener una puerta de enlace es para usted.
 
-There’s really not much to installing a gateway. You’ll select a location to install to, and read and accept the license agreement just like any other application. There are however some important things to know. In particular, the type of computer you install the gateway on and the type of account you’re logged in to Windows with on that computer.
+Realmente no hay mucho a la instalación de una puerta de enlace. Seleccione una ubicación para la instalación y lea y acepte el contrato de licencia como cualquier otra aplicación. Hay sin embargo importantes aspectos que debe conocer. En concreto, el tipo de equipo, instale en la puerta de enlace y el tipo de cuenta de que está conectado a Windows con en ese equipo.
 
-> [AZURE.NOTE] The gateway needs to have access to the data source. If your personal machine cannot connect to the data source, you may want to consider installing an <bpt id="p1">[</bpt>On-premises Data Gateway<ept id="p1">](powerbi-gateway-onprem.md)</ept> on a machine that does have access to the data source. An example of this would be SQL Server installed on an virtual machine (VM) hosted in Azure. You personal machine may not have access to the VM. You could install the On-Premises Data Gateway on the VM instead, and configure the a data source within the Power BI service.
+> [AZURE.NOTE] La puerta de enlace debe tener acceso al origen de datos. Si su equipo personal no se puede conectar al origen de datos, puede considerar la instalación de un [puerta de enlace de datos local](powerbi-gateway-onprem.md) en un equipo que tiene acceso al origen de datos. Un ejemplo de esto sería instalado SQL Server en una máquina virtual (VM) hospedada en Azure. Máquina personal no puede tener acceso a la máquina Virtual. Puede instalar la puerta de enlace de datos local en la máquina Virtual en su lugar y configurar el origen de datos dentro del servicio Power BI.
 
 ### Tipo de equipo
 
-The type of computer you install the gateway on is important.
+El tipo de equipo que se instala en la puerta de enlace es importante.
 
-> [AZURE.NOTE] The personal gateway is supported only on 64-bit Windows operating systems.
+> [AZURE.NOTE] La puerta de enlace personal sólo se admite en sistemas operativos de Windows de 64 bits.
 
-On a laptop computer - In order for a scheduled refresh to occur, the gateway needs to be up and running. Laptop computers are usually shut down or asleep more than they’re running. If you install your gateway on a laptop, be sure to set your scheduled refresh times for when the laptop will be running. If it isn’t, the refresh will not be attempted again until the next scheduled refresh time.
+En un equipo portátil, en orden para una actualización programada para que se produzca, la puerta de enlace debe estar en funcionamiento. Equipos portátiles se cierre normalmente inactivo o suspendido más de lo que se está ejecutando. Si la puerta de enlace se instala en un equipo portátil, asegúrese de establecer los tiempos de actualización programada para cuando el equipo portátil se ejecutarán. Si no es así, la actualización no se intentará volver a hasta la siguiente hora de actualización programada.
 
-On a desktop computer – Not many issues here. Just make sure the computer and the gateway is running at your scheduled refresh times. Many desktop computers go to sleep, scheduled refresh cannot occur if it’s asleep.
+En un equipo de escritorio no muchos problemas aquí. Asegúrese de que el equipo y la puerta de enlace se ejecuta en el momento de actualización programada. Muchos equipos de escritorio entrar en suspensión, la actualización programada no se puede producir si está suspendido.
 
-Once you install a gateway, you won’t have to install another. One gateway will work for any number of supported datasets. You also don’t have to install the gateway on the same computer you upload your workbook and Power BI Desktop files from. Here’s an example: Let’s say you have an Excel workbook that connects to a SQL Server data source in your organization. You used Get Data in Power BI to upload the workbook from your laptop computer. You also have a desktop computer you leave running all the time, and you’ve installed and configured a gateway on that computer. In Power BI, you’ve signed in to your data sources, and you’ve setup a refresh schedule for the dataset.  When a scheduled refresh time comes, Power BI makes a secure connection to the gateway installed on your desktop computer. It then securely connects to the data sources to get updates. For refresh, there’s no communication with the original workbook you uploaded from your laptop computer.
+Una vez que instale una puerta de enlace, no tendrá que instalar otra. Una puerta de enlace funciona para cualquier número de conjuntos de datos compatibles. También no tienes que instalar la puerta de enlace en el mismo equipo que cargar Power BI Desktop archivos y su libro. Este es un ejemplo: supongamos que tiene un libro de Excel que se conecta a un origen de datos de SQL Server en su organización. Utiliza obtener datos en Power BI para cargar el libro desde su equipo portátil. También tiene un equipo de escritorio deja todo el tiempo en ejecución y que ha instalado y configurado una puerta de enlace en el equipo. En Power BI, que ha iniciado sesión en los orígenes de datos y dispone de una configuración de una programación de actualización para el conjunto de datos.  Cuando llega un momento de actualización programada, Power BI realiza una conexión segura a la puerta de enlace instalado en el equipo de escritorio. Segura conecta con los orígenes de datos para obtener las actualizaciones. Para la actualización, hay una comunicación con el libro original que ha cargado desde el equipo portátil.
 
-> [AZURE.NOTE] You can install the personal and enterprise gateways on the same computer.
+> [AZURE.NOTE] Puede instalar las puertas de enlace personal y empresarial en el mismo equipo.
 
-### Windows account
+### Cuenta de Windows
 
-When you install the gateway, you’ll be logged in to your computer using your Windows account. The type of permissions your Windows account has will have an effect on how the gateway is installed and how it is run in Windows.
+Al instalar la puerta de enlace, que podrá iniciado sesión en el equipo con su cuenta de Windows. El tipo de permisos que tiene la cuenta de Windows tendrá un efecto sobre cómo se instala la puerta de enlace y cómo se ejecuta en Windows.
 
-When you’re logged into Windows:
+Cuando ha iniciado sesión en Windows:
 
-||With Administrator permissions|Without Administrator permissions|
+||Con permisos de administrador|Sin permisos de administrador|
 |---|---|---|
-|**Power BI Gateway - Personal runs as a**|Servicio|Aplicación|
-|**Scheduled Refresh**|As long as your computer and the gateway service is running, you do not have to be logged in at the scheduled refresh time.|You must be logged in to your computer at the scheduled refresh time.|
-|**Change Windows account password**|You must change your Password in the gateway service. If the account password used by the gateway is no longer valid, refresh will fail.|The gateway will always run using the account and password you are currently logged in with. If you aren’t logged in to Windows, the gateway will not be running and refresh will fail.|
+|**Puerta de enlace de Power BI - Personal se ejecuta como un**|Servicio|Aplicación|
+|**Actualización programada**|Mientras se está ejecutando el equipo y el servicio de puerta de enlace, no es necesario que iniciar sesión en el momento de la actualización programada.|Debe iniciar sesión en el equipo en el momento de la actualización programada.|
+|**Cambiar la contraseña de la cuenta de Windows**|Debe cambiar la contraseña en el servicio de puerta de enlace. Si la contraseña de la cuenta utilizada por la puerta de enlace ya no es válida, se producirá un error en la actualización.|La puerta de enlace siempre ejecutará con la cuenta y la contraseña que ha iniciado sesión. Si no inició sesión Windows, la puerta de enlace no se ejecutarán y se producirá un error en la actualización.|
 
 ### configurar la puerta de enlace
 
-When the Installation Wizard finishes, you’ll be prompted to launch the Configuration Wizard. There’s really not much to configuring a gateway. You’ll need to sign in to Power BI from the Wizard. This is necessary for the Wizard to establish a connection with your Power BI account in the Power BI service.
+Cuando finalice el Asistente para la instalación, se solicitará para iniciar al Asistente de configuración. Realmente no hay mucho que configurar una puerta de enlace. Debe iniciar sesión en Power BI desde el asistente. Esto es necesario para que el Asistente establecer una conexión con su cuenta de Power BI en el servicio Power BI.
 
-If you’re logged in to Windows with an account with Administrator permissions, you’ll be asked to enter your Windows account credentials. You can specify a different Windows account, but remember the permissions determine how the gateway is run. The gateway service will run using this account.
+Si está conectado a Windows con una cuenta con permisos de administrador, se le pedirá que escriba las credenciales de cuenta de Windows. Puede especificar una cuenta de Windows, pero recuerde que los permisos determinan cómo se ejecuta la puerta de enlace. El servicio de puerta de enlace se ejecutará con esta cuenta.
 
-### Sign in to data sources
+### Inicie sesión en orígenes de datos
 
-Once the Configuration Wizard finishes and your gateway is up and running, you’ll have to specify an Authentication type and sign in to each of your dataset’s data sources. You'll complete this step in Power BI.
+Una vez que finalice el Asistente de configuración y la puerta de enlace está en funcionamiento, tendrá que especificar un tipo de autenticación e iniciar sesión en cada uno de los orígenes de datos del conjunto de datos. Realizará este paso en Power BI.
 
 ![](media/powerbi-personal-gateway/PG_Dataset_Settings_SignIn.png)
 
-You only need to specify an authentication type and sign in to a data source once. You sign in from the <bpt id="p1">**</bpt>Manage Data Sources<ept id="p1">**</ept> section in a dataset’s Settings screen. If you have multiple data sources, you’ll have to sign in to each one. The gateway determines a default Authentication type depending on the data source. In most cases, it’s Windows authentication; however, in some cases, your data source might require a different authentication type. If you’re unsure, check with your data source administrator.
+Sólo debe especificar un tipo de autenticación e iniciar sesión una vez para un origen de datos. Iniciar sesión desde el **Administrar orígenes de datos** sección en la pantalla de configuración de un conjunto de datos. Si tiene varios orígenes de datos, tendrá que iniciar sesión en cada uno de ellos. La puerta de enlace determina un tipo de autenticación predeterminado según el origen de datos. En la mayoría de los casos, es la autenticación de Windows; Sin embargo, en algunos casos, el origen de datos puede requerir un tipo de autenticación diferentes. Si no está seguro, póngase en contacto con el Administrador de origen de datos.
 
-## Up and running!
+## Arriba y en ejecución.
 
-When your gateway is up and running, you can click SCHEDULE REFRESH for a dataset where you’ll see your dataset’s Settings page.
+Cuando la puerta de enlace está en funcionamiento, puede hacer clic en PROGRAMAR la ACTUALIZACIÓN de un conjunto de datos donde verá la página de configuración del conjunto de datos.
 
 ![](media/powerbi-personal-gateway/PG_AWIntSales_Settings.png)
 
-This page shows:
+Esta página muestra:
 
-1. Refresh status – Shows refresh success and next scheduled refresh time.
+1. Actualizar estado: éxito de actualización se muestra y la siguiente vez que la actualización programada.
 
-2. <bpt id="p1">**</bpt>Gateway<ept id="p1">**</ept> - Shows whether or not a gateway is installed and online. If a gateway is installed but not online, Manage Data Sources and Schedule Refresh settings are disabled.
+2. 
+            **Puerta de enlace** -muestra o no una puerta de enlace está instalado y en línea. Si una puerta de enlace está instalado pero no está en línea, configuración de orígenes de datos de administrar y programar la actualización está deshabilitada.
 
-3. <bpt id="p1">**</bpt>Manage Data Sources<ept id="p1">**</ept> - Shows data sources the dataset connects to. You can Sign in or change the authentication type. You’ll only need to Sign in to each data source once.
+3. 
+            **Administrar orígenes de datos** -el conjunto de datos se conecta a orígenes de datos de muestra. Puede iniciar sesión o cambiar el tipo de autenticación. Sólo necesitará un inicio de sesión en cada origen de datos una vez.
 
-4. <bpt id="p1">**</bpt>Schedule Refresh<ept id="p1">**</ept> – You can configure a refresh schedule settings here. If the gateway isn’t online, these settings will be disabled.
+4. 
+            **Programar la actualización** : puede configurar una configuración de programación de actualización. Si la puerta de enlace no está en línea, esta configuración se deshabilitará.
 
-5. Refresh failure notifications – This option, selected by default, will send an e-mail to you if a scheduled refresh fails.
+5. Actualizar notificaciones de error: esta opción seleccionadas de forma predeterminada, enviará un correo electrónico para usted si se produce un error en una actualización programada.
 
-## Updating your Windows account password
+## Actualizar la contraseña de cuenta de Windows
 
-If you were logged into your computer with a Windows account with administrator privileges when you installed your gateway, it runs as a service using the Windows account you specified in the Configuration Wizard. Most often, this will be the same Windows account you log in to your computer with. When you change your Windows account password, you’ll also need to change it in the gateway, otherwise the service might not be running and refresh will fail. To change your Windows account password for the gateway, select the personal gateway icon on your Windows Desktop Taskbar, or in Apps.
+Si se registraron en el equipo con una cuenta de Windows con privilegios de administrador cuando instaló la puerta de enlace, se ejecuta como un servicio con la cuenta de Windows que especificó en el Asistente para configuración. A menudo, se trata de iniciar sesión en el equipo con la misma cuenta de Windows. Al cambiar la contraseña de cuenta de Windows, también necesitará cambiar en la puerta de enlace, de lo contrario, podría no estar ejecutándose el servicio y se producirá un error en la actualización. Para cambiar la contraseña de su cuenta de Windows para la puerta de enlace, seleccione el icono de la puerta de enlace personal en la barra de tareas del escritorio de Windows o en las aplicaciones.
 
 ![](media/powerbi-personal-gateway/PG_ProgramIcon.png)
 
-From here, you can update your password and check your gateway's connection status.
+Desde aquí, puede actualizar su contraseña y comprobar el estado de conexión de la puerta de enlace.
 
 ![](media/powerbi-personal-gateway/PG_Credentials.png)
 
 ## Puertos
 
-The gateway communicates on outbound ports: TCP 443 (default), 5671, 5672, 9350 thru 9354.  The gateway does not require inbound ports.
+La puerta de enlace se comunica en puertos de salida: TCP 443 (valor predeterminado), 5671, 5672, 9350 a 9354.  La puerta de enlace no requiere los puertos de entrada.
 
-|Nombres de dominio|Outbound ports|Descripción|
+|Nombres de dominio|Puertos de salida|Descripción|
 |---|---|---|
-|*.powerbi.com|443|HTTPS|
-|*.analysis.windows.net|443|HTTPS|
-|*.login.windows.net|443|HTTPS|
-|*.servicebus.windows.net|5671-5672|Advanced Message Queuing Protocol (AMQP)|
-|*.servicebus.windows.net|443, 9350-9354|Listeners on Service Bus Relay over TCP (requires 443 for Access Control token acquisition)|
-|*.frontend.clouddatahub.net|443|HTTPS|
-|*.core.windows.net|443|HTTPS|
-|login.microsoftonline.com|443|HTTPS|
+|*. powerbi.com|443|HTTPS|
+|*. analysis.windows.net|443|HTTPS|
+|*. login.windows.net|443|HTTPS|
+|*.servicebus.windows.net|5671-5672|Avanzadas Message Queuing Protocol (AMQP)|
+|*.servicebus.windows.net|443, 9350-9354|Agentes de escucha de retransmisión de Bus de servicio sobre TCP (requiere 443 para la adquisición del token de Control de acceso)|
+|*. frontend.clouddatahub.net|443|HTTPS|
+|*. core.windows.net|443|HTTPS|
+|Login.microsoftonline.com|443|HTTPS|
 |login.windows.net|443|HTTPS|
 
-If you need to white list IP addresses instead of the domains, you can download and use the Microsoft Azure Datacenter IP ranges list. [Descarga](https://www.microsoft.com/download/details.aspx?id=41653)
+Si necesita la lista blanca de direcciones IP en lugar de los dominios, puede descargar y usar la lista de intervalos de direcciones IP del centro de datos de Microsoft Azure. [Descarga](https://www.microsoft.com/download/details.aspx?id=41653)
 
 ## Solucionar problemas
 
-If you're having trouble when installing and configuring a personal gateway, be sure to see <bpt id="p1">[</bpt>Troubleshooting Power BI Gateway - Personal<ept id="p1">](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)</ept>.
+Si tiene problemas al instalar y configurar una puerta de enlace personal, asegúrese de ver [solución de problemas de Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md).
 
 ## Consulte también
 
-[Troubleshooting Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
-[Configuring proxy settings for the Power BI Gateways](powerbi-gateway-proxy.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Solución de problemas de puerta de enlace de Power BI - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+[Configuración de proxy para las puertas de enlace de Power BI](powerbi-gateway-proxy.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

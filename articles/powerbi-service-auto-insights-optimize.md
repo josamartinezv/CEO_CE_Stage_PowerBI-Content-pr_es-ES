@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Optimize your data for Power BI Quick Insights"
-   description="Optimize your data for Power BI Quick Insights. If Power BI doesn't find insights in your data, here are some things you can do"
+   pageTitle="Optimizar los datos de visión rápida de Power BI"
+   description="Optimizar los datos de visión rápida de Power BI. Si Power BI no encuentra la visión de los datos, hay ciertas cosas que puede hacer"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,24 +20,24 @@
    ms.date="09/12/2016"
    ms.author="mihart"/>
 
-# Optimize your data for Power BI Quick Insights
-Want to improve Quick Insights results?  If you are a datasest owner, try these:
+# Optimizar los datos de visión rápida de Power BI
+¿Desea mejorar los resultados de la información rápidamente?  Si es propietario de datasest, pruebe estos:
 
-- Hide or unhide columns in your dataset. Power BI Auto Insights doesn't search hidden columns.  So hide duplicate or unnecessary columns and unhide interesting columns.
+- Ocultar o mostrar las columnas del conjunto de datos. Visión de Power BI automática no busca en las columnas ocultas.  Así que ocultar columnas duplicadas o innecesarias y mostrar columnas interesantes.
 
-- Use a mix of data types such as names, times, dates, and numbers.
+- Utilice una combinación de tipos de datos como nombres, fechas y horas, números.
 
-- Avoid (or hide) columns with duplicate information.  This takes valuable time away from searching for meaningful patterns.  For example, one column with state names spelled out and another column with state name abbreviations.
+- Evitar las columnas con información duplicada (u ocultar).  Esto quita tiempo valioso para buscar patrones significativos.  Por ejemplo, una columna con nombres de estado con el nombre completo y otra columna con las abreviaturas de nombres de estado.
 
--   Do you get an error message stating that your data isn't statistically significant?  This can happen with models that are very simple, or that don't have much data, or that don't have date or numeric columns. To generate Insights, your dataset needs to have at least one dimension and one measure.
+-   ¿Obtiene un mensaje de error que indica que los datos no son estadísticamente significativos?  Esto puede suceder con modelos que son muy simples, o que no tiene la cantidad de datos o que no tienen columnas numéricas o fecha. Para generar la visión, el conjunto de datos debe tener al menos una dimensión y una medida.
 
 
 ### Consulte también
 
-[Power BI Quick Insights](powerbi-service-auto-insights.md)
+[Power BI rápida visión](powerbi-service-auto-insights.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

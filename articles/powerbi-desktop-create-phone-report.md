@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Create reports optimized for the Power BI phone apps"
-   description="Learn how to optimize report pages in Power BI Desktop for the Power BI phone apps."
+   pageTitle="Crear informes optimizados para las aplicaciones de teléfono de Power BI"
+   description="Aprenda a optimizar las páginas del informe en Power BI Desktop para las aplicaciones de teléfono de Power BI."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,97 +20,98 @@
    ms.date="09/27/2016"
    ms.author="maggies"/>
 
-# Create reports optimized for the Power BI phone apps
+# Crear informes optimizados para las aplicaciones de teléfono de Power BI
 
-When you <bpt id="p1">[</bpt>create a report in Power BI Desktop<ept id="p1">](powerbi-desktop-report-view.md)</ept>, you can improve the experience of using it on phones by creating a version of the report specifically for the phone. You adapt your report for the phone by rearranging and resizing visuals, maybe not including all of them, for an optimal experience.  
+Cuando se [crear un informe en Power BI Desktop](powerbi-desktop-report-view.md), puede mejorar la experiencia de uso de teléfonos mediante la creación de una versión del informe específicamente para el teléfono. Adaptar el informe para el teléfono reorganizar y cambiar el tamaño de los efectos visuales, quizás no incluidos todas ellas, para una experiencia óptima.  
 
 ![](media/powerbi-desktop-create-phone-report/07-power-bi-phone-report-portrait.png)
 
-## Lay out a report page for the phone in Power BI Desktop
+## Diseñar una página de informe para el teléfono en Power BI Desktop
 
-After you <bpt id="p1">[</bpt>create a report in Power BI Desktop<ept id="p1">](powerbi-desktop-report-view.md)</ept>, you can optimize it for phones.
+Después de [crear un informe en Power BI Desktop](powerbi-desktop-report-view.md), puede optimizar los teléfonos.
 
-1. In Power BI Desktop, select <bpt id="p1">**</bpt>Report View<ept id="p1">**</ept> in the left navigation bar.
+1. En Power BI Desktop, seleccione **vista informe** en la barra de navegación izquierda.
 
     ![](media/powerbi-desktop-create-phone-report/PBI_ReportViewInPBIDesigner_ChangeView.png)
 
-2. On the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Change Layout<ept id="p2">**</ept>.  
+2. En la **Inicio** ficha, seleccione **cambiar el diseño**.  
 
     ![](media/powerbi-desktop-create-phone-report/01_change_form_factor.gif)
 
-    You see a blank phone canvas. All of the visuals on the original report page are listed in the Visualizations pane on the right.
+    Vea un teléfono en blanco del lienzo. Todos los elementos visuales en la página de informe original se muestran en el panel de visualizaciones de la derecha.
  
-2. To add a visual to the phone layout, drag it from the Visualizations pane to the phone canvas.
+2. Para agregar un elemento visual al diseño del teléfono, arrástrelo desde el panel de visualizaciones al lienzo del teléfono.
 
-    Phone reports use a grid layout. As you drag visuals to the mobile canvas, they snap to that grid.
+    Informes de Phone utilizan un diseño de cuadrícula. Al arrastrar elementos visuales al lienzo móvil, se ajustan a la cuadrícula.
 
     ![](media/powerbi-desktop-create-phone-report/02_Dragging_and_droping_a_vis.gif)
 
-    You can add some or all the master report page visuals to the phone report page. You can add each visual only once.
+    Puede agregar todos o algunos de los informe maestro página elementos visuales a la página de informe de teléfono. Puede agregar cada visual sólo una vez.
 
-3.  You can resize your visuals on the grid, as you would for tiles on dashboards and mobile dashboards.
+3.  Puede cambiar el tamaño de los objetos visuales en la cuadrícula, como lo haría para los mosaicos en paneles y paneles móviles.
 
-    > [AZURE.NOTE] The phone report grid scales across phones of different sizes, so your report will look as good on small- and on large-screen phones.
+    > [AZURE.NOTE] La cuadrícula del informe phone escala a través de teléfonos de tamaños diferentes, por lo que será tan bueno en pequeñas teléfonos de pantallas grandes y el informe.
 
     ![](media/powerbi-desktop-create-phone-report/03_Resizing_a_viz_to_grid.gif)
 
-## Notes about creating phone report layouts
-- For reports with multiple pages, you can optimize all the pages or only a few. 
-- On a phone, you move between pages by swiping from the side or tapping the page menu.
-- You can’t modify formatting settings for just the phone. Formatting is consistent between master and mobile layouts. For example, font sizes will be the same.
-- To change a visual, such as changing its formatting, dataset, filters, or any other attribute, return to the regular report authoring mode.
+## Notas acerca de cómo crear diseños de informe de teléfono
+- Para los informes con varias páginas, puede optimizar todas las páginas o sólo algunas. 
+- En un teléfono, desplazarse entre páginas al desplazarse desde el lado o punteando en el menú de la página.
+- No se puede modificar la configuración de formato para simplemente el teléfono. Aplicar formato es coherente entre los diseños maestros y móviles. Por ejemplo, los tamaños de fuente será el mismo.
+- Para cambiar un elemento visual, como cambiar su formato, conjunto de datos, filtros o cualquier otro atributo, devolver el modo de creación de informes regulares.
 
-    > <bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: By default, Power BI provides titles and page names for phone reports in the mobile app. If you’ve created text visuals for titles and page names in your report, consider not adding them to your phone reports.     
+    > 
+            **Sugerencia**: de forma predeterminada, Power BI proporciona títulos y nombres de página para los informes de teléfono de la aplicación móvil. Si ha creado elementos visuales del texto de títulos y nombres de página en el informe, considere la posibilidad de no agrega a los informes de teléfono.     
 
-## Remove a visual from the phone layout
+## Quita un objeto visual del diseño de teléfono
 
--  To remove a visual, click the X in the top-right  of the visual on the phone canvas, or select it and press <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>.
+-  Para quitar un elemento visual, haga clic en la X en la parte superior derecha del objeto visual en el lienzo de teléfono, o selecciónelo y presione **Eliminar**.
 
-    > [AZURE.NOTE] Removing a visual here only removes it from the Mobile canvas, the visual and the original report will not be effected.
+    > [AZURE.NOTE] Quitar un elemento visual aquí sólo quita del lienzo móvil, el objeto visual y el informe original no se verán afectados.
     
     ![](media/powerbi-desktop-create-phone-report/05_Removing_a_vis.gif)
 
-## Enhance slicers to to work well in phone reports
-Slicers offer on-canvas filtering of report data. When designing slicers in the regular report authoring mode, you can modify some slicer settings to make them more usable in phone reports:
+## Mejorar segmentaciones de datos para que funcionen bien en los informes de teléfono
+Segmentaciones de datos ofrecen en el lienzo de filtrado de datos de informe. Al diseñar las segmentaciones de datos en el modo de creación de informes regulares, puede modificar algunas opciones de segmentación de datos para que sean más fáciles de utilizar en los informes de teléfono:
 
-- Decide if report readers can select only one or more than one item.
-- Make the slicer vertical or horizontal. 
-- Put a box around the slicer to make the report easier to scan.
+- Decidir si los lectores de informes pueden seleccionar sólo uno o más de un elemento.
+- Asegúrese de la segmentación de datos vertical u horizontal. 
+- Coloque un cuadro alrededor de la segmentación de datos para facilitar el análisis del informe.
 
-Read more about <bpt id="p1">[</bpt>creating slicers in the Power BI service<ept id="p1">](powerbi-learning-3-4-create-slicers.md)</ept>.
+Obtenga más información sobre [crear segmentaciones de datos en el servicio Power BI](powerbi-learning-3-4-create-slicers.md).
 
-## Publish a phone report
-- To publish the phone version of a report, you <bpt id="p1">[</bpt>publish the main report from Power BI Desktop to the Power BI service<ept id="p1">](powerbi-desktop-upload-desktop-files.md)</ept>, and the phone version publishes at the same time.
+## Publicar un informe de teléfono
+- Para publicar la versión de teléfono de un informe, se [publicar el informe principal de Power BI Desktop al servicio Power BI](powerbi-desktop-upload-desktop-files.md), y se publica la versión de teléfono al mismo tiempo.
 
-    Read more about <bpt id="p1">[</bpt>sharing and permissions in Power BI<ept id="p1">](powerbi-service-how-should-i-share-my-dashboard.md)</ept>.
+    Obtenga más información sobre [recursos compartidos y permisos en Power BI](powerbi-service-how-should-i-share-my-dashboard.md).
 
-## View optimized and non-optimized reports on a phone 
+## Visualización de informes optimizados y no optimizado en un teléfono 
 
-In the mobile apps on phones, Power BI automatically detects optimized and non-optimized phone reports. If a phone-optimized report exists, the Power BI phone app automatically opens the report in phone report mode.
+En las aplicaciones móviles en teléfonos, Power BI detecta automáticamente informes de phone optimizado y no optimizado. Si existe un informe optimizado por teléfono, la aplicación de teléfono de Power BI abre automáticamente el informe en modo de informe de teléfono.
 
-If a phone-optimized report doesn’t exist, the report will open in the non-optimized, landscape view.  
+Si no existe un informe optimizado por teléfono, el informe se abrirá en la no optimizada, horizontal en la vista.  
 
-When in a phone report, changing the phone’s orientation to landscape will open the report in the non-optimized view with the original report layout, whether you optimize the report or not.
+Cuando se encuentra en un informe de teléfono, cambiar la orientación del teléfono horizontal abrirá el informe en la vista no optimizada con el diseño del informe original, si optimizar el informe o no.
 
-If you only optimize some pages, readers will see a message in portrait view, indicating the report is available in landscape.
+Si solo optimiza algunas páginas, los lectores aparecerá un mensaje en vista vertical, que indica que el informe está disponible en horizontal.
 
 ![](media/powerbi-desktop-create-phone-report/06-power-bi-phone-report-page-not-optimized.png)
 
-Report readers can turn their phones sideways to see the page in landscape mode.
+Los lectores de informes pueden activar sus teléfonos lateralmente para ver la página en modo horizontal.
 
-## Interact with optimized phone reports on a phone
+## Interactuar con los informes de phone optimizado en un teléfono
 
-You can scroll in a phone report, cross-highlight and select visuals, and open visuals in focus mode. Read more about what it's like to <bpt id="p1">[</bpt>interact with Power BI reports optimized for your phone<ept id="p1">](powerbi-mobile-view-phone-report.md)</ept>.
+Puede desplazarse en un informe de teléfono, realzado cruzado y seleccionadas elementos visuales y elementos visuales abiertos en modo de enfoque. Obtenga más información acerca de qué es similar a [interactuar con informes de Power BI optimizados para el teléfono](powerbi-mobile-view-phone-report.md).
 
-## How visuals scale in a phone report
-Power BI phone reports use a concept called “virtual pixels” to ensure an optimized experience across various devices, screen sizes, and form factors.  
+## Cómo escalación objetos visuales en un informe de teléfono
+Teléfono de Power BI informes usen un concepto denominado "virtuales píxeles" para garantizar una experiencia optimizada a través de varios dispositivos, tamaños de pantalla y factores de forma.  
 
-When creating a phone report, visuals are aligned to a grid. In the grid, some aspects such as square size are relative to the size of the screen, and other aspects such as side spacing are constant.
-This allows the grid to scale correctly across different screen sizes.
+Al crear un informe de teléfono, se alinean los elementos visuales a una cuadrícula. En la cuadrícula, son algunos aspectos, como el tamaño del cuadrado en relación con el tamaño de la pantalla y otros aspectos, como el espaciado de lado son constantes.
+Esto permite que la cuadrícula para escalar correctamente a través de diferentes tamaños de pantalla.
 
-For example, the size of a grid “square” on an iPhone SE will be ~xx pixels. The same square on an iPhone 6s Plus will be ~YY pixels. Thus, the phone report you create will scale well on all modern phones.    
+Por ejemplo, el tamaño de una cuadrícula "cuadrado" en un iPhone SE será ~ xx píxeles. El mismo cuadrado en un iPhone 6s Plus será ~ píxeles AA. Por lo tanto, los informes de phone que se crean escalará bien en todos los teléfonos modernos.    
 
 ### Consulte también
-- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
-- [View Power BI reports optimized for your phone](powerbi-mobile-view-phone-report.md)
-- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Crear una vista de teléfono de un panel en Power BI](powerbi-service-create-dashboard-phone-view.md)
+- [Ver informes de Power BI optimizados para el teléfono](powerbi-mobile-view-phone-report.md)
+- ¿Preguntas más frecuentes? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

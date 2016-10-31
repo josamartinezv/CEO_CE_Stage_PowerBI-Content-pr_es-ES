@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Interact with tiles in the iPhone app"
-   description="Tiles are live snapshots of your data, pinned to a dashboard. Learn about interacting with tiles in the Power BI mobile app for iOS on your iPhone."
+   pageTitle="Interactuar con iconos en la aplicación de iPhone"
+   description="Los iconos son instantáneas de los datos, anclados a un panel. Obtenga información sobre cómo interactuar con iconos en la aplicación móvil de Power BI para iOS en su iPhone."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,53 +20,56 @@
    ms.date="10/03/2016"
    ms.author="maggies"/>
 
-# Interact with tiles in the iPhone app (Power BI for iOS)
+# Interactuar con iconos en la aplicación de iPhone (Power BI para iOS)
 
-Tiles are live snapshots of your data, pinned to a dashboard. Their values change as the data changes. You <bpt id="p1">[</bpt>create tiles on a dashboard in the Power BI service<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>. 
+Los iconos son instantáneas de los datos, anclados a un panel. Cambian sus valores como los cambios de datos. Se [crear mosaicos en un panel en el servicio Power BI](powerbi-service-dashboard-tiles.md). 
 
-Then in <bpt id="p1">[</bpt>the iPhone app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept>, you open tiles in focus mode and interact with them. You can open tiles with all kinds of visuals, including tiles based on Bing and R.
+A continuación, en [la aplicación de iPhone](http://go.microsoft.com/fwlink/?LinkId=522062), abra mosaicos en modo de enfoque e interactuar con ellos. Puede abrir mosaicos con todos los tipos de efectos visuales, incluidos los mosaicos en función de Bing y R.
 
-><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: You can also <bpt id="p2">[</bpt>create picture tiles with your iPhone app<ept id="p2">](powerbi-mobile-picture-tiles-in-the-iphone-app.md)</ept> and save them to your dashboards.
+>
+            **Nota**: también puede [crear mosaicos de imagen con la aplicación de iPhone](powerbi-mobile-picture-tiles-in-the-iphone-app.md) y guardarlos en los paneles.
 
-1.  Open a <bpt id="p1">[</bpt>dashboard in the iPhone app<ept id="p1">](powerbi-mobile-dashboards-in-the-iphone-app.md)</ept>.
+1.  Abrir un [panel en la aplicación de iPhone](powerbi-mobile-dashboards-in-the-iphone-app.md).
 
-2.  Tap a tile. It opens in focus mode, where it's easier to view and explore the tile data. In this mode you can:
+2.  Puntee en un mosaico. Se abre en modo de enfoque, que es más fácil ver y explorar los datos de mosaico. En este modo, puede:
 
-   -   In a line, bar, or column chart, tap to view the values for specific parts of the visualization.
+   -   En una línea, la barra o el gráfico de columnas, pulse para ver los valores de partes específicas de la visualización.
 
         ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-line-tile-values.png)
 
-        *For example, in this line chart, the selected values are for This Year Sales and Last Year Sales in August.*  
+        *Por ejemplo, en este gráfico de líneas, los valores seleccionados son para ventas de este año y ventas del último año en agosto.*  
 
-  -   In a pie chart, spin the pie to show the values of the slice at the top of the pie.
+  -   En un gráfico circular, girar el gráfico circular para mostrar los valores del segmento en la parte superior del gráfico circular.
 
         ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-pie-tile.png)
 
-3.   Tap the share icon <ph id="ph1">![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-share-icon.png)</ph> to <bpt id="p1">[</bpt>annotate and share a tile<ept id="p1">](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md)</ept> with others.
+3.   Puntee en el icono de recurso compartido ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-share-icon.png) a [anotar y compartir un mosaico](powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app.md) con otros usuarios.
 
-4.   <bpt id="p1">[</bpt>Interact with a report page tile<ept id="p1">](powerbi-mobile-report-page-tiles-in-the-iphone-app.md)</ept> in the iPhone app.
+4.   
+            [Interactuar con un icono de página de informe](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) en la aplicación de iPhone.
 
-5.   <bpt id="p1">[</bpt>Add an alert to the tile<ept id="p1">](powerbi-mobile-set-data-alerts-in-the-iphone-app.md)</ept>. If the values go above or below targets, Power BI will notify you.
+5.   
+            [Agregar una alerta para el mosaico](powerbi-mobile-set-data-alerts-in-the-iphone-app.md). Si los valores van por encima o por debajo de objetivos, Power BI le notificará.
 
-6. Sometimes the report creator has added a link to a tile. If so, it has a link icon <ph id="ph1">![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-icon.png)</ph> when it's in focus mode:
+6. A veces, el creador del informe agregó un vínculo a un mosaico. Si es así, tiene un icono de vínculo ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-link-icon.png) cuando está en modo de enfoque:
 
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-tile-link.png)
 
-    Links can go to other Power BI dashboards or to an external URL. You can <bpt id="p1">[</bpt>tap the link<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink)</ept> to open it inside the Power BI app. If it's an external site, Power BI asks you to allow it.
+    Vínculos pueden tener acceso a otros paneles de Power BI o a una dirección URL externa. Puede [puntee en el vínculo](powerbi-service-edit-a-tile-in-a-dashboard.md#hyperlink) para abrirlo en la aplicación Power BI. Si es un sitio externo, Power BI le pide que lo permiten.
     
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/PBI_Andr_OpenLinkMessage.png)
 
-    After you open the link in the Power BI app, you can copy the link and open it in a browser window instead.
+    Después de abrir el vínculo en la aplicación Power BI, puede copiar el vínculo y abrirlo en una ventana del explorador.
 
 
-## Go back to My Workspace
+## Volver a mi área de trabajo
 
-*   Tap the arrow next to the tile name and tap <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+*   Puntee en la flecha situada junto al nombre de mosaico y en **Mi área de trabajo**.
 
     ![](media/powerbi-mobile-tiles-in-the-iphone-app/power-bi-iphone-tile-breadcrumb.png)
 
 ### Consulte también
 
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
-- [Get started with Power BI](powerbi-service-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Introducción a la aplicación de iPhone para Power BI](powerbi-mobile-iphone-app-get-started.md)
+- [Introducción a Power BI](powerbi-service-get-started.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,29 +1,30 @@
 ## Herramientas para la solución de problemas
 
 <a name="logs" />
-### Collecting logs from the gateway configurator
+### Recopilación de registros desde el Configurador de puerta de enlace
 
-There are several logs you can collect for the gateway. Always start with the logs!
+Hay varios registros, puede recopilar la puerta de enlace. Iniciar siempre con los registros.
 
-**Installer logs**
+**Registros de instalador**
 
     %localappdata%\Temp\On-premises_data_gateway_*.log
 
-**Configuration logs**
+**Registros de configuración**
 
     %localappdata%\Microsoft\on-premises data gateway\GatewayConfigurator*.log
 
-**On-premises data gateway service logs**
+**Registros del servicio de puerta de enlace de datos local**
 
     C:\Users\PBIEgwService\AppData\Local\Microsoft\on-premises data gateway\Gateway*.log
 
 ### Registros de eventos  
-The <bpt id="p1">**</bpt>On-premises data gateway service<ept id="p1">**</ept> event logs are present under <bpt id="p2">**</bpt>Application and Services Logs<ept id="p2">**</ept>.
+El **servicio de puerta de enlace de datos local** registros de eventos están presentes en **registros de aplicaciones y servicios**.
 
-![on-prem-data-gateway-event-logs](./media/gateway-onprem-tshoot-tools-include/on-prem-data-gateway-event-logs.png)
+![on-PREM-Data-Gateway-Event-Logs](./media/gateway-onprem-tshoot-tools-include/on-prem-data-gateway-event-logs.png)
 
 <a name="fiddler" />
-### Fiddler Trace  
-<bpt id="p1">[</bpt>Fiddler<ept id="p1">](http://www.telerik.com/fiddler)</ept> is a free tool from Telerik that monitors HTTP traffic.  You can see the back and forth with the Power BI service from the client machine. This may show errors and other related information.
+### Seguimiento de Fiddler  
+
+            [Fiddler](http://www.telerik.com/fiddler) es una herramienta gratuita de Telerik que supervisa el tráfico HTTP.  Puede ver la parte posterior y hacia delante con Power BI de servicio desde el equipo cliente. Esto puede mostrar errores y otra información relacionada.
 
 ![](media/gateway-onprem-tshoot-tools-include/fiddler.png)

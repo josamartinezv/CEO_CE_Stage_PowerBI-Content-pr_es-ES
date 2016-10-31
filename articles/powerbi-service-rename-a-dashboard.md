@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Rename a Power BI dashboard"
-   description="Rename a Power BI dashboard."
+   pageTitle="Cambiar el nombre de un panel de Power BI"
+   description="Cambiar el nombre de un panel de Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,32 +19,32 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Rename a Power BI dashboard
+# Cambiar el nombre de un panel de Power BI
 
-## Rename the dashboard
+## Cambie el nombre del panel
 
-Right-click the dashboard name and select <bpt id="p1">**</bpt>Rename<ept id="p1">**</ept>.
+Haga clic en el nombre del panel y seleccione **cambiar el nombre de**.
 
 ![](media/powerbi-service-rename-a-dashboard/rename_dataset_new.png)
 
-## Having trouble renaming a dashboard?
+## ¿Tiene problemas para cambiar el nombre de un panel?
 
--   If the dashboard has this icon ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIcon.png)
+-   Si el panel tiene este icono ![](media/powerbi-service-rename-a-dashboard/PBI_SharedWithYouIcon.png)
 
-    A sharing icon  tells you that the dashboard is being <bpt id="p1">[</bpt>shared<ept id="p1">](powerbi-service-share-unshare-dashboard.md)</ept> with you or is part of an organizational content pack.  
+    Un icono para compartir indica que el panel se está [compartido](powerbi-service-share-unshare-dashboard.md) con usted o forma parte de un paquete de contenido de organización.  
 
--   Shared dashboards are read-only and can't be renamed. 
+-   Paneles compartidos son de solo lectura y no se puede cambiar. 
 
--   If the dashboard is part of a content pack, you can Personalize it and rename it that way.
+-   Si el panel forma parte de un paquete de contenido, puede personalizarla y cambiar el nombre de este modo.
 
     ![](media/powerbi-service-rename-a-dashboard/PBI_DashPersonalize.png)
 
-Read more <bpt id="p1">[</bpt>tips for designing your dashboard<ept id="p1">](powerbi-service-tips-for-designing-a-great-dashboard.md)</ept>.
+Leer más [sugerencias para diseñar su panel](powerbi-service-tips-for-designing-a-great-dashboard.md).
 
 ## Consulte también
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

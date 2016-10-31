@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tips and tricks for color formatting in Power BI"
-   description="Tips and tricks for color formatting in Power BI"
+   pageTitle="Sugerencias y trucos para Power BI de formato de color"
+   description="Sugerencias y trucos para Power BI de formato de color"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,126 +20,127 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Tips and tricks for color formatting in Power BI
+# Sugerencias y trucos para Power BI de formato de color
 
-Power BI provides many different ways to customize your dashboards and reports. This article details a collection of tips that can make your Power BI visualizations more compelling, interesting, and customized to your needs.
+Power BI proporciona muchas maneras diferentes de personalizar los informes y paneles. Este artículo se detalla un conjunto de sugerencias que puede hacer que las visualizaciones de Power BI más atractiva, interesantes y personalizadas para sus necesidades.
 
-The following tips are provided. Have another great tip? Estupendo. Send it our way and we’ll see about adding it to this list.
+Se proporcionan las siguientes sugerencias. ¿Tiene otra buena sugerencia? Estupendo. Enviar nuestra manera y veremos acerca de cómo agregar a esta lista.
 
--   Change the color of a single data point
+-   Cambiar el color de un único punto de datos
 
--   Base the colors of a chart on a numeric value
+-   Basar los colores de un gráfico en un valor numérico
 
--   Base the color of data points on a field value
+-   Basar el color de los puntos de datos en un valor de campo
 
--   Customize colors used in the color scale
+-   Personalizar los colores utilizados en la escala de colores
 
--   Use diverging color scales
+-   Use divergentes escalas de colores
 
--   How to undo in Power BI
+-   Cómo deshacer en Power BI
 
-To make any changes, you must be editing a report: select your <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>My Workspace<ept id="p2">**</ept> pane, then select <bpt id="p3">**</bpt>Edit Report<ept id="p3">**</ept> from the top menu area, as shown in the following image.
+Para realizar cambios, debe modificar un informe: seleccionar su **informe** desde el **Mi área de trabajo** panel, a continuación, seleccione **Editar informe** desde el área de menú superior, como se muestra en la siguiente imagen.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_1.png)
 
-When the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane appears along the right side of the <bpt id="p2">**</bpt>Report<ept id="p2">**</ept> canvas, you’re ready to start customizing.
+Cuando el **visualizaciones** panel aparece al lado derecho de la **informe** lienzo, está listo para empezar a personalizar.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_2.png)
 
-## Change the color of a single data point
+## Cambiar el color de un único punto de datos
 
-Sometimes you want to highlight one particular data point. Perhaps it’s sales figures for the launch of a new product, or increased quality scores after launching a new program. With Power BI, you can highlight a particular data point by changing its color.
+A veces desea resaltar un punto de datos determinado. Quizás es cifras de ventas para el lanzamiento de un producto nuevo o aumentar las puntuaciones de calidad después de iniciar un programa nuevo. Con Power BI, puede resaltar un punto de datos determinado cambiándole el color.
 
-The following visualization ranks states in terms of cost of living. 
+La visualización siguiente clasifica los Estados en términos de coste de la vida. 
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_3.png)
 
-Now imagine you want to quickly show where Washington lands in that ranked list, by using color. Here are the steps:
+Ahora suponga que desea mostrar rápidamente en Washington aterriza en esa lista clasificada, utilizando el color. Estos son los pasos:
 
-Expand the <bpt id="p1">**</bpt>Data Colors<ept id="p1">**</ept> section. The following appears.
+Expanda el **colores datos** sección. Aparece el siguiente.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_4.png)
 
-Set <bpt id="p1">**</bpt>Show All<ept id="p1">**</ept> to <bpt id="p2">**</bpt>On<ept id="p2">**</ept>. This displays the colors for each data element in the visualization. When you hover over the data points, scrolling is enabled so you can modify any of the data points.
+Establecer **Mostrar todo** a **en**. Esto muestra los colores de cada elemento de datos en la visualización. Desplazamiento está habilitado cuando se coloca sobre los puntos de datos, por lo que puede modificar cualquiera de los puntos de datos.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_5.png)
 
-In this case, let’s change <bpt id="p1">**</bpt>Washington<ept id="p1">**</ept> to green. We scroll down to <bpt id="p1">**</bpt>Washington<ept id="p1">**</ept> and select the down arrow inside its color box, and the color selection window appears.
+En este caso, vamos a cambiar **Washington** a verde. Nos desplazamos hacia abajo hasta **Washington** y seleccione la flecha desplegable dentro de su cuadro de color y aparece la ventana de selección de color.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_6.png)
 
-Once selected, the <bpt id="p1">**</bpt>Washington<ept id="p1">**</ept> data point is a nice shade of green, and certainly stands out.
+Una vez seleccionado, el **Washington** punto de datos es una buena tonalidad de verde y ciertamente destaque.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_7.png)
 
-Even if you change visualization types, then return, Power BI remembers your selection and keeps <bpt id="p1">**</bpt>Washington<ept id="p1">**</ept> green.
+Aunque cambiar tipos de visualización, a continuación devuelve, Power BI recuerda la selección y mantiene **Washington** verde.
 
-You can change the color of a data point for more than one data element, too. In the following image, <bpt id="p1">**</bpt>Arizona<ept id="p1">**</ept> is red, and <bpt id="p2">**</bpt>Washington<ept id="p2">**</ept> is still green.
+Puede cambiar el color de un punto de datos de más de un elemento de datos, también. En la siguiente imagen, **Arizona** es rojo, y **Washington** continúa en color verde.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_8.png)
 
-There are all sorts of things you can do with colors. In the next section, we take a look at gradients.
+Hay todo tipo de cosas que puede hacer con colores. En la siguiente sección, echamos un vistazo a degradados.
 
-## Base the colors of a chart on a numeric value
+## Basar los colores de un gráfico en un valor numérico
 
-Charts often benefit from dynamically setting color based on the numeric value of a field. By doing this, you could show a different value than what’s used to for the size of a bar, and show two values on a single graph. Or you can use this to highlight data points over (or under) a certain value – perhaps highlighting areas of low profitability.
+Los gráficos que se suelen beneficiarán de establecer de forma dinámica basándose en el valor numérico de un campo de color. Haciendo esto, podría mostrar un valor diferente al que se utilizó para el tamaño de una barra y se muestran dos valores en un único gráfico. O bien puede usar para resaltar los datos puntos sobre (o en) un valor determinado: quizás resaltar áreas de la falta de rentabilidad.
 
-The following sections demonstrate different ways to base color on a numeric value.
+Las siguientes secciones muestran distintas formas de color se base en un valor numérico.
 
-## Base the color of data points on a value
+## El color de los puntos de datos en un valor de base
 
-To change color based on a value, drag the field you want to base color on into the <bpt id="p1">**</bpt>Color Saturation<ept id="p1">**</ept> area in the <bpt id="p2">**</bpt>Field<ept id="p2">**</ept> pane. In the following image, <bpt id="p1">**</bpt>Profit before tax<ept id="p1">**</ept> has been dragged into <bpt id="p2">**</bpt>Color Saturation<ept id="p2">**</ept>. As can see that, although <bpt id="p1">**</bpt>Velo<ept id="p1">**</ept> has higher <bpt id="p2">**</bpt>Gross Sales<ept id="p2">**</ept> (its column is higher), <bpt id="p3">**</bpt>Amarilla<ept id="p3">**</ept> has a larger <bpt id="p4">**</bpt>Profit before tax<ept id="p4">**</ept> (its column has more color saturation).
+Para cambiar el color según un valor, arrastre el campo que desea basar el color en la **saturación del Color** área en el **campo** panel. En la siguiente imagen, **beneficios antes de impuestos** se ha arrastrado a **saturación del Color**. Como puede ver que, aunque **Velo** tiene mayor **ventas brutas** (la columna es mayor), **Amarilla** tiene una mayor **beneficios antes de impuestos** (su columna tiene más de saturación de color).
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_9.png)
 
-## Customize the colors used in the color scale
+## Personalizar los colores utilizados en la escala de colores
 
-You can customize colors used in the color scale, too. Expand <bpt id="p1">**</bpt>Data Colors<ept id="p1">**</ept> and you see a gradient of colors used for visualizing your data. By default, the lowest value in your data is mapped to the least saturated color, and the highest value to the most saturated color.
+Puede personalizar los colores utilizados en la escala de colores demasiado. Expanda **datos colores** y verá un degradado de colores que se usan para visualizar los datos. De forma predeterminada, el valor más bajo de los datos se asigna a los colores menos saturados y el valor más alto para el color de la saturación máxima.
 
-The color range is shown in a gradient bar that displays the spectrum between <bpt id="p1">**</bpt>Minimum<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Maximum<ept id="p2">**</ept> color values, with the <bpt id="p3">**</bpt>Minimum<ept id="p3">**</ept> value color on the left, and <bpt id="p4">**</bpt>Maximum<ept id="p4">**</ept> value color to the right.
+La gama de colores se muestra en la barra de degradado que muestre el espectro entre **mínimo** y **máximo** los valores de color con el **mínimo** valor de color a la izquierda, y **máximo** valor de color a la derecha.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_10.png)
 
-To change the scale to use a different range of colors, select the color drop-down beside <bpt id="p1">**</bpt>Minimum<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Maximum<ept id="p2">**</ept>, and select a color. The following image shows the <bpt id="p1">**</bpt>Maximum<ept id="p1">**</ept> color changed to black, and the gradient bar shows the new color spectrum between <bpt id="p2">**</bpt>Minimum<ept id="p2">**</ept> and <bpt id="p3">**</bpt>Max﻿imum<ept id="p3">**</ept>.
+Para cambiar la escala para usar otro intervalo de colores, seleccione la lista desplegable situada junto a color **mínimo** o **máximo**, y seleccione un color. La siguiente imagen muestra la **máxima** Cambiar color a negro y la barra de degradado muestra el espectro de color nuevo entre **mínimo** y **má Max**.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_11.png)
 
-You can also change the way the values map to these colors. In the following image, the colors for <bpt id="p1">**</bpt>Minimum<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Maximum<ept id="p2">**</ept> are set to orange and green, respectively.
+También puede cambiar la manera en que los valores se asignan a estos colores. En la siguiente imagen, los colores de **mínimo** y **máximo** se establecen en naranja y verde, respectivamente.
 
-In this first image, notice how the bars in the chart reflect the gradient shown in the bar; the highest value is green, the lowest is orange, and each bar between is colored with a shade of the spectrum between green and orange.
+En esta primera imagen, observe cómo las barras del gráfico reflejan el degradado que se muestra en la barra; el valor máximo es verde, la más baja es naranja y cada barra entre está coloreado con un tono del espectro entre verde y naranja.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_12.png)
 
-Now, let’s see what happens if we provide numeric values in the <bpt id="p1">**</bpt>Minimum<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Maximum<ept id="p2">**</ept> value boxes, which are below the <bpt id="p3">**</bpt>Minimum<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Maximum<ept id="p4">**</ept> color selectors (shown in the following image). Let’s set <bpt id="p1">**</bpt>Minimum<ept id="p1">**</ept> to 20,000,000, and set <bpt id="p2">**</bpt>Maximum<ept id="p2">**</ept> to 20,000,000.
+Ahora, veamos qué sucede si se proporcionan valores numéricos en el **mínimo** y **máximo** valor cuadros, que están por debajo de la **mínimo** y **máximo** color selectores (que se muestra en la siguiente imagen). Vamos a configurar **mínimo** en 20,000,000 y **máximo** a 20,000,000.
 
-By setting those values, gradient is no longer applied to values on the chart that are below <bpt id="p1">**</bpt>Minimum<ept id="p1">**</ept> or above <bpt id="p2">**</bpt>Maximum<ept id="p2">**</ept>; any bar with a value over <bpt id="p3">**</bpt>Maximum<ept id="p3">**</ept> value is colored green, and any bar with a value under <bpt id="p4">**</bpt>Minimum<ept id="p4">**</ept> value is colored red.
+Estableciendo los valores de degradado ya no se aplica a los valores del gráfico que se encuentran debajo de **mínimo** o superior **máximo**; cualquier barra con un valor sobre **máximo** valor es de color verde y cualquier barra con un valor bajo **mínimo** valor es de color rojo.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_13.png)
 
-## Use Diverging color scales
+## Usar escalas de colores Diverging
 
-Sometimes your data may have a naturally diverging scale. For example, a temperate range has a natural center at freezing point, and a profitability score has a natural mid-point (zero).
+A veces los datos pueden tener una escala de forma natural divergente. Por ejemplo, un intervalo templado tiene un centro natural en el punto de congelación y una puntuación de rentabilidad tiene un punto medio natural (cero).
 
-To use diverging color scales, slide the <bpt id="p1">**</bpt>Diverging<ept id="p1">**</ept> slider to <bpt id="p2">**</bpt>On<ept id="p2">**</ept>. When <bpt id="p1">**</bpt>Diverging<ept id="p1">**</ept> is turned on, an additional color selector and value box, both called <bpt id="p2">**</bpt>Center<ept id="p2">**</ept>, appear, as shown in the following image.
+Para utilizar divergentes escalas de colores, deslice el **Diverging** control deslizante para **en**. Cuando **Diverging** está activado, un selector de color adicionales y cuadro de valor, ambos llama **Center**, aparecen como se muestra en la siguiente imagen.
 
 ![](media/powerbi-service-tips-and-tricks-for-color-formatting/TipsTricksColor_14.png)
 
-When the <bpt id="p1">**</bpt>Diverging<ept id="p1">**</ept> slider is on, you can set the colors for <bpt id="p2">**</bpt>Minimum<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Maximum<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Center<ept id="p4">**</ept> separately. In the following image, <bpt id="p1">**</bpt>Center<ept id="p1">**</ept> is set to one, so bars with values above one are a gradient shade of green, and bars below one are shades of red.
+Cuando el **Diverging** control deslizante está activada, puede establecer los colores de **mínimo**, **máximo** y **Center** por separado. En la siguiente imagen, **Center** se establece en uno, por lo que barras con valores por encima de uno son un tono de degradado de color verde, y por debajo de las barras de tonos de rojo.
 
-## How to undo in Power BI
+## Cómo deshacer en Power BI
 
-Like many other Microsoft services and software, Power BI provides an easy way to undo your last command. For example, let’s say you change the color of a data point, or a series of data points, and you don’t like the color when it appears in the visualization. You don’t recall exactly which color it was before, but you know you want that color back!
+Al igual que muchos otros servicios de Microsoft y software, Power BI proporciona una manera fácil de deshacer el último comando. Por ejemplo, digamos cambiemos el color de un punto de datos o una serie de puntos de datos y no le gusta el color cuando aparece en la visualización. No recuerda exactamente el color que tenía antes, pero sabe que desea volver ese color!
 
-To <bpt id="p1">**</bpt>undo<ept id="p1">**</ept> your last action, or the last few actions, all you have to do is:
+Para **Deshacer** la última acción o las acciones de pocos última, todo lo que tiene que hacer es:
 
-1.  Type CTRL+Z
+1.  Tipo CTRL + Z
 
 ## Comentarios
 
-Do you have a tip you’d like to share? Please send it our way, and we’ll see about including it here.
+¿Tiene una sugerencia que le gustaría compartir? Envíe nuestra manera y veremos sobre incluirlo aquí.
 
-<bpt id="p1">**</bpt>Note:<ept id="p1">**</ept> These color, axis, and related customizations, available when the <bpt id="p2">**</bpt>F﻿ormat<ept id="p2">**</ept> icon is selected, are also available in Power BI Desktop.
+
+            **Nota:** estos colores, eje y personalizaciones relacionadas, está disponible cuando el **formato** icono está seleccionada, también están disponible en Power BI Desktop.
 
 Para obtener más información, vea los siguientes artículos:
 
--   [Getting started with color formatting and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)
+-   [Introducción a las propiedades de eje y el formato de color](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)

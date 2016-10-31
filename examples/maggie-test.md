@@ -1,12 +1,12 @@
 <properties 
-        pageTitle="page title" 
+        pageTitle="título de la página" 
         description="description" 
         services="powerbi" 
         documentationCenter="" 
         authors="maggiesMSFT" />
 
-# here's
+# aquí es
 
-my new topic.
+Mi nuevo tema.
 
-## wow
+## WOW

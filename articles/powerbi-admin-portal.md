@@ -1,6 +1,6 @@
 <properties
    pageTitle="Portal de administración"
-   description="The admin portal allows for tenant management of Power BI in your organization. It includes items such as usage metrics, access to the Office 365 admin center, and settings."
+   description="El portal de administración permite la administración de inquilinos de Power BI en su organización. Incluye elementos como las métricas de uso, acceso a la configuración y el centro de administración de Office 365."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -18,118 +18,118 @@
    ms.workload="powerbi"
    ms.date="08/15/2016"
    ms.author="asaxton"/>
-# Power BI admin portal
+# Portal de administración de Power BI
 
-Tenant management of Power BI for your company is done through the Power BI admin portal. The admin portal is accessible to all users who are Global Admins in Office 365. 
+Administración de inquilinos de Power BI para su empresa se realiza mediante el portal de administración de Power BI. El portal de administración es accesible para todos los usuarios que son administradores globales de Office 365. 
 
-## How to get to the admin portal
+## Cómo abrir el portal de administración
 
-To get to the Power BI admin portal, do the following.
+Para abrir el portal de administración de Power BI, haga lo siguiente.
 
-1. Select the settings gear in the top right of the Power BI service.
+1. Seleccione el engranaje de la configuración en la parte superior derecha del servicio Power BI.
 
-2. Select <bpt id="p1">**</bpt>Admin Portal<ept id="p1">**</ept>.
+2. Seleccione **Portal de administración de**.
 
-> [AZURE.NOTE] Your account needs to be marked as a <bpt id="p1">**</bpt>Global Admin<ept id="p1">**</ept>, within Office 365 or Azure Active Directory, to get access to the Power BI admin portal.
+> [AZURE.NOTE] La cuenta debe estar marcada como un **Administrador Global**, dentro de Office 365 o Azure Active Directory, para obtener acceso al portal de administración de Power BI.
 
 ![](media/powerbi-admin-portal/powerbi-admin-settings.png)
 
-Within the portal, there are 3 tabs. These are described below.
--   [Usage metrics](#usage-metrics)
+En el portal, hay 3 pestañas. Estos métodos se describen a continuación.
+-   [Métricas de uso](#usage-metrics)
 -   [Administrar usuarios](#manage-users)
--   [Audit logs](#audit-logs)
--   [Tenant settings](#tenant-settings)
+-   [Registros de auditoría](#audit-logs)
+-   [Configuración de inquilinos](#tenant-settings)
 
 ![](media/powerbi-admin-portal/powerbi-admin-landing-page.png)
 
-## Usage metrics
+## Métricas de uso
 
-The first tab, in the admin portal, is <bpt id="p1">**</bpt>Usage metrics<ept id="p1">**</ept>. The usage metrics report gives you the ability to monitor usage within Power BI for your organization. It also provides the ability to see which users, and groups, are the most active within Power BI for your organization.
+La primera ficha, en el portal de administración es **métricas de uso**. El informe de métricas de uso le ofrece la capacidad de supervisar el uso de Power BI para su organización. También proporciona la capacidad para ver qué usuarios y grupos, son los más activos en Power BI para su organización.
 
-> [AZURE.NOTE] The first time you access the dashboard, or after you visit again after a long period of not viewing the dashboard, you'll likely see a loading screen while we load the dashboard.
+> [AZURE.NOTE] La primera vez tener acceso al panel, o después de visitar nuevo tras un largo período de no ve el panel, probablemente verá una pantalla de carga mientras se carga en el panel.
 
-Once the dashboard loads, you will see two sections of tiles. The first section includes usage data for individual users and the second section has similar information for groups in your organization.
+Una vez las cargas del panel, verá dos secciones de mosaicos. La primera sección incluye datos de uso para usuarios individuales y la segunda sección muestra información similar para los grupos de su organización.
 
-Here’s a breakdown of what you will see in each tile:
+Éste es un desglose de lo que verá en cada mosaico:
 
-- Distinct count of all dashboards, reports, and datasets in the user workspace
+- Recuento distinto de todos los paneles, informes y conjuntos de datos en el área de trabajo de usuario
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-number-tiles.png)
 
-- Most consumed dashboard by number of users who can access it. For example, if you have a dashboard that you shared with 3 users, and you also added it to a content pack two different users connected to, its count would be 6 (1 + 3 + 2)
+- Panel más utilizado por el número de usuarios que pueden tener acceso a él. Por ejemplo, si tiene un panel que comparte con 3 usuarios y también se agrega a dos usuarios distintos conectados a un paquete de contenido, su recuento sería 6 (1 + 3 + 2)
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-top-dashboards.png)
 
-- The most popular content users connected to. This would be anything the users could reach through the Get Data process, so SaaS content packs, Organizational content packs, files or databases.
+- Los usuarios de contenido más populares conectan a. Esto sería todo lo que los usuarios llegara a través del proceso de obtención de datos, por lo que los paquetes, paquetes de contenido organizativo, archivos o bases de datos de contenido SaaS.
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-top-connections.png)
 
-- A view of your top users based on how many dashboards they have, both dashboards they created themselves and dashboards shared to them.
+- Una vista de los usuarios principales según el número de paneles tienen, ambos paneles que han creado ellos mismos y paneles compartidos a ellos.
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-top-users-dashboards.png)
 
-- A view of your top users based on how many reports they have
+- Una vista de los usuarios principales según cuántos informes tienen
 
     ![](media/powerbi-admin-portal/powerbi-admin-usage-metrics-top-users-reports.png)
 
-The second section shows the same type of information, but based on groups. This will let you see which groups in your organization are most active and what kind of information they are using.
+La segunda sección muestra el mismo tipo de información, pero se basa en grupos. Esto le permitirá ver qué grupos de la organización son más activos y qué tipo de información están utilizando.
 
-With this information, you will be able to get real insights into how people are using Power BI across your organization, and be able to recognize those users, and groups, who are very active in your organization.
+Con esta información, se podrá obtener la información real en cómo las personas están usando Power BI en toda la organización y poder reconocer dichos usuarios y grupos, que son muy activos en su organización.
 
 ## Administrar usuarios
 
-The second tab, in the admin portal, is <bpt id="p1">**</bpt>Manage Users<ept id="p1">**</ept>. User management, for Power BI, is done in the Office 365 admin center, so this section allows you to quickly reach the area to manage users, admins, and groups within Office 365.
+La segunda pestaña, en el portal de administración es **Administrar usuarios**. Administración de usuarios, para Power BI, se realiza en el centro de administración de Office 365, por lo que esta sección le permite alcanzar rápidamente el área para administrar usuarios, administradores y grupos dentro de Office 365.
 
 ![](media/powerbi-admin-portal/powerbi-admin-manage-users.png)
 
-When you click <bpt id="p1">**</bpt>Go to O365 Admin Center<ept id="p1">**</ept>, you go directly to the Office 365 admin center landing page, to manage the users of your tenant.
+Al hacer clic en **vaya al centro de administración de Office 365**, vaya directamente al centro de administración de Office 365 página para administrar los usuarios de su inquilino de inicio.
 
 ![](media/powerbi-admin-portal/powerbi-admin-o365-admin-center.png)
 
-## Audit logs
+## Registros de auditoría
 
-The third tab, in the admin portal, is <bpt id="p1">**</bpt>Audit logs<ept id="p1">**</ept>. The logs are located within the Office 365 Security &amp; Compliance center. This section allows you to quickly access that area within Office 365. 
+Es la tercera ficha en el portal de administración de **registros de auditoría**. Los registros se encuentran en el centro de seguridad de Office 365 y cumplimiento. Esta sección permite obtener acceso rápidamente a esa área dentro de Office 365. 
 
-For more information about audit logs, see <bpt id="p1">[</bpt>Auditing Power BI in your organization<ept id="p1">](powerbi-admin-auditing.md)</ept>
+Para obtener más información acerca de los registros de auditoría, consulte [auditoría Power BI en su organización](powerbi-admin-auditing.md)
 
-## Tenant settings
+## Configuración de inquilinos
 
-The third tab, in the admin portal, is <bpt id="p1">**</bpt>Tenant settings<ept id="p1">**</ept>. Tenant settings give you more control over what features are made available to your organization. If you have concerns around sensitive data, some of our features may not be right for your organization. If this is the case, you can switch it off in your tenant.
+La tercera pestaña en el portal de administración es **configuración de inquilinos**. Configuración del inquilino ofrecen un mayor control sobre qué características estarán disponibles para su organización. Si le preocupa en torno a los datos confidenciales, algunas de nuestras características pueden no ser adecuado para su organización. Si es así, se puede desactivar en el inquilino.
 
-> [AZURE.IMPORTANT] These are global settings. Turning them off will affect all users, using Power BI, in your organization!
+> [AZURE.IMPORTANT] Estos parámetros son globales. Apagarlos afectará a todos los usuarios, el uso de Power BI, en su organización!
 
 ![](media/powerbi-admin-portal/powerbi-admin-tenant-settings.png)
 
-When you turning settings on and off, you will see a notification letting you know it was successful. It can take up to 10 minutes for the setting to take effect for everyone in your tenant.
+Cuando se activa la configuración y desactiva, aparecerá una notificación que sabrá que se realizó correctamente. Pueden tardar hasta 10 minutos para la configuración surta efecto para todos los usuarios en el inquilino.
 
 ![](media/powerbi-admin-portal/powerbi-admin-tenant-settings-notification.png)
 
-### Publish content packs to the entire organization
+### Publicar paquetes de contenido en toda la organización
 
-This setting controls whether users of your tenant can publish content packs to the entire organization.
+Esta configuración controla si los usuarios del inquilino de pueden publicar paquetes de contenido en toda la organización.
 
 ![](media/powerbi-admin-portal/powerbi-admin-publish-entire-org.png)
 
-### Allow sharing content to external users
+### Permitir uso compartido de contenido a los usuarios externos
 
-This setting determines whether you can share a dashboard with users outside of your oganization.
+Esta configuración determina si puede compartir un panel con usuarios fuera de su organización.
 
 ![](media/powerbi-admin-portal/powerbi-admin-sharing-external.png)
 
-### Publish to web
+### Publicar en web
 
-This setting determines whether you can use the <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> feature for reports. [Obtener más información](powerbi-service-publish-to-web.md)
+Esta configuración determina si se puede usar el **publicar en web** la característica de informes. [Obtener más información](powerbi-service-publish-to-web.md)
 
 ![](media/powerbi-admin-portal/powerbi-admin-publish-to-web.png)
 
-### Export data
+### Exportar datos
 
-This setting determines whether you can export data from a tile or visualization. [Obtener más información](powerbi-service-export-data.md)
+Esta configuración determina si puede exportar datos desde un icono o una visualización. [Obtener más información](powerbi-service-export-data.md)
 
 ![](media/powerbi-admin-portal/powerbi-admin-export-data.png)
 
 ## Consulte también
 
-[Auditing Power BI in your organization](powerbi-admin-auditing.md)  
-[Administering Power BI in your Organization](powerbi-admin-administering-power-bi-in-your-organization.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Auditoría de Power BI en su organización](powerbi-admin-auditing.md)  
+[Administración de Power BI en su organización](powerbi-admin-administering-power-bi-in-your-organization.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

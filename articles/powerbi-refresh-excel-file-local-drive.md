@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Refresh a dataset created from an Excel workbook - local"
-   description="Refresh a dataset created from an Excel workbook on a local drive"
+   pageTitle="Actualizar un conjunto de datos creado a partir de un libro de Excel - local"
+   description="Actualizar un conjunto de datos creado a partir de un libro de Excel en una unidad local"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,66 +20,66 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
 
-# Refresh a dataset created from an Excel workbook on a local drive
+# Actualizar un conjunto de datos creado a partir de un libro de Excel en una unidad local
 
-## What’s supported?  
-In Power BI, Refresh Now and Schedule Refresh is supported for datasets created from Excel workbooks imported from a local drive where Power Query (Get &amp; Transform data in Excel 2016) or Power Pivot is used to connect to any of the following data sources and load data into the Excel data model:  
+## ¿Qué es compatible?  
+En Power BI, actualizar ahora y programar la actualización se admite para conjuntos de datos creado a partir de libros de Excel que se importan desde una unidad local donde se usa Power Query (Get y transformación de datos en Excel 2016) o Power Pivot para conectarse a cualquiera de los siguientes orígenes de datos y cargar datos en el modelo de datos de Excel:  
 
-### Power BI Gateway - Personal
+### Puerta de enlace de Power BI - Personal
 
--   All online data sources shown in Power Query.
--   All on-premises data sources shown in Power Query except for Hadoop file (HDFS) and Microsoft Exchange.
--   All online data sources shown in Power Pivot.\*
--   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
+-   Todos los orígenes de datos en línea que se muestra en Power Query.
+-   Todos los orígenes de datos local que se muestra en Power Query, excepto el archivo Hadoop (HDFS) y Microsoft Exchange.
+-   Todos los orígenes de datos en línea que se muestra en Power Pivot.\*
+-   Todos los orígenes de datos locales que se muestran en Power Pivot excepto archivo Hadoop (HDFS) y Microsoft Exchange.
 
 <!-- Refresh Data sources-->
 [AZURE.INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
 >**Notas:**  
->- A gateway must be installed and running in order for Power BI to connect to on-premises data sources and refresh the dataset.
+>- Una puerta de enlace debe estar instalado y en ejecución para Power BI para conectarse a orígenes de datos locales y actualizar el conjunto de datos.
 >
->- When using Excel 2013, make sure you’ve updated Power Query to the latest version.
+>- Cuando utiliza Excel 2013, asegúrese de que ha actualizado Power Query a la versión más reciente.
 >
->- Refresh is not supported for Excel workbooks imported from a local drive where data exists only in  worksheets or linked tables. Refresh is supported for worksheet data if it is stored and imported from OneDrive. To learn more, see <bpt id="p1">[</bpt>Refresh a dataset created from an Excel workbook on OneDrive, or SharePoint Online<ept id="p1">](powerbi-refresh-excel-file-onedrive.md)</ept>.
+>- No se admite la actualización de los libros de Excel importados de una unidad local que existen datos en hojas de cálculo o tablas vinculadas. La actualización se admite para los datos de la hoja de cálculo si se almacena y se importan desde OneDrive. Para obtener más información, consulte [actualizar un conjunto de datos creado a partir de un libro de Excel en OneDrive o SharePoint Online](powerbi-refresh-excel-file-onedrive.md).
 >
->- When you refresh a dataset created from an Excel workbook imported from a local drive, only the data queried from data sources is refreshed. If you change the structure of the data model in Excel or Power Pivot; for example, create a new measure or change the name of a column, those changes will not be copied to the dataset. If you make such changes, you’ll need to re-upload or re-publish the workbook. If you expect to make regular changes to the structure of your workbook and you want those to be reflected in the dataset in Power BI without having to re-upload, consider putting your workbook on OneDrive. Power BI automatically refreshes both the structure and worksheet data from workbooks stored and imported from OneDrive.
+>- Al actualizar un conjunto de datos creado a partir de un libro de Excel que se importan desde una unidad local, se actualizan únicamente los datos consultados de orígenes de datos. Si cambia la estructura del modelo de datos en Excel o Power Pivot; Por ejemplo, cree una nueva medida o cambiar el nombre de una columna, esos cambios no se copiará en el conjunto de datos. Si realiza estos cambios, necesitará volver a cargar o volver a publicar el libro. Si piensa realizar cambios periódicos en la estructura del libro y desea que los que queden reflejados en el conjunto de datos en Power BI sin tener que volver a cargar, considere la posibilidad de colocar el libro en OneDrive. Power BI actualiza automáticamente los datos de la estructura y la hoja de cálculo de los libros almacenados e importado desde OneDrive.
 
-## How do I make sure data is loaded to the Excel data model?  
-When you use Power Query (Get &amp; Transform data in Excel 2016) to connect to a data source, you have several options where to load the data. To make sure you load data into the data model, you must select the <bpt id="p1">**</bpt>Add this data to the Data Model<ept id="p1">**</ept> option in the <bpt id="p2">**</bpt>Load To<ept id="p2">**</ept> dialog box.
+## ¿Cómo puedo asegurarme de que se cargan datos en el modelo de datos de Excel?  
+Cuando usa Power Query (Get y transformación de datos en Excel 2016) para conectarse a un origen de datos, tiene varias opciones donde desea cargar los datos. Para asegurarse de que se cargan datos en el modelo de datos, debe seleccionar la **agregar estos datos al modelo de datos** opción en la **cargar a** cuadro de diálogo.
 
-> [AZURE.NOTE] The images here show Excel 2016.
+> [AZURE.NOTE] Las imágenes a continuación muestran Excel 2016.
 
-In <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Load To…<ept id="p2">**</ept>  
+En **Navigator**, haga clic en **cargar...**  
     ![](media/powerbi-refresh-excel-file-local-drive/Refresh_LoadToDM_1.png)
 
-Or, If you click <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> in Navigator, you’ll open the Query Editor. There you can click <bpt id="p1">**</bpt>Close &amp; Load To….<ept id="p1">**</ept>  
+O bien, si hace clic **modificar** en Navigator, se abrirá el Editor de consultas. Se puede hacer clic en **Cerrar y cargar...**  
     ![](media/powerbi-refresh-excel-file-local-drive/Refresh_LoadToDM_2.png)
 
-Then in <bpt id="p1">**</bpt>Load To<ept id="p1">**</ept>, make sure you select <bpt id="p2">**</bpt>Add this data to the Data Model<ept id="p2">**</ept>.  
+A continuación, en **cargar**, asegúrese de seleccionar **agregar estos datos al modelo de datos**.  
     ![](media/powerbi-refresh-excel-file-local-drive/Refresh_LoadToDM_3.png)
 
-### What if I use Get External Data in Power Pivot?  
-No problem. Whenever you use Power Pivot to connect to and query data from an on-premises or online data source, the data is automatically loaded to the data model.
+### ¿Qué ocurre si utilizo obtener datos externos en Power Pivot?  
+No hay problema. Siempre que use Power Pivot para conectarse y consultar datos de una implementación local o el origen de datos en línea, los datos se cargan automáticamente al modelo de datos.
 
-## How do I schedule refresh?  
-When you setup a refresh schedule, Power BI will connect directly to the data sources using connection information and credentials in the dataset to query for updated data, then load the updated data into the dataset. Any visualizations in reports and dashboards based on that dataset in the Power BI service are also updated.
+## ¿Cómo programar la actualización?  
+Al configurar una programación de actualización, Power BI conectarse directamente a los orígenes de datos con información de conexión y credenciales en el conjunto de datos de consulta para obtener datos actualizados y cargar los datos actualizados en el conjunto de datos. También se actualizan las visualizaciones en informes y paneles basados en ese conjunto de datos en el servicio Power BI.
 
-For details on how to setup schedule refresh, see <bpt id="p1">[</bpt>Configure Schedule Refresh<ept id="p1">](powerbi-refresh-scheduled-refresh.md)</ept>.
+Para obtener más información acerca de cómo programar la actualización de instalación, consulte [Configurar actualización de programación](powerbi-refresh-scheduled-refresh.md).
 
-## When things go wrong  
-When things go wrong, it’s usually because Power BI can’t sign into data sources, or if the dataset connects to an on-premises data source, the gateway is offline. Make sure Power BI can sign into data sources. If a password you use to sign into a data source changes, or Power BI gets signed out from a data source, be sure to try signing into your data sources again in Data Source Credentials.
+## Cuando existe algún problema  
+Cuando existe algún problema, suele ser porque Power BI no puede iniciar sesión en orígenes de datos, o si el conjunto de datos se conecta a un origen de datos local, la puerta de enlace está sin conexión. Asegúrese de que Power BI puede iniciar sesión en orígenes de datos. Si cambia una contraseña que se utiliza para iniciar sesión en un origen de datos o Power BI Obtiene la sesión de un origen de datos, asegúrese de intentar iniciar sesión en los orígenes de datos en las credenciales de origen de datos.
 
-Be sure to leave the <bpt id="p1">**</bpt>Send refresh failure notification email to me checked<ept id="p1">**</ept>. You’ll want to know right away if a scheduled refresh fails.
+Asegúrese de dejar el **Enviar correo de electrónico de notificación de error de actualización a mí comprueban**. Deseará saber inmediatamente si se produce un error en una actualización programada.
 
-## Important notes  
-\* Refresh is not supported for OData feeds connected to and queried from Power Pivot. When using an OData feed as a data source, use Power Query.
+## Notas importantes  
+\* No se admite la actualización en las fuentes de OData conectado a y consulta de PowerPivot. Al utilizar una OData fuente como un origen de datos, use Power Query.
 
 ## Solucionar problemas
 
-Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
+No puede ir a veces, actualizar los datos según lo esperado. Normalmente se trata de un problema conectado con una puerta de enlace. Eche un vistazo a los artículos de solución de problemas de puerta de enlace para herramientas y problemas conocidos.
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)
 
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[Solución de problemas de la puerta de enlace de Power BI - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Self-Service Sign up for Power BI"
-   description="Self-Service Sign up for Power BI. This looks at how an individual can sign up for Power BI (free), a trial or purchase Power BI Pro."
+   pageTitle="Suscripción de autoservicio para Power BI"
+   description="Suscripción de autoservicio para Power BI. Mira cómo una persona puede registrarse para Power BI (gratuito), una evaluación o adquirir Power BI Pro."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -19,157 +19,162 @@
    ms.workload="powerbi"
    ms.date="10/10/2016"
    ms.author="asaxton"/>
-# Self-service sign up for Power BI
+# Suscripción de autoservicio para Power BI
 
-Signing up for Power BI, as an individual, is easy! You can choose to use a free account, a Pro trial account, or purchase Power BI Pro, even if you are in an existing organization. Once you have determined which you would like to use, this article will walk you through the steps to get up and running.
+Registrarse para Power BI, como usuario individual, es fácil! Puede usar una cuenta gratuita, una cuenta de prueba Pro o compra Power BI Pro, incluso si está en una organización existente. Una vez que haya determinado que desea utilizar, este artículo le guiará a través de los pasos necesarios para poner en funcionamiento.
 
-> [AZURE.NOTE] If you are in an organization, individual sign up may be disabled. See <bpt id="p1">[</bpt>Individual Sign up has been turned off<ept id="p1">](#individual-sign-up-has-been-turned-off)</ept> for more information if you get an error indicating it has been turned off.
+> [AZURE.NOTE] Si trabaja en una organización, inicio de sesión individual de puede deshabilitarse. Consulte [se ha desactivado el registro Individual](#individual-sign-up-has-been-turned-off) para obtener más información si se produce un error que indica que se ha desactivado.
 
-## What email address can be used with Power BI?
+## ¿Qué dirección de correo electrónico se puede usar con Power BI?
 
-Power BI requires that you use a work, or school, email address to sign up. Power BI does not support email addresses provided by consumer email services or telecommunication providers. This includes outlook.com, hotmail.com, gmail.com and others.
+Power BI requiere el uso de un trabajo o escuela, dirección de correo electrónico para registrarse. Power BI no admite las direcciones de correo electrónico proporcionadas por servicios de correo electrónico del consumidor o proveedores de telecomunicaciones. Esto incluye outlook.com, hotmail.com, gmail.com y otros.
 
-If you try to sign up with a personal email address, you will get a message indicating to use a work or school email address.
+Si intenta iniciar sesión con una dirección de correo electrónico personal, obtendrá un mensaje que indica que para utilizar un trabajo o académica de dirección de correo electrónico.
 
-> [AZURE.NOTE] Power BI does not support self-service sign-up for .gov or .mil addresses at this time. Please contact your O365 admin.
+> [AZURE.NOTE] Power BI no admite suscripción de autoservicio para direcciones .gov o. mil en este momento. Póngase en contacto con el Administrador de Office 365.
 
-## Signing up for Power BI (free) as an individual
+## Registrarse para Power BI (gratuito) como usuario individual
 
-The quickest way to sign up for Power BI is to sign up for a Power BI (free) account. There is no cost to this account, and it allows you to use many of the features available in the service. [Obtener más información](https://powerbi.microsoft.com/pricing/)
+Es la forma más rápida para suscribirse a Power BI para suscribirse a una cuenta de Power BI (gratis). No hay ningún costo para esta cuenta y permite utilizar muchas de las características disponibles en el servicio. [Obtener más información](https://powerbi.microsoft.com/pricing/)
 
-> [AZURE.NOTE] If you receive a message that we already know you, try navigating to https://app.powerbi.com and signing in.
+> [AZURE.NOTE] Si recibe un mensaje que ya sabemos, intente navegar a https://app.powerbi.com y la firma.
 
-To sign up for Power BI, you can do the following.
+Para suscribirse a Power BI, puede hacer lo siguiente.
 
-1.  Browse to powerbi.com.
+1.  Vaya a powerbi.com.
 
-2.  Select <bpt id="p1">**</bpt>Get started free<ept id="p1">**</ept>.
+2.  Seleccione **Introducción gratuita**.
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup1.png)
 
-    Or you can go to <bpt id="p1">**</bpt>Products<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Pricing<ept id="p2">**</ept> and select <bpt id="p3">**</bpt>Sign up<ept id="p3">**</ept>.
+    O puede ir a **productos** > **precios** y seleccione **registrarse**.
     
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup1a.png)
 
-3.  In the dialog to choose how to get started, select <bpt id="p1">**</bpt>Sign up<ept id="p1">**</ept> under Power BI.
+3.  En el cuadro de diálogo para elegir cómo empezar a trabajar, seleccione **registrarse** en Power BI.
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup2.png)
 
-4.  Enter the email address you are signing up with, and then select <bpt id="p1">**</bpt>Sign up<ept id="p1">**</ept>. Be sure your email address is allowed for sign up. [Obtener más información](#what-email-address-can-be-used-with-power-bi)
+4.  Escriba la dirección de correo electrónico que va a registrarse con y, a continuación, seleccione **registrarse**. Asegúrese de que se permite su dirección de correo electrónico para registrarse. [Obtener más información](#what-email-address-can-be-used-with-power-bi)
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup3.png)
 
-5.  If your account does not exist within an organization, you will get a message indicating to check your email.
+5.  Si la cuenta no existe dentro de una organización, obtendrá un mensaje que indica que para comprobar el correo electrónico.
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup4.png)
 
-    If your account is part of an existing organization, you will get a message asking you to sign in with that account. Select <bpt id="p1">**</bpt>Continue<ept id="p1">**</ept> and sign in with your Office 365 login.
+    Si la cuenta forma parte de una organización existente, obtendrá un mensaje que le pide que inicie sesión con esa cuenta. Seleccione **continuar** e inicie sesión con su inicio de sesión de Office 365.
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup5.png)
 
-6.  If you received an email, select the link within the email to verify your email address. This will bring you back into the sign up flow. You may need to supply some additional information about yourself.
-7.  If you have an existing Office 365 account, you will see a message asking you to select <bpt id="p1">**</bpt>Start<ept id="p1">**</ept>.
+6.  Si recibe un correo electrónico, seleccione el vínculo en el correo electrónico para comprobar su dirección de correo electrónico. Esto le llevará atrás en el flujo de suscripción. Debe proporcionar información adicional sobre sí mismo.
+7.  Si tiene una cuenta de Office 365 existente, verá un mensaje que le pide que seleccione **iniciar**.
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup6.png)
     
-8.  You will then be taken to https://app.powerbi.com and you can begin using Power BI as a free user.
+8.  A continuación, se le llevará a https://app.powerbi.com y puede empezar a usar Power BI como un usuario libre.
 
-### What this looks like within the service
+### Aspecto dentro del servicio
 
-When you are in the service, you can verify that you have a free account by going to the <bpt id="p1">**</bpt>gear<ept id="p1">**</ept> icon and selecting <bpt id="p2">**</bpt>Manage personal storage<ept id="p2">**</ept>.
+Cuando esté en el servicio, puede comprobar que tiene una cuenta gratuita, vaya a la **engranaje** icono y seleccione **Administrar almacenamiento personal**.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-free-signup7.png)
  
-## Power BI Pro 60 day trial
+## Versión de prueba de Power BI Pro 60 días
 
-After you have signed up for your free account, you can optionally choose to try Pro for free. You will have access to all of the Pro features for the duration of the trial. Power BI Pro has all the features of the free version of Power BI, and additional collaboration and data refresh features. It also has higher data capacity and data streaming limits. For more information, see <bpt id="p1">[</bpt>Power BI Pricing<ept id="p1">](https://powerbi.microsoft.com/pricing)</ept>. To try a 60-day free trial of Power BI Pro, sign into Power BI, and try one of these Power BI Pro features:
+Después de registrarse para su cuenta gratuita, puede optar por probar Pro de forma gratuita. Tendrá acceso a todas las funciones de Pro para la duración de la versión de prueba. Power BI Pro incluye todas las características de la versión gratuita de Power BI y características de actualización de datos y la colaboración adicional. También tiene mayor capacidad de datos y límites de transmisión de datos. Para obtener más información, consulte [precios de Power BI](https://powerbi.microsoft.com/pricing). Para probar una versión de prueba gratuita de 60 días de Power BI Pro, inicie sesión en Power BI y pruebe una de estas características de Power BI Pro:
 
--   Create and publish customized <bpt id="p1">[</bpt>content packs<ept id="p1">](powerbi-service-organizational-content-packs-introduction.md)</ept>
--   Share <bpt id="p1">[</bpt>refreshable<ept id="p1">](powerbi-refresh-data.md)</ept> team dashboards and reports using <bpt id="p2">[</bpt>groups<ept id="p2">](powerbi-service-create-a-group-in-power-bi.md)</ept>
--   Connect to on-premises data using <bpt id="p1">[</bpt>Personal Gateway<ept id="p1">](powerbi-personal-gateway.md)</ept>
--   Enable live interactive connectivity to the following sources:
+-   Creación y publicación personalizada [paquetes de contenido](powerbi-service-organizational-content-packs-introduction.md)
+-   Recurso compartido [actualizables](powerbi-refresh-data.md) paneles e informes de uso del equipo [grupos](powerbi-service-create-a-group-in-power-bi.md)
+-   Conectarse a datos de local mediante [Personal Gateway](powerbi-personal-gateway.md)
+-   Habilitar la conectividad interactivo directo a los orígenes siguientes:
     -   [SQL Server Analysis Services](powerbi-sql-server-analysis-services-tabular-data.md)
-    -   [Spark on Azure HDInsight](powerbi-spark-on-hdinsight-with-direct-connect.md)
-    -   [Azure SQL Data Warehouse](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
+    -   [Spark en HDInsight de Azure](powerbi-spark-on-hdinsight-with-direct-connect.md)
+    -   [Almacenamiento de datos SQL Azure](powerbi-azure-sql-data-warehouse-with-direct-connect.md)
     -   [Azure SQL Database](powerbi-azure-sql-database-with-direct-connect.md)
 
-When you try any of these features, you will be prompted to start your free trial. You can also choose to make use of it by going to the gear icon and selecting <bpt id="p1">**</bpt>Manage personal storage<ept id="p1">**</ept>. Then select <bpt id="p1">**</bpt>Try Pro for free<ept id="p1">**</ept> on the right.
+Cuando realice una de estas características, se le pedirá para iniciar la prueba gratuita. También puede hacer uso de ella en el icono de engranaje y seleccione **Administrar almacenamiento personal**. A continuación, seleccione **prueba gratuita de Pro para** a la derecha.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial1.png)
  
-Then you can select <bpt id="p1">**</bpt>Start trial<ept id="p1">**</ept>.
+Puede seleccionar **Inicio prueba**.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial2.png)
 
 > **Notas**
 >
->-   If you need more time to evaluate Power BI, you can request to extend your trial period for 60 more days.
->-   Users taking advantage of this in-product Power BI Pro trial do not appear in the Office 365 admin portal as Power BI Pro Trial users (they appear as Power BI free users). They will, however, show up as Power BI Pro Trial users in the <bpt id="p1">**</bpt>manage storage<ept id="p1">**</ept> page in Power BI.
->-   If you are an IT Administrator wishing to acquire and deploy Power BI trial licenses to multiple users in your organization without having individual users accept trial terms individually, you can sign up for a <bpt id="p1">[</bpt>Power BI Pro subscription trial<ept id="p1">](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&amp;dl=POWER_BI_PRO)</ept>.  You will need to be an Office 365 Global or Billing Admin or create a new tenant to sign up for an admin trial. [Obtener más información](powerbi-admin-purchasing-power-bi-pro.md)
+>-   Si necesita más tiempo para evaluar Power BI, puede solicitar para ampliar el período de prueba de 60 días más.
+>-   Aprovechándose de esta versión de evaluación del producto Power BI Pro no aparece en el portal de administración de Office 365 como usuarios de Power BI Pro prueba (aparecen como usuarios gratuitos de Power BI). Sin embargo, aparecerán como usuarios de la versión de prueba de Power BI Pro en el **Administrar almacenamiento** página en Power BI.
+>-   Si es un administrador de TI que deseen adquirir e implementar licencias de prueba de Power BI a varios usuarios de su organización sin necesidad de aceptar los términos de prueba individualmente usuarios individuales, puede registrarse para una [Power BI Pro suscripción de prueba](https://portal.office.com/Signup/MainSignup15.aspx?OfferId=d59682f3-3e3b-4686-9c00-7c7c1c736085&dl=POWER_BI_PRO).  Debe ser un administrador de facturación o Office 365 Global o crear un nuevo inquilino para suscribirse a un administrador de prueba. [Obtener más información](powerbi-admin-purchasing-power-bi-pro.md)
  
-### What this looks like within the service
+### Aspecto dentro del servicio
 
-When you are in the service, you can verify that you have a Pro trial account by going to the <bpt id="p1">*</bpt><bpt id="p2">*</bpt>gear<ept id="p2">*</ept> icon and selecting <ept id="p1">*</ept><bpt id="p3">*</bpt>Manage personal storage<ept id="p3">*</ept>*.
+Cuando esté en el servicio, puede comprobar que tiene una cuenta de prueba Pro yendo a la **engranaje* icono y seleccione **Administrar almacenamiento personal**.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro-trial3.png)
 
-## Purchasing Power BI Pro as an individual
+## Poder adquisitivo BI Pro como usuario individual
 
-You can purchase Power BI Pro from the start, or can choose to upgrade to Pro after your free trial has ended. If your account is part of an organization, you can purchase Power BI Pro as an individual if your organization has not disabled individual purchases.
+Puede adquirir Power BI Pro desde el principio, o puede elegir actualizar a Pro después de finaliza la prueba gratuita. Si la cuenta forma parte de una organización, puede comprar Power BI Pro como usuario individual si su organización ha deshabilitado compras individuales.
 
-To purchase Power BI Pro as an individual, you can do the following.
+Para adquirir Power BI Pro como usuario individual, puede hacer lo siguiente.
 
-1.  Browse to <bpt id="p1">[</bpt>powerbi.com<ept id="p1">](https://www.powerbi.com)</ept>.
+1.  Vaya a [powerbi.com](https://www.powerbi.com).
 
-2.  Select <bpt id="p1">**</bpt>Products<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Pricing<ept id="p2">**</ept>.
+2.  Seleccione **productos** > **precios**.
 
-3.  Select <bpt id="p1">**</bpt>Purchase<ept id="p1">**</ept>.
+3.  Seleccione **compra**.
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro1.png)
 
-4.  Answer the questions that are presented to guide the purchase. As an individual, there will be an option to select <bpt id="p1">**</bpt>Myself<ept id="p1">**</ept>. 
+4.  Responda las preguntas que se presentan para guiar la compra. Como usuario individual, habrá una opción para seleccionar **yo mismo**. 
 
     ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro2.png)
 
-    > <bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: If you are interested in the option to purchase for your team or organization, you can read about purchasing Power BI Pro for your organization. [Obtener más información](powerbi-admin-purchasing-power-bi-pro.md)
+    > 
+            **Nota**: si está interesado en la opción de comprar para su equipo u organización, puede leer sobre la adquisición de Power BI Pro para su organización. [Obtener más información](powerbi-admin-purchasing-power-bi-pro.md)
 
-5.  If you aren’t already signed into Power BI, you will need to sign in with your Power BI (free) account.
+5.  Si aún no ha iniciado en Power BI, debe iniciar sesión con su cuenta de Power BI (gratis).
 
-6.  You will need to provide information to make the purchase.
+6.  Debe proporcionar información para realizar la compra.
 
-### What this looks like within the service
+### Aspecto dentro del servicio
 
-When you are in the service, you can verify that you have a Pro account by going to the <bpt id="p1">**</bpt>gear<ept id="p1">**</ept> icon and selecting <bpt id="p2">**</bpt>Manage personal storage<ept id="p2">**</ept>.
+Cuando esté en el servicio, puede comprobar que tiene una cuenta de Pro, vaya a la **engranaje** icono y seleccione **Administrar almacenamiento personal**.
 
 ![](media/powerbi-service-self-service-signup-for-power-bi/powerbi-pro3.png)
 
-## Individual Sign up has been turned off
+## Se ha desactivado el registro individual
 
-When trying to sign up for Power BI, you may encounter the following message.
+Al intentar iniciar sesión en Power BI, puede encontrar el siguiente mensaje de error.
 
     Your IT department has turned off signup for Microsoft Power BI.
  
 ![](media/powerbi-service-self-service-signup-for-power-bi/allowadhocsubscriptionfalse.png)
 
-This could be because your organization has disabled individual sign ups. It could also be because you purchased Office 365 through a partner. 
+Esto podría deberse a que su organización ha deshabilitado ups de inicio de sesión individuales. También podría deberse a que ha adquirido Office 365 a través de un socio. 
             [Obtenga más información](powerbi-admin-syndication-partner.md).
 
-If your organization has disabled individual sign ups, you will need to work with your IT group to get a Power BI license assigned to your account in order to continue.
+Si su organización ha deshabilitado el inicio de sesión individuales SAI (UPS), debe trabajar con su grupo de TI para obtener una licencia de Power BI asignada a su cuenta para poder continuar.
 
 ## Solucionar problemas
 
-In many cases, registering for Power BI can be achieved by following the simple self-service signup process listed above. However, there are several reasons why you may not be able to complete self-service signup.  The table below summarizes some of the most common reasons you may not be able to complete signup and ways you can workaround these issues.
+En muchos casos, puede lograr registrarse para Power BI siguiendo el proceso de suscripción de autoservicio simple mencionado anteriormente. Sin embargo, hay varios motivos de por qué no pueda completar la suscripción de autoservicio.  La tabla siguiente resume algunas de las razones más comunes que no pueda completar la suscripción y cómo que puede solucionar estos problemas.
 
-| **Symptom / Error Message** | **Cause and Workaround** |
+| **Síntoma o mensaje de Error** | **Causa y solución** |
 |---|---|
-| <bpt id="p1">**</bpt>Personal email addresses (e.g. nancy@gmail.com)<ept id="p1">**</ept> You receive a message like the following during signup: <br /><br /> *You entered a personal email address: Please enter your work email address so we can securely store your company's data.* <br /><br /> o <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* | Power BI does not support email addresses provided by consumer email services or telecommunications providers. <br /><br /> To complete signup, try again using an email address assigned by your work or school. <br /><br /> If you still can't sign up and are willing to complete a more advanced setup process, you can <bpt id="p1">[</bpt>register for a new Office 365 trial subscription and use that email address to sign up<ept id="p1">](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)</ept>. |
-| <bpt id="p1">**</bpt>.gov or .mil email addresses<ept id="p1">**</ept> You receive a message like the following during signup: <br /><br /> *Power BI unavailable: Power BI is not available for users with .gov or .mil email addresses at this time. Use another work email address or check back later.* <br /><br /> o <br /><br /> *We can't finish signing you up. It looks like Microsoft Power BI isn't currently available for your work or school.* | Power BI does not support self-service sign-up for .gov or .mil addresses at this time. Please contact your O365 admin. |
-| <bpt id="p1">**</bpt>Self-service signup disabled<ept id="p1">**</ept> You receive a message like the following during signup: <br /><br /> *We can't finish signing you up. Your IT department has turned off signup for Microsoft Power BI. Contact them to complete signup.* <br /><br /> o <br /><br /> *That looks like a personal email address. Enter your work address so we can connect you with others in your company. And don’t worry. We won’t share your address with anyone.* | Your organization’s IT administrator has disabled self-service signup for Power BI. <br /><br /> To complete signup, contact your IT administrator and ask them to follow the instructions on the page below to allow existing users to sign up for Power BI and to allow new users to join your existing tenant. <br/><br/> You may also experience this problem if you signed up for Office 365 through a partner. [Obtener más información](powerbi-admin-syndication-partner.md) <br /><br /> [Power BI in Your Organization](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant) |
-| <bpt id="p1">**</bpt>Email address is not an Office 365 ID<ept id="p1">**</ept> You receive a message like the following during signup: <br /><br /> *We can't find you at contoso.com.  Do you use a different ID at work or school? <br /><br /> Try signing in with that, and if it doesn't work, contact your IT department.* | Your organization uses IDs to sign in to Office 365 and other Microsoft services that are different than your email address.  For example, your email address might be Nancy.Smith@contoso.com but your ID is nancys@contoso.com. <br /><br /> To complete signup, use the ID that your organization has assigned to for signing in to Office 365 or other Microsoft services.  If you don't know what this is, contact your IT administrator. <br /><br /> If you still can't sign up and are able to complete a more advanced setup process, you can <bpt id="p1">[</bpt>register for a new Office 365 trial subscription and use that email address to sign up<ept id="p1">](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md)</ept>. |
+| 
+            **Direcciones de correo electrónico personal (por ejemplo, nancy@gmail.com)** recibe un mensaje similar al siguiente durante la suscripción: <br /><br /> *Escribió una dirección de correo electrónico personal: escriba su dirección de correo electrónico por lo que podemos almacenar con seguridad los datos de su compañía.* <br /><br /> o <br /><br /> *Que parece una dirección de correo electrónico personal. Escriba su dirección de manera que podemos conectarnos con otras personas de su empresa. Y no se preocupe. No compartimos su dirección con nadie.* | Power BI no admite las direcciones de correo electrónico proporcionadas por los proveedores de telecomunicaciones o de servicios de correo electrónico de consumidor. <br /><br /> Para completar la suscripción, inténtelo de nuevo usando una dirección de correo electrónico asignada por su trabajo o escuela. <br /><br /> Si todavía no puede registrarse y está dispuesto a completar un proceso de configuración más avanzado, puede [registrar una nueva suscripción de prueba de Office 365 y utilizar esta dirección para iniciar sesión de correo electrónico](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
+| 
+            **direcciones de correo electrónico .gov o. mil** recibe un mensaje similar al siguiente durante la suscripción: <br /><br /> *Power BI disponible: Power BI no está disponible para los usuarios con direcciones de correo electrónico .gov o. mil en este momento. Use otra dirección de correo electrónico de trabajo o vuelva a comprobarlo más tarde.* <br /><br /> o <br /><br /> *No podemos terminamos registrarse. Parece que Microsoft Power BI no está actualmente disponible para su trabajo o escuela.* | Power BI no admite suscripción de autoservicio para direcciones .gov o. mil en este momento. Póngase en contacto con el Administrador de Office 365. |
+| 
+            **Suscripción de autoservicio deshabilitado** recibe un mensaje similar al siguiente durante la suscripción: <br /><br /> *No podemos terminamos registrarse. El departamento de TI ha desactivado de suscripción para Microsoft Power BI. Póngase en contacto con ellos para una suscripción completa.* <br /><br /> o <br /><br /> *Que parece una dirección de correo electrónico personal. Escriba su dirección de manera que podemos conectarnos con otras personas de su empresa. Y no se preocupe. No compartimos su dirección con nadie.* | Su organización se detallan suscripción de autoservicio para Power BI. <br /><br /> Para completar la suscripción, póngase en contacto con el Administrador de TI y pídale que siga las instrucciones en la página siguiente para permitir que los usuarios existentes para suscribirse a Power BI y permitir a los usuarios nuevos unir a inquilino existente. <br/><br/> También puede experimentar este problema si se registró para Office 365 a través de un socio. [Obtener más información](powerbi-admin-syndication-partner.md) <br /><br /> [Power BI en su organización](https://support.office.com/en-ca/article/Power-BI-in-your-Organization-d7941332-8aec-4e5e-87e8-92073ce73dc5#BKMK_HowCanIAllowO365Tenant) |
+| 
+            **Dirección de correo electrónico no es un identificador de Office 365** recibe un mensaje similar al siguiente durante la suscripción: <br /><br /> *Se encuentra en contoso.com.  ¿Utiliza un ID de trabajo o escuela? <br /><br /> Intente iniciar sesión con la y, si no funciona, póngase en contacto con el departamento de TI.* | Su organización utiliza identificadores para iniciar sesión Office 365 y otros servicios de Microsoft que sea diferentes a la dirección de correo electrónico.  Por ejemplo, su dirección de correo electrónico podría ser Nancy.Smith@contoso.com, pero el identificador es nancys@contoso.com. <br /><br /> Para completar la suscripción, utilice el identificador de su organización ha asignado a para iniciar sesión en Office 365 u otros servicios de Microsoft.  Si no sabe qué se trata, póngase en contacto con el Administrador de TI. <br /><br /> Si todavía no puede registrarse y puede completar un proceso de instalación más avanzado, puede [registrar una nueva suscripción de prueba de Office 365 y utilizar esta dirección para iniciar sesión de correo electrónico](powerbi-admin-signing-up-for-power-bi-with-a-new-office-365-trial.md). |
 
 ## Consulte también
 
-[Purchasing Power BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
-[Unable to add Power BI to Office 365 partner subscription](powerbi-admin-syndication-partner.md)  
-[Power BI (free) in your organization](powerbi-admin-powerbi-free-in-your-organization.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Poder adquisitivo BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
+[No se puede agregar suscripción a Office 365 socio Power BI](powerbi-admin-syndication-partner.md)  
+[Power BI (gratuito) de su organización](powerbi-admin-powerbi-free-in-your-organization.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

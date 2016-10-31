@@ -1,8 +1,8 @@
 <properties 
-        pageTitle="page title" 
+        pageTitle="título de la página" 
         description="description" 
         services="powerbi" 
         documentationCenter="" 
         authors="sabotta" />
 # probar
-This is a test markdown article.
+Se trata de un artículo de descuento de prueba.

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Z-order"
-   description="Control how your report elements overlap with each other"
+   pageTitle="Orden Z"
+   description="Controlar cómo se superponen entre sí los elementos de informe"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,16 +22,16 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Arrange the Z-order of Report Elements
+# Organizar el orden Z de los elementos de informe
 
-When you have lots of elements on a report, Power BI lets you manage how they overlap with each other. How items are layered, or arranged on top of one another, is often referred to as the z-order.
+Cuando tiene una gran cantidad de elementos en un informe, Power BI permite administrar la forma en que se superponen entre sí. Cómo se coloca elementos u organizan uno encima de otro, a menudo se conoce como el orden z.
 
-To manage the z-order of elements in a report, select an element, and use the <bpt id="p1">**</bpt>Arrange<ept id="p1">**</ept> button on the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> tab of the ribbon to change its z-order.
+Para administrar el orden z de los elementos de un informe, seleccione un elemento y utilice la **Organizar** situado en la **Inicio** la ficha de la cinta de opciones para cambiar su orden z.
 
 ![](media/powerbi-learning-3-11f-arrange-visual-zorder/3-11f_1.png)
 
-By using the options in the <bpt id="p1">**</bpt>Arrange<ept id="p1">**</ept> button menu, you can get the ordering of elements on you report just the way you want it. You can move a visual one layer forward or backward, or send it all the way to the front of the back of the order.
+Mediante las opciones en el **Organizar** menú del botón, puede obtener el orden de los elementos de informe sólo la forma que desee. Puede mover una capa visual uno hacia delante o hacia atrás o enviar a la parte delantera de la parte posterior del orden.
 
-Using the Arrange button is particularly useful when using shapes as decorative backgrounds or borders, or to highlight particular sections of an individual chart or graph. You can also use them to create a background, such as the following light-blue rectangle being used for a report title background.
+Con el botón Organizar es especialmente útil cuando se usan formas como fondos decorativos o bordes, o para resaltar determinadas secciones de un gráfico o un gráfico. También puede utilizar para crear un fondo, como el rectángulo azul claro siguiente que se utiliza para un fondo de título del informe.
 
 ![](media/powerbi-learning-3-11f-arrange-visual-zorder/3-11f_2.png)

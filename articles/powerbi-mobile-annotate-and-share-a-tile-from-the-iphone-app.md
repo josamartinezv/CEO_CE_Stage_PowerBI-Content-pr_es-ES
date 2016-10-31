@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Annotate and share a tile from the iPhone app"
-   description="Learn about annotating and sharing snapshots of tiles from the Power BI mobile app for iOS on your iPhone. Recipients see the tile, but can’t open the dashboard."
+   pageTitle="Anotar y compartir un icono de la aplicación de iPhone"
+   description="Obtenga información acerca de anotar y compartir instantáneas de iconos de la aplicación móvil de Power BI para iOS en su iPhone. Destinatarios ver el icono, pero no pueden abrir el panel."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,34 +19,34 @@
    ms.workload="powerbi"
    ms.date="10/03/2016"
    ms.author="maggies"/>
-# Annotate and share a tile from the iPhone app (Power BI for iOS)
+# Anotar y compartir un icono de la aplicación de iPhone (Power BI para iOS)
 
-When you share a snapshot of a tile from the iPhone app for Microsoft Power BI for iOS, your recipients see the snapshot of the tile exactly as it was when you sent the mail. They can't open the dashboard. You can send snapshots of tiles to anyone — not just colleagues in the same email domain.
+Cuando comparte una instantánea de un mosaico de la aplicación de iPhone para Microsoft Power BI para iOS, los destinatarios verán la instantánea del mosaico exactamente igual que cuando se envió el correo. No pueden abrir el panel. Instantáneas de iconos puede enviar a cualquier persona, no sólo compañeros en el mismo dominio de correo electrónico.
 
-You can add annotations — lines, text, or stamps — to a tile before you share a snapshot.
+Puede agregar anotaciones, líneas, texto o marcas, a un mosaico antes de compartir una instantánea.
 
 ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_AnnotateSmiley.png)
 
-1.  In a <bpt id="p1">[</bpt>dashboard<ept id="p1">](powerbi-mobile-dashboards-in-the-iphone-app.md)</ept> in the iPhone app, tap a tile to open it in focus mode.
+1.  En un [panel](powerbi-mobile-dashboards-in-the-iphone-app.md) en la aplicación de iPhone, puntee en un mosaico para abrirlo en modo de enfoque.
 
-2.  Tap the share icon <ph id="ph1">![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-iphone-share-icon.png)</ph> in the upper-right corner of the tile.
+2.  Puntee en el icono de recurso compartido ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-iphone-share-icon.png) en la esquina superior derecha del mosaico.
 
-3.  To annotate the tile, tap an icon in the lower bar in the Edit window:
+3.  Para anotar el mosaico, puntee en un icono en la barra inferior de la ventana de edición:
 
     ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/PBI_AnnotateBar.png)
 
-    -   Tap the pencil icon to draw lines of different colors and thicknesses.
+    -   Puntee en el icono de lápiz para dibujar líneas de distintos colores y grosores.
 
-    -   Tap the text balloon to type comments.
+    -   Puntee en el globo de texto para escribir comentarios.
 
-    -   Tap the smiley face to paste stamps (like emoticons) on the tile.
+    -   Puntee en la cara sonriente para pegar marcas (por ejemplo, iconos gestuales) en el icono.
 
-4.  After annotating, tap the share icon <ph id="ph1">![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-iphone-share-icon.png)</ph> in the upper-right corner.
+4.  Después de anotar, puntee en el icono de recurso compartido ![](media/powerbi-mobile-annotate-and-share-a-tile-from-the-iphone-app/power-bi-iphone-share-icon.png) en la esquina superior derecha.
 
-5.  Type the recipients' names in the mail app of your choice, modify the message if you want, and send.
+5.  Escriba los nombres de destinatarios en la aplicación de correo electrónico de su elección, modifique el mensaje si desea y enviar.
 
 ### Consulte también
 
-- [Share a dashboard from the iPhone app <ph id="ph1">\(</ph>Power BI for iOS\)](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Compartir un panel de la aplicación de iPhone \(Power BI para iOS\)](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)
+- [Introducción a la aplicación de iPhone para Power BI](powerbi-mobile-iphone-app-get-started.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

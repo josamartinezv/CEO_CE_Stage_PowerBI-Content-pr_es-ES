@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="View and interact with Power BI reports optimized for your phone"
-   description="Read about interacting with report pages optimized for viewing in the Power BI phone apps."
+   pageTitle="Ver e interactuar con informes de Power BI optimizados para el teléfono"
+   description="Lea sobre la interacción con páginas de informe que se optimizan para visualizarse en las aplicaciones de teléfono de Power BI."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,57 +20,62 @@
    ms.date="09/27/2016"
    ms.author="maggies"/>
 
-# View and interact with Power BI reports optimized for your phone 
+# Ver e interactuar con informes de Power BI optimizados para el teléfono 
 
-When you create a Power BI report in Power BI Desktop, you can also create a version of that <bpt id="p1">[</bpt>report optimized for viewing in the Power BI app on a phone<ept id="p1">](powerbi-desktop-create-phone-report.md)</ept>.
+Al crear un informe de Power BI en Power BI Desktop, también puede crear una versión de dicho [informe optimizada para verlas en la aplicación de Power BI en un teléfono](powerbi-desktop-create-phone-report.md).
 
-Then, when you open a Power BI report on a phone, Power BI automatically detects if the report has been optimized for phones. If a phone-optimized report exists, the Power BI phone app automatically opens the optimized report.
+A continuación, cuando se abre un informe de Power BI en un teléfono, Power BI detecta automáticamente si el informe se ha optimizado para teléfonos. Si existe un informe optimizado por teléfono, la aplicación de teléfono de Power BI abre automáticamente el informe optimizado.
 
 ![](media/powerbi-mobile-view-phone-report/07-power-bi-phone-report-portrait.png)
 
 
-If a phone-optimized report doesn’t exist, you can still open the report in the non-optimized landscape view by changing the phone’s orientation.  
+Si no existe un informe optimizado por teléfono, se puede abrir el informe en la vista horizontal no optimizadas cambiando la orientación del teléfono.  
 
-Even in a phone-optimized report, if you change your phone to landscape, the report will open in the non-optimized view with the original report layout.
+Incluso en un informe optimizado por teléfono, si cambia el teléfono en horizontal, el informe se abrirá en la vista no optimizada con el diseño del informe original.
 
-If only some pages are optimized, you see a message in portrait view, indicating the report is available in landscape.
+Si sólo algunas páginas están optimizados, verá un mensaje en la vista vertical, que indica que el informe está disponible en horizontal.
 
 ![](media/powerbi-mobile-view-phone-report/06-power-bi-phone-report-page-not-optimized.png)
 
-all the other features of Power BI reports still work in phone-optimized reports. Read more about what you can do in:
+todas las características de informes de Power BI seguirán funcionan en informes optimizado por teléfono. Lea más acerca de lo que puede hacer:
 
-*   <bpt id="p1">[</bpt>Reports on iPhones<ept id="p1">](powerbi-mobile-reports-in-the-iphone-app.md)</ept>. 
-*   <bpt id="p1">[</bpt>Reports on Android phones<ept id="p1">](powerbi-mobile-reports-in-the-android-app.md)</ept>.
+*   
+            [Informa sobre iPhone](powerbi-mobile-reports-in-the-iphone-app.md). 
+*   
+            [Informa sobre los teléfonos Android](powerbi-mobile-reports-in-the-android-app.md).
 
-## View other pages in the report
+## Ver otras páginas del informe
 
-- View other pages in the report by swiping from the side or tapping the pages icon <ph id="ph1">![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-page-icon.png)</ph>.
+- Ver otras páginas del informe al desplazarse desde el lado o punteando en el icono de páginas ![](media/powerbi-mobile-view-phone-report/power-bi-phone-report-page-icon.png).
 
-## Cross-highlight visuals
-Cross highlighting visuals in phone reports works the same as it does in the Power BI service and in reports on phones in landscape view: When you select data in one visual, it highlights related data in the other visuals on that page.
+## Elementos visuales de realzado cruzado
+Cross resaltado de elementos visuales en teléfono informes funciona igual que en el servicio Power BI y en informes en teléfonos en vista landscape: al seleccionar datos en un objeto visual, resalta los datos relacionados en los otros elementos visuales en la página.
 
-Read more about <bpt id="p1">[</bpt>filtering and highlighting in Power BI<ept id="p1">](powerbi-service-about-filters-and-highlighting-in-reports.md)</ept>.
+Obtenga más información sobre [filtrado y resaltado en Power BI](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
-## Select visuals
-In phone reports when you select a visual, the phone report highlights that visual and focuses on it, neutralizing canvas gestures.
+## Seleccione los elementos visuales
+En los informes de teléfono cuando se selecciona un elemento visual, el informe de teléfono resalta esa visual y se centra en ella, efecto para neutralizar el lienzo de gestos.
 
-With the visual selected, you can do things like scroll within the visual. To de-select a visual, just touch anywhere outside the visual area.
+Con el objeto visual seleccionado, puede hacer cosas como desplazamiento dentro del objeto visual. Para anular la selección de un objeto visual, solo tiene que tocar en cualquier lugar fuera del área visual.
 
-## Open visuals in focus mode
-Phone reports offer a focus mode, so you can focus on a single visual to get a bigger view of the visual and explore the visual and the report.
+## Abrir elementos visuales en modo de enfoque
+Los informes de Phone ofrecen un modo de enfoque, por lo que puede centrarse en un único elemento visual para obtener una vista más grande del objeto visual y explorar visual y el informe.
 
-What you do in focus mode carries over to the report canvas and vice versa, for a seamless exploration experience. For example, if you highlight a value in a visual, then return to the whole report, the report as a whole will be filtered to the value you highlighted in the visual.
+¿Qué hacer en el modo de enfoque incluye al lienzo del informe y viceversa, para una experiencia de exploración perfecta. Por ejemplo, si resalta un valor en un objeto visual y después volver a todo el informe, el informe como un todo se filtrarán al valor resaltada en el objeto visual.
 
-Some actions are only possible in focus mode, due to screen size constraints:
+Algunas acciones sólo son posibles en el modo de enfoque, debido a restricciones de tamaño de pantalla:
 
-- <bpt id="p1">**</bpt>Drill down<ept id="p1">**</ept>, then back up into the information displayed in the visual, if hierarchy levels are defined.
-    Read more about <bpt id="p1">[</bpt>drilling down and up<ept id="p1">](powerbi-service-drill-down-in-a-visualization.md)</ept> in Power BI.
-- <bpt id="p1">**</bpt>Sort<ept id="p1">**</ept> the values in the visual.
-- <bpt id="p1">**</bpt>Revert<ept id="p1">**</ept>: Clear exploration steps you've taken on a visual and revert to the definition set when the report was created.
+- 
+              **Explorar en profundidad**, a continuación, copia de seguridad en la información mostrada en el objeto visual, si se definen los niveles de jerarquía.
+  Obtenga más información sobre [perforación down y up](powerbi-service-drill-down-in-a-visualization.md) en Power BI.
+- 
+            **Ordenar** los valores del objeto Visual.
+- 
+            **Revertir**: borrar pasos de exploración tomadas en un objeto visual y revertir a la definición establecida cuando se creó el informe.
 
-    Revert is available at the report level, clear all exploration from all visuals, or at the visual level, clearing all exploration from the specific visual selected.   
+    Revertir está disponible en el nivel del informe, desactive todos los exploración de todos los elementos visuales o en el objeto visual, borrar todos los exploración desde visual específico seleccionado.   
 
 ### Consulte también
-- [Create reports optimized for the Power BI phone apps](powerbi-desktop-create-phone-report.md)
-- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
-- More questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Crear informes optimizados para las aplicaciones de teléfono de Power BI](powerbi-desktop-create-phone-report.md)
+- [Crear una vista de teléfono de un panel en Power BI](powerbi-service-create-dashboard-phone-view.md)
+- ¿Preguntas más frecuentes? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

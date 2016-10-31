@@ -1,18 +1,18 @@
-## Validating the role within Power BI Desktop
+## Validar la función Power BI Desktop
 
-After you have created your role, you can test the results of the role within Power BI Desktop. To do this, select <bpt id="p1">**</bpt>View As Roles<ept id="p1">**</ept>.
+Después de haber creado el rol, puede probar el resultado de la función en Power BI Desktop. Para ello, seleccione **vista como funciones**.
 
 ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles.png)
  
-The <bpt id="p1">**</bpt>View as roles<ept id="p1">**</ept> dialog allows you to change the view of what you are seeing for that specific user or role. You will see the roles you have created.
+El **vista como funciones** cuadro de diálogo permite cambiar la vista de lo que ve para ese rol o usuario específico. Verá los roles que ha creado.
 
 ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-view-as-roles-dialog.png)
  
-You select the role you created and then select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> to apply that role to what you are viewing. The reports will only render the data relevant for that role.
+Seleccione el rol que creó y, a continuación, seleccione **Aceptar** aplicar dicha función a lo que está viendo. Los informes sólo representarán los datos relevantes para ese rol.
 
-You can also select Other user and supply a given user. It is best to supply the User Principal Name (UPN) as that is what the Power BI service will use. Select <bpt id="p1">**</bpt>OK<ept id="p1">**</ept> and the reports will render based on what that user can see. 
+También puede seleccionar otro usuario y proporcionar un usuario determinado. Es mejor proporcionar el nombre Principal de usuario (UPN), ya que es lo que va a utilizar el servicio Power BI. Seleccione **Aceptar** y los informes se representarán según lo que puede ver dicho usuario. 
 
 ![](./media/rls-desktop-view-as-roles/powerbi-desktop-rls-other-user.png)
  
-> [AZURE.NOTE] Within Power BI Desktop, this will only display different results if you are using dynamic security based on your DAX expressions.
+> [AZURE.NOTE] En Power BI Desktop, esto sólo mostrará resultados diferentes si usa la seguridad dinámica basándose en sus expresiones de DAX.
 

@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="View Reporting Services mobile reports and KPIs in the iPhone app"
-   description="The iPhone app (Power BI for iOS) offers live, touch-enabled mobile access to your important on-premises business information."
+   pageTitle="Ver informes de Reporting Services móviles y los KPI en la aplicación de iPhone"
+   description="La aplicación de iPhone (Power BI para iOS) ofrece acceso móvil directo y táctil a la información de negocios importante en local."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,92 +20,100 @@
    ms.date="10/18/2016"
    ms.author="maggies"/>
 
-# <a name="view-sql-server-reporting-services-mobile-reports-and-kpis-in-the-iphone-app-(power-bi-for-ios)"></a>View SQL Server Reporting Services mobile reports and KPIs in the iPhone app (Power BI for iOS)  
+# <a name="view-sql-server-reporting-services-mobile-reports-and-kpis-in-the-iphone-app-(power-bi-for-ios)"></a>Ver informes de Reporting Services de SQL Server mobile y KPI en la aplicación de iPhone (Power BI para iOS)  
 
-The iPhone app for Microsoft Power BI for iOS offers live, touch-enabled mobile access to your important on-premises business information. 
+La aplicación de iPhone para Microsoft Power BI para iOS ofrece acceso móvil directo y táctil a la información de negocios importante en local. 
 
  ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPh_SSMRP_MobRpt.png)
 
-<bpt id="p1">[</bpt>Create Reporting Services mobile reports<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept> with SQL Server Mobile Report Publisher and publish them to the <bpt id="p2">[</bpt>Reporting Services web portal<ept id="p2">](https://msdn.microsoft.com/library/mt637133.aspx)</ept>. Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
-Then in the iPhone app for Power BI, view the mobile reports and KPIs, organized in folders or collected as favorites. 
+            [Crear informes de Reporting Services móviles](https://msdn.microsoft.com/library/mt652547.aspx) con el publicador de SQL Server Mobile informes y publicarlos en la [portal web de Reporting Services](https://msdn.microsoft.com/library/mt637133.aspx). Crear KPI derecha en el portal web. Organizarlos en carpetas y marcar los favoritos para que pueda encontrar fácilmente. 
 
-><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Your iPhone needs to be at least an iPhone 5, running at least iOS 9.0.
+A continuación, en la aplicación de iPhone para Power BI, ver los informes móviles y KPI, organizados en carpetas o recopilados como favoritos. 
 
-## <a name="explore-samples-without-an-ssrs-server"></a>Explore samples without an SSRS server
+>
+            **Nota**: su iPhone debe ser al menos un iPhone 5, que se ejecute como mínimo iOS 9.0.
 
-Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports. 
+## <a name="explore-samples-without-an-ssrs-server"></a>Explorar ejemplos sin un servidor SSRS
 
-1. Tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png)</ph> in the upper-left corner, scroll down and tap <bpt id="p1">**</bpt>Reporting Services samples<ept id="p1">**</ept>.
+Incluso si no tiene acceso a un portal web de Reporting Services, todavía puede explorar las características de informes de Reporting Services móviles. 
 
-2.  Browse to interact with the sample KPIs and mobile reports.
+1. Puntee en el botón de navegación global ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) en la esquina superior izquierda, desplácese hacia abajo y pulsa **ejemplos de Reporting Services**.
+
+2.  Vaya a interactuar con los ejemplos de KPI y los informes móviles.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-ssrs-samples.png)
 
-## <a name="connect-to-a-server-to-view-reporting-services-mobile-reports"></a>Connect to a server to view Reporting Services mobile reports 
+## <a name="connect-to-a-server-to-view-reporting-services-mobile-reports"></a>Conectarse a un servidor para ver los informes de Reporting Services móviles 
 
-1.  In the iPhone, open the Power BI app.
+1.  En el explorador, abra la aplicación Power BI.
   
-2.  To view your Reporting Services mobile reports and KPIs, tap <bpt id="p1">**</bpt>SQL Server Reporting Services<ept id="p1">**</ept>.
+2.  Para ver los informes de Reporting Services móviles y KPI, puntee **SQL Server Reporting Services**.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-connect-ssrs-server.png)
 
-    If you're already in the Power BI app, tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png)</ph> in the upper-left corner, and tap <bpt id="p1">**</bpt>Connect Server<ept id="p1">**</ept>.
+    Si ya está en la aplicación Power BI, puntee en el botón de navegación global ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) en la esquina superior izquierda y puntee **Conectar servidor**.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-connect-ssrs.png)
 
-4. Fill in the server address and your user name and password.
+4. Rellene la dirección del servidor y su nombre de usuario y contraseña.
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Include <bpt id="p2">**</bpt>http<ept id="p2">**</ept> or <bpt id="p3">**</bpt>https<ept id="p3">**</ept> in front of the connection string. For example, http://<bpt id="p1">*</bpt>servername<ept id="p1">*</ept>.com/reports.
+    >
+            **Nota**: incluir **http** o **https** delante de la cadena de conexión. Por ejemplo, http://*nombreDeServidor*.com/reports.
 
-    Tap <bpt id="p1">**</bpt>Advanced option<ept id="p1">**</ept> to give the server a name, if you'd like.
+    Puntee en **opción avanzada** para asignar al servidor un nombre, si lo desea.
 
-5.  Now you see the server in the left navigation bar--in this example, called "work server."
+5.  Ahora verá que el servidor en la barra de navegación izquierdo, en este ejemplo, llama "profesional de servidor".
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-ssrs-server.png)
 
-><bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Tap the global navigation button <ph id="ph1">![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png)</ph> anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
+>
+            **Sugerencia**: pulse el botón de navegación global ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-global-nav-button.png) en cualquier momento a vaya entre los informes de Reporting Services móviles y los paneles en el servicio Power BI. 
 
-## <a name="view-reporting-services-kpis-and-mobile-reports-in-the-power-bi-app"></a>View Reporting Services KPIs and mobile reports in the Power BI app
+## <a name="view-reporting-services-kpis-and-mobile-reports-in-the-power-bi-app"></a>KPI de vista Reporting Services e informes móviles en la aplicación Power BI
 
-Reporting Services KPIs and mobile reports are displayed in the same folders they're in on the Reporting Services web portal. 
+Reporting Services KPI e informes móviles se muestran en las mismas carpetas estuvieran en el portal web de Reporting Services. 
 
-- Tap a KPI to see it in focus mode.
+- Puntee en un KPI para verlo en modo de enfoque.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPh_SSMRP_Tile.png)
 
-- Tap a mobile report to open and interact with it in the Power BI app.
+- Puntee en un informe móvil para abrir e interactuar con él en la aplicación de Power BI.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/PBI_iPh_SSMRP_MobRpt.png)
 
-## <a name="view-your-favorite-kpis-and-reports"></a>View your favorite KPIs and reports
+## <a name="view-your-favorite-kpis-and-reports"></a>Ver los KPI y los informes favoritos
 
-You can mark KPIs and mobile reports as favorites on your Reporting Services web portal, and then view them in one convenient folder on your iPhone, along with your Power BI favorite dashboards and reports.
+Puede marcar KPI e informes móviles como favoritos en el portal web de Reporting Services y, a continuación, verlos en una carpeta adecuada en su iPhone, junto con los informes y paneles de Power BI favoritos.
 
--  Tap <bpt id="p1">**</bpt>Favorites<ept id="p1">**</ept>.
+-  Puntee en **favoritos**.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-favorite-menu.png)
    
-    Your favorites from the web portal are all on this page.
+    Son los favoritos desde el portal web en esta página.
 
     ![](media/powerbi-mobile-iphone-kpis-mobile-reports/power-bi-iphone-favorites.png)
 
-## <a name="remove-a-connection-to-a-report-server"></a>Remove a connection to a report server
+## <a name="remove-a-connection-to-a-report-server"></a>Quitar una conexión a un servidor de informes
 
-You can only be connected to one report server at a time from your iPhone app. If you want to connect to a different server, you need to disconnect from the current one.
+Solo se conectar a un servidor de informes a la vez desde su aplicación de iPhone. Si desea conectarse a un servidor diferente, debe desconectar de la actual.
 
-1. At the bottom of the left navigation bar, tap <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
-2. Tap the server name you don't want to be connected to.
-3. Tap <bpt id="p1">**</bpt>Remove Server<ept id="p1">**</ept>.
+1. En la parte inferior de la barra de navegación izquierdo, puntee **configuración**.
+2. Puntee en el nombre del servidor que no desea estar conectado a.
+3. Puntee en **Quitar servidor**.
 
-## <a name="create-reporting-services-mobile-reports-and-kpis"></a>Create Reporting Services mobile reports and KPIs
+## <a name="create-reporting-services-mobile-reports-and-kpis"></a>Crear informes de Reporting Services móviles y KPI
 
-You don't create Reporting Services KPIs and mobile reports in the Power BI mobile app. You create them in SQL Server Mobile Report Publisher and a SQL Server 2016 Reporting Services web portal.
+No se crean informes móviles y Reporting Services KPI en la aplicación móvil de Power BI. Se crea en el publicador de SQL Server Mobile informes y un portal web de SQL Server 2016 Reporting Services.
 
-- <bpt id="p1">[</bpt>Create your own Reporting Services mobile reports<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept>, and publish them to the Reporting Services web portal.
-- Create <bpt id="p1">[</bpt>KPIs on the Reporting Services web portal<ept id="p1">](https://msdn.microsoft.com/library/mt683632.aspx)</ept>
+- 
+            [Crear sus propios informes de Reporting Services móviles](https://msdn.microsoft.com/library/mt652547.aspx), y publíquelos en el portal web de Reporting Services.
+- Crear [KPI en el portal web de Reporting Services](https://msdn.microsoft.com/library/mt683632.aspx)
 
 ### <a name="see-also"></a>Consulte también  
-- <bpt id="p1">[</bpt>Get started with the iPhone app for Power BI<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept>  
-- <bpt id="p1">[</bpt>Get started with Power BI<ept id="p1">](powerbi-service-get-started.md)</ept>  
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [Introducción a la aplicación de iPhone para Power BI](powerbi-mobile-iphone-app-get-started.md)  
+- 
+            [Introducción a Power BI](powerbi-service-get-started.md)  
+- ¿Tiene preguntas? 
+            [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

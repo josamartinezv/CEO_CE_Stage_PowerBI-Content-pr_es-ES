@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Dashboards in the Power BI mobile app for Windows 10"
-   description="Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI mobile app for Windows 10"
+   pageTitle="Paneles de la aplicación móvil de Power BI para Windows 10"
+   description="Los paneles son un portal para el ciclo de vida de su empresa. Obtenga información acerca de cómo ver, explorar y compartir sus paneles en la aplicación móvil de Power BI para Windows 10"
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,53 +20,56 @@
    ms.date="09/28/2016"
    ms.author="maggies"/>
 
-# View, explore, and share dashboards in the Power BI mobile app for Windows 10  
+# Ver, explorar y compartir los paneles de la aplicación móvil de Power BI para Windows 10  
 
-Dashboards are a portal to your company's life cycle and processes. A dashboard is an overview, a single place to monitor the current state of the business. 
+Los paneles son un portal para el ciclo de vida y los procesos de su empresa. Un panel es una introducción, un único lugar para supervisar el estado actual de la empresa. 
 
-You don't create dashboards in Power BI on your Windows 10 mobile device. You <bpt id="p1">[</bpt>create dashboards<ept id="p1">](powerbi-service-dashboards.md)</ept> or <bpt id="p2">[</bpt>connect to built-in dashboards for services<ept id="p2">](powerbi-content-packs-services.md)</ept> such as Salesforce in the Power BI service (<bpt id="p3">[</bpt>https://www.powerbi.com<ept id="p3">](https://www.powerbi.com)</ept>) on your computer.
+No cree paneles en Power BI en su dispositivo móvil de Windows 10. Se [crear paneles](powerbi-service-dashboards.md) o [conectarse a los paneles de información para servicios](powerbi-content-packs-services.md) como Salesforce en el servicio Power BI ([https://www.powerbi.com](https://www.powerbi.com)) en el equipo.
 
-Then in the <bpt id="p1">[</bpt>Power BI mobile app for Windows 10<ept id="p1">](powerbi-mobile-win10phone-app-get-started.md)</ept>, you can explore these same dashboards.
+A continuación, en la [aplicación móvil de Power BI para Windows 10](powerbi-mobile-win10phone-app-get-started.md), puede explorar estos paneles de la mismos.
 
-## View dashboards on your Windows 10 device  
-1.  Open the Power BI app on your Windows 10 device and sign in.
+## Paneles de la vista en el dispositivo de Windows 10  
+1.  Abra la aplicación de Power BI en el dispositivo de Windows 10 e inicie sesión.
 
-    Need to <bpt id="p1">[</bpt>download the app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=526478)</ept> first?
+    ¿Necesita [Descargar la aplicación](http://go.microsoft.com/fwlink/?LinkID=526478) primera?
 
-2.  Tap a dashboard to open it.   
+2.  Puntee en un panel para abrirlo.   
 
     ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-device-dashboard-home.png)
 
-    Power BI dashboards look a little different on your Windows 10 phone. All the tiles appear the same width, and they're arranged one after another from top to bottom.
+    Paneles de Power BI parecer un poco diferentes en su teléfono de Windows 10. Todos los mosaicos aparecen el mismo ancho, y que estén organizadas uno tras otro de arriba a abajo.
 
     ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-dashboard-0928.png)
 
-     You can also turn your phone sideways to <bpt id="p1">[</bpt>view dashboards in landscape mode<ept id="p1">](#view-dashboards-in-landscape-mode)</ept> on your phone.
+     También puede activar el teléfono lateralmente [Ver los paneles en modo horizontal](#view-dashboards-in-landscape-mode) en su teléfono.
 
-    ><bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: If you're the dashboard owner, in the Power BI service you can <bpt id="p2">[</bpt>create a view of the dashboard specifically for phones<ept id="p2">](powerbi-service-create-dashboard-phone-view.md)</ept> in portrait mode. 
+    >
+            **Sugerencia**: si es el propietario del panel, en el servicio Power BI puede [crear una vista del panel específicamente para teléfonos](powerbi-service-create-dashboard-phone-view.md) en modo vertical. 
 
-5.  In the dashboard, you can:
+5.  En el panel, puede:
 
-    -   <bpt id="p1">[</bpt>Tap a tile<ept id="p1">](powerbi-mobile-tiles-in-the-win10phone-app.md)</ept> to open and interact with it.
-    -   Tap the <bpt id="p1">**</bpt>Full Screen<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-full-screen-icon.png)</ph> to present your Power BI dashboard without borders or menus, like <bpt id="p2">**</bpt>Slide Show<ept id="p2">**</ept> view in PowerPoint.
-    -   Tap the <bpt id="p1">**</bpt>Invite<ept id="p1">**</ept> icon <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_InviteIcon.png)</ph> to <bpt id="p2">[</bpt>share your dashboard<ept id="p2">](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md)</ept> with a colleague.
-    -   Tap the star <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-mobile-not-favorite-icon.png)</ph> to <bpt id="p1">[</bpt>make the dashboard a favorite<ept id="p1">](powerbi-mobile-favorites.md)</ept>.
-    -   Tap the <bpt id="p1">**</bpt>Pin to Start<ept id="p1">**</ept> icon to <bpt id="p2">[</bpt>pin the dashboard to your Windows Start screen<ept id="p2">](powerbi-mobile-pin-dashboard-from-win10phone-app.md)</ept>. 
+    -   
+            [Puntee en un mosaico](powerbi-mobile-tiles-in-the-win10phone-app.md) Abrir e interactuar con él.
+    -   Puntee en el **pantalla completa** icono ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-full-screen-icon.png) para presentar su panel de Power BI sin bordes o menús, como **presentación** view en PowerPoint.
+    -   Puntee en el **Invitar** icono ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_Andr_InviteIcon.png) para [compartir el escritorio](powerbi-mobile-share-a-dashboard-from-the-win10phone-app.md) con un colega.
+    -   Toque la estrella ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-mobile-not-favorite-icon.png) a [convertir el panel favorita](powerbi-mobile-favorites.md).
+    -   Puntee en el **Anclar a inicio** icono para [anclar el panel de la pantalla de inicio de Windows](powerbi-mobile-pin-dashboard-from-win10phone-app.md). 
     
 
-6.  To go back to the dashboards home page, tap the dashboard name to open the breadcrumb trail, then tap <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>:
+6.  Para volver a la página principal de paneles, puntee en el nombre del panel para abrir la ruta de exploración y, a continuación, puntee en **Mi área de trabajo**:
    
      ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/power-bi-windows-10-dashboard-breadcrumb.png)
 
-## View dashboards in landscape mode
-You can also view dashboards in landscape mode, just by turning your phone. The dashboard layout changes from a series of tiles to a view of the whole dashboard &amp;#151; you see all of the dashboard’s tiles laid out as they are in the Power BI service.
+## Paneles de la vista en modo horizontal
+También puede ver los paneles en modo horizontal, activando el teléfono. El diseño del panel cambia de una serie de mosaicos a una vista de todo el panel & #151; ver todos los iconos del panel dispuestos en el servicio Power BI.
 
 ![](media/powerbi-mobile-dashboards-in-the-win10phone-app/PBI_iPh_Landscape.png)
 
-You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still <bpt id="p1">[</bpt>tap a tile<ept id="p1">](powerbi-mobile-tiles-in-the-win10phone-app.md)</ept> to open the tile in focus mode and interact with your data.
+Puede usar el gesto de "alejar" para acercar y alejar en distintas áreas de su escritorio, panorámica para navegar en él. Y aún así puede [toque un icono](powerbi-mobile-tiles-in-the-win10phone-app.md) para abrir el mosaico en el modo de enfoque e interactuar con los datos.
 
 ### Consulte también  
-- <bpt id="p1">[</bpt>Download the Power BI mobile app for Windows 10<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=526478)</ept> from the Windows Store  
-- [Get started with the Power BI mobile app for Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
-- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- 
+            [Descargar la aplicación móvil de Power BI para Windows 10](http://go.microsoft.com/fwlink/?LinkID=526478) desde la tienda Windows  
+- [Introducción a la aplicación móvil de Power BI para Windows 10](powerbi-mobile-win10phone-app-get-started.md)  
+- [Crear una vista de teléfono de un panel en Power BI](powerbi-service-create-dashboard-phone-view.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

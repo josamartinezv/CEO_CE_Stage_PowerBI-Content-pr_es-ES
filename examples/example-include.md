@@ -1,15 +1,15 @@
-<properties pageTitle="Documentation Example - Includes with Images" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Includes with Images" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación - se incluye con imágenes" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Includes with Images" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Includes with Images #
+# Por ejemplo, se incluye con imágenes #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates an article that references an include that contains an image.  
+El contenido entre las líneas siguientes muestra un artículo que hace referencia a una instrucción include que contiene una imagen.  
 
 
 ---
-## Includes with Images ##
+## Se incluye con imágenes ##
 
-The result is the following one:
+El resultado es el siguiente:
 
 [AZURE.INCLUDE [include-short-name](../includes/example-include-images.md)]

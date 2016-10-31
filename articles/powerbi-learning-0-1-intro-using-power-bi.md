@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Using Power BI"
-   description="Learn the common flow of work in Power BI"
+   pageTitle="Con Power BI"
+   description="Obtenga información acerca del flujo de trabajo en Power BI comunes"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,19 +22,19 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Using Power BI
+# Con Power BI
 
-Now that you know the basics of Power BI, let’s jump into some hands-on experiences and a guided tour. Your video tour guide is <bpt id="p1">**</bpt>Will Thompson<ept id="p1">**</ept>, a Program Manager on the Power BI team at Microsoft. There are a few guest guides too, a little later on in the course.
+Ahora que conoce los fundamentos de Power BI, vamos a algunas experiencias prácticas y una visita guiada. La Guía de visita en vídeo es **Will Thompson**, director de programas en el equipo de Power BI de Microsoft. Hay unos invitado guías demasiado, un poco más adelante en el curso.
 
-As Will explains the many things you can do with Power BI, keep in mind that all of these activities, and all the analysis you can do with Power BI, generally follow a common flow. The <bpt id="p1">**</bpt>common flow<ept id="p1">**</ept> of activity in Power BI is the following:
+Se explica la muchas cosas que puede hacer con Power BI, tenga en cuenta que todas estas actividades y análisis que puede realizar con Power BI, generalmente sigan un flujo comunes. El **flujo comunes** de actividad en Power BI es la siguiente:
 
--   Bring data into Power BI Desktop, and create a report.
--   Publish to the Power BI service, where you create new visualizations or build dashboards
--   Share your dashboards with others, especially people who are on the go
--   View and interact with shared dashboards and reports in Power BI Mobile apps
+-   Introducir datos en Power BI Desktop y crear un informe.
+-   Publicar en el servicio Power BI, donde crear nuevas visualizaciones o paneles de compilación
+-   Compartir sus paneles con otras personas, especialmente las personas que están de viaje
+-   Ver e interactuar con informes y paneles compartidos en las aplicaciones móviles de Power BI
 
 ![](media/powerbi-learning-0-1-intro-using-power-bi/c0a1_1.png)
 
-As mentioned earlier, you might spend all your time in the <bpt id="p1">**</bpt>Power BI service<ept id="p1">**</ept>, getting data and creating dashboards – that’s just fine. Someone else on your team might spend all of her time in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, which is fine too. In order to help you understand the full continuum of Power BI and what it can do, we’ll show you all of it… then you can decide how to use it to your best advantage.
+Como se mencionó anteriormente, puede dedicar todo el tiempo en el **servicio Power BI**, obtención de datos y creación de paneles, que es perfectamente. Alguien de su equipo podría dedicar todo su tiempo en **Power BI Desktop**, lo cual está bien. Para ayudarle a entender el espectro completo de Power BI y lo que puede hacer, le mostraremos todo... a continuación, puede decidir cómo usarlo para sacarles el máximo provecho.
 
-So let’s jump in, and let Will guide us through the experience. The first order of business is to understand the basic building blocks of Power BI, which will provide a solid basis for learning how Power BI turns data into cool reports and visuals.
+Así que vamos a dar el salto y dejar que se nos guían a través de la experiencia. La primera regla de negocio es comprender los pilares básicos de Power BI, que proporcionará una base sólida para aprender cómo Power BI convierte datos en objetos visuales e informes interesantes.

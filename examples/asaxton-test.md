@@ -1,18 +1,18 @@
 <properties
-        pageTitle="page title"
+        pageTitle="título de la página"
         description="description"
         services="powerbi"
         documentationCenter=""
         authors="asaxton" />
 
-# Unsupported data source for refresh
+# Origen de datos no admitidos para la actualización
 
-You may see an error when trying to configure a dataset for <bpt id="p1">**</bpt>Scheduled Refresh<ept id="p1">**</ept>.
+Puede ver un error al intentar configurar un conjunto de datos para **actualización programada**.
 
     You cannot schedule refresh for this dataset because it gets data from sources that currently don't support refresh.
 
-This happens when the data source you used, within <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, isn't supported for refresh.  You can see the list of supported data sources at <bpt id="p1">[</bpt>Refresh data in Power BI<ept id="p1">](powerbi-refresh-data.md)</ept>.
+Esto sucede cuando el origen de datos utiliza, en **Power BI Desktop**, no se admite para la actualización.  Puede ver la lista de orígenes de datos admitidos en [Actualizar datos en Power BI](powerbi-refresh-data.md).
 
 1. Solucionar problemas
 2. Prueba
-3. Test another
+3. Probar otro

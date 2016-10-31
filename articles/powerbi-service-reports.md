@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Reports in Power BI"
-   description="Reports in Power BI"
+   pageTitle="Informes de Power BI"
+   description="Informes de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,46 +19,47 @@
    ms.workload="powerbi"
    ms.date="10/05/2016"
    ms.author="mihart"/>
-# Reports in Power BI
+# Informes de Power BI
 
-Dashboards, reports, and datasets are at the heart of Power BI. A <bpt id="p1">**</bpt>report<ept id="p1">**</ept> is a multi-perspective view into your data, with visualizations that represent different findings and insights from that data.  A report may have a single visualization or pages full of visualizations.
+Los paneles, informes y conjuntos de datos están en el centro de Power BI. Un **informe** es una vista de varias perspectiva en los datos con visualizaciones que representan diferentes resultados e información de esos datos.  Un informe puede tener una sola visualización o páginas enteras de visualizaciones.
 
 ![](media/powerbi-service-reports/reportview.png)
 
-Need help understanding the building blocks that make up Power BI?  See <bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>.
+¿Necesita ayuda para comprender los bloques de creación que conforman Power BI?  Consulte [BI: conceptos básicos de energía](powerbi-service-basic-concepts.md).
 
-You can <bpt id="p1">[</bpt>create a report from scratch<ept id="p1">](powerbi-service-create-a-new-report.md)</ept> or <bpt id="p2">[</bpt>have one shared with you<ept id="p2">](powerbi-service-share-unshare-dashboard.md)</ept>. And for some kinds of data, Power BI will <bpt id="p1">[</bpt>create a report for you as it adds the dataset<ept id="p1">](powerbi-service-get-data.md)</ept>.  
+Puede [crear un informe desde cero](powerbi-service-create-a-new-report.md) o [haberlo compartido con usted](powerbi-service-share-unshare-dashboard.md). Y para algunos tipos de datos, Power BI [crear un informe para el agrega el conjunto de datos](powerbi-service-get-data.md).  
 
 
-## View reports in the navigation pane
+## Ver informes en el panel de navegación
 
-Power BI can have more than one report-- as you add reports, their titles are added to the list under the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> heading (see screenshot below). The report you're currently viewing is highlighted. New reports have a yellow asterisk. Only one report can be open at a time.
+Power BI puede tener más de un informe, como agregar informes, sus títulos se agregan a la lista bajo la **informes** título (consulte la siguiente captura de pantalla). Se resalta el informe que está viendo actualmente. Nuevos informes tienen un asterisco amarillo. Solo se puede abrir un informe en un momento.
 
 ![](media/powerbi-service-reports/navigator.png)
 
-## For more information about reports:
+## Para obtener más información acerca de los informes:
 
-From the table of contents (on the left side of this browser page), expand <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> to see all the topics related to Power BI reports.
+En la tabla de contenido (en el lado izquierdo de esta página del explorador), expanda **informes** para ver todos los temas relacionados con los informes de Power BI.
 
-### Tips and troubleshooting
+### Sugerencias y solución de problemas
 
-- Don't forget that <bpt id="p1">[</bpt>creating a report<ept id="p1">](powerbi-service-create-a-new-report.md)</ept>  requires a <bpt id="p2">[</bpt>dataset<ept id="p2">](powerbi-service-get-data.md)</ept>.  
+- No olvide que [crear un informe](powerbi-service-create-a-new-report.md)  requiere un [conjunto de datos](powerbi-service-get-data.md).  
 
-- Make sure you understand the difference between <bpt id="p1">[</bpt>Reading View<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept> and <bpt id="p2">[</bpt>Editing View<ept id="p2">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>. 
+- Asegúrese de entender la diferencia entre [vista lectura](powerbi-service-interact-with-a-report-in-reading-view.md) y [vista de edición de](powerbi-service-interact-with-a-report-in-editing-view.md). 
 
-- Familiarize yourself with the report editor by <bpt id="p1">[</bpt>Taking a tour<ept id="p1">](powerbi-service-the-report-editor-take-a-tour.md)</ept>.
+- Familiarizarse con el editor de informe [un paseo](powerbi-service-the-report-editor-take-a-tour.md).
 
-- Modify how your reports display using <bpt id="p1">[</bpt>page display settings<ept id="p1">](powerbi-service-change-report-display-settings.md)</ept>.
+- Modificar cómo los informes muestran utilizando [página Configuración de pantalla](powerbi-service-change-report-display-settings.md).
 
-- Do you know the difference between filter, highlight, cross-filter, and cross-highlight? If not, see <bpt id="p1">[</bpt>Filter and highlight data in reports<ept id="p1">](powerbi-service-about-filters-and-highlighting-in-reports.md)</ept>.
+- ¿Conoce la diferencia entre el filtro, resaltar, filtro cruzado y resaltan? Si no es así, consulte [filtrar y resaltar datos en informes](powerbi-service-about-filters-and-highlighting-in-reports.md).
 
-- <bpt id="p1">[</bpt>Focus mode<ept id="p1">](powerbi-service-move-and-resize-a-visualization.md)</ept> and <bpt id="p2">[</bpt>full screen TV mode<ept id="p2">](powerbi-service-dash-and-reports-fullscreen.md)</ept> -- there is a difference.
+- 
+            [Modo de enfoque](powerbi-service-move-and-resize-a-visualization.md) y [el modo de pantalla completa TV](powerbi-service-dash-and-reports-fullscreen.md) : hay una diferencia.
 
 
 ## Véase también
 
-[Get Started with Power BI](powerbi-service-get-started.md) 
+[Introducción a Power BI](powerbi-service-get-started.md) 
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

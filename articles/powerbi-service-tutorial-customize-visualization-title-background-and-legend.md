@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Customize visual titles, legends, and backgrounds. "
-   description="Tutorial: Customize visualization title, background, and legend"
+   pageTitle="Tutorial: Personalizar visuales títulos, leyendas y fondos. "
+   description="Tutorial: Personalizar la leyenda, el fondo y el título de visualización"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,110 +20,110 @@
    ms.date="10/01/2016"
    ms.author="mihart"/>
 
-# Tutorial: Customize visualization title, background, and legend
+# Tutorial: Personalizar la leyenda, el fondo y el título de visualización
 
-In this tutorial you'll learn many different ways to customize your visualizations. Not all visualizations can be customized, <bpt id="p1">[</bpt>see the complete list<ept id="p1">](#list)</ept>.  Specifically, this tutorial covers customizing:  
--   visualization titles  
--   visualization backgrounds  
--   visualization legends
+En este tutorial aprenderá diferentes formas de personalizar las visualizaciones. No todas las visualizaciones se pueden personalizar, [Ver la lista completa](#list).  En concreto, este tutorial trata la personalización:  
+-   títulos de visualización  
+-   fondos de visualización  
+-   leyendas de visualización
 
-## Customize visualization titles in reports    
-I’ve signed in to the Power BI service and I’m starting with the Retail Analysis Sample report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-interact-with-a-report-in-editing-view.md)</ept>. To follow along, <bpt id="p1">[</bpt>connect to the Retail Analysis sample<ept id="p1">](powerbi-sample-downloads.md)</ept>.
+## Personalizar los títulos de visualización de informes    
+He iniciado sesión en el servicio Power BI y voy a empezar con el informe de ejemplo de análisis de venta directa en [vista de edición de](powerbi-service-interact-with-a-report-in-editing-view.md). Para continuar, [conectarse a la muestra de análisis de venta](powerbi-sample-downloads.md).
 
 >[AZURE.NOTE]  
->When you pin a visualization to a dashboard, it becomes a dashboard tile.  The tiles themselves can also be customized with <bpt id="p1">[</bpt>new titles and subtitles, hyperlinks, and resized<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>.
+>Cuando ancla una visualización a un panel, se convierte en un icono de panel.  También se pueden personalizar los mosaicos a sí mismos con [nuevos títulos y subtítulos, hipervínculos y cuyo tamaño ha cambiado](powerbi-service-edit-a-tile-in-a-dashboard.md).
 
-1.  Navigate to the "New Stores" page of the report and select the "Open Store Count by Open Month..." column chart.
+1.  Desplácese a la página "New tiendas" del informe y seleccione el gráfico de columnas "Abrir recuento de tienda por abrir... mes".
 
-2.  In the Visualizations and Filters pane, select the paintbrush icon <ph id="ph1">![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png)</ph> to reveal the formatting options and select <bpt id="p1">**</bpt>Title<ept id="p1">**</ept> to expand that section.  
+2.  En el panel de visualizaciones y los filtros, seleccione el icono de pincel ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/paintbrush.png) para mostrar las opciones de formato y seleccione **título** para expandir esa sección.  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizefull-new.png)
 
-3.  Turn  <bpt id="p1">**</bpt>Title<ept id="p1">**</ept> on and off by selecting the On (or Off) slider. For now, leave it <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.  
+3.  Activar  **título** y desactivar seleccionando el On (o desactivar) control deslizante. Por ahora, deje **en**.  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/onoffslider.png)
 
-4.  Change <bpt id="p1">**</bpt>Title Text<ept id="p1">**</ept> by typing <bpt id="p2">**</bpt>Store count by month opened<ept id="p2">**</ept> in the text field.  
+4.  Cambio **texto de título** escribiendo **almacenar recuento por mes abre** en el campo de texto.  
 
-5.  Change <bpt id="p1">**</bpt>Font color<ept id="p1">**</ept> to orange and <bpt id="p2">**</bpt>Background Color<ept id="p2">**</ept> to yellow.
+5.  Cambio **color de fuente** a naranja y **Color de fondo** a amarillo.
 
-    -   Select the dropdown and choose a color from the <bpt id="p1">**</bpt>Theme Colors<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Recent Colors<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Custom color<ept id="p3">**</ept>.
+    -   Seleccione la lista desplegable y elija un color en la **colores del tema**, **colores recientes**, o **color personalizado**.
 
-    -   Select the dropdown to close the color window.  
+    -   Seleccione la lista desplegable para cerrar la ventana de color.  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizecolorpicker.png)
 
-    You can always revert to the default colors by selecting <bpt id="p1">**</bpt>Revert to default<ept id="p1">**</ept> in the color window.
+    Siempre puede volver a los colores predeterminados seleccionando **volver al valor predeterminado** en la ventana de color.
 
-6.  The last customization we'll make to the chart title is to align it in the center of the visualization. The title position defaults to left-aligned.  
+6.  La personalización del último que haremos en el título del gráfico es alinear en el centro de la visualización. De forma predeterminada, la posición del título alineado a la izquierda.  
 ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizealign.png)
 
-    At this point in the tutorial, your column chart <bpt id="p1">**</bpt>title<ept id="p1">**</ept> should look like something like this:  
+    En este punto del tutorial, el gráfico de columnas **título** debe ser similar a algo parecido a esto:  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/tutorialprogress1.png)
 
-    To revert all the title customization we've done so far, select <bpt id="p1">**</bpt>Revert To Default<ept id="p1">**</ept>, at the bottom of the <bpt id="p2">**</bpt>Title<ept id="p2">**</ept> customization pane.  
+    Para revertir toda la personalización del título que hemos hecho hasta ahora, seleccione **Revertir predeterminado**, en la parte inferior de la **título** panel personalización.  
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/revertall.png)
 
-## Customize visualization backgrounds  
-With the same column chart selected, expand the Background options.
+## Personalizar los fondos de visualización  
+Con el mismo gráfico de columna seleccionado, expanda las opciones de fondo.
 
-1.  Turn the background on and off by selecting the On (or Off) slider. For now, leave it <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.
+1.  Activar y desactivar fondo seleccionando el On (o desactivar) control deslizante. Por ahora, deje **en**.
 
-2.  Change the background color to 74% grey.
+2.  Cambiar el color de fondo a gris 74%.
 
-    -   Select the dropdown and choose a grey color from the <bpt id="p1">**</bpt>Theme Colors<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Recent Colors<ept id="p2">**</ept>, or <bpt id="p3">**</bpt>Custom color<ept id="p3">**</ept>.
+    -   Seleccione la lista desplegable y elija un color gris de la **colores del tema**, **colores recientes**, o **color personalizado**.
 
-    -    Change Transparency to 74%.   
+    -    Cambiar la transparencia 74%.   
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/customizebackground.png)
 
-    To revert all the title background customization we've done so far, select <bpt id="p1">**</bpt>Revert To Default<ept id="p1">**</ept>, at the bottom of the <bpt id="p2">**</bpt>Background<ept id="p2">**</ept> customization pane.
+    Para revertir toda la personalización del fondo de título que hemos hecho hasta ahora, seleccione **Revertir predeterminado**, en la parte inferior de la **fondo** panel personalización.
 
-## Customize visualization legends  
+## Personalizar las leyendas de visualización  
 
-1. Open the <bpt id="p1">**</bpt>Overview<ept id="p1">**</ept> report page and select the "Total Sales Variance by FiscalMonth and District Manager" chart.
+1. Abra la **Introducción** página de informe y seleccione el gráfico ""Total Sales varianza por FiscalMonth y distrito administrador.
 
-2. In the Visualization tab, select the paintbrush icon to open the formatting pane.  
+2. En la ficha de visualización, seleccione el icono de pincel para abrir el panel de formato.  
 
-3. Expand <bpt id="p1">**</bpt>Legend<ept id="p1">**</ept> options.
+3. Expanda **leyenda** Opciones.
 
       ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/legend.png)
 
-3.  Turn the legend on and off by selecting the On (or Off) slider. For now, leave it <bpt id="p1">**</bpt>On<ept id="p1">**</ept>.
+3.  Activar la leyenda y desactivar seleccionando el On (o desactivar) control deslizante. Por ahora, deje **en**.
 
-4.  Move the legend to the left side of the visualization.    
+4.  Mover la leyenda a la izquierda de la visualización.    
 
-3.  Add a legend title by toggling <bpt id="p1">**</bpt>Title<ept id="p1">**</ept> to <bpt id="p2">**</bpt>On<ept id="p2">**</ept> and, in the <bpt id="p3">**</bpt>Legend name<ept id="p3">**</ept> field, typing <bpt id="p4">**</bpt>Managers<ept id="p4">**</ept>.
+3.  Agregar un título de leyenda alternando **título** a **en** y, en el **nombre de leyenda** campo, escriba **administradores**.
     ![](media/powerbi-service-tutorial-customize-visualization-title-background-and-legend/legend-move.png)
 
-    To revert all the legend customization we've done so far, select <bpt id="p1">**</bpt>Revert To Default<ept id="p1">**</ept>, at the bottom of the <bpt id="p2">**</bpt>Legend<ept id="p2">**</ept> customization pane.
+    Para revertir toda la personalización de la leyenda que hemos hecho hasta ahora, seleccione **Revertir predeterminado**, en la parte inferior de la **leyenda** panel personalización.
 
 
 <a name="list"></a>
-## Visualization types that can be customized  
-| Visualization  | Título  | Contexto | Leyenda |
+## Tipos de visualización que se pueden personalizar  
+| Visualización  | Título  | Contexto | Leyenda |
 |:---------------|:-------|:-----------|:-------|
-| area           | sí    | Sí.        | sí    |
+| área           | sí    | Sí.        | sí    |
 | barra            | sí    | Sí.        | sí    |
-| card           | sí    | sí        | n/a    |
-| multi row card | sí    | sí        | n/a    |
-| column         | sí    | Sí.        | sí    |
-| combo          | sí    | Sí.        | sí    |
-| donut          | sí    | Sí.        | sí    |
-| filled map     | sí    | Sí.        | sí    |
-| funnel         | sí    | sí        | n/a    |
-| gauge          | sí    | sí        | n/a    |
-| kpi            | sí    | sí        | n/a    |
-| line           | sí    | Sí.        | sí    |
+| tarjeta           | sí    | sí        | n/a    |
+| tarjeta de varias filas | sí    | sí        | n/a    |
+| columna         | sí    | Sí.        | sí    |
+| cuadro combinado          | sí    | Sí.        | sí    |
+| Donut          | sí    | Sí.        | sí    |
+| mapa coroplético     | sí    | Sí.        | sí    |
+| embudo         | sí    | sí        | n/a    |
+| medidor          | sí    | sí        | n/a    |
+| KPI            | sí    | sí        | n/a    |
+| línea           | sí    | Sí.        | sí    |
 | map            | sí    | Sí.        | sí    |
-| matrix         | sí    | sí        | n/a    |
-| pie            | sí    | Sí.        | sí    |
-| scatter        | sí    | Sí.        | sí    |
-| slicer         | sí    | sí        | n/a    |
+| matriz         | sí    | sí        | n/a    |
+| gráfico circular            | sí    | Sí.        | sí    |
+| Dispersión        | sí    | Sí.        | sí    |
+| segmentación de datos         | sí    | sí        | n/a    |
 | tabla          | sí    | sí        | n/a    |
-| textbox        | no     | sí        | n/a    |
-| treemap        | sí    | Sí.        | sí    |
-| waterfall      | sí    | Sí.        | sí    |
+| cuadro de texto        | no     | sí        | n/a    |
+| TreeMap        | sí    | Sí.        | sí    |
+| en cascada      | sí    | Sí.        | sí    |
 
 ## Consulte también  
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>  
-[Customize X-axis and Y-axis](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)  
-[Customize colors and axis properties](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+Más información sobre [visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)  
+[Personalizar los ejes x y y](powerbi-service-tutorial-customize-x-axis-and-y-axis-properties.md)  
+[Personalizar los colores y las propiedades del eje](powerbi-service-getting-started-with-color-formatting-and-axis-properties.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

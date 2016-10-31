@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Spark on HDInsight with DirectQuery"
-   description="Spark on HDInsight with DirectQuery"
+   pageTitle="Spark en HDInsight con DirectQuery"
+   description="Spark en HDInsight con DirectQuery"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,50 +20,50 @@
    ms.date="09/09/2016"
    ms.author="asaxton"/>
 
-# Spark on HDInsight with DirectQuery
+# Spark en HDInsight con DirectQuery
 
-Spark on Azure HDInsight with DirectQuery allows you to create dynamic reports based on data and metric you already have in your Spark cluster. With DirectQuery, queries are sent back to your Azure HDInsight Spark cluster as you explore the data in the report view. This experience is suggested for users who are familiar with the entities they connect to.
+Spark en HDInsight de Azure con DirectQuery le permite crear informes dinámicos basados en datos y métrica que ya tiene en el clúster Spark. Con DirectQuery, las consultas se envían a su clúster de Azure HDInsight Spark como explorar los datos en la vista de informe. Se sugiere esta experiencia para los usuarios familiarizados con las entidades que se conectan a.
 
-> [AZURE.WARNING] Automatic tile refresh has been disabled for dashboard tiles built on Spark based datasets. You can select <bpt id="p1">**</bpt>Refresh Dashboard Tiles<ept id="p1">**</ept> to refresh manually. Reports are not impacted and should remain up-to-date. 
+> [AZURE.WARNING] Actualización automática del mosaico se ha deshabilitado para los iconos de panel basados en conjuntos de datos en función de Spark. Puede seleccionar **Actualizar iconos de panel** para actualizar manualmente. Los informes no se ven afectados y deben permanecer actualizados. 
 
--   Every action such as selecting a column or adding a filter will send a query back to the database – before selecting very large fields, consider choosing an appropriate visual type.
--   Q&amp;A is not available for DirectQuery datasets.
--   Schema changes are not picked up automatically.
--   Groups are only available with <bpt id="p1">[</bpt>Power BI Pro<ept id="p1">](powerbi-power-bi-pro-content-what-is-it.md)</ept>.
+-   Cada acción, como seleccionar una columna o agregar un filtro se enviar una consulta a la base de datos antes de seleccionar los campos muy grandes, considere la posibilidad de elegir el tipo adecuado visual.
+-   Preguntas y respuestas no está disponible para conjuntos de datos de DirectQuery.
+-   Cambios de esquema no se recogen automáticamente.
+-   Sólo están disponibles con grupos [Power BI Pro](powerbi-power-bi-pro-content-what-is-it.md).
 
-These restrictions and notes may change as we continue to improve the experiences. The steps to connect are detailed below.  Additional documentation can be found at <bpt id="p1">[</bpt>Use BI tools with Apache Spark on Azure HDInsight<ept id="p1">](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)</ept>
+Estas restricciones y notas pueden cambiar mientras seguimos mejorando las experiencias. A continuación, se indican los pasos para conectarse.  Puede encontrar documentación adicional en [Herramientas de BI de uso con Apache Spark en HDInsight de Azure](https://azure.microsoft.com/documentation/articles/hdinsight-apache-spark-use-bi-tools/)
 
-1. Select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> at the bottom of the left navigation pane.  
+1. Seleccione **obtener datos** en la parte inferior del panel de navegación izquierdo.  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/getdata3.png)  
 
-2. Select <bpt id="p1">**</bpt>Databases &amp; More<ept id="p1">**</ept>.  
+2. Seleccione **bases de datos y más**.  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/GetData.png)
 
-3. Select the <bpt id="p1">**</bpt>Spark on HDInsight<ept id="p1">**</ept> connector and choose <bpt id="p2">**</bpt>Connect<ept id="p2">**</ept>.  
+3. Seleccione el **Spark en HDInsight** conector y elija **Conectar**.  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/Connect.png)  
 
-4. Enter the name of the <bpt id="p1">**</bpt>server<ept id="p1">**</ept> you want to connect to, as well as your <bpt id="p2">**</bpt>username<ept id="p2">**</ept> and <bpt id="p3">**</bpt>password<ept id="p3">**</ept>. The server is always in the form <ph id="ph1">\&lt;</ph>clustername<ph id="ph2">\&gt;</ph>.azurehdinsight.net, see more details about finding these values below.  
+4. Escriba el nombre de la **server** que desee conectarse, así como su **nombre de usuario** y **contraseña**. El servidor está siempre en el formulario \<clustername\>. azurehdinsight.net, ver más detalles acerca de cómo encontrar estos valores que se indican a continuación.  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/parameters.png)  
 
-5. Once connected, you'll see a new dataset with named “SparkDataset”. You can also access the dataset through the placeholder tile that is created.  
+5. Una vez conectado, verá un nuevo conjunto de datos con el nombre "SparkDataset". El conjunto de datos también puede tener acceso mediante el icono de marcador de posición que se crea.  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/tile.PNG)  
 
-6. Drilling into the dataset, you can explore all of the tables and columns in your database. Selecting a column will send a query back to the source, dynamically creating your visual. These visuals can be saved in a new report, and pinned back to your dashboard.
+6. Explorar en el conjunto de datos, puede explorar todas las tablas y columnas en la base de datos. Seleccione una columna enviará una consulta en el origen, creando dinámicamente su visual. Estos objetos visuales pueden guardados en un informe nuevo y se vuelven a Anclar al panel.
 
-## Finding your Spark on HDInsight parameters  
-The server is always in the form <ph id="ph1">\&lt;</ph>clustername<ph id="ph2">\&gt;</ph>.azurehdinsight.net, and can be found in your portal:  
+## Buscar su Spark en HDInsight parámetros  
+El servidor está siempre en el formulario \<clustername\>. azurehdinsight.net y puede encontrarse en el portal:  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/ParametersFull.png)
 
-The username and password can also be found in the portal.
+El nombre de usuario y la contraseña también se encuentra en el portal.
 
 ## Solucionar problemas  
-If you're hitting issues executing queries against your cluster, verify the application is still running and restart if necessary.
+Si se llega a problemas de ejecución de consultas en el clúster, compruebe que la aplicación sigue en ejecución y reinicie si es necesario.
 
-You can also allocate additional resources in the Resource Manager:  
+También pueden asignar recursos adicionales en el Administrador de recursos:  
     ![](media/powerbi-spark-on-hdinsight-with-direct-connect/ResourceManager.png)
 
 ## Consulte también  
 
-[Get started with Power BI](powerbi-service-get-started.md)  
-[Get Data for Power BI](powerbi-service-get-data.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Introducción a Power BI](powerbi-service-get-started.md)  
+[Obtener datos para Power BI](powerbi-service-get-data.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

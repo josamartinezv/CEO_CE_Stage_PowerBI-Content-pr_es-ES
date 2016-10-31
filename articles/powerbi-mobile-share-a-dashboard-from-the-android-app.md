@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Share a dashboard from the Android app"
-   description="Learn how to invite colleagues to view dashboards by sharing links from the Android app for Power BI."
+   pageTitle="Compartir un panel de la aplicación Android"
+   description="Aprenda a invitar a compañeros para ver los paneles mediante el uso compartido de los vínculos de la aplicación Android para Power BI."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,49 +19,56 @@
    ms.workload="powerbi"
    ms.date="10/14/2016"
    ms.author="maggies"/>
-# <a name="share-a-dashboard-from-the-android-mobile-phone-app-for-power-bi"></a>Share a dashboard from the Android mobile phone app for Power BI
+# <a name="share-a-dashboard-from-the-android-mobile-phone-app-for-power-bi"></a>Compartir un panel de la aplicación móvil Android para Power BI
 
-Invite colleagues to view your dashboards by sharing links from the <bpt id="p1">[</bpt>Android app for Microsoft Power BI<ept id="p1">](powerbi-mobile-android-app-get-started.md)</ept>. 
+Invite a sus compañeros para ver los paneles mediante el uso compartido de vínculos desde el [aplicación Android para Microsoft Power BI](powerbi-mobile-android-app-get-started.md). 
 
-## <a name="share-a-dashboard"></a>Share a dashboard
+## <a name="share-a-dashboard"></a>Compartir un panel
 
-1.  On the dashboards home page, tap the ellipsis (...) and tap <bpt id="p1">**</bpt>Invite a colleague<ept id="p1">**</ept>.
+1.  En la página de inicio de paneles, puntee en el botón de puntos suspensivos (...) y en **Invitar a un colega**.
 
     ![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/power-bi-android-invite-dashboard-home.png)
 
-2.  Or, in the upper-right corner of a dashboard, tap the invite icon <ph id="ph1">![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/power-bi-android-invite-icon.png)</ph>.
+2.  O bien, en la esquina superior derecha de un panel, pulse el icono de invitación ![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/power-bi-android-invite-icon.png).
 
  
-    If you're the owner of the dashboard, you see the list of colleagues with whom you've shared this dashboard, with these notes:
+    Si usted es el propietario del panel, verá la lista de compañeros con los que ha compartido este panel, con estas notas:
 
-    -   <bpt id="p1">**</bpt>Can view<ept id="p1">**</ept>: They have viewed the dashboard but can't share it.
+    -   
+            **Puede ver**: se ha visto el panel, pero no puede compartirlo.
 
-    -   <bpt id="p1">**</bpt>Can view &amp; invite<ept id="p1">**</ept>: They have viewed the dashboard and can share it with other colleagues.
+    -   
+            **Puede ver & Invitar**: se ha visto el panel y compartirlos con otros compañeros.
 
-2.  Type email addresses, and a message to accompany your dashboard invitation. Otherwise Power BI sends a default message.
+2.  Escriba las direcciones de correo electrónico y un mensaje para acompañar a la invitación del panel. De lo contrario, Power BI envía un mensaje predeterminado.
 
-3.  To allow resharing, leave <bpt id="p1">**</bpt>Allow recipients to share this dashboard<ept id="p1">**</ept> selected.
+3.  Para permitir volver a compartir, dejar **Permitir a los destinatarios a compartir este panel** seleccionado.
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>:  Resharing allows your coworkers to forward the email invitation to others in your organization, either through the browser or the mobile apps.
+    >
+            **Nota**: volver a compartir permite que sus compañeros reenviar la invitación de correo electrónico a otras personas de su organización, ya sea mediante el explorador o las aplicaciones móviles.
 
-4.  Tap the airplane icon <ph id="ph1">![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/PBI_Andr_SendPlane.png)</ph> in the upper-right corner to send the mail.
+4.  Puntee en el icono de avión ![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/PBI_Andr_SendPlane.png) en la esquina superior derecha para enviar el correo.
 
-    Your colleagues get an email invitation with a direct link to the dashboard. The invitation expires after one month. When they open it in a browser or in one of the mobile apps, it's added to their Power BI account.
+    Sus compañeros obtienen una invitación de correo electrónico con un vínculo directo al escritorio. La invitación expira transcurrido un mes. Cuando abra en un explorador o en una de las aplicaciones móviles, se agrega a su cuenta de Power BI.
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Read more <bpt id="p2">[</bpt>notes about sharing dashboards with colleagues<ept id="p2">](powerbi-service-share-unshare-dashboard.md#notes-about-sharing)</ept>.
+    >
+            **Nota**: más [notas acerca de cómo compartir paneles con sus colegas](powerbi-service-share-unshare-dashboard.md#notes-about-sharing).
 
-## <a name="unshare-a-dashboard"></a>Unshare a dashboard
+## <a name="unshare-a-dashboard"></a>Dejar de compartir un panel
 
-Only the dashboard owner can unshare a dashboard.
+Sólo el propietario del panel puede dejar de compartir un panel.
 
-1.  In the upper-right corner of your dashboard, tap the invite icon <ph id="ph1">![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/power-bi-android-invite-icon.png)</ph>. 
+1.  En la esquina superior derecha del panel del, puntee en el icono de invitación ![](media/powerbi-mobile-share-a-dashboard-from-the-android-app/power-bi-android-invite-icon.png). 
 
-    You see the list of colleagues with whom you've shared this dashboard.
+    Consulte la lista de compañeros con los que ha compartido este panel.
 
-2.   To stop sharing the dashboard with a colleague, tap the <bpt id="p1">**</bpt>X<ept id="p1">**</ept> next to a name <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Remove<ept id="p2">**</ept>.
+2.   Para dejar de compartir el panel con un colega, puntee en el **X** junto al nombre de \> **quitar**.
 
 ### <a name="see-also"></a>Consulte también
 
-- <bpt id="p1">[</bpt>Download the Android app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept> from Google play
-- <bpt id="p1">[</bpt>Annotate and share a tile from the Android app<ept id="p1">](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md)</ept>
-- Questions? <bpt id="p1">[</bpt>Try asking the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+- 
+            [Descargue la aplicación Android](http://go.microsoft.com/fwlink/?LinkID=544867) de Google play
+- 
+            [Anotar y compartir un icono de la aplicación Android](powerbi-mobile-annotate-and-share-a-tile-from-the-android-app.md)
+- ¿Tiene preguntas? 
+            [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

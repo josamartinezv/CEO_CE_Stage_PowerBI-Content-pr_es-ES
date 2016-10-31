@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Troubleshooting refresh scenarios"
-   description="Troubleshooting refresh scenarios"
+   pageTitle="Para solucionar problemas de actualización"
+   description="Para solucionar problemas de actualización"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,30 +20,30 @@
    ms.date="08/15/2016"
    ms.author="asaxton"/>
 
-# Troubleshooting refresh scenarios  
+# Para solucionar problemas de actualización  
 
-Here you can find information regarding different scenarios you may face when refreshing data within the Power BI service. 
+Aquí puede encontrar información sobre escenarios diferentes pueden producirse al actualizar datos en el servicio Power BI. 
 
-> [AZURE.NOTE] If you encounter a scenario that is not listed below, and it is causing you issues, you can ask for further assistance on the <bpt id="p1">[</bpt>community site<ept id="p1">](http://community.powerbi.com/)</ept>, or you can create a <bpt id="p2">[</bpt>support ticket<ept id="p2">](https://powerbi.microsoft.com/support/)</ept>.
+> [AZURE.NOTE] Si se encuentra un caso que no se enumera a continuación y está causando problemas, puede pedir ayuda adicional en el [sitio de la Comunidad](http://community.powerbi.com/), o puede crear un [admite vale](https://powerbi.microsoft.com/support/).
 
-## Unsupported data source for refresh
-When configuring a dataset, you may get an error indicating the dataset uses an unsupported data source for refresh. For details, see <bpt id="p1">[</bpt>Troubleshooting unsupported data source for refresh<ept id="p1">](powerbi-admin-troubleshoot-unsupported-data-source-for-refresh.md)</ept>
+## Origen de datos no admitidos para la actualización
+Al configurar un conjunto de datos, obtendrá un error que indica que el conjunto de datos utiliza un origen de datos no admitidos para la actualización. Para obtener más información, consulte [solución de problemas origen de datos no admitidos para la actualización](powerbi-admin-troubleshoot-unsupported-data-source-for-refresh.md)
 
-## Dashboard doesn't reflect changes after refresh  
-Please wait about 10-15 minutes for refresh to be reflected in the dashboard tiles.  If it is still not showing up, re-pin the visualization to the dashboard.
+## Panel no refleja los cambios después de la actualización  
+Espere aproximadamente 10-15 minutos para la actualización para que se reflejen en los iconos de panel.  Si aún no se muestra, volver a anclar la visualización en el panel.
 
-## GatewayNotReachable when setting credentials  
-You may encounter GatewayNotReachable when trying to set credentials for a data source. This could be the result of an outdated gateway.  Install the latest gateway and try again.
+## GatewayNotReachable al establecer credenciales  
+Puede encontrar GatewayNotReachable al intentar establecer las credenciales para un origen de datos. Esto podría deberse a una puerta de enlace obsoleto.  Instale la puerta de enlace más reciente y vuelva a intentarlo.
 
-## Processing Error: The following system error occurred: Type Mismatch  
-This could be an issue with your M script within your Power BI Desktop file or Excel Workbook.  It could also be due to an out of date Power BI Desktop version.
+## Error de procesamiento: El error del sistema: no coinciden los tipos  
+Podría tratarse de un problema con la secuencia de comandos de M dentro de su archivo de Power BI Desktop o un libro de Excel.  También podría ser debido a una versión actualizada de Power BI Desktop.
 
-## Tile refresh errors
-For a list of errors you may encounter with dashboard tiles, and explanations, see <bpt id="p1">[</bpt>Troubleshooting tile errors<ept id="p1">](powerbi-refresh-troubleshooting-tile-errors.md)</ept>.
+## Errores de actualización de mosaico
+Para obtener una lista de errores que pueden producirse con los iconos de panel y explicaciones, consulte [solucionar errores de mosaico](powerbi-refresh-troubleshooting-tile-errors.md).
 
 ## Véase también  
 
-[Data Refresh](powerbi-refresh-data.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Actualización de datos](powerbi-refresh-data.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+[Solución de problemas de la puerta de enlace de Power BI - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

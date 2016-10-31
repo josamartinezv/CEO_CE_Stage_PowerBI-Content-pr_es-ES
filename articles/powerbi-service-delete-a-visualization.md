@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Delete a visualization in Power BI"
-   description="Delete a visualization in Power BI"
+   pageTitle="Eliminar una visualización en Power BI"
+   description="Eliminar una visualización en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,22 +19,22 @@
    ms.workload="powerbi"
    ms.date="08/25/2016"
    ms.author="mihart"/>
-# Delete a visualization in Power BI
+# Eliminar una visualización en Power BI
 
-## Delete a visualization
+## Eliminar una visualización
 
-1.  In Power BI, open a report in <bpt id="p1">[</bpt>Editing View<ept id="p1">](powerbi-service-go-from-reading-view-to-editing-view.md)</ept> and <bpt id="p2">[</bpt>create a visualization<ept id="p2">](powerbi-service-add-visualizations-to-a-report-i.md)</ept> if your report doesn't already have one. 
+1.  En Power BI, abrir un informe en [vista de edición](powerbi-service-go-from-reading-view-to-editing-view.md) y [crear una visualización](powerbi-service-add-visualizations-to-a-report-i.md) Si todavía no tiene el informe. 
 
-2.  Select the ellipses (...) and choose <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.
+2.  Seleccione el botón de puntos suspensivos (...) y elija **quitar**.
 
     ![](media/powerbi-service-delete-a-visualization/deleteVizNew.gif)
 
-    Or, select the visualization and press DELETE.
+    O bien, selecciónela y presione SUPR.
 
 ## Consulte también
 
-More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>
+Más información sobre [visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

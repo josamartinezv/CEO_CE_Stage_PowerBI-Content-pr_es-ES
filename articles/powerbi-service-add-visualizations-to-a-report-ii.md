@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Part 2, Add visualizations to a Power BI report"
-   description="Tutorial: Part 2, Add visualizations to a Power BI report"
+   pageTitle="Tutorial: Parte 2, visualizaciones de agregar a un informe de Power BI"
+   description="Tutorial: Parte 2, visualizaciones de agregar a un informe de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,54 +20,59 @@
    ms.date="10/08/2016"
    ms.author="mihart"/>
 
-# Tutorial: Part 2, Add visualizations to a Power BI report  
+# Tutorial: Parte 2, visualizaciones de agregar a un informe de Power BI  
 
-In <bpt id="p1">[</bpt>Part 1<ept id="p1">](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report)</ept>, you created a basic visualization by selecting checkboxes next to field names.  In Part 2 you'll learn how to use drag-and-drop and make full use of the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> panes to create and modify visualizations.
+En [parte 1](https://powerbi.uservoice.com/knowledgebase/articles/441777-part-i-add-visualizations-to-a-power-bi-report), crea una visualización básica seleccionando las casillas de verificación junto a los nombres de campo.  En la parte 2 aprenderá a usar arrastrar y colocar y hacer un uso completo de la **campos** y **visualizaciones** paneles para crear y modificar las visualizaciones.
 
-## Create a new visualization  
-In this tutorial we'll dig into our Retail Analysis dataset and create a few key visualizations.
+## Crear una nueva visualización  
+En este tutorial crearemos adentrarse en nuestro conjunto de datos de análisis de venta directa y crear unas visualizaciones de clave.
 
-### Open a report and add a new blank page.  
-1.  Expand the left navigation pane, if it isn't already expanded.
+### Abra un informe y agregue una nueva página en blanco.  
+1.  Expanda el panel de navegación izquierdo, si aún no está expandido.
 
-2.  Under <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept>, select <bpt id="p2">**</bpt>Retail Analysis Sample<ept id="p2">**</ept> to open the report in Reading View.  
+2.  Bajo **informes**, seleccione **ejemplo de análisis de venta** para abrir el informe en la vista de lectura.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/RetailAnalySampleReport.png)
 
-3.  Select <bpt id="p1">**</bpt>Edit Report<ept id="p1">**</ept> to open the report in Editing View.  
+3.  Seleccione **Editar informe** para abrir el informe en la vista de edición.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/EditReport1.png)
 
-4.  <bpt id="p1">[</bpt>Add a new page<ept id="p1">](powerbi-service-add-a-page-to-a-report.md)</ept> by selecting the yellow plus icon at the bottom of the canvas.  
-    ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_addReportPage.png)
+4.  
+                [Agregar una nueva página](powerbi-service-add-a-page-to-a-report.md) seleccionando el amarillo más iconos en la parte inferior del lienzo.  
+![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_addReportPage.png)
 
-### Add a visualization that looks at this year's sales compared to last year.  
-1.  From the <bpt id="p1">**</bpt>Sales<ept id="p1">**</ept> table, select <bpt id="p2">**</bpt>This Year Sales<ept id="p2">**</ept><ph id="ph1"> &gt; </ph><bpt id="p3">**</bpt>Value<ept id="p3">**</ept> and <bpt id="p4">**</bpt>Last Year Sales<ept id="p4">**</ept>. Power BI creates a column chart.  This is somewhat interesting, and you want to dig deeper. What do the sales look like by month?  
+### Agregar una visualización que busca en las ventas de este año en comparación con el año pasado.  
+1.  Desde el **ventas** tabla, seleccione **ventas de este año** > **valor** y **ventas del último año**. Power BI crea un gráfico de columnas.  Esto es algo interesante y desea explorar más en profundidad. ¿Qué la venta aspecto por mes?  
 
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_4b.png)
 
-2.  From the Time table, drag <bpt id="p1">**</bpt>Month<ept id="p1">**</ept> into the <bpt id="p2">**</bpt>Axis<ept id="p2">**</ept> area.  
+2.  En la tabla de tiempo, arrastre **mes** en el **eje** área.  
   ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_5new.png)
 
-3.  <bpt id="p1">[</bpt>Change the visualization<ept id="p1">](powerbi-service-change-the-type-of-visualization-in-a-report.md)</ept> to an Area chart.  There are many visualization types to choose from - see <bpt id="p1">[</bpt>descriptions of each, tips for best practices, and tutorials<ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept> for help deciding which type to use. From the Visualizations pane, select the Area chart icon.
+3.  
+            [Cambiar la visualización](powerbi-service-change-the-type-of-visualization-in-a-report.md) a un gráfico de áreas.  Hay muchos tipos de visualización para elegir, consulte [las descripciones de cada uno, sugerencias de prácticas recomendadas y tutoriales](powerbi-service-visualization-types-for-reports-and-q-and-a.md) para Ayuda para decidir qué tipo. En el panel de visualizaciones, seleccione el icono del área de gráfico.
 
-5.  <bpt id="p1">[</bpt>Resize the visualization<ept id="p1">](powerbi-service-move-and-resize-a-visualization.md)</ept> by selecting the visualization, grabbing one of the outline circles and dragging. Make it wide enough to eliminate the scrollbar and small enough to give us enough room to add another visualization.
+5.  
+            [Cambiar el tamaño de la visualización](powerbi-service-move-and-resize-a-visualization.md) al seleccionar la visualización, arrastrar uno de los círculos de esquema. Asegúrese de que hay espacio suficiente para eliminar la barra de desplazamiento y lo suficientemente pequeño como para hacernos suficiente espacio para agregar otra visualización.
 
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_7b.png)
 
-6.  <bpt id="p1">[</bpt>Save the report<ept id="p1">](powerbi-service-save-a-report.md)</ept>.
+6.  
+            [Guardar el informe](powerbi-service-save-a-report.md).
 
-### Add a map visualization that looks at sales by location  
-1.  From the <bpt id="p1">**</bpt>Store<ept id="p1">**</ept> table, click <bpt id="p2">**</bpt>Territory<ept id="p2">**</ept>. Power BI recognizes that Territory is a location, and creates a map visualization.  
+### Agregar una visualización de mapa que examina las ventas por ubicación  
+1.  Desde el **almacén** haga clic **territorio**. Power BI reconoce que es una ubicación de territorio y crea una visualización de mapa.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/PBI_Part2_8new.png)
 
-2.  Drag <bpt id="p1">**</bpt>Total Stores<ept id="p1">**</ept> into the Size area.  
+2.  Arrastre **Total almacenes** en el área de tamaño.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/power-bi-add-visual-to-a-report.png)
 
-3.  Add a legend.  To see the data by store name, drag <bpt id="p1">**</bpt>Chain<ept id="p1">**</ept> into the Legend area.  
+3.  Agregar una leyenda.  Para ver los datos por nombre de tienda, arrastre **cadena** en el área de la leyenda.  
     ![](media/powerbi-service-add-visualizations-to-a-report-ii/power-bi-add-visual-to-a-report-3.png)
 
 ## Consulte también  
--   For more information about the Fields pane, see <bpt id="p1">[</bpt>The report editor... take a tour<ept id="p1">](powerbi-service-the-report-editor-take-a-tour.md)</ept>.   
--   To learn how to filter and highlight your visualizations, see <bpt id="p1">[</bpt>Filters and highlighting in Power BI reports<ept id="p1">](powerbi-service-about-filters-and-highlighting-in-reports.md)</ept>.  
--   To learn about using and changing aggregations, see <bpt id="p1">[</bpt>Aggregates in reports<ept id="p1">](powerbi-service-aggregates.md)</ept>.  
--   More about <bpt id="p1">[</bpt>Visualizations in Power BI reports<ept id="p1">](powerbi-service-visualizations-for-reports.md)</ept>.  
--   More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>.
+-   Para obtener más información acerca del panel de campos, consulte [el editor de informes... un paseo](powerbi-service-the-report-editor-take-a-tour.md).   
+-   Para obtener información sobre cómo filtrar y resaltar las visualizaciones, vea [filtros y resaltado en informes de Power BI](powerbi-service-about-filters-and-highlighting-in-reports.md).  
+-   Para obtener información sobre cómo utilizar y cambiar las agregaciones, consulte [agregados en los informes](powerbi-service-aggregates.md).  
+-   Más información sobre [visualizaciones en informes de Power BI](powerbi-service-visualizations-for-reports.md).  
+-   ¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/).

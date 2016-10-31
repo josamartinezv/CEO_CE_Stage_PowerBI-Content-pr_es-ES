@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Publish Power BI Desktop reports"
-   description="Easily get your Power BI Desktop reports into the service"
+   pageTitle="Publicar informes de Power BI Desktop"
+   description="Obtener fácilmente los informes de Power BI Desktop en el servicio"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,24 +23,24 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Publish Reports from Power BI Desktop to the Power BI Service
+# Publicar informes de Power BI Desktop para el servicio Power BI
 
-Publishing your reports to the Power BI service is fast and easy.
+Publicar los informes en el servicio Power BI es rápido y fácil.
 
-Once you've completed authoring your report in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, just select the <bpt id="p2">**</bpt>Publish<ept id="p2">**</ept> button on the <bpt id="p3">**</bpt>Home<ept id="p3">**</ept> tab in Power BI Desktop, and the process begins.
+Una vez haya completado la creación de informes en **Power BI Desktop**, simplemente seleccione el **publicar** situado en la **Inicio** ficha en Power BI Desktop y el proceso comienza.
 
 ![](media/powerbi-learning-4-1-publish-reports/4-1_1.png)
 
-Your report and data, including visualizations, queries, and custom measures, are packaged together and uploaded to the Power BI service.
+El informe y los datos, incluidas visualizaciones, las consultas y las medidas personalizadas, se recopilan y cargarlo al servicio Power BI.
 
 ![](media/powerbi-learning-4-1-publish-reports/4-1_2.png)
 
->NOTE: It's common to refer to Power BI Desktop reports as <bpt id="p1">**</bpt>.pbix<ept id="p1">**</ept> files, which is the extension they're given in Windows.
+>NOTA: Es común para hacer referencia a los informes de Power BI Desktop como **.pbix** archivos, que es la extensión le asigna en Windows.
 
-Once the upload is complete, a dialog box tells you the publishing process succeeded and a link is provided in that dialog to take you directly to your report in the Power BI service, in a web browser.
+Una vez finalizada la carga, un cuadro de diálogo indica el proceso de publicación se realizó correctamente y se proporciona un vínculo en ese cuadro de diálogo para ir directamente a un informe en el servicio Power BI, en un explorador web.
 
 ![](media/powerbi-learning-4-1-publish-reports/4-1_3.png)
 
-And that's it - it's easy to publish reports from Power BI Desktop to the Power BI service.
+Y eso es todo: es fácil publicar informes de Power BI Desktop al servicio Power BI.
 
 ![](media/powerbi-learning-4-1-publish-reports/4-1_4.png)

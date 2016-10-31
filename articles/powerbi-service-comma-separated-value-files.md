@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get data from Comma Separated Value (.CSV) files"
-   description="Learn how to get data from CSV files into Power BI"
+   pageTitle="Obtener datos de valores separados por comas (. Archivos CSV)"
+   description="Obtenga información sobre cómo obtener datos de archivos CSV en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -20,42 +20,50 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Get data from Comma Separated Value (.CSV) files
+# Obtener datos de valores separados por comas (. Archivos CSV)
 ![](media/powerbi-service-comma-separated-value-files/csv_icon.png)
 
-Comma separated value files, often known as a .CSV, are simple text files with rows of data where each value is separated by a comma. These types of files can contain very large amounts of data within a relatively small file size, making them an ideal data source for Power BI. You can download a sample .CSV file <bpt id="p1">[</bpt>here<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=619356)</ept>.
+Separada por comas de archivos de valores, que suele conocidos como un. CSV, archivos de texto simple con filas de datos donde cada valor se separa por comas. Estos tipos de archivos pueden contener grandes cantidades de datos dentro de un tamaño de archivo relativamente pequeño, lo que un origen de datos ideal para Power BI. Puede descargar un ejemplo. Archivo CSV [aquí](http://go.microsoft.com/fwlink/?LinkID=619356).
 
-If you have a .CSV, it’s time to get it into your Power BI site as a dataset where you can begin exploring your data, create some dashboards, and share your insights with others.
+Si tiene una. CSV, es el momento de obtener en el sitio de Power BI como un conjunto de datos donde puede empezar a explorar los datos, crear algunos paneles y compartir sus conocimientos con otros usuarios.
 
-<bpt id="p1">**</bpt>Tip:<ept id="p1">**</ept> Many organizations output a .CSV with updated data each day. To make sure your dataset in Power BI stays in-sync with your updated file, be sure the file is saved to OneDrive with the same name.
 
-## Where your file is saved makes a difference
-<bpt id="p1">**</bpt>Local<ept id="p1">**</ept> - If you save your .CSV file to a local drive on your computer or another location in your organization, from Power BI you can <bpt id="p2">*</bpt>import<ept id="p2">*</ept> your file into Power BI. Your file will actually remain on your local drive, so the whole file isn’t really imported into Power BI. What really happens is a new dataset is created in Power BI and data from the .CSV file is loaded into the dataset.
+            **Sugerencia:** salida muchas de las organizaciones una. CSV con datos actualizados cada día. Para asegurarse de que el conjunto de datos en Power BI permanecen sincronizados con el archivo actualizado, asegúrese de que el archivo se guarda en OneDrive con el mismo nombre.
 
-<bpt id="p1">**</bpt>OneDrive - Business<ept id="p1">**</ept> – If you have OneDrive for Business and you sign into it with the same account you sign into Power BI with, this is by-far the most effective way to keep your .CSV file and your dataset, reports, and dashboards in Power BI in-sync. Because both Power BI and OneDrive are in the cloud, Power BI <bpt id="p1">*</bpt>connects<ept id="p1">*</ept> to your file on OneDrive about every hour. If any changes are found, your dataset, reports, and dashboards are automatically updated in Power BI.
+## Donde se guarda el archivo marca la diferencia
 
-<bpt id="p1">**</bpt>OneDrive - Personal<ept id="p1">**</ept> – If you save your files to your own OneDrive account, you’ll get many of the same benefits as you would with OneDrive for Business. The biggest difference is when you first connect to your file (using Get Data &gt; Files &gt; OneDrive – Personal) you’ll need to sign in to your OneDrive with your Microsoft account, which is usually different from what you use to sign in to Power BI. When signing into your OneDrive with your Microsoft account, be sure to select the Keep me signed in option. This way, Power BI will be able to connect to your file about every hour and make sure your dataset in Power BI is in-sync.
+            **Local** - Si guarda su. Archivo CSV a una unidad local en el equipo o en otra ubicación de su organización, desde Power BI puede *importar* el archivo en Power BI. El archivo realmente permanecerá en la unidad local, por lo que todo el archivo no importa realmente en Power BI. Lo que sucede en realidad es un nuevo conjunto de datos se crea en Power BI y los datos de la. Archivo CSV se carga en el conjunto de datos.
 
-<bpt id="p1">**</bpt>SharePoint Team-Sites<ept id="p1">**</ept> – Saving your Power BI Desktop files to SharePoint – Team Sites is much the same as saving to OneDrive for Business. The biggest difference is how you connect to the file from Power BI. You can specify a URL or connect to the root folder.
 
-## Import or connect to a .CSV file
+            **OneDrive - Business** : si tiene OneDrive para la empresa e iniciar sesión en ella con la misma cuenta que inicie sesión en Power BI con, se trata por lejos la manera más eficaz mantener su. Archivo CSV y su conjunto de datos, informes y paneles en Power BI en la sincronización. Dado que son Power BI y OneDrive en la nube, Power BI *conecta* a su archivo en OneDrive sobre cada hora. Si se detectan cambios, se actualizan automáticamente el conjunto de datos, informes y paneles en Power BI.
 
-<bpt id="p1">**</bpt>Important:<ept id="p1">**</ept> The maximum file size you can import into Power BI is 1 gigabyte.
 
-1.  In Power BI, in the navigator pane, click <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>.
+            **OneDrive - Personal** – Si guarda los archivos en su propia cuenta de OneDrive, obtendrá muchas de las mismas ventajas como lo haría con OneDrive para la empresa. La principal diferencia es cuando se conecta primero a su archivo (mediante obtener datos > archivos > OneDrive – Personal) deberá iniciar sesión en su OneDrive con su cuenta de Microsoft, que normalmente es distinta de lo que use para iniciar sesión en Power BI. Al iniciar sesión en su OneDrive con su cuenta de Microsoft, asegúrese de seleccionar el mantener la sesión en la opción. De este modo, será capaz de conectarse a su archivo sobre cada hora y asegúrese de que el conjunto de datos en Power BI está en la sincronización de Power BI.
+
+
+            **Sitios de SharePoint Team** : guardar los archivos de Power BI Desktop en SharePoint, sitios de grupo es igual que el ahorro de OneDrive para la empresa. La diferencia más importante es cómo se conecta al archivo de Power BI. Puede especificar una dirección URL o conectarse a la carpeta raíz.
+
+## Importar o conectarse a una. Archivo CSV
+
+
+            **Importante:** el tamaño de archivo máximo que se puede importar en Power BI es de 1 gigabyte.
+
+1.  Power BI, en el panel de navegación, haga clic en **obtener datos**.
 
     ![](media/powerbi-service-comma-separated-value-files/csv_get_data_button.png)
 
-2.  In <bpt id="p1">**</bpt>Files<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Get<ept id="p2">**</ept>.
+2.  En **archivos**, haga clic en **obtener**.
 
     ![](media/powerbi-service-comma-separated-value-files/csv_files_get.png)
 
-3.  Find your file.
+3.  Busque el archivo.
 
     ![](media/powerbi-service-comma-separated-value-files/csv_find_your_file.png)
 
 ## ¿Qué viene a continuación?
 
-<bpt id="p1">**</bpt>Explore your data<ept id="p1">**</ept> - Once you get data from your file into Power BI, it's time to explore. Just right-click the new dataset and then click <bpt id="p1">**</bpt>Explore<ept id="p1">**</ept>.
 
-<bpt id="p1">**</bpt>Schedule refresh<ept id="p1">**</ept> - If your file is saved to a local drive, you can setup scheduled refresh so your dataset and reports in Power BI stay up-to-date. To learn more, see <bpt id="p1">[</bpt>Data refresh in Power BI<ept id="p1">](articles/powerbi-refresh-data.md)</ept>. If your file is saved to OneDrive, Power BI will automatically synchronize with it about every hour.
+            **Explorar los datos** -una vez que obtenga datos de su archivo en Power BI, es hora de explorar. Simplemente haga clic en el nuevo conjunto de datos y, a continuación, haga clic en **Explorar**.
+
+
+            **Programar la actualización** -Si el archivo se guarda en una unidad local, puede configurar actualización programada para el conjunto de datos e informes de Power BI mantenerse al día. Para obtener más información, consulte [de actualización de datos en Power BI](articles/powerbi-refresh-data.md). Si el archivo se guarda en OneDrive, Power BI sincronizará automáticamente con él sobre cada hora.

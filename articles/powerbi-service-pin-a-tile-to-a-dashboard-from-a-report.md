@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Pin a tile to a Power BI dashboard from a report"
-   description="Pin a tile to a Power BI dashboard from a report."
+   pageTitle="Anclar un mosaico a un panel de Power BI desde un informe"
+   description="Anclar un mosaico a un panel de Power BI desde un informe."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,59 +21,61 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Pin a tile to a Power BI dashboard from a report
-## Pinning tiles from a report
+# Anclar un mosaico a un panel de Power BI desde un informe
+## Anclar los iconos de un informe
 
-﻿One way to add a new <bpt id="p1">[</bpt>dashboard tile<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept> is from within a <bpt id="p2">[</bpt>Power BI report<ept id="p2">](powerbi-service-reports.md)</ept>. In fact, you can add many new tiles from a report.  Each of these tiles, when clicked, is a link back into the report.
+﻿Una manera de agregar un nuevo [icono Panel de](powerbi-service-dashboard-tiles.md) es desde un [informe de Power BI](powerbi-service-reports.md). De hecho, puede agregar muchas nuevas fichas de un informe.  Cada uno de estos iconos, al hacer clic, es un vínculo al informe.
 
-And entire report pages can be pinned to a dashboard.  This is also known as pinning a <bpt id="p1">*</bpt>live<ept id="p1">*</ept> tile.  <bpt id="p1">*</bpt>Live<ept id="p1">*</ept> because you can interact with the tile on the dashboard and because, unlike individual visualization tiles, changes made in the report are synced with the dashboard. Read more about this below.
+Y páginas de informe completo se pueden anclar a un panel.  Esto también se conoce como anclaje un *live* en mosaico.  
+            *Live* porque puede interactuar con el icono en el panel y porque, a diferencia de los iconos de visualización individual, se sincronizan los cambios realizados en el informe con el panel. Obtenga más información acerca de este tema.
 
-<bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>:  You can't pin tiles from shared reports or from Power BI Desktop.
 
-## Pin a tile from a report
+            **NOTA**: no se puede anclar mosaicos de informes compartidos o de Power BI Desktop.
 
-Watch Amanda create a dashboard by pinning visuals and images from a Power BI report.
+## Anclar un mosaico de un informe
+
+Vea Amanda anclar elementos visuales y las imágenes de un informe de Power BI para crear un escritorio.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lJKgWnvl6bQ" frameborder="0" allowfullscreen></iframe>
 
-Now create your own dashboard using one of the Power BI sample reports.
+Crear su propio panel mediante uno de los informes de ejemplo de Power BI.
 
-1.  Hover over the visualization you want to pin, and select the pin <ph id="ph1">![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png)</ph> icon. Power BI opens the <bpt id="p1">**</bpt>Pin to dashboard<ept id="p1">**</ept> screen.
+1.  Mantenga el mouse sobre la visualización que desea anclar y seleccionar el pin ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_PinTile_Small.png) icono. Power BI abre el **Anclar a panel** pantalla.
 
       ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/PBI_themes2.png)
 
-2. Decide whether to pin to an existing dashboard or new dashboard.
+2. Decida si desea anclar a un panel existente o nuevo panel.
 
-  -   Existing dashboard: select the name of the dashboard from the dropdown. Dashboards that have been shared with you will not appear in the dropdown.
+  -   Panel existente: seleccione el nombre del panel en la lista desplegable. Los paneles que se han compartido con usted no aparecerá en la lista desplegable.
 
-  -   New dashboard: type the name of the new dashboard.
+  -   Nuevo panel: escriba el nombre del nuevo panel.
 
-3. In some cases, the item you are pinning may have a <bpt id="p1">*</bpt>theme<ept id="p1">*</ept> already applied.  For example, visuals pinned from an Excel workbook. If so, select which theme to apply to the tile.
+3. En algunos casos, puede tener el elemento que desea fijar una *tema* ya aplicado.  Por ejemplo, efectos visuales anclados desde un libro de Excel. Si es así, seleccione el tema que aplique al mosaico.
 
-4.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+4.  Seleccione **Pin**.
 
-    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.
+    Un mensaje de confirmación (cerca de la esquina superior derecha) le permite conocer que la visualización se ha agregado, como un icono al escritorio.
 
     ![](media/powerbi-service-pin-a-tile-to-a-dashboard-from-a-report/pinSuccess.png)
 
-4.  From the navigation pane, select the dashboard with the new tile. Select the tile to jump back into the report. Or, <bpt id="p1">[</bpt>edit the tile display and behavior<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept>.
+4.  En el panel de navegación, seleccione el panel con el nuevo icono. Seleccione el icono para saltar al informe. O bien, [modificar la presentación de mosaico y el comportamiento](powerbi-service-edit-a-tile-in-a-dashboard.md).
 
-## Pin an entire report page
+## Anclar una página de informe completo
 
-Another option is to pin an entire report page to a dashboard. This is an easy way to pin more than one visualization at a time.  Also, when you pin an entire page, the tiles are <bpt id="p1">*</bpt>live<ept id="p1">*</ept>; you can interact with them right there on the dashboard. And changes you make to any of the visualizations back in the report editor, like adding a filter or changing the fields used in the chart, are reflected in the dashboard tile as well.  
+Otra opción es anclar una página de informe completo en un panel. Se trata de una manera fácil de anclar una visualización más de uno en uno.  Además, al anclar una página completa, los iconos son *live*; puede interactuar con ellos aquí en el panel. Y se reflejan los cambios realizados en cualquiera de las visualizaciones en el editor de informe, como agregar un filtro o cambiar los campos utilizados en el gráfico del icono del panel.  
 
-For more information, see <bpt id="p1">[</bpt>Pin an entire report page<ept id="p1">](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md)</ept>
+Para obtener más información, consulte [Anclar una página de informe completo](powerbi-service-pin-a-live-tile-to-a-dashboard-from-a-report.md)
 
 
 ## Consulte también
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-[Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
+[Iconos de panel en Power BI](powerbi-service-dashboard-tiles.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-[Data refresh in Power BI](powerbi-refresh-data.md)
+[Actualización de datos en Power BI](powerbi-refresh-data.md)
 
-[Power BI Basic Concepts](powerbi-service-basic-concepts.md)
+[Conceptos de Power BI Basic](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

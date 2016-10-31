@@ -1,47 +1,47 @@
-<properties pageTitle="Documentation Example - Images" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Images" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación: imágenes" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Images" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Images #
+# Por ejemplo, imágenes #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the different supported image syntaxes.  
+El contenido entre las líneas siguientes muestra la sintaxis de otra imagen compatible.  
 
-
----
-## Image Inline Syntax ##
-
-Using this syntax, an exclamation mark must be placed at the beginning. Then, between square brackets, an identifier for the image. After that, between parenthesis, the relative path to the image within the folder structure.
-
-**Image syntax:**  `![windows-azure-logo](./media/example-images/windows-azure.png) `
-
-**Resulting image:** 
-
-![windows-azure-logo](./media/example-images/windows-azure.png)
 
 ---
+## Sintaxis de imagen en línea ##
 
-## Referenced Images Syntax ##
+Con esta sintaxis, se debe colocar una marca de exclamación al principio. A continuación, entre corchetes, un identificador de la imagen. Después de eso, entre paréntesis, la ruta de acceso relativa a la imagen dentro de la estructura de carpetas.
 
-This syntax is similar to the previous one, but works with references for the image path within the article. It uses an exclamation mark at the beginning, and a pair of square brackets that contain the reference id for the image in the article. The image reference must then contain the relative path for to the image within the folder structure.
+**Sintaxis de imagen:**  `![windows-azure-logo](./media/example-images/windows-azure.png) `
 
-**Image syntax:** 
+**Imagen resultante:** 
+
+![logotipo de Windows azure](./media/example-images/windows-azure.png)
+
+---
+
+## Sintaxis de imágenes que se hace referencia ##
+
+Esta sintaxis es similar al anterior, pero funciona con las referencias de la ruta de acceso de la imagen en el artículo. Utiliza una marca de exclamación al principio y un par de corchetes que contienen el identificador de referencia de la imagen en el artículo. La referencia de la imagen, a continuación, debe contener la ruta de acceso relativa de la imagen dentro de la estructura de carpetas.
+
+**Sintaxis de imagen:** 
 `![][windows-azure-logo]`
 
-**Image reference:** `[windows-azure-logo]: ./media/example-images/windows-azure.png `
+**Referencia de imagen:** `[windows-azure-logo]: ./media/example-images/windows-azure.png `
 
-**Resulting image:** 
+**Imagen resultante:** 
 
 ![][windows-azure-logo]
 
-[windows-azure-logo]: ./media/example-images/windows-azure.png
+[logotipo de Windows azure]: ./media/example-images/windows-azure.png
 
 
-Another way to reference images:
+Otra forma de imágenes de referencia:
 
 `![windows-azure-logo][] `
 
-![windows-azure-logo][]
+![logotipo de Windows azure][]
 
 `![windows-azure-logo][windows-azure-logo] `
 
-![windows-azure-logo][windows-azure-logo]
+![logotipo de Windows azure][windows-azure-logo]

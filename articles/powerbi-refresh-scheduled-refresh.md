@@ -1,6 +1,6 @@
 <properties
-pageTitle="Configure scheduled refresh"
-description="This covers the steps to select a gateway and configure scheduled refresh."
+pageTitle="Configurar la actualización programada"
+description="Esto cubre los pasos para seleccionar una puerta de enlace y configurar actualización programada."
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -18,96 +18,96 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="08/15/2016"
 ms.author="asaxton"/>
-# Configuring scheduled refresh
+# Configurar la actualización programada
 
-If your dataset supports scheduled refresh, by using Refresh Now and Schedule Refresh, there are a few requirements and settings important for refresh to be successful. These are <bpt id="p1">**</bpt>Gateway connection<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Data Source Credentials<ept id="p2">**</ept>, and <bpt id="p3">**</bpt>Schedule Refresh<ept id="p3">**</ept>. Let’s take a closer look at each.
+Si el conjunto de datos admite la actualización programada, mediante actualizar ahora y programar la actualización, hay unos requisitos y opciones importantes para la actualización se realice correctamente. Estos son **conexión de puerta de enlace**, **las credenciales de origen de datos**, y **Programar actualización**. Echemos un vistazo más de cerca a cada uno.
 
-This will describe the options available for both the <bpt id="p1">[</bpt>Power BI Gateway – Personal<ept id="p1">](powerbi-personal-gateway.md)</ept> and the <bpt id="p2">[</bpt>On-premises Data Gateway<ept id="p2">](powerbi-gateway-onprem.md)</ept>.
+Esto describe las opciones disponibles para ambos el [Power BI Gateway – Personal](powerbi-personal-gateway.md) y [puerta de enlace de datos local](powerbi-gateway-onprem.md).
 
-To get to the schedule refresh screen, you can do the following.
+Para llegar a la pantalla de actualización de la programación, puede hacer lo siguiente.
 
-1. Select the <bpt id="p1">**</bpt>ellipse (...)<ept id="p1">**</ept> next to a dataset listed under <bpt id="p2">**</bpt>Datasets<ept id="p2">**</ept>.
+1. Seleccione el **puntos suspensivos (...)** junto a un conjunto de datos aparece en **conjuntos de datos**.
 
-2. Select <bpt id="p1">**</bpt>Schedule Refresh<ept id="p1">**</ept>.
+2. Seleccione **programar la actualización**.
 
     ![](media/powerbi-refresh-scheduled-refresh/dataset-menu.png)
 
-## Gateway connection
-You will see different options here depending on whether you have a personal, or enterprise, gateway online and available.
+## Conexión de puerta de enlace
+Verá diferentes opciones dependiendo de si tiene una puerta de enlace personal o corporativo, en línea y disponible.
 
-If no gateway is available, you will see <bpt id="p1">**</bpt>Gateway settings<ept id="p1">**</ept> disabled. You will also see a message indicating how to install the personal gateway.
+Si ninguna puerta de enlace está disponible, verá **configuración de puerta de enlace** deshabilitado. También verá un mensaje que indica cómo instalar la puerta de enlace personal.
 
 ![](media/powerbi-refresh-scheduled-refresh/gateway-not-configured.png)
 
-If you have a personal gateway configured, it will be available to select, if it is online. It will show offline if it is not available.
+Si tiene configurada una puerta de enlace personal, estará disponible para seleccionar, si está en línea. Se mostrará sin conexión si no está disponible.
 
 ![](media/powerbi-refresh-scheduled-refresh/gateway-connection.png)
 
-You can also select the enterprise gateway if one is available for you. You will only see an enterprise gateway available if your account is listed in the Users tab of the data source configured for a given gateway.
+También puede seleccionar la puerta de enlace de la empresa si está disponible para usted. Sólo verá una puerta de enlace de empresa disponible si su cuenta aparece en la ficha usuarios del origen de datos configurado una puerta de enlace especificado.
 
 ## Credenciales de origen de datos
 
-### Power BI Gateway - Personal
+### Puerta de enlace de Power BI - Personal
 
-If you are using the personal gateway to refresh data, you will need to supply the credentials used to connect to the back end data source. If you connected to a content pack, from an online service, the credentials you entered to connect will be carried over for scheduled refresh.
+Si utiliza la puerta de enlace personal para actualizar los datos, debe proporcionar las credenciales usadas para conectarse al origen de datos back-end. Si se conecta a un paquete de contenido de un servicio en línea, se traslada las credenciales especificadas para conectarse a actualización programada.
 
 ![](media/powerbi-refresh-scheduled-refresh/data-source-credentials-pgw.png)
 
-You’re only required to sign in to data sources the first time you use refresh on that dataset. Once entered, those credentials are retained with the dataset. 
+Sólo son necesarios para iniciar sesión en orígenes de datos la primera vez que utilice la actualización en ese conjunto de datos. Una vez escrita, esas credenciales se conservan con el conjunto de datos. 
 
-> [AZURE.NOTE] For some authentication methods, if the password you use to sign into a data source expires or is changed, you'll need to change it for the data source in Data Source Credentials too.
+> [AZURE.NOTE] Algunos métodos de autenticación, si la contraseña que utiliza para iniciar sesión en un origen de datos caduca o se cambia, debe cambiar también el origen de datos de credenciales de origen de datos.
 
-When things go wrong, the problem usually has something to do with either the gateway being offline because it could not sign in to Windows and start the service, or Power BI could not sign in to the data sources in order to query for updated data. If refresh fails, check the dataset’s settings. If the gateway service is offline, Gateway Status is where you’ll see the error. If Power BI cannot sign into the data sources, you’ll see an error in Data Source Credentials.
+Cuando existe algún problema, el problema suele tener algo relacionado con cualquiera de la puerta de enlace está sin conexión porque no pudo iniciar sesión en Windows e iniciar el servicio o Power BI podría no iniciar sesión en los orígenes de datos con el fin de consultar los datos actualizados. Si se produce un error en la actualización, compruebe la configuración del conjunto de datos. Si el servicio de puerta de enlace está sin conexión, el estado de puerta de enlace es donde verá el error. Si Power BI no puede iniciar sesión en los orígenes de datos, verá un error en las credenciales de origen de datos.
 
-### Power BI Gateway - Enterprise
+### Puerta de enlace de Power BI - Enterprise
 
-If you are using the enterprise gateway to refresh data, you do not need to supply credentials as they are defined for the data source by the gateway administrator.
+Si utiliza la puerta de enlace de la empresa para actualizar los datos, no es necesario proporcionar credenciales que se definen para el origen de datos mediante el Administrador de puerta de enlace.
 
 ![](media/powerbi-refresh-scheduled-refresh/data-source-credentials-egw.png)
 
-## Schedule refresh
+## Programación de actualización
 
-The scheduled refresh section is where you define the frequency and time slots to refresh the dataset. Some data sources do not require a gateway present in order to be available to configure. Others will require a gateway.
+La sección actualización programada es donde se definen las ranuras de la frecuencia y la hora para actualizar el conjunto de datos. Algunos orígenes de datos no requieren una puerta de enlace está presente para estar disponibles para configurar. Otras requerirán una puerta de enlace.
  
-You will need to change <bpt id="p1">**</bpt>Keep your data up to date<ept id="p1">**</ept> to Yes in order to configure the settings.
+Necesitará cambiar **mantener actualizados los datos** en Yes para configurar las opciones.
 
 ![](media/powerbi-refresh-scheduled-refresh/scheduled-refresh.png)
 
-## What’s supported?  
-Certain datasets are supported against different gateways for scheduled refresh. Here is a reference to understand what is available.
+## ¿Qué es compatible?  
+Algunos conjuntos de datos son compatibles con puertas de enlace diferentes para la actualización programada. Aquí es una referencia a entender lo que está disponible.
 
-### Power BI Gateway - Personal
+### Puerta de enlace de Power BI - Personal
 
 **Power BI Desktop**
 
--   All online data sources shown in Power BI Desktop’s Get Data and Query Editor.
--   All on-premises data sources shown in Power BI Desktop’s Get Data and Query Editor except for Hadoop file (HDFS) and Microsoft Exchange.
+-   Todos los orígenes de datos en línea que se muestra en el Editor de consultas y obtener datos en Power BI Desktop.
+-   Todos los orígenes de datos local que se muestra en el Editor de consultas y obtener datos en Power BI Desktop excepto archivo Hadoop (HDFS) y Microsoft Exchange.
 
 **Excel**
 
-> [AZURE.NOTE] In Excel 2016, and later, Power Query is now listed on the Data section of the ribbon, under Get &amp; Transform data.
+> [AZURE.NOTE] En Excel 2016 y versiones posteriores, Power Query aparece ahora en la sección de la cinta de opciones, en los datos de Get y transformación de datos.
 
--   All online data sources shown in Power Query.
--   All on-premises data sources shown in Power Query except for Hadoop file (HDFS) and Microsoft Exchange.
--   All online data sources shown in Power Pivot.\*
--   All on-premises data sources shown in Power Pivot except for Hadoop file (HDFS) and Microsoft Exchange.
+-   Todos los orígenes de datos en línea que se muestra en Power Query.
+-   Todos los orígenes de datos local que se muestra en Power Query, excepto el archivo Hadoop (HDFS) y Microsoft Exchange.
+-   Todos los orígenes de datos en línea que se muestra en Power Pivot.\*
+-   Todos los orígenes de datos locales que se muestran en Power Pivot excepto archivo Hadoop (HDFS) y Microsoft Exchange.
 
 <!-- Refresh Data sources-->
 [AZURE.INCLUDE [refresh-datasources](../includes/refresh-datasources.md)]
 
 ## Solucionar problemas
 
-Sometimes refreshing data may not go as expected. Typically this will be an issue connected with a gateway. Take a look at the gateway troubleshooting articles for tools and known issues.
+No puede ir a veces, actualizar los datos según lo esperado. Normalmente se trata de un problema conectado con una puerta de enlace. Eche un vistazo a los artículos de solución de problemas de puerta de enlace para herramientas y problemas conocidos.
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)
 
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
+[Solución de problemas de la puerta de enlace de Power BI - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)
 
 ## Consulte también
 
-[Data refresh in Power BI](powerbi-refresh-data.md)  
-[Power BI Gateway - Personal](powerbi-personal-gateway.md)  
-[On-premises Data Gateway](powerbi-gateway-onprem.md)  
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
-[Troubleshooting the Power BI Gateway - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Actualización de datos en Power BI](powerbi-refresh-data.md)  
+[Puerta de enlace de Power BI - Personal](powerbi-personal-gateway.md)  
+[Puerta de enlace de datos local](powerbi-gateway-onprem.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
+[Solución de problemas de la puerta de enlace de Power BI - Personal](powerbi-admin-troubleshooting-power-bi-personal-gateway.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

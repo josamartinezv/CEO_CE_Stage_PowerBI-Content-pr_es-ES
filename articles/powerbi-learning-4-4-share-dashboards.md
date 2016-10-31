@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Share Dashboards with your organization"
-   description="Let others see your amazing dashboards with ease"
+   pageTitle="Paneles de información de recurso compartido con su organización"
+   description="Permitir que otros usuarios a ver sus paneles increíbles con facilidad"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,22 +23,22 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Share Dashboards with your organization
+# Paneles de información de recurso compartido con su organización
 
-We've already seen how Power BI helps you find data, collect it in a data model, and build reports and visualizations on using that data. We've also seen how you can publish those reports to the Power BI service, and create dashboards that help you monitor your information over time. All these features are even more powerful when you share your insights with others in your organization. Fortunately, sharing your dashboards is easy.
+Ya hemos visto cómo Power BI le ayuda a encontrar datos, recopilar en un modelo de datos y generar informes y visualizaciones sobre el uso de esos datos. También hemos visto cómo puede publicar estos informes en el servicio Power BI y crear paneles de información que le ayudarán a supervisión su información con el tiempo. Todas estas características son incluso más eficaces al compartir la información con otras personas de su organización. Afortunadamente, es fácil compartir sus paneles.
 
-To share a dashboard, open it in the Power BI service and select the <bpt id="p1">**</bpt>Share<ept id="p1">**</ept> link in the top right-hand corner.
+Para compartir un panel, ábralo en el servicio Power BI y seleccione el **Compartir** vínculo en la esquina superior derecha.
 
 ![](media/powerbi-learning-4-4-share-dashboards/4-4_1.png)
 
-The <bpt id="p1">**</bpt>Share Dashboard<ept id="p1">**</ept> page appears, where you can select the <bpt id="p2">**</bpt>Invite<ept id="p2">**</ept> section, then fill in the <bpt id="p3">**</bpt>Email address<ept id="p3">**</ept> input box with people you'd like to grant access to your dashboard. Power BI checks the email addresses as you type them with accounts in your domain and Office 365 domain, and auto-complete when possible. You can also copy and paste email addresses into this box, or use a distribution list, security group, or Office 365 group to reach multiple people at once.
+El **Compartir panel** aparece la página, donde puede seleccionar la **Invitar** sección, a continuación, rellene el **dirección de correo electrónico** cuadro de entrada con personas que le gustaría conceder acceso al escritorio. Power BI comprueba las direcciones de correo electrónico a medida que escribe con cuentas en el dominio y el dominio de Office 365 y Autocompletar cuando sea posible. También puede copiar y pegar las direcciones de correo electrónico en este cuadro o utilizar una lista de distribución, el grupo de seguridad o el grupo de Office 365 para llegar a varias personas a la vez.
 
 ![](media/powerbi-learning-4-4-share-dashboards/4-4_2.png)
 
-If you selected the checkbox (near the bottom) to <bpt id="p1">*</bpt>send email notification to recipients<ept id="p1">*</ept>, then your recipients will receive an email letting them know that you shared a dashboard with them, including a link with the dashboard. You can add a note to the email they will receive, or send the note that Power BI created for you (it's in the box directly below where you enter their email addresses).
+Si ha seleccionado la casilla de verificación (casi al final) *Enviar notificación por correo electrónico a los destinatarios*, a continuación, los destinatarios recibirán un correo electrónico informarles que comparten un panel con ellos, incluidos un vínculo con el panel. Puede agregar una nota al correo electrónico que recibirán o enviar la nota que Power BI crea automáticamente (se encuentra en el cuadro directamente debajo de donde escribir sus direcciones de correo electrónico).
 
-> Note: Recipients without an existing Power BI account will be taken through the sign-up process before viewing your dashboard.
+> Nota: Los destinatarios sin una cuenta de Power BI existente pasarán por el proceso de suscripción antes de ver el panel.
 
-Anyone with whom you share a dashboard can see and interact with it exactly as you do. However, they have <bpt id="p1">*</bpt>read-only<ept id="p1">*</ept> access to the underlying reports, and they have <bpt id="p2">*</bpt>no access<ept id="p2">*</ept> to the underlying datasets.
+Cualquier persona con la que comparte un panel puede ver e interactuar con él exactamente como lo hace. Sin embargo, tienen *de sólo lectura* informes de acceso a la base y tienen *sin acceso* a los conjuntos de datos subyacente.
 
-You can also select the <bpt id="p1">**</bpt>Shared With<ept id="p1">**</ept> tab on the Share Dashboard page to see the people with whom you have previously shared this dashboard.
+También puede seleccionar el **compartido con** ficha en la página panel de recurso compartido para ver las personas con las que previamente ha compartido este panel.

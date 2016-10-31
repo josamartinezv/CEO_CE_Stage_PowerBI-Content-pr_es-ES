@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Manually republishing and refreshing your data"
-   description="Manually update your dataset and report"
+   pageTitle="Volver a publicar manualmente y actualizar los datos"
+   description="Actualizar manualmente el conjunto de datos y el informe"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,20 +23,20 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Manually Republish and Refresh Your Data
+# Volver a publicar y actualizar los datos manualmente
 
-You can update reports and datasets that you've already published from Power BI Desktop to the Power BI service. To do so, select <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> tab in the ribbon.
+Puede actualizar los informes y conjuntos de datos que ya se han publicado desde Power BI Desktop al servicio Power BI. Para ello, seleccione **publicar** desde el **Inicio** ficha en la cinta de opciones.
 
 ![](media/powerbi-learning-4-5-manually-republish-reports/4-5_0.png)
 
-When you publish a report that already exists in the Power BI service, you're prompted to confirm that you want to replace the previous dataset and reports with the edited version you just chose to update.
+Cuando se publica un informe que ya existe en el servicio Power BI, se le pedirá que confirme que desea reemplazar el conjunto de datos anterior y los informes con la versión editada que decide actualizar.
 
 ![](media/powerbi-learning-4-5-manually-republish-reports/4-5_1.png)
 
-When you select <bpt id="p1">**</bpt>Replace<ept id="p1">**</ept>, the datasets and reports in the Power BI service are overwritten with the datasets and reports in the most recent Power BI Desktop version of the file.
+Al seleccionar **reemplazar**, los conjuntos de datos y los informes en el servicio Power BI se sobrescriben con los conjuntos de datos e informes de la versión más reciente de Power BI Desktop del archivo.
 
-And just like any other <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept> event from Power BI Desktop, you see a dialog that tells you the publish event was successful, and you get a link to the report in the Power BI service.
+Y como cualquier otro **publicar** eventos de Power BI Desktop, verá un cuadro de diálogo que indica si el evento de publicación tuvo éxito y obtener un vínculo al informe en el servicio Power BI.
 
 ![](media/powerbi-learning-4-5-manually-republish-reports/4-5_2.png)
 
-This is a way to manually refresh your data. You can also automatically update datasets and reports; that process is covered in another learning topic.
+Se trata de una manera de actualizar los datos manualmente. Puede actualizar automáticamente los conjuntos de datos e informes; Este proceso se trata en otro tema de aprendizaje.

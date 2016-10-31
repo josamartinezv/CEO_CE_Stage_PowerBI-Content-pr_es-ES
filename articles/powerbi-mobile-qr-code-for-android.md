@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Scan a Power BI QR code from your Android phone"
-   description="QR codes in Power BI can connect anything in the real world directly to related BI information in the Power BI mobile app, no search needed."
+   pageTitle="Analizar un código QR de Power BI desde tu teléfono Android"
+   description="Códigos QR en Power BI pueden conectarse a cualquier cosa en el mundo real directamente a la información relacionada de BI en la aplicación móvil de Power BI, ninguna búsqueda necesitada."
    services="powerbi"
    documentationCenter=""
    authors="maggiesMSFT"
@@ -20,40 +20,40 @@
    ms.date="10/03/2016"
    ms.author="maggies"/>
 
-# Scan a Power BI QR code from your Android phone
+# Analizar un código QR de Power BI desde tu teléfono Android
 
-QR codes in Power BI can connect any item in the real world directly to related BI information &amp;#151; no navigation or search needed.
+Códigos QR en Power BI pueden conectarse a cualquier elemento en el mundo real directamente a la información relacionada de BI & #151; ninguna exploración o la búsqueda necesitado.
 
-Say a colleague has <bpt id="p1">[</bpt>created a QR code in the Power BI service<ept id="p1">](powerbi-service-qr-code-for-tile.md)</ept> for a report or for a tile in a dashboard, shared the dashboard or report with you, and placed the QR code in a key location &amp;#151; for example, in an email or on a specific item. 
+Digamos que tiene un colega [crea un código QR en el servicio Power BI](powerbi-service-qr-code-for-tile.md) para un informe o un icono en un panel, comparte el panel o informe con usted y coloca el código QR en una ubicación de la clave & #151; por ejemplo, en un correo electrónico o en un elemento específico. 
 
-You can scan the QR code for immediate access to the relevant tile, right from your Android phone, using either the scanner in the Power BI app, or any other scanner installed on your Android phone.
+Puede analizar el código QR para un acceso inmediato en el icono correspondiente, directamente desde su teléfono Android, con el escáner en la aplicación Power BI o cualquier otro escáner instalado en su teléfono Android.
 
-## Scan a Power BI QR code with the Power BI scanner
+## Examinar un código QR de Power BI con el analizador de Power BI
 
-1. In the Power BI mobile app open the global navigation button <ph id="ph1">![](media/powerbi-mobile-qr-code-for-android/power-bi-android-global-nav-icon.png)</ph> in the upper left. 
+1. En la aplicación móvil de Power BI, abrir el botón de navegación global ![](media/powerbi-mobile-qr-code-for-android/power-bi-android-global-nav-icon.png) en la parte superior izquierda. 
 
-2. Scroll down to <bpt id="p1">**</bpt>QR Scanner<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-mobile-qr-code-for-android/power-bi-android-scanner-icon.png)</ph> and select it. 
+2. Desplácese hacia abajo hasta **QR escáner** ![](media/powerbi-mobile-qr-code-for-android/power-bi-android-scanner-icon.png) y selecciónelo. 
 
-3. If your camera isn't enabled, you need to approve the Power BI app to use the camera. This is a one-time approval. 
+3. Si la cámara no está habilitada, debe aprobar la aplicación Power BI para usar la cámara. Se trata de una aprobación única. 
 
-4. Point the scanner at the Power BI QR code. 
+4. Seleccione el escáner en el código QR de Power BI. 
 
     ![](media/powerbi-mobile-qr-code-for-android/PBI_iPh_QRScan.png)
 
-5. The tile opens automatically in Power BI.
+5. El icono se abre automáticamente en Power BI.
 
     ![](media/powerbi-mobile-qr-code-for-android/power-bi-android-tile.png)
 
 
-## Scan a QR code from an external scanner on your Android phone
+## Examinar un código QR desde un escáner externo en su teléfono Android
 
-1. From any scanner installed on your Android phone, point the scanner to the relevant Power BI QR code for immediate access to the tile. 
+1. Desde cualquier escáner instalado en su teléfono Android, seleccione el escáner al código QR de Power BI pertinente para un acceso inmediato en el mosaico. 
 
-2. If you don’t have the Power BI app installed, you are redirected to <bpt id="p1">[</bpt>Google Play to download it<ept id="p1">](http://go.microsoft.com/fwlink/?LinkID=544867)</ept>. 
+2. Si no tiene instalada la aplicación de Power BI, se le redirigirá a [Google Play descargarlo](http://go.microsoft.com/fwlink/?LinkID=544867). 
 
 ### Consulte también
 
-- [Create a QR code for a tile in Power BI](powerbi-service-qr-code-for-tile.md)
-- [Dashboard tiles in Power BI](powerbi-service-dashboard-tiles.md)
-- [Get started with the Power BI for Android app](powerbi-mobile-android-app-get-started.md)
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Crear un código QR para un mosaico en Power BI](powerbi-service-qr-code-for-tile.md)
+- [Iconos de panel en Power BI](powerbi-service-dashboard-tiles.md)
+- [Introducción a la aplicación Power BI para Android](powerbi-mobile-android-app-get-started.md)
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

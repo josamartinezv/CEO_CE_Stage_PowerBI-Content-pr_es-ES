@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Introduction to Cortana for Power BI"
-   description="Use Cortana with Power BI to get answers from your data. Activate Cortana for each Power BI dataset and then enable Cortana to access your datasets from mobile devices."
+   pageTitle="Introducción a Cortana de Power BI"
+   description="Usar Cortana con Power BI para obtener respuestas de los datos. Activar Cortana para cada conjunto de datos de Power BI y, a continuación, habilite Cortana tener acceso a los conjuntos de datos desde dispositivos móviles."
    services="powerbi"
    documentationCenter=""
    authors="mihart"  
@@ -21,63 +21,67 @@
    ms.author="mihart"/>
 
 
-# <a name="introduction-to-cortana-for-power-bi"></a>Introduction to Cortana for Power BI
+# <a name="introduction-to-cortana-for-power-bi"></a>Introducción a Cortana de Power BI
 
-Ask natural language questions in Cortana and find answers from data stored in Power BI.
+Formule preguntas en lenguaje natural en Cortana y encuentre respuestas de datos almacenados en Power BI.
 
->[AZURE.NOTE]  Cortana for Power BI is currently only available in English. Cortana is not currently available on mobile devices.
+>[AZURE.NOTE]  Cortana para Power BI solo está disponible en inglés. Cortana no está actualmente disponible en dispositivos móviles.
 
-## <a name="how-do-cortana-and-power-bi-work-together?"></a>How do Cortana and Power BI work together?
+## <a name="how-do-cortana-and-power-bi-work-together?"></a>¿Cómo funcionan conjuntamente Cortana y Power BI?
 
-With the November 2015 update of Windows 10, Cortana can now find answers from data stored in Power BI through the integration between Cortana and Power BI.
+Con la actualización de noviembre de 2015 de Windows 10, Cortana ahora puede encontrar respuestas de datos almacenados en Power BI a través de la integración entre Cortana y Power BI.
 
-Similar to Power BI Q&amp;A, ask or type your questions using natural language. Cortana will search your Cortana-enabled datasets in Power BI for answers and display results directly in your Windows 10 device.   
+Similar a Power BI Q & A formular o escriba sus preguntas con lenguaje natural. Cortana buscará los conjuntos de datos habilitada para Cortana de Power BI respuestas y mostrar los resultados directamente en el dispositivo de Windows 10.   
 
-Cortana can find answers either directly from datasets in Power BI or from report pages published to Power BI and designed specifically for Cortana (called <bpt id="p1">*</bpt>Answer Pages<ept id="p1">*</ept>).  Interact with the visualizations as you would in Power BI or, to further explore an answer, simply open a result in Power BI.
+Cortana puede encontrar respuestas directamente desde los conjuntos de datos en Power BI o de páginas del informe publicado en Power BI y diseñado específicamente para Cortana (llamado *páginas de respuesta*).  Interactuar con las visualizaciones como lo haría en Power BI o, para explorar más de una respuesta, simplemente abra un resultado en Power BI.
 
->[AZURE.NOTE]  Cortana now works with on-premises data that has been <bpt id="p1">[</bpt>enabled for Q&amp;A<ept id="p1">](powerbi-service-q-and-a-direct-query.md)</ept>.
+>[AZURE.NOTE]  Cortana ahora funciona con datos locales que se ha [habilitado para preguntas y respuestas](powerbi-service-q-and-a-direct-query.md).
 
-Cortana ranks the answers from Power BI, giving you one or more best matches if there is high confidence a result is a good answer. Other potential answers from Power BI are listed in a Power BI section below any best matches. If you're a dataset owner, you can help Cortana return better answers by <bpt id="p1">[</bpt>creating specialized reports (called <bpt id="p2">*</bpt>Answer Pages<ept id="p2">*</ept>) for Cortana<ept id="p1">](powerbi-service-cortana-desktop-entity-cards.md)</ept> in Power BI to answer the most-common questions and by optimizing your model for Power BI Q&amp;A.
+Cortana clasifica las respuestas de Power BI, ofrecerle a las mejores coincidencias de uno o más si se produce un resultado es una buena respuesta de alta confianza. Otros posibles respuestas de Power BI se muestran en una sección de Power BI debajo de las mejores coincidencias. Si es propietario de un conjunto de datos, puede ayudar a Cortana devuelven las mejores respuestas de [crear informes especializados (llamado *páginas de respuesta*) de Cortana](powerbi-service-cortana-desktop-entity-cards.md) en Power BI para responder a las preguntas más comunes y optimizar el modelo para Power BI Q & A.
 
 ## <a name="how-do-i-get-started?"></a>¿Cómo puedo empezar?
 
-- Cortana looks for answers in Power BI datasets that you have access to. If you are a dataset owner, <bpt id="p1">[</bpt>enable Cortana to access the dataset (and its reports)<ept id="p1">](powerbi-service-cortana-enable.md)</ept>.  
+- Cortana busca respuestas en conjuntos de datos de Power BI que tienen acceso a. Si es propietario de un conjunto de datos, [Habilitar Cortana tener acceso el conjunto de datos (y sus informes)](powerbi-service-cortana-enable.md).  
 
-- If you are a dataset owner, <bpt id="p1">[</bpt>create Answer Pages designed specifically for Cortana<ept id="p1">](powerbi-service-cortana-desktop-entity-cards.md)</ept>.
+- Si es propietario de un conjunto de datos, [crear páginas de respuesta diseñado específicamente para Cortana](powerbi-service-cortana-desktop-entity-cards.md).
 
-## <a name="tips-for-using-power-bi-with-cortana"></a>Tips for using Power BI with Cortana
+## <a name="tips-for-using-power-bi-with-cortana"></a>Sugerencias para usar Power BI con Cortana
 
 ### <a name="before-you-begin"></a>Antes de comenzar
 
-In Power BI, you can work with datasets that you own or that have been shared with you. To access those same datasets in Cortana, a dataset owner must <bpt id="p1">[</bpt>enable each  dataset for Cortana<ept id="p1">](powerbi-service-cortana-enable.md)</ept>.  
+En Power BI, puede trabajar con conjuntos de datos que posee o que se han compartido con usted. Para obtener acceso a los mismos conjuntos de datos en Cortana, el propietario de un conjunto de datos debe [habilitar cada conjunto de datos para Cortana](powerbi-service-cortana-enable.md).  
 
-### <a name="asking-questions"></a>Asking questions
+### <a name="asking-questions"></a>Formular preguntas
 
-Any Power BI user can use Cortana to ask questions about their Power BI datasets.  Dataset owners can <bpt id="p1">[</bpt>improve answers by creating Answer Pages in Power BI<ept id="p1">](powerbi-service-cortana-desktop-entity-cards.md)</ept>.  
+Cualquier usuario de Power BI puede usar Cortana para formular preguntas acerca de los conjuntos de datos de Power BI.  Los propietarios del conjunto de datos pueden [mejorar respuestas mediante la creación de páginas de respuesta en Power BI](powerbi-service-cortana-desktop-entity-cards.md).  
 
-1. Using Cortana, ask or type a question.  For example, ask "how many new stores opened in March?"
+1. Con Cortana, pida o escriba una pregunta.  Por ejemplo, pedir "nuevos almacenes de cuántos abierto de marzo?"
 
-2. Cortana looks for answers in the Power BI reports and datasets available to you, and displays them under the heading <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> and marked with the Power BI icon.
+2. Cortana busca respuestas en los informes de Power BI y conjuntos de datos disponibles para usted y los muestra en el encabezado **Power BI** y marcados con el icono de Power BI.
 
-3. Power BI first looks for answers in <bpt id="p1">[</bpt>Answer Pages<ept id="p1">](powerbi-service-cortana-desktop-entity-cards.md)</ept> and then searches your datasets and reports for other answers and displays them in the form of visualizations.  The highest-scoring results display first as <bpt id="p1">*</bpt>best matches<ept id="p1">*</ept>, followed by links to other possible answers and applications. Best matches come from Power BI Answer Pages or Power BI reports.
-  >[AZURE.NOTE] If you speak your question, Cortana will only display <bpt id="p1">**</bpt>Power BI<ept id="p1">**</ept> answers if it finds a best match.  
+3. Power BI primero busca respuestas en [páginas de respuesta](powerbi-service-cortana-desktop-entity-cards.md) y, a continuación, busca en los conjuntos de datos e informes de otras respuestas y los muestra en el formulario de visualizaciones.  Los resultados de puntuación más alta muestran primero como *mejor coincide con*, seguido de vínculos a otras aplicaciones y las respuestas posibles. Informes de Power BI o mejores coincidencias proceden de páginas de respuesta de Power BI.
+  >[AZURE.NOTE] Si habla su pregunta, Cortana solo mostrará **Power BI** responde si se encuentra una coincidencia mejor.  
 
-4. To open an answer in Power BI, select the link.
+4. Para abrir una respuesta en Power BI, seleccione el vínculo.
 
 
-### <a name="other-tips"></a>Other Tips
+### <a name="other-tips"></a>Otras sugerencias
 
--  If the report has a filter, Cortana will understand questions that specify items in the filter's list, and apply the filter on-the-fly.
+-  Si el informe tiene un filtro, Cortana comprenderá preguntas que especifican los elementos de la lista de filtros y aplican el filtro de forma instantánea.
 
-- Cortana will only search for answers in Power BI if the question has 2 or more words.
+- Cortana solo busca respuestas en Power BI si la pregunta tiene 2 o más palabras.
 
-- If you add the word "my" to your question, Cortana searches available datasets for answers that contain information found in your Windows 10 profile (the information you see when you click on your picture).
+- Si agrega la palabra "Mi" a su pregunta, Cortana busca conjuntos de datos disponibles para las respuestas que contienen información que se encuentra en el perfil de Windows 10 (la información que se ve al hacer clic en la imagen).
 
 ## <a name="see-also"></a>Consulte también
-<bpt id="p1">[</bpt>Enable Cortana for Power BI<ept id="p1">](powerbi-service-cortana-enable.md)</ept>
 
-<bpt id="p1">[</bpt>Introduction to Power BI Q&amp;A<ept id="p1">](powerbi-service-q-and-a.md)</ept>
+            [Habilitar Cortana para Power BI](powerbi-service-cortana-enable.md)
 
-<bpt id="p1">[</bpt>Power BI basic concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [Introducción a Power BI Q & A](powerbi-service-q-and-a.md)
+
+
+            [Conceptos básicos de Power BI](powerbi-service-basic-concepts.md)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

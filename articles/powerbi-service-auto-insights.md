@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Quick Insights in Power BI"
-   description="Documentation for viewing Quick Insights with Power BI service."
+   pageTitle="Visión rápida de Power BI"
+   description="Documentación para ver información rápidamente con el servicio Power BI."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -22,94 +22,98 @@
    ms.author="mihart"/>
 
 
-# Quick Insights with Power BI
+# Rápida visión con Power BI
 
-Have a new dataset and not quite sure where to start?  Need to build a dashboard fast?  Want to quickly look for insights you may have missed?
+¿Tiene un nuevo conjunto de datos y no bastante seguro de dónde empezar?  ¿Se necesita para crear un panel rápido?  ¿Desea buscar rápidamente información que es posible que falten?
 
-Run Quick Insights to generate interesting interactive visualizations based on your data. Quick Insights can be run on an entire dataset (Quick Insights) or on a specific dashboard tile (Scoped Quick Insights). You can even run Quick Insights on a Quick Insight!
+Ejecute una visión rápida para generar interesantes visualizaciones interactivas basados en los datos. Visión rápida se puede ejecutar en un conjunto de datos completo (visión rápida) o en un icono de panel específico (con ámbito de visión rápida). ¡Incluso puede ejecutar información rápidamente en una información rápida!
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Quick Insights is not available in Power BI Desktop and does not work with direct query - it only works with data uploaded to Power BI.
+>
+            **NOTA**: visión rápida no está disponible en Power BI Desktop y no funciona con la consulta directa, sólo funciona con datos cargados a Power BI.
 
-The Quick Insights feature is built on a growing <bpt id="p1">[</bpt>set of advanced analytical algorithms<ept id="p1">](powerbi-service-auto-insights-types.md)</ept> developed in conjunction with Microsoft Research that we’ll continue to use to allow more people to find insights in their data in new and intuitive ways.
+La característica información rápida se basa en un crecimiento [conjunto de algoritmos analítica avanzados](powerbi-service-auto-insights-types.md) elaborado en colaboración con Microsoft Research que seguiremos para permitir que más personas a encontrar información en sus datos de maneras nuevas e intuitivas.
 
-## Run Quick Insights on a dataset
+## Ejecutar información rápidamente en un conjunto de datos
 
-Watch Amanda run Quick Insights on a sample dataset, pin one of these Quick Insights as a tile on his dashboard, and open a Quick Insight in Focus mode.
+Vea Amanda ejecutar información rápidamente en un conjunto de datos de ejemplo, pin uno de esos conocimientos rápida como un icono en su escritorio y abrir una información rápida en modo de enfoque.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EOASjs5mj6s" frameborder="0" allowfullscreen></iframe>
 
-Now it's your turn. Explore Quick Insights using the Supplier Quality Analysis sample.
+Ahora es su turno. Explore información rápidamente mediante el análisis de calidad de proveedor de ejemplo.
 
-1. In the left navigation pane, under <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept> select the ellipses (...) and choose <bpt id="p2">**</bpt>Quick Insights<ept id="p2">**</ept>.
+1. En el panel de navegación izquierdo, bajo **conjuntos de datos** Seleccione el botón de puntos suspensivos (...) y elija **profundas**.
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesl.png)
 
-2. Power BI uses <bpt id="p1">[</bpt>various algorithms<ept id="p1">](powerbi-service-auto-insights-types.md)</ept> to search for trends in your dataset.
+2. Power BI usa [distintos algoritmos](powerbi-service-auto-insights-types.md) para buscar tendencias en el conjunto de datos.
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsSearching.png)
 
-3. Within seconds, your insights are ready.  Select <bpt id="p1">**</bpt>View Insights<ept id="p1">**</ept> to display visualizations.
+3. En segundos, la información esté lista.  Seleccione **Visión vista** Mostrar visualizaciones.
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightSuccess.png)
 
-    Or, in the leftnav, select the ellipses (...) and choose <bpt id="p1">**</bpt>View Insights<ept id="p1">**</ept>.
+    O, en el leftnav, seleccione el botón de puntos suspensivos (...) y seleccione **Visión de vista**.
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsEllipsesView.png)
 
-    ><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Some datasets can't generate Insights because the data isn't statistically significant.  To learn more, see <bpt id="p1">[</bpt>Optimize your data for Quick Insights<ept id="p1">](powerbi-service-auto-insights-optimize.md)</ept>.
+    >
+            **NOTA**: algunos conjuntos de datos no pueden generar visión porque los datos no son estadísticamente significativos.  Para obtener más información, consulte [optimizar los datos para obtener información rápidamente](powerbi-service-auto-insights-optimize.md).
 
-4. The visualizations display in a special <bpt id="p1">**</bpt>Quick Insights<ept id="p1">**</ept> canvas with up to 32 separate Insight cards. Each card has a chart or graph plus a short description.
+4. Mostrar las visualizaciones en especial **profundas** lienzo con hasta 32 tarjetas de información independientes. Cada tarjeta tiene un gráfico o un gráfico más una breve descripción.
 
     ![](media/powerbi-service-auto-insights/PBI_AutoInsightsMore.png)
 
-## Interact with the Quick Insight cards
+## Interactuar con las tarjetas de información rápida
 
   ![](media/powerbi-service-auto-insights/PBI_hover.png)
 
-1. Hover over a card and select the pin icon to add the visualization to a dashboard.
+1. Mantenga el mouse sobre una tarjeta y seleccione el icono para agregar la visualización a un panel.
 
-2. Hover over a card and select the Focus mode icon to display the card fullscreen.
+2. Mantenga el mouse sobre una tarjeta y seleccione el icono de modo de foco para mostrar la pantalla completa de tarjeta.
 
-3. In Focus mode you can:
-  - <bpt id="p1">[</bpt>filter<ept id="p1">](powerbi-service-interact-with-a-report-in-reading-view.md)</ept> the visualizations.  To display the filters, in the top right corner, select the arrow.
+3. En el modo de enfoque, puede:
+  - 
+            [filtro](powerbi-service-interact-with-a-report-in-reading-view.md) las visualizaciones.  Para mostrar los filtros, en la esquina superior derecha, seleccione la flecha.
 
-  - Pin the insight card to a dashboard.
+  - NIP de la tarjeta de información a un panel.
 
-  - Run Quick Insights on the card itself. This is referred to as <bpt id="p1">**</bpt>Scoped Quick Insights<ept id="p1">**</ept>. In the top-right corner, select the lightbulb icon or <bpt id="p1">**</bpt>Get Insights<ept id="p1">**</ept>.
+  - Ejecute profundas en la propia tarjeta. Esto se conoce como **ámbito rápida visión**. En la esquina superior derecha, seleccione el icono de bombilla o **obtener información sobre**.
 
     ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
 
-    The insight displays on the left and new insight cards, based solely on the data in that single insight, display along the right.
+    La información que se muestra a la izquierda y mostrarán nuevas tarjetas de información, basadas únicamente en los datos de esta perspectiva única, en la parte derecha.
 
     ![](media/powerbi-service-auto-insights/power-bi-insights-on-insight.png)
 
-4.  To return to the original Quick Insights canvas, in the top-left corner, select <bpt id="p1">**</bpt>Exit Focus mode<ept id="p1">**</ept>.
+4.  Para volver al lienzo rápida visión original, en la esquina superior izquierda, seleccione **modo de salida enfoque**.
 
 
-## Run Quick Insights on a dashboard tile
-Instead of searching for insights against an entire dataset, narrow your search to the data used to create a single dashboard tile. This is referred to as <bpt id="p1">**</bpt>Scoped Quick Insights<ept id="p1">**</ept>.
+## Ejecutar una visión rápida en un icono de panel
+En lugar de buscar información en un conjunto de datos completo, limitar la búsqueda a los datos utilizados para crear un icono de panel único. Esto se conoce como **ámbito rápida visión**.
 
-1. <bpt id="p1">[</bpt>Open the tile in Focus mode<ept id="p1">](/powerbi-service-display-dash-in-focus-mode.md)</ept>.
-2. In the top right corner, select <bpt id="p1">**</bpt>Get Insights<ept id="p1">**</ept>.
+1. 
+            [Abra el mosaico en el modo de enfoque](/powerbi-service-display-dash-in-focus-mode.md).
+2. En la esquina superior derecha, seleccione **obtener información sobre**.
 
     ![](media/powerbi-service-auto-insights/pbi-autoinsights-tile.png)
 
-3. Power BI displays the insight cards along the right side of the tile.
+3. Power BI muestra las tarjetas de información en el lado derecho del mosaico.
 
     ![](media/powerbi-service-auto-insights/pbi-insights-tile.png)
 
-4. Does one insight pique your interest? Select that insight card to dig further. The selected insight appears on the left and new insight cards, based solely on the data in that single insight, display along the right.
+4. ¿Uno insight pique su interés? Seleccione esa tarjeta insight profundizar aún más. La información seleccionada aparece en la parte izquierda y mostrarán nuevas tarjetas de información, basadas únicamente en los datos de esta perspectiva única, en la parte derecha.
 
-5. Continue digging into your data, and when you find an interesting insight, pin its visual to your dashboard by selecting <bpt id="p1">**</bpt>Pin visual<ept id="p1">**</ept> from the top-right corner. Also, you can send feedback to let the dataset owner know if a particular insight was helpful or not.
+5. Continuar profundizar en los datos y cuando encuentra una idea interesante, anclar su visual al panel seleccionando **Pin visual** desde la esquina superior derecha. Además, puede enviar comentarios para informar al propietario del conjunto de datos si una determinada información ha sido útil.
 
     ![](media/powerbi-service-auto-insights/useful.png)
 
 
 ## Consulte también
 
-[Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)
+[Optimizar los datos de visión rápida de Power BI](powerbi-service-auto-insights-optimize.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create and submit a visual to the gallery"
-   description="Create and submit a visual to the gallery"
+   pageTitle="Crear y enviar un objeto visual en la Galería"
+   description="Crear y enviar un objeto visual en la Galería"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,26 +20,26 @@
    ms.date="09/23/2016"
    ms.author="asaxton"/>
 
-# Create and submit a visual to the gallery
+# Crear y enviar un objeto visual en la Galería
 
-Want to create your own visual and add it to the Visuals Gallery for others to use?  Just follow these few steps.
+¿Desea crear su propio visual y agregarlo a la Galería de elementos visuales para que otros usuarios para usar?  Siga estos pasos.
 
 ![](media/powerbi-custom-visuals-create-for-the-gallery/example_viz.png)
 
-## Create a custom visual with the Power BI Developer tools
+## Crear un objeto visual personalizado con las herramientas para desarrolladores de BI de energía
 
-You can create a custom visual using the Power BI Developer Tools. In the Power BI <bpt id="p1">**</bpt>Developer Tools<ept id="p1">**</ept>, design and test a custom visual by writing custom visual <bpt id="p2">**</bpt>TypeScript<ept id="p2">**</ept> code, and creating CSS. Once you've tested your custom visual, you can export it to Power BI, or submit it to the <bpt id="p1">**</bpt>Power BI visuals<ept id="p1">**</ept> gallery.
+Puede crear un objeto visual personalizado mediante las herramientas para desarrolladores de BI de energía. En Power BI **Developer Tools**, diseñar y probar un objeto visual personalizado escribiendo visual personalizado **TypeScript** de código y la creación de CSS. Una vez que ha probado su visual personalizado, puede exportarlo a Power BI o enviarlos a la **elementos visuales de Power BI** Galería.
 
-To learn more about the Developer Tools, see <bpt id="p1">[</bpt>Get started with Developer Tools<ept id="p1">](powerbi-custom-visuals-getting-started-with-developer-tools.md)</ept>.
+Para obtener más información acerca de las herramientas de desarrollador, consulte [empezar a trabajar con herramientas de desarrollo](powerbi-custom-visuals-getting-started-with-developer-tools.md).
 
-## Submit your custom visual to the Power BI custom visuals gallery
+## Enviar el objeto visual personalizado a la Galería de elementos visuales personalizados de Power BI
 
-Submit your custom visual to the Power BI visuals gallery via email. To learn how, see <bpt id="p1">[</bpt>Get started with Developer Tools<ept id="p1">](powerbi-custom-visuals-getting-started-with-developer-tools.md#submit-your-visual-to-the-power-bi-custom-visual-gallery)</ept>.
+Envíe su visual personalizado a la Galería de elementos visuales de Power BI por correo electrónico. Para obtener información sobre cómo hacerlo, consulte [empezar a trabajar con herramientas de desarrollo](powerbi-custom-visuals-getting-started-with-developer-tools.md#submit-your-visual-to-the-power-bi-custom-visual-gallery).
 
 ## Consulte también
 
-[Custom visuals in Power BI](powerbi-custom-visuals.md)  
-[Download a custom visual from the gallery](powerbi-custom-visuals-download-from-the-gallery.md)  
-[Use a custom visual in a report (Power BI Service)](powerbi-custom-visuals-add-to-report.md)  
-[Use a custom visual in a report (Power BI Desktop)](powerbi-custom-visuals-use.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Elementos visuales personalizados en Power BI](powerbi-custom-visuals.md)  
+[Descargar un objeto visual personalizado de la Galería](powerbi-custom-visuals-download-from-the-gallery.md)  
+[Utilizar un objeto visual personalizado en un informe (servicio Power BI)](powerbi-custom-visuals-add-to-report.md)  
+[Utilizar un objeto visual personalizado en un informe (Power BI Desktop)](powerbi-custom-visuals-use.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

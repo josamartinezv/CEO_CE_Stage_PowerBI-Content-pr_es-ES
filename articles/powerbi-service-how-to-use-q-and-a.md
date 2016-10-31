@@ -1,6 +1,6 @@
 <properties
-   pageTitle="How to use Power BI Q&amp;A"
-   description="How to use Power BI Q&amp;A"
+   pageTitle="Uso de Power BI Q & A"
+   description="Uso de Power BI Q & A"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,79 +21,80 @@
    ms.date="08/23/2016"
    ms.author="mihart"/>
 
-# How to use Power BI Q&amp;A  
+# Uso de Power BI Q & A  
 
-## Ask questions of your data using natural language  
-The Q&amp;A question box is where you type your question using natural language. Q&amp;A recognizes the words you type and figures out where (which dataset) to find the answer. Q&amp;A also helps you form your question with auto-completion, restatement, and other textual and visual aids.
+## Formule preguntas de los datos con lenguaje natural  
+El cuadro de pregunta de preguntas y respuestas es donde escribe su pregunta con lenguaje natural. Preguntas y respuestas que reconoce las palabras que escribe y cifras dónde (qué conjunto de datos) encontrar la respuesta. Preguntas y respuestas también le ayuda a formar la pregunta con Autocompletar, redefinición y otros textual y ayudas visuales.
 
 ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna.png)
 
-The answer to your question is displayed as an interactive visualization and updates as you modify the question.
+La respuesta a su pregunta se muestra como una visualización interactiva y actualizaciones que modifique la pregunta.
 
-Q&amp;A is interactive and even fun, and, more often than not, one question will lead to many others as the visualizations reveal interesting paths to pursue. Watch Amanda demonstrate using Q&amp;A to create visuals, dig into those visuals, and pin them to dashboards.
+Preguntas y respuestas es interactiva e incluso divertido y, más a menudo de no conducirá una pregunta a muchos otros como las visualizaciones revelan interesantes rutas llevar a cabo. Vea Amanda muestran el uso de preguntas y respuestas para crear elementos visuales, profundizar en los elementos visuales y anclar en paneles.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qMf7OLJfCz8?list=PL1N57mwBHtN0JFoKSR0n-tBkUJHeMP2cP" frameborder="0" allowfullscreen></iframe>
 
-## Use natural language to ask questions about your data
+## Usar lenguaje natural para formular preguntas acerca de los datos
 
-1.  Place your cursor in the question box. Even before you start typing, Q&amp;A displays a new screen with suggestions to help you form your question.
+1.  Coloque el cursor en el cuadro de pregunta. Antes de comenzar a escribir, preguntas y respuestas muestra una nueva pantalla con sugerencias que le ayudarán a formar su pregunta.
 
     ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-cursor.png)  
 
-    This  list contains:  
-    - the questions used to create <bpt id="p1">[</bpt>tiles <ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>that are already pinned to the dashboard, and  
+    Esta lista contiene:  
+    - las preguntas que se usa para crear [mosaicos ](powerbi-service-dashboard-tiles.md)que ya están anclados al panel, y  
 
-    - the name of tables in the <bpt id="p1">[</bpt>underlying dataset(s)<ept id="p1">](powerbi-service-get-data.md)</ept>.  
+    - el nombre de tablas en el [subyacente conjuntos de datos](powerbi-service-get-data.md).  
 
-    You can always choose one of these questions as a starting point and continue to refine the question to find the specific answer you are looking for.  Or, use a table name to help you word a new question.
+    Siempre puede elegir una de estas preguntas como punto de partida y continuar perfeccionando la pregunta para encontrar la respuesta concreta que está buscando.  O bien, utilice un nombre de tabla para ayudarle a una pregunta nueva de word.
 
-2.  Select from the dropdown or begin typing your own question.  
+2.  Seleccione en la lista desplegable o comience a escribir su pregunta.  
     ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-list.png)
 
-3.  As you type a question, Power BI Q&amp;A picks the best <bpt id="p1">[</bpt>visualization <ept id="p1">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept>to display your answer; and the visualization changes dynamically as you modify the question. Q&amp;A also helps you formulate your question with auto-completion, by restating your question, and with other textual and visual aids.  
+3.  Como se escriba un signo de interrogación, Power BI Q & A toma lo mejor [visualización ](powerbi-service-visualization-types-for-reports-and-q-and-a.md)para mostrar la respuesta; y los cambios de visualización dinámicamente como modificar la pregunta. Preguntas y respuestas también le ayuda a formular la pregunta de Autocompletar, reformular la pregunta y con otras ayudas textuales y visuales.  
     ![](media/powerbi-service-how-to-use-q-and-a/powerbi-qna-viz.png)
 
-4.  When you type a query, Power BI looks for an answer in any dataset that has a tile on that dashboard.  If all the tiles are from <bpt id="p1">*</bpt>datasetA<ept id="p1">*</ept>, then your answer will come from <bpt id="p2">*</bpt>datasetA<ept id="p2">*</ept>.  If there are tiles from <bpt id="p1">*</bpt>datasetA <ept id="p1">*</ept>and <bpt id="p2">*</bpt>datasetB<ept id="p2">*</ept>, then Q&amp;A will search for the best answer from those 2 datasets.
+4.  Al escribir una consulta, Power BI busca respuestas en cualquier conjunto de datos que tenga un icono en ese panel.  Si todos los iconos son de *conjunto de datos a*, entonces su respuesta procederá de *conjunto de datos a*.  Si hay iconos del *conjunto de datos a *y *conjunto de datos b*, a continuación, preguntas y respuestas buscará la mejor respuesta de esos conjuntos de 2 datos.
 
-    The dataset(s) that is used to create the visualization is visible below the visualization.  
+    Los conjuntos de datos que se utilizan para crear la visualización aparece debajo de la visualización.  
 
-    ><bpt id="p1">**</bpt>Tip:<ept id="p1">**</ept> So be careful, if you only have one tile from <bpt id="p2">*</bpt>datasetA <ept id="p2">*</ept>and you remove it from your dashboard, Q&amp;A will no longer have access to <bpt id="p3">*</bpt>datasetA<ept id="p3">*</ept>.
+    >
+    >            **Sugerencia:** tenga cuidado si sólo dispone de un mosaico de *conjunto de datos a *y quitarlo de su escritorio, preguntas y respuestas dejará de tener acceso a *conjunto de datos a*.
 
-5.  When you're happy with the result, <bpt id="p1">[</bpt>pin the visualization to a dashboard<ept id="p1">](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)</ept> by selecting the pin icon in the top right corner.
+5.  Cuando esté satisfecho con el resultado, [anclar la visualización a un panel](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md) seleccionando el icono de pin en la esquina superior derecha.
 
     ![](media/powerbi-service-how-to-use-q-and-a/PBI_QnA_finish-typing-question.jpg)
 
-## Tell Q&amp;A which visualization to use.  
-With Q&amp;A, not only can you ask your data to speak for itself, you can tell it how you want it displayed. Just add "as a <ph id="ph1">&amp;lt;</ph>visualization type<ph id="ph2">&amp;gt;</ph>" to the end of your question.  For example, "show inventory volume by plant as a map" and "show total inventory as a card".  Try it for yourself.
+## Indicar las preguntas y respuestas visualización que usar.  
+Con preguntas y respuestas, no sólo puede solicitar los datos para hablar por sí misma, puede indicar cómo desea que se muestre. Simplemente agregue "como un &lt;tipo de visualización&gt;" al final de su pregunta.  Por ejemplo, "Mostrar volumen de inventario por planta como un mapa" y "Mostrar total del inventario como una tarjeta".  Inténtelo usted mismo.
 
 
-## How does Q&amp;A know how to answer questions?  
-### Which datasets does Q&amp;A use?
+## ¿Cómo preguntas y respuestas cómo responder a preguntas?  
+### ¿Los conjuntos de datos hace un uso de preguntas y respuestas?
 
-How does Q&amp;A know how to answer data-specific questions? It relies on the names of the tables, columns, and calculated fields in the underlying dataset. So what you (or the dataset owner) call things is important! 
+¿Cómo preguntas y respuestas cómo responder a preguntas específicas de datos? Se basa en los nombres de tablas, columnas y campos calculados en el dataset subyacente. Por lo que lo que usted (o el propietario del conjunto de datos) a cada cosa es importante! 
 
-For example, suppose you had an Excel table named “Sales”, with columns titled “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”. You could ask questions about any of those entities.  You could ask "show <bpt id="p1">*</bpt>sales"<ept id="p1">*</ept>, "total <bpt id="p2">*</bpt>profit <ept id="p2">*</ept>by <bpt id="p3">*</bpt>month"<ept id="p3">*</ept>, "sort <bpt id="p4">*</bpt>products <ept id="p4">*</ept>by <bpt id="p5">*</bpt>units sold"<ept id="p5">*</ept>, and more.
+Por ejemplo, suponga que tiene una tabla de Excel denominada "Ventas", con columnas tituladas "Product", "Mes", "Unidades vendidas", "Ventas brutas" y "Beneficios". Puede hacer preguntas acerca de cualquiera de esas entidades.  Podría pedir "Mostrar *ventas"*, "total *beneficios *por *mes"*, "ordenación *productos *por *unidades vendidas"*, y mucho más.
 
-Q&amp;A can answer questions that are based on how your dataset is organized. How would this work for data in Salesforce? When you connect to your salesforce.com account, Power BI generates a dashboard automatically.  Before you start asking questions with Q&amp;A, take a look at the data displayed in the dashboard visualizations and also at the data displayed in the Q&amp;A dropdown.
+Preguntas y respuestas pueden responder a preguntas que se basan en cómo se organiza el conjunto de datos. ¿Cómo funcionaría esto para datos de Salesforce? Cuando se conecta a su cuenta de salesforce.com, Power BI genera automáticamente un panel.  Antes de empezar a plantear preguntas con preguntas y respuestas, eche un vistazo en los datos mostrados en las visualizaciones de panel y en los datos mostrados en la lista desplegable de preguntas y respuestas.
 
--   If the visualizations' axis labels and values include "sales",  "account", "month", and “opportunities”, then you can confidently ask questions such as: “Which <bpt id="p1">*</bpt>account <ept id="p1">*</ept>has the highest <bpt id="p2">*</bpt>opportunity<ept id="p2">*</ept>”, or “show <bpt id="p3">*</bpt>sales <ept id="p3">*</ept>by month as a bar chart”.
+-   Si las etiquetas del eje y los valores de las visualizaciones incluir "ventas", "cuenta", "mes" y "oportunidades", con confianza puede hacer preguntas como: "que *cuenta *tiene el mejor *oportunidad*", o "Mostrar *ventas *por mes como un gráfico de barras".
  
--   If the dropdown includes "salesperson", "state", and "year", then you can confidently ask questions such as: "which <bpt id="p1">*</bpt>salesperson <ept id="p1">*</ept>had the lowest <bpt id="p2">*</bpt>sales <ept id="p2">*</ept>in <bpt id="p3">*</bpt>Florida<ept id="p3">*</ept> in <bpt id="p4">*</bpt>2013<ept id="p4">*</ept>."
+-   Si la lista desplegable incluye "comercial", "estado" y "year", entonces puede confidencialmente hacer preguntas como: "que *vendedor *tenía la menor *ventas *en *Florida* en *2013*."
 
-If you have website performance data in Google Analytics, you could ask Q&amp;A about time spent on a web page, number of unique page visits, and user engagement rates. Or, if you’re querying demographic data, you might ask questions about age and household income by location.
+Si tiene datos de rendimiento del sitio Web de Google Analytics, podría pedir a preguntas y respuestas sobre el tiempo invertido en una página web, el número de visitas de página única y las tasas de contratación de usuario. O bien, si está consultando datos demográficos, podría preguntar sobre la edad y los ingresos por ubicación.
 
-### Which visualization does Q&amp;A use?  
-Q&amp;A picks the best visualization based on the data being displayed. Sometimes data in the underlying dataset(s) is defined as a certain type or category and this helps Q&amp;A know how to display it. For example, if data is defined as a date type, it is more likely to be displayed as a line chart. Data that is categorized as a city is more likely to be displayed as a map.
+### ¿Visualización que hace un uso de preguntas y respuestas?  
+Preguntas y respuestas escoge la mejor visualización basada en los datos que se muestran. A veces los datos en los conjuntos de datos subyacente se definen como un tipo determinado o una categoría y esto ayuda a preguntas y cómo mostrarlo. Por ejemplo, si los datos se definen como un tipo de fecha, es más probable que se mostrará como un gráfico de líneas. Datos que se clasifica por categorías como una ciudad son más probables que se mostrará como un mapa.
 
-You can also tell Q&amp;A which visualization to use by adding it to your question. But keep in mind that it may not always be possible for Q&amp;A to display the data in the visualization type you requested.
+También puede indicar a preguntas y visualización que use agregando a su pregunta. Pero tenga en cuenta que es no siempre posible para preguntas y respuestas para mostrar los datos en el tipo de visualización que ha solicitado.
 
-For information about keywords that Q&amp;A recognizes, see <bpt id="p1">[</bpt>Tips for asking questions<ept id="p1">](powerbi-service-q-and-a-tips.md)</ept>.
+Para obtener información sobre las palabras clave que reconoce preguntas y respuestas, vea [sugerencias para hacer preguntas](powerbi-service-q-and-a-tips.md).
 
 ## Consulte también  
-Back to <bpt id="p1">[</bpt>Q&amp;A in Power BI<ept id="p1">](powerbi-service-q-and-a.md)</ept>  
-[Tutorial: Use Q&amp;A with the Retail Sales sample](powerbi-service-tutorial-introduction-to-q-and-a.md)  
-[Tips for asking questions in Q&amp;A](powerbi-service-q-and-a-tips.md)  
-[Prepare a workbook for Q&amp;A](powerbi-service-make-your-data-work-well-with-q-and-a.md)  
-[Pin a tile to the dashboard from Q&amp;A](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)  
+Volver al [preguntas y respuestas en Power BI](powerbi-service-q-and-a.md)  
+[Tutorial: Usar preguntas y respuestas con el ejemplo de ventas minoristas](powerbi-service-tutorial-introduction-to-q-and-a.md)  
+[Sugerencias para hacer preguntas acerca de preguntas y respuestas](powerbi-service-q-and-a-tips.md)  
+[Preparar un libro para preguntas y respuestas](powerbi-service-make-your-data-work-well-with-q-and-a.md)  
+[Anclar un icono en el panel de preguntas y respuestas](powerbi-service-pin-a-tile-to-a-dashboard-from-the-question-box.md)  
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Waterfall and funnel charts"
-   description="Learn about advanced funnel and waterfall charts"
+   pageTitle="Gráficos en cascada y de embudo"
+   description="Obtenga información acerca de los gráficos de embudo y en cascada avanzados"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,20 +23,22 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# How to Use Waterfall and Funnel Charts
+# Cómo usar en cascada y gráficos de embudo
 
-Waterfall and funnel charts are two of the more interesting (and perhaps uncommon) standard visualizations that are included in Power BI. To create a blank chart of either type, select its icon from the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane.
+Gráficos de embudo y de cascada son dos de las visualizaciones estándares más interesantes (y quizás poco frecuente) que se incluyen en Power BI. Para crear un gráfico en blanco de cualquier tipo, seleccione el icono de la **visualizaciones** panel.
 
 ![](media/powerbi-learning-3-8-create-waterfall-funnel-charts/3-8_1.png)
 
-<bpt id="p1">**</bpt>Waterfall charts<ept id="p1">**</ept> are typically used to show changes in a particular value over time.
+
+            **Gráficos de cascada** se utilizan normalmente para mostrar los cambios en un valor determinado en el tiempo.
 
 ![](media/powerbi-learning-3-8-create-waterfall-funnel-charts/3-8_2.png)
 
-Waterfalls only have two bucket options: <bpt id="p1">*</bpt>Category<ept id="p1">*</ept> and <bpt id="p2">*</bpt>Y Axis<ept id="p2">*</ept>. Drag a time-based field such as <bpt id="p1">*</bpt>year<ept id="p1">*</ept> to the <bpt id="p2">*</bpt>Category<ept id="p2">*</ept> bucket, and the value you want to track to the <bpt id="p3">*</bpt>Y Axis<ept id="p3">*</ept> bucket. Time periods where there was an increase in value are displayed in green by default, while periods with a decrease in value are displayed in red.
+Cascadas sólo tienen depósito dos opciones: *categoría* y *eje Y*. Arrastre un campo de tiempo como *año* a la *categoría* depósitos y el valor que se desea realizar un seguimiento a la *eje Y* depósito. Períodos de tiempo donde se ha producido un aumento del valor se muestran en verde de forma predeterminada, aunque períodos con una disminución en el valor se muestran en rojo.
 
-<bpt id="p1">**</bpt>Funnel charts<ept id="p1">**</ept> are typically used to show changes over a particular process, such as a sales pipeline or website retention efforts.
+
+            **Gráficos de embudo** se utilizan normalmente para mostrar los cambios en un proceso determinado, como una venta esfuerzos de retención de canalización o el sitio Web.
 
 ![](media/powerbi-learning-3-8-create-waterfall-funnel-charts/3-8_3.png)
 
-Both <bpt id="p1">**</bpt>Waterfall<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Funnel<ept id="p2">**</ept> charts can be sliced and visually customized.
+Ambos **cascada** y **embudo** gráficos se pueden segmentar y personalizar visualmente.

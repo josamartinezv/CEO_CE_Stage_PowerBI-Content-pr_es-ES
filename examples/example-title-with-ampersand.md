@@ -1,9 +1,9 @@
-<properties pageTitle="Documentation Example - Headings" description="This is an example document" title="Documentation Example - Headings" services="" documentationCenter="" authors="jamescon, Bill Smith" metaKeywords="" solutions="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación - encabezados" description="Esto es un ejemplo de documento" title="Documentation Example - Headings" services="" documentationCenter="" authors="jamescon, Bill Smith" metaKeywords="" solutions="" videoId="" scriptId="" />
 
 
-# Example - Headings &amp; Headings #
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+# Por ejemplo, títulos y encabezados #
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the use of headings.
+El contenido entre las líneas siguientes muestra el uso de encabezados.
 
 

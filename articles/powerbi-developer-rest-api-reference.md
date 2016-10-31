@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI REST API Reference"
-   description="Power BI REST API Reference"
+   pageTitle="Referencia de la API de REST de Power BI"
+   description="Referencia de la API de REST de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,17 +20,17 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Power BI REST API Reference
+# Referencia de la API de REST de Power BI
 
-Power BI is a cloud-based service that you can use to build custom dashboard applications. The Power BI REST API is a REST-based API that provides programmatic access to <bpt id="p1">**</bpt>Dashboard<ept id="p1">**</ept> resources such as <bpt id="p2">**</bpt>Datasets<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Tables<ept id="p3">**</ept>, and <bpt id="p4">**</bpt>Rows<ept id="p4">**</ept> in Power BI.
+Power BI es un servicio basado en la nube que puede usar para crear aplicaciones de panel personalizado. La API de REST de Power BI es una API basada en REST que proporciona acceso mediante programación a **panel** recursos como **conjuntos de datos**, **tablas**, y **filas** en Power BI.
 
-The Power BI REST API has the following operations:
+La API de REST de Power BI tiene las siguientes operaciones:
 
-- Dataset operations: Get and create Datasets.
-- Table operations: Get Tables and update Table schema.
-- Row operations: Add Rows and Delete Rows.
-- Group operations: Get Groups.
+- Las operaciones de conjunto de datos: obtener y crear conjuntos de datos.
+- Operaciones de tabla: obtener tablas y actualizar el esquema de la tabla.
+- Operaciones de fila: agregar filas y eliminar filas.
+- Operaciones de grupo: obtener grupos.
 
-To learn more about the Power BI REST API, see <bpt id="p1">[</bpt>Overview of Power BI REST API<ept id="p1">](https://msdn.microsoft.com/library/dn877544.aspx)</ept>.
+Para obtener más información acerca de la API de REST de Power BI, consulte [información general de Power BI REST API](https://msdn.microsoft.com/library/dn877544.aspx).
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get an authentication access token"
-   description="Walkthrough to push data - Get an authentication access token"
+   pageTitle="Obtener un acceso de autenticación token"
+   description="Tutorial para insertar datos - obtener un acceso de autenticación token"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,35 +20,36 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 2: Get an authentication access token
+# Paso 2: Obtener un acceso de autenticación token
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+Este artículo forma parte de un tutorial paso a paso para [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md).
 
-In <bpt id="p1">**</bpt>step 1<ept id="p1">**</ept> of Push data into a dashboard, <bpt id="p2">[</bpt>Register the app with Azure AD<ept id="p2">](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)</ept>, you registered a client app in Azure AD. In this step, you get an authentication access token. Power BI apps are integrated with <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> to provide secure sign in and authorization for your app. You use a token to authenticate to <bpt id="p1">**</bpt>Azure AD<ept id="p1">**</ept> and gain access to Power BI resources.
+En **paso 1** de insertar datos en un panel [registrar la aplicación con Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md), que ha registrado una aplicación cliente en Azure AD. En este paso, obtener un autenticación token de acceso. Aplicaciones de Power BI se integran con **Azure AD** para proporcionar el inicio de sesión seguro y autorización para la aplicación. Usar un token para autenticarse en **Azure AD** y tener acceso a recursos de Power BI.
 
-Here's how to get an authentication access token.
+Aquí se muestra cómo obtener un acceso de autenticación token.
 
-## Get an authentication access token
+## Obtener un acceso de autenticación token
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you get started, make sure you have followed the previous steps in the <bpt id="p2">[</bpt>push data into a dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data.md)</ept> walkthrough.
+>
+            **NOTA**: antes de comenzar, asegúrese de que ha seguido los pasos anteriores en el [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md) tutorial.
 
-1. In Visual Studio 2015, create a <bpt id="p1">**</bpt>Console Application<ept id="p1">**</ept> project.
-2. Install the <bpt id="p1">[</bpt>Azure AD Authentication Library for .NET NuGet package<ept id="p1">](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)</ept>. To get an authentication security token in a .NET app, you use this package. Here's how to install the package:
+1. En Visual Studio 2015, cree un **aplicación de consola** proyecto.
+2. Instalar el [biblioteca de autenticación de Azure AD para el paquete NuGet de .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/). Para obtener una seguridad de autenticación token en una aplicación. NET, use este paquete. Aquí se muestra cómo instalar el paquete:
 
-     a. In Visual Studio 2015, choose <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>NuGet Package Manager<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Package Manager Console<ept id="p3">**</ept>.
+     a. En Visual Studio 2015, elija **herramientas** > **Administrador de paquetes de NuGet** > **Package Manager Console**.
 
-     b. In <bpt id="p1">**</bpt>Package Manager Console<ept id="p1">**</ept>, enter Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory -Version 2.21.301221612.
+     b. En **Package Manager Console**, escriba Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory-versión 2.21.301221612.
 
-3. Add the code below into class Program {...}.
-4. Replace "{ClientID}", with the <bpt id="p1">**</bpt>Client ID<ept id="p1">**</ept> you got when you registered the app. See <bpt id="p1">[</bpt>Register the app with Azure AD<ept id="p1">](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)</ept>.
-5. After installing the Microsoft.IdentityModel.Clients.ActiveDirectory package, add <bpt id="p1">**</bpt>using Microsoft.IdentityModel.Clients.ActiveDirectory;<ept id="p1">**</ept> to Program.cs.
-6. Run the Console App, and login to your Power BI account. You should see a token string in the Console Window.
+3. Agregue el código siguiente a la clase Program {...}.
+4. Reemplazar "{ClientID}", con el **Id. de cliente** que obtuvo al registrar la aplicación. Consulte [registrar la aplicación con Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md).
+5. Después de instalar el paquete de Microsoft.IdentityModel.Clients.ActiveDirectory, agregue **utilizando Microsoft.IdentityModel.Clients.ActiveDirectory;** en Program.cs.
+6. Ejecutar la aplicación de consola e inicie sesión en su cuenta de Power BI. Debería ver una cadena de token en la ventana de consola.
 
-**Sample code to get authentication security token**
+**Código de ejemplo para obtener tokens de seguridad de autenticación**
 
-Add this code to Program {...}.
+Agregue este código al programa {...}.
 
-- A token variable to call operations:
+- Una variable de token para llamar a operaciones:
 
   ```
   private static string token = string.Empty;
@@ -58,7 +59,7 @@ Add this code to Program {...}.
   }
   ```
 
-- In static void Main(string[] args):
+- En static void Main (string [] args):
 
   ```
   static void Main(string[] args)
@@ -68,7 +69,7 @@ Add this code to Program {...}.
   }
   ```
 
-- Add a GetToken() method:
+- Agregue un método GetToken():
 
 ```
        #region Get an authentication access token
@@ -111,24 +112,24 @@ Add this code to Program {...}.
        #endregion
 ```
 
-After you get an authentication token, you can call any Power BI operation. The next step shows you how to call the <bpt id="p1">[</bpt>Create Dataset<ept id="p1">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> operation to create a dataset to push data into a dashboard.
+Después de obtener un token de autenticación, puede llamar a cualquier operación de Power BI. El paso siguiente muestra cómo llamar a la [Crear conjunto de datos](https://msdn.microsoft.com/library/mt203562.aspx) operación para crear un conjunto de datos para insertar datos en un panel.
 
-The next step shows you how to <bpt id="p1">[</bpt>create a dataset in a Power BI dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data-create-dataset.md)</ept>.
+El paso siguiente muestra cómo a [crear un conjunto de datos en un panel de Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md).
 
-Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept>.
+A continuación se muestra la [código completo](#code).
 
-[Next Step &gt;](powerbi-developer-walkthrough-push-data-create-dataset.md)
+[Siguiente paso >](powerbi-developer-walkthrough-push-data-create-dataset.md)
 
 ## Consulte también
-- [Create a dataset in a Power BI dashboard](powerbi-developer-walkthrough-push-data-create-dataset.md)
-- [Register an app with Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
-- [Azure AD Authentication Library for .NET NuGet package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [Crear un conjunto de datos en un panel de Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md)
+- [Registrar una aplicación con Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
+- [Biblioteca de autenticación de Azure AD para el paquete NuGet de .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
+- [Insertar datos en un panel de Power BI](powerbi-developer-walkthrough-push-data.md)
+- [Información general sobre la API de REST de Power BI](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Referencia de API de REST de BI de energía](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
-## Complete code listing
+## Lista de código completa
 
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -189,4 +190,4 @@ Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept
         }
     }
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

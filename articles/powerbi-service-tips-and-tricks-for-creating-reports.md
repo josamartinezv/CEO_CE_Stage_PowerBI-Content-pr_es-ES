@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tips and tricks for creating visually stunning reports in Power BI service"
-   description="Tips and tricks for creating reports in Power BI service"
+   pageTitle="Sugerencias y trucos para la creación de informes visualmente espectaculares en servicio Power BI"
+   description="Sugerencias y trucos para la creación de informes en el servicio Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,28 +19,28 @@
    ms.workload="powerbi"
    ms.date="09/12/2016"
    ms.author="mihart"/>
-# Tips and tricks for creating reports in Power BI service
+# Sugerencias y trucos para la creación de informes en el servicio Power BI
 
->[AZURE.NOTE] This topic gives suggestions for improving the look and feel of your reports. All of these suggestions can be applied whether you are using Power BI service or Power BI Desktop.  For more technical tips &amp; tricks for creating reports, see <bpt id="p1">[</bpt>Tips and Tricks for creating reports in Power BI Desktop<ept id="p1">](powerbi-desktop-tips-and-tricks-for-creating-reports)</ept>.
-
-
-### Watch the Dashboard Makeover webinar
-
-See Microsoft Principal Program Manager and Power BI dashboard expert Marc Reguera <bpt id="p1">[</bpt>conduct dashboard makeovers<ept id="p1">](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html)</ept>.
+>[AZURE.NOTE] Este tema proporciona sugerencias para mejorar la apariencia de los informes. Todas estas sugerencias pueden aplicarse si está utilizando el servicio Power BI o Power BI Desktop.  Para más técnicas sugerencias y trucos para la creación de informes, consulte [sugerencias y trucos para la creación de informes en Power BI Desktop](powerbi-desktop-tips-and-tricks-for-creating-reports).
 
 
-### Read and watch "How to design visually stunning reports (and dashboards) in Power BI
+### Ver el seminario de cambio del panel
 
-Community member Miguel Myers is a Data Scientist as well as a Graphic Designer.
+Consulte el administrador Principal de programas de Microsoft y Power BI experto panel Marc Reguera [llevar a cabo para una transformación del panel](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-05May-12-Dashboard-Makeover-Registration.html).
 
--  [Read the blog](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
 
--  [Watch the webinar](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
+### Leer y ver "cómo diseñar visualmente impresionantes informes (y paneles) en Power BI
+
+Miembro de la Comunidad Miguel Myers es un científico de datos, así como un diseñador gráfico.
+
+-  [Lea el blog](https://powerbi.microsoft.com/blog/how-to-design-visually-stunning-reports/)
+
+-  [Ver el seminario Web](https://info.microsoft.com/CO-PowerBI-WBNR-FY16-04Apr-19-Design-Reports-in-PowerBI-Registration.html)
 
 ## Véase también
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-[Reports in Power BI](powerbi-service-reports.md)
+[Informes de Power BI](powerbi-service-reports.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

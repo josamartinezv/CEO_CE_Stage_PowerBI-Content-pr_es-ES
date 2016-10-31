@@ -1,19 +1,19 @@
-## How the gateway works 
+## Cómo funciona la puerta de enlace 
 
-![on-prem-data-gateway-how-it-works](./media/gateway-onprem-how-it-works-include/on-prem-data-gateway-how-it-works.png)
+![on-PREM-Data-Gateway-How-IT-Works](./media/gateway-onprem-how-it-works-include/on-prem-data-gateway-how-it-works.png)
 
-Let’s first look at what happens when a user interacts with an element connected to an on-premises data source. 
+Echemos primero un vistazo a lo que sucede cuando un usuario interactúa con un elemento conectado a un origen de datos local. 
 
-> [AZURE.NOTE] For Power BI, you will need to configure a data source for the gateway.
+> [AZURE.NOTE] Para Power BI, debe configurar un origen de datos para la puerta de enlace.
 
-1.  A query will be created by the cloud service, along with the encrypted credentials for the on-premises data source, and sent to the queue for the gateway to process.
+1.  Una consulta se crea el servicio de nube, junto con las credenciales cifradas para el origen de datos local y se enviará a la cola de la puerta de enlace procesar.
 
-2.  The gateway cloud service will analyze the query and will push the request to the <bpt id="p1">[</bpt>Azure Service Bus<ept id="p1">](https://azure.microsoft.com/documentation/services/service-bus/)</ept>.
+2.  El servicio de puerta de enlace de nube analizará la consulta y envía la solicitud a la [Bus de servicio de Azure](https://azure.microsoft.com/documentation/services/service-bus/).
 
-3.  The on-premises data gateway polls the <bpt id="p1">[</bpt>Azure Service Bus<ept id="p1">](https://azure.microsoft.com/documentation/services/service-bus/)</ept> for pending requests.
+3.  Los sondeos de puerta de enlace de datos local la [Bus de servicio de Azure](https://azure.microsoft.com/documentation/services/service-bus/) para las solicitudes pendientes.
 
-4.  The gateway gets the query, decrypts the credentials and connects to the data source(s) with those credentials.
+4.  La puerta de enlace obtiene la consulta, descifra las credenciales y se conecta a los orígenes de datos con esas credenciales.
 
-5.  The gateway sends the query to the data source for execution.
+5.  La puerta de enlace, envía la consulta al origen de datos para su ejecución.
 
-6.  The results are sent from the data source, back to the gateway, and then onto the cloud service. The service then uses the results.
+6.  Los resultados se envían desde el origen de datos a la puerta de enlace y, a continuación, en el servicio de nube. El servicio usa los resultados.

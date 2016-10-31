@@ -1,45 +1,45 @@
-<properties pageTitle="Documentation Example - Table of Contents" metaKeywords="" description="This is an example document" services="" documentationCenter="" title="Documentation Example - Table of Contents" solutions="" authors="" videoId="" scriptId="" />
+<properties pageTitle="Ejemplo de documentación: tabla de contenido" metaKeywords="" description="Esto es un ejemplo de documento" services="" documentationCenter="" title="Documentation Example - Table of Contents" solutions="" authors="" videoId="" scriptId="" />
 
-# Example - Table of Contents #
+# Por ejemplo, tabla de contenido #
 
-This is a sample documentation article that is used to test and validate the publishing system for azure.microsoft.com.  
+Se trata de un artículo de la documentación de ejemplo que se usa para probar y validar el sistema de publicación para azure.microsoft.com.  
 
-The content between the lines below demonstrates the use of a table of contents.  
+El contenido entre las líneas siguientes muestra el uso de una tabla de contenido.  
 
 
 ---
 ## Tabla de contenido ##
 
-You will learn: 
+Aprenderá lo siguiente: 
 
-- [About virtual machines in Microsoft Azure] []
-- [How to create the virtual machine] [] 
-- [How to log on to the virtual machine after you create it] [] 
-- [How to attach a data disk to the new virtual machine] [] 
+- [Acerca de máquinas virtuales de Microsoft Azure] []
+- [Cómo crear la máquina virtual] [] 
+- [Inicio de sesión para la máquina virtual después de crearla] [] 
+- [Cómo conectar un disco de datos a la nueva máquina virtual] [] 
 
 
-## <a id="virtualmachine"> </a>About virtual machines in Microsoft Azure ##
+## <a id="virtualmachine"> </a>Acerca de máquinas virtuales de Microsoft Azure ##
 
-Some text goes here...
-
-> [AZURE.VIDEO azure-storage-queues-batch-processing]
-
-## <a id="custommachine"> </a>How to create the virtual machine##
-
-Some more text goes here...
-
-<H2><a id="logon"> </a>How to log on to the virtual machine after you create it</H2>
-
-Some more text goes here...DAn was here
+Parte del texto va aquí...
 
 > [AZURE.VIDEO azure-storage-queues-batch-processing]
 
-## <a id="attachdisk"> </a>How to attach a data disk to the new virtual machine ##
+## <a id="custommachine"> </a>Cómo crear la máquina virtual##
+
+Más texto va aquí...
+
+<H2><a id="logon"> </a>Inicio de sesión para la máquina virtual después de crearla</H2>
+
+Más texto va aquí... DAn estaba aquí
+
+> [AZURE.VIDEO azure-storage-queues-batch-processing]
+
+## <a id="attachdisk"> </a>Cómo conectar un disco de datos a la nueva máquina virtual ##
 
 ---
 
-[About virtual machines in Microsoft Azure]: #virtualmachine
-[How to create the virtual machine]: #custommachine
-[How to log on to the virtual machine after you create it]: #logon
-[How to attach a data disk to the new virtual machine]: #attachdisk
-[How to set up communication with the virtual machine]: #endpoints
+[Acerca de máquinas virtuales de Microsoft Azure]: #virtualmachine
+[Cómo crear la máquina virtual]: #custommachine
+[Inicio de sesión para la máquina virtual después de crearla]: #logon
+[Cómo conectar un disco de datos a la nueva máquina virtual]: #attachdisk
+[Cómo establecer la comunicación con la máquina virtual]: #endpoints

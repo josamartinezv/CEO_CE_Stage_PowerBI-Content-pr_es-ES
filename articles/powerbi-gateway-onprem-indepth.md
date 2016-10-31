@@ -1,6 +1,6 @@
 <properties
-pageTitle="On-premises data gateway in-depth"
-description="This article looks at the On-premises gateway in-depth. This looks at how the service works with Azure Active Directory and your local Active Directory when working with Analysis Services"
+pageTitle="Puerta de enlace de datos a local detallada"
+description="Este artículo examina la puerta de enlace local detallada. Esto se estudia cómo funciona el servicio con Azure Active Directory y su Active Directory local cuando se trabaja con Analysis Services"
 services="powerbi"
 documentationCenter=""
 authors="guyinacube"
@@ -19,13 +19,13 @@ ms.tgt_pltfrm="na"
 ms.workload="powerbi"
 ms.date="10/12/2016"
 ms.author="asaxton"/>
-# On-premises data gateway in-depth
+# Puerta de enlace de datos a local detallada
 
-Users in your organization can see your on-premises data, but before users can connect to your on-premises data source, an on-premises data gateway needs to be installed and configured. The gateway helps make the behind-the-scenes communication from a user in the cloud to your on-premises data source and back to the cloud quick and secure.
+Los usuarios de su organización pueden ver los datos locales, pero antes de que los usuarios pueden conectarse al origen de datos local, una puerta de enlace de datos local debe estar instalado y configurado. La puerta de enlace facilita la comunicación interna de un usuario en la nube a su origen de datos local y volver a la nube segura y rápida.
 
-Installing and configuring a gateway is usually done by an administrator. It may require special knowledge of your on-premises servers and in some cases may require Server Administrator permissions.
+Instalar y configurar una puerta de enlace se realiza normalmente por un administrador. Puede que necesite un conocimiento especial de los servidores locales y en algunos casos puede necesitar permisos de administrador del servidor.
 
-This article doesn’t provide step-by-step guidance on how to install and configure the gateway. For that, be sure to see <bpt id="p1">[</bpt>On-premises Data Gateway<ept id="p1">](powerbi-gateway-onprem.md)</ept>. This article is meant to provide you with an in-depth understanding of how the gateway works. We’ll also go into some detail about usernames and security in both Azure Active Directory and Analysis Services, and how the cloud service uses the e-mail address a user sign in with, the gateway, and Active Directory to securely connect to and query your on-premises data.
+Este artículo no proporciona instrucciones paso a paso acerca de cómo instalar y configurar la puerta de enlace. Para ello, asegúrese de ver [puerta de enlace de datos local](powerbi-gateway-onprem.md). Este artículo pretende proporcionar una comprensión detallada del funcionamiento de la puerta de enlace. También presentaremos información detallada sobre los nombres de usuario y la seguridad de Azure Active Directory y Analysis Services, y cómo el servicio de nube usa la dirección de correo electrónico con un inicio de sesión de usuario, la puerta de enlace y Active Directory para conectarse de forma segura y consultar los datos locales.
 
 <!-- Shared Requirements Include -->
 [AZURE.INCLUDE [gateway-onprem-requirements-include](../includes/gateway-onprem-how-it-works-include.md)]
@@ -33,98 +33,98 @@ This article doesn’t provide step-by-step guidance on how to install and confi
 <!-- Shared Install steps Include -->
 [AZURE.INCLUDE [gateway-onprem-datasources-include](../includes/gateway-onprem-datasources-include.md)]
 
-## Sign in account
+## Inicie sesión en la cuenta
 
-Users will sign in with either a work or school account. This is your organization account. If you signed up for an Office 365 offering and didn’t supply your actual work email, it may look like nancy@contoso.onmicrosoft.com. Your account, within a cloud service, is stored within a tenant in Azure Active Directory (AAD). In most cases, your AAD account’s UPN will match the email address.
+Los usuarios iniciar sesión con un trabajo o escuela cuenta. Se trata de la cuenta de la organización. Si registró para una oferta de Office 365 y no ha proporcionado el correo electrónico de trabajo real, podría parecer nancy@contoso.onmicrosoft.com. La cuenta en un servicio de nube, se almacena en un inquilino de Azure Active Directory (AAD). En la mayoría de los casos, los UPN de la cuenta AAD coincidirá con la dirección de correo electrónico.
 
-## Authentication to on-premises data sources
+## Autenticación para orígenes de datos locales
 
-A stored credential will be used to connect to on-premises data sources from the gateway except Analysis Services. Regardless of the individual user, the gateway uses the stored credential to connect. 
+Una credencial almacenada se utilizará para conectarse a orígenes de datos locales de la puerta de enlace excepto a Analysis Services. Independientemente del usuario individual, la puerta de enlace utiliza la credencial almacenada para conectarse. 
 
-## Authentication to a live Analysis Services data source 
+## Autenticación a un origen de datos de Analysis Services en directo 
 
-Each time a user interacts with Analysis Services, the effective username is passed to the gateway and then onto your on-premises Analysis Services server. The user principal name (UPN), typically the email address you sign into the cloud with, is what we will pass to Analysis Services as the effective user. The UPN is passed in the connection property EffectiveUserName. This email address should match a defined UPN within the local Active Directory domain. The UPN is a property of an Active Directory account. That Windows account then needs to be present in an Analysis Services role to have access to the server. The login will not be successful if no match is found in Active Directory.
+Cada vez que un usuario interactúa con Analysis Services, el nombre de usuario efectivo se pasa a la puerta de enlace y, a continuación, en el servidor de Analysis Services local. El nombre principal de usuario (UPN), normalmente la dirección de correo electrónico que inicie sesión en la nube, es lo que se pasará a Analysis Services como el usuario efectivo. El UPN se pasa la propiedad de conexión EffectiveUserName. Esta dirección de correo electrónico debe coincidir con un UPN definido dentro del dominio de Active Directory local. El UPN es una propiedad de una cuenta de Active Directory. A continuación, esa cuenta de Windows debe estar presente en una función de Analysis Services para tener acceso al servidor. El inicio de sesión no tendrá éxito si se encuentra ninguna coincidencia en Active Directory.
 
-Analysis Services can also provide filtering based on this account. The filtering can occur with either role based security, or row-level security.
+Analysis Services también pueden proporcionar filtrado basado en esta cuenta. El filtrado puede producirse con la seguridad basada en roles o seguridad de nivel de fila.
 
-## Role-based security
+## Seguridad basada en roles
 
-Models provide security based on user roles. Roles are defined for a particular model project during authoring in SQL Server Data Tools – Business Intelligence (SSDT-BI), or after a model is deployed, by using SQL Server Management Studio (SSMS). Roles contain members by Windows username or by Windows group. Roles define permissions a user has to query or perform actions on the model. Most users will belong to a role with Read permissions. Other roles are meant for administrators with permissions to process items, manage database functions, and manage other roles.
+Los modelos proporcionan seguridad basada en roles de usuario. Las funciones se definen para un proyecto de modelo determinado durante la edición de SQL Server Data Tools – Business Intelligence (SSDT-BI), o después de implementa un modelo, mediante el uso de SQL Server Management Studio (SSMS). Roles contienen a miembros por nombre de usuario o grupo de Windows. Roles definen los permisos que un usuario tiene para consultar o realizar acciones en el modelo. La mayoría de los usuarios pertenecerá a un rol con permisos de lectura. Otros roles están diseñados para los administradores con permisos para procesar elementos, administrar las funciones de base de datos y administrar otros roles.
 
-## Row-level security
+## Seguridad de nivel de fila
 
-Row-level security is specific to Analysis Services row-level security. Models can provide dynamic, row-level security. Unlike having at least one role in which users belong to, dynamic security is not required for any tabular model. At a high-level, dynamic security defines a user’s read access to data right down to a particular row in a particular table. Similar to roles, dynamic row-level security relies on a user’s Windows username.
+Seguridad de nivel de fila es específica para la seguridad de nivel de fila de Analysis Services. Modelos pueden proporcionar seguridad dinámica de nivel de fila. A diferencia de tener al menos un rol que pertenecen a los usuarios, la seguridad dinámica no es necesaria para cualquier modelo tabular. En una alto nivel, la seguridad dinámica define el acceso de lectura de un usuario a datos delimitado a una fila determinada en una tabla determinada. Similar a los roles, la seguridad dinámica de nivel de fila se basa en nombre de usuario de Windows del usuario.
 
-A user’s ability to query and view model data are determined first by the roles their Windows user account are a member of and second, by dynamic row-level security, if configured.
+Capacidad de un usuario a la consulta y ver los datos de modelo se determina primero mediante las funciones de su cuenta de usuario de Windows es un miembro de y en segundo lugar, la seguridad dinámica de nivel de fila, si ha configurado.
 
-Implementing role and dynamic row-level security in models are beyond the scope of this article.  You can learn more at <bpt id="p1">[</bpt>Roles (SSAS Tabular)<ept id="p1">](https://msdn.microsoft.com/library/hh213165.aspx)</ept> and <bpt id="p2">[</bpt>Security Roles (Analysis Services - Multidimensional Data)<ept id="p2">](https://msdn.microsoft.com/library/ms174840.aspx)</ept> on MSDN. And, for the most in-depth understanding of tabular model security, download and read the Securing the <bpt id="p1">[</bpt>Tabular BI Semantic Model whitepaper<ept id="p1">](https://msdn.microsoft.com/library/jj127437.aspx)</ept>. 
+Rol de aplicación y seguridad dinámica de nivel de fila en los modelos están fuera del ámbito de este artículo.  Puede obtener más información en [Roles (SSAS Tabular)](https://msdn.microsoft.com/library/hh213165.aspx) y [Roles de seguridad (Analysis Services - datos multidimensionales)](https://msdn.microsoft.com/library/ms174840.aspx) en MSDN. Y, para obtener una descripción más detallada de la seguridad de modelos tabulares, descargue y lea la protección del [notas del producto modelo semántico de BI Tabular](https://msdn.microsoft.com/library/jj127437.aspx). 
 
-## What about Azure Active Directory?
+## ¿Qué sucede con Azure Active Directory?
 
-Microsoft cloud services use <bpt id="p1">[</bpt>Azure Active Directory<ept id="p1">](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)</ept> to take care of authenticating users. Azure Active Directory is the tenant that contains usernames and security groups. Typically, the email address a user signs in with is the same as the UPN of the account.
+Uso de servicios de nube de Microsoft [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) encargarse de autenticar a los usuarios. Azure Active Directory es el inquilino que contiene grupos de nombres de usuario y seguridad. Normalmente, un usuario inicia sesión con la dirección de correo electrónico es el mismo que el UPN de la cuenta.
 
-What is my local Active Directory’s role?
+¿Cuál es la función de mi local de Active Directory?
 
-For Analysis Services to determine if a user connecting to it belongs to a role with permissions to read data, the server needs to convert the effective username passed from AAD to the gateway, and onto the Analysis Services server. The Analysis Services server passes the effective username to a Windows Active Directory domain controller (DC). The Active Directory DC then validates the effective username is a valid UPN, on a local account, and returns that user’s Windows username back to the Analysis Services server.
+Para que Analysis Services determinar si un usuario se conecta a él pertenece a un rol con permisos para leer los datos, el servidor debe convertir el nombre de usuario efectivo pasado de AAD a la puerta de enlace y en el servidor de Analysis Services. El servidor de Analysis Services pasa el nombre de usuario efectivo a un controlador de dominio (DC) de Active Directory de Windows. El DC de Active Directory, a continuación, valida la vigencia del nombre de usuario es un UPN válido en una cuenta local y devuelve el nombre de usuario de Windows del usuario al servidor de Analysis Services.
 
-EffectiveUserName cannot be used on a non-domain joined Analysis Services server. The Analysis Services server must be joined to a domain to avoid any login errors.
+No se puede usar EffectiveUserName en un servidor unido a un dominio no Analysis Services. El servidor de Analysis Services debe estar unido a un dominio para evitar los errores de inicio de sesión.
 
-## How do I tell what my UPN is?
+## ¿Cómo se puede saber qué es mi UPN?
 
-You may not know what your UPN is, and you may not be a domain administrator. You can use the following command from your workstation to find out the UPN for your account.
+Puede que no sepa qué es el UPN y puede que no sea un administrador de dominio. Puede utilizar el siguiente comando desde la estación de trabajo para averiguar el UPN de la cuenta.
 
     whoami /upn
 
-The result will look similar to an email address, but this is the UPN that is on your local domain account. If you are using an Analysis Services data source for live connections, this must match what was passed to EffectiveUserName from the gateway.
+El resultado tendrá un aspecto similar a una dirección de correo electrónico, pero esto es el UPN de la cuenta de dominio local. Si utiliza un origen de datos de Analysis Services para las conexiones en directo, debe coincidir con lo que se pasó a EffectiveUserName de la puerta de enlace.
 
-## Mapping usernames for Analysis Services data sources
+## Asignación de nombres de usuario para los orígenes de datos de Analysis Services
 
-Power BI allows for mapping usernames for Analysis Services data sources. You can configure rules to map a username logged in with Power BI to a name that is passed for EffectiveUserName on the Analysis Services connection. The map user names feature is a great way to work around when your username in AAD doesn't match a UPN in your local Active Directory. For example, if your email address is nancy@contoso.onmicrsoft.com, you could map it to nancy@contoso.com, and that value would be passed to the gateway. You can learn more about how to <bpt id="p1">[</bpt>map user names<ept id="p1">](powerbi-gateway-enterprise-manage-ssas.md#map-user-names)</ept>.
+Power BI permite la asignación de nombres de orígenes de datos de Analysis Services. Puede configurar reglas para asignar un nombre de usuario que inició sesión con Power BI en un nombre que se pasa para EffectiveUserName en la conexión de Analysis Services. La característica nombres de usuario de asignación es una excelente manera de evitar cuando su nombre de usuario de AAD no coincide con un UPN en su Active Directory local. Por ejemplo, si su dirección de correo electrónico es nancy@contoso.onmicrsoft.com, podría asignar a nancy@contoso.com, y ese valor se pasará a la puerta de enlace. Puede obtener más información acerca de cómo [asignar nombres de usuario](powerbi-gateway-enterprise-manage-ssas.md#map-user-names).
 
-## Synchronize an on-premises Active Directory with Azure Active Directory
+## Sincronizar un Active Directory local con Azure Active Directory
 
-You would want your local Active Directory accounts to match Azure Active Directory if you are going to be using Analysis Services live connections. As the UPN has to match between the accounts.
+¿Desea que las cuentas de Active Directory locales para que coincida con Azure Active Directory si va a usar conexiones directas de Analysis Services. Como el UPN debe coincidir entre las cuentas.
 
-The cloud services only know about accounts within Azure Active Directory. It doesn’t matter if you added an account in your local Active Directory, if it doesn’t exist in AAD, it cannot be used. There are different ways that you can match your local Active Directory accounts with Azure Active Directory.
+Los servicios de nube solo saber acerca de las cuentas de Active Directory de Azure. No importa si ha agregado una cuenta en su Active Directory local, si no existe en AAD, no se puede usar. Hay diferentes maneras que puede coincidir con las cuentas de Active Directory locales con Azure Active Directory.
 
-1.  You can add accounts manually to Azure Active Directory.
+1.  Puede agregar manualmente cuentas de Azure Active Directory.
 
-    You can create an account on the Azure portal, or within the Office 365 Admin Portal, and the account name matches the UPN of the local Active Directory account.
+    Puede crear una cuenta en el portal de Azure, o en el Portal de administración de Office 365, y el nombre de cuenta coincide con el UPN de la cuenta de Active Directory local.
 
-2.  You can use the <bpt id="p1">[</bpt>Azure AD Connect<ept id="p1">](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)</ept> tool to synchronize local accounts to your Azure Active Directory tenant.
+2.  Puede usar el [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) herramienta para sincronizar las cuentas locales para el inquilino de Azure Active Directory.
 
-    The Azure AD Connect tool provides options for directory and password synchronization. If you are not a tenant admin or a local domain administrator, you will need to contact your IT admin to get this configured.
+    La herramienta Azure AD Connect proporciona opciones para la sincronización de directorios y la contraseña. Si no son administradores de inquilinos o un administrador de dominio local, debe ponerse en contacto con el Administrador de TI para obtener este configurado.
 
-3.  You can configure Active Directory Federation Services (ADFS).
+3.  Puede configurar los servicios de federación de Active Directory (ADFS).
 
-    You can associate your ADFS server to your AAD tenant with the <bpt id="p1">[</bpt>Azure AD Connect<ept id="p1">](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)</ept> tool. ADFS makes use of the directory synchronization discussed above but allows for a single sign-on (SSO) experience. For example, if you are within your work network, when you to a cloud service, and go to sign in, you may not be prompted to enter a username or password. You will need to discuss with your IT Admin if this is available for your organization.
+    Puede asociar el servidor de ADFS en el inquilino AAD con el [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) herramienta. Experiencia hace ADFS, uso de la sincronización de directorios descritos anteriormente, pero permite un inicio de sesión único (SSO). Por ejemplo, si se encuentra en la red de trabajo, cuando un servicio de nube y vaya a iniciar sesión, no puede le pedirá que especifique un nombre de usuario o contraseña. Debe analizar con el Administrador de TI, si está disponible para su organización.
 
-Using Azure AD Connect ensures that the UPN will match between AAD and your local Active Directory.
+El uso de Azure AD Connect garantiza que coincida con el UPN entre AAD y su Active Directory local.
 
-> [AZURE.NOTE] Synchronizing accounts with the Azure AD Connect tool will create new accounts within your AAD tenant.
+> [AZURE.NOTE] Sincronización de cuentas con la herramienta Azure AD Connect creará cuentas nuevas dentro de su inquilino de ADD.
 
-## Now, this is where the gateway comes in
+## Ahora, aquí es donde entra en juego la puerta de enlace
 
-The gateway acts as a bridge between the cloud and your on-premises server. Data transfer between the cloud and the gateway is secured through <bpt id="p1">[</bpt>Azure Service Bus<ept id="p1">](https://azure.microsoft.com/documentation/services/service-bus/)</ept>. The Service Bus creates a secure channel between the cloud and your on-premises server through an outbound connection on the gateway.  There are no inbound connections that you need to open on your on-premises firewall.
+La puerta de enlace actúa como puente entre la nube y el servidor local. Transferencia de datos entre la nube y la puerta de enlace se protege mediante [Bus de servicio de Azure](https://azure.microsoft.com/documentation/services/service-bus/). El Bus de servicio, se crea un canal seguro entre la nube y el servidor local a través de una conexión saliente en la puerta de enlace.  No hay ninguna conexión entrante que se debe abrir en el firewall local.
 
-If you have an Analysis Services data source, you’ll need to install the gateway on a computer joined to the same forest/domain as your Analysis Services server.
+Si tiene un origen de datos de Analysis Services, debe instalar la puerta de enlace en un equipo unido al mismo bosque o dominio que el servidor de Analysis Services.
 
-The closer the gateway is to the server, the faster the connection will be. If you can get the gateway on the same server as the data source, that is best to avoid network latency between the gateway and the server.
+Cuanto más se acerque la puerta de enlace es el servidor, más rápida será la conexión. Si la puerta de enlace puede obtener en el mismo servidor que el origen de datos, que es mejor evitar la latencia de red entre la puerta de enlace y el servidor.
 
-## Where things can go wrong
+## Dónde pueden surgir problemas
 
-Sometimes installing the gateway fails. Or, maybe the gateway seems to install ok, but the service is still unable to work with it. In many cases, it’s something simple, like the password for the credentials the gateway uses to sign into the data source.
+No se puede instalar a veces la puerta de enlace. O tal vez parece bien instalar la puerta de enlace, pero el servicio sigue sin poder trabajar con él. En muchos casos, es algo simple, como la contraseña de las credenciales de la puerta de enlace que se utiliza para iniciar sesión en el origen de datos.
 
-In other cases, there might be issues with the type of e-mail address users sign in with, or Analysis Services’ inability to resolve an effective username. If you have multiple domains with trusts between them, and your gateway is in one and Analysis Services in another, this sometimes can cause some problems.
+En otros casos, puede haber problemas con el tipo de dirección de correo electrónico a los usuarios inician sesión o no Analysis Services resolver un nombre de usuario eficaz. Si tiene varios dominios con relaciones de confianza entre ellos y la puerta de enlace está en uno y Analysis Services en otro, a veces puede producir algunos problemas.
 
-Rather than go into troubleshooting gateway issues here, we’ve put a series of troubleshooting steps into another article; <bpt id="p1">[</bpt>Troubleshooting the On-premises Data Gateway<ept id="p1">](powerbi-gateway-onprem-tshoot.md)</ept>. Hopefully, you won’t have any problems. But if you do, understanding how all of this works and the troubleshooting article should help.
+En su lugar de acudir a la solución de problemas de la puerta de enlace aquí, hemos reunido una serie de pasos en el artículo de solución de problemas [Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md). Espero que no tenga problemas. Pero si lo hace, comprender cómo todo funciona y el artículo de solución de problemas debe ayudar a.
 
 <!-- Account and Port information -->
 [AZURE.INCLUDE [gateway-onprem-accounts-ports-more](../includes/gateway-onprem-accounts-ports-more.md)]
 
 ## Consulte también
 
-[Troubleshooting the On-premises Data Gateway](powerbi-gateway-onprem-tshoot.md)  
+[Solución de problemas de la puerta de enlace de datos local](powerbi-gateway-onprem-tshoot.md)  
 [Service Bus de Azure](https://azure.microsoft.com/documentation/services/service-bus/)  
 [Azure AD Connect](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

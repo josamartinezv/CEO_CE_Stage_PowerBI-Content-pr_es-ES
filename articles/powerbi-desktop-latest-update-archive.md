@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Previous monthly updates to Power BI Desktop"
-   description="Feature updates from previous releases of Power BI Desktop"
+   pageTitle="Actualizaciones mensuales anteriores a Power BI Desktop"
+   description="Actualizaciones de características de versiones anteriores de Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,828 +19,842 @@
    ms.workload="powerbi"
    ms.date="09/30/2016"
    ms.author="davidi"/>
-# Previous monthly updates to Power BI Desktop
+# Actualizaciones mensuales anteriores a Power BI Desktop
 
-This article describes previous updates to <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>. For the most current month's release, check out <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept> latest updates<ept id="p1">](powerbi-desktop-latest-update.md)</ept>.
+Este artículo describe las actualizaciones anteriores a **Power BI Desktop**. Para la versión del mes más actual, consulte [**Power BI Desktop** últimas actualizaciones](powerbi-desktop-latest-update.md).
 
-The following sections describe previous months' updates to <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>.
+Las secciones siguientes describen las actualizaciones de los meses anteriores a **Power BI Desktop**.
 
-## August 2016 Update (2.37.4464.321)
+## Actualización de agosto de 2016 (2.37.4464.321)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Siempre puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-August introduced a full harvest of new features for Power BI Desktop:
+Agosto introdujo una recolección completa de las nuevas características de Power BI Desktop:
 
--   <bpt id="p1">**</bpt>[video]<ept id="p1">**</ept> excerpts play in a new browser tab, when the feature is being discussed.
--   Some features have an <bpt id="p1">**</bpt>[article]<ept id="p1">**</ept> that provides more detail.
--   Most features are explained in the monthly update <bpt id="p1">**</bpt>[blog]<ept id="p1">**</ept> post.
--   Lastly, some features are self-explanatory and don't need and article or video.
+-   
+            **[vídeo]** extractos de reproducción en una nueva pestaña de explorador, cuando se trata la característica.
+-   Algunas características tienen una **[artículo]** que proporciona más detalles.
+-   Mayoría de las características se explica en la actualización mensual **[blog]** registrar.
+-   Por último, algunas características no necesitan explicación y no necesite y artículo o vídeo.
 
-You can also watch the <bpt id="p1">**</bpt>Latest Updates<ept id="p1">**</ept> video from the beginning, right inside this article, by clicking on the <bpt id="p2">**</bpt>play<ept id="p2">**</ept> icon on the video image found below the list of updates.
+También puede ver el **últimas actualizaciones** vídeo desde el principio, dentro de este artículo, haciendo clic en la **Reproducir** situado en la imagen de vídeo que se encuentra debajo de la lista de actualizaciones.
 
-The following updates are new to Power BI Desktop this month:
+Las actualizaciones siguientes son nuevas para Power BI Desktop este mes:
 
-### Report View:
+### Vista de informe:
 
--   Drill-down (or back up) on line charts <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=3m1s)</ept>
--   Continuous axis for the Date axis <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept>  <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=3m48s)</ept>
--   General availability of Inline Hierarchies <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-inline-hierarchy-labels.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/0VvG7Eqoke8?t=4m6s)</ept>
--   Predefined matrix styles (similar to table formatting in Excel) <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=4m59s)</ept>
--   Reorder fields, in charts and tooltips <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=6m23s)</ept>
--   Color formatting for KPI visuals <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=7m9s)</ept>
+-   Profundidad (o copia) en gráficos de líneas [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=3m1s)
+-   Eje continuo para el eje de fecha [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)[[vídeo]](https://youtu.be/0VvG7Eqoke8?t=3m48s)
+-   Disponibilidad general de las jerarquías de Inline [[artículo]](powerbi-desktop-inline-hierarchy-labels.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=4m6s)
+-   Los estilos de matriz (similares a la tabla de formato de Excel) predefinidos [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=4m59s)
+-   Reordenar los campos, en gráficos e información sobre herramientas [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=6m23s)
+-   Color de formato para los elementos visuales KPI [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=7m9s)
 
-### Analytics (New!)
+### Análisis (¡nuevo!)
 
--   The all-new <bpt id="p1">**</bpt>Analytics<ept id="p1">**</ept> pane <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-analytics-pane.md)</ept> <bpt id="p3">[</bpt>[blog]<ept id="p3">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p4">[</bpt>[video]<ept id="p4">](https://youtu.be/0VvG7Eqoke8?t=8m22s)</ept>
--   Dynamic reference lines <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=9m40s)</ept>
-
-
-### Data Connectors:
-
--   New data connectors:
-    -   Snowflake connector (Preview) <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept>
--   Improvements to existing connectors:
-    -   Impala connector - DirectQuery support <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-connect-impala.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept>
-    -   Web connector - Web page previews <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=12m28s)</ept>
-    -   General availability for the SAP Business Warehouse connector <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-sap-bw-connector.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept>
+-   El nuevo **análisis** panel [[artículo]](powerbi-desktop-analytics-pane.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=8m22s)
+-   Líneas de referencia dinámica [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=9m40s)
 
 
-### Query Editor improvements:
+### Conectores de datos:
 
--   Option to Merge/Append as New Query <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=14m24s)</ept>
+-   Nuevos conectores de datos:
+    -   Conector de copo de nieve (vista previa) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
+-   Mejoras en los conectores existentes:
+    -   Conector Impala: compatibilidad con DirectQuery [[artículo]](powerbi-desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
+    -   Conector de Web: página Web muestra una vista previa [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=12m28s)
+    -   Disponibilidad general para el conector de SAP Business Warehouse [[artículo]](powerbi-desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)
+
+
+### Mejoras del Editor de consultas:
+
+-   Opción de combinación o agregar como nueva consulta [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=14m24s)
 
 ### Otras mejoras
 
--   Auto-recover Desktop files <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/0VvG7Eqoke8?t=16m9s)</ept>
+-   Recuperar de forma automática archivos de escritorio [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-august-feature-summary/) [[vídeo]](https://youtu.be/0VvG7Eqoke8?t=16m9s)
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>NOTA: También puede [desproteger todos los orígenes de datos disponibles para Power BI Desktop](powerbi-desktop-data-sources.md); nuestra lista siempre está creciendo, por lo que consúltela con frecuencia.
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>, where you can get more detailed information about each of these new features (this is the same blog post references in the list above).
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/), donde puede obtener información más detallada sobre cada una de estas nuevas características (este es el mismo blog post referencias en la lista anterior).
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0VvG7Eqoke8" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>NOTA: También se interesa [Novedades en el servicio Power BI](powerbi-service-whats-new.md), y consulte también [Novedades en las aplicaciones móviles para Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 
-## July 2016 Update (2.37.4464.321)
+## Actualización de julio de 2016 (2.37.4464.321)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Siempre puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-July brought another great collection of new features and highly anticipated data connectors to Power BI Desktop. The following enhancements were new to Power BI Desktop in July:
+Julio pone otro gran cantidad de nuevas características y altamente previsto conectores de datos para Power BI Desktop. Las siguientes mejoras eran nuevas en Power BI Desktop en julio:
 
-### Report View:
+### Vista de informe:
 
--   Predefined table styles <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept> <bpt id="p2">[</bpt>[video]<ept id="p2">](https://youtu.be/g8ccfjffWmw?t=1m25s)</ept>
--   Shape Maps update - use custom maps <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-shape-map.md)</ept>  <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>  <bpt id="p3">[</bpt>[video]<ept id="p3">](https://youtu.be/g8ccfjffWmw?t=2m21s)</ept>
+-   Los estilos de tabla predefinidos [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/) [[vídeo]](https://youtu.be/g8ccfjffWmw?t=1m25s)
+-   Forma de actualizaciones de mapas: utilizar asignaciones personalizadas [[artículo]](powerbi-desktop-shape-map.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)[[vídeo]](https://youtu.be/g8ccfjffWmw?t=2m21s)
 
-### Data Connectors:
+### Conectores de datos:
 
--   New data connectors:
-    -   Amazon Redshift <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-connect-redshift.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
-    -   Impala <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-connect-impala.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
--   Improvements to existing connectors:
-    -   Web connector - support for specifying a connection timeout  <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
-    -   CSV and Text - support for fixed-width delimited files <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
-    -   Improvements and changes to the SAP Business Warehouse connector <bpt id="p1">[</bpt>[article]<ept id="p1">](powerbi-desktop-sap-bw-connector.md)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
-
-
-### Query Editor improvements:
-
--   Use <bpt id="p1">**</bpt>R<ept id="p1">**</ept> script in Query Editor <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-r-in-query-editor.md)</ept>  <bpt id="p3">[</bpt>[blog]<ept id="p3">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
--   Query parameter enhancements:
-    -   List query output as <bpt id="p1">*</bpt>allowed values<ept id="p1">*</ept> for a parameter <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
--   Overwrite existing user-defined functions <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>
+-   Nuevos conectores de datos:
+    -   Amazon Redshift [[artículo]](powerbi-desktop-connect-redshift.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   Impala [[artículo]](powerbi-desktop-connect-impala.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   Mejoras en los conectores existentes:
+    -   Conector de Web: compatibilidad para especificar un tiempo de espera de conexión  [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   Compatibilidad con CSV y texto: para archivos delimitados de ancho fijo [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+    -   Las mejoras y cambios en el conector de SAP Business Warehouse [[artículo]](powerbi-desktop-sap-bw-connector.md) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+### Mejoras del Editor de consultas:
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)</ept>, where you can get more detailed information about each of these features (this is the same blog post references in the list above).
+-   Utilice **R** secuencia de comandos en el Editor de consultas [[artículo]](powerbi-desktop-r-in-query-editor.md)[[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   Mejoras del parámetro de consulta:
+    -   Lista de resultados de la consulta como *valores permitidos* para un parámetro [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
+-   Sobrescribir las funciones definidas por el usuario existentes [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/)
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+
+>NOTA: También puede [desproteger todos los orígenes de datos disponibles para Power BI Desktop](powerbi-desktop-data-sources.md); nuestra lista siempre está creciendo, por lo que consúltela con frecuencia.
+
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-july-feature-summary/), donde puede obtener información más detallada sobre cada una de estas características (este es el mismo blog post referencias en la lista anterior).
+
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/g8ccfjffWmw" frameborder="0" allowfullscreen></iframe>
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>NOTA: También se interesa [Novedades en el servicio Power BI](powerbi-service-whats-new.md), y consulte también [Novedades en las aplicaciones móviles para Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
-## June 2016 Update (2.36.4434.362)
+## Actualización de junio de 2016 (2.36.4434.362)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Siempre puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-June provided a shining collection of interesting updates for Power BI Desktop.
+Junio proporciona un conjunto claro de actualizaciones interesantes para Power BI Desktop.
 
-### Report View:
+### Vista de informe:
 
--   New visual - Shape Maps <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=3m9s)</ept> <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-shape-map.md)</ept>
--   Searchable slicers <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=6m25s)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   Configurable line chart labels <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=7m21s)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   New sign-in entry points <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=2m30s)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
+-   Nuevo visual: asignaciones de formas [[vídeo]](https://youtu.be/sZsL2l6oS4A?t=3m9s) [[artículo]](powerbi-desktop-shape-map.md)
+-   Las segmentaciones de datos que se pueden buscar [[vídeo]](https://youtu.be/sZsL2l6oS4A?t=6m25s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   Las etiquetas de gráfico de línea configurable [[vídeo]](https://youtu.be/sZsL2l6oS4A?t=7m21s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   Nuevos puntos de entrada de inicio de sesión [[vídeo]](https://youtu.be/sZsL2l6oS4A?t=2m30s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 
-### Data Access:
+### Acceso a datos:
 
--   Row Level Security <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept> <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-rls.md)</ept>
+-   Seguridad de nivel de fila [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/) [[artículo]](powerbi-desktop-rls.md)
 
-### Data Connectors:
+### Conectores de datos:
 
--   New data connector: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
-    -   Azure Enterprise
--   Enhanced SAP BW and HANA connectors: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
-    -   Allow multi-select of values for Variables/Parameters
-    -   Support for Hierarchies in SAP BW
--   Enhanced OData connector - imports Open Type columns <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   Enhanced Access DB connector - button to <bpt id="p1">**</bpt>Select Related Tables<ept id="p1">**</ept> in <bpt id="p2">**</bpt>Navigator<ept id="p2">**</ept> dialog <bpt id="p3">[</bpt>[blog]<ept id="p3">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
+-   Nuevo conector de datos: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+    -   Empresa de Azure
+-   Mejorado conectores de SAP BW y HANA: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+    -   Permitir la selección múltiple de valores para las Variables o parámetros
+    -   Compatibilidad con las jerarquías en SAP BW
+-   Conector de OData mejorada: importa las columnas de tipo abierto [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   Mejorado de conector de base de datos Access - botón **Seleccionar tablas relacionadas** en **Navigator** diálogo [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
 
-### Data Connectors:
+### Conectores de datos:
 
--   Templates - option to <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> or <bpt id="p2">**</bpt>Edit<ept id="p2">**</ept> <bpt id="p3">[</bpt>[blog]<ept id="p3">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   Query parameter enhancements: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
-    -   Option to always allow Parameter specification
-    -   Create new parameter directly in context
--   Option to generate Step Names in English <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   Descriptions for Query Steps <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/sZsL2l6oS4A?t=8m14s)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
--   New Data Transformations: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>
-    -   Extract Week Day and Month Name from a DateTime column
-    -   Merging dates and Times into a DateTime column
-    -   Extract Time.Start/End of Hour/Minute/Second
+-   Opción plantillas - **carga** o **Editar** [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   Mejoras de parámetro de consulta: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+    -   Opción para permitir siempre la especificación de parámetros
+    -   Crear nuevo parámetro directamente en contexto
+-   Opción para generar nombres de paso en inglés [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   Descripciones de los pasos de consulta [[vídeo]](https://youtu.be/sZsL2l6oS4A?t=8m14s) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+-   Transformaciones de datos nuevo: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)
+    -   Extraer día de la semana y el nombre del mes de una columna de fecha y hora
+    -   La combinación de fechas y horas en una columna de fecha y hora
+    -   Extraer Time.Start/End de hora, minuto, segundo
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>NOTA: También puede [desproteger todos los orígenes de datos disponibles para Power BI Desktop](powerbi-desktop-data-sources.md); nuestra lista siempre está creciendo, por lo que consúltela con frecuencia.
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/)</ept>, where you can get more detailed information about each of these new features.
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-june-update/), donde puede obtener información más detallada sobre cada una de estas nuevas características.
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sZsL2l6oS4A" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>NOTA: También se interesa [Novedades en el servicio Power BI](powerbi-service-whats-new.md), y consulte también [Novedades en las aplicaciones móviles para Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 
 
-## May 2016 Update (2.35.4399.381)
+## Actualización de mayo de 2016 (2.35.4399.381)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Siempre puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-May brought another large collection of compelling updates for Power BI Desktop:
+Puede pone otro gran cantidad de atractivas actualizaciones para Power BI Desktop:
 
-### Report View:
+### Vista de informe:
 
--   Customizable tooltips <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/KnDs4amt9-c?t=172)</ept> <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-custom-tooltips.md)</ept>
--   Conditional formatting in tables <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/KnDs4amt9-c?t=313)</ept> <bpt id="p2">[</bpt>[article]<ept id="p2">](powerbi-desktop-conditional-table-formatting.md)</ept>
--   Publish to Pyramid server <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Scrolling loads more data in charts <bpt id="p1">[</bpt>[video]<ept id="p1">](https://youtu.be/KnDs4amt9-c?t=426)</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Keyboard nudging for visuals <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
+-   Puede personalizar información sobre herramientas [[vídeo]](https://youtu.be/KnDs4amt9-c?t=172) [[artículo]](powerbi-desktop-custom-tooltips.md)
+-   Formato condicional en tablas [[vídeo]](https://youtu.be/KnDs4amt9-c?t=313) [[artículo]](powerbi-desktop-conditional-table-formatting.md)
+-   Publicar en el servidor de pirámide [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Desplazamiento carga más datos en los gráficos [[vídeo]](https://youtu.be/KnDs4amt9-c?t=426) [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Teclado Empujar para elementos visuales [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
 ### Análisis
 
--   Quick Calcs - % of grand total <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
+-   Calcs rápido - % de total general [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
-### Data Connectivity:
+### Conectividad de datos:
 
--   New data connectors: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
+-   Nuevos conectores de datos: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
     -   Informix
     -   comScore Digital Analytix
     -   Troux
-    -   Planview Enterprise
--   Improved DB2 connector <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Text/CSV connector exposes editable settings in preview dialog <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Improved relational database connectors with Display Schema information
--   Data Source Settings enhancements <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Advanced <bpt id="p1">**</bpt>Filter Rows<ept id="p1">**</ept> dialog mode <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Inline Input controls for Function invocation within <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Query Parameters: <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
-    -   Ability to convert queries to parameters (and vice versa)
-    -   Support for URL parameterization and multi-part URLs in <bpt id="p1">**</bpt>Web<ept id="p1">**</ept> connector
-    -   Support for parameterization in <bpt id="p1">**</bpt>Conditional Columns<ept id="p1">**</ept> dialog
--   Ability to <bpt id="p1">**</bpt>Save As<ept id="p1">**</ept> a Power BI Template <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Support for reordering Query Steps using drag-and-drop <bpt id="p1">[</bpt>[blog]<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   Date picker support in <bpt id="p1">**</bpt>Conditional Columns<ept id="p1">**</ept> dialog input Date fields <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
--   New context menu entry to create new queries from the <bpt id="p1">**</bpt>Queries<ept id="p1">**</ept> pane <bpt id="p2">[</bpt>[blog]<ept id="p2">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>
+    -   ERoom PlanView Enterprise
+-   Mejorar el conector de DB2 [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Conector de texto o CSV expone la configuración modificable en el cuadro de diálogo de vista previa [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Mejorado conectores de base de datos relacional con información de esquema de la presentación
+-   Mejoras de la configuración del origen de datos [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Advanced **filtrar filas** modo de cuadro de diálogo [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Controles de entrada en línea de invocación de función dentro de **Editor de consultas** [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Parámetros de consulta: [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+    -   Capacidad para convertir las consultas a los parámetros (y viceversa)
+    -   Compatibilidad con parametrización de la dirección URL y direcciones URL de varias partes en **Web** conector
+    -   Compatibilidad para la parametrización en **columnas condicional** cuadro de diálogo
+-   Capacidad de **Guardar como** una plantilla de Power BI [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Soporte para reordenar los pasos de consulta mediante arrastrar y colocar [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Fecha de soporte técnico de selector de **columnas condicional** campos de fecha de entrada de cuadro de diálogo [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
+-   Nueva entrada de menú contextual para crear nuevas consultas desde el **consultas** panel [[blog]](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)
 
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>NOTA: También puede [desproteger todos los orígenes de datos disponibles para Power BI Desktop](powerbi-desktop-data-sources.md); nuestra lista siempre está creciendo, por lo que consúltela con frecuencia.
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/)</ept>, where you can get more detailed information about each of these new features.
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-may-update-feature-summary/), donde puede obtener información más detallada sobre cada una de estas nuevas características.
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KnDs4amt9-c" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>NOTA: También se interesa [Novedades en el servicio Power BI](powerbi-service-whats-new.md), y consulte también [Novedades en las aplicaciones móviles para Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
-## April 2016 Update (2.34.4372.322)
+## Actualización de abril de 2016 (2.34.4372.322)
 
-You can always <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Siempre puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-In April, we showered our great Power BI customers with another collection of compelling updates for Power BI Desktop. The following enhancements are new to Power BI Desktop this month:
+En abril, nos showered nuestros clientes de Power BI excelentes con otra colección de atractivas actualizaciones para Power BI Desktop. Las siguientes mejoras son nuevas en Power BI Desktop este mes:
 
-### Report View:
+### Vista de informe:
 
--   Additional styles on a table, matrix, and multi-row card
--   Trend lines on single visuals
--   New drill action – <bpt id="p1">**</bpt>See Records<ept id="p1">**</ept>
--   Map auto-zoom during drill/filter
--   In-line hierarchy labels for expanded view (Preview - <bpt id="p1">[</bpt>see the article<ept id="p1">](powerbi-desktop-inline-hierarchy-labels.md)</ept>)
+-   Estilos adicionales en la tabla, matriz y tarjeta de varias filas
+-   Líneas de tendencia en objetos visuales únicos
+-   Nueva acción de obtención de detalles: **Ver registros**
+-   Zoom automático se asignan durante la obtención de detalles y filtrado
+-   Las etiquetas de la jerarquía de vista expandida en línea (vista previa - [consulte el artículo](powerbi-desktop-inline-hierarchy-labels.md))
 
 ### Modelado de datos:
 
--   Modelling operations are no longer blocked while visuals are refreshing
--   Time Intelligence with built-in date hierarchy fields (Preview)
--   Data model synonyms
+-   Operaciones de modelado ya no se bloquean mientras se están actualizando elementos visuales
+-   Inteligencia de tiempo con los campos de la jerarquía de fecha integrados (vista previa)
+-   Sinónimos de modelo de datos
 
-### Data Connectivity:
+### Conectividad de datos:
 
 -   Parámetros de consulta
--   Power BI Template files
--   New <bpt id="p1">*</bpt>Online Services<ept id="p1">*</ept> category in Get Data dialog
--   New Connectors:
-    -   SharePoint Folder
-    -   Webtrends
+-   Archivos de plantilla de BI de energía
+-   Nuevo *Online Services* categoría en el cuadro de diálogo obtener datos
+-   Nuevos conectores:
+    -   Carpeta de SharePoint
+    -   WebTrends
     -   SparkPost
     -   tyGraph
--   Conditional Columns
--    
--   Column type indicator in Query Editor preview column headers
--   Reorder Queries and Query Groups using Drag &amp; Drop gestures
--   Query Management menu in the ribbon
+-   Columnas condicionales
+-   DirectQuery: especifique DirectQuery vs. Modo de importación en los cuadros de diálogo origen de datos
+-   Indicador de tipo de columna en los encabezados de columna de vista previa de Editor de consultas
+-   Reordenar las consultas y los grupos de consulta con los gestos de arrastrar y colocar
+-   Menú de administración de la consulta en la cinta de opciones
 
->NOTE: You can also <bpt id="p1">[</bpt>check out all the data sources available to Power BI Desktop<ept id="p1">](powerbi-desktop-data-sources.md)</ept>; our list is always growing, so check back often.
+>NOTA: También puede [desproteger todos los orígenes de datos disponibles para Power BI Desktop](powerbi-desktop-data-sources.md); nuestra lista siempre está creciendo, por lo que consúltela con frecuencia.
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-april-update-feature-summary/)</ept>, where you can get more detailed information about each of these new features.
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-april-update-feature-summary/), donde puede obtener información más detallada sobre cada una de estas nuevas características.
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7IFZTYJR3Gk" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>NOTA: También se interesa [Novedades en el servicio Power BI](powerbi-service-whats-new.md), y consulte también [Novedades en las aplicaciones móviles para Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 
-## March 2016 Update (2.33.4337.281)
+## Actualización de marzo de 2016 (2.33.4337.281)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Ahora puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-March brings all sorts of renewal and freshness, including another round of Power BI Desktop additions. The following enhancements are new to Power BI Desktop this month:
+Marzo aporta a todo tipo de actualización, incluida otra ronda de adiciones de Power BI Desktop y renovación. Las siguientes mejoras son nuevas en Power BI Desktop este mes:
 
-### Report View:
+### Vista de informe:
 
--   Publish reports to a Group Space in the Power BI service
--   Reports with KPI trends now respect <bpt id="p1">*</bpt>Do Not Summarize<ept id="p1">*</ept> model settings from SSAS MD
--   Data Point warnings are now non-intrusive
+-   Publicar informes en un espacio de grupo en el servicio Power BI
+-   Informes con respeto de ahora las tendencias KPI *no resumir* configuración de SSAS MD del modelo
+-   Advertencias de punto de datos están ahora no intrusiva
 
 
 ### Modelado de datos:
 
--   You can now change the data type of a column when using DirectQuery mode
--   Ability to assume Referential Integrity on relationships (for those imported, and created) in DirectQuery
--   DirectQuery for Oracle and Teradata is now part of Power BI Desktop (no long a preview feature)
+-   Ahora puede cambiar el tipo de datos de una columna cuando se usa el modo DirectQuery
+-   Capacidad para asumir la integridad referencial en relaciones (para aquellos importado y creado) en DirectQuery
+-   DirectQuery para Oracle y Teradata ahora forma parte de Power BI Desktop (no una característica de vista previa)
 
-### Data Connectivity:
+### Conectividad de datos:
 
--   A new SAP BW Connector (preview feature)
--   Support for Command Timeout in the user interface (UI)
--   There's a setting available to disable Privacy Level prompts at the machine level (including a registry key)
--   Query Group Management enhancements:
-    -   Expand/Collapse All
-    -   Retain Query Group expansion state
--   New Transformations:
-    -   Remove Blanks using the Column Filter menu
-    -   Convert Duration values to Years
-    -   Keep Duplicates
--   Support for whitespace and line feeds in Query Editor preview
--   Include hints for <bpt id="p1">*</bpt>sample input values<ept id="p1">*</ept> in the <bpt id="p2">**</bpt>Change Type with Locale<ept id="p2">**</ept> dialog
--   Enhancements to the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept> window:
-    -   Add schema information to navigation hierarchy for ODBC sources
-    -   Ability to disable preview from <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept>
-    -   Technical name support
--   Load: Auto-step to disambiguate conflicting column names (case-insensitive comparison)
--   You can now rename queries directly from the <bpt id="p1">**</bpt>Queries<ept id="p1">**</ept> pane
+-   Un nuevo conector de BW de SAP (característica de vista previa)
+-   Compatibilidad con tiempo de espera de comando en la interfaz de usuario (UI)
+-   Hay una opción disponible para deshabilitar los mensajes de nivel de privacidad en el nivel de equipo (incluida una clave del registro)
+-   Mejoras de administración del grupo de consultas:
+    -   Expandir o contraer todo
+    -   Estado de expansión del grupo de consultas conservar
+-   Nuevas transformaciones:
+    -   Quitar los espacios en blanco mediante el menú de filtro de columna
+    -   Convertir valores de duración a años
+    -   Conservar duplicados
+-   Compatibilidad con fuentes de línea y de espacio en blanco en vista previa del Editor de consultas
+-   Incluir sugerencias de *valores de entrada de ejemplo* en el **el tipo de cambio con la configuración regional** cuadro de diálogo
+-   Mejoras en la **Navigator** ventana:
+    -   Agregar información de esquema para la jerarquía de navegación para los orígenes ODBC
+    -   Capacidad de deshabilitar la vista previa de **Navigator**
+    -   Soporte técnico de nombre
+-   Carga: Auto-fase para eliminar la ambigüedad de los nombres de columna en conflicto (comparación entre mayúsculas y minúsculas)
+-   Ahora puede cambiar el nombre de las consultas directamente desde el **consultas** panel
 
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-desktop-march-update-feature-summary/)</ept>, where you can get more detailed information about each of these new features.
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](https://powerbi.microsoft.com/blog/power-bi-desktop-march-update-feature-summary/), donde puede obtener información más detallada sobre cada una de estas nuevas características.
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eAayYDF9QzY" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>NOTA: También se interesa [Novedades en el servicio Power BI](powerbi-service-whats-new.md), y consulte también [Novedades en las aplicaciones móviles para Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 
 
 
-## February 2016 Update (2.32.4307.362)
+## Actualización de febrero de 2016 (2.32.4307.362)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Ahora puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-We're leaping ahead with more updates this month! February brings 29 days to the month (it's a leap year), and with it, 29 improvements to this monthly update of Power BI Desktop. The following enhancements are new to Power BI Desktop this month:
+¡Estamos saltando adelante con más actualizaciones de este mes! Febrero aporta 29 días al mes (es un año bisiesto) y con él, 29 mejoras en esta actualización mensual de Power BI Desktop. Las siguientes mejoras son nuevas en Power BI Desktop este mes:
 
-### Report View:
+### Vista de informe:
 
--   See Data Behind a Visual (including <bpt id="p1">*</bpt>Export Data to CSV<ept id="p1">*</ept>)
--   Map improvements – plot map with latitude/longitude only
--   KPI consumption release support (including navigation hierarchy support and KPI trend for SSAS MD)
--   SSAS Exploration Mode: Support for <bpt id="p1">**</bpt>Display<ept id="p1">**</ept> folders in the <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane
--   Ribbon layout improvements: Contextual ribbon tab for <bpt id="p1">**</bpt>Report Tools<ept id="p1">**</ept>
--   New KPI visual
--   Get reports opened to the same page that was visible when they were saved
--   <bpt id="p1">**</bpt>Edit Query<ept id="p1">**</ept> option in table context menu in the Fields pane (<bpt id="p2">**</bpt>Report<ept id="p2">**</ept><ph id="ph1"> &amp; </ph><bpt id="p3">**</bpt>Data<ept id="p3">**</ept> views)
--   <bpt id="p1">**</bpt>Duplicate Page<ept id="p1">**</ept> from the ribbon
+-   Consulte datos detrás de un Visual (incluidos *datos Exportar a CSV*)
+-   Mejoras de mapa: mapa de trazado con sólo latitud/longitud
+-   Compatibilidad con la versión KPI consumo (incluidos el soporte de la jerarquía de navegación y la tendencia del KPI para SSAS MD)
+-   Modo de exploración de SSAS: Compatibilidad **Mostrar** carpetas en el **campos** panel
+-   Mejoras de diseño de la cinta de opciones: ficha Contextual de la cinta de opciones de **Herramientas de informes**
+-   Nuevo KPI visual
+-   Obtener informes abiertos a la misma página que se mostraba cuando se hayan guardado
+-   
+            **Editar consulta** opción de menú contextual de tabla en el panel campos (**informe** & **datos** vistas)
+-   
+            **Duplicar página** desde la cinta de opciones
 
 
 ### Modelado de datos:
 
--   Ability to define hierarchies
--   Performance Improvement: Table &amp; Column rename optimizations
+-   Capacidad de definir jerarquías
+-   Mejora del rendimiento: Cambiar el nombre optimizaciones de tabla y columna
 
-### Data Connectivity:
+### Conectividad de datos:
 
--   <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> support for Oracle and Teradata databases
--   <bpt id="p1">**</bpt>DirectQuery<ept id="p1">**</ept> – support for creating Calculated Columns
--   Support for publishing Analysis Services Live reports
--   JSON File connector
--   SQL Sentry connector
--   Support for jagged CSV files
--   Exchange Connector – OAuth support
--   SharePoint List Connector – URL validation
--   Database Connectors – ability to disable Navigation Columns in Query previews (Performance optimization)
--   Web Connector – fine-grained scoping of Credentials
--   <bpt id="p1">**</bpt>Enter Data<ept id="p1">**</ept> dialog UX enhancements
--   SAP HANA – Support for single sign-on with Windows Authentication (Power BI Desktop only)
--   SAP HANA – Support for <bpt id="p1">**</bpt>Field<ept id="p1">**</ept> labels
--   Alphabetical sort of columns in <bpt id="p1">**</bpt>Choose Columns<ept id="p1">**</ept> builder
--   Improved performance of renaming/removing/reordering columns
--   Virtualized Preview in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>
--   Visual indicator for unloaded queries in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>
--   1-click Percentage transform
+-   
+            **DirectQuery** compatibilidad con bases de datos de Oracle y Teradata
+-   
+            **DirectQuery** – admiten para crear columnas calculadas
+-   Compatibilidad para publicar informes en vivo de servicios de análisis
+-   Conector de archivos JSON
+-   Conector SQL Sentry
+-   Compatibilidad con los archivos CSV escalonados
+-   Conector de Exchange: compatibilidad con OAuth
+-   Conector de la lista de SharePoint: validación de la URL
+-   Conectores de la base de datos: capacidad de deshabilitar las columnas de la navegación en las vistas previas de consulta (optimización del rendimiento)
+-   Web Connector: ámbito específico de credenciales
+-   
+            **Escriba datos** mejoras de experiencia de Usuario del cuadro de diálogo
+-   SAP HANA: compatibilidad de inicio de sesión único con la autenticación de Windows (sólo para Power BI Desktop)
+-   SAP HANA: compatibilidad para **campo** etiquetas
+-   La ordenación alfabética de las columnas de **Elegir columnas** builder
+-   Rendimiento mejorado de cambio de nombre, quitar y reordenar columnas
+-   Virtualizar la vista previa en **Editor de consultas**
+-   Indicador visual para las consultas de descargadas de **Editor de consultas**
+-   transformación de 1 y haga clic en porcentaje
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](https://powerbi.microsoft.com/blog/power-bi-update-lots-of-new-authoring-features-and-a-new-power-bi-desktop-update/)</ept>, where you can get more detailed information about each of these new features.
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](https://powerbi.microsoft.com/blog/power-bi-update-lots-of-new-authoring-features-and-a-new-power-bi-desktop-update/), donde puede obtener información más detallada sobre cada una de estas nuevas características.
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J5gZ65Wexh4" frameborder="0" allowfullscreen></iframe>
 
 
->NOTE: You might also be interested in learning <bpt id="p1">[</bpt>what's new in the Power BI service<ept id="p1">](powerbi-service-whats-new.md)</ept>, and also check out <bpt id="p2">[</bpt>what's new in the mobile apps for Power BI<ept id="p2">](powerbi-mobile-whats-new-in-the-mobile-apps.md)</ept>.
+>NOTA: También se interesa [Novedades en el servicio Power BI](powerbi-service-whats-new.md), y consulte también [Novedades en las aplicaciones móviles para Power BI](powerbi-mobile-whats-new-in-the-mobile-apps.md).
 
 
-## January 2016 Update (2.31.4280.361)
+## Actualización de enero de 2016 (2.31.4280.361)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Ahora puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-Ring in the new year with another collection of improvements and enhancements to Power BI Desktop. The following enhancements are new to Power BI Desktop this month:
+Anillo en el nuevo año con otro conjunto de mejoras y a Power BI Desktop. Las siguientes mejoras son nuevas en Power BI Desktop este mes:
 
-### Report View:
+### Vista de informe:
 
--   Add borders to a visual
--   Add an image background to a visual
-
-
-### Data Connectivity:
-
--   DirectQuery: you can now create measures when using DirectQuery mode
--   You can now refresh data for individual tables from the Field List (in <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view and <bpt id="p2">**</bpt>Data<ept id="p2">**</ept> view), rather than (and in addition to) just being able to <bpt id="p3">**</bpt>refresh all<ept id="p3">**</ept> from the ribbon
--   General Availability (GA) for SQL Server Analysis Services Multidimensional models Exploration mode (no longer a preview feature)
--   Enhancements to hierarchy support
--   General Availability (GA) for the SAP HANA connector (no longer a preview feature)
--   Ability to append multiple tables within a single Append operation
--   Option to disable data previews to download in the background (performance optimization)
-
-### Other Improvements:
-
--   Support for Internet Explorer 9 (IE9) browser
--   Performance improvements for report rendering, cross-highlighting, and otherwise
--   Improvements to R integration in Power BI Desktop
+-   Agregar bordes a un objeto visual
+-   Agregar un fondo de imagen a un objeto visual
 
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx)</ept>, where you can get more detailed information about each of these new features.
+### Conectividad de datos:
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+-   DirectQuery: ahora puede crear medidas cuando se usa el modo DirectQuery
+-   Ahora puede actualizar los datos de tablas individuales de la lista de campos (en **informe** vista y **datos** vista), en lugar de (y además) simplemente poder **Actualizar todo** desde la cinta de opciones
+-   Disponibilidad general (GA) para SQL Server Analysis Services Multidimensional modela el modo de exploración (ya no es una característica de vista previa)
+-   Mejoras de compatibilidad de la jerarquía
+-   Disponibilidad general (GA) para el conector de SAP HANA (ya no es una característica de vista previa)
+-   Capacidad de agregar varias tablas en una sola operación de anexar
+-   Opción para deshabilitar las vistas previas de datos para descargar en segundo plano (optimización del rendimiento)
+
+### Otras mejoras:
+
+-   Compatibilidad del explorador Internet Explorer 9 (IE9)
+-   Mejoras de rendimiento para representar el informe, realzado cruzado y, en caso contrario
+-   Mejoras en la integración de R en Power BI Desktop
+
+
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](http://blogs.msdn.com/b/powerbi/archive/2016/01/28/power-bi-updates-this-week-new-report-authoring-capabilities.aspx), donde puede obtener información más detallada sobre cada una de estas nuevas características.
+
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ek8dwi33-24" frameborder="0" allowfullscreen></iframe>
 
 
-## December 2015 Update (2.30.4246.181)
+## Actualización de diciembre de 2015 (2.30.4246.181)
 
-December is a month for giving, and the Power BI team is following suit with more updates, features, and more functionality in this month's Power BI Desktop update. The following enhancements are new to Power BI Desktop this month:
+Diciembre es un mes para realizar y el equipo de Power BI está haciendo lo mismo con las actualizaciones más características y más funcionalidad de actualización de Power BI Desktop de este mes. Las siguientes mejoras son nuevas en Power BI Desktop este mes:
 
-### Report Authoring:
+### Creación de informes:
 
--   Formatting Pane and Ribbon:
-    - Format data labels per category services
-    - Change the number of decimal places shown in visuals
-    - Change text size in visuals
-    - Ability to layout visuals accurately: alignment, distribute, size, position
-    - Set styles across multiple visuals through <bpt id="p1">**</bpt>Format Painter<ept id="p1">**</ept>
-    - Optimized <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> ribbon layout
-
-
--   Enhancements to Visualizations:
-    - Visual cue for sort state in <bpt id="p1">**</bpt>Table<ept id="p1">**</ept> visual
-    - New visual: <bpt id="p1">**</bpt>Stacked Area<ept id="p1">**</ept> chart
-    - Smart tooltips for <bpt id="p1">**</bpt>Area<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Line<ept id="p2">**</ept> charts on hover
-    - Ability to create reference line/region for a <bpt id="p1">**</bpt>Cartesian<ept id="p1">**</ept> visual
-    - Improved data labels for <bpt id="p1">**</bpt>Pie<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Scatter<ept id="p2">**</ept> charts
+-   Panel de formato y la cinta de opciones:
+    - Formato de etiquetas de datos por los servicios de categoría
+    - Cambiar el número de posiciones decimales que se muestran en elementos visuales
+    - Cambiar el tamaño del texto en elementos visuales
+    - Capacidad de elementos visuales de diseño con precisión: alineación, distribuir, tamaño, posición
+    - Establecer estilos a través de varios objetos visuales mediante **Copiar formato**
+    - Optimizado **Inicio** Diseño de cinta
 
 
--   [R Visuals integration in Power BI Desktop (Preview feature)](powerbi-desktop-r-visuals.md)
+-   Mejoras de visualizaciones:
+    - Indicación visual para el estado de ordenación en **tabla** visual
+    - Nuevo visual: **área apilada** gráfico
+    - Inteligente de la información sobre herramientas para **área** y **línea** gráficos al mantener el mouse
+    - Capacidad para crear la línea de referencia o región para una **cartesiano** visual
+    - Mejorar las etiquetas de datos **circular** y **de dispersión** gráficos
 
 
--   Suggested table-to-table relationships when trying to create visuals involving two tables which are not related
+-   [Integración de elementos visuales de R en Power BI Desktop (característica de vista previa)](powerbi-desktop-r-visuals.md)
+
+
+-   Relaciones de tabla en la tabla sugeridas al intentar crear elementos visuales que implica dos tablas que no están relacionadas
 
 
 ### Modelado de datos:
 
--   Relationships View
-    - Zooming slider
-    - Fit Zoom to screen
-    - Reset layout
-    - Ability to zoom in CTRL+(mouse selection range)
+-   Vista de relaciones
+    - Control deslizante de zoom
+    - Zoom con ajuste de pantalla
+    - Restablecer diseño
+    - Capacidad de Acercar CTRL + (intervalo de selección del mouse)
 
-### Data Connectivity:
+### Conectividad de datos:
 
--   [SSAS Multidimensional support - hierarchies support](powerbi-desktop-ssas-multidimensional.md)
--   Stripe Connector
--   Smartsheet Connector
--   <bpt id="p1">**</bpt>Enter Data<ept id="p1">**</ept>: paste or enter data to create a table
--   DirectQuery improvements: support for all data types of T-SQL and SAP HANA, resulting in performance improvements
--   ODBC Connector: support for selecting User/System DSNs
--   CSV Connector: ability to specify Column Delimiter in the Source dialog
+-   [Soporte Multidimensional de SSAS - soporte de jerarquías](powerbi-desktop-ssas-multidimensional.md)
+-   Conector de bandas
+-   Conector de Smartsheet
+-   
+            **Escriba datos**: pegar o escribir datos para crear una tabla
+-   Mejoras de DirectQuery: compatibilidad para todos los tipos de datos de T-SQL y SAP HANA, lo que las mejoras de rendimiento
+-   Conector ODBC: compatibilidad para la selección de DSN de usuario o sistema
+-   Conector CSV: capacidad para especificar el delimitador de columna en el cuadro de diálogo de origen
 
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx)</ept>, where you can get more detailed information about each of these new features.
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](http://blogs.msdn.com/b/powerbi/archive/2015/12/16/more-power-bi-feature-updates-power-bi-desktop-december-update-and-new-power-bi-service-features.aspx), donde puede obtener información más detallada sobre cada una de estas nuevas características.
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/iW5VH8iIyfE" frameborder="0" allowfullscreen></iframe>
 
 
 
-## November 2015 Update (2.29.4217.221)
+## Actualización de noviembre de 2015 (2.29.4217.221)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Ahora puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-Another month, another big collection of new features and improvements for Power BI Desktop. Improvements range from new data connectors to new modeling capabilities. Here are 26 new features and improvements:
+Otro mes, otro gran cantidad de nuevas características y mejoras para Power BI Desktop. Mejoras entre nuevos conectores de datos y nuevas capacidades de modelado. Presentamos 26 nuevas características y mejoras:
 
-### Report Authoring:
+### Creación de informes:
 
--   Play Axis for Scatter Chart
--   Horizontal Slicers
--   Slicer Selection Behaviors (single vs. multi-select)
--   Control Z-order
--   Background Colors for Slides
--   Interactions between Visuals – Subview (tile by)
--   Duplicate Pages
--   Support for KPIs and Images in Tables, Matrices and Cards
--   Better Tooltips on Area Charts &amp; Line Charts
--   Ability to change Text size in Cards &amp; Tables/Matrix
--   Improved tooltips and labels in Field Well and Formatting panes
--   Ability to see Categories with no data
--   Improved Default Sort behaviors for visuals
--   Ability to control Axis Scale display units
--   Visuals Refresh Optimizations when applying basic modeling operations  
+-   Eje de reproducción para el gráfico de dispersión
+-   Segmentaciones de datos horizontales
+-   Comportamientos de selección de segmentación de datos (único frente a selección múltiple)
+-   Orden Z de control
+-   Colores de fondo de las diapositivas
+-   Interacciones entre los elementos visuales: vista secundaria (mosaico por)
+-   Páginas duplicadas
+-   Compatibilidad con imágenes en tablas, Matrices y tarjetas y KPI
+-   Más información sobre herramientas en los gráficos de áreas y gráficos de líneas
+-   Capacidad de cambiar el tamaño del texto en tablas, matrices y de tarjetas
+-   Mejorada información sobre herramientas y las etiquetas en los paneles de campo bien y formato
+-   Capacidad de ver categorías sin datos
+-   Comportamientos de ordenación predeterminada mejorados para elementos visuales
+-   Mostrar las unidades de capacidad para controlar la escala del eje
+-   Elementos visuales actualización optimizaciones al aplicar las operaciones de modelado básicas  
 
 ### Modelado de datos:
 
--   Basic Automatic Date Features
+-   Funciones de fecha automática básica
 
-### Data Connectivity:
+### Conectividad de datos:
 
--   [SSAS Multidimensional support](powerbi-desktop-ssas-multidimensional.md)
+-   [Compatibilidad con SSAS Multidimensional](powerbi-desktop-ssas-multidimensional.md)
 -   [SAP Hana](powerbi-desktop-sap-hana.md)
 -   [Script de R](powerbi-desktop-r-scripts.md)
--   DirectQuery for SQL Server, Azure SQL Database and Azure SQL Data Warehouse
--   Azure Data Lake
+-   DirectQuery para SQL Server, base de datos SQL Azure y almacenamiento de datos SQL Azure
+-   Lago de datos de Azure
 -   Marketo
 
-### Data Transformations:
+### Transformaciones de datos:
 
--   Improved Function Invocation experience
--    
--   Add Prefix/Suffix to a Text column
+-   Mejor experiencia de invocación de función
+-   Opción para establecer las credenciales en vs del servidor. Nivel de base de datos
+-   Agregar prefijo/sufijo a una columna de texto
 
-### Other Improvements:
+### Otras mejoras:
 
--   New Documentation Website, now also including localized content
+-   Nuevo sitio Web de documentación, ahora también incluyen contenido localizado
 
-Want more information about these updates? Take a look at the <bpt id="p1">[</bpt>blog post<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx)</ept>, where you can get more detailed information about each of these new features.
+¿Desea obtener más información acerca de estas actualizaciones? Eche un vistazo a la [de blog](http://blogs.msdn.com/b/powerbi/archive/2015/11/20/announcing-the-power-bi-desktop-november-update.aspx), donde puede obtener información más detallada sobre cada una de estas nuevas características.
 
-The following video describes and shows each of these updates. You can also see the video from the blog post.
+El siguiente vídeo se describe y muestra cada una de estas actualizaciones. También puede ver el vídeo de la entrada de blog.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/ErHvpkyQjSg" frameborder="0" allowfullscreen></iframe>
 
 
 
-## October 2015 Update (2.28.4190.122)
+## Actualización de octubre de 2015 (2.28.4190.122)
 
-October brings another large collection of updates to Power BI Desktop:
+Octubre lleva otro conjuntos grandes de actualizaciones a Power BI Desktop:
 
-### Report Authoring:
--   Custom Visualizations
--   Insert Visual from the Ribbon
--   Improved Default Sorting
--   Tooltips &amp; Data Labels on Funnel Charts
--   Slicer Improvements:
-    - Ability to Sort items
-    - Ability to change Font Size
--   Additional Formatting Options for Gauges
--   Data Point Label layout improvements
--   KPI Consumption (Preview Feature)
+### Creación de informes:
+-   Visualizaciones personalizadas
+-   Insertar Visual de la cinta de opciones
+-   Ordenación predeterminada mejorada
+-   Información sobre herramientas y las etiquetas de datos en los gráficos de embudo
+-   Mejoras de segmentación de datos:
+    - Capacidad de ordenar elementos
+    - Capacidad de cambiar el tamaño de fuente
+-   Opciones de formato adicionales para los medidores
+-   Mejoras de diseño de etiqueta de punto de datos
+-   Consumo de KPI (característica de vista previa)
 
 ### Modelado de datos:
 
--   Semi-Select support for DAX formulas in Data view
+-   Seleccione parcial compatibilidad con fórmulas DAX en la vista de datos
 
-### Data Connectivity:
--   Azure Document DB connector
--   Mailchimp connector
--   DirectQuery for SQL Server and Azure SQL Database (Preview Feature)
+### Conectividad de datos:
+-   Conector de base de datos de documentos de Azure
+-   Conector de Mailchimp
+-   DirectQuery para SQL Server y base de datos SQL Azure (vista previa)
 
 
-### Data Transformations:
--   Filter by “not earliest/latest date”
--   Filter by “is in previous N minutes/hours/seconds”
--   Copy/Paste Queries between Power BI Desktop and Excel
--   Support for Special Characters in Split Column
--   Refresh Previews in Merge Queries dialog
--   Monospaced font for Query Editor Preview
+### Transformaciones de datos:
+-   Filtrar por "no primera y última fecha"
+-   Filtrar por "está en la anterior N horas/minutos/segundos"
+-   Copiar y pegar las consultas entre Power BI Desktop y Excel
+-   Compatibilidad con caracteres especiales en la división de columna
+-   Actualizar vistas previas en el cuadro de diálogo de combinación de las consultas
+-   Fuente monoespaciada para la vista previa del Editor de consultas
 
-### Other Improvements:
--    
--   Option to enable Preview features
--   In-Product Ratings experience
+### Otras mejoras:
+-   Actualizar tabla (vs. Todos) de los informes y vistas de datos
+-   Opción para habilitar las características de vista previa
+-   Experiencia de las clasificaciones de producto
 
-You can view a video of all these updates, too.
+Puede ver un vídeo de todas estas actualizaciones demasiado.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jbocn1ZNkxM" frameborder="0" allowfullscreen></iframe>
 
 
-For more information, <bpt id="p1">[</bpt>check out the blog announcement<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx)</ept> that describes more details about each update.
+Para obtener más información, [desproteger el anuncio de blog](http://blogs.msdn.com/b/powerbi/archive/2015/10/20/custom-visualizations-support-and-22-other-features-in-the-power-bi-desktop-october-update.aspx) que describe la información más detallada acerca de cada actualización.
 
 
 
-## September 2015 Update (2.27.4163.351)
+## Actualización de septiembre de 2015 (2.27.4163.351)
 
-The following massive collection of 44 features has been added to this update:
+Esta actualización se ha agregado la siguiente colección masiva de 44 características:
 
-### Report Authoring
+### Creación de informes
 
-- Report-level filters
-- Drill Up/Down for column and scatter charts
-- New Page Size and Page View options
-- Support for inserting Shapes in the Report canvas
-- Fields pane improvements
-    - Search Box to make it easier to find fields by name
-    - “Expand/Collapse All” to improve navigation when there are multiple tables in the Fields pane
-    - Field well cardinality support, drag-replace for buckets with 1 item
-    - Additional Data Labels formatting options
-    - Chart Cartesian Axis Improvements:
-        - X-Axis label direction (horizontal / diagonal)
-        - Support for Logarithmic &amp; Linear scales for values in Y-axis
-        - Display Text for hyperlinks in text boxes
-        - Improvements to existing visualizations: Table, Matrix, Slicer, Scatter Chart, Single Cards, Combo Charts and Gauges
-        - Support for displaying Color Saturation values in tooltips
-        - Ability to resize images and apply additional formatting options
+- Filtros de informe
+- Obtención de detalles ascendentes y descendentes para los gráficos de dispersión y de columnas
+- Nuevas opciones de tamaño de página y vista de página
+- Compatibilidad para la inserción de formas en el lienzo de informes
+- Mejoras de panel de campos
+    - Cuadro de búsqueda para que resulten más fáciles de encontrar campos por nombre
+    - "Expandir o contraer todos" para mejorar la navegación cuando hay varias tablas en el panel de campos
+    - También admite cardinalidad, a continuación, arrastre el reemplazo de depósitos con 1 artículo
+    - Opciones de formato de las etiquetas de datos adicionales
+    - Mejoras de eje cartesiano de gráfico:
+        - Dirección de etiqueta del eje x (horizontal / diagonal)
+        - Soporte técnico para las escalas de valores de eje y logarítmico y lineal
+        - Mostrar texto en hipervínculos de cuadros de texto
+        - Mejoras en las visualizaciones existentes: tabla, matriz, segmentación de datos, gráfico de dispersión, tarjetas único, combinado gráficos y medidores
+        - Compatibilidad para mostrar los valores de saturación del Color de información sobre herramientas
+        - Capacidad para cambiar el tamaño de las imágenes y aplicar opciones de formato adicionales
 
 
-### Data Modeling
+### Modelado de datos
 
-- Calculated Tables.
-- Relationships view:
-    - Create relationships via drag/drop between two tables in the diagram.
-    - Delete relationships in relationship view by selecting and hitting the Delete key.
-    - Rename/delete tables and columns
-- Data view:
-    - Copy Table contents to clipboard.
-- Field Summarization:
-    - Support for additional operations in the Fields pane: median, standard deviation, and variance
-    - Default summarization: Users can now customize the default summarization operation for any given field in their model
+- Tablas calculadas.
+- Vista de relaciones:
+    - Crear relaciones mediante arrastrar y colocar entre dos tablas en el diagrama.
+    - Eliminar las relaciones en la vista de la relación seleccionando y presionando la tecla SUPR.
+    - Cambiar nombre o eliminar tablas y columnas
+- Vista de datos:
+    - Copie el contenido de la tabla en el Portapapeles.
+- Resumen de campo:
+    - Soporte para operaciones adicionales en el panel campos: mediana, desviación estándar y varianza
+    - Resumen de forma predeterminada: los usuarios ahora pueden personalizar la operación de resumen predeterminado de un campo determinado de su modelo
 
-### Data Connectivity
+### Conectividad de datos
 
-- Support for on-premises Spark distributions
-- Support for SharePoint lists from non-English sites
-- Exchange connector - Enhanced support, now allowing connections to multiple mailboxes
-- Excel Workbook Connector – Automatic Column Type detection when importing .XLS files
-- “Select Related Tables” option when connecting to database sources
-- Enhanced Active Directory connector credentials, allowing alternate Windows Credentials
-- Improved Function Invocation experience when loading functions from a data source (such as a database)
-- “Import Excel Workbook Contents” feature released last month now also supports external connections to Analysis Services tabular models
-- New option to “Delete All” entries in the Data Source Settings dialog
-- Option to “Enable Relationship Import during Refresh operations”
+- Soporte para las distribuciones de Spark local
+- Compatibilidad con las listas de SharePoint de los sitios no están en inglés
+- Conector de Exchange: compatibilidad mejorada, ahora permite conexiones a varios buzones
+- Conector de libro: la detección automática de tipos de columna al importar de Excel. Archivos XLS
+- Opción "Seleccionar tablas relacionadas" al conectarse a orígenes de base de datos
+- Credenciales de conector de Active Directory mejoradas, permitir credenciales alternativas de Windows
+- Mejor experiencia de invocación de función al cargar las funciones desde un origen de datos (por ejemplo, una base de datos)
+- Característica "Importar el contenido del libro de Excel" lanzado el mes pasado ahora también es compatible con conexiones externas a modelos tabulares de Analysis Services
+- Nueva opción "Eliminar todas" las entradas en el cuadro de diálogo de configuración de origen de datos
+- Opción "Enable importar relaciones durante las operaciones de actualización"
 
-### Data Transformations and Query Editor Improvements
+### Transformaciones de datos y mejoras del Editor de consultas
 
-- Copy to clipboard (available for cells/columns/tables)
-- Filter date columns by earliest/latest date (dynamic filter)
-- Extract min/max date/time value from a column
-- Replace Values - Provision for specifying special characters
-- “Detect Column Types” option to trigger type detection on demand
-- “Refresh All Previews” to refresh all Query Editor previews with a single click
-- Performance Improvements:
-    - Choose Columns dialog: Faster user experience for dealing with wide tables
-    - Auto-filter &amp; Expand/Aggregate popups: Faster for large number of values/fields
+- Copiar en Portapapeles (disponible para las celdas, las columnas o tablas)
+- Filtrar columnas de fecha por la fecha más antigua y más reciente (filtro dinámico)
+- Extraer el valor de fecha y hora mínimo y máximo de una columna
+- Reemplace los valores - provisión para especificar caracteres especiales
+- Opción "Detectar tipos de columna" para activar la detección de tipo a petición
+- "Actualizar todas las vistas previas" para actualizar todas las vistas previas del Editor de consultas con un solo clic
+- Mejoras de rendimiento:
+    - Elija el cuadro de diálogo columnas: experiencia de usuario más rápido para tratar con tablas anchas
+    - Autofiltro & Expandir/agregar menús emergentes: más rápido para gran número de valores o campos
 
-The following video covers these features in more detail.
+El vídeo siguiente trata estas características más detalladamente.
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/Jm44dLXdarQ" frameborder="0" allowfullscreen></iframe>
 
-For more information about this update, <bpt id="p1">[</bpt>check out the blog announcement<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx)</ept> that describes more details about each update.
+Para obtener más información acerca de esta actualización [desproteger el anuncio de blog](http://blogs.msdn.com/b/powerbi/archive/2015/09/23/44-new-features-in-the-power-bi-desktop-september-update.aspx) que describe la información más detallada acerca de cada actualización.
 
-## August 2015 Update (2.26.4128.403)
-
-
-The following features have been added to this update:
-
-**Overall Improvements:**
-
--   Import Excel Power BI artifacts (Data Model, Queries, Power View) into a new Power BI Desktop file
-
--   HDInsight Spark connector
-
--   Azure SQL Data Warehouse connector
-
--   Support for custom MDX/DAQ queries when importing data from SSAS
-
--   Live Analysis Services Connections: ability to change the database from <bpt id="p1">**</bpt>Edit Queries<ept id="p1">**</ept> dialog
-
-**Navigator dialog improvements:**
-
--   Resizable Navigator dialog
-
--   Ability to multi-select items in Navigator (CTRL+click, SHIFT+click, etc)
-
-**Query Editor improvements:**
-
--   Query Group creation/deletion improvements (multi-select, etc.)
-
--   Ability to Split Query (i.e. refactor common base steps into a new query)
-
--   Query Icons to reflect type of query in Queries navigator pane
-
-**Data Modeling improvements:**
-
--   Resizing of columns in Data View
-
--   Moving Measures from one table to another
+## Actualización de agosto de 2015 (2.26.4128.403)
 
 
-Take a look at the following video for more details about this update:
+Esta actualización se han agregado las siguientes características:
+
+**Mejoras generales:**
+
+-   Importar los artefactos de Excel Power BI (modelo de datos, consultas, Power View) en un nuevo archivo de Power BI Desktop
+
+-   Conector de HDInsight Spark
+
+-   Conector de almacenamiento de datos de SQL Azure
+
+-   Compatibilidad con consultas MDX/DAQ personalizadas al importar datos de SSAS
+
+-   Conexiones de Analysis Services en directo: capacidad para cambiar la base de datos **Editar consultas** cuadro de diálogo
+
+**Mejoras de cuadro de diálogo de explorador:**
+
+-   Cuadro de diálogo puede cambiar el tamaño de navegador
+
+-   Capacidad de seleccionar varios elementos en el navegador (CTRL + clic, MAYÚS + haga clic en, etc.)
+
+**Mejoras del Editor de consultas:**
+
+-   Consultar las mejoras de creación o eliminación de grupo (selección múltiple, etc.).
+
+-   Capacidad de consulta de división (es decir, refactor base pasos comunes en una consulta nueva)
+
+-   Iconos de consulta para reflejar el tipo de consulta en el panel de navegación de las consultas
+
+**Mejoras de modelado de datos:**
+
+-   Cambiar el tamaño de las columnas en la vista de datos
+
+-   Mover las medidas de una tabla a otra
+
+
+Observe el siguiente vídeo para obtener más detalles acerca de esta actualización:
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/2v7LUD7MJaw" frameborder="0" allowfullscreen></iframe>
 
-## July 2015 Update (2.25.4095.554)
+## Actualización de julio de 2015 (2.25.4095.554)
 
-The following features have been added in this update:
+En esta actualización se han agregado las siguientes características:
 
--   <bpt id="p1">**</bpt>New Data Connectors<ept id="p1">**</ept>: appFigures, Quickbooks Online, Zendesk, Github, Twilio and SweetIQ.
+-   
+            **Nuevos conectores de datos**: appFigures, Quickbooks Online, Zendesk, Github, Twilio y SweetIQ.
 
--   <bpt id="p1">**</bpt>New Transformations<ept id="p1">**</ept>: Extract First/Last/Range of characters from a Text Column; Option to specify Join Type in the Merge Queries dialog; Ability to customize Quote Style in Split Column by Delimiter dialog.
+-   
+            **Nuevas transformaciones**: extraer primero/último intervalo de caracteres de una columna de texto; Opción para especificar el tipo de combinación en el cuadro de diálogo Combinar consultas; Capacidad para personalizar el estilo de oferta en la división de columna en el cuadro de diálogo de delimitador.
 
--   <bpt id="p1">**</bpt>Report Authoring Improvements<ept id="p1">**</ept>: New visualizations (Area Chart, Waterfall, Donut &amp; Matrix); New visual formatting and customization options (labels, titles, background, legend, colors, etc.); Insert Textbox and Picture in your report; Support for hyperlinks in reports and report tables; Undo/Redo actions.
+-   
+            **Mejoras de creación de informes**: nuevas visualizaciones (gráfico de áreas, Waterfall, anillos y matriz); Nuevo formato y personalización de opciones de visual (etiquetas, títulos, fondo, leyenda, colores, etc.); Insertar cuadro de texto e imagen en el informe; Compatibilidad con hipervínculos en los informes y las tablas de informe. Deshacer o rehacer acciones.
 
--   <bpt id="p1">**</bpt>Direct Report Exploration<ept id="p1">**</ept> over Analysis Services Tabular Models.
+-   
+            **Exploración de informe directo** sobre los modelos tabulares de Analysis Services.
 
--   <bpt id="p1">**</bpt>Data Modeling:<ept id="p1">**</ept> New Data View &amp; Relationships views.
+-   
+            **Modelado de datos:** nuevas vistas de vista de datos y las relaciones.
 
--   Publish reports to PowerBI.com, directly from Power BI Desktop.
+-   Publicar informes en PowerBI.com, directamente desde Power BI Desktop.
 
--   Support for opening Recent Files in Start Page and "File -<ph id="ph1">\&gt;</ph> Open" menu.
+-   Soporte para abrir archivos recientes en la página de inicio y "archivo -\> abierto" menú.
 
--   Support for Exchange UPN Credentials in the Exchange connector.﻿
+-   Compatibilidad con las credenciales de Exchange UPN en el conector de Exchange.﻿
 
-In addition to all these new features, we’re also making <bpt id="p1">**</bpt>Power BI Desktop available in 42 different languages.<ept id="p1">**</ept> Get the full list of languages and install the one you want from <bpt id="p1">[</bpt>our official download page<ept id="p1">](https://www.microsoft.com/download/details.aspx?id=45331)</ept>.
+Además de todas estas características nuevas, también estamos haciendo **Power BI Desktop disponible en 42 idiomas.** Obtener la lista completa de idiomas e instalar uno desee de [nuestra página de descarga oficial](https://www.microsoft.com/download/details.aspx?id=45331).
 
-Take a look at the following video for more details:
+Observe el siguiente vídeo para obtener más detalles:
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/JCaCcdMnsyM" frameborder="0" allowfullscreen></iframe>
 
-## May 2015 Update (2.23.4036.161)
+## Actualización de mayo de 2015 (2.23.4036.161)
 
-The following features have been added in this update:
+En esta actualización se han agregado las siguientes características:
 
-**Modeling Features**
+**Características de modelado**
 
--   Calculated Columns
+-   Columnas calculadas
 
--   Data Categorization
+-   Categorización de datos
 
--   Sort By Another Column
+-   Ordenar por otra columna
 
--   Improved DAX Formula Editor: Function Help and Prototype
+-   Ayuda de la función y el prototipo de Editor de fórmulas DAX mejorada:
 
-**Get Data &amp; Query**
+**Obtener datos & consulta**
 
--   New <bpt id="p1">**</bpt>ODBC Tables<ept id="p1">**</ept> connector (Beta)
+-   Nuevo **tablas ODBC** conector (Beta)
 
--   Improved to the <bpt id="p1">**</bpt>Excel Workbook<ept id="p1">**</ept> connector: better column type inference and faster load for data previews
+-   La mejora de la **libro de Excel** conector: mejor inferencia de tipos de columna y una carga más rápida con vistas previas de datos
 
--   New Text Column Filters - <bpt id="p1">**</bpt>Does Not Begin With<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Does Not End With<ept id="p2">**</ept>
+-   Nuevos filtros de columna de texto - **no comienza con** y **no termina con**
 
--   Enhanced Privacy Levels dialog﻿
+-   Cuadro de diálogo de niveles de privacidad mejorada﻿
 
-Take a look at the following video for details:
+Observe el siguiente vídeo para obtener más información:
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/LS0zMfup1pQ" frameborder="0" allowfullscreen></iframe>
 
 
-## April 2015 Update (2.22.4009.122)
+## Actualización de abril de 2015 (2.22.4009.122)
 
-You can now <bpt id="p1">[</bpt>download the latest version of Power BI Desktop<ept id="p1">](https://powerbi.microsoft.com/desktop)</ept>.
+Ahora puede [Descargar la versión más reciente de Power BI Desktop](https://powerbi.microsoft.com/desktop).
 
-The following features have been added in this update:
+En esta actualización se han agregado las siguientes características:
 
-**Modeling Features**
+**Características de modelado**
 
--   Initial support for DAX Measures
+-   Soporte inicial para las medidas de DAX
 
--   New DAX functions
+-   Nuevas funciones de DAX
 
--   Data Types &amp; Formatting options in Report view
+-   Opciones de formato y los tipos de datos en la vista de informe
 
--   Rename &amp; Delete fields in Report view
+-   Cambiar el nombre y eliminar campos en la vista de informe
 
-**Get Data &amp; Query**
+**Obtener datos & consulta**
 
--   OData V4 support
+-   Compatibilidad con OData V4
 
--   Support for Custom ADFS Authentication Services
+-   Compatibilidad con los servicios de autenticación de ADFS personalizado
 
--   Updated Facebook connector due to Facebook API changes
+-   Actualizada del conector de Facebook debido a cambios en la API de Facebook
 
--   Unified Options dialog
+-   Cuadro de diálogo Opciones unificada
 
--   Option to disable Native Database query prompts
+-   Solicita la opción para deshabilitar la consulta de base de datos nativa
 
--   Support for <bpt id="p1">**</bpt>Fixed Decimal Number<ept id="p1">**</ept> type
+-   Soporte para **número Decimal fijo** tipo
 
--   Alternate Windows Credentials
+-   Credenciales de Windows alternativa
 
--   Remove Blank Rows
+-   Quitar filas en blanco
 
--   Median Operation available for <bpt id="p1">**</bpt>Group By<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Aggregate Column<ept id="p2">**</ept>
+-   Disponible para una operación de mediana **Group By** y **columna agregada**
 
--   Convert <bpt id="p1">**</bpt>DateTimeZone<ept id="p1">**</ept> value to <bpt id="p2">**</bpt>Local Time<ept id="p2">**</ept>
+-   Convertir **DateTimeZone** valor **hora Local**
 
 **Mejoras de rendimiento**
 
--   Faster load of medium &amp; large datasets by about 20%
+-   Carga rápida de medianas y grandes conjuntos de datos en un 20%
 
--   Improved time to open an existing PBIX file by about 50%
+-   Menor tiempo para abrir un archivo PBIX existente en un 50%
 
-You can watch the following video for details: 
+Puede ver el siguiente vídeo para obtener más información: 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FuL8agVKrcg" frameborder="0" allowfullscreen></iframe>
 
-## March 2015 Update (2.21.3975.261)
+## Actualización de marzo de 2015 (2.21.3975.261)
 
-The following features have been added in this update:
+En esta actualización se han agregado las siguientes características:
 
--   <bpt id="p1">**</bpt>Google Analytics<ept id="p1">**</ept> connector
+-   
+            **Google Analytics** conector
 
--   Additional operators for <bpt id="p1">**</bpt>date filtering in Query view<ept id="p1">**</ept>
+-   Operadores adicionales para **filtrado de fechas en la vista de consulta**
 
--   **Automatic Model Relationship Detection**
+-   **Detección automática del modelo de relaciones**
 
--   Enhanced <bpt id="p1">**</bpt>Add Relationship<ept id="p1">**</ept> dialog
+-   Mejorado **Agregar relación** cuadro de diálogo
 
--   <bpt id="p1">**</bpt>Report Pages Re-ordering<ept id="p1">**</ept> (drag &amp; drop)
+-   
+            **Reorganización de páginas del informe** (arrastrar y colocar)
 
--   ~40-50% <bpt id="p1">**</bpt>Performance<ept id="p1">**</ept> <bpt id="p2">**</bpt>Improvement<ept id="p2">**</ept> filling database tables without filters/transforms
+-   ~ 40-50% **rendimiento** **mejora** rellenar las tablas de base de datos sin filtros y transformaciones
 
--   Lots of bug fixes
+-   Muchas correcciones de errores
 
-You can watch the following video for more details:
+Puede ver el siguiente vídeo para obtener más detalles:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xJTcGro08TI" frameborder="0" allowfullscreen></iframe>
 
-## February 2015 Update (2.20.3945.102)
+## Actualización de febrero de 2015 (2.20.3945.102)
 
-The following features have been added or improved in this update:
+Las siguientes características se han agregado o mejorado en esta actualización:
 
 - Mejoras en el rendimiento
-- Dynamics CRM Online connector
-    > *Note: Currently, only URLs within the crm.microsoft.com domain are accepted by this dialog. This does not include non-production tenants. We’ll fix this issue in our March update. The temporary workaround is to connect to this feed using “From OData”.*
-- Navigator Dialog improvements
-    -   Better preview experience for multi-dimensional sources (Analysis Services and SAP BusinessObjects)
-    -   Show Selected Items option
-    -   Improved Search capabilities in the Navigator tree
--   New Transformations
-    -   Age and Subtract operations for Date/Time columns
-    -   Aggregate Columns: Option to disable new columns’ prefix
--   Field List improvements
-    -   Expand/Collapse tables
-    -   Hide/Unhide fields
-    -   Optimized layout (spacing, margins, and fonts)
--   Report Pages Navigation - Keyboarding support
--   Lots of bug fixes
+- Conector de Dynamics CRM Online
+    > *Nota: Actualmente, solo las direcciones URL dentro del dominio crm.microsoft.com aceptan este cuadro de diálogo. Esto no incluye a los inquilinos no sean de producción. Este problema se corregirá en la actualización de marzo. La solución temporal consiste en conectar a esta fuente con "De OData".*
+- Mejoras del cuadro de diálogo de explorador
+    -   Previsualizar mejor experiencia para los orígenes multidimensionales (Analysis Services y SAP BusinessObjects)
+    -   Mostrar los elementos seleccionados, opción
+    -   Capacidades mejoradas de búsqueda en el árbol del explorador
+-   Nuevas transformaciones
+    -   Operaciones de edad y resta para las columnas de fecha y hora
+    -   Columnas agregadas: Opción para deshabilitar el prefijo de las nuevas columnas
+-   Mejoras de la lista de campos
+    -   Expandir o contraer tablas
+    -   Ocultar/Mostrar campos
+    -   Diseño optimizado (espaciado, márgenes y fuentes)
+-   Navegación de páginas de informe: mucho soporte
+-   Muchas correcciones de errores
 
 <iframe width="500" height="281" src="https://www.youtube.com/embed/-bZFeS1S1wU" frameborder="0" allowfullscreen></iframe>
 
-**January 2015 Update (2.19.3923.101)**
+**Actualización de enero de 2015 (2.19.3923.101)**
 
-This month we've made a number of improvements and bug fixes under the covers. Please try out the new version and continue to send us feedback if you find any issues!
+Este mes hemos realizado una serie de mejoras y correcciones de errores en segundo plano. Pruebe la nueva versión y enviarnos comentarios si encuentra problemas!

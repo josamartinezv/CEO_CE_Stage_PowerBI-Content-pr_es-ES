@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Edit tile details and add widgets"
-   description="Change the title and link behavior, and add widgets"
+   pageTitle="Editar detalles de mosaico y agregar widgets"
+   description="Cambiar el comportamiento de título y vínculo y agregar widgets"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,30 +23,30 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Edit Tile Details
+# Editar detalles de mosaico
 
-Once you've built a dashboard, you can edit its *<bpt id="p1">*</bpt>Tiles<ept id="p1">*</ept> in the Power BI service to make a few formatting changes.
+Una vez que ha creado un panel, puede editar su **mosaicos* en Power BI que unos formato servicio cambia.
 
-To make changes to a tile, hover over the tile and select the ellipses (three dots) to show a collection of icons that allow you to make changes to the tile.
+Para realizar cambios en un mosaico, mantenga el mouse sobre el icono y seleccione el botón de puntos suspensivos (tres puntos) para mostrar una colección de iconos que le permiten realizar cambios en el mosaico.
 
 ![](media/powerbi-learning-4-4d-change-tile-details/4-4d_1.png)
 
-Select the <bpt id="p1">**</bpt>pen<ept id="p1">**</ept> icon to open the <bpt id="p2">**</bpt>Tile Details<ept id="p2">**</ept> pane. From here you can change the tile's <bpt id="p1">**</bpt>Title<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Subtitle<ept id="p2">**</ept>, include its last refresh time and date, and other details such as creating a custom link.
+Seleccione el **lápiz** icono para abrir la **Detalles del mosaico** panel. Desde aquí puede cambiar el icono **título**, **subtítulo**, incluyen su última hora de actualización y de fecha y otros detalles como la creación de un vínculo personalizado.
 
 ![](media/powerbi-learning-4-4d-change-tile-details/4-4d_2.png)
 
-By default, when you click on a dashboard tile you are taken to the report from which it originated. To change this behavior, use the <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> field in the <bpt id="p2">**</bpt>Tile Details<ept id="p2">**</ept> pane. One popular use of this feature is to take users to the organization homepage when clicking on a logo image.
+De forma predeterminada, al hacer clic en un icono de panel pasará al informe de origen. Para cambiar este comportamiento, use la **conjunto de vínculos personalizados** campo la **Detalles del mosaico** panel. Un uso popular de esta característica es tomar los usuarios a la página principal de la organización, al hacer clic en una imagen de logotipo.
 
-## Add Widgets to your dashboard
+## Agregar Widgets al panel
 
-You can also add Widgets to your dashboard. A <bpt id="p1">**</bpt>widget<ept id="p1">**</ept> is a special dashboard tile that, instead of containing a visualization, contains other items such as an image, an online video, a text box, or rich web content.
+También puede agregar Widgets a su panel. Un **widget** es un icono de panel especial que, en lugar de contener una visualización contiene otros elementos, como una imagen, un vídeo en línea, un cuadro de texto o contenido web enriquecidas.
 
-When you select the Add Widget link in the upper-right corner of a Dashboard, the <bpt id="p1">**</bpt>Add a widget<ept id="p1">**</ept> dialog appears.
+Cuando se selecciona el vínculo Agregar Widget en la esquina superior derecha de un panel, el **Agregar un widget** aparece el cuadro de diálogo.
 
 ![](media/powerbi-learning-4-4d-change-tile-details/4-4d_3.png)
 
-When you add a text box, for example, a <bpt id="p1">**</bpt>Tile details<ept id="p1">**</ept> pane appears on the right side, where you can edit details similar what is available when editing the details of any tile. But with widgets, there's also a section to define or modify the widget content, such as a rich text editor for a text box.
+Al agregar un cuadro de texto, por ejemplo, una **icono detalles** panel aparece en el lado derecho, donde puede editar detalles similares lo que está disponible al editar los detalles de un mosaico. Pero con widgets, también hay una sección para definir o modificar el contenido de widget, como un editor de texto enriquecido para un cuadro de texto.
 
 ![](media/powerbi-learning-4-4d-change-tile-details/4-4d_4.png)
 
-With widgets and the ability to edit tile details, you can customize your dashboard and make it look just how you want it to be.
+Con widgets y la capacidad de editar los detalles del mosaico, puede personalizar el panel y darle un aspecto simplemente cómo desea que sea.

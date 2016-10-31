@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tutorial: Get started with Power BI Q&amp;A"
-   description="Tutorial: get started with Power BI Q&amp;A with the Retail Analysis sample"
+   pageTitle="Tutorial: Introducción a Power BI Q & A"
+   description="Tutorial: Introducción a Power BI Q & A con el ejemplo de análisis de venta directa"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,57 +19,57 @@
    ms.workload="powerbi"
    ms.date="10/05/2016"
    ms.author="mihart"/>
-# Tutorial: use Power BI Q&amp;A with the Retail Analysis sample
+# Tutorial: usar Power BI Q & A con el ejemplo de análisis de venta directa
 
-Sometimes the fastest way to get an answer from your data is to ask a question using natural language.  In this tutorial we'll look at 2 different ways of creating the same visualization: building it in a report and asking a question with Q&amp;A.  
+A veces, la forma más rápida de obtener una respuesta de los datos es formular una pregunta con lenguaje natural.  En este tutorial analizaremos 2 distintas formas de crear la misma visualización: creación de un informe y formular una pregunta con preguntas y respuestas.  
 
-## Method 1: using the report editor
-1. From your Power BI workspace, select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Samples<ept id="p2">**</ept> <ph id="ph2">\&gt;</ph> <bpt id="p3">**</bpt>Retail Analysis Sample<ept id="p3">**</ept><ph id="ph3"> &gt; </ph><bpt id="p4">**</bpt>Connect<ept id="p4">**</ept>.
+## Método 1: usar el editor de informes
+1. En el área de trabajo de Power BI, seleccione **obtener datos** \> **ejemplos** \> **ejemplo de análisis de venta directa** > **Conectar**.
 
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_1.png)
 
-2. The dashboard contains an area chart tile for "Last Year Sales and This Year Sales."  Select this tile. 
+2. El panel contiene un título de gráfico de área para "Ventas del último año y las ventas de este año."  Seleccione este icono. 
 
-    -   If this tile was created with Q&amp;A, selecting the tile will open Q&amp;A. 
+    -   Si este icono se creó con preguntas y respuestas, seleccione el icono abrirá preguntas y respuestas. 
 
-    -   But this tile was created in a report, so the report opens to the page that contains this visualization.
+    -   Pero este icono se creó en un informe, por lo que el informe se abre en la página que contiene esta visualización.
 
-3. Open the report in Editing View by selecting <bpt id="p1">**</bpt>Edit Report<ept id="p1">**</ept>.
+3. Abra el informe en la vista de edición seleccionando **Editar informe**.
 
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_2.png)
 
-4. Select the area chart and review the settings in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane.  The report creator built this chart by selecting these 3 values (<bpt id="p1">**</bpt>Time &gt; FiscalMonth<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Sales &gt; This Year Sales<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Sales &gt;Last Year Sales &gt;Value<ept id="p3">**</ept>) and organizing them in the <bpt id="p4">**</bpt>Axis<ept id="p4">**</ept> and <bpt id="p5">**</bpt>Values<ept id="p5">**</ept> wells.
+4. Seleccione el gráfico de áreas y revise la configuración de la **campos** panel.  El creador del informe genera este gráfico seleccionando estos 3 valores (**tiempo > FiscalMonth**, **ventas > Ventas de este año**, **ventas > ventas del último año > valor**) y organizarlos en el **eje** y **valores** wells.
 
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/gnaTutorial_3.png)
 
-## Method 2: using Q&amp;A
-How would we go about creating this same line chart using Q&amp;A?
+## Método 2: uso de preguntas y respuestas
+¿Cómo podría hacer acerca de cómo crear este mismo gráfico de líneas con preguntas y respuestas?
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/power-bi-questionbox.png)
 
-1.  Navigate back to your the Retail Analysis Sample dashboard.
+1.  Desplácese atrás a la está el panel de ejemplo de análisis de venta directa.
 
-2.  Using natural language, type something like this into the question box:
+2.  Con lenguaje natural, escriba algo parecido a esto en el cuadro de pregunta:
 
-    **what were this year sales and last year sales by month as area chart**
+    **¿Cuáles fueron las ventas de este año y el año pasado por mes como gráfico de áreas**
 
-    As you type your question, Q&amp;A picks the best visualization to display your answer; and the visualization changes dynamically as you modify the question. Also, Q&amp;A helps you format your question with suggestions, auto-complete, and spelling corrections.
+    A medida que escribe su pregunta, preguntas y selecciona la mejor visualización para mostrar la respuesta; y la visualización cambia dinámicamente a medida que modifica la pregunta. Además, preguntas y respuestas le ayuda a dar formato a su pregunta con sugerencias, Autocompletar y las correcciones ortográficas.
 
-    When you finish typing your question, the result is the exact same chart that we saw in the report.  But creating it this way was much faster!
+    Cuando termine de escribir la pregunta, el resultado es el mismo gráfico que hemos visto en el informe.  Pero la creación de esta manera era mucho más rápida!
 
     ![](media/powerbi-service-tutorial-introduction-to-q-and-a/powerbi-qna-areachart.png)
 
-4. Similar to working with reports, within Q&amp;A you have access to the Visualizations, Filters and Fields panes.  Open these panes to further explore and modify your visual.
+4. Es similar a trabajar con informes, dentro de preguntas y respuestas tendrá acceso a los paneles de visualizaciones, filtros y campos.  Abrir estos paneles para explorar aún más y modificar el objeto visual.
 
-3.  To pin the chart to your dashboard, select the pin icon <ph id="ph1">![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png)</ph>.
+3.  Para anclar el gráfico al panel, seleccione el icono de pin ![](media/powerbi-service-tutorial-introduction-to-q-and-a/pinNoOutline.png).
 
 ## Consulte también
 
-[What type of questions can I ask Q&amp;A?](powerbi-service-q-and-a.md)
+[¿Qué tipo de preguntas que pueda hacer preguntas y respuestas?](powerbi-service-q-and-a.md)
 
-[Q&amp;A in Power BI](powerbi-service-q-and-a.md)
+[Preguntas y respuestas en Power BI](powerbi-service-q-and-a.md)
 
-[Make your data work well with Q&amp;A in Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+[Hacer que los datos funcionen bien con preguntas y respuestas en Power BI](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
-[preparing a workbook for Q&amp;A](powerbi-service-make-your-data-work-well-with-q-and-a.md)
+[preparar un libro para preguntas y respuestas](powerbi-service-make-your-data-work-well-with-q-and-a.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

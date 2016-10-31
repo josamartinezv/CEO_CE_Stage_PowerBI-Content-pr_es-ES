@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Alternate Email Address for Power BI"
-   description="Alternate Email Address for Power BI"
+   pageTitle="Dirección de correo electrónico alternativa para Power BI"
+   description="Dirección de correo electrónico alternativa para Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,24 +20,24 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Alternate Email Address for Power BI
+# Dirección de correo electrónico alternativa para Power BI
 
-By default, the email address you used to sign up to Power BI with is used to send you updates about activity in Power BI.  For example, when someone sends you a sharing invitation it will go to this address.
+De forma predeterminada, la dirección de correo electrónico que usó para suscribirse a Power BI con se utiliza para enviar actualizaciones acerca de la actividad en Power BI.  Por ejemplo, cuando alguien le envía una invitación para compartir, vaya a esta dirección.
 
-Sometimes you may want these emails delivered to an alternate email address rather than the one you originally used to sign up for Power BI with.
+A veces es conveniente estos correos electrónicos entregados a una dirección de correo electrónico alternativo en lugar de a la que se utilizó originalmente para suscribirse a Power BI con.
 
-Here's how to do that:
+Aquí se muestra cómo hacerlo:
 
-1.  Go to your <bpt id="p1">[</bpt>Office 365 personal info page<ept id="p1">](https://portal.office.com/account/#personalinfo)</ept>.  If you are prompted to, sign in with the email address and password you use for Power BI.
+1.  Vaya a la [página de información personal de Office 365](https://portal.office.com/account/#personalinfo).  Si se le pide a, inicie sesión con la dirección de correo electrónico y contraseña que utiliza para Power BI.
 
-2.  Slick the edit link in the Contact details section.  
+2.  Haga el vínculo de edición en la sección de detalles de contacto.  
 
-    > [AZURE.NOTE] If you do not see an Edit link, this means your email address is managed by your Office 365 administrator and you will need to contact them to update your email address.
+    > [AZURE.NOTE] Si no ve un vínculo de edición, esto significa que la dirección de correo electrónico administrado por el Administrador de Office 365 y deberá ponerse en contacto con ellos para actualizar la dirección de correo electrónico.
 
     ![](media/powerbi-admin-alternate-email-address-for-power-bi/contact-details.png)
 
-3.  In the Alternate email field, enter the email address you would like Power BI updates to be sent to.
+3.  En el campo de correo electrónico alternativa, escriba la dirección de correo electrónico desea que las actualizaciones de Power BI para enviarse a.
 
-> [AZURE.NOTE] Changing this setting will not affect what email address is used to send service updates, newsletters, and other promotional communications.  Those will always be sent to the email address you originally used when registering for Power BI.
+> [AZURE.NOTE] Cambiar esta configuración no afectará a la dirección de correo electrónico se usa para enviar las actualizaciones del servicio, boletines y otras comunicaciones promocionales.  Los que siempre se enviará a la dirección de correo electrónico que utilizó originalmente al registrarse en Power BI.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

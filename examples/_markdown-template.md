@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Page title that displays in the browser tab and search results"
-   description="Article description that will be displayed on landing pages and in most search results"
+   pageTitle="Título de la página que se muestra en el explorador ficha y resultados de búsqueda"
+   description="Descripción del artículo que se mostrarán en las páginas de inicio y en la mayoría de los resultados de búsqueda"
    services="service-name"
    documentationCenter="dev-center-name"
    authors="GitHub-alias-of-only-one-author"
@@ -16,40 +16,41 @@
    ms.date="mm/dd/yyyy"
    ms.author="Your MSFT alias or your full email address;semicolon separates two or more"/>
 
-# Markdown template (article Heading 1 or H1): Heading at the top of the article
+# Plantilla de descuento (artículo título 1 o H1): título en la parte superior del artículo
 
-To copy the markdown from this template, copy the article in your local repo, or click the Raw button in the GitHub UI and copy the markdown.
+Para copiar el descuento de esta plantilla, copie el artículo en el repositorio local, o haga clic en el botón sin procesar en la UI de GitHub y copie el descuento.
 
-  ![Alt text; do not leave blank. Describe image.][8]
+  ![Texto alternativo; No deje en blanco. Describir la imagen.][8]
 
-Intro paragraph: Lorem dolor amet, adipiscing elit. Phasellus interdum nulla risus, lacinia porta nisl imperdiet sed. Mauris dolor mauris, tempus sed lacinia nec, euismod non felis. Nunc semper porta ultrices. Maecenas neque nulla, condimentum vitae ipsum sit amet, dignissim aliquet nisi.
+Párrafo introductorio: Lorem dolor amet, adipiscing elit. Phasellus interdum nulla risus, lacinia PuertoA Suspendisse imperdiet archivo SED. Mauris dolor mauris, tempus sed lacinia nec, euismod no felis. NUNC semper portal ultrices. Maecenas neque nulla, condimentum vitae ipsum sit amet, aliquet dignissim nisi.
 
-## Heading 2 (H2)
+## Título 2 (H2)
 
-Aenean sit amet leo nec purus placerat fermentum ac gravida odio. Aenean tellus lectus, faucibus in rhoncus in, faucibus sed urna.  volutpat mi id purus ultrices iaculis nec non neque. <bpt id="p1">[</bpt>Link text for link outside of azure.microsoft.com<ept id="p1">](http://weblogs.asp.net/scottgu)</ept>. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris <bpt id="p1">[</bpt>example link text for link to an article in a service folder<ept id="p1">](../articles/expressroute/expressroute-bandwidth-upgrade.md)</ept>.
+Aenean sit amet leo nec purus AC fermentum CA gravida odio. Aenean tellus lectus, faucibus en rhoncus en faucibus sed urna.  volutpat mi identificador purus ultrices iaculis nec no neque. 
+            [Texto de vínculo fuera de azure.microsoft.com del vínculo](http://weblogs.asp.net/scottgu). Dolor de dictum Nullam a pharetra aliquam. Vivamus CA hendrerit mauris [texto de vínculo de ejemplo de vínculo a un artículo en una carpeta del servicio](../articles/expressroute/expressroute-bandwidth-upgrade.md).
 
-I get 10 times more traffic from <bpt id="p1">[</bpt>Google<ept id="p1">]</ept><bpt id="p2"> [</bpt>gog<ept id="p2">]</ept> than from <bpt id="p3">[</bpt>Yahoo<ept id="p3">]</ept><bpt id="p4"> [</bpt>yah<ept id="p4">]</ept> or <bpt id="p5">[</bpt>MSN<ept id="p5">]</ept><bpt id="p6"> [</bpt>msn<ept id="p6">]</ept>.
+Obtener más de 10 veces el tráfico de [Google] [gog] que desde [Yahoo] [yah] o [MSN] [msn].
 
-> [AZURE.NOTE] Indented note text.  The word 'note' will be added during publication. Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odio. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi a purus.
+> [AZURE.NOTE] Texto con sangría.  La palabra «nota» se agregará durante la publicación. Ut eu pretium lacus. Nullam purus est iaculis sed est ficar, euismod vehicula odio. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi un purus.
 
-1. Aenean sit amet leo nec <bpt id="p1">**</bpt>Purus<ept id="p1">**</ept> placerat fermentum ac gravida odio.
+1. Aenean sit amet leo nec **Purus** AC fermentum CA gravida odio.
 
-2. Aenean tellus lectus, faucius in <bpt id="p1">**</bpt>Rhoncus<ept id="p1">**</ept> in, faucibus sed urna. Suspendisse volutpat mi id purus ultrices iaculis nec non neque.
+2. Tellus Aenean lectus, faucius en **Rhoncus** en faucibus sed urna. Suspendisse volutpat mi identificador purus ultrices iaculis nec no neque.
 
-    ![Alt text; do not leave blank. Collector car in racing red.][5]
+    ![Texto alternativo; No deje en blanco. Vehículo de selector en rojo de carreras.][5]
 
-3. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris. Sed dolor dui, condimentum et varius a, vehicula at nisl.
+3. Dolor de dictum Nullam a pharetra aliquam. Vivamus CA hendrerit mauris. Dolor sed dui, condimentum et varius un vehicula en Suspendisse.
 
-    ![Alt text; do not leave blank][6]
+    ![Texto alternativo; No deje en blanco][6]
 
 
-Suspendisse volutpat mi id purus ultrices iaculis nec non neque. Nullam dictum dolor at aliquam pharetra. Vivamus ac hendrerit mauris. Otrus informatus: <bpt id="p1">[</bpt>Link 1 to another azure.microsoft.com documentation topic<ept id="p1">](virtual-machines-windows-tutorial.md)</ept>
+Suspendisse volutpat mi identificador purus ultrices iaculis nec no neque. Dolor de dictum Nullam a pharetra aliquam. Vivamus CA hendrerit mauris. Otrus informatus: [vínculo 1 a otro tema de documentación de azure.microsoft.com](virtual-machines-windows-tutorial.md)
 
-## Heading (H2)
+## Título (H2)
 
-Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odio.
+Ut eu pretium lacus. Nullam purus est iaculis sed est ficar, euismod vehicula odio.
 
-1. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi a purus.
+1. Curabitur lacinia, erat tristique iaculis rutrum, erat sem sodales nisi, eu condimentum turpis nisi un purus.
 
         - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:
         (NSDictionary *)launchOptions
@@ -60,7 +61,7 @@ Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odi
             return YES;
         }
 
-2. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.
+2. Vestibulum ante ipsum primis en faucibus orci luctus et ultrices posuere cubilia.
 
         // Because toast alerts don't work when the app is running, the app handles them.
         // This uses the userInfo in the payload to display a UIAlertView.
@@ -74,24 +75,24 @@ Ut eu pretium lacus. Nullam purus est, iaculis sed est vel, euismod vehicula odi
         }
 
 
-    > [AZURE.NOTE] Duis sed diam non <ph id="ph1">&lt;i&gt;</ph>nisl molestie<ph id="ph2">&lt;/i&gt;</ph> pharetra eget a est. [Link 2 to another azure.microsoft.com documentation topic](web-sites-custom-domain-name.md)
+    > [AZURE.NOTE] Duis sed diam no <i>Suspendisse molestie</i> pharetra eget un est. [Vínculo 2 a otro tema de documentación de azure.microsoft.com](web-sites-custom-domain-name.md)
 
 
-Quisque commodo eros vel lectus euismod auctor eget sit amet leo. Proin faucibus suscipit tellus dignissim ultrices.
+Quisque commodo eros ficar lectus euismod auctor eget sit amet leo. Proin faucibus suscipit tellus dignissim ultrices.
 
-## Heading 2 (H2)
+## Título 2 (H2)
 
-1. Maecenas sed condimentum nisi. Suspendisse potenti.
+1. Sed de Maecenas condimentum nisi. Suspendisse potenti.
 
   + Fusce
   + Malesuada
-  + Sem
+  + SEM
 
-2. Nullam in massa eu tellus tempus hendrerit.
+2. Nullam en massa eu tellus tempus hendrerit.
 
-    ![Alt text; do not leave blank. Example of a Channel 9 video.][7]
+    ![Texto alternativo; No deje en blanco. Ejemplo de un vídeo de Channel 9.][7]
 
-3. Quisque felis enim, fermentum ut aliquam nec, pellentesque pulvinar magna.
+3. Felis Quisque enim, fermentum ut aliquam nec, pellentesque pulvinar magna.
 
 
 
@@ -99,7 +100,7 @@ Quisque commodo eros vel lectus euismod auctor eget sit amet leo. Proin faucibus
 <!--Every topic should have next steps and links to the next logical set of content to keep the customer engaged-->
 ## Pasos siguientes
 
-Vestibul ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ultricies, ipsum vitae volutpat hendrerit, purus diam pretium eros, vitae tincidunt nulla lorem sed turpis: <bpt id="p1">[</bpt>Link 3 to another azure.microsoft.com documentation topic<ept id="p1">](storage-whatis-account.md)</ept>.
+Vestibul ante ipsum primis en faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ultricies, ipsum vitae volutpat hendrerit, eros de purus diam pretium, vitae tincidunt nulla lorem sed turpis: [vínculo 3 a otro tema de documentación de azure.microsoft.com](storage-whatis-account.md).
 
 <!--Image references-->
 [5]: ./media/_markdown-template/octocats.png
@@ -110,4 +111,4 @@ Vestibul ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia C
 <!--Reference style links - using these makes the source content way more readable than using inline links-->
 [gog]: http://google.com/
 [yah]: http://search.yahoo.com/
-[msn]: http://search.msn.com/
+[MSN]: http://search.msn.com/

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Samples for Power BI"
-   description="Sample content packs and datasets for Power BI"
+   pageTitle="Ejemplos de Power BI"
+   description="Conjuntos de datos para Power BI y paquetes de contenido de ejemplo"
    services="powerbi"
    documentationCenter=""
    authors="amac"
@@ -20,78 +20,95 @@
    ms.date="02/16/2016"
    ms.author="amac"/>
 
-# <a name="samples-for-power-bi-service"></a>Samples for Power BI service
+# <a name="samples-for-power-bi-service"></a>Ejemplos de servicio Power BI
 
-## <a name="about-the-samples"></a>About the samples
+## <a name="about-the-samples"></a>Acerca de los ejemplos
 
-Want to try the Power BI service with industry-specific sample data?  
+¿Desea probar el servicio Power BI con datos de ejemplo específicas del sector?  
 
->[AZURE.NOTE] These samples are for use in the Power BI service...not Power BI Desktop.
+>[AZURE.NOTE] Estos ejemplos son para uso en el servicio de Power BI... no Power BI Desktop.
 
-Microsoft has created sample content for you to use with Power BI. Each of these samples is available as a <bpt id="p1">**</bpt>content pack<ept id="p1">**</ept> and as a separate Excel workbook. A <bpt id="p1">*</bpt>content pack<ept id="p1">*</ept> is a type of sample where the dataset is bundled with a dashboard and/or report. The sample content packs are available from within Power BI service, using <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>.   
+Microsoft ha creado contenido de ejemplo para su uso con Power BI. Cada uno de estos ejemplos está disponible como un **paquete de contenido** y como un libro de Excel independiente. Un *paquete de contenido* es un tipo de ejemplo donde se incluye el conjunto de datos con un panel o un informe. Los paquetes de contenido de ejemplo están disponibles desde Power BI de servicio, con **obtener datos**.   
 
-The Excel workbooks that were used to create the content packs can be downloaded <bpt id="p1">[</bpt>as a zip file<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=535020)</ept> or <bpt id="p2">[</bpt>individually<ept id="p2">](powerbi-sample-downloads.md)</ept>. Advanced users may want to download the Excel workbooks to explore or edit the data models.
+Pueden descargar los libros de Excel que se usaron para crear los paquetes de contenido [como archivo zip](http://go.microsoft.com/fwlink/?LinkId=535020) o [individualmente](powerbi-sample-downloads.md). Los usuarios avanzados que desee descargar los libros de Excel para examinar o modificar los modelos de datos.
 
-## <a name="available-samples"></a>Available samples
+## <a name="available-samples"></a>Ejemplos disponibles
 
-The following samples are available for the Power BI service. The samples use real data from obviEnce (<bpt id="p1">[</bpt>www.obvience.com<ept id="p1">](http://www.obvience.com/)</ept>) that has been anonymized.
+Los ejemplos siguientes están disponibles para el servicio Power BI. Los ejemplos utilizan datos reales de obviEnce ([www.obvience.com](http://www.obvience.com/)) que se han anonimizado.
 
->[AZURE.TIP]  To learn how to connect to the samples, see <bpt id="p1">[</bpt>Tutorial: Using the sample content packs<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
+>[AZURE.TIP]  Para obtener información sobre cómo conectarse a los ejemplos, consulte [Tutorial: usar los paquetes de contenido de ejemplo](powerbi-sample-tutorial-connect-to-the-samples.md).
 
 
-### <a name="customer-profitability-sample"></a>Customer Profitability sample  
-This industry sample dashboard and underlying dataset and report analyze a CFO's key metrics for her executives, products, and customers. You can investigate what factors impact the company's profitability.
+### <a name="customer-profitability-sample"></a>Ejemplo de rentabilidad del cliente  
+Este panel de ejemplo del sector y el conjunto de datos subyacente y el informe analizan las métricas de clave de como director General sus ejecutivos, productos y clientes. Puede investigar qué factores afectan a la rentabilidad de la empresa.
 
--   <bpt id="p1">[</bpt>Take a tour of the Customer Profitability sample<ept id="p1">](powerbi-sample-customer-profitability-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [Dé un paseo por el ejemplo de rentabilidad del cliente](powerbi-sample-customer-profitability-take-a-tour.md).
+-   Obtenga información acerca de cómo conectarse a la [ejemplos de Power BI](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   
+            [Lea la renuncia y descargue el libro de Excel para este ejemplo](http://go.microsoft.com/fwlink/?LinkId=528592).
 
-### <a name="human-resources-sample"></a>Human Resources sample  
-This industry sample dashboard and underlying dataset and report focus on the hiring strategy for a company by analyzing new hires, active employees, and employees who've left.  By exploring the data, you can find trends in voluntary separations and biases in the hiring strategy.
+### <a name="human-resources-sample"></a>Ejemplo de recursos humanos  
+Este panel de ejemplo del sector y el conjunto de datos subyacente y el informe centran en la estrategia de contratación de una empresa mediante el análisis de nuevos empleados, empleados activos y empleados que han dejado.  Al explorar los datos, puede encontrar las tendencias en las separaciones voluntarias e inclinaciones en la estrategia de contratación.
 
--   <bpt id="p1">[</bpt>Take a tour of the Human Resources sample<ept id="p1">](powerbi-sample-human-resources-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [Dé un paseo por el ejemplo de recursos humanos](powerbi-sample-human-resources-take-a-tour.md).
+-   Obtenga información acerca de cómo conectarse a la [ejemplos de Power BI](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   
+            [Lea la renuncia y descargue el libro de Excel para este ejemplo](http://go.microsoft.com/fwlink/?LinkId=528592).
 
-### <a name="it-spend-analysis-sample"></a>IT Spend Analysis sample  
-In this industry sample dashboard and underlying dataset and report, we analyze the planned vs. actual costs of the IT department of a company. This comparison helps us understand how well the company planned for the year and investigate areas with huge deviations from the plan. The company in this example goes through a yearly planning cycle, and then quarterly it produces a new Latest Estimate (LE) to help analyze changes in IT spend over the fiscal year.
+### <a name="it-spend-analysis-sample"></a>Ejemplo de análisis de gasto de TI  
+En este panel de ejemplo del sector y conjunto de datos subyacente y el informe, analizamos la planeada frente a los costos reales del departamento de TI de una compañía. Esta comparación nos ayuda a comprender cómo de bien planeada la compañía para el año e investigar las áreas con enormes desviaciones del plan. La empresa en este ejemplo recorre un ciclo de planeamiento de anual y, a continuación, trimestralmente produce una estimación más reciente nuevo (LE) para ayudar a analizar los cambios en TI gastar en el año fiscal.
 
--   <bpt id="p1">[</bpt>Take a tour of the IT Spend Analysis sample<ept id="p1">](powerbi-sample-it-spend-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [Dé un paseo por el ejemplo de análisis de gasto de TI](powerbi-sample-it-spend-analysis-take-a-tour.md).
+-   Obtenga información acerca de cómo conectarse a la [ejemplos de Power BI](powerbi-sample-tutorial-connect-to-the-samples.md)
+-   
+            [Lea la renuncia y descargue el libro de Excel para este ejemplo](http://go.microsoft.com/fwlink/?LinkId=528592).
 
-### <a name="opportunity-analysis-sample"></a>Opportunity Analysis sample  
-This industry sample dashboard and underlying dataset and report explore a software company's sales channel. Sales managers monitor their direct and partner sales channels by tracking opportunities and revenue by region, deal size, and channel.
+### <a name="opportunity-analysis-sample"></a>Ejemplo de análisis de oportunidad  
+Este panel de ejemplo del sector y el conjunto de datos subyacente y el informe exploran el canal de ventas de la compañía de software. Los jefes de ventas supervisión directo y canales de ventas de socios comerciales mediante el seguimiento de oportunidades y los ingresos por región, tamaño del contrato y canal.
 
--   <bpt id="p1">[</bpt>Take a tour of the Opportunity Analysis sample<ept id="p1">](powerbi-sample-opportunity-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [Dé un paseo por el ejemplo de análisis de oportunidad](powerbi-sample-opportunity-analysis-take-a-tour.md).
+-   Obtenga información acerca de cómo conectarse a la [ejemplos de Power BI](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   
+            [Lea la renuncia y descargue el libro de Excel para este ejemplo](http://go.microsoft.com/fwlink/?LinkId=528592).
 
-### <a name="procurement-analysis-sample"></a>Procurement Analysis sample  
-This industry sample dashboard and underlying dataset and report analyze a CFO's key metrics for her executives, products, and customers. You can investigate what factors impact the company's profitability
+### <a name="procurement-analysis-sample"></a>Ejemplo de análisis de compras  
+Este panel de ejemplo del sector y el conjunto de datos subyacente y el informe analizan las métricas de clave de como director General sus ejecutivos, productos y clientes. Puede investigar qué factores afectan a la rentabilidad de la empresa
 
--   <bpt id="p1">[</bpt>Take a tour of the Procurement Analysis sample<ept id="p1">](powerbi-sample-procurement-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [Dé un paseo por el ejemplo de análisis de compras](powerbi-sample-procurement-analysis-take-a-tour.md).
+-   Obtenga información acerca de cómo conectarse a la [ejemplos de Power BI](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   
+            [Lea la renuncia y descargue el libro de Excel para este ejemplo](http://go.microsoft.com/fwlink/?LinkId=528592).
 
-### <a name="retail-analysis-sample"></a>Retail Analysis sample  
-This industry sample dashboard and underlying dataset and report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year's performance to last year's in these areas: sales, units, gross margin, and variance, as well as new store analysis.
+### <a name="retail-analysis-sample"></a>Ejemplo de análisis de venta directa  
+Este panel de ejemplo del sector y el conjunto de datos subyacente y el informe análisis de minoristas datos de ventas de artículos vendidos en varios almacenes y distritos. Las métricas comparan el rendimiento de este año a año anterior en estas áreas: ventas, unidades, margen bruto y Varianza, así como las nuevas tiendas analysis.
 
--   <bpt id="p1">[</bpt>Take a tour of the Retail Analysis sample<ept id="p1">](powerbi-sample-retail-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [Dé un paseo por el ejemplo de análisis de venta](powerbi-sample-retail-analysis-take-a-tour.md).
+-   Obtenga información acerca de cómo conectarse a la [ejemplos de Power BI](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   
+            [Lea la renuncia y descargue el libro de Excel para este ejemplo](http://go.microsoft.com/fwlink/?LinkId=528592).
 
-### <a name="sales-and-marketing-sample"></a>Sales and Marketing sample  
-This industry sample dashboard and underlying dataset and report analyze a manufacturing company, VanArsdel Ltd. It allows the Chief Marketing Officer to watch the industry and the market share for VanArsdel.  By exploring the sample, you can find the company's market share, product volume, sales, and sentiment.
+### <a name="sales-and-marketing-sample"></a>Ejemplo de Marketing y ventas  
+Este panel de ejemplo del sector y el conjunto de datos subyacente y el informe analiza una empresa de fabricación, VanArsdel Ltd. Permite que el director de Marketing para inspeccionar el sector y la cuota de mercado VanArsdel.  Explorando el ejemplo, puede encontrar la cuota de mercado de la empresa, volumen de productos, ventas y opiniones.
 
--   <bpt id="p1">[</bpt>Take a tour of the Sales and Marketing sample<ept id="p1">](powerbi-sample-sales-and-marketing-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+-   
+            [Dé un paseo por las ventas y Marketing de ejemplo](powerbi-sample-sales-and-marketing-take-a-tour.md).
+-   Obtenga información acerca de cómo conectarse a la [ejemplos de Power BI](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   
+            [Lea la renuncia y descargue el libro de Excel para este ejemplo](http://go.microsoft.com/fwlink/?LinkId=528592).
 
-### <a name="supplier-quality-sample"></a>Supplier Quality sample  
-This industry sample dashboard and underlying dataset and report focus on one of the typical supply chain challenges — supplier quality analysis. Two primary metrics are at play in this analysis: total number of defects and the total downtime that these defects caused. This sample has two main objectives: understand who the best and worst suppliers are, with respect to quality, and identify which plants do a better job finding and rejecting defects, to minimize downtime.
+### <a name="supplier-quality-sample"></a>Ejemplo de la calidad de proveedores  
+Este panel de ejemplo del sector y el enfoque de informe y el conjunto de datos subyacente en uno el suministro normal encadenar desafíos: análisis de calidad del proveedor. Dos métricas principales están en juego en este análisis: número total de defectos y el tiempo de inactividad que estos provocaron. Este ejemplo tiene dos objetivos principales: comprender que los proveedores más vendidos y son, con respecto a la calidad e identifican las plantas que hacer un mejor trabajo encontrar y rechazar defectos, para minimizar el tiempo de inactividad.
 
--   <bpt id="p1">[</bpt>Take a tour of the Supplier Quality sample<ept id="p1">](powerbi-sample-supplier-quality-analysis-take-a-tour.md)</ept>.
--   Learn how to connect to the <bpt id="p1">[</bpt>Power BI samples<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>.
--   <bpt id="p1">[</bpt>Read the disclaimer and download the Excel workbook for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
--  More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+-   
+            [Dé un paseo por el ejemplo de proveedor calidad](powerbi-sample-supplier-quality-analysis-take-a-tour.md).
+-   Obtenga información acerca de cómo conectarse a la [ejemplos de Power BI](powerbi-sample-tutorial-connect-to-the-samples.md).
+-   
+            [Lea la renuncia y descargue el libro de Excel para este ejemplo](http://go.microsoft.com/fwlink/?LinkId=528592).
+-  ¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

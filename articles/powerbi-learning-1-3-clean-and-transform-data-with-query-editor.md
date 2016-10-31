@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Clean and Transform Your Data With the Query Editor"
-   description="Get data in shape for use with Power BI"
+   pageTitle="Limpiar y transformar los datos con el Editor de consultas"
+   description="Obtener datos de la forma para su uso con Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,37 +22,38 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Clean and Transform Your Data With the Query Editor
+# Limpiar y transformar los datos con el Editor de consultas
 
-<bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> includes <bpt id="p2">**</bpt>Query Editor<ept id="p2">**</ept>, a powerful tool for shaping and transforming data so it's ready for your models and visualizations. When you select Edit from Navigator, Query Editor launches and is populated with the tables or other entities you selected from your data source.
 
-You can also launch <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> directly from <bpt id="p2">**</bpt>Power BI Desktop<ept id="p2">**</ept>, using the <bpt id="p3">**</bpt>Edit Queries<ept id="p3">**</ept> button on the <bpt id="p4">**</bpt>Home<ept id="p4">**</ept> ribbon.
+            **Power BI Desktop** incluye **Editor de consultas**, una herramienta eficaz para transformar los datos para que esté listo para los modelos y las visualizaciones y forma. Al seleccionar Editar navegador, inicia el Editor de consultas y se rellena con las tablas o de otras entidades seleccionados del origen de datos.
+
+También puede iniciar **Editor de consultas** directamente desde **Power BI Desktop**, utilizando el **Editar consultas** situado en la **Inicio** cinta de opciones.
 
 ![](media/powerbi-learning-1-3-clean-and-transform-data-with-query-editor/1-3_1.png)
 
-Once Query Editor is loaded with data that's ready for you to shape, you see a handful of sections:
+Una vez cargado el Editor de consultas con datos que está listos para su forma, verá una serie de secciones:
 
-1.  In the ribbon, many buttons are now active to interact with the data in the query
-2.  In the left pane, queries (one for each table, or entity) are listed and available for selection, viewing, and shaping
-3.  In the center pane, data from the selected query is displayed and available for shaping
-4.  The Query Settings window appears, listing the query’s properties and applied steps
+1.  En la cinta de opciones, muchos botones ahora están activas para interactuar con los datos de la consulta
+2.  En el panel izquierdo, (uno para cada tabla o entidad) se enumeran las consultas disponibles para la selección, visualización y forma
+3.  En el panel central, los datos de la consulta seleccionada se muestran disponibles para darles forma
+4.  La ventana de configuración de la consulta, aparecerá una lista de propiedades de la consulta y pasos aplicados
 
 ![](media/powerbi-learning-1-3-clean-and-transform-data-with-query-editor/1-3_2.png)
 
-In the center pane, right-clicking on a column displays a number of different available transformations, such as removing the column from the table, duplicating the column under a new name, and replacing values. From this menu you can also split text columns into multiples by common delimiters.
+En el panel central, haga doble clic en una columna, muestra un número de distintas transformaciones disponibles, como quitar la columna de la tabla, duplicando la columna con un nombre nuevo y reemplazando los valores. En este menú también puede dividir las columnas de texto en múltiplos por delimitadores comunes.
 
 ![](media/powerbi-learning-1-3-clean-and-transform-data-with-query-editor/1-3_3.png)
 
-The <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> ribbon contains additional tools, such as changing the data type of columns, adding scientific notation, or extracting elements from dates, such as day of the week.
+El **Editor de consultas** cinta de opciones contiene herramientas adicionales, como cambiar el tipo de datos de columnas, agregar la notación científica o extraer elementos de fechas, como el día de la semana.
 
 ![](media/powerbi-learning-1-3-clean-and-transform-data-with-query-editor/1-3_4.png)
 
-As you apply transformations, each step appears in the <bpt id="p1">**</bpt>Applied Steps<ept id="p1">**</ept> list in the <bpt id="p2">**</bpt>Query Settings<ept id="p2">**</ept> pane on the right side of <bpt id="p3">**</bpt>Query Editor<ept id="p3">**</ept>. You can use this list to undo or review specific changes, or even change the name of a step. To save your transformations, select <bpt id="p1">**</bpt>Close &amp; Apply<ept id="p1">**</ept> on the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> tab.
+Aplicar transformaciones, cada paso aparece en el **pasos aplicados** lista en el **configuración de consulta** panel en el lado derecho de **Editor de consultas**. Puede utilizar esta lista para deshacer o revisar cambios específicos, o incluso cambiar el nombre de un paso. Para guardar las transformaciones, seleccione **Cerrar & aplicar** en la **Inicio** ficha.
 
 ![](media/powerbi-learning-1-3-clean-and-transform-data-with-query-editor/1-3_5.png)
 
-Once you select <bpt id="p1">**</bpt>Close &amp; Apply<ept id="p1">**</ept>, Query Editor applies the query changes you made, and applies them to Power BI Desktop.
+Una vez que selecciona **Cerrar & aplicar**, Editor de consultas aplica los cambios de la consulta se realiza y los aplica a Power BI Desktop.
 
 ![](media/powerbi-learning-1-3-clean-and-transform-data-with-query-editor/1-3_6.png)
 
-There are all sorts of things you can do when transforming data in <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>, including advanced transformations. In the next section, we take a look at a few of those advanced transformations, to give you a sense of the almost immeasurable ways you can transform your data with <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept>.
+Hay todo tipo de cosas que puede hacer al transformar datos en **Editor de consultas**, incluidas avanzada transformaciones. En la siguiente sección, echamos un vistazo a algunas de esas transformaciones avanzadas, para hacerse una idea de las formas casi immeasurable puede transformar los datos con **Editor de consultas**.

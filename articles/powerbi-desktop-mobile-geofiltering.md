@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Set geographic filtering in Power BI Desktop for the Power BI mobile apps"
-   description="When you set geographic filtering in your model in Power BI Desktop, you can filter data for your location automatically in the Power BI mobile apps for iOS."
+   pageTitle="Establecer geográfica filtrado en Power BI Desktop para las aplicaciones móviles de Power BI"
+   description="Al establecer geográfica de filtrado en el modelo en Power BI Desktop, puede filtrar los datos para su ubicación automáticamente en las aplicaciones móviles de Power BI para iOS."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,53 +19,53 @@
    ms.date="10/12/2016"
    ms.author="maggies"/>
 
-# Set geographic filtering in Power BI Desktop for the Power BI mobile apps
+# Establecer geográfica filtrado en Power BI Desktop para las aplicaciones móviles de Power BI
 
-In Power BI Desktop, you can <bpt id="p1">[</bpt>categorize geographical data<ept id="p1">](powerbi-desktop-data-categorization.md)</ept> for a column, so Power BI Desktop knows how to treat values in visuals in a report. As an added benefit, when you or your colleagues view that report in the Power BI mobile app for iOS, Power BI automatically provides geographical filters that match where you are. 
+En Power BI Desktop, puede [clasificar datos geográficos](powerbi-desktop-data-categorization.md) para una columna, por lo que Power BI Desktop sabe cómo tratar los valores en objetos visuales en un informe. Como beneficio adicional, cuando usted o sus colegas ver ese informe en la aplicación móvil de Power BI para iOS, Power BI proporciona automáticamente geográficos filtros que coinciden con el que se encuentre. 
 
-For example, say you're a sales manager traveling to meet customers, and you'd like to quickly filter the total sales and revenue for the specific customer you're planning to visit. You want to break out the data for your current location, whether by state, city, or an actual address. Later, if you have time left, you'd like to visit other customers located nearby. You can <bpt id="p1">[</bpt>filter the report by your location to find those customers<ept id="p1">](powerbi-mobile-geofiltering.md)</ept>.
+Por ejemplo, que es un administrador de ventas viajan para cumplir con los clientes y que desea filtrar rápidamente el total de ventas y los ingresos para el cliente específico que se va a visitar. Desea dividir los datos para la ubicación actual, ya sea por estado, ciudad o una dirección real. Más adelante, si tiene tiempo restante, que le gustaría visitar a otros clientes que se encuentren más cercanos. Puede [filtrar el informe por su ubicación para encontrar los clientes](powerbi-mobile-geofiltering.md).
 
-> [AZURE.NOTE] You can only filter by location in the mobile app if the geographic names in the report are in English &amp;#150; for example, "New York City" or "Germany".
+> [AZURE.NOTE] Puede filtrar por la ubicación en la aplicación móvil sólo si los nombres geográficos en el informe en inglés & #150; Por ejemplo, "Nueva York" o "Germany".
 
-## Identify geographic data in your report
+## Identificar datos geográficos en el informe
 
-1. In Power BI Desktop, switch to Data View <ph id="ph1">![](media/powerbi-desktop-mobile-geofiltering/pbi_desktop_data_icon.png)</ph>.
+1. En Power BI Desktop, cambie a la vista de datos ![](media/powerbi-desktop-mobile-geofiltering/pbi_desktop_data_icon.png).
 
-2. Select a column with geographic data &amp;#151; for example, a City column.
+2. Seleccione una columna con datos geográficos & #151; Por ejemplo, una columna de la ciudad.
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-column.png)
 
-3. On the <bpt id="p1">**</bpt>Modeling<ept id="p1">**</ept> tab, select <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept>, then the correct category &amp;#151; in this example, <bpt id="p3">**</bpt>City<ept id="p3">**</ept>.
+3. En el **modelado** pestaña, seleccione **categoría datos**, a continuación, la categoría correcta & #151; en este ejemplo, **Ciudad**.
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-category.png)
 
-4. Continue setting geographic data categories for any other fields in the model. 
+4. Continuar estableciendo categorías de datos geográficos de los demás campos en el modelo. 
 
-    > [AZURE.NOTE] You can set multiple columns for each data category in a model, but if you do the model can't filter for geography in the Power BI mobile app. To use geographic filtering in the mobile apps, set only one column for each data category &amp;#151; for example, only one <bpt id="p1">**</bpt>City<ept id="p1">**</ept> column, one <bpt id="p2">**</bpt>State or Province<ept id="p2">**</ept> column, and one <bpt id="p3">**</bpt>Country<ept id="p3">**</ept> column. 
+    > [AZURE.NOTE] Puede establecer varias columnas para cada categoría de datos en un modelo, pero si lo hace el modelo no se puede filtrar para geography en la aplicación móvil de Power BI. Para utilizar el filtrado geográfica en las aplicaciones móviles, establezca solo una columna para cada categoría de datos & #151; Por ejemplo, sólo uno **City** columna, uno **estado o provincia** columna y otra **País** columna. 
 
-## Create visuals with your geographic data
+## Crear efectos visuales con los datos geográficos
 
-5. Switch to Report view <ph id="ph1">![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-report-icon.png)</ph>, and create visuals that use the geographic fields in your data. 
+5. Cambie a la vista de informe ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-report-icon.png), y crear elementos visuales que utilizan los campos geográficos de los datos. 
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-geo-report.png)
 
-    In this example, the model also contains a calculated column that brings city and state together in one column. Read about <bpt id="p1">[</bpt>creating calculated columns in Power BI Desktop<ept id="p1">](powerbi-desktop-calculated-columns.md)</ept>.
+    En este ejemplo, el modelo también contiene una columna calculada que aporta la ciudad y el estado de una columna. Lea acerca de [crear columnas calculadas en Power BI Desktop](powerbi-desktop-calculated-columns.md).
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-desktop-city-state-column.png)
 
-6. Publish the report to the Power BI service.
+6. Publicar el informe en el servicio Power BI.
 
-## View the report in Power BI app for iOS
+## Ver el informe en la aplicación de Power BI para iOS
 
-1. Open the report in the <bpt id="p1">[</bpt>Power BI app for iOS<ept id="p1">](powerbi-mobile-ipad-iphone-apps.md)</ept>.
+1. Abra el informe en el [aplicación Power BI para iOS](powerbi-mobile-ipad-iphone-apps.md).
 
-2. If you're in a geographic location with data in the report, you can filter it automatically to your location.
+2. Si está en una ubicación geográfica con datos en el informe, se puede filtrar automáticamente a su ubicación.
 
     ![](media/powerbi-desktop-mobile-geofiltering/power-bi-mobile-geo-map-set-filter.png)
 
-Read more about <bpt id="p1">[</bpt>filtering a report by location in the Power BI mobile apps for iOS<ept id="p1">](powerbi-mobile-geofiltering.md)</ept>.
+Obtenga más información sobre [filtrar un informe por la ubicación en las aplicaciones móviles de Power BI para iOS](powerbi-mobile-geofiltering.md).
 
 ### Consulte también  
 
-- [Data categorization in Power BI Desktop](powerbi-desktop-data-categorization.md)  
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Categorización de datos en Power BI Desktop](powerbi-desktop-data-categorization.md)  
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

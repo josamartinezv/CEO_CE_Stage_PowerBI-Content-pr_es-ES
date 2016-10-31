@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create and Customize Simple Visualizations"
-   description="Customize three common types of visuals"
+   pageTitle="Crear y personalizar las visualizaciones Simple"
+   description="Personalizar tres tipos comunes de elementos visuales"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,32 +23,32 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Create and Customize Simple Visualizations
+# Crear y personalizar las visualizaciones Simple
 
-In this article you learn how to create new bar charts, pie charts, and treemaps, and customize them to suit your reports.
+En este artículo aprenderá a crear nuevos gráficos de barras, gráficos circulares y treemaps y personalizarlos para adaptarlos a sus informes.
 
-There are two different ways to create a new visualization in Power BI Desktop:
+Hay dos maneras diferentes de crear una nueva visualización en Power BI Desktop:
 
--   You can drag field names from the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, and drop them on the report canvas. By default your visualization appears as a table of data.
+-   Puede arrastrar campos desde la **campos** panel y colóquelos en el lienzo de informes. De forma predeterminada la visualización aparece como una tabla de datos.
 
     ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_1.png)
 
--   You can also click the type of visualization you want to create in the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane. With this method, the default visual is a blank placeholder that resembles the type of visual you selected.
+-   También puede hacer clic en el tipo de visualización que desee crear en el **visualizaciones** panel. Con este método, el valor predeterminado de visual es un marcador de posición en blanco que refleje el tipo de objeto visual seleccionado.
 
     ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_2.png)
 
-Once you create your graph, map, or chart, you can begin dragging data fields onto the bottom portion of the <bpt id="p1">**</bpt>Visualization<ept id="p1">**</ept> pane to build and organize your visual. The available fields will change based on the type of visualization that you selected. As you drag and drop data fields, your visualization will automatically update to reflect changes.
+Una vez creado el gráfico, un mapa o un gráfico, puede comenzar a arrastrar campos de datos a la parte inferior de la **visualización** panel para crear y organizar su visual. Los campos disponibles cambian según el tipo de visualización que seleccionó. Arrastrar y colocar campos de datos, la visualización se actualizará automáticamente para reflejar los cambios.
 
 ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_3.png)
 
-You can resize your visualization by selecting it and then dragging the handles in or out. You can also move your visualization anywhere on the canvas by clicking and dragging it. If you want to convert between different types of visualizations, select the visual you want to change and simply select a different visual from the icons in the <bpt id="p1">**</bpt>Visualization<ept id="p1">**</ept> pane. Power BI attempts to convert your selected fields to the new visual type as closely as possible.
+Puede cambiar el tamaño de la visualización seleccionándolo y, a continuación, arrastre los controladores o de salida. También puede mover la visualización en cualquier lugar en el lienzo haciendo clic y arrastrando. Si desea convertir entre los diferentes tipos de visualizaciones, seleccione el elemento visual que desea cambiar y seleccione un elemento visual diferente en los iconos de la **visualización** panel. Power BI intenta convertir los campos seleccionados en el nuevo tipo visual tan cerca como sea posible.
 
-As you hover over parts of your visualizations, you'll get a tooltip that contains details about that segment, such as labels and total value.
+Al mantener el mouse sobre las partes de las visualizaciones, obtendrá información sobre herramientas que contiene detalles sobre ese segmento, como las etiquetas y el valor total.
 
 ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_4.png)
 
-Select the <bpt id="p1">**</bpt>paintbrush<ept id="p1">**</ept> icon on the <bpt id="p2">**</bpt>Visualizations<ept id="p2">**</ept> pane to make cosmetic changes to your visual, such as background alignment, title text, and data colors.
+Seleccione el **pincel** situado en el **visualizaciones** panel para asegurarse de cosméticos cambios en el objeto visual, como la alineación de fondo, texto de título y colores de datos.
 
 ![](media/powerbi-learning-3-2-create-customize-simple-visualizations/3-2_5.png)
 
-The available options for cosmetic changes to your visual vary depending on the type of visual you have selected.
+Las opciones disponibles para cambios cosméticos en su visual varían según el tipo de elemento visual que seleccionó.

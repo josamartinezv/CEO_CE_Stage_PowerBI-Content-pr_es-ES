@@ -1,6 +1,6 @@
 <properties 
 pageTitle="Instalación y configuración de herramientas de creación en GitHub" 
-description="Tools and steps to get set up for authoring Power BI content in GitHub." 
+description="Herramientas y pasos para obtener configurado para la creación de contenidos de Power BI en GitHub." 
 services="contributor-guide" 
 documentationCenter="" 
 authors="mblythe"  
@@ -17,36 +17,38 @@ ms.service="contributor-guide"
 
 #Instalación y configuración de herramientas de creación en GitHub
 
-Follow the steps in this article to set up tools for contributing to the Power BI technical documentation. Casual and occasional contributors probably can use the GitHub UI described in step 2.
+Siga los pasos de este artículo para configurar las herramientas para contribuir a la documentación técnica de Power BI. Colaboradores ocasionales y ocasionales probablemente pueden utilizar la interfaz de Usuario que se describe en el paso 2 de GitHub.
 
-Si no está familiarizado con Git, le recomendamos consultar algunos términos de Git: [https://help.github.com/articles/github-glossary](https://help.github.com/articles/github-glossary). In addition, this StackOverflow thread contains a glossary of Git terms you'll encounter in this set of steps: <bpt id="p1">[</bpt>http://stackoverflow.com/questions/7076164/terminology-used-by-git<ept id="p1">](http://stackoverflow.com/questions/7076164/terminology-used-by-git)</ept>
+Si no está familiarizado con Git, le recomendamos consultar algunos términos de Git: [https://help.github.com/articles/github-glossary](https://help.github.com/articles/github-glossary). Además, este subproceso StackOverflow contiene un glosario de términos de Git que encontrará en este conjunto de pasos: [http://stackoverflow.com/questions/7076164/terminology-used-by-git](http://stackoverflow.com/questions/7076164/terminology-used-by-git)
 
 ## Contenido
 
 - [Creación de una cuenta de GitHub y configuración del perfil](#create-a-github-account-and-set-up-your-profile)
-- [Sign up for Disqus](#sign-up-for-disqus)
-- [Determine whether you really need to follow the rest of these steps](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
+- [Regístrese para Disqus](#sign-up-for-disqus)
+- [Determinar si realmente necesita siga el resto de estos pasos](#determine-whether-you-really-need-to-follow-the-rest-of-these-steps)
 - [Permisos de GitHub](#permissions-in-github)
 - [Instalación de Git para Windows](#install-git-for-windows)
 - [Habilitación de la autenticación en dos fases](#enable-two-factor-authentication)
 - [Instalación de un editor de marcado](#install-a-markdown-editor)
 - [Configuración de Atom](#configure-atom)
-- [Fork the repository and copy it to your computer](#fork-the-repository-and-copy-it-to-your-computer)
+- [Bifurcar el repositorio y cópielo en el equipo](#fork-the-repository-and-copy-it-to-your-computer)
 - [Configuración local del nombre de usuario y correo electrónico](#configure-your-user-name-and-email-locally)
 - [Pasos siguientes](#next-steps)
 
 ## Creación de una cuenta de GitHub y configuración del perfil
 
-To contribute to the Power BI technical content, you'll need a <bpt id="p1">[</bpt>GitHub<ept id="p1">](http://www.github.com)</ept> account.
+Para contribuir a que el contenido técnico de Power BI, necesitará un [GitHub](http://www.github.com) cuenta.
 
-If you are a Microsoft contributor, you need to set up your GitHub account so you're clearly identified as a Microsoft employee. Set up your profile as follows:
+Si es un colaborador de Microsoft, debe configurar una cuenta de GitHub, por lo que está claramente identificado como empleado de Microsoft. Configure el perfil de la manera siguiente:
 
 - 
             **Imagen de perfil**: una imagen suya (obligatorio).
 - 
             **Nombre**: el nombre y los apellidos (obligatorio).
-- <bpt id="p1">**</bpt>Email<ept id="p1">**</ept>: your Microsoft email address (required)
-- <bpt id="p1">**</bpt>Company<ept id="p1">**</ept>: Microsoft Corporation (required)
+- 
+            **Correo electrónico**: la dirección de correo electrónico de Microsoft (obligatorio)
+- 
+            **Compañía**: Microsoft Corporation (obligatorio)
 - 
             **Ubicación**: muestra su ubicación (obligatorio).
 
@@ -55,90 +57,94 @@ El perfil debe ser similar a este:
 <p align="center">
  ![Ejemplo de perfil de GitHub](./media/tools-and-setup/githubprofile.png)
 
-## Sign up for Disqus
+## Regístrese para Disqus
 
-Every published Power BI technical article has a comment stream provided by the Disqus service.
+Cada artículo técnico publicado de Power BI tiene una secuencia de comentario proporcionada por el servicio de Disqus.
 
- ![Discus logo](./media/tools-and-setup/discus.png)
+ ![Logotipo de disco](./media/tools-and-setup/discus.png)
 
-If you are a Microsoft employee, and if you are the author of or a contributor to an article, you need to sign up for Disqus so you can participate in the comment stream for the article.
+Si es un empleado de Microsoft y es autor de o colaborador a un artículo, debe iniciar sesión en Disqus para que pueda participar en el flujo de comentario para el artículo.
 
-1. Sign up for an account at <bpt id="p1">[</bpt>http://www.disqus.com/<ept id="p1">](http://www.disqus.com/)</ept>
-2. Fill out your profile as follows:
+1. Regístrese para obtener una cuenta en [http://www.disqus.com/](http://www.disqus.com/)
+2. Rellene su perfil como sigue:
 
- - <bpt id="p1">**</bpt>Full Name<ept id="p1">**</ept>: your full name as displayed in your Microsoft address book listing, plus the bracketed info, which is your alias plus @MSFT. Format: <bpt id="p1">*</bpt>First Last [alias@MSFT]<ept id="p1">*</ept>
- - <bpt id="p1">**</bpt>Location<ept id="p1">**</ept>: Your location
- - <bpt id="p1">**</bpt>Short Bio<ept id="p1">**</ept>: Your title
+ - 
+            **Nombre completo**: su nombre completo como se muestra en la lista, además de la información entre corchetes, que es el alias más @MSFT la libreta de direcciones de Microsoft. Formato: *First, Last [alias@MSFT]*
+ - 
+            **Ubicación**: la ubicación
+ - 
+            **Corta la biografía**: su título
 
-## Determine whether you really need to follow the rest of these steps
+## Determinar si realmente necesita siga el resto de estos pasos
 
-You might not need to follow all the steps in this article. It depends on the sort of content contribution you want or need to make.
+No tendrá que seguir los pasos descritos en este artículo. Depende de la ordenación de contribución contenido desea o necesita realizar.
 
-###Submit a text-only change to an existing article
+###Envíe un cambio de sólo texto a un artículo existente
 
-If you only need or want to make textual updates to an existing article, you probably don't need to follow the rest of the steps. You can use GitHub's web-based markdown editor to submit your changes. Just click the GitHub link in the article you want to modify:
+Si sólo necesita o desea realizar actualizaciones textuales de un artículo existente, probablemente no necesitará siga el resto de los pasos. Puede utilizar el editor de descuento basado en web de GitHub para enviar los cambios. Haga clic en el vínculo de GitHub en el artículo que desea modificar:
 
  ![Ejemplo de perfil de GitHub](./media/tools-and-setup/contributetogit.png)
 
- Then, click the edit icon in the GitHub version of the article
+ A continuación, haga clic en el icono de edición de la versión de GitHub del artículo
 
  ![Ejemplo de perfil de GitHub](./media/tools-and-setup/editicon.PNG)
 
- That opens the easy-to-use web editor that makes it easy to submit changes. You don't need to follow the other steps in this article.
+ Que abre el editor web fácil de usar que facilita la tarea Enviar los cambios. No es necesario seguir los demás pasos de este artículo.
 
-###All other changes
-You need to install the tools if you want to make any of the following sorts of changes:
+###Todos los demás cambios
+Debe instalar las herramientas si desea realizar cualquiera de los siguientes tipos de cambios:
 
- - Major changes to an article
- - Create and publish a new article
- - Add new images or update images
- - Update an article over a period of days without publishing changes each of those days
+ - Cambios importantes en un artículo
+ - Crear y publicar un nuevo artículo
+ - Agregar nuevas imágenes o actualizar imágenes
+ - Actualización de un artículo durante un período de días sin publicar cambios de aquellos días
 
- Go to the next section!
+ Visite la sección siguiente.
 
 ##Permisos de GitHub
 
-Anybody with a GitHub account can contribute to Power BI technical content through our public repository at <bpt id="p1">[</bpt>https://github.com/azure/powerbi-content<ept id="p1">](https://github.com/azure/powerbi-content)</ept>. Se requieren permisos especiales.
+Cualquier persona con una cuenta de GitHub puede contribuir al contenido técnico de Power BI a través de nuestro repositorio público en [https://github.com/azure/powerbi-content](https://github.com/azure/powerbi-content). Se requieren permisos especiales.
 
-> [AZURE.NOTE] The powerbi-content repo will be private until further notice. You should work in the powerbi-content-pr repo.
+> [AZURE.NOTE] El repositorio de contenido de Power BI será privado hasta nuevo aviso. Debe trabajar en el repositorio de contenido de Power BI de pr.
 
-If you are a Microsoft employee working on Power BI content, you should work in our private content repository, powerbi-content-pr. Visit <bpt id="p1">[</bpt>http://aka.ms/azuregithub<ept id="p1">](http://aka.ms/azuregithub)</ept> to obtain the read permissions that will let you make contributions through the private repo - click <bpt id="p2">**</bpt>Join a Team<ept id="p2">**</ept>, and join <bpt id="p3">**</bpt>cloud-enterprise-read<ept id="p3">**</ept>.
+Si es un empleado de Microsoft que trabaja en el contenido de Power BI, debe trabajar en nuestro privado pr de contenido de Power BI, repositorio de contenido. Visite [http://aka.ms/azuregithub](http://aka.ms/azuregithub) para obtener los permisos de lectura que le permitirán realizar contribuciones a través del repositorio privado - haga clic en **unir un equipo**, y la combinación **empresarial de nube de lectura**.
 
 ## Instalación de Git para Windows
 
-Install Git for Windows from <bpt id="p1">[</bpt>http://git-scm.com/download/win<ept id="p1">](http://git-scm.com/download/win)</ept>. Esta descarga instala el sistema de control de versiones de Git y Git Bash, la aplicación de línea de comandos que empleará para interactuar con el repositorio local de Git.
+Instalación de Git para Windows desde [http://git-scm.com/download/win](http://git-scm.com/download/win). Esta descarga instala el sistema de control de versiones de Git y Git Bash, la aplicación de línea de comandos que empleará para interactuar con el repositorio local de Git.
 
-You can accept the default settings; if you want the commands to be available within the Windows command line, select the option that enables it.
+Puede aceptar la configuración predeterminada; Si desea que los comandos estén disponibles dentro de la línea de comandos de Windows, seleccione la opción que le permite.
 
 <p align="center">
  ![Ejemplo de perfil de GitHub](./media/tools-and-setup/gitbashinstall.png)
 
-(Note: This is not the same as "Github for Windows". "Github para Windows" es una herramienta basada en GUI diferente que también sirve, pero tendrá que investigar usted mismo cómo funciona. 
+(Nota: esto no es igual a "Github para Windows". "Github para Windows" es una herramienta basada en GUI diferente que también sirve, pero tendrá que investigar usted mismo cómo funciona. 
             [https://windows.github.com/](https://windows.github.com/)) 
 
 ## Habilitación de la autenticación en dos fases
 
-You have to enable two factor authentication (2FA) on your GitHub account if you are working in the private content repository. It's required in the private repository.
+Tendrá que habilitar la autenticación en dos fases (2FA) en su cuenta de GitHub si está trabajando en el repositorio de contenido privado. Se requiere en el repositorio privado.
 
-To enable this, follow the instructions in both the following GitHub help topics:
+Para ello, siga las instrucciones en tanto los temas de ayuda GitHub siguientes:
 
 - [Acerca de la autenticación en dos fases](https://help.github.com/articles/about-two-factor-authentication/)
-- [Creating an access token for command-line use](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
+- [Creación de un token de acceso para su uso de línea de comandos](https://help.github.com/articles/creating-an-access-token-for-command-line-use/)
 
-After you enable 2FA, you have to enter the access token instead of your GitHub password at the command prompt when you try to access a GitHub repository from the command line. The access token is not the authentication code that you get in a text message when you set up 2FA. It's a long string that looks something like this:  fdd3b7d3d4f0d2bb2cd3d58dba54bd6bafcd8dee. A few notes about this:
+Después de habilitar 2FA, tendrá que escribir el token de acceso en lugar de la contraseña de GitHub en el símbolo del sistema al intentar obtener acceso a un repositorio de GitHub desde la línea de comandos. El token de acceso no es el código de autenticación que se obtiene en un mensaje de texto al configurar 2FA. Es una cadena larga que aspecto similar al siguiente: fdd3b7d3d4f0d2bb2cd3d58dba54bd6bafcd8dee. Algunas notas sobre esto:
 
-- When you create your access token, save it in a text file to make it readily accessible when you need it.
+- Cuando se crea el token de acceso, guárdelo en un archivo de texto para que sea fácilmente accesible cuando lo necesite.
 
-- Later, when you need to paste the token, know there are two ways to paste in the command line:
+- Más adelante, cuando tienes que pegar el token, sabe que hay dos formas para pegar en la línea de comandos:
 
- - Click the icon in the upper left corner of the command line window&gt;Edit&gt;Paste.
- - Right-click the icon in the upper left corner of the window and click Properties&gt;Options&gt;QuickEdit Mode. This configures the command line so you can paste by right-clicking in the command line window.
+ - Haga clic en el icono en la esquina superior izquierda de la ventana de línea de comandos > Editar > Pegar.
+ - Haga clic en el icono en la esquina superior izquierda de la ventana y haga clic en Propiedades > Opciones > modalidad. Esto configura la línea de comandos, lo que puede pegar con el botón secundario en la ventana de línea de comandos.
 
 ## Instalación de un editor de marcado
 
-We author content using simple "markdown" notation in the files, rather than complex "markup" (HTML, XML, etc.). So, you'll need to install a markdown editor.
+Se crear contenido mediante una notación sencilla "markdown" en los archivos, en lugar de complejo "marcado" (HTML, XML, etc.). Por lo tanto, deberá instalar a un editor de descuento.
 
-- <bpt id="p1">**</bpt>Atom<ept id="p1">**</ept>: Most of us use GitHub's Atom markdown editor: <bpt id="p2">[</bpt>http://atom.io<ept id="p2">](http://atom.io)</ept>. It does not require a license for business use. It has spell check. 
+- 
+            **Átomo**: la mayoría de nosotros utiliza editor de descuento Atom de GitHub: [http://atom.io](http://atom.io). No se requiere una licencia para uso empresarial. Tiene el corrector ortográfico. 
 
 - 
             **Bloc de notas**: puede utilizar el Bloc de notas si desea trabajar con una herramienta que consuma muy pocos recursos.
@@ -154,54 +160,54 @@ We author content using simple "markdown" notation in the files, rather than com
 
 Si utiliza Atom, debe configurar algunas opciones.
 
-- Atom utiliza de forma predeterminada 2 espacios para pestañas, pero se recomienda 4 para que se visualice correctamente. If you leave it at the default of two, your article will look great in local preview, but not when it’s imported into Power BI. So, configure Atom to use 4 spaces - you can find this setting under File&gt;Settings&gt;Editor Settings&gt;Tab Length. 
+- Atom utiliza de forma predeterminada 2 espacios para pestañas, pero se recomienda 4 para que se visualice correctamente. Si deja el valor predeterminado de dos, el artículo tendrá un aspecto excelente en vista previa local, pero no cuando se importa a Power BI. Por lo tanto, configurar Atom para utilizar 4 espacios: puede encontrar esta configuración en archivo > Configuración > configuración del Editor > tamaño de tabulación. 
 - También le recomendamos activar la característica Soft Wrap (Ajuste flexible) en esta sección, que tiene la misma función que el ajuste automático de línea del Bloc de notas. 
-- To turn on the markdown preview, click Packages&gt;Markdown Preview&gt;Toggle Preview. Puede usar Ctrl + Mayús + M para cambiar a la vista previa de HTML. 
+- Para activar la vista previa de descuento, haga clic en paquetes > vista previa de descuento > vista previa de alternancia. Puede usar Ctrl + Mayús + M para cambiar a la vista previa de HTML. 
 
-## Fork the repository and copy it to your computer
+## Bifurcar el repositorio y cópielo en el equipo
 
-1. Create a fork of the repository in GitHub - go to the top-right of the page and click the Fork button. If prompted, select your account as the location where the fork should be created. This creates a copy of the repository within your Git Hub account. Generally speaking, technical writers and program managers need to fork powerbi-content-pr, the private repo. Community contributors need to fork powerbi-content, the public repo. You only need to fork one time; after your first setup, if you want to copy your fork to another computer, you only have to run the commands that follow in this section to copy the repo to your computer.  If you choose to create forks of both repositories, you will need to create a fork for each repository.
+1. Crear una bifurcación del repositorio de GitHub: vaya a la parte superior derecha de la página y haga clic en el botón de bifurcación. Si se le solicita, seleccione la cuenta como la ubicación donde se debe crear la bifurcación. Esto crea una copia del repositorio en la cuenta del centro de Git. Por lo general, escritores técnicos y directores de programa necesitan bifurcar Power BI-contenido-pr, el repositorio privado. Colaboradores de la Comunidad necesitan bifurcar powerbi-content, el repositorio público. Sólo necesita bifurcar una vez; Después de la primera instalación, si desea copiar la bifurcación a otro equipo, sólo tiene que ejecutar los comandos que siguen en esta sección para copiar el repositorio en el equipo.  Si decide crear bifurcaciones de ambos repositorios, debe crear una bifurcación para cada repositorio.
 
-2. Copy the Personal Access Token that you got from <bpt id="p1">[</bpt>https://github.com/settings/applications#personal-access-tokens<ept id="p1">](https://github.com/settings/applications#personal-access-tokens)</ept>. You can accept the default permissions for the token.  Save the Personal Access Token in a text file for later reuse.
+2. Copie el Personal Token de acceso que obtuvo en [https://github.com/settings/applications#personal-access-tokens](https://github.com/settings/applications#personal-access-tokens). Puede aceptar los permisos predeterminados para el token.  Guarde el Token de acceso Personal en un archivo de texto para su uso posterior.
 
-3. Next, copy the repository to your computer with your credentials embedded in the command string.  To do this, open GitBash.  En el símbolo del sistema, escriba el siguiente comando.  This command creates a powerbi-content(-pr) drectory on your computer.  If you're using the default location, it will be at c:\users<ph id="ph1">&lt;your Windows user name&gt;</ph>\powerbi-content(-pr).
+3. A continuación, copiar el repositorio en el equipo con las credenciales que se incrusta en la cadena de comandos.  Para ello, abra GitBash.  En el símbolo del sistema, escriba el siguiente comando.  Este comando crea un drectory powerbi-content(-pr) en el equipo.  Si utiliza la ubicación predeterminada, estará en c:\users<your Windows user name>\powerbi-content(-pr).
 
-Public repo:
+Repositorio público:
 
         git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content.git
 
-Private repo:
+Repositorio privado:
 
         git clone https://[your GitHub user name]:[token]@github.com/<your GitHub user name>/powerbi-content-pr.git
 
-For example, this clone command could look something like this:
+Por ejemplo, este comando de clonación podría este aspecto:
 
         git clone https://smithj:b428654321d613773d423ef2f173ddf4a312345@github.com/smithj/powerbi-content-pr.git  
 
 ## Establecimiento de una conexión remota de repositorio y configuración de las credenciales
 
-Create a reference to the root repository by entering these commands. This sets up connections to the repository in GitHub so that you can get the latest changes onto your local machine and push your changes back to GitHub. This command also configures your token locally so that you don't have to enter your name and password each time you try to access the upstream repo and your fork on GitHub.
+Crear una referencia en el repositorio de raíz mediante estos comandos. Establece las conexiones con el repositorio de GitHub para que pueda obtener los últimos cambios en el equipo local y vuelva a insertar los cambios en GitHub. Este comando también configura el token localmente de modo que no tiene que escribir su nombre y contraseña cada vez que se intenta tener acceso el repositorio de nivel superior y la bifurcación en GitHub.
 
-Public repo:
+Repositorio público:
 
         cd powerbi-content
         git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content.git
         git fetch upstream
 
-Private repo:
+Repositorio privado:
 
         cd powerbi-content-pr
         git remote add upstream https://[your GitHub user name]:[token]@github.com/azure/powerbi-content-pr.git
         git fetch upstream
 
-Esta operación tarda algún tiempo. After you do this, you won't have to fork again or enter your credentials again. You would only have to copy the forks to a local computer again if you set the tools up on another computer.
+Esta operación tarda algún tiempo. Después de hacer esto, no tendrá que volver a bifurcar o vuelva a escribir sus credenciales. Sólo tendría volver a copiar las bifurcaciones en un equipo local si configuró las herramientas en otro equipo.
 
 
 ## Configuración local del nombre de usuario y correo electrónico
 
 Para asegurarse de que aparece correctamente como colaborador, debe configurar el correo electrónico y el nombre de usuario localmente en Git.
 
-1. Start Git Bash, and switch into powerbi-content or powerbi-content-pr:
+1. Inicie Git Bash y cambiar al contenido de Power BI o contenido de Power BI de pr:
 
    ````
    cd powerbi-content
@@ -218,7 +224,7 @@ Para asegurarse de que aparece correctamente como colaborador, debe configurar e
     ````
     git config --global user.name "John Doe"
     ````
-3. Configure your email so it matches the primary email designated in your GitHub profile; if you're a MSFT employee, it should be your MSFT email address:
+3. Configurar el correo electrónico para que coincida con el correo electrónico principal designado en su perfil de GitHub; Si es un empleado MSFT, debe ser la dirección de correo electrónico MSFT:
 
     ````
     git config --global user.email "alias@example.com"
@@ -227,14 +233,15 @@ Para asegurarse de que aparece correctamente como colaborador, debe configurar e
 
 ##Pasos siguientes
 
-- <bpt id="p1">[</bpt>Create a local working branch<ept id="p1">](./git-commands-for-master.md)</ept> on your computer so you can start work.
-- Copy <bpt id="p1">[</bpt>the markdown template<ept id="p1">](../markdown templates/markdown-template-for-new-articles.md)</ept> as the basis for a new article.
+- 
+            [Crear una bifurcación de trabajo local](./git-commands-for-master.md) en su equipo, por lo que puede empezar a trabajar.
+- Copia [la plantilla de descuento](../markdown templates/markdown-template-for-new-articles.md) como base para un nuevo artículo.
 
 
 
 
 
-###Contributors' Guide Links
+###Vínculos de la Guía de los colaboradores
 
 - [Artículo de información general](./../README.md)
 - [Índice de artículos de la guía](./contributor-guide-index.md)
@@ -242,19 +249,19 @@ Para asegurarse de que aparece correctamente como colaborador, debe configurar e
 
 
 <!--Anchors-->
-[Use a customer-friendly voice]: #use-a-customer-friendly-voice
-[Consider localization and machine translation]: #consider-localization-and-machine-translation
-[other style and voice issues to watch for]: #other-style-and-voice-issues-to-watch-for
+[Utilice una voz e intuitivo]: #use-a-customer-friendly-voice
+[Considere la posibilidad de localización y traducción automática]: #consider-localization-and-machine-translation
+[otros problemas de estilo y voz a inspeccionar]: #other-style-and-voice-issues-to-watch-for
 
 
 [Creación de una cuenta de GitHub y configuración del perfil]: #create-a-github-account-and-set-up-your-profile
-[Determine whether you really need to follow the rest of these steps]: #determine-whether-you-really-need-to-follow-the-rest-of-these-steps
+[Determinar si realmente necesita siga el resto de estos pasos]: #determine-whether-you-really-need-to-follow-the-rest-of-these-steps
 [Permisos de GitHub]: #permissions-in-github
 [Instalación de Git para Windows]: #install-git-for-windows
 [Habilitación de la autenticación en dos fases]: #enable-two-factor-authentication
 [Instalación de un editor de marcado]: #install-a-markdown-editor
-[Fork the repository and copy it to your computer]: #fork-the-repository-and-copy-it-to-your-computer
-[Install git-credential-winstore]: #install-git-credential-winstore
-[Sign up for Disqus]: #sign-up-for-disqus
+[Bifurcar el repositorio y cópielo en el equipo]: #fork-the-repository-and-copy-it-to-your-computer
+[Instalar incluye de credencial de git]: #install-git-credential-winstore
+[Regístrese para Disqus]: #sign-up-for-disqus
 [Configuración local del nombre de usuario y correo electrónico]: #configure-your-user-name-and-email-locally
 [Pasos siguientes]: #next-steps

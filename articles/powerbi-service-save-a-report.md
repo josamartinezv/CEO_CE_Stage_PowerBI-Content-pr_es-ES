@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Save a report in Power BI"
-   description="Save a report in Power BI"
+   pageTitle="Guardar un informe en Power BI"
+   description="Guardar un informe en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -19,29 +19,29 @@
    ms.workload="powerbi"
    ms.date="10/07/2016"
    ms.author="mihart"/>
-# Save a report in Power BI
+# Guardar un informe en Power BI
 
-After you change a report in Power BI, you can save it, save it with a new name, or just close it without saving your changes. Say you open the report, create a visualization, and pin it to your dashboard. If you close it now without saving your changes, the tile remains on the dashboard, but the visualization isn't saved in the report. When you click that tile on the dashboard, the report opens, but the visualization is gone.
+Después de cambiar un informe en Power BI, puede guardarla, guárdelo con un nombre nuevo o simplemente se cierre sin guardar los cambios. Supongamos que abra el informe, crea una visualización y ancla al panel. Si cierra ahora sin guardar los cambios, el permanece en mosaico en el panel, pero no se guarda la visualización en el informe. Al hacer clic en ese icono en el panel, se abre el informe, pero la visualización ya no existe.
 
-### To save a report:
+### Para guardar un informe:
 
-1.  If the file name in the top navigation bar has an asterisk next to it, you know the report has changed.
+1.  Si el nombre de archivo en la barra de navegación superior tiene un asterisco, sabrá que el informe ha cambiado.
 
-    >[AZURE.NOTE] You cannot use Save As on a read-only report.
+    >[AZURE.NOTE] No se puede utilizar Guardar como en un informe de solo lectura.
 
     ![](media/powerbi-service-save-a-report/savereport1.png)
 
-2.  Select <bpt id="p1">**</bpt>FILE<ept id="p1">**</ept> <ph id="ph1">\&gt;</ph> <bpt id="p2">**</bpt>Save<ept id="p2">**</ept> or <bpt id="p3">**</bpt>Save As<ept id="p3">**</ept>.
+2.  Seleccione **ARCHIVO** \> **Guardar** o **Guardar como**.
 
-    If this is a new report, give it a descriptive name.  That name will appear under <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> in the navigation pane.
+    Si se trata de un nuevo informe, asígnele un nombre descriptivo.  Este nombre aparecerá en **informes** en el panel de navegación.
 
     ![](media/powerbi-service-save-a-report/savereport3b.png)
 
 
 ### Consulte también
 
-Read more about <bpt id="p1">[</bpt>reports in Power BI<ept id="p1">](powerbi-service-reports.md)</ept>
+Obtenga más información sobre [informes de Power BI](powerbi-service-reports.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)*
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)*
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

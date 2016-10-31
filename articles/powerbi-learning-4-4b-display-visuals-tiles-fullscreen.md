@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Display visuals and tiles full-screen"
-   description="Get a big view of select report visuals and dashboard tiles"
+   pageTitle="Mostrar elementos visuales y de mosaico de pantalla completa"
+   description="Obtener una vista grande de efectos visuales seleccione el informe y los iconos de panel"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,22 +23,23 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Display Visuals and Tiles Full-Screen
+# Elementos visuales de la pantalla y mosaicos de pantalla completa
 
-When you're looking at Power BI dashboards or reports in the service, it can sometimes be helpful to focus on an individual chart or visualization. You can do that in two different ways.
+Cuando busca en los paneles de Power BI o informes en el servicio, a veces es útil para centrarse en un gráfico o visualización. Puede hacerlo de dos maneras diferentes.
 
-When you're on a dashboard, hover over a tile to see a few different icon options in the top right-hand corner. When you select the ellipses (the three dots) you see a collection of icons that represent actions you can take on the tile.
+Cuando esté en un panel, mantenga el mouse sobre un icono para ver algunas opciones de otro icono en la esquina superior derecha. Cuando se selecciona el botón de puntos suspensivos (tres puntos), ver una colección de iconos que representan las acciones que puede realizar en el mosaico.
 
-The left-most icon is labeled <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept>. Select that icon to expand the tile to encompass the full dashboard space.
+Aparece el icono del extremo izquierdo **modo de enfoque**. Seleccione este icono para expandir el icono para abarcar el espacio de escritorio completa.
 
 ![](media/powerbi-learning-4-4b-display-visuals-tiles-fullscreen/4-4b_1.png)
 
-<bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept> allows you to see a lot more detail on your visuals and legends. For example, when you resize a tile in Power BI, some of the columns may not be shown because of the space available in the tile.
+
+            **Modo de enfoque** permite ver una descripción detallada de los elementos visuales y las leyendas. Por ejemplo, cuando cambia el tamaño de un mosaico en Power BI, algunas de las columnas que no aparezcan debido al espacio disponible en el mosaico.
 
 ![](media/powerbi-learning-4-4b-display-visuals-tiles-fullscreen/4-4b_2.png)
 
-In <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept>, you can see all the data. You can also pin the visual directly from Focus mode to a different dashboard by selecting the <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept> icon. To exit <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept>, select the <bpt id="p2">**</bpt>Back to...<ept id="p2">**</ept> icon in the top-left corner of <bpt id="p3">**</bpt>Focus mode<ept id="p3">**</ept>.
+En **modo de enfoque**, puede ver todos los datos. También puede anclar el objeto visual directamente desde el modo de enfoque a un panel diferente seleccionando la **Pin** icono. Para salir de **modo de enfoque**, seleccione la **hacia...** situado en la esquina superior izquierda de **modo de enfoque**.
 
-The process is similar when viewing a report. Hover over a visual to see the three icons in the top-right corner, and select the <bpt id="p1">**</bpt>Focus mode<ept id="p1">**</ept> icon. Selecting this expands your visualization to encompass the full report canvas. The visual is still interactive in this mode, although you temporarily lose any cross-filter effect between visualizations.
+El proceso es similar al ver un informe. Mantenga el mouse sobre un elemento visual para ver los tres iconos en la esquina superior derecha y seleccione el **modo de enfoque** icono. Seleccionar esta opción, expande la visualización para abarcar el lienzo de informe completo. El objeto visual es todavía interactivo en este modo, aunque se perderá temporalmente cualquier efecto de filtro cruzado entre visualizaciones.
 
-Hover over an expanded tile or report and select the <bpt id="p1">**</bpt>Back to...<ept id="p1">**</ept> left-caret icon in the top-left corner to return to the previous view.
+Mantenga el mouse sobre un mosaico expandido o informe y seleccione el **hacia...** icono de la intercalación de la izquierda en la esquina superior izquierda para volver a la vista anterior.

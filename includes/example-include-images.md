@@ -1,5 +1,5 @@
-### This is content within the include ###
+### Se trata de contenido dentro de inclusión ###
 
-An include with an image:
+Incluir con una imagen:
 
-![windows-azure-logo](./media/example-include-images/windows-azure.png)
+![logotipo de Windows azure](./media/example-include-images/windows-azure.png)

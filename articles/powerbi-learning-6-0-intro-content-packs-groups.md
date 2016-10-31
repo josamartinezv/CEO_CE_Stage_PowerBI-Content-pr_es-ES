@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Introduction to Content Packs, Security, and Groups"
-   description="These tools make sharing and collaborating easy"
+   pageTitle="Introducción a los módulos de seguridad y grupos de contenido"
+   description="Estas herramientas facilitan compartir y colaborar fácil"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,23 +23,24 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Publishing and Sharing
+# Publicar y compartir
 
-Welcome to the <bpt id="p1">**</bpt>Publishing and Sharing<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Guided Learning<ept id="p2">**</ept> course for Power BI.
+Bienvenido a la **publicar y compartir** sección de la **aprendizaje guiado** curso para Power BI.
 
-Now that you've learned how Excel and Power BI work seamlessly together, and you've learned all about the visuals you can create in reports and dashboards, you likely want to share them with your coworkers and friends. With Power BI, <bpt id="p1">**</bpt>publishing and sharing<ept id="p1">**</ept> are easy to accomplish.
+Ahora que ha aprendido cómo Excel y Power BI trabajar sin problemas y está familiarizado con todo acerca de los elementos visuales que se pueden crear en los informes y paneles, probablemente desee compartirlos con sus colegas y amigos. Con Power BI, **publicar y compartir** son fáciles de realizar.
 
-This section shows you just how easy it is to bring Excel workbooks into Power BI, and demonstrates that Power BI and Excel make a great partnership.
+Esta sección muestra lo fácil que es poner los libros de Excel en Power BI y demuestra que Power BI y Excel forman una asociación excelente.
 
-## Share and collaborate with colleagues in Power BI
+## Compartir y colaborar con colegas en Power BI
 
-*Get introduced to the tools that make sharing and collaborating easier with Power BI*
+*Conozca las herramientas que permiten compartir y colaborar más fácil con Power BI*
 
-In this module, we cover the various ways Power BI offers for sharing and collaborating with your colleagues on your dashboards, reports, and data. Por ejemplo, puede:
+En este módulo se tratan las distintas formas de que Power BI ofrece para compartir y colaborar con sus colegas en los paneles, informes y datos. Por ejemplo, puede:
 
--   <bpt id="p1">*</bpt>Publish your reports<ept id="p1">*</ept> from Power BI Desktop to the Power BI service
--   Use <bpt id="p1">*</bpt>Power BI mobile<ept id="p1">*</ept> apps to view and interact with reports and dashboards
--   Create <bpt id="p1">*</bpt>Content packs<ept id="p1">*</ept> that package up a dashboard, report, and dataset to send to your colleagues. They can use it as a starting point and further enhance it.
--   Create <bpt id="p1">*</bpt>Groups<ept id="p1">*</ept>, which you can use as a security model to identify a subset of users who have access to dashboards, reports, and datasets you create.
+-   
+            *Publicar sus informes* desde Power BI Desktop al servicio Power BI
+-   Use *Power BI mobile* aplicaciones para ver e interactuar con informes y paneles
+-   Crear *paquetes de contenido* que empaquetar un panel, el informe y el conjunto de datos para enviar a sus compañeros. Se puede usar como punto de partida y mejorarlo aún más.
+-   Crear *grupos*, que puede utilizar para identificar un subconjunto de los usuarios que tienen acceso a los paneles, informes y conjuntos de datos se crea como un modelo de seguridad.
 
-Throughout much of this module we use the scenario of setting up a new finance group. We'll show how to set up the group, share dashboards, reports, and datasets into the group, and add members who'll have access to the items in the group.
+A lo largo de gran parte de este módulo se usa el escenario de configuración de un nuevo grupo de finanzas. Le mostraremos cómo configurar la agrupación, recurso compartido de paneles, informes y conjuntos de datos en el grupo y agregar a miembros a los que tienen acceso a los elementos en el grupo.

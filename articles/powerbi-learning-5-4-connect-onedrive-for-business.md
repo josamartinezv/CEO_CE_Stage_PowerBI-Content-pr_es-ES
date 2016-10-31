@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect OneDrive for Business to Power BI"
-   description="OneDrive for Business and Excel files are a match made in the cloud"
+   pageTitle="Conectarse a OneDrive para la empresa a Power BI"
+   description="OneDrive para archivos de Excel y de negocio son una coincidencia encontrada en la nube"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,33 +23,33 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Connect OneDrive for Business to Power BI
+# Conectarse a OneDrive para la empresa a Power BI
 
-Get seamless integration between Power BI and Excel when you save your Excel workbooks to OneDrive.
+Obtenga una integración perfecta entre Power BI y Excel al guardar los libros de Excel en OneDrive.
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_1.png)
 
-Because OneDrive is in the cloud, just like Power BI, a live connection is made between Power BI and OneDrive. If you make changes to your workbook on OneDrive, those changes are <bpt id="p1">*</bpt>automatically synchronized<ept id="p1">*</ept> with Power BI. Your visualizations in reports and dashboards are kept up-to-date. If your workbook connects to external data sources like a database or an OData feed, you can use Power BI's <bpt id="p1">**</bpt>Schedule refresh<ept id="p1">**</ept> features to check for updates. Need to ask questions about data in your workbook? No problem. You can use Power BI's <bpt id="p1">**</bpt>Q &amp; A<ept id="p1">**</ept> features to do just that.
+Dado que es OneDrive en la nube, al igual que Power BI, se realiza una conexión activa entre Power BI y OneDrive. Si realiza cambios en el libro en OneDrive, esos cambios son *sincronizados automáticamente* con Power BI. Las visualizaciones en informes y paneles se mantienen actualizadas. Si el libro se conecta a orígenes de datos externos como una fuente de OData o una base de datos, puede usar Power BI **programar la actualización** características para buscar actualizaciones. ¿Necesita realizar preguntas sobre datos de un libro? No hay problema. Puede usar Power BI **preguntas y respuestas** características para hacerlo.
 
-There are two ways to connect to your Excel files on OneDrive for Business:
+Hay dos maneras de conectarse a los archivos de Excel en OneDrive para la empresa:
 
-1.   Import Excel data into Power BI
-2.   Connect, manage, and view Excel in Power BI
+1.   Importar datos de Excel en Power BI
+2.   Conectar, administrar y ver Excel en Power BI
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_3.png)
 
-### Import Excel data into Power BI
-When you choose to import Excel data into Power BI, table data from your workbook is loaded into a new dataset in Power BI. If you have any <bpt id="p1">**</bpt>Power View<ept id="p1">**</ept> sheets in your workbook, those are imported and new reports are automatically created in Power BI, too.
+### Importar datos de Excel en Power BI
+Cuando se elige importar datos de Excel en Power BI, datos de tabla del libro se cargan en un nuevo conjunto de datos en Power BI. Si tiene algún **Power View** hojas en el libro, se importan los y automáticamente se crean nuevos informes en Power BI, demasiado.
 
-Power BI will maintain the connection between it and the workbook file on your OneDrive for Business. If you make any changes to your workbook, when you save, those changes will be <bpt id="p1">*</bpt>automatically synchronized<ept id="p1">*</ept>* with Power BI, usually within an hour. If your workbook connects to external data sources, you can setup scheduled refresh so the dataset in Power BI is kept up-to-date. Because visualizations in reports and dashboard in Power BI will use the data from the dataset, as you explore, your queries are lightning fast.
+Power BI mantendrá la conexión entre éste y el archivo de libro en su OneDrive para la empresa. Si realiza los cambios en el libro al guardar, esos cambios serán *sincronizados automáticamente** con Power BI, normalmente dentro de una hora. Si el libro se conecta a orígenes de datos externos, puede configurar actualización programada para que el conjunto de datos en Power BI se mantiene actualizada. Porque visualizaciones en informes y paneles de Power BI usará los datos del conjunto de datos, cuando explore, las consultas sean muy veloces.
 
-### Connect, Manage and View Excel in Power BI
-When you choose to connect to the Excel workbook, you'll get a seamless experience of working with your workbook in Excel and Power BI. When you connect this way, the workbook's report has a small Excel icon next to it.
+### Conectar, administrar y ver Excel en Power BI
+Cuando elige conectar con el libro de Excel, obtendrá una experiencia perfecta de trabajar con el libro en Excel y Power BI. Cuando se conecta de este modo, los informes del libro tiene un pequeño icono de Excel junto a ella.
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_4.png)
 
-In the report, you see your Excel workbook in Power BI just as you would in <bpt id="p1">**</bpt>Excel Online<ept id="p1">**</ept>. You can explore and edit your worksheets in Excel Online by selecting Edit from the ellipses menu. When you make changes, any visualizations you've pinned to dashboards are updated automatically.
+En el informe, consulte el libro de Excel en Power BI tal como haría en **Excel Online**. Puede explorar y editar las hojas de cálculo en Excel Online seleccionando Editar en el menú del botón de puntos suspensivos. Cuando realice cambios, cualquier visualizaciones anclados a los paneles se actualizan automáticamente.
 
 ![](media/powerbi-learning-5-4-connect-onedrive-for-business/5-4_5.png)
 
-No dataset is created in Power BI. All of the data remains in the workbook on OneDrive. One of the many advantages to this approach is that you can setup <bpt id="p1">**</bpt>scheduled refresh<ept id="p1">**</ept> if your workbook connects to external data sources. You can select elements such as PivotTables and charts and <bpt id="p1">**</bpt>pin<ept id="p1">**</ept> them right to dashboards in Power BI. If you make any changes, they're automatically reflected in Power BI. And, you can use Power BI's awesome <bpt id="p1">**</bpt>Q &amp; A<ept id="p1">**</ept> features to ask questions about the data in your workbook.  
+Ningún conjunto de datos se crea en Power BI. Todos los datos permanecen en el libro en OneDrive. Una de las muchas ventajas de este enfoque es que puede configurar **actualización programada** Si el libro se conecta a orígenes de datos externos. Puede seleccionar elementos como tablas dinámicas y gráficos y **pin** les secundario a paneles en Power BI. Si realiza algún cambio, se reflejan automáticamente en Power BI. Además, puede usar Power BI Maravilla **preguntas y respuestas** características formular preguntas acerca de los datos en el libro.  

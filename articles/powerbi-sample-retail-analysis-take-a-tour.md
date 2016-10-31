@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Retail Analysis sample for Power BI: Take a tour"
-   description="Retail Analysis sample for Power BI: Take a tour"
+   pageTitle="Ejemplo de análisis de venta directa para Power BI: un paseo"
+   description="Ejemplo de análisis de venta directa para Power BI: un paseo"
    services="powerbi"
    documentationCenter=""
    authors="amandacofsky"
@@ -20,150 +20,155 @@
    ms.date="07/18/2016"
    ms.author="amac"/>
 
-# <a name="retail-analysis-sample-for-power-bi:-take-a-tour"></a>Retail Analysis sample for Power BI: Take a tour
+# <a name="retail-analysis-sample-for-power-bi:-take-a-tour"></a>Ejemplo de análisis de venta directa para Power BI: un paseo
 
-##  <a name="about-the-retail-analysis-sample"></a>About the Retail Analysis sample
+##  <a name="about-the-retail-analysis-sample"></a>Acerca del ejemplo de análisis de venta directa
 
-This industry sample dashboard and underlying report analyze retail sales data of items sold across multiple stores and districts. The metrics compare this year’s performance to last year’s in these areas:  sales, units, gross margin, and variance, as well as new store analysis. This is real data from obviEnce (<bpt id="p1">[</bpt>www.obvience.com<ept id="p1">](http://www.obvience.com)</ept>) that has been anonymized.
+Este panel de ejemplo del sector y el informe subyacente analizan minoristas datos de ventas de artículos vendidos en varios almacenes y distritos. Las métricas comparan el rendimiento de este año a año anterior en estas áreas: ventas, unidades, margen bruto y Varianza, así como las nuevas tiendas analysis. Se trata de datos reales de obviEnce ([www.obvience.com](http://www.obvience.com)) que se han anonimizado.
 
-You can also <bpt id="p1">[</bpt>download just the dataset (Excel workbook) for this sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>.
+También puede [Descargar sólo el conjunto de datos (libro de Excel) para este ejemplo](http://go.microsoft.com/fwlink/?LinkId=528592).
 
 ![](media/powerbi-sample-retail-analysis-take-a-tour/retail1.png)
 
-##  <a name="start-on-the-dashboard-and-open-the-report"></a>Start on the dashboard and open the report
+##  <a name="start-on-the-dashboard-and-open-the-report"></a>Iniciar en el panel y abra el informe
 
-1.  On the dashboard, select the "Total Stores" tile:
+1.  En el panel, seleccione el icono "Tiendas Total":
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail-analysis-7.png)  
 
-    This takes you to the "Store Sales Overview" page in the report. You see we have 104 total stores, 10 of them new. We have two chains, Fashions Direct and Lindseys. Fashions Direct stores are larger on average.
+    Esto le lleva a la página "Información general de ventas de la tienda" en el informe. Verá que tenemos 104 almacenes total, 10 de las nuevas. Tenemos dos cadenas, modas directa y Lindseys. Almacenes directa de moda en promedio son más grandes.
 
-2.  In the pie chart, select <bpt id="p1">**</bpt>Fashions Direct<ept id="p1">**</ept>.
+2.  En el gráfico circular, seleccione **modas directa**.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail3.png)  
 
-    Notice the result in the bubble chart:
+    Observe el resultado en el gráfico de burbujas:
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlBubbles.png)  
 
-    FD-01 district has the highest Average Sales per Square Foot, FD-02 has the lowest Variance in Sales compared to last year, FD-03 and FD-04 are worst performers overall.
+    FD-01 distrito tiene el mayor promedio de ventas por pie cuadrado, FD-02 tiene la varianza más bajo en ventas en comparación con el año pasado, FD-03 y 04 FD son peor ejecutantes general.
 
-3.  Select individual bubbles or other charts to see cross highlighting, revealing the impact of your selections.
+3.  Seleccione las burbujas individuales u otros gráficos para ver cross resaltado, revelar el impacto de las selecciones.
 
-4.  Select Power BI in the top navigation bar to return to the dashboard.
+4.  Seleccione Power BI en la barra de navegación superior para volver al panel.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail-analysis.png)
 
-5.  On the dashboard, select the tile that has "This Year’s Sales."
+5.  En el panel, seleccione el icono con "Ventas de este año."
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlThisYrSales.png)
 
-    This is equivalent to typing "This year sales" in the question box.
+    Esto equivale a escribir "ventas de este año" en el cuadro de pregunta.
 
-    You see this screen:
+    Ver esta pantalla:
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail7.png)
 
-##  <a name="review-a-tile-created-with-power-bi-q&a"></a>Review a tile created with Power BI Q&amp;A
+##  <a name="review-a-tile-created-with-power-bi-q&a"></a>Revise un mosaico creado con Power BI Q & A
 
-Let’s get more specific.
+Vamos a obtener más específica.
 
-1.  Add “this year sales <bpt id="p1">**</bpt>by district<ept id="p1">**</ept>” onto the question. Observe the result: It automatically put the answer in a bar chart and suggests other phrases:
+1.  Agregar "ventas este año **por distrito**" a la pregunta. Observe el resultado: coloca la respuesta en un gráfico de barras y sugiere otras frases automáticamente:
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail8.png)
 
-2.  Now change the question to “this year sales <bpt id="p1">**</bpt>by zip and chain<ept id="p1">**</ept>”.
+2.  Ahora, cambie la pregunta "ventas este año **zip y cadena**".
 
-    Notice how it answers the question as you type with the appropriate charts.
+    Observe cómo responde a la pregunta a medida que escribe con los gráficos adecuados.
 
-3.  Play around with more questions and see what kind of results you get.
+3.  Jugar con más preguntas y ver qué tipo de resultados obtiene.
 
-4.  When you’re ready, return to the dashboard by selecting Power BI in the upper-left corner.
+4.  Cuando esté listo, vuelva al panel seleccionando Power BI en la esquina superior izquierda.
 
-##  <a name="dive-deeper-into-the-data"></a>Dive deeper into the data
+##  <a name="dive-deeper-into-the-data"></a>Profundice en los datos
 
-Now let's explore on a more detailed level, looking at the districts' performances.
+Ahora vamos a explorar en un nivel más detallado, examinando las prestaciones de los distritos.
 
-1.  On the dashboard, select the tile comparing this year's sales to last year’s.
+1.  En el panel, seleccione el icono de comparar las ventas de este año a año pasado.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlAreaCht.png)
 
-    Notice the large variability on Variance % to last year, with Jan, Apr, and Jul being particularly bad months.
+    Observe la gran variabilidad en variación % para el año pasado, con enero, abril y especialmente mal meses de julio.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/PBI_Sample_RetAnlSalesVarCol.png)
 
-    Let’s see if we can narrow down where the issues might be.
+    Veamos si reducir donde pueden ser los problemas.
 
-2.  Select the bubble chart, and choose <bpt id="p1">**</bpt>020-Mens<ept id="p1">**</ept>.
+2.  Seleccione el gráfico de burbujas y elija **020 hombres**.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail11.png)  
 
-    Observe the men's category wasn't as severely affected in April as the business overall, but January and July were still problem months.
+    Observe la categoría de los hombres no fue como gravemente afectados en abril como el negocio global, pero enero y julio seguían siendo meses del problema.
 
-3.  Now, select the <bpt id="p1">**</bpt>010-Womens’ bubble<ept id="p1">**</ept>.
+3.  Ahora, seleccione la **burbujas 010-Womens**.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail12.png)
 
-    Notice the women's category performed much worse than business overall across all months, and much worse in almost every month compared to the previous year.
+    Aviso de categoría de la mujer realiza mucho peor que el negocio global para todos los meses y mucho peor en casi todos los meses en comparación con el año anterior.
 
-4.  Select the bubble again to clear the filter.
+4.  Seleccione la burbuja de nuevo para borrar el filtro.
 
-##  <a name="try-out-the-slicer"></a>Try out the Slicer
+##  <a name="try-out-the-slicer"></a>Pruebe la segmentación de datos
 
-Let’s look at how specific districts are doing.
+Echemos un vistazo hacen en los distritos de forma específicos.
 
-1.  Select Allan Guinot in the slicer on the top left.
+1.  Seleccione Allan Guinot en la segmentación de datos en la parte superior izquierda.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail13.png)
 
-    Note that Allan’s district outperformed Last Year in March and June.
+    Tenga en cuenta que el distrito Allan superaba el año pasado en marzo y junio.
 
-2.  Now, while Allan is still selected, select the Women’s bubble.
+2.  Ahora, mientras sigue seleccionado Allan, seleccione burbujas de la mujer.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail14.png)
 
-    Note that for the Women’s category, his district never met last year’s volume.
+    Tenga en cuenta que para la categoría de la mujer, su distrito nunca cumple volumen del año pasado.
 
-3.  3.Explore the other district managers and categories – what other insights can you find?
+3.  ¿3. explorar los demás administradores de distrito y categorías: qué otra información puede buscar?
 
-4.  When you are ready – return to the dashboard.
+4.  Cuando esté listo, vuelva al panel.
 
-## <a name="what-is-our-data-telling-us-about-sales-growth-this-year?"></a>What is our data telling us about sales growth this year?
+## <a name="what-is-our-data-telling-us-about-sales-growth-this-year?"></a>¿Qué es nuestros datos contarnos sobre el crecimiento de ventas este año?
 
-The last area we want to explore is our growth – new stores opened this year.
+La última área que deseamos explorar es nuestro crecimiento: nuevos almacenes abierto este año.
 
-1.  Select the 'Stores Opened This Year’ tile.
+1.  Seleccione el icono 'Almacenes abierto este año'.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/retail15.png)
 
-    As evident from the tile – more Fashions Direct stores than Lindseys stores opened this year.
+    Como evidentes desde el icono – más directa de moda almacena de almacenes de Lindseys abre este año.
 
-2.  Observe the Sales Per Sq Ft by Name chart:
+2.  Tenga en cuenta las ventas por Sq Ft gráfico de nombre:
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/15.png)
 
-     There is quite a bit of difference in Average Sales per SQF across the new stores.
+     Hay gran cantidad de diferencia de promedio de ventas por SQF entre las nuevas tiendas.
 
-3.  Click on the Fashions Direct legend item in the top right chart. Notice, even for the same chain, the best store (Winchester Fashions Direct) significantly outperforms the worst store (Cincinnati 2 Fashions Direct) $21.22 vs $12.86 respectively.
+3.  Haga clic en el elemento de leyenda modas directa en el gráfico superior derecho. Aviso, incluso para la misma cadena, el mejor almacén (Winchester modas directo) significativamente supera el peor vs $21.22 de almacén (Cincinnati 2 modas directo) $12.86 respectivamente.
 
     ![](media/powerbi-sample-retail-analysis-take-a-tour/17b.png)
 
-4.  Click Winchester Fashions Direct in the slicer and observe the line chart. The first sales numbers were reported in February and is a leading store in terms of volume for almost every month.
+4.  Haga clic en Winchester modas directa en la segmentación de datos y observe el gráfico de líneas. Las cifras de ventas primeras se han informado en febrero y es un almacén líder en términos de volumen para casi todos los meses.
 
-5.  Click on Cincinnati 2 Fashions Direct in the slicer and you will see in the line chart that it was opened in June and it seems to be the worst performing store.
+5.  Haga clic en Cincinnati 2 modas directa en la segmentación de datos y aparecerá en el gráfico de líneas que se ha abierto en junio y parece ser el almacén de peor rendimiento.
 
-6.  As before, explore by clicking on other bars, lines and bubbles throughout the charts and see what insights you can discover.
+6.  Como antes, explore haciendo clic en otras barras, líneas y burbujas a lo largo de los gráficos y vea qué información puede detectar.
 
-This is a safe environment to play in. You can always choose not to save your changes. But if you do save them, you can always go to Get Data for a new copy of this sample.
+Se trata de un entorno seguro para reproducir en. Siempre puede elegir no guardar los cambios. Pero si guardarlos, siempre puede ir para obtener datos de una copia nueva de este ejemplo.
 
-## <a name="next-steps:-connect-to-your-data"></a>Next steps: Connect to your data
+## <a name="next-steps:-connect-to-your-data"></a>Pasos siguientes: conectarse a los datos
 
-We hope this tour has shown how Power BI dashboards, Q&amp;A, and reports can provide insights into retail data. Now it’s your turn — connect to your own data. With Power BI you can connect to a wide variety of data sources. Learn more about <bpt id="p1">[</bpt>getting started with Power BI<ept id="p1">](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8)</ept>.
+Esperamos que este paseo le ha mostrado cómo paneles de Power BI, preguntas y respuestas, y los informes pueden proporcionar información sobre los datos de venta directa. Ahora es su turno, conectarse a sus propios datos. Con Power BI puede conectarse a una gran variedad de orígenes de datos. Obtenga más información sobre [Introducción a Power BI](https://support.office.com/article/Get-Started-with-Power-BI-Preview-0f0237e2-f74f-49ab-82ea-1990c3c3deb8).
 
 ## <a name="see-also"></a>Consulte también
 
--   <bpt id="p1">[</bpt>Download the Retail Analysis sample content pack<ept id="p1">](powerbi-sample-tutorial-connect-to-the-samples.md)</ept>
--   <bpt id="p1">[</bpt>Download the Excel workbook for this Power BI sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=528592)</ept>
--   <bpt id="p1">[</bpt>Get data (for Power BI)<ept id="p1">](powerbi-service-get-data.md)</ept>
--   <bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
--  More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+-   
+            [Descargar el paquete de contenido de ejemplo de análisis de venta directa](powerbi-sample-tutorial-connect-to-the-samples.md)
+-   
+            [Descargue el libro de Excel para este ejemplo de Power BI](http://go.microsoft.com/fwlink/?LinkId=528592)
+-   
+            [Obtener datos (Power BI)](powerbi-service-get-data.md)
+-   
+            [Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
+-  ¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

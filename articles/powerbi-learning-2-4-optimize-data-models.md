@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Optimizing Data Models"
-   description="Make creating and viewing visuals easier with optimized models"
+   pageTitle="Optimización de los modelos de datos"
+   description="Asegúrese de crear y ver elementos visuales más fácil con modelos optimizados"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,32 +23,32 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Optimizing Data Models for Better Visuals
+# Optimización de los modelos de datos para elementos visuales mejor
 
-Imported data often contains fields that you don't actually need for your reporting and visualization tasks, either because it's extra information, or because that data is already available in another column. Power BI Desktop has tools to optimize your data, and make it more usable for you to create reports and visuals, and for viewing your shared reports.
+Los datos importados a menudo contienen campos que no necesite realmente para las tareas de informes y visualización, porque es información adicional o porque ya están disponibles en otra columna de datos. Power BI Desktop tiene herramientas para optimizar los datos y hacer más fáciles de utilizar para crear informes y elementos visuales y para ver los informes compartidos.
 
-## Hiding fields
+## Ocultar campos
 
-To hide a column in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane of Power BI Desktop, right-click on it and select <bpt id="p2">**</bpt>Hide<ept id="p2">**</ept>. Note that your hidden columns are not deleted; if you've used that field in existing visualizations, the data is still in that visual, and you can still use that data in other visualizations too, the hidden field just isn't displayed in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane.
+Para ocultar una columna en la **campos** panel de Power BI Desktop, haga doble clic en él y seleccione **ocultar**. Tenga en cuenta que no se eliminan las columnas ocultas; Si ha utilizado ese campo en las visualizaciones existentes, los datos aún están en ese elemento visual y, aún puede usar esos datos en otras visualizaciones demasiado, el campo oculto simplemente no se muestra en la **campos** panel.
 
 ![](media/powerbi-learning-2-4-optimize-data-models/2-4_1.png)
 
-If you view tables in the <bpt id="p1">**</bpt>Relationships<ept id="p1">**</ept> view, hidden fields are indicated by being grayed out. Again, their data is still available and is still part of the model, they're just hidden from view. You can always unhide any field that has been hidden by right-clicking the field, and selecting <bpt id="p1">**</bpt>unhide<ept id="p1">**</ept>.
+Si se ven las tablas en el **relaciones** vista, oculto campos se indican mediante está atenuada. Nuevamente, sus datos sigue estando disponibles y sigue siendo parte del modelo, simplemente se oculta de la vista. Siempre puede mostrar cualquier campo que se ha ocultado haciendo clic en el campo y seleccionando **Mostrar**.
 
-## Sorting visualization data by another field
+## Ordenar datos de visualización de otro campo
 
-The <bpt id="p1">**</bpt>Sort by Column<ept id="p1">**</ept> tool, available in the <bpt id="p2">**</bpt>Modeling<ept id="p2">**</ept> tab, is very useful to ensure that your data is displayed in the order you intended.
+El **Ordenar por columna** herramienta disponible en el **modelado** ficha, resulta muy útil para garantizar que los datos se muestran en el orden deseado.
 
 ![](media/powerbi-learning-2-4-optimize-data-models/2-4_2.png)
 
 
-As a common example, data that includes the name of the month is sorted alphabetically by default, so for example, "August"  appears before "February".
+Un ejemplo común, los datos que incluye el nombre del mes está ordenados alfabéticamente de forma predeterminada, por ejemplo, "August" aparece antes de "Febrero".
 
 ![](media/powerbi-learning-2-4-optimize-data-models/2-4_3.png)
 
-In this case, selecting the field in the Fields list, then selecting <bpt id="p1">**</bpt>Sort By Column<ept id="p1">**</ept> from the <bpt id="p2">**</bpt>Modeling<ept id="p2">**</ept> tab and then choosing a field to sort by can remedy the problem. In this case, the "MonthNo" category sort option orders the months as intended.
+En este caso, seleccione el campo en la lista de campos y luego seleccione **Ordenar por columna** desde el **modelado** ficha y, a continuación, elegir un campo para ordenar puede solucionan el problema. En este caso, la categoría "MonthNo" ordenación opción los meses según lo previsto.
 
 ![](media/powerbi-learning-2-4-optimize-data-models/2-4_4.png)
 
 
-Setting the data type for a field is another way to optimize your information so it's handled correctly. To change a data type from the report canvas, select the column in the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, and then use the <bpt id="p2">**</bpt>Format<ept id="p2">**</ept> drop-down menu to select one of the formatting options. Any visuals you've created that display that field are updated automatically.
+Establecer los datos del tipo de un campo es otra manera de optimizar su información, por lo que se controla correctamente. Para cambiar un tipo de datos en el lienzo de informes, seleccione la columna de la **campos** panel y, a continuación, use la **formato** menú desplegable para seleccionar una de las opciones de formato. Los elementos visuales creados que muestran el campo se actualizan automáticamente.

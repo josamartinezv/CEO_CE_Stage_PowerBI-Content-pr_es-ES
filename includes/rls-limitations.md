@@ -1,21 +1,22 @@
 ## Limitaciones
 
-Here is a list of the current limitations for row-level security on cloud models.
+Aquí es una lista de las limitaciones actuales para la seguridad de nivel de fila en modelos de nube.
 
-- If you previously had roles/rules defined within the Power BI service, you will need to recreate them within Power BI Desktop.
-- You can define RLS only on the datasets created using Power BI Desktop client. If you want to enable RLS for datasets created with Excel, you will need to convert your files into PBIX files first. [Obtener más información](powerbi-desktop-import-excel-workbooks.md)
-- Only ETL, and DirectQuery connections are supported. Live connections to Analysis Services are handled in the on-premises model.
-- Q&amp;A and Cortana is not supported with RLS at this time. You will not see the Q&amp;A input box for dashboards if all models have RLS configured. This is on the roadmap, but a timeline is not available.
-- External sharing is not currently supported with datasets that use RLS.
+- Si anteriormente tenía funciones o las reglas definidas en el servicio Power BI, debe volver a crearlos en Power BI Desktop.
+- Puede definir RLS sólo en los conjuntos de datos creados con Power BI Desktop client. Si desea habilitar RLS para conjuntos de datos creados con Excel, debe convertir primero los archivos en archivos PBIX. [Obtener más información](powerbi-desktop-import-excel-workbooks.md)
+- Sólo ETL, y se admiten conexiones de DirectQuery. Administra las conexiones en directo a Analysis Services en el modelo en local.
+- Preguntas y respuestas y Cortana no es compatible con RLS en este momento. No verá las preguntas y un cuadro de entrada para los paneles si todos los modelos tienen RLS configurado. Se trata de la guía, pero una escala de tiempo no está disponible.
+- Actualmente no se admite el uso compartido externo con conjuntos de datos que utilice RLS.
 
 ## Problemas conocidos
 
-There is a known issue where you will receive an error message when trying to publish from Power BI Desktop if it was previously published. The scenario is as follows.
+Hay un problema conocido que recibirá un mensaje de error al intentar publicar desde Power BI Desktop si anteriormente se publicó. El escenario es como sigue.
 
-1. Anna has a dataset that is publised to the Power BI service and has configured RLS.
+1. Ana tiene un conjunto de datos publised al servicio Power BI y ha configurado RLS.
 
-2. Anna updates the report in Power BI Desktop and re-publishes.
+2. Ana actualiza el informe en Power BI Desktop y vuelva a publica.
 
-3. Anna will receive an error.
+3. Ana producirá un error.
 
-<bpt id="p1">**</bpt>Workaround:<ept id="p1">**</ept> Re-publish the Power BI Desktop file from the Power BI service until this issue is resolved. You can do that by select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Files<ept id="p2">**</ept>. 
+
+            **Solución alternativa:** volver a publicar el archivo de Power BI Desktop desde el servicio Power BI hasta que se solucione este problema. Para ello, seleccione **obtener datos** > **archivos**. 

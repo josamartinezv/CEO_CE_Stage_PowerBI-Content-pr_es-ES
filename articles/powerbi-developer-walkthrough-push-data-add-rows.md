@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add rows to a table"
-   description="Walkthrough to push data - Add rows to a Power BI table"
+   pageTitle="Agregar filas a una tabla"
+   description="Tutorial para insertar datos, agregar filas a una tabla de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,30 +20,31 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 5: Add rows to a Power BI table
+# Paso 5: Agregar filas a una tabla de Power BI
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+Este artículo forma parte de un tutorial paso a paso para [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md).
 
-In <bpt id="p1">**</bpt>step 4<ept id="p1">**</ept> of Push data into a dashboard, <bpt id="p2">[</bpt>Get a dataset to add rows into a Power BI table<ept id="p2">](powerbi-developer-walkthrough-push-data-get-datasets.md)</ept>, you used the <bpt id="p3">[</bpt>Get Datasets<ept id="p3">](https://msdn.microsoft.com/library/mt203567.aspx)</ept> operation and Newtonsoft.Json to get a dataset id. In this step, you use the dataset id with the <bpt id="p1">[</bpt>Add Rows<ept id="p1">](https://msdn.microsoft.com/library/mt203561.aspx)</ept> operation to add rows to a <bpt id="p2">**</bpt>Power BI<ept id="p2">**</ept> dataset.
+En **paso 4** de insertar datos en un panel [obtener un conjunto de datos para agregar filas a una tabla de Power BI](powerbi-developer-walkthrough-push-data-get-datasets.md), ha utilizado la [obtener conjuntos de datos](https://msdn.microsoft.com/library/mt203567.aspx) operación y Newtonsoft.Json para obtener un identificador de conjunto de datos. En este paso, use el identificador de conjunto de datos con el [Agregar filas](https://msdn.microsoft.com/library/mt203561.aspx) operación para agregar filas a un **Power BI** conjunto de datos.
 
-When you call the <bpt id="p1">[</bpt>Add Rows<ept id="p1">](https://msdn.microsoft.com/library/mt203561.aspx)</ept> operation, you add rows to a dataset in your dashboard.
+Cuando se llama a la [Agregar filas](https://msdn.microsoft.com/library/mt203561.aspx) operación, agregar filas a un conjunto de datos en el panel.
 
 ![](media/powerbi-developer-walkthrough-push-data/powerbi-developer-add-rows.png)
 
-Here's how to add rows to a dataset using the Power BI API.
+Aquí se muestra cómo agregar filas a un dataset mediante la API de Power BI.
 
-## Add rows to a Power BI table
+## Agregar filas a una tabla de Power BI
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you get started, make sure you have followed the previous steps in the <bpt id="p2">[</bpt>push data into a dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data.md)</ept> walkthrough.
+>
+            **NOTA**: antes de comenzar, asegúrese de que ha seguido los pasos anteriores en el [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md) tutorial.
 
-1.  In the Console Application project you created in Step 2: Walkthrough to push data, <bpt id="p1">[</bpt>Get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>, add the code below.
-2. Run the Console App, and login to your Power BI account. You should see <bpt id="p1">**</bpt>Rows Added<ept id="p1">**</ept> in the Console Window. You can also login to your Power BI dashboard to see the rows added to the dataset.
+1.  En el proyecto de aplicación de consola creó en el paso 2: tutorial para insertar datos, [obtener un acceso de autenticación token](powerbi-developer-walkthrough-push-data-get-token.md), agregue el código siguiente.
+2. Ejecutar la aplicación de consola e inicie sesión en su cuenta de Power BI. Debería ver **agregan filas** en la ventana de consola. También puede iniciar sesión en el panel de Power BI para ver las filas agregadas al conjunto de datos.
 
-**Sample push data into a dashboard**
+**Insertar datos en un panel de ejemplo**
 
-Add this code into Program.cs.
+Agregue este código en Program.cs.
 
-- In static void Main(string[] args):
+- En static void Main (string [] args):
 
   ```
    static void Main(string[] args)
@@ -63,7 +64,7 @@ Add this code into Program.cs.
    }     
   ```
 
-- Add an AddRows() method:
+- Agregue un método AddRows():
 
 ```
     #region Add rows to a Power BI table
@@ -109,16 +110,16 @@ Add this code into Program.cs.
     #endregion
 ```
 
-Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept>.
+A continuación se muestra la [código completo](#code).
 
 ## Consulte también
 - [Agregar filas](https://msdn.microsoft.com/library/mt203561.aspx)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [Insertar datos en un panel de Power BI](powerbi-developer-walkthrough-push-data.md)
+- [Información general sobre la API de REST de Power BI](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Referencia de API de REST de BI de energía](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
-## Complete code listing
+## Lista de código completa
 
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -319,4 +320,4 @@ Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept
         }
     }
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Connect to Data Sources in Power BI Desktop"
-   description="Find out how to connect to data using Power BI Desktop"
+   pageTitle="Conectarse a orígenes de datos en Power BI Desktop"
+   description="Averigüe cómo conectarse a datos mediante Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,26 +22,27 @@
    ms.date="10/12/2016"
    ms.author="davidi"/>
 
-# Connect to Data Sources in Power BI Desktop
+# Conectarse a orígenes de datos en Power BI Desktop
 
-<bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> can connect to a whole range of data sources, including on-premises databases, Excel workbooks, and cloud services. Currently, over 59 different cloud services such as GitHub and Marketo have specific connectors, and you can connect to generic sources through XML, CSV, text, and ODBC. Power BI will even scrape tabular data directly from a website URL! But let's start from the beginning, with opening Power BI Desktop and connecting to data.
 
-When you start <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept> and move past the Start Screen, you can choose Get Data from the ribbon on the <bpt id="p2">**</bpt>Home<ept id="p2">**</ept> tab.
+            **Power BI Desktop** puede conectarse a una amplia gama de orígenes de datos, incluidas bases de datos locales, libros de Excel y servicios en la nube. Actualmente, 59 en servicios en la nube diferente, como GitHub y Marketo tienen conectores específicos y puede conectarse a orígenes de genéricos a través de XML, CSV, texto y ODBC. Power BI separe incluso datos tabulares directamente desde una dirección URL del sitio Web. Pero vamos a empezar desde el principio, Power BI Desktop y conectarse a los datos.
+
+Al iniciar **Power BI Desktop** y moverse más allá de la pantalla de inicio, puede elegir obtener datos desde la cinta en la **Inicio** ficha.
 
 ![](media/powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop/1-2_1.png)
 
-There are monthly updates to Power BI Desktop, and with each update, the <bpt id="p1">**</bpt>Power BI Desktop What's New<ept id="p1">**</ept> page gets updated with information about the updates, links to the blog, and a download link.
+Hay actualizaciones mensuales a Power BI Desktop y, con cada actualización, la **Power BI Desktop What's New** página se actualiza con información acerca de las actualizaciones, vínculos al blog y un vínculo de descarga.
 
-In Power BI Desktop, there are all sorts of different data sources available. Select a source to establish a connection. Depending on your selection, you will be asked to find the source on your computer or network, or be prompted to log in to a service to authenticate your request.
+En Power BI Desktop, hay todo tipo de diferentes orígenes de datos disponibles. Seleccione un origen para establecer una conexión. Según su selección, se le preguntará para buscar el origen en el equipo o red, o se le pida que inicie sesión en un servicio para autenticar su solicitud.
 
 ![](media/powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop/1-2_2.gif)
 
-After connecting, the first window you'll see is the <bpt id="p1">**</bpt>Navigator<ept id="p1">**</ept>. The Navigator displays the tables or entities of your data source, and clicking on one gives you a preview of its contents. You can then import your selected tables or entities immediately, or select <bpt id="p1">**</bpt>Edit<ept id="p1">**</ept> to transform and clean your data before importing.
+Después de conectarse, es la primera ventana, verá el **Navigator**. El explorador muestra las tablas o entidades del origen de datos y haga clic en uno proporciona una vista previa de su contenido. A continuación, puede importar las tablas seleccionadas o entidades inmediatamente o seleccionar **Editar** para transformar y limpiar los datos antes de importar.
 
 ![](media/powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop/1-2_3.png)
 
-Once you've selected the tables you'd like to bring into Power BI Desktop, you can choose to load them into Power BI Desktop by selecting the <bpt id="p1">**</bpt>Load<ept id="p1">**</ept> button in the bottom right corner of <bpt id="p2">**</bpt>Navigator<ept id="p2">**</ept>. There are times, however, where you might want to make changes to those tables before you load them into Power BI Desktop. You might want only a subset of customers, or filter that data for sales that occurred only in a specific country. In those cases, you can select the Edit button and filter or transform that data before bringing it all into Power BI Desktop.
+Una vez haya seleccionado las tablas que le gustaría poner en Power BI Desktop, puede cargarlos en Power BI Desktop seleccionando la **cargar** en la esquina inferior derecha del botón **Navigator**. Hay ocasiones, sin embargo, donde desea realizar cambios en las tablas antes de cargarlos en Power BI Desktop. Puede tener solo un subconjunto de clientes, o filtrar datos de ventas que se ha producido en un país determinado. En esos casos, puede seleccionar el botón de edición y el filtro o transformar los datos antes de ponerlo todo en Power BI Desktop.
 
 ![](media/powerbi-learning-1-2-connect-to-data-sources-in-power-bi-desktop/1-2_4.png)
 
-We'll pick up there, and edit our data, in the next section.
+Se deberá recoger existe y editar los datos en la sección siguiente.

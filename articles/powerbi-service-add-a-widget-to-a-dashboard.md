@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Add an image, text box, video, or web code to your dashboard"
-   description="Documentation on how to add an image, video, text box, web code tile to a dashboard."
+   pageTitle="Agregar una imagen, el cuadro de texto, el vídeo o el código web al escritorio"
+   description="Documentación sobre cómo agregar un cuadro de texto vídeo, imagen, web código mosaico a un panel."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,115 +21,117 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# Add a tile directly from the dashboard itself
+# Agregar un mosaico directamente desde el panel propio
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HivEJ5lN3l4" frameborder="0" allowfullscreen></iframe>
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: The "Add widget" feature has been renamed "Add tile".
+>
+            **NOTA**: la característica "Agregar un widget" ha sido cambiado el nombre "Agregar mosaico".
 
-## Add tile
+## Agregar mosaico
 
-The <bpt id="p1">**</bpt>Add tile<ept id="p1">**</ept> control lets you directly add an image, text box, video, streaming data, or web code to your dashboard.
+El **Agregar mosaico** control permite agregar directamente una imagen, cuadro de texto, vídeo, datos de transmisión o web en el panel de código.
 
-1. Select <bpt id="p1">**</bpt>Add tile<ept id="p1">**</ept> from the menu bar.
+1. Seleccione **Agregar mosaico** desde la barra de menús.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-iconnew.png)
 
-2. Select which widget to add: <bpt id="p1">**</bpt>Image<ept id="p1">**</ept>, <bpt id="p2">**</bpt>Text box<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Video<ept id="p3">**</ept>, <bpt id="p4">**</bpt>Web content<ept id="p4">**</ept>, or <bpt id="p5">**</bpt>Custom streaming data<ept id="p5">**</ept>.
+2. Seleccione el widget de agregar: **imagen**, **cuadro de texto**, **vídeo**, **contenido Web**, o **personalizados de transmisión de datos**.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-tile.png)
 
 
-## Add an image
-Say you want your company logo on your dashboard, or some other image.
+## Agregar una imagen
+Supongamos que desea el logotipo de su empresa en su escritorio o alguna otra imagen.
 
-1. Select <bpt id="p1">**</bpt>Image<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>Next<ept id="p2">**</ept>.
+1. Seleccione **imagen** > **siguiente**.
 
-2. Add image information to the <bpt id="p1">**</bpt>Tile details<ept id="p1">**</ept> pane.
+2. Agregar información de la imagen a la **icono detalles** panel.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-image.png)
 
-  - to display a title above the image, select <bpt id="p1">*</bpt>Display title and subtitle<ept id="p1">*</ept> and type a title and/or subtitle.
+  - para mostrar un título encima de la imagen, seleccione *Mostrar el título y el subtítulo* y escriba un título y el subtítulo.
 
-  - enter the image URL
+  - Escriba la dirección URL de imagen
 
-  - to make the tile a hyperlink, select <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> and enter the URL.  When colleagues click this image or title, they'll be taken to this URL.
+  - para que el icono de un hipervínculo, seleccione **conjunto de vínculos personalizados** y escriba la dirección URL.  Cuando haga clic en compañeros esta imagen o un título, le dirigirá a esta dirección URL.
 
-  - Select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.  On the dashboard, resize and move the image as needed.
+  - Seleccione **aplicar**.  En el panel, cambiar el tamaño y mover la imagen según sea necesario.
 
         ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-image-added.png)
 
-##  Add a text box or dashboard heading
+##  Agregar un encabezado de panel o cuadro de texto
 
-1. Select <bpt id="p1">**</bpt>Text box &gt; Next<ept id="p1">**</ept>.
+1. Seleccione **cuadro de texto > siguiente**.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-text-box.png)
 
-    ><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: To add a dashboard heading, type your heading in the text box and increase the font.
+    >
+            **NOTA**: agregar un encabezado del panel, escriba el título del cuadro de texto y aumentar la fuente.
 
-2. Format the text box:
+2. Dar formato al cuadro de texto:
 
-  - to display a title above the text box, select <bpt id="p1">**</bpt>Display title and subtitle<ept id="p1">**</ept> and type a title and/or subtitle.
+  - para mostrar un título encima del cuadro de texto, seleccione **Mostrar el título y el subtítulo** y escriba un título y el subtítulo.
 
-  - enter and format content for the text box.  
+  - especificar y aplicar el formato de contenido del cuadro de texto.  
 
-  - Optionally, set a custom link for the title.  However, in this example we've added hyperlinks within the text box itself, so leave <bpt id="p1">**</bpt>Set custom link<ept id="p1">**</ept> unchecked.
+  - Opcionalmente, establezca un vínculo personalizado para el título.  Sin embargo, en este ejemplo hemos agregado hipervínculos en el texto del cuadro, dejar así **conjunto de vínculos personalizados** desactivada.
 
-3.  Select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.  On the dashboard, resize and move the text box as needed.
+3.  Seleccione **aplicar**.  En el panel, cambiar el tamaño y mover el cuadro de texto según sea necesario.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-text-added.png)
 
-## Add a video
+## Agregar un vídeo
 
-When you add a YouTube or Vimeo video tile to your dashboard, the video plays right on your dashboard.
+Cuando se agrega un icono de vídeo de YouTube o Vimeo al panel, el vídeo se reproduce en el panel.
 
-1. Select <bpt id="p1">**</bpt>Video &gt; Next<ept id="p1">**</ept>.
+1. Seleccione **vídeo > siguiente**.
 
-2. Add video information to the <bpt id="p1">**</bpt>Tile details<ept id="p1">**</ept> pane.
+2. Agregar información de vídeo del **icono detalles** panel.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-video.png)
 
-  - to display a title and subtitle at the top of the video tile, select <bpt id="p1">*</bpt>Display title and subtitle<ept id="p1">*</ept> and type a title and/or subtitle. In this example, we'll add a subtitle and then turn it into a hyperlink back to the entire playlist on YouTube.
+  - para mostrar un título y un subtítulo en la parte superior del título de vídeo, seleccione *Mostrar el título y el subtítulo* y escriba un título y el subtítulo. En este ejemplo, se agregará un subtítulo y, a continuación, convertirlo en un hipervínculo a la lista de reproducción todo en YouTube.
 
-  - enter the URL for the video
+  - Escriba la dirección URL del vídeo
 
-  - Add a hyperlink for the title and subtitle.  Perhaps after your colleagues watch the embedded video you'd like them to view the entire playlist on YouTube -- add a link to your playlist here.
+  - Agregar un hipervínculo para el título y el subtítulo.  Tal vez después de que sus colegas ver incrustado vídeo le gustaría a ver toda la lista de reproducción en YouTube: agregar un vínculo a la lista de reproducción aquí.
 
-  - Select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.  On the dashboard, resize and move the video tile as needed.
+  - Seleccione **aplicar**.  En el panel, cambiar el tamaño y mover el mosaico vídeo según sea necesario.
 
       ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-video-added2.png)
 
-3. Select the video tile to play the video.
+3. Seleccione el icono de vídeo para reproducir el vídeo.
 
-4. Select the subtitle to visit the playlist on YouTube.
+4. Seleccione el subtítulo visitar la lista de reproducción en YouTube.
 
-## Add web content
+## Agregar contenido web
 
-Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboard. Enter the embed code by hand or copy/paste from sites such as Twitter, YouTube, embed.ly, and more.
+Pegue o escriba en cualquier contenido HTML.  Power BI agrega, como un icono al escritorio. Escriba el código para insertar manualmente o copiar y pegar desde sitios como Twitter, YouTube, embed.ly y más.
 
-1. Select <bpt id="p1">**</bpt>Web content &gt; Next<ept id="p1">**</ept>.
+1. Seleccione **contenido Web > siguiente**.
 
-2. Add information to the <bpt id="p1">**</bpt>Add web content tile<ept id="p1">**</ept> pane.
+2. Agregar información a la **mosaico de contenido agregar web** panel.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/power-bi-add-web-content.png)
 
-  - to display a title above the tile, select <bpt id="p1">*</bpt>Display title and subtitle<ept id="p1">*</ept> and type a title and/or subtitle.
+  - para mostrar un título por encima del mosaico, seleccione *Mostrar el título y el subtítulo* y escriba un título y el subtítulo.
 
-  - enter the embed code. In this example we're copying and pasting a Twitter feed.
+  - Escriba el código para insertar. En este ejemplo estamos copiando y pegando una fuente de Twitter.
 
-  - Select <bpt id="p1">**</bpt>Apply<ept id="p1">**</ept>.  On the dashboard, resize and move the web content tile as needed.
+  - Seleccione **aplicar**.  En el panel, cambiar el tamaño y mover el mosaico de contenido web según sea necesario.
 
       ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-widget-code-added.png)
 
-### Tips for embedding web content###
+### Sugerencias para la incrustación de contenido web###
 
-- For iframes, use a secure source. If you enter your iframe embed code and get a blank tile, check to see if you're using <bpt id="p1">**</bpt>http<ept id="p1">**</ept> for the iframe source.  If so, change it to <bpt id="p1">**</bpt>https<ept id="p1">**</ept>.
+- Para iframes, utilice un origen seguro. Si escribe el iframe incrustar código y obtener un mosaico en blanco, compruebe si está utilizando **http** para el origen de iframe.  Si es así, cámbielo a **https**.
 
   ```
   <iframe src="https://xyz.com">
   ```
 
-- Edit width and height information. This embed code embeds a video and sets the video player to 560 x 315 pixels.  This size will not change as you resize the tile.
+- Editar la información de ancho y alto. Este código para insertar incrusta un vídeo y establece el Reproductor de vídeo a 560 x 315 píxeles.  Este tamaño no cambiará cuando se cambia el tamaño del mosaico.
 
   ```
   <iframe width="560" height="315"
@@ -137,7 +139,7 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
    allowfullscreen></iframe>
   ```
 
-  If you'd like the player to resize to fit the tile size, set width and height to 100%.
+  Si desea que el Reproductor para cambiar el tamaño para ajustar el tamaño del mosaico, establecer el ancho y alto de 100%.
 
   ```
   <iframe width="100%" height="100%"
@@ -145,7 +147,7 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
    allowfullscreen></iframe>
   ```
 
-- This code embeds a tweet and retains, as separate links on the dashboard, links for the <bpt id="p1">**</bpt>AFK<ept id="p1">**</ept> podcast, <bpt id="p2">**</bpt>@GuyInACube's Twitter page<ept id="p2">**</ept>, <bpt id="p3">**</bpt>Follow<ept id="p3">**</ept>, <bpt id="p4">**</bpt>#analytics<ept id="p4">**</ept>, <bpt id="p5">**</bpt>reply<ept id="p5">**</ept>, <bpt id="p6">**</bpt>retweet<ept id="p6">**</ept>, and <bpt id="p7">**</bpt>like<ept id="p7">**</ept>.  Selecting the tile itself takes you to the podcast on Twitter.
+- Este código se incrusta un tweet y se conserva como vínculos independientes en el panel vínculos para la **AFK** podcast, **página de Twitter de @GuyInACube**, **siga**, **#analytics**, **respuesta**, **retwittear**, y **como**.  Seleccionar el mosaico abre el podcast en Twitter.
 
   ```
   <blockquote class="twitter-tweet" data-partner="tweetdeck">
@@ -162,25 +164,27 @@ Paste or type in any HTML content.  Power BI adds it, as a tile, to your dashboa
 charset="utf-8"></script>
 ```
 
-- To make it easier to move the tile on your dashboard, add a title and/or subtitle.
+- Para facilitar el mover el mosaico en el panel, agregar un título y el subtítulo.
 
-- If you'd like to embed some content from a website, but the website doesn't give you embed code to copy and paste, check out embed.ly for help generating the embed code.
+- Si desea incrustar el contenido de un sitio Web, pero no proporciona el sitio Web es incrustar código para copiar y pegar, consulte embed.ly para generar el código de incrustación de ayuda.
 
 ##  Editar un mosaico
 
-To make changes to a tile...
+Para realizar cambios en un mosaico...
 
-1. Hover over the top right corner of the tile and select the ellipses.
+1. Mantenga el mouse sobre la esquina superior derecha del icono y seleccione el botón de puntos suspensivos.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi_ellipses.png)
 
-2. Select the edit icon to re-open the <bpt id="p1">**</bpt>Tile details<ept id="p1">**</ept> pane and make changes.
+2. Seleccione el icono de edición para volver a abrir el **icono detalles** panel y realizar cambios.
 
     ![](media/powerbi-service-add-a-widget-to-a-dashboard/pbi-edit.png)
 
 ## Consulte también  
 
-<bpt id="p1">[</bpt>Creating Power BI dashboards<ept id="p1">](powerbi-service-create-a-dashboard.md)</ept><ph id="ph1">
-</ph><bpt id="p2">[</bpt>Dashboard tiles<ept id="p2">](powerbi-service-dashboard-tiles.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>.
+            [Creación de paneles de Power BI](powerbi-service-create-a-dashboard.md)
+[iconos de panel](powerbi-service-dashboard-tiles.md)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/).

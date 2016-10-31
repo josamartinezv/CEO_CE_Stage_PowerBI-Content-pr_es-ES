@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Tips and Tricks for Power BI Map visualizations"
-   description="Tips and Tricks for Power BI Map visualizations"
+   pageTitle="Sugerencias y trucos para las visualizaciones de mapas de Power BI"
+   description="Sugerencias y trucos para las visualizaciones de mapas de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,38 +21,38 @@
    ms.date="08/22/2016"
    ms.author="mihart"/>
 
-# Tips and Tricks for Power BI Map visualizations  
+# Sugerencias y trucos para las visualizaciones de mapas de Power BI  
 
-Power BI integrates with Bing to provide default map coordinates (a process called geo-coding) so it's easier for you to create maps. Bing uses some algorithms and hints to try to get the right location, but it's a best guess. To increase the likelihood of correct geo-coding, you can use the following tips:
+Power BI se integra con Bing para proporcionar las coordenadas de la asignación predeterminada (es decir, un proceso denominado codificación geográfica) por lo que es más fácil para crear asignaciones. Bing usa algunos algoritmos y sugerencias para intentar obtener la ubicación correcta, pero es una mejor aproximación. Para aumentar la probabilidad de codificación de geográfica correcta, puede utilizar las siguientes sugerencias:
 
-**1. **
+**1. Utilice términos de ubicación geográfica**
 
-When columns are named based on the geographic designation, it helps Bing guess what you want to display. For example, if you have a field of US state names such as <bpt id="p1">*</bpt>California<ept id="p1">*</ept> and <bpt id="p2">*</bpt>Washington<ept id="p2">*</ept>, if the column is not named based on the geographic designation (state, in this case), Bing might return the location of <bpt id="p3">*</bpt>Washington, DC<ept id="p3">*</ept> instead of Washington State for the word <bpt id="p4">*</bpt>Washington<ept id="p4">*</ept>. Naming that column <bpt id="p1">*</bpt>State<ept id="p1">*</ept> will improve the geocoding. The same is true for columns named <bpt id="p1">*</bpt>Country<ept id="p1">*</ept>, <bpt id="p2">*</bpt>State<ept id="p2">*</ept>, and <bpt id="p3">*</bpt>City<ept id="p3">*</ept>.   
+Cuando se asignan las columnas según la designación geográfica, resulta útil Bing adivinar lo que desea mostrar. Por ejemplo, si tiene un campo de NOSOTROS estado nombres como *California* y *Washington*, si la columna no tiene nombre según la designación geográfica (estado, en este caso), Bing podría devolver la ubicación de *Washington, DC* en lugar de Washington State para word *Washington*. Nombres de columna *estado* mejorará las coordenadas geográficas. Lo mismo es cierto para las columnas denominadas *País*, *estado*, y *City*.   
 
-**2. **
+**2. Use una coma para agregar más contexto al campo geográfica**
 
-Some designations are ambiguous when considered in the context of multiple countries or regions. You can increase the accuracy of geo-coding by building columns that append multiple fields together and use those for plotting data locations. For example, instead of passing only <bpt id="p1">*</bpt>Wiltshire<ept id="p1">*</ept>, you can pass <bpt id="p2">*</bpt>Wiltshire, England<ept id="p2">*</ept> to get a more accurate geo-coding result. 
+Algunas designaciones son ambiguas Cuando se consideran en el contexto de varios países o regiones. Puede aumentar la precisión de codificación geográfica mediante la creación de columnas que anexar varios campos juntos y utilizarlas para trazar las ubicaciones de los datos. Por ejemplo, en lugar de pasar sólo *Wiltshire*, puede pasar *Wiltshire, Inglaterra* para obtener un resultado más preciso de codificación geográfica. 
 
-**3. **
+**3. Usar específico latitud y longitud**
 
-You can always provide specific latitude and longitude locations. When you do this, you also need to fill the <bpt id="p1">*</bpt>Location<ept id="p1">*</ept> field when creating your visualizations. Otherwise, the data is aggregated by default, so for example, the latitude and longitude would be paired at the state level, not the city level. Latitude and Longitude fields must be in <bpt id="p1">*</bpt>Decimal Number<ept id="p1">*</ept> format, which you can set in the data model.
+Siempre puede proporcionar ubicaciones específicas de latitud y longitud. Al hacerlo, también debe rellenar el *ubicación* campo al crear las visualizaciones. De lo contrario, los datos se agregan de forma predeterminada, por ejemplo, la latitud y longitud podría combinarse en el nivel de estado, no en el nivel de ciudad. Campos de latitud y longitud deben estar en *número Decimal* formato, que puede establecer en el modelo de datos.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ajTPGNpthcg" frameborder="0" allowfullscreen></iframe>
 
 
-## Categorizing geographic fields to hint Bing's geocoding  
-In Power BI Desktop, you can ensure fields are correctly geocoded by setting the <bpt id="p1">*</bpt>Data Category<ept id="p1">*</ept> on the data fields. In Power BI Desktop, select the desired table, go to the <bpt id="p1">**</bpt>Advanced<ept id="p1">**</ept> ribbon and then set the <bpt id="p2">**</bpt>Data Category<ept id="p2">**</ept> to <bpt id="p3">**</bpt>Address<ept id="p3">**</ept>, <bpt id="p4">**</bpt>City<ept id="p4">**</ept>, <bpt id="p5">**</bpt>Continent<ept id="p5">**</ept>, <bpt id="p6">**</bpt>Country/Region<ept id="p6">**</ept>, <bpt id="p7">**</bpt>Country<ept id="p7">**</ept>, <bpt id="p8">**</bpt>Postal Code<ept id="p8">**</ept>, <bpt id="p9">**</bpt>State<ept id="p9">**</ept> or <bpt id="p10">**</bpt>Province<ept id="p10">**</ept>. These data categories help Bing correctly encode the date. To learn more, see <bpt id="p1">[</bpt>Data categorization in Power BI Desktop<ept id="p1">](powerbi-desktop-data-categorization.md)</ept>.
+## Categorizar campos geográficos para obtener las coordenadas geográficas de Bing  
+En Power BI Desktop, puede asegurarse de campos de coordenadas geográficas correctamente estableciendo la *categoría datos* en los campos de datos. En Power BI Desktop, seleccione la tabla deseada, vaya a la **avanzadas** la cinta de opciones y, a continuación, establezca el **categoría datos** a **dirección**, **City**, **continente**, **país o región**, **País**, **Código Postal**, **estado** o **provincia**. Estas categorías de datos ayudan a Bing a codificar correctamente la fecha. Para obtener más información, consulte [categorización de datos en Power BI Desktop](powerbi-desktop-data-categorization.md).
 
-## Better geocoding with more specific locations  
-Sometimes, even setting the data categories for mapping isn't enough for Bing to correctly guess your intent. Within the query, you can build a more specific location like a street address using <bpt id="p1">**</bpt>Query Editor<ept id="p1">**</ept> in Power BI Desktop.  Use the <bpt id="p1">**</bpt>Add Column<ept id="p1">**</ept> feature to build a custom column, then build the desired location as follows: 
+## Mejor codificación geográfica con ubicaciones más específicas  
+A veces, incluso establecer las categorías de datos de asignación no basta con Bing adivinar correctamente su intención. Dentro de la consulta, puede crear una ubicación más específica como una dirección postal mediante **Editor de consultas** en Power BI Desktop.  Utilice la **Agregar columna** característica para crear una columna personalizada, a continuación, crear la ubicación deseada como sigue: 
 
 
     = [Field1] & " " & [Field2]
 
-Then use the resulting field in the map visualizations. This approach is very useful for building Street addresses from Shipping Address fields, which are common in data sets. Note that concatenation only works with text fields. If necessary, convert the street number to a <bpt id="p1">*</bpt>text<ept id="p1">*</ept> data type before using it to build an address.  
+A continuación, utilice el campo resultante en las visualizaciones de mapa. Este enfoque es muy útil para la creación de direcciones de los campos de dirección de envío, que son comunes en conjuntos de datos. Tenga en cuenta que la concatenación solo funciona con campos de texto. Si es necesario, convierta el número de la calle para una *texto* el tipo de datos antes de usarlo para generar una dirección.  
 
 ## Consulte también
 
-[Power Bi visualizations](powerbi-service-visualizations-for-reports.md)
+[Visualizaciones de Power Bi](powerbi-service-visualizations-for-reports.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

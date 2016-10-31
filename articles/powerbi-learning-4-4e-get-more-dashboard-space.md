@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get more space on your dashboard"
-   description="Use Full Screen mode to manage your dashboard space more effectively"
+   pageTitle="Obtener más espacio en el escritorio"
+   description="Usar el modo de pantalla completa para administrar de forma más eficaz el espacio del panel"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,28 +23,28 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Get More Space on Your Dashboard
+# Obtener más espacio en el escritorio
 
-You may find that occasionally when you create your dashboards, you have more content than what can fit on your canvas. There are a few solutions that help you manage how your dashboard space is displayed, so you can get a full view of your dashboard content.
+Es posible que en ocasiones al crear los paneles, tiene más contenido que lo que puede caber en el lienzo. Hay algunas soluciones que le ayudarán a administran cómo se muestra el espacio de escritorio, por lo que puede obtener una vista completa del contenido del panel.
 
-The easiest method to display your entire dashboard in one screen is selecting the <bpt id="p1">**</bpt>Full Screen Mode<ept id="p1">**</ept> button in the top right-hand corner of the dashboard.
+Selecciona el método más sencillo para mostrar el panel todo en una pantalla la **el modo de pantalla completa** botón en la esquina superior derecha del panel.
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_1.png)
 
-Selecting the <bpt id="p1">**</bpt>Full Screen Mode<ept id="p1">**</ept> button puts your browser into full screen mode, removing all chrome elements from around the dashboard, and thereby increasing the amount of viewable space.
+Seleccione el **modo de pantalla completa** botón coloca el explorador en modo de pantalla completa, quitar todos los elementos de cromo de alrededor del panel y, lo que aumenta la cantidad de espacio visible.
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_2.png)
 
-From within <bpt id="p1">**</bpt>Full-Screen Mode<ept id="p1">**</ept>, you can select the <bpt id="p2">**</bpt>Fit to Screen<ept id="p2">**</ept> option to shrink all of your tiles so they fit on a single screen, without the need for scrollbars. This is commonly called <bpt id="p1">*</bpt>TV mode<ept id="p1">*</ept>, and is useful for giving presentations with dashboards, or displaying a dashboard on hallway monitors.
+Desde **modo de pantalla completa**, puede seleccionar el **Ajustar a la pantalla** opción reducir todos los iconos para que quepan en una sola pantalla, sin necesidad de barras de desplazamiento. Esto se denomina comúnmente *el modo de televisión*, y es útil para realizar presentaciones con los paneles o mostrar un panel en los monitores de pasillo.
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_3.png)
 
-Another way to manage dashboard space is collapsing the Navigation pane on the left-hand side of the page, by selecting the hamburger icon. To expand the navigation pane, click the icon again.
+Otra forma de administrar el espacio del panel contrae el panel de navegación en el lado izquierdo de la página seleccionando el icono de la hamburguesa. Para expandir el panel de navegación, haga clic en el icono.
 
 ![](media/powerbi-learning-4-4e-get-more-dashboard-space/4-4e_4.png)
 
-You can ensure that a dashboard will always have a collapsed navigation bar by appending the following to the end of the URL:
+Para asegurarse de que un panel siempre tendrá una barra de exploración contraído agregando lo siguiente al final de la dirección URL:
 
->?collapseNavigation=true
+>? collapseNavigation = true
 
-Users who follow that link will open the dashboard with a collapsed navigation bar.
+Los usuarios que siguen este vínculo abren el panel con una barra de exploración contraído.

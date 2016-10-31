@@ -1,22 +1,22 @@
-## Update to the latest version 
+## Actualice a la versión más reciente 
  
-A lot of issues can surface when the gateway version is out of date.  It is a good general practice to make sure you are on the latest version.  If you haven't updated the gateway for a month, or longer, you may want to consider installing the latest version of the gateway and see if you can reproduce the issue.
+Muchos problemas pueden surgir cuando la versión de la puerta de enlace no está actualizada.  Es una buena práctica general para asegurarse de que se encuentra en la versión más reciente.  Si no ha actualizado la puerta de enlace durante un mes o más, puede considerar la instalación de la versión más reciente de la puerta de enlace y vea si puede reproducir el problema.
 
-## Common issues
+## Problemas comunes
 
-Here are a few common issues and resolutions that have helped a number of customers in environments that restrict internet access.
+Estos son algunos problemas comunes y soluciones que le hayan ayudado a un número de clientes en entornos que restringen el acceso a internet.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-t7RO6mHATI?showinfo=0" frameborder="0" allowfullscreen></iframe>
 
-### Authentication to proxy server
+### Autenticación de servidor proxy
 
-Your proxy may rquire authentication from a domain user account. By default, the gateway uses a Service SID for the windows service log on user. Changing the log on user to a domain user can help with this. For more information, see <bpt id="p1">[</bpt>Changing the gateway service account to a domain user<ept id="p1">](powerbi-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user)</ept>.
+El proxy puede rquire autenticación de una cuenta de usuario de dominio. De forma predeterminada, la puerta de enlace utiliza a un SID de servicio para el usuario de inicio de sesión del servicio windows. Cambiar de usuario de inicio de sesión a un usuario de dominio puede ayudarle. Para obtener más información, consulte [cambiar la cuenta de servicio de puerta de enlace a un usuario de dominio](powerbi-gateway-proxy.md#changing-the-gateway-service-account-to-a-domain-user).
 
-### Your proxy only allows ports 80 and 443 traffic
+### El proxy sólo permite que los puertos 80 y 443 de tráfico
 
-Some proxies restrict traffic to only ports 80 and 443. By default, communication to Azure Service Bus will occur on ports other than 443. 
+Algunos servidores proxy restringir el tráfico a sólo los puertos 80 y 443. De forma predeterminada, la comunicación al Bus de servicio de Azure tendrá lugar en puertos distinto de 443. 
 
-You can force the gateway to communicate with Azure Service Bus using HTTPS instead of direct TCP. Although, this will greatly reduce performance. You will need to modify the <bpt id="p1">*</bpt>Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config<ept id="p1">*</ept> file. Change the value from <ph id="ph1">`AutoDetect`</ph> to <ph id="ph2">`Https`</ph>. This file is located, by default, at <bpt id="p1">*</bpt>C:\Program Files\On-premises data gateway<ept id="p1">*</ept>.
+Puede forzar la puerta de enlace para comunicarse con el Bus de servicio de Azure usando HTTPS en lugar de TCP directa. Aunque esto reducirá en gran medida el rendimiento. Debe modificar el *Microsoft.PowerBI.DataMovement.Pipeline.GatewayCore.dll.config* archivo. Cambie el valor de `AutoDetect` a `Https`. Este archivo se encuentra, de forma predeterminada, en *puerta de enlace de datos local de programa\Archivos C:\Program*.
 
 ```
 <setting name="ServiceBusSystemConnectivityModeString" serializeAs="String">
@@ -26,6 +26,6 @@ You can force the gateway to communicate with Azure Service Bus using HTTPS inst
 
 ## Instalación
 
-### Error: Failed to add user to group.  (-2147463168   PBIEgwService   Performance Log Users   )
+### Error: No se pudo agregar el usuario al grupo.  (Usuarios del registro de rendimiento de-2147463168 PBIEgwService)
 
-You may receive this error if you are trying to install the gateway on a domain controller. Deploying on a domain controller is not supported. You will need to deploy the gateway on a machine that is not a domain controller.
+Puede recibir este error si intenta instalar la puerta de enlace en un controlador de dominio. No se admite la implementación de un controlador de dominio. Debe implementar la puerta de enlace en un equipo que no es un controlador de dominio.

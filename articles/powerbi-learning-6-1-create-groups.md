@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Groups in Power BI"
-   description="Create a new group, set privacy levels, and invite your first members"
+   pageTitle="Crear grupos en Power BI"
+   description="Crear un nuevo grupo y establecer niveles de privacidad para invitar a los miembros del primer"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,30 +23,30 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create a group in Power BI
+# Crear un grupo en Power BI
 
-In this lesson, we start by creating a <bpt id="p1">*</bpt>group<ept id="p1">*</ept>. A <bpt id="p1">**</bpt>group<ept id="p1">**</ept> defines a set of users who have access to specific dashboards, reports, and data.
+En esta lección, empezamos creando una *grupo*. Un **grupo** define un conjunto de usuarios que tienen acceso a datos, informes y paneles específicos.
 
-Groups in Power BI are based on groups in Office 365, so if you've been using Office 365 groups to manage your group's email, calendar, and documents, you'll see that Power BI offers the same features, and more. When you create a group in Power BI, you're actually creating an Office 365 group.
+Grupos de Power BI se basan en los grupos de Office 365, por lo que si ha estado usando grupos de Office 365 para administrar el grupo de correo electrónico, calendario y documentos, verá que Power BI ofrece las mismas características y mucho más. Cuando se crea un grupo en Power BI, realmente está creando un grupo de Office 365.
 
-This module uses the scenario of setting up a new finance group. We'll show how to set up the group, share dashboards, reports, and datasets into the group, and add members who'll have access to the items in the group.
+Este módulo utiliza el escenario de configuración de un nuevo grupo de finanzas. Le mostraremos cómo configurar la agrupación, recurso compartido de paneles, informes y conjuntos de datos en el grupo y agregar a miembros a los que tienen acceso a los elementos en el grupo.
 
-I start here in My Workspace. These are the dashboards, reports, and datasets that I've created or that someone shared with me.
+Iniciar aquí en Mi área de trabajo. Estos son los paneles, informes y conjuntos de datos que he creado o que alguien compartidas conmigo.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01myworkspace.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01myworkspace.png)
 
-If I expand My Workspace, I can select <bpt id="p1">**</bpt>Create a group<ept id="p1">**</ept>.
+Si se puede expandir Mi área de trabajo, puedo seleccionar **crear un grupo de**.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01expandMyWkspace.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01expandMyWkspace.png)
 
-Here I can give it a name. We're using the scenario or a finance group, so I'll call it Finance. Power BI makes sure the name doesn't exist on the domain.
+Aquí puede asignarle un nombre. Vamos a usar el escenario o un grupo de finanzas, por lo que yo lo llamaré Finanzas. Power BI garantiza que el nombre no existe en el dominio.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01creategroupdialog.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01creategroupdialog.png)
 
-I can set the privacy level by deciding whether anyone in my organization can see the contents of the group, or only its members.
+Puedo establecer el nivel de privacidad debe decidir si alguien de mi organización puede ver el contenido del grupo, o solo a sus miembros.
 
-I type email addresses, security groups, and distribution lists here. I select <bpt id="p1">**</bpt>Add<ept id="p1">**</ept> to make them members of the group, and save the group.
+Escribir direcciones de correo electrónico, grupos de seguridad y listas de distribución aquí. Seleccionar **Agregar** para hacerles miembros del grupo y guardar el grupo.
 
-![Share and collaborate in Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01savegroup.png)
+![Compartir y colaborar en Power BI](./media/powerbi-learning-6-1-create-groups/pbi_learn06_01savegroup.png)
 
-On to the next lesson!
+¡En la siguiente lección!

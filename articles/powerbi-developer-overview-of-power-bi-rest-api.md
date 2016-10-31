@@ -1,6 +1,6 @@
 <properties
-   pageTitle="What can I do with the Power BI API"
-   description="What can I do with the Power BI API"
+   pageTitle="¿Qué puedo hacer con la API de Power BI"
+   description="¿Qué puedo hacer con la API de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,40 +20,47 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# What can developers do with Power BI?
+# ¿Qué pueden hacer los desarrolladores con Power BI?
 
-Power BI displays dashboards that are interactive, and can be created and updated from many different data sources in real time. Using any programming language that supports REST calls, you can create apps that integrate with a Power BI dashboard in real-time. You can also integrate Power BI tiles and reports into apps.
+Power BI muestra los paneles que son interactivos y se pueden crear y actualizar desde muchos orígenes de datos diferentes en tiempo real. Utilizando cualquier lenguaje de programación que admita llamadas REST, puede crear aplicaciones que se integran con un panel de Power BI en tiempo real. También puede integrar informes y mosaicos de Power BI en aplicaciones.
 
-Developers can also build their own data visualizations that can be used in interactive reports and dashboards. 
+Los desarrolladores también pueden crear sus propias visualizaciones de datos que pueden utilizarse en los paneles e informes interactivos. 
 
-Here are some of the things you can do with the Power BI APIs.
+Estas son algunas de las cosas que puede hacer con la API de Power BI.
 
-|**Para**| **Go here**
+|**Para**| **Vaya aquí**
 |---|---
-|Extend an existing business workflow to push key data into a Power BI dashboard. |[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)
-|Embed tiles into an app.|[Integrate a tile into an app walkthrough](powerbi-developer-integrate-tile.md)
-|Embed reports into an app.|[Integrate a report into an app walkthrough](powerbi-developer-integrate-report.md)
-|Import a Power BI Desktop file| [Import PBIX File](https://msdn.microsoft.com/library/mt243837.aspx)
-|Authenticate a Power BI web app.|[Authenticate a Power BI web app](powerbi-developer-authenticate-a-web-app.md)
-|Create a custom visual.|[Create custom visuals](powerbi-custom-visuals.md)
+|Ampliar un flujo de trabajo existente para insertar datos de la clave en un panel de Power BI. |[Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md)
+|Incrustar iconos en una aplicación.|[Integrar un mosaico en un tutorial de la aplicación](powerbi-developer-integrate-tile.md)
+|Incrustar informes en una aplicación.|[Integrar un informe en un tutorial de la aplicación](powerbi-developer-integrate-report.md)
+|Importar un archivo de Power BI Desktop| [Importar archivo de PBIX](https://msdn.microsoft.com/library/mt243837.aspx)
+|Autenticar una aplicación web de Power BI.|[Autenticar una aplicación web de Power BI](powerbi-developer-authenticate-a-web-app.md)
+|Crear un objeto visual personalizado.|[Crear elementos visuales personalizados](powerbi-custom-visuals.md)
 
-### Other things you can do to learn about the developing for Power BI
+### Otras cosas que puede hacer para obtener información sobre el desarrollo para Power BI
 
-- <bpt id="p1">**</bpt>Check out the Power BI projects on GitHub and our samples<ept id="p1">**</ept> - GitHub has many Power BI projects: Go to <bpt id="p2">[</bpt>GitHub<ept id="p2">](https://github.com/search?utf8=%E2%9C%93&amp;q=Power+BI)</ept> and search “Power BI”. Or, we have these samples:
-    - <bpt id="p1">[</bpt>Client app sample<ept id="p1">](https://msdn.microsoft.com/library/mt186159.aspx)</ept>: A console app that shows you how to authenticate a client app and call all Power BI operations.
-    - <bpt id="p1">[</bpt>Web app sample<ept id="p1">](https://msdn.microsoft.com/library/mt186158.aspx)</ept>: A web app that shows you how to authenticate a Power BI web app.
-  - <bpt id="p1">[</bpt>Integrate a Power BI tile into an app<ept id="p1">](https://msdn.microsoft.com/library/mt576402.aspx)</ept>: A web app that shows you how to integrate a Power BI tile into an app.
-  - <bpt id="p1">[</bpt>Integrate a Power BI report into an app<ept id="p1">](https://msdn.microsoft.com/library/mt631357.aspx)</ept>: A web app that shows you how to integrate a Power BI report into an app.
+- 
+            **Los proyectos de Power BI en GitHub y nuestros ejemplos** -GitHub tiene muchos proyectos de Power BI: vaya a [GitHub](https://github.com/search?utf8=%E2%9C%93&q=Power+BI) y busque "Power BI". O bien, tenemos estos ejemplos:
+    - 
+            [Ejemplo de aplicación cliente](https://msdn.microsoft.com/library/mt186159.aspx): una aplicación de consola que muestra cómo autenticar una aplicación cliente y llamar a todas las operaciones de Power BI.
+    - 
+            [Ejemplo de aplicación Web](https://msdn.microsoft.com/library/mt186158.aspx): una aplicación web que muestra cómo autenticar una aplicación web de Power BI.
+  - 
+            [Integrar un mosaico de Power BI en una aplicación](https://msdn.microsoft.com/library/mt576402.aspx): una aplicación web que muestra cómo integrar un mosaico de Power BI en una aplicación.
+  - 
+            [Integrar un informe de Power BI en una aplicación](https://msdn.microsoft.com/library/mt631357.aspx): una aplicación web que muestra cómo integrar un informe de Power BI en una aplicación.
 
-- <bpt id="p1">[</bpt><bpt id="p2">**</bpt>Try the Power BI REST API<ept id="p2">**</ept><ept id="p1">](http://docs.powerbi.apiary.io/)</ept><ph id="ph1"> -
-</ph>In the Apiary interactive API console, you can try all Power BI REST API operations such as <bpt id="p3">[</bpt>Create Dataset<ept id="p3">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> and <bpt id="p4">[</bpt>Get Datasets<ept id="p4">](https://msdn.microsoft.com/library/mt203567.aspx)</ept>.
+- 
+            [
+            **Pruebe la API de REST de Power BI**](http://docs.powerbi.apiary.io/) -
+consola de API interactiva en el Apiary, puede probar todas las operaciones de API de REST de Power BI como [Crear conjunto de datos](https://msdn.microsoft.com/library/mt203562.aspx) y [obtener conjuntos de datos](https://msdn.microsoft.com/library/mt203567.aspx).
 
 ## Consulte también
 
-[Push data into a dashboard](powerbi-developer-walkthrough-push-data.md)  
-[Integrate a tile into an app](powerbi-developer-integrate-tile.md)  
-[Integrate a report into an app](powerbi-developer-integrate-report.md)  
-[Create custom visuals](powerbi-custom-visuals-create-for-the-gallery.md)  
-[Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)  
-[Power BI Embedded Service](https://azure.microsoft.com/services/power-bi-embedded/)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md)  
+[Integrar un mosaico en una aplicación](powerbi-developer-integrate-tile.md)  
+[Integrar un informe en una aplicación](powerbi-developer-integrate-report.md)  
+[Crear elementos visuales personalizados](powerbi-custom-visuals-create-for-the-gallery.md)  
+[Referencia de API de REST de BI de energía](https://msdn.microsoft.com/library/mt147898.aspx)  
+[Power BI incrustado servicio](https://azure.microsoft.com/services/power-bi-embedded/)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

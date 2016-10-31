@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Get a dataset to add rows"
-   description="Walkthrough to push data - Get a dataset to add rows into a Power BI table"
+   pageTitle="Obtiene un conjunto de datos para agregar filas"
+   description="Tutorial para insertar datos - obtener un conjunto de datos para agregar filas a una tabla de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,37 +20,38 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Step 4: Get a dataset to add rows into a Power BI table
+# Paso 4: Obtener un conjunto de datos para agregar filas a una tabla de Power BI
 
-This article is part of a step-by-step walkthrough to <bpt id="p1">[</bpt>push data into a dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data.md)</ept>.
+Este artículo forma parte de un tutorial paso a paso para [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md).
 
-In <bpt id="p1">**</bpt>step 3<ept id="p1">**</ept> of Push data into a dashboard, <bpt id="p2">[</bpt>Create a dataset in a Power BI dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data-create-dataset.md)</ept>, you called the <bpt id="p3">[</bpt>Create Dataset<ept id="p3">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> operation to create a dataset in a dashboard. In this step, you use the <bpt id="p1">[</bpt>Get Datasets<ept id="p1">](https://msdn.microsoft.com/library/mt203567.aspx)</ept> operation and Newtonsoft.Json to get a dataset id. You use the dataset id in step 4 to add rows to a dataset.
+En **paso 3** de insertar datos en un panel [crear un conjunto de datos en un panel de Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md), se llamó la [Crear conjunto de datos](https://msdn.microsoft.com/library/mt203562.aspx) operación para crear un conjunto de datos en un panel. En este paso, usará el [obtener conjuntos de datos](https://msdn.microsoft.com/library/mt203567.aspx) operación y Newtonsoft.Json para obtener un identificador de conjunto de datos. Utilice el identificador de conjunto de datos en el paso 4 para agregar filas a un conjunto de datos.
 
-To push data into a Power BI dashboard, you need to reference the table in the dataset. To reference a table in a dataset, you first need to get a <bpt id="p1">**</bpt>Dataset ID<ept id="p1">**</ept>. You get a <bpt id="p1">**</bpt>Dataset ID<ept id="p1">**</ept> using the <bpt id="p2">[</bpt>Get Dataset<ept id="p2">](https://msdn.microsoft.com/library/mt203567.aspx)</ept> operation. The <bpt id="p1">**</bpt>Get Dataset<ept id="p1">**</ept> operation returns a JSON string containing a list of all datasets in a Power BI dashboard. The recommended way to deserialize a JSON string is with <bpt id="p1">[</bpt>Newtonsoft.Json<ept id="p1">](http://www.newtonsoft.com/json)</ept>.
+Para insertar datos en un panel de Power BI, debe hacer referencia a la tabla del conjunto de datos. Para hacer referencia a una tabla en un conjunto de datos, primero debe obtener un **identificador de conjunto de datos**. Obtendrá un **identificador de conjunto de datos** mediante la [obtener el conjunto de datos](https://msdn.microsoft.com/library/mt203567.aspx) operación. El **obtener el conjunto de datos** operación devuelve una cadena JSON que contiene una lista de todos los conjuntos de datos en un panel de Power BI. Es la manera recomendada para deserializar una cadena JSON con [Newtonsoft.Json](http://www.newtonsoft.com/json).
 
-Here's how you get a dataset.
+Aquí es cómo obtener un conjunto de datos.
 
-## Get a Power BI dataset
+## Obtiene un conjunto de datos de Power BI
 
-><bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept>: Before you get started, make sure you have followed the previous steps in the <bpt id="p2">[</bpt>push data into a dashboard<ept id="p2">](powerbi-developer-walkthrough-push-data.md)</ept> walkthrough.
+>
+            **NOTA**: antes de comenzar, asegúrese de que ha seguido los pasos anteriores en el [Insertar datos en un panel](powerbi-developer-walkthrough-push-data.md) tutorial.
 
-1. In the Console Application project you created in Step 2: Walkthrough to push data, <bpt id="p1">[</bpt>Get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>, install the Newtonsoft.Json NuGet package. Here's how to install the package:
+1. En el proyecto de aplicación de consola creó en el paso 2: tutorial para insertar datos, [obtener un acceso de autenticación token](powerbi-developer-walkthrough-push-data-get-token.md), instale el paquete Newtonsoft.Json NuGet. Aquí se muestra cómo instalar el paquete:
 
-     a. In Visual Studio 2015, choose <bpt id="p1">**</bpt>Tools<ept id="p1">**</ept><ph id="ph1"> &gt; </ph><bpt id="p2">**</bpt>NuGet Package Manager<ept id="p2">**</ept><ph id="ph2"> &gt; </ph><bpt id="p3">**</bpt>Package Manager Console<ept id="p3">**</ept>.
+     a. En Visual Studio 2015, elija **herramientas** > **Administrador de paquetes de NuGet** > **Package Manager Console**.
 
-     b. In <bpt id="p1">**</bpt>Package Manager Console<ept id="p1">**</ept>, enter Install-Package Newtonsoft.Json.
+     b. En **Package Manager Console**, escriba Install-Package Newtonsoft.Json.
 
-2. After the package is installed, add <bpt id="p1">**</bpt>using Newtonsoft.Json;<ept id="p1">**</ept> to Program.cs.
+2. Después de instala el paquete, agregar **utilizando Newtonsoft.Json;** en Program.cs.
 
-3. In Program.cs, add the code below to get a <bpt id="p1">**</bpt>Dataset ID<ept id="p1">**</ept>.
+3. En Program.cs, agregue el código siguiente para obtener un **identificador de conjunto de datos**.
 
-4. Run the Console App, and login to your Power BI account. You should see <bpt id="p1">**</bpt>Dataset ID:<ept id="p1">**</ept> followed by an id in the Console Window.
+4. Ejecutar la aplicación de consola e inicie sesión en su cuenta de Power BI. Debería ver **identificador de conjunto de datos:** seguido de un identificador en la ventana de consola.
 
-**Sample get a dataset**
+**Get de ejemplo de un conjunto de datos**
 
-Add this code into Program.cs.
+Agregue este código en Program.cs.
 
-- In static void Main(string[] args):
+- En static void Main (string [] args):
 
   ```
   static void Main(string[] args)
@@ -67,7 +68,7 @@ Add this code into Program.cs.
   }
   ```
 
-- Add a GetDatset() method:
+- Agregue un método GetDatset():
 
   ```
     #region Get a dataset to add rows into a Power BI table
@@ -111,22 +112,22 @@ Add this code into Program.cs.
     #endregion
 ```
 
-The next step shows you how to <bpt id="p1">[</bpt>add rows to a Power BI table<ept id="p1">](powerbi-developer-walkthrough-push-data-add-rows.md)</ept>.
+El paso siguiente muestra cómo a [Agregar filas a una tabla de Power BI](powerbi-developer-walkthrough-push-data-add-rows.md).
 
-Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept>.
+A continuación se muestra la [código completo](#code).
 
-[Next Step &gt;](powerbi-developer-walkthrough-push-data-add-rows.md)
+[Siguiente paso >](powerbi-developer-walkthrough-push-data-add-rows.md)
 
 ## Consulte también
-- [Add rows to a Power BI table](powerbi-developer-walkthrough-push-data-add-rows.md)
+- [Agregar filas a una tabla de Power BI](powerbi-developer-walkthrough-push-data-add-rows.md)
 - [Newtonsoft.Json](http://www.newtonsoft.com/json)
-- [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
-- [Push data into a Power BI Dashboard](powerbi-developer-walkthrough-push-data.md)
-- [Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)
-- [Power BI REST API reference](https://msdn.microsoft.com/library/mt147898.aspx)
+- [Obtener conjuntos de datos](https://msdn.microsoft.com/library/mt203567.aspx)
+- [Insertar datos en un panel de Power BI](powerbi-developer-walkthrough-push-data.md)
+- [Información general sobre la API de REST de Power BI](powerbi-developer-overview-of-power-bi-rest-api.md)
+- [Referencia de API de REST de BI de energía](https://msdn.microsoft.com/library/mt147898.aspx)
 
 <a name="code"/>
-## Complete code listing
+## Lista de código completa
 
     using System;
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
@@ -282,4 +283,4 @@ Below is the <bpt id="p1">[</bpt>complete code listing<ept id="p1">](#code)</ept
         }
     }
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

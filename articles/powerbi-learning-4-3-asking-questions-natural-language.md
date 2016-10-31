@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Ask Questions of Your Data With Natural Language"
-   description="Use Q &amp; A to get lightning-fast insights and visuals"
+   pageTitle="Formule preguntas de los datos con lenguaje Natural"
+   description="Usar preguntas y respuestas para obtener los elementos visuales y rapidísimas insights"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,24 +23,24 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Ask Questions of Your Data With Natural Language
+# Formule preguntas de los datos con lenguaje Natural
 
-Power BI comes with a powerful language recognition engine that lets you ask questions of your data using conversational phrases and questions. So along with building reports and visualizations with Power BI, you can create charts and graphs just by asking simple questions.
+Power BI incluye un motor de reconocimiento de lenguaje eficaz que le permite solicitar sus datos mediante conversacionales frases y las preguntas. Así junto con creación de informes y visualizaciones con Power BI, puede crear diagramas y gráficos formulando preguntas sencillas.
 
-To ask a question of your data, open a dashboard in Power BI and the top of the screen you'll see an input box, where you can ask questions about the displayed data. This feature is sometimes referred to as <bpt id="p1">*</bpt>Questions &amp; Answers<ept id="p1">*</ept>, or more often, this feature is just referred to as <bpt id="p2">**</bpt>Q&amp;A<ept id="p2">**</ept>.
+Para hacer una pregunta de sus datos, abrir un panel en Power BI y la parte superior de la pantalla verá un cuadro de entrada, donde puede plantear preguntas acerca de los datos mostrados. Esta característica se conoce a veces como *preguntas y respuestas*, o más, esta característica es sólo conoce a menudo como **preguntas y respuestas**.
 
 ![](media/powerbi-learning-4-3-asking-questions-natural-language/4-3_1.png)
 
-When you click in the box, Power BI displays prompts with some suggested terms based on your data, such as "YTD revenue". You can click on a suggested term to see the result, often displayed as a simple table or card. When you select one of the suggested phrases, Power BI automatically creates a visual based on your selection, in real time.
+Al hacer clic en el cuadro, Power BI muestra los mensajes con algunos de los términos sugeridos basadas en los datos, como "Ingresos Anuales". Puede hacer clic en un término sugerido para ver el resultado, a menudo se muestra como una tabla sencilla o una tarjeta. Al seleccionar una de las frases sugeridas, Power BI crea automáticamente un objeto visual en función de su selección, en tiempo real.
 
 ![](media/powerbi-learning-4-3-asking-questions-natural-language/4-3_2.png)
 
-You can also ask questions using natural language, such as "What was our revenue last year?" or "What product had the highest sales in March 2014?". Power BI displays its interpretation of your question, and chooses the best type of visual to represent the answer. And just like any other visual in Power BI, you can <bpt id="p1">**</bpt>pin<ept id="p1">**</ept> it to the dashboard of your choice by selecting the <bpt id="p2">**</bpt>pin<ept id="p2">**</ept> icon.
+También puede hacer preguntas con lenguaje natural, como "Lo que nuestros ingresos del año pasado fue?" o bien, "¿qué producto tenía las ventas más altas en marzo de 2014?". Power BI muestra su interpretación de su pregunta y elige el mejor tipo de visual para representar la respuesta. Y al igual que otros visual en Power BI, puede **pin** para el panel de su elección seleccionando la **pin** icono.
 
 ![](media/powerbi-learning-4-3-asking-questions-natural-language/4-3_3.png)
 
-At any point along the way, you can edit the visual created by your natural language question or phrase. Just use the <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> panes on the right side of the screen. Like any other visual in Power BI, you can alter the layout, adjust filters, and change the field inputs.
+En cualquier punto del camino, puede editar el objeto visual creado por su pregunta de lenguaje natural o frase. Utilice la **visualizaciones** y **campos** paneles en el lado derecho de la pantalla. Al igual que otros visual en Power BI, puede modificar el diseño, ajustar los filtros y cambiar las entradas de campo.
 
 ![](media/powerbi-learning-4-3-asking-questions-natural-language/4-3_4.png)
 
-To save the visualization to a dashboard once you've created the perfect visual, just select the <bpt id="p1">**</bpt>pin<ept id="p1">**</ept> icon next to the question input box.
+Para guardar la visualización a un panel después de crear el objeto visual perfecto, simplemente seleccione el **pin** icono situado junto al cuadro de entrada de pregunta.

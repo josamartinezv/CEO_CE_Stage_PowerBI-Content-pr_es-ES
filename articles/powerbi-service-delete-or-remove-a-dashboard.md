@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Remove a dashboard"
-   description="Remove a dashboard"
+   pageTitle="Quitar un panel"
+   description="Quitar un panel"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,27 +20,31 @@
    ms.date="10/01/2016"
    ms.author="mihart"/>
 
-# <a name="remove-a-dashboard"></a>Remove a dashboard  
+# <a name="remove-a-dashboard"></a>Quitar un panel  
 
-Dashboards can be removed. Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
+Los paneles se pueden quitar. El panel no se elimina el conjunto de datos subyacente o los informes asociados a ese panel.
 
--   If you are the owner of the dashboard, you can remove it. If you've shared the dashboard with colleagues, removing the dashboard from your Power BI workspace does not remove the dashboard from their Power BI workspace.
+-   Si es el propietario del panel, puede quitarlo. Si ha compartido el panel con sus colegas, quitar el panel del área de trabajo de Power BI no elimina el panel de su área de trabajo de Power BI.
 
--   If a dashboard is shared with you and you no longer want to see it, you can remove it.  Removing a dashboard does not remove it from anyone else's Power BI workspace.
+-   Si un panel se comparte con usted y ya no desea verlos, puede quitarlo.  Quitar un panel no quita del área de Power BI de otra persona.
 
--   If a dashboard is part of an <bpt id="p1">[</bpt>organizational content pack<ept id="p1">](powerbi-service-organizational-content-pack-delete.md)</ept>, the only way to remove it is to remove the associated dataset.
+-   Si un panel es parte de una [paquete de contenido de organización](powerbi-service-organizational-content-pack-delete.md), es la única manera de quitarlo quitar el conjunto de datos asociado.
 
-## <a name="to-remove-a-dashboard"></a>To remove a dashboard  
-1.  In the navigation pane, right-click the dashboard to remove.  
+## <a name="to-remove-a-dashboard"></a>Para quitar un panel  
+1.  En el panel de navegación, haga clic en el panel para quitar.  
     ![](media/powerbi-service-delete-or-remove-a-dashboard/delete_or_remove2.png)
 
-2.  Select <bpt id="p1">**</bpt>Remove<ept id="p1">**</ept>.  Removing the dashboard does not delete the underlying dataset or any reports associated with that dashboard.
+2.  Seleccione **quitar**.  El panel no se elimina el conjunto de datos subyacente o los informes asociados a ese panel.
 
->[AZURE.NOTE] Dashboards that are part of an organizational content packs have a different process for deleting.  See <bpt id="p1">[</bpt>Delete an organizational content pack<ept id="p1">](powerbi-service-organizational-content-pack-delete.md)</ept>.
+>[AZURE.NOTE] Los paneles que forman parte de una organización contenido módulos tienen un proceso diferente para eliminar.  Consulte [Eliminar un paquete de contenido organizativo](powerbi-service-organizational-content-pack-delete.md).
 
 ## <a name="see-also"></a>Consulte también  
-<bpt id="p1">[</bpt>Dashboards in Power BI<ept id="p1">](powerbi-service-dashboards.md)</ept>  
-<bpt id="p1">[</bpt>Get Started with Power BI<ept id="p1">](powerbi-service-get-started.md)</ept>  
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [Paneles de Power BI](powerbi-service-dashboards.md)  
+
+            [Introducción a Power BI](powerbi-service-get-started.md)  
+
+            [Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Integrate OneDrive for Business with Power BI"
-   description="Easily collaborate with OneDrive for Business and Power BI files"
+   pageTitle="Integrar OneDrive para la empresa con Power BI"
+   description="Colaborar fácilmente con OneDrive para archivos de negocio y Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,20 +23,20 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Integrate OneDrive for Business with Power BI
+# Integrar OneDrive para la empresa con Power BI
 
-In an earlier article we reviewed creating groups to help your organization manage and collaborate on content that's in Power BI. You can also use your Power BI / Office365 groups to collaborate and share by using <bpt id="p1">**</bpt>OneDrive for Business<ept id="p1">**</ept>.
+En un artículo anterior, revisamos la creación de grupos para ayudar a su organización a administrar y colaborar en el contenido que se encuentra en Power BI. También puede usar el Power BI / Office 365 grupos para colaborar y compartir mediante **OneDrive para la empresa**.
 
-Using OneDrive for Business as a source for your Power BI content gives you access to a number of helpful tools, such as version history. You can also share your files with an Office365 group from within OneDrive for Business to give access and allow many people to work on the same Power BI or Excel files.
+Con OneDrive para la empresa como origen para su Power BI contenido proporciona acceso a un número de herramientas útiles, como el historial de versiones. También puede compartir los archivos con un grupo de Office 365 desde OneDrive para la empresa proporcionar acceso y permitir que varias personas trabajen en el mismo Power BI o los archivos de Excel.
 
 ![](media/powerbi-learning-6-4a-integrate-onedrive-for-business/6-4a_1.png)
 
-To connect to a PBIX (Power BI Desktop) file on OneDrive for Business, log into the Power BI service and select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>. Choose <bpt id="p1">**</bpt>Files<ept id="p1">**</ept> under Import or Connect to Data, and then select <bpt id="p2">**</bpt>OneDrive - Business<ept id="p2">**</ept>. Highlight the desired file, and select <bpt id="p1">**</bpt>Connect<ept id="p1">**</ept>.
+Para conectarse a un archivo PBIX (Power BI Desktop) en OneDrive para la empresa, inicie sesión en el servicio Power BI y seleccione **obtener datos**. Elija **archivos** en Importar o conectarse a datos y, a continuación, seleccione **OneDrive - Business**. Resalte el archivo deseado y seleccione **Conectar**.
 
 ![](media/powerbi-learning-6-4a-integrate-onedrive-for-business/6-4a_2.png)
 
-Your content appears in the left-hand side navigation bar.
+El contenido aparece en la barra de navegación izquierda.
 
 ![](media/powerbi-learning-6-4a-integrate-onedrive-for-business/6-4a_3.png)
 
-Now, any changes made to the file on <bpt id="p1">**</bpt>OneDrive for Business<ept id="p1">**</ept> will be automatically reflected in the Power BI environment as well, and recorded in the version history.
+Ahora, los cambios realizados en el archivo en **OneDrive para la empresa** se automáticamente reflejados en el entorno de Power BI también y registran en el historial de versiones.

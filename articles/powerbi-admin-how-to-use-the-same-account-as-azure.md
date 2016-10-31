@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="How to use the same account login for Power BI and Azure"
-   description="How to use the same account login for Power BI and Azure"
+   pageTitle="Cómo utilizar la misma cuenta de inicio de sesión para Power BI y Azure"
+   description="Cómo utilizar la misma cuenta de inicio de sesión para Power BI y Azure"
    services="powerbi" 
    documentationCenter="" 
    authors="guyinacube" 
@@ -20,26 +20,26 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# How to use the same account login for Power BI and Azure
+# Cómo utilizar la misma cuenta de inicio de sesión para Power BI y Azure
 
-If you are a user of both Power BI and Azure, you may want to use the same login for both services so that you don't need to type in your password twice.
+Si es un usuario de Power BI y Azure, puede utilizar el mismo inicio de sesión para ambos servicios, por lo que no es necesario escribir la contraseña dos veces.
 
-Power BI signs you in with your organizational account, associated with your work or school email address.  Azure signs you in with either a Microsoft Account or your organizational account.
+Power BI inicia la sesión con su cuenta profesional, asociada con su trabajo o escuela dirección de correo electrónico.  Azure se inicia sesión con una Account de Microsoft o cuenta de su organización.
 
-If you want to use the same login for both Azure and Power BI, be sure to sign in to Azure with your organizational account.
+Si desea utilizar el mismo inicio de sesión de Azure y Power BI, asegúrese de iniciar sesión en Azure con la cuenta de su organización.
 
-**What if I already sign in to Azure with my Microsoft Account?**
+**¿Qué ocurre si ya iniciar sesión en Azure con mi Account Microsoft?**
 
-You can add your organizational account as a co-administrator in Azure.  Le mostramos cómo:
+Puede agregar su cuenta profesional como Coadministrador de Azure.  Le mostramos cómo:
 
-1.  Sign in to the <bpt id="p1">[</bpt>Azure Management Portal<ept id="p1">](http://manage.windowsazure.com/)</ept>. If you are a user in multiple Azure directories, click <bpt id="p1">**</bpt>Subscriptions<ept id="p1">**</ept> and then filter to view only the directory and subscriptions you want to edit.
+1.  Inicie sesión en el [Portal de administración de Azure](http://manage.windowsazure.com/). Si es un usuario en varios directorios de Azure, haga clic en **suscripciones** y, a continuación, filtrar para ver sólo el directorio y las suscripciones que desea editar.
 
-2.  In the navigation pane, click <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>, click <bpt id="p2">**</bpt>Administrators<ept id="p2">**</ept>, and then click <bpt id="p3">**</bpt>Add<ept id="p3">**</ept>.
+2.  En el panel de navegación, haga clic en **configuración**, haga clic en **administradores**, y, a continuación, haga clic en **Agregar**.
 
-3.  Enter the email address associated with your organizational account.
+3.  Escriba la dirección de correo electrónico asociada a su cuenta profesional.
 
-4.  Select the subscriptions you want to access with your organizational account and then click the check mark.
+4.  Seleccione las suscripciones que desea tener acceso a su cuenta profesional y, a continuación, haga clic en la marca de verificación.
 
-Next time you sign in to the Azure Management Portal, use your organizational email address.
+Próxima vez que inicie sesión en el Portal de administración, use su dirección de correo electrónico profesional.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

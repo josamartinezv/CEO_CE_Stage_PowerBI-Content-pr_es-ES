@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Groups in the iPad app"
-   description="Power BI groups are built on Office 365 groups. Read about viewing and interacting with group dashboards in the Power BI iOS mobile app for the iPad."
+   pageTitle="Grupos en la aplicación de iPad"
+   description="Grupos de Power BI se basan en grupos de Office 365. Lea acerca de cómo ver e interactuar con los paneles del grupo en la aplicación móvil iOS de Power BI para el iPad."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -19,38 +19,39 @@
    ms.workload="powerbi"
    ms.date="09/12/2016"
    ms.author="maggies"/>
-# Groups in the iPad app (Power BI for iOS)
+# Grupos en la aplicación de iPad (Power BI para iOS)
 
-Power BI groups offer a powerful collaborative experience built on Office 365 groups. Read more about <bpt id="p1">[</bpt>groups in Office 365<ept id="p1">](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9)</ept>. Groups are available with the Power BI Pro experience.
+Grupos de Power BI proporcionan una experiencia de colaboración eficaces basada en grupos de Office 365. Obtenga más información sobre [grupos en Office 365](https://support.office.com/article/Create-a-group-in-Office-365-7124dc4c-1de9-40d4-b096-e8add19209e9). Grupos están disponibles con la experiencia de Power BI Pro.
 
-You <bpt id="p1">[</bpt>create a group in the Power BI service<ept id="p1">](powerbi-service-create-a-group-in-power-bi.md)</ept>.
+Se [crear un grupo en el servicio Power BI](powerbi-service-create-a-group-in-power-bi.md).
 
-Then you see and interact with group dashboards and reports in the Microsoft <bpt id="p1">[</bpt>Power BI iOS app for the iPad<ept id="p1">](powerbi-mobile-iphone-app-get-started.md)</ept>. 
+A continuación, puede ver e interactuar con informes y paneles de grupo en Microsoft [aplicación de iOS de Power BI para el iPad](powerbi-mobile-iphone-app-get-started.md). 
 
 
-## Interact with Power BI groups
+## Interactuar con los grupos de Power BI
 
-1.  Open the Power BI for iOS app for the iPad. 
+1.  Abra la aplicación Power BI para iOS para el iPad. 
 
-    Need to <bpt id="p1">[</bpt>download and install the iOS app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> first?
+    ¿Necesita [descargar e instalar la aplicación iOS](http://go.microsoft.com/fwlink/?LinkId=522062) primera?
 
-2.  Tap the global navigation button <ph id="ph1">![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png)</ph> in the upper-left corner.
+2.  Puntee en el botón de navegación global ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-iphone-global-nav-button.png) en la esquina superior izquierda.
 
-3.  Select a group.
+3.  Seleccione un grupo.
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-group-menu.png)
 
-4.  Your group page displays the dashboards and reports that have been published to the group workspace.
+4.  La página de grupo muestra los paneles e informes que se han publicado en el área de trabajo del grupo.
 
     ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-ipad-group-home.png)
 
-     -     Yellow stars <ph id="ph1">![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-mobile-yes-favorite-icon.png)</ph> show which dashboards are your favorites. 
+     -     Amarillo estrellas ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-mobile-yes-favorite-icon.png) Mostrar paneles de qué son los favoritos. 
 
-     -     The notation below each dashboard name <ph id="ph1">![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-dashboard-medium-classification.png)</ph> shows how the data in each dashboard is classified. Read more about <bpt id="p1">[</bpt>data classification in Power BI<ept id="p1">](powerbi-service-data-classification.md)</ept>.
+     -     La notación debajo de cada nombre de panel ![](media/powerbi-service-mobile-groups-in-the-ipad-app/power-bi-dashboard-medium-classification.png) muestra cómo se clasifican los datos de cada panel. Obtenga más información sobre [clasificación de datos en Power BI](powerbi-service-data-classification.md).
 
 
-5.  <bpt id="p1">[</bpt>Select a dashboard<ept id="p1">](powerbi-mobile-dashboards-on-the-ipad-app.md)</ept> or <bpt id="p2">[</bpt>select a report<ept id="p2">](powerbi-mobile-reports-on-the-ipad-app.md)</ept> to open and view it.
+5.  
+            [Seleccione un panel](powerbi-mobile-dashboards-on-the-ipad-app.md) o [selecciona un informe](powerbi-mobile-reports-on-the-ipad-app.md) para abrirla y verla.
 
 ### Consulte también
-- [The Power BI mobile app for iOS on the iPad](powerbi-mobile-iphone-app-get-started.md)
-- [Create a group in Power BI](powerbi-service-create-a-group-in-power-bi.md)
+- [La aplicación móvil de Power BI para iOS en el iPad](powerbi-mobile-iphone-app-get-started.md)
+- [Crear un grupo en Power BI](powerbi-service-create-a-group-in-power-bi.md)

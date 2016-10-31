@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Authenticate a web app"
-   description="Authenticate a web app"
+   pageTitle="Autenticar una aplicación web"
+   description="Autenticar una aplicación web"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,38 +20,40 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Authenticate a web app
+# Autenticar una aplicación web
 
-<bpt id="p1">[</bpt>Download the web app sample<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=619279)</ept> | View the code on GitHub: <bpt id="p2">[</bpt>Default.aspx.cs<ept id="p2">](https://github.com/Microsoft/PowerBI-CSharp/blob/master/samples/webforms/get-started-web-app-asp.net/PBIWebApp/Default.aspx.cs)</ept><ph id="ph1"> | </ph><bpt id="p3">[</bpt>Redirect.aspx.cs<ept id="p3">](https://github.com/Microsoft/PowerBI-CSharp/blob/master/samples/webforms/get-started-web-app-asp.net/PBIWebApp/redirect.aspx.cs)</ept>
 
-This article shows you how to authenticate a Power BI web app. It includes examples in C#; however, the authentication process is the same for other web programming languages. There is a <bpt id="p1">[</bpt>web app sample on GitHub<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=619279)</ept>. To learn how to run the sample, see <bpt id="p1">[</bpt>Web app sample<ept id="p1">](https://msdn.microsoft.com/library/mt186158.aspx)</ept>.
+            [Descargue el ejemplo de aplicación web](http://go.microsoft.com/fwlink/?LinkId=619279) | Ver el código en GitHub: [Default.aspx.cs](https://github.com/Microsoft/PowerBI-CSharp/blob/master/samples/webforms/get-started-web-app-asp.net/PBIWebApp/Default.aspx.cs) | [Redirect.aspx.cs](https://github.com/Microsoft/PowerBI-CSharp/blob/master/samples/webforms/get-started-web-app-asp.net/PBIWebApp/redirect.aspx.cs)
 
-Power BI web apps use Active Directory (AAD) to authenticate users and protect applications. Authentication is the process of identifying an app or user. To identify your web app in AAD, you register your app with AAD. When you register a web app in AAD, you give your app access to the Power BI REST API resources. To learn how to register your Power BI web app, see <bpt id="p1">[</bpt>Register a web app<ept id="p1">](powerbi-developer-register-a-web-app.md)</ept>.
+Este artículo muestra cómo autenticar una aplicación web de Power BI. Incluye ejemplos de C#; Sin embargo, el proceso de autenticación es el mismo para otro lenguajes de programación web. Hay un [ejemplo de aplicación web en GitHub](http://go.microsoft.com/fwlink/?LinkId=619279). Para obtener información sobre cómo ejecutar el ejemplo, vea [ejemplo de aplicación Web](https://msdn.microsoft.com/library/mt186158.aspx).
 
-To learn more about Azure Active Directory (Azure AD) authorization flow, see <bpt id="p1">[</bpt>Authorization Code Grant Flow<ept id="p1">](https://msdn.microsoft.com/library/azure/dn645542.aspx)</ept>.
+Aplicaciones web de Power BI usan Active Directory (AAD) para autenticar a los usuarios y proteger aplicaciones. La autenticación es el proceso de identificar una aplicación o usuario. Para identificar la aplicación web en AAD, registre la aplicación con AAD. Al registrar una aplicación web en AAD, concede a la aplicación acceso a los recursos de la API de REST de Power BI. Para obtener información sobre cómo registrar su aplicación web de Power BI, consulte [registrar una aplicación web](powerbi-developer-register-a-web-app.md).
 
-<bpt id="p1">**</bpt>NOTE<ept id="p1">**</ept> For Power BI, apps are created as multi-tenant apps using the Azure Management Portal.
+Para obtener más información acerca del flujo de autorización de Azure Active Directory (Azure AD), consulte [flujo de concesión de código de autorización](https://msdn.microsoft.com/library/azure/dn645542.aspx).
 
-## What you need to authenticate a Power BI web app
-Here are the steps to authenticate a Power BI web app and perform a REST web request. These steps apply to an ASP.NET web app; however, the steps apply to other platforms. To learn more about OAuth 2.0 in Azure AD, see <bpt id="p1">[</bpt>OAuth 2.0 in Azure AD<ept id="p1">](https://msdn.microsoft.com/library/azure/dn645545.aspx)</ept>.
+
+            **NOTA** para Power BI, se crean aplicaciones como aplicaciones de varios inquilinos mediante el Portal de administración.
+
+## Lo que necesita para autenticar una aplicación web de Power BI
+Estos son los pasos para autenticar una aplicación web de Power BI y realizar una solicitud web REST. Estos pasos se aplican a una aplicación web ASP.NET; Sin embargo, los pasos se aplican a otras plataformas. Para obtener más información sobre OAuth 2.0 en Azure AD, consulte [OAuth 2.0 en Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx).
 <a name="register"/>
-### Step 1 - Register your web app
-When you register a web app in Azure Active Directory, you give your app access to the Power BI REST API resources. To register a Power BI web app, see <bpt id="p1">[</bpt>Register a web app<ept id="p1">](powerbi-developer-register-a-web-app.md)</ept>.
+### Paso 1: registrar la aplicación web
+Al registrar una aplicación web en Azure Active Directory, concede a la aplicación acceso a los recursos de la API de REST de Power BI. Para registrar una aplicación web de Power BI, consulte [registrar una aplicación web](powerbi-developer-register-a-web-app.md).
 <a name="configure"/>
-### Step 2 - Configure Power BI settings to authenticate with Azure AD
-Here are the settings you need to authenticate a Power BI web app with Azure AD.
+### Paso 2: configurar las opciones de Power BI para autenticarse con Azure AD
+Esta es la configuración que necesita para autenticar una aplicación web de Power BI con Azure AD.
 
 |Setting|Descripción|Valor|
 |:--|:--|:--|
-|Identificador de cliente|Client ID is used by the application to identify themselves to the users that they are requesting permissions from.|To get a Power BI app client id, see <bpt id="p1">[</bpt>How to get a client app id<ept id="p1">](powerbi-developer-register-a-web-app.md#clientID)</ept>.|
-|Secreto del cliente|The client secret key is sent along with a Client ID when authenticating to Azure AD to call a web API.|To get a Power BI app client secret key, see <bpt id="p1">[</bpt>How to get a client secret key<ept id="p1">](powerbi-developer-register-a-web-app.md#clientSecret)</ept>.|
-|Resource Uri|The resource Uri to the Power BI resource to be authorized. You must use this exact Uri.|https://analysis.windows.net/powerbi/api|
-|Authority Uri|The authority Uri is an Azure resource that takes a client id to get an access token.|https://login.windows.net/common/oauth2/authorize|
-|Redirect Url|A Redirect Url for the web app url. The Azure AD service redirects back to the web app url with an authentication code.|Example: http://localhost:13526/Redirect|
+|Identificador de cliente|Id. de cliente se utiliza la aplicación para identificarse ante los usuarios que están solicitando permisos.|Para obtener un identificador de cliente de aplicación de Power BI, vea [cómo obtener un identificador de la aplicación cliente](powerbi-developer-register-a-web-app.md#clientID).|
+|Secreto del cliente|La clave secreta de cliente se envía junto con un identificador de cliente para autenticar a Azure AD para llamar a una API web.|Para obtener un Power BI clave secreta de cliente de aplicación, vea [cómo obtener un cliente clave secreta](powerbi-developer-register-a-web-app.md#clientSecret).|
+|Uri de recurso|El Uri de recurso para el recurso de Power BI a autorizar. Debe utilizar este Uri exacto.|https://Analysis.Windows.NET/powerbi/API|
+|Uri de la entidad|La autoridad de Uri es un recurso de Azure que toma un identificador de cliente para obtener un token de acceso.|https://Login.Windows.NET/Common/oauth2/Authorize|
+|Dirección Url de redireccionamiento|Una dirección Url de redireccionamiento para la url de la aplicación web. El servicio de Azure AD redirige a la dirección url de aplicación web con un código de autenticación.|Ejemplo: 13526/Redirect|
 
 <a name="create"/>
-### Step 3 - Create a query string to get authorization code from Azure AD
-To authenticate a Power BI web app, you first create a url query string to redirect to the Azure AD authentication service. After providing valid credentials, Azure AD returns an authorization code. The following is an example of a fully qualified Azure AD url with query string. You use a url similar to this to get an authorization code from Azure AD. Use <bpt id="p1">**</bpt>Response.Redirect<ept id="p1">**</ept>() to redirect to the Azure AD service that will return an authorization code from Azure AD. You use the authorization code in step 4 to acquire an access token by authorization code.
+### Paso 3: crear una cadena de consulta para obtener el código de autorización de Azure AD
+Para autenticar una aplicación web de Power BI, primero hay que crear una cadena de consulta de dirección url para redirigir al servicio de autenticación de Azure AD. Después de proporcionar credenciales válidas, Azure AD devuelve un código de autorización. El siguiente es un ejemplo de una url de AD de Azure completo con cadena de consulta. Utilice una dirección url similar a la siguiente para obtener un código de autorización de Azure AD. Use **Response.Redirect**() para redirigir al servicio de Azure AD que devolverá un código de autorización de Azure AD. Use el código de autorización en el paso 4 para adquirir un token de acceso mediante código de autorización.
 
     https://login.windows.net/common/oauth2/authorize
       ?response_type=code
@@ -59,18 +61,18 @@ To authenticate a Power BI web app, you first create a url query string to redir
       &resource= https://analysis.windows.net/powerbi/api
       &redirect_uri= http://localhost:13526/Redirect
 
-**Power BI authentication query string settings**
+**Configuración de la cadena de consulta de autenticación de Power BI**
 
 |Setting|Descripción|
 |:--|:--|
-|response_type=code|Azure AD returns an authorization code.|
-|client_id=1861585d...9a79c296|Client ID is used by the application to identify themselves to the users that they are requesting permissions from. You get the client id when you register your Azure app.|
-|resource= https://analysis.windows.net/powerbi/api|Resource uri to the Power BI resource to be authorized. You must use this exact Uri.|
-|redirect_uri= http://localhost:13526/Redirect|After user authenticates, Azure AD will redirect back to the web app.|
+|response_type = código|Azure AD devuelve un código de autorización.|
+|client_id = d 1861585... 9a79c296|Id. de cliente se utiliza la aplicación para identificarse ante los usuarios que están solicitando permisos. Obtiene el identificador de cliente al registrar la aplicación de Azure.|
+|recurso = https://analysis.windows.net/powerbi/api|Uri de recurso para el recurso de Power BI a autorizar. Debe utilizar este Uri exacto.|
+|URI de redireccionamiento = 13526/Redirect|Una vez que se autentica el usuario, Azure AD redirigirá a la aplicación web.|
 
-Here’s a C# code sample to create an Azure AD authorization url with a query string, and redirect to the Azure AD authority service.
+Este es un ejemplo de código de C# para crear una dirección url de autorización de Azure AD con una cadena de consulta y redirigir al servicio de autoridad de Azure AD.
 
-**Example – C# sign in**
+**Por ejemplo: C# de inicio de sesión**
 
         protected void signInButton_Click(object sender, EventArgs e)
         {
@@ -103,18 +105,18 @@ Here’s a C# code sample to create an Azure AD authorization url with a query s
             Response.Redirect(String.Format("{0}?{1}", authorityUri, queryString));       
         }
 <a name="acquire"/>
-### Step 4 – Acquire an Azure AD access token using authorization code
+### Paso 4: adquirir un token de acceso de Azure AD con código de autorización
 
-To make a data request to the Power BI REST service, you need to supply an access token. In a .NET web app, you use the <bpt id="p1">[</bpt>Azure AD Authentication Library for .NET nuget package<ept id="p1">](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)</ept> to get an access token. If you do not have Windows Azure Authentication Library (ADAL), see <bpt id="p1">[</bpt>How to add Azure Active Directory Authentication Library<ept id="p1">](#add)</ept>.
+Para realizar una solicitud de datos en el servicio REST de Power BI, deberá suministrar un token de acceso. En una aplicación web. NET, se utiliza el [biblioteca de autenticación de Azure AD para paquete de nuget de .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) para obtener un token de acceso. Si no tiene la biblioteca de autenticación de Windows Azure (AAL), vea [cómo agregar biblioteca de autenticación de Azure Active Directory](#add).
 
-After your app redirects to the Azure AD authority Uri and acquires an authorization code, your app gets a token by authorization code. Here’s how your app can get the authorization code and get an access token: <bpt id="p1">**</bpt>In a Redirect class<ept id="p1">**</ept>:
+Después de la aplicación redirige a la autoridad de Azure AD Uri y adquiere un código de autorización, la aplicación obtiene un token por código de autorización. Aquí es cómo puede obtener el código de autorización y obtener un token de acceso de la aplicación: **en redirigir clase**:
 
-1.  Get the Azure AD auth code that is returned from Azure AD.
+1.  Obtiene el código de autenticación de Azure AD que se devuelve de Azure AD.
 
     ```
     string code = Request.Params.GetValues(0)[0];
     ```
-2.  Create an <bpt id="p1">**</bpt>AuthenticationContext<ept id="p1">**</ept> passing the authority uri and a TokenCache.
+2.  Crear un **AuthenticationContext** pasando el uri de la entidad y un TokenCache.
 
     ```
     TokenCache TC = new TokenCache();
@@ -122,41 +124,43 @@ After your app redirects to the Azure AD authority Uri and acquires an authoriza
     AuthenticationContext AC = new AuthenticationContext(authorityUri, TC);
     ```
 
-3.  Create a <bpt id="p1">**</bpt>ClientCredential<ept id="p1">**</ept> passing the Azure App <bpt id="p2">**</bpt>Client ID<ept id="p2">**</ept> and Azure App <bpt id="p3">**</bpt>Client Secret<ept id="p3">**</ept>.
+3.  Crear un **ClientCredential** pasa la aplicación de Azure **Id. de cliente** y aplicación de Azure **secreto de cliente**.
 
     ```
     ClientCredential cc = new ClientCredential(Properties.Settings.Default.ClientID, Properties.Settings.Default.ClientSecretKey);
     ```
 
-4.  Get a token by authorization code passing the <bpt id="p1">**</bpt>authentication code<ept id="p1">**</ept> returned by Azure AD and a <bpt id="p2">**</bpt>redirect url<ept id="p2">**</ept>.
+4.  Obtener un token por código de autorización pasando la **código de autenticación** devuelto por Azure AD y un **dirección url de redireccionamiento**.
 
     ```
     AuthenticationResult AR = AC.AcquireTokenByAuthorizationCode(code, new Uri(redirectUri), cc);
     ```
 
-5.  Redirect back to default.aspx.
+5.  Redireccionar a default.aspx.
 
     ```
     Response.Redirect("/Default.aspx");
     ```
 
-6.  Set a session "authResult" index string to the AuthenticationResult so that you can use the result in the default.aspx page.
+6.  Establecer una cadena de índice "authResult" de sesión en AuthenticationResult para que pueda usar el resultado en la página default.aspx.
 
     ```
     Session["authResult"] = AR;
     ```
 
-<bpt id="p1">**</bpt>In a Default.aspx page<ept id="p1">**</ept>:
 
-1.  Get an <bpt id="p1">**</bpt>AuthenticationResult<ept id="p1">**</ept> from the Session. In Step 4, you use the <bpt id="p1">**</bpt>AuthenticationResult<ept id="p1">**</ept> to get an authorization <bpt id="p2">**</bpt>AccessToken<ept id="p2">**</ept>.
+            **En una página Default.aspx**:
+
+1.  Obtener un **AuthenticationResult** de la sesión. En el paso 4, use la **AuthenticationResult** para obtener una autorización **AccessToken**.
 
     ```
     AuthenticationResult authResult = (AuthenticationResult)Session["authResult"];
     ```
 
-Here’s the complete code to acquire an Azure access token by authorization code and redirect back to default.aspx.
+Este es el código completo para adquirir un token de acceso de Azure por código de autorización y redireccione a default.aspx.
 
-<bpt id="p1">**</bpt>Note<ept id="p1">**</ept> The Redirect Uri must match the redirect_uri used when requesting Authorization code.
+
+            **Nota** el Uri de redireccionamiento debe coincidir con el URI de redireccionamiento usada para solicitar el código de autorización.
 
     public partial class Redirect : System.Web.UI.Page
     {
@@ -214,17 +218,17 @@ Here’s the complete code to acquire an Azure access token by authorization cod
     }
 
 <a name="use"/>
-### Step 5 – Use Azure AD access token to call a Power BI operation
+### Paso 5: token de acceso usar Azure AD para llamar a una operación de Power BI
 
-Power BI REST API calls are made on behalf of an authenticated user by passing an access token acquired through Azure Active Directory, in the “Authorization” header. After you get an access token from Active Directory (AAD), you use the token to make a web request to the Power BI REST API.
+Llamadas de API de REST de BI de energía se realizan en nombre de un usuario autenticado pasando un token de acceso adquirido a través de Azure Active Directory, en el encabezado "Autorización". Después de obtener un token de acceso de Active Directory (AAD), use el token para realizar una solicitud web en la API de REST de Power BI.
 
-Once you set an <bpt id="p1">**</bpt>AuthenticationResult<ept id="p1">**</ept> by acquiring a token by authorization code (<bpt id="p2">**</bpt>AcquireTokenByAuthorizationCode<ept id="p2">**</ept>), you get an Azure access token by getting the <bpt id="p3">**</bpt>AccessToken<ept id="p3">**</ept> property of <bpt id="p4">**</bpt>AuthenticationResult<ept id="p4">**</ept>.
-Here’s the code to get Power BI <bpt id="p1">**</bpt>Datasets<ept id="p1">**</ept>.  The code sample creates a <bpt id="p1">**</bpt>WebRequest<ept id="p1">**</ept> and deserializes the response string to a Dataset.
-To access the Power BI REST API, you create a request header setting “Authorization” to "Bearer {AccessToken}":
+Una vez establecida una **AuthenticationResult** al adquirir un token por código de autorización (**AcquireTokenByAuthorizationCode**), obtener un acceso de Azure token obteniendo el **AccessToken** propiedad de **AuthenticationResult**.
+Este es el código para obtener Power BI **conjuntos de datos**.  El ejemplo de código se crea un **WebRequest** y deserializa la cadena de respuesta a un conjunto de datos.
+Para obtener acceso a la API de REST de Power BI, cree un encabezado de solicitud estableciendo "Autorización" en "Portador {AccessToken}":
 
     request.Headers.Add("Authorization", String.Format("Bearer {0}", authResult.AccessToken));
 
-**C# sample – Get Power BI Datasets**
+**Ejemplo de C#: obtener conjuntos de datos de BI de energía**
 
         protected void getDatasetsButton_Click(object sender, EventArgs e)
         {
@@ -274,19 +278,19 @@ To access the Power BI REST API, you create a request header setting “Authoriz
     }
 
 <a name="add"/>
-## How to add Azure Active Directory Authentication Library
-In a .NET client app, you use <bpt id="p1">**</bpt>AuthenticationContext<ept id="p1">**</ept> in the Active Directory Authentication Library to acquire an Azure access token. You can install the Active Directory Authentication Library NuGet package from Visual Studio. When you install a NuGet package, Visual Studio creates a reference to the required assemblies.
+## Cómo agregar la biblioteca de autenticación de Azure Active Directory
+En una aplicación de cliente. NET, se utiliza **AuthenticationContext** en la biblioteca de autenticación de Active Directory para adquirir un token de acceso de Azure. Puede instalar el paquete de NuGet de biblioteca de autenticación de Active Directory desde Visual Studio. Cuando se instala un paquete de NuGet, Visual Studio crea una referencia a los ensamblados necesarios.
 
-1. Right click a solution.
-2. Choose Manage NuGet Packages.
-3. Search for Active Directory Authentication Library.
-4. Choose Active Directory Authentication Library in the list of packages, and click Install.
+1. Haga clic una solución.
+2. Elija Administrar paquetes de NuGet.
+3. Búsqueda de la biblioteca de autenticación de Active Directory.
+4. Elija la biblioteca de autenticación de Active Directory en la lista de paquetes y haga clic en instalar.
 
 ## Consulte también
 
-[Azure AD Authentication Library for .NET nuget package](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
-[Active Directory Authentication Library (ADAL) v1 for .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)  
+[Biblioteca de autenticación de Azure AD para paquete de nuget de .NET](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)  
+[Autenticación de Active Directory Library (ADAL) v1 para .NET](http://www.cloudidentity.com/blog/2013/09/12/active-directory-authentication-library-adal-v1-for-net-general-availability/)  
 [OAuth 2.0 en Azure AD](https://msdn.microsoft.com/library/azure/dn645545.aspx)  
 [Flujo de concesión de códigos de autorización](https://msdn.microsoft.com/library/azure/dn645542.aspx)  
 [Escenarios de autenticación en Azure AD](https://msdn.microsoft.com/library/azure/dn499820.aspx)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

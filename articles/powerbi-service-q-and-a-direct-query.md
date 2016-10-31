@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Using Q&amp;A with Power BI Gateway - Enterprise data (Preview)"
-   description="Documentation for using Power BI Q&amp;A natural language queries with Direct Query data and Enterprise Gateway data."
+   pageTitle="Uso de preguntas y respuestas con Power BI Gateway - datos de la empresa (vista previa)"
+   description="Documentación para usar Power BI Q & A consultas en lenguaje natural con datos de la consulta directa y puerta de enlace empresarial."
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -21,68 +21,68 @@
    ms.author="mihart"/>
 
 
-# Enable Q&amp;A for Direct Query (Preview)
+# Habilitar preguntas y respuestas para la consulta directa (vista previa)
 
-##  What is On-premises Data Gateway?  What is DirectQuery?
+##  ¿Qué es la puerta de enlace de datos local?  ¿Qué es DirectQuery?
 
-Datasets in Power BI can be imported into Power BI or you can create a live connection to them. Live connection datasets are often referred to as "on-premises". The live connections are managed using a <bpt id="p1">[</bpt>gateway<ept id="p1">](powerbi-gateway-onprem.md)</ept> and data and inquiries are sent back and forth using DirectQuery.
+Conjuntos de datos en Power BI pueden importarse en Power BI o puede crear una conexión activa con ellos. Live conexión conjuntos de datos a menudo se conocen como "local". Las conexiones dinámicas se administran mediante un [puerta de enlace](powerbi-gateway-onprem.md) y datos y las consultas se envían y hacia atrás mediante DirectQuery.
 
-##  Q&amp;A for On-premises Data Gateway datasets
+##  Preguntas y respuestas para conjuntos de datos de puerta de enlace de datos local
 
-If you'd like to use Q&amp;A with datasets you access through a gateway, you'll need to enable them first.
+Si desea usar preguntas y respuestas con acceso a través de una puerta de enlace de conjuntos de datos, debe habilitarlas primero.
 
-Once enabled, Power BI creates an index of your data source and uploads a subset of that data to Power BI to enable asking questions. It may take several minutes to create the initial index and Power BI maintains and updates the index automatically as your data changes. Using Q&amp;A with these datasets behaves the same as with data published to Power BI. The full set of features available in the Q&amp;A experience is supported in both cases, including using the data source with Cortana.
+Una vez habilitado, Power BI crea un índice de origen de datos y carga de un subconjunto de los datos en Power BI para habilitar formulando preguntas. Puede tardar varios minutos en crear el índice inicial y Power BI mantiene y actualiza el índice automáticamente como los cambios de datos. Uso de preguntas y respuestas con estos conjuntos de datos comporta del mismo modo con los datos publicados en Power BI. Se admite el conjunto completo de características disponibles en las preguntas y respuestas una experiencia en ambos casos, incluido el uso del origen de datos con Cortana.
 
-As you ask questions in Power BI, Q&amp;A determines the best visual to construct or report sheet to use to answer your question using an index of your dataset. After determining the best potential answer, Q&amp;A uses DirectQuery to fetch live data from the data source via the Enterprise Gateway to populate charts and graphs. This ensures Power BI Q&amp;A results always show the most up-to-date data directly from the underlying data source.
+Cuando formule preguntas en Power BI, preguntas y respuestas determina el mejor visual a la construcción o informe hoja que desea utilizar para responder su pregunta con un índice del conjunto de datos. Después de determinar la mejor respuesta posible, Q & A utiliza DirectQuery para capturar los datos en directo desde el origen de datos a través de la puerta de enlace de la empresa para rellenar gráficos y gráficos. Esto garantiza que Power BI Q & un resultados siempre muestran los datos más actualizados directamente desde el origen de datos subyacente.
 
-Since Power BI Q&amp;A uses the text and schema values from your data source to determine how to query the underlying model for answers, searches for specific new or deleted text values (such as asking for a customer name related to a newly added text record) rely on the index being up-to-date with the latest values. Power BI automatically keeps the text and schema index up to date within a 60 minute window of changes.
+Desde Power BI Q & A los valores de texto y el esquema del origen de datos utiliza para determinar cómo consultar el modelo subyacente para las respuestas, busca valores de texto nuevos o eliminados específico (por ejemplo, pedir un nombre de cliente relacionado con un registro de texto recién agregado) se basan en el índice está actualizado con los valores más recientes. Power BI mantiene automáticamente el índice de texto y el esquema actualizado en una ventana de 60 minutos de cambios.
 
 
 Para obtener más información, vea:
 
-- What is the <bpt id="p1">[</bpt>On-premises Data Gateway<ept id="p1">](powerbi-gateway-onprem.md)</ept>?
+- ¿Qué es el [puerta de enlace de datos local](powerbi-gateway-onprem.md)?
 
-- [Introduction to Power BI Q&amp;A](powerbi-service-q-and-a.md)
+- [Introducción a Power BI Q & A](powerbi-service-q-and-a.md)
 
 
-##  Enable Q&amp;A
-Once you have the enterprise gateway set up, connect to your data from Power BI.  Either create a dashboard using your on-premises data, or upload a .pbix file that uses on-premises data.  You may also already have on-premises data in dashboards, reports, and datasets that have been shared with you.
+##  Habilitar preguntas y respuestas
+Una vez que la puerta de enlace de empresa configurado, conectarse a los datos de Power BI.  Cree un panel con sus datos locales, o cargar un archivo .pbix que usa datos locales.  Además, ya puede tener datos locales en los paneles, informes y conjuntos de datos que se han compartido con usted.
 
-1.  In the upper-right corner of Power BI, select the cog icon <ph id="ph1">![](media/powerbi-service-q-and-a-direct-query/power-bi-cog.png)</ph> and choose <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
+1.  En la esquina superior derecha de Power BI, seleccione el icono de engranaje ![](media/powerbi-service-q-and-a-direct-query/power-bi-cog.png) y elija **configuración**.
 
     ![](media/powerbi-service-q-and-a-direct-query/powerbi-settings.png)
 
-2.  Select <bpt id="p1">**</bpt>datasets<ept id="p1">**</ept> and choose the dataset to enable for Q&amp;A.
+2.  Seleccione **conjuntos de datos** y elija el conjunto de datos para habilitar para preguntas y respuestas.
 
     ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-settings.png)
 
-3. Expand <bpt id="p1">**</bpt>Q&amp;A and Cortana<ept id="p1">**</ept>, select the checkbox for <bpt id="p2">**</bpt>Turn on Q&amp;A for this dataset<ept id="p2">**</ept> and choose <bpt id="p3">**</bpt>Apply<ept id="p3">**</ept>.
+3. Expanda **preguntas y respuestas y Cortana**, seleccione la casilla de verificación **Activar preguntas y respuestas para este conjunto de datos** y elija **aplicar**.
 
     ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 
 
-##  What data is cached and how is privacy protected?
+##  ¿Qué datos se almacenan en caché y cómo se protege la privacidad?
 
-When you enable Q&amp;A for your on-premises data, a subset of your data is cached in the service. This is done to ensure that Q&amp;A works with a reasonable performance. We exclude values longer than 24 characters from caching. The cache is deleted within a few hours when you disable Q&amp;A by unchecking <bpt id="p1">**</bpt>Turn on Q&amp;A for this dataset<ept id="p1">**</ept>, or when you delete your dataset.
+Al habilitar preguntas y respuestas para los datos locales, se almacena en caché un subconjunto de los datos en el servicio. Esto se hace para asegurarse de que Q & A funciona con un rendimiento aceptable. Valores de más de 24 caracteres se exclusión del almacenamiento en caché. La memoria caché se elimina en unas pocas horas, cuando deshabilite preguntas y respuestas desactivando **Activar preguntas y respuestas para este conjunto de datos**, o cuando se elimina el conjunto de datos.
 
-##  Limitations during Public Preview
-During the Preview phase of this feature, there are several limitations:
+##  Limitaciones durante la vista previa pública
+Durante la fase de vista previa de esta característica, existen varias limitaciones:
 
-- Initially the feature is only available for SQL Server 2016 Analysis Services data sources. The feature is optimized to work with tabular data. Some functionality is available for multi-dimensional data sources, but the full Q&amp;A experience is not yet supported for this dataset type. Additional data sources supported by the enterprise gateway will be rolled out during the public preview.
+- Inicialmente, la característica solo está disponible para orígenes de datos de Analysis Services de SQL Server 2016. La característica está optimizada para trabajar con datos tabulares. Alguna funcionalidad está disponible para orígenes de datos multidimensionales, pero la experiencia completa de preguntas y respuestas aún no se admite para este tipo de conjunto de datos. Orígenes de datos adicionales admitidos por la puerta de enlace de la empresa se implementarán durante la vista previa.
 
-- Full support for row level security defined in the SQL Server Analysis Services is not available initially in the public preview. While asking questions in Q&amp;A, the “auto-complete” of questions while typing can show string values a user does not have access to. However, RLS defined in the model is respected for report and chart visuals so no underlying numerical data can be exposed. Options to control this behavior will be released in coming updates.
+- Compatibilidad completa para la seguridad de nivel de fila definida en SQL Server Analysis Services no está disponible inicialmente en la vista previa. Al formular preguntas en preguntas y respuestas, el "Autocompletar" de preguntas mientras escribe puede mostrar valores de cadena de un usuario no tiene acceso a. Sin embargo, se respeta RLS definido en el modelo de informe y el gráfico de objetos visuales por lo que no se puede exponer ningún dato numérico subyacente. Opciones para controlar este comportamiento se lanzará en próximas actualizaciones.
 
-- Q&amp;A does not work with Power BI Gateway-Personal data sources.
+- Preguntas y respuestas no funcionan con orígenes de datos de Power BI Personal Gateway.
 
 ## Consulte también
 
-[Power BI Quick Insights](powerbi-service-auto-insights.md)
+[Power BI rápida visión](powerbi-service-auto-insights.md)
 
-[Optimize your data for Power BI Quick Insights](powerbi-service-auto-insights-optimize.md)
+[Optimizar los datos de visión rápida de Power BI](powerbi-service-auto-insights-optimize.md)
 
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-[Dashboards in Power BI](powerbi-service-dashboards.md)
+[Paneles de Power BI](powerbi-service-dashboards.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

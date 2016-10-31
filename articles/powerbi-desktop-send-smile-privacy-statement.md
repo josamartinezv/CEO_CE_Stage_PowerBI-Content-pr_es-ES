@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI Desktop Send a Smile Privacy Statement"
-   description="Power BI Desktop Send a Smile Privacy Statement"
+   pageTitle="Power BI Desktop enviar una sonrisa de privacidad"
+   description="Power BI Desktop enviar una sonrisa de privacidad"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -19,60 +19,64 @@
    ms.workload="powerbi"
    ms.date="09/29/2016"
    ms.author="davidi"/>
-# Power BI Desktop Send a Smile Privacy Statement
+# Power BI Desktop enviar una sonrisa de privacidad
 
-At Microsoft, we are working hard to protect your privacy, while delivering products that bring you the performance, power, and convenience you want. This Privacy Statement explains many of the data collection and use practices of Microsoft Power BI Desktop Feedback <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept>. It doesn’t apply to other online or offline Microsoft sites, products, or services.
+En Microsoft, estamos trabajando duro para proteger su privacidad mientras desarrollamos productos que proporcionan el rendimiento, la potencia y la comodidad que desea. Esta declaración de privacidad explica muchas de las prácticas de recopilación y uso de datos de Microsoft Power BI Desktop comentarios *Enviar una sonrisa*. No se aplica a otros sitios con o sin conexión, productos o servicios de Microsoft.
 
-Except as otherwise described in this statement, <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> doesn’t send personal information to Microsoft. Information that is sent to Microsoft isn’t shared outside of Microsoft and its controlled subsidiaries and affiliates without your permission.
+Excepto en los casos descritos en esta declaración, *Enviar una sonrisa* no envía información personal a Microsoft. Información que se envíe a Microsoft no se comparte fuera de Microsoft y sus subsidiarias y filiales sin su permiso.
 
-<bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> to Power BI Desktop allows you to send an email address with your feedback. This email address is used to contact you if Microsoft needs further information or clarification on your request. You don’t have to register your email address with Microsoft to use <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept>.
 
-<bpt id="p1">*</bpt>Send a Smile to Power BI Desktop<ept id="p1">*</ept> allows you to send feedback to Microsoft and, if you want, include screenshots showing the specific compliment or concern you have. Although <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> doesn’t intentionally collect personally identifiable information, it is possible that such information might be captured in the feedback or screenshots you provide. Microsoft doesn’t use this information to identify you.
+            *Enviar una sonrisa* a Power BI Desktop le permite enviar una dirección de correo electrónico con sus comentarios. Esta dirección de correo electrónico se usa para ponerse en contacto contigo si Microsoft necesita más información o aclaraciones sobre su solicitud. No tiene que registrar su dirección de correo electrónico con Microsoft para usar *Enviar una sonrisa*.
 
-<bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> automatically collects some information about your system configuration, standard computer information, and basic information about how you use Microsoft products. This information is sent when you choose to send feedback.
 
-<bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> generally collects information about:
+            *Enviar una sonrisa a Power BI Desktop* le permite enviar comentarios a Microsoft y, si lo desea, incluir capturas de pantalla que muestra el complemento específico o le preocupan. Aunque *Enviar una sonrisa* no recopila intencionadamente información personal identificable, es posible que dicha información podría capturarse en los comentarios o capturas de pantalla que proporcione. Microsoft no usa esta información para identificar al usuario.
 
--    
 
--   Standard computer information, such as the Power BI Desktop, Internet Explorer version and CLR version that you are using.
+            *Enviar una sonrisa* automáticamente recopila alguna información sobre la configuración del sistema, información estándar del equipo e información básica acerca de cómo utilizar productos de Microsoft. Esta información se envía cuando se desea enviar comentarios.
 
--    
 
-The personal information we collect from you is used by Microsoft and its controlled subsidiaries and affiliates to provide the services or carry out the transactions you requested or authorized, and it might also be used to request additional information on:
+            *Enviar una sonrisa* generalmente se recopila información acerca de:
 
--   Feedback you provide about the product or service you are using
+-   Configuración del sistema, como la versión de sistema operativo y arquitectura que utilice (32 bits. 64 bits).
 
--   To provide critical updates and notifications regarding the software
+-   Información estándar del equipo, como Power BI Desktop, versión de Internet Explorer y la versión CLR que está utilizando.
 
--   To improve the product or service, for example, bug and survey form inquiries
+-   Power BI Desktop programa uso, como información del archivo de paquete (configuración regional del documento, estado rápido combinar habilitado o deshabilitado), habilitado y deshabilitado características de vista previa, vs DirectQuery. Importar el modo de conjunto de trabajo actual y máximo de memoria Virtual utilizada en la sesión actual.
 
-Except as described in this statement, personal information you provide isn’t transferred to third parties without your consent. We occasionally hire other companies to provide limited services on our behalf, such as:
+La información personal que recopilemos utilizada por Microsoft y sus subsidiarias y filiales para proporcionar los servicios o llevar a cabo las transacciones solicitadas o autorizadas, y también podría utilizarse para solicitar información adicional en:
 
--   Packaging, sending and delivering purchases, and other mailings
+-   Comentario que proporcione acerca del producto o servicio que está utilizando
 
--   Answering customer questions about products or services
+-   Para proporcionar actualizaciones críticas y notificaciones sobre el software
 
--   Processing event registration
+-   Para mejorar el producto o servicio, por ejemplo, errores y encuesta forman consultas
 
--   Performing statistical analysis of our services
+Excepto descrito en esta declaración, información personal que proporcione no se transferirá a terceros sin su consentimiento. Ocasionalmente contratamos a otras compañías para proporcionar servicios limitados en nuestro nombre, como:
 
-We only provide those companies with the personal information they need to deliver the service, and they are prohibited from using that information for any other purpose.
+-   Empaquetado, envío y entrega de compras y otros correos
 
-Microsoft might access or disclose information about you, including the content of your communications, to:
+-   Responder a preguntas de los clientes sobre productos o servicios
 
--   Comply with the law or respond to lawful requests or legal process
+-   Procesamiento del registro de eventos
 
--   Protect the rights or property of Microsoft or our customers, including the enforcement of our agreements or policies governing your use of the services
+-   Realización de análisis estadísticos de nuestros servicios
 
--   Act on a good faith belief that such access or disclosure is necessary to protect the personal safety of Microsoft employees, customers, or the public
+Sólo proporcionamos a estas compañías la información personal que necesiten para prestar el servicio y se les prohíbe usar esa información para cualquier otro propósito.
 
-Information collected by or sent to Microsoft by <bpt id="p1">*</bpt>Send a Smile<ept id="p1">*</ept> might be stored and processed in the United States or any other country in which Microsoft or its affiliates, subsidiaries, or service providers maintain facilities. Microsoft abides by the Safe Harbor Framework as set forth by the United States Department of Commerce regarding the collection, use, and retention of data from the European Union.
+Microsoft podría acceder o divulgar información sobre usted, incluido el contenido de sus comunicaciones para:
+
+-   Cumplir con la ley o responder a solicitudes o procesos legales
+
+-   Proteger los derechos o la propiedad de Microsoft o nuestros clientes, incluido el cumplimiento de nuestros acuerdos o directivas que rigen el uso de los servicios
+
+-   Actuar de buena fe de que dicho acceso o divulgación es necesario para proteger la seguridad personal de empleados, clientes o el público de Microsoft
+
+Información recopilada o enviada a Microsoft por *Enviar una sonrisa* puede almacenarse y procesarse en Estados Unidos o cualquier otro país donde Microsoft o sus filiales, subsidiarias o proveedores de servicios tengan instalaciones. Microsoft se rige por el marco de puerto seguro establecidos por el departamento de comercio de Estados Unidos con respecto a la recopilación, uso y retención de datos de la Unión Europea.
 
 ## Seguridad de la información
 
-Microsoft is committed to helping protect the security of your personal information. Utilizamos diversas tecnologías y procedimientos de seguridad para proteger su información personal de un acceso, uso o revelación no autorizados.
+Microsoft se compromete a ayudar a proteger la seguridad de su información personal. Utilizamos diversas tecnologías y procedimientos de seguridad para proteger su información personal de un acceso, uso o revelación no autorizados.
 
 ## Cambios a esta Declaración de privacidad
 
-Microsoft might occasionally update this Privacy Statement. The last updated date at the top of the Privacy Statement is updated with every revision. We encourage you to periodically review this Privacy Statement to be informed of how Microsoft is helping to protect your information.
+Microsoft puede actualizar ocasionalmente esta declaración de privacidad. La última fecha actualizada en la parte superior de la declaración de privacidad se actualiza con cada revisión. Le recomendamos que revise periódicamente esta declaración de privacidad para estar informado de cómo Microsoft ayuda a proteger su información.

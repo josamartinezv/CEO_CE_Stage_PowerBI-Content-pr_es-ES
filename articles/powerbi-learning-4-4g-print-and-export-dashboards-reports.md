@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Print and export dashboards and reports"
-   description="Get your hands on printed reports and dashboards"
+   pageTitle="Imprimir y exportar informes y paneles"
+   description="Poner sus manos en informes impresos y paneles"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,26 +23,26 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Print and export Power BI dashboards
+# Imprimir y exportar paneles de Power BI
 
-Sometimes you may want to bring a printed report or dashboard to a meeting, or so you can share it with others. With Power BI, there are a few days you can make printouts of your visuals.
+A veces deseará que un informe impreso o un panel a una reunión o para que pueda compartir con otros usuarios. Con Power BI, hay unos cuantos días puede hacer copias impresas de los objetos visuales.
 
-In the Power BI service, select the ellipses (three dots) in the top-right side of the service, and select <bpt id="p1">**</bpt>Print dashboard<ept id="p1">**</ept>.
+En el servicio Power BI, seleccione el botón de puntos suspensivos (tres puntos) en la parte superior derecha del servicio y seleccione **panel imprimir**.
 
 ![](media/powerbi-learning-4-4g-print-and-export-dashboards-reports/4-4g_1.png)
 
-A <bpt id="p1">**</bpt>Print<ept id="p1">**</ept> dialog appears, where you can select the printer to which you want to send the dashboard, as well as standard print options such as <bpt id="p2">*</bpt>portrait<ept id="p2">*</ept> or <bpt id="p3">*</bpt>landscape<ept id="p3">*</ept> orientation.
+Un **Imprimir** aparece el cuadro de diálogo donde puede seleccionar la impresora a la que desea enviar el panel, así como el estándar de opciones de impresión como *vertical* o *horizontal* orientación.
 
 ![](media/powerbi-learning-4-4g-print-and-export-dashboards-reports/4-4g_2.png)
 
-## Export data from a visual
+## Exportar datos desde un objeto visual
 
-You can also export the data from any visual in the Power BI service. Just select the ellipses on any visual, and then select the <bpt id="p1">**</bpt>Export data<ept id="p1">**</ept> button (the middle button). When you do so, a .CSV file is created and downloaded to your local computer, and a message appears on your browser (just like any other browser-initiated download) letting you know the download is complete.
+También puede exportar los datos desde cualquier objeto visual en el servicio Power BI. Seleccione el botón de puntos suspensivos en cualquier elemento visual y, a continuación, seleccione la **Exportar datos** botón (el botón intermedio). Al hacerlo, un. Archivo CSV se crea y se descargará en el equipo local, y aparece un mensaje en el explorador (al igual que cualquier otra descarga iniciada por el explorador) informarle de que la descarga.
 
 ![](media/powerbi-learning-4-4g-print-and-export-dashboards-reports/4-4g_3.png)
 
-You can also print or export directly from a report. When viewing a report in the Power BI service, select <bpt id="p1">**</bpt>File &gt; Print<ept id="p1">**</ept> to open the print dialog.
+También puede imprimir o exportar directamente desde un informe. Al ver un informe en el servicio Power BI, seleccione **archivo > Imprimir** para abrir el cuadro de diálogo de impresión.
 
 ![](media/powerbi-learning-4-4g-print-and-export-dashboards-reports/4-4g_4.png)
 
-And just like with a dashboard, you can export data from a visual within a report, too, by selecting the export button on a visual.
+Y al igual que con un panel, puede exportar datos desde un objeto visual en un informe, seleccionando el botón Exportar en un objeto visual.

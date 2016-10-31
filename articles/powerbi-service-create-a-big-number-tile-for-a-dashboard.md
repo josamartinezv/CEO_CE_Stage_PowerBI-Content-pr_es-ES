@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create a big number tile for a Power BI dashboard by asking a question"
-   description="Create a big number tile for a Power BI dashboard by asking a question"
+   pageTitle="Crear un icono de número grande para un panel de Power BI formular una pregunta"
+   description="Crear un icono de número grande para un panel de Power BI formular una pregunta"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,64 +20,68 @@
    ms.date="10/07/2016"
    ms.author="mihart"/>
 
-# <a name="create-a-big-number-tile-for-a-power-bi-dashboard-by-asking-a-question"></a>Create a big number tile for a Power BI dashboard by asking a question  
+# <a name="create-a-big-number-tile-for-a-power-bi-dashboard-by-asking-a-question"></a>Crear un icono de número grande para un panel de Power BI formular una pregunta  
 
-Sometimes a single number is the most important thing you want to track in your Power BI dashboard, such as total sales, market share year over year, or total opportunities. You can <bpt id="p1">[</bpt>create a big number tile in a Power BI report<ept id="p1">](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md)</ept> or by asking a question in the Q&amp;A box. This article explains how to create one in Q&amp;A.
+A veces un único número es lo más importante que desea realizar un seguimiento en el panel de Power BI, como ventas totales, mercado recurso compartido de un año a año u oportunidades total. Puede [crear un mosaico de números grandes en un informe de Power BI](powerbi-service-create-a-big-number-tile-from-a-power-bi-report.md) o formular una pregunta en el cuadro de preguntas y respuestas. Este artículo explica cómo crear uno en preguntas y respuestas.
 
 ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_OpptuntiesCard.png)
 
-The question box is the easiest way to make a number tile like this.
+El cuadro de pregunta es la manera más fácil de crear un icono como este número.
 
-1.    Create a <bpt id="p1">[</bpt>dashboard<ept id="p1">](powerbi-service-dashboards.md)</ept> and <bpt id="p2">[</bpt>get data<ept id="p2">](powerbi-service-get-data.md)</ept>.
+1.    Crear un [panel](powerbi-service-dashboards.md) y [obtener datos](powerbi-service-get-data.md).
 
-2.    At the top of your dashboard, start typing what you want to know about your data in the question box. This example uses the Opportunity Analysis sample.
+2.    En la parte superior del panel del, comience a escribir lo que desea saber acerca de los datos en el cuadro de pregunta. En este ejemplo se utiliza el ejemplo de análisis de la oportunidad.
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-box.png)
 
-3.    For example, type "number of opportunities" in the question box.
+3.    Por ejemplo, escriba "número de oportunidades" en el cuadro de pregunta.
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-ask.png)
 
-    The question box suggests, restates as <bpt id="p1">**</bpt>Showing opportunity count<ept id="p1">**</ept>, and displays the total number.  
+    El cuadro de pregunta sugiere que redefine como **que muestra el recuento de oportunidades**, y muestra el número total.  
 
-4.  Select the pin icon <ph id="ph1">![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_PinTile.png)</ph> in the upper-right corner to add the number tile to the dashboard. 
+4.  Seleccione el icono de pin ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_PinTile.png) en la esquina superior derecha para agregar el icono de número en el panel. 
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-pin.png)
 
-5.  Pin the tile to an existing dashboard or to a new dashboard. 
+5.  Anclar el mosaico a un panel existente o a un nuevo panel. 
 
-    -   Existing dashboard: select the name of the dashboard from the dropdown.
+    -   Panel existente: seleccione el nombre del panel en la lista desplegable.
 
-    -   New dashboard: type the name of the new dashboard.
+    -   Nuevo panel: escriba el nombre del nuevo panel.
 
-6.  Select <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept>.
+6.  Seleccione **Pin**.
 
-    A Success message (near the top right corner) lets you know the visualization was added, as a tile, to your dashboard.  
+    Un mensaje de confirmación (cerca de la esquina superior derecha) le permite conocer que la visualización se ha agregado, como un icono al escritorio.  
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/pinSuccess.png)
 
-7.  From the navigation pane, select the dashboard with the new tile. There, you can <bpt id="p1">[</bpt>rename, resize, link, and move<ept id="p1">](powerbi-service-edit-a-tile-in-a-dashboard.md)</ept> the pinned visualization.  
+7.  En el panel de navegación, seleccione el panel con el nuevo icono. Allí, puede [cambiar el nombre, tamaño, vincular y mover](powerbi-service-edit-a-tile-in-a-dashboard.md) la visualización anclada.  
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/PBI_DashTileTitle.png)
 
 ## <a name="troubleshooting"></a>Solucionar problemas
-If you do not see a question box at all, it may be that you have not enabled Q&amp;A for this dataset.  
+Si no ve un cuadro de pregunta, es posible que no ha habilitado preguntas y respuestas para este conjunto de datos.  
 
-##  <a name="enable-q&a"></a>Enable Q&amp;A
+##  <a name="enable-q&a"></a>Habilitar preguntas y respuestas
 
-1.  In the upper-right corner of Power BI, select the cog icon <ph id="ph1">![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-cog.png)</ph> and choose <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
+1.  En la esquina superior derecha de Power BI, seleccione el icono de engranaje ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-cog.png) y elija **configuración**.
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/powerbi-settings.png)
 
-2.  Select <bpt id="p1">**</bpt>datasets<ept id="p1">**</ept> and choose the dataset to enable for Q&amp;A.
+2.  Seleccione **conjuntos de datos** y elija el conjunto de datos para habilitar para preguntas y respuestas.
 
     ![](media/powerbi-service-create-a-big-number-tile-for-a-dashboard/power-bi-q-and-a-settings.png)
 
-3. Expand <bpt id="p1">**</bpt>Q&amp;A and Cortana<ept id="p1">**</ept>, select the checkbox for <bpt id="p2">**</bpt>Turn on Q&amp;A for this dataset<ept id="p2">**</ept> and choose <bpt id="p3">**</bpt>Apply<ept id="p3">**</ept>.
+3. Expanda **preguntas y respuestas y Cortana**, seleccione la casilla de verificación **Activar preguntas y respuestas para este conjunto de datos** y elija **aplicar**.
 
     ![](media/powerbi-service-q-and-a-direct-query/power-bi-q-and-a-directquery.png)
 
 ## <a name="see-also"></a>Consulte también  
-<bpt id="p1">[</bpt>Dashboard tiles in Power BI<ept id="p1">](powerbi-service-dashboard-tiles.md)</ept>  
-<bpt id="p1">[</bpt>Dashboards in Power BI<ept id="p1">](powerbi-service-dashboards.md)</ept>  
-<bpt id="p1">[</bpt>Power BI - Basic Concepts<ept id="p1">](powerbi-service-basic-concepts.md)</ept>
 
-More questions? <bpt id="p1">[</bpt>Try the Power BI Community<ept id="p1">](http://community.powerbi.com/)</ept>
+            [Iconos de panel en Power BI](powerbi-service-dashboard-tiles.md)  
+
+            [Paneles de Power BI](powerbi-service-dashboards.md)  
+
+            [Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
+
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)
