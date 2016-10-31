@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="View Reporting Services mobile reports and KPIs in the Android app"
-   description="The Android app for Power BI offers live, touch-enabled mobile access to your important on-premises business information."
+   pageTitle="Ver informes de Reporting Services móviles y los KPI en la aplicación Android"
+   description="La aplicación Android para Power BI ofrece acceso móvil directo y táctil a la información de negocios importante en local."
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,86 +20,90 @@
    ms.date="09/26/2016"
    ms.author="maggies"/>
 
-# View Reporting Services mobile reports and KPIs in the Android app for Power BI 
-The Android app for Power BI offers live, touch-enabled mobile access to your important on-premises business information. 
+# Ver informes de Reporting Services móviles y los KPI en la aplicación Android para Power BI 
+La aplicación Android para Power BI ofrece acceso móvil directo y táctil a la información de negocios importante en local. 
 
 ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_ssrs_and_foldrs.png)
 
-<bpt id="p1">[</bpt>Create Reporting Services mobile reports<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept> with SQL Server Mobile Report Publisher and publish them to the <bpt id="p2">[</bpt>Reporting Services web portal<ept id="p2">](https://msdn.microsoft.com/library/mt637133.aspx)</ept>. Create KPIs right in the web portal. Organize them in folders and mark your favorites, so you can find them easily. 
 
-Then in the Android app for Power BI, view the mobile reports and KPIs, organized in folders or collected as favorites. 
+            [Crear informes de Reporting Services móviles](https://msdn.microsoft.com/library/mt652547.aspx) con el publicador de SQL Server Mobile informes y publicarlos en la [portal web de Reporting Services](https://msdn.microsoft.com/library/mt637133.aspx). Crear KPI derecha en el portal web. Organizarlos en carpetas y marcar los favoritos para que pueda encontrar fácilmente. 
 
-## Explore samples without an SSRS server
+A continuación, en la aplicación Android para Power BI, ver los informes móviles y KPI, organizados en carpetas o recopilados como favoritos. 
 
-Even if you don't have access to a Reporting Services web portal, you can still explore the features of Reporting Services mobile reports. 
+## Explorar ejemplos sin un servidor SSRS
 
--  Tap the options icon <ph id="ph1">![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png)</ph> in the upper-left corner, scroll down and tap SQL Server RS Samples.
+Incluso si no tiene acceso a un portal web de Reporting Services, todavía puede explorar las características de informes de Reporting Services móviles. 
 
-Browse the samples to interact with KPIs and mobile reports.
+-  Puntee en el icono de opciones ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png) en la esquina superior izquierda, desplácese hacia abajo y puntee en ejemplos de RS de SQL Server.
 
-## Connect to a server to view Reporting Services mobile reports 
+Examinar los ejemplos para interactuar con informes móviles y KPI.
 
-1.  In your Android phone, open the Power BI app.
+## Conectarse a un servidor para ver los informes de Reporting Services móviles 
+
+1.  En tu teléfono Android, abra la aplicación Power BI.
   
-3. Tap the options icon <ph id="ph1">![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png)</ph> in the upper-left corner, and tap <bpt id="p1">**</bpt>Connect to SSRS server<ept id="p1">**</ept>.
+3. Puntee en el icono de opciones ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png) en la esquina superior izquierda y puntee **conectar al servidor SSRS**.
 
-4. Fill in the server address and your user name and password, in this format:
+4. Rellene la dirección del servidor y su nombre de usuario y contraseña en este formato:
 
     ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_ssrs_and_connect.png)
 
-    ><bpt id="p1">**</bpt>Note<ept id="p1">**</ept>: Include <bpt id="p2">**</bpt>http<ept id="p2">**</ept> or <bpt id="p3">**</bpt>https<ept id="p3">**</ept> in front of the connection string. For example, http://<bpt id="p1">*</bpt>servername<ept id="p1">*</ept>.com/reports.
+    >
+            **Nota**: incluir **http** o **https** delante de la cadena de conexión. Por ejemplo, http://*nombreDeServidor*.com/reports.
 
-    Tap <bpt id="p1">**</bpt>Advanced option<ept id="p1">**</ept> to give the server a name, if you'd like.
+    Puntee en **opción avanzada** para asignar al servidor un nombre, si lo desea.
 
-3. Tap the check mark in the upper-right corner.
+3. Puntee en la marca de verificación en la esquina superior derecha.
 
-5.  Now you see the server in the left navigation bar.
+5.  Ahora verá que el servidor en la barra de navegación izquierda.
 
     ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_ssrs_server.png)
 
-><bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: Tap the options icon <ph id="ph1">![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png)</ph> anytime to go between your Reporting Services mobile reports and your dashboards in the Power BI service. 
+>
+            **Sugerencia**: pulse el icono de opciones ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_menuiconbordr.png) en cualquier momento a vaya entre los informes de Reporting Services móviles y los paneles en el servicio Power BI. 
 
-## View Reporting Services KPIs and mobile reports in the Power BI app
+## KPI de vista Reporting Services e informes móviles en la aplicación Power BI
 
-Reporting Services KPIs and mobile reports are displayed in the same folders they're in on the Reporting Services web portal. 
+Reporting Services KPI e informes móviles se muestran en las mismas carpetas estuvieran en el portal web de Reporting Services. 
 
-- Tap a KPI to see it in focus mode &amp;#151; then tip your phone to see it in landscape mode.
+- Puntee en un KPI para verlo en modo de enfoque & #151; Sugerencia a continuación, el teléfono para ver en modo horizontal.
 
     ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_ssrs_tilelndscpbrdr.png)
 
-- Tap a mobile report to open and interact with it in the Power BI app.
+- Puntee en un informe móvil para abrir e interactuar con él en la aplicación de Power BI.
 
     ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_ssrs_rpt.png)
 
-## View your favorite KPIs and reports
+## Ver los KPI y los informes favoritos
 
-You can mark KPIs and mobile reports as favorites on your Reporting Services web portal, and then view them in one convenient folder on your phone, along with your Power BI favorite dashboards and reports.
+Puede marcar KPI e informes móviles como favoritos en el portal web de Reporting Services y, a continuación, verlos en una carpeta apropiada en el teléfono, junto con los informes y paneles de Power BI favoritos.
 
--  Tap <bpt id="p1">**</bpt>Favorites<ept id="p1">**</ept>.
+-  Puntee en **favoritos**.
 
     ![](media/powerbi-mobile-android-kpis-mobile-reports/pbi_and_ssrs_favemenu.png)
    
-    Your favorites from the web portal are all on this page.
+    Son los favoritos desde el portal web en esta página.
 
     ![](media/powerbi-mobile-android-kpis-mobile-reports/power-bi-android-ssrs-favorites.png)
 
-## Remove a connection to a report server
+## Quitar una conexión a un servidor de informes
 
-You can only be connected to one report server at a time from your Android app. If you want to connect to a different server, you need to disconnect from the current one.
+Se puede solo se conectado a un servidor de informes a la vez desde su aplicación Android. Si desea conectarse a un servidor diferente, debe desconectar de la actual.
 
-1. At the bottom of the left navigation bar, tap <bpt id="p1">**</bpt>Settings<ept id="p1">**</ept>.
-2. Tap the ellipsis (<bpt id="p1">**</bpt>...<ept id="p1">**</ept>) next to the server name you don't want to be connected to.
-3. Tap <bpt id="p1">**</bpt>Remove Connection<ept id="p1">**</ept>.
+1. En la parte inferior de la barra de navegación izquierdo, puntee **configuración**.
+2. Puntee en el botón de puntos suspensivos (**...**) junto al nombre del servidor que no desea estar conectado a.
+3. Puntee en **Quitar conexión**.
 
 
-## Create Reporting Services mobile reports and KPIs
+## Crear informes de Reporting Services móviles y KPI
 
-You don't create Reporting Services KPIs and mobile reports in the Power BI mobile app. You create them in SQL Server Mobile Report Publisher and a SQL Server 2016 Reporting Services web portal.
+No se crean informes móviles y Reporting Services KPI en la aplicación móvil de Power BI. Se crea en el publicador de SQL Server Mobile informes y un portal web de SQL Server 2016 Reporting Services.
 
-- <bpt id="p1">[</bpt>Create your own Reporting Services mobile reports<ept id="p1">](https://msdn.microsoft.com/library/mt652547.aspx)</ept> and publish them to the Reporting Services web portal.
-- Create <bpt id="p1">[</bpt>KPIs on the Reporting Services web portal<ept id="p1">](https://msdn.microsoft.com/library/mt683632.aspx)</ept>
+- 
+            [Crear sus propios informes de Reporting Services móviles](https://msdn.microsoft.com/library/mt652547.aspx) y publíquelos en el portal web de Reporting Services.
+- Crear [KPI en el portal web de Reporting Services](https://msdn.microsoft.com/library/mt683632.aspx)
 
 ### Consulte también  
-- [Get started with the Android app for Power BI](powerbi-mobile-android-app-get-started.md)  
-- [Get started with Power BI](powerbi-service-get-started.md)  
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Introducción a la aplicación Android para Power BI](powerbi-mobile-android-app-get-started.md)  
+- [Introducción a Power BI](powerbi-service-get-started.md)  
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

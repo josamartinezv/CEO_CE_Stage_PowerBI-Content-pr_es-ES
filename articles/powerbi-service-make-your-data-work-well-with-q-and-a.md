@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Make your data work well with Q&amp;A in Power BI"
-   description="Make your data work well with Q&amp;A in Power BI"
+   pageTitle="Hacer que los datos funcionen bien con preguntas y respuestas en Power BI"
+   description="Hacer que los datos funcionen bien con preguntas y respuestas en Power BI"
    services="powerbi"
    documentationCenter=""
    authors="mihart"
@@ -20,36 +20,36 @@
    ms.date="10/05/2016"
    ms.author="mihart"/>
 
-# Make your data work well with Q&amp;A in Power BI  
+# Hacer que los datos funcionen bien con preguntas y respuestas en Power BI  
 
-If you are a person who creates data models or builds Excel workbooks that will be used with Power BI, read on...
+Si eres una persona que crea modelos de datos o compilaciones de libros de Excel que se utilizará con Power BI, siga leyendo...
 
-In Power BI, Q&amp;A can search structured data and choose the right visualization for your question -- that's what makes it a compelling tool to use.   
+En Power BI, preguntas y respuestas pueden buscar datos estructurados y elegir la visualización correcta para la pregunta, que es lo que hace una herramienta atractiva.   
 
-Q&amp;A can work on any uploaded Excel file that has tables, ranges, or contains a PowerPivot model, but the more optimizations and data cleaning you do, the more robust Q&amp;A performance is. 
+Preguntas y respuestas pueden trabajar en cualquier Excel archivo cargado que contiene tablas, rangos, o un modelo de PowerPivot, pero las optimizaciones más y lo hace, la limpieza de datos el más sólido Q & es de un rendimiento. 
 
-## How Q&amp;A works  
-Q&amp;A has a set of core natural language understanding abilities that work across your data. It has context-dependent keyword search for your Excel table, column, and calculated field names. Second, it has built-in knowledge for how to filter, sort, aggregate, group, and display data. 
+## Funcionamiento de preguntas y respuestas  
+Preguntas y respuestas tiene un conjunto de capacidades de descripción de lenguaje natural de núcleo que funcionan en los datos. Tiene la búsqueda de palabra clave dependiente del contexto para la tabla, columna y nombres de los campos calculados de Excel. En segundo lugar, tiene conocimiento integrado acerca de cómo filtrar, ordenar, agregado, grupo y mostrar datos. 
 
-For example, in an Excel table named “Sales”, with columns “Product”, “Month”, “Units Sold”, “Gross Sales”, and “Profit”, you could ask questions about any of those entities.  You could ask to show sales, total profit by month, sort products by units sold, and many others. Read more about the <bpt id="p1">[</bpt>kinds of questions you can ask<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-1.aspx)</ept>, and <bpt id="p2">[</bpt>asking questions using a question template<ept id="p2">](powerbi-service-q-and-a.md)</ept> and <bpt id="p3">[</bpt>visualization types you can specify in a Q&amp;A query<ept id="p3">](powerbi-service-visualization-types-for-reports-and-q-and-a.md)</ept>.
+Por ejemplo, en una tabla de Excel denominada "Ventas", con las columnas "Product", "Mes", "Unidades vendidas", "Ventas brutas" y "Beneficios", se podría preguntar sobre cualquiera de esas entidades.  Puede solicitar mostrar las ventas, total de beneficios por mes, los productos están ordenados por unidades vendidas y muchos otros. Obtenga más información sobre la [tipos de preguntas que pueden](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-1.aspx), y [preguntas con una plantilla de pregunta](powerbi-service-q-and-a.md) y [tipos de visualización puede especificar en una consulta de preguntas y respuestas](powerbi-service-visualization-types-for-reports-and-q-and-a.md).
 
-## Prepare a workbook for Q&amp;A  
-Q&amp;A relies on the names of tables, columns, and calculated fields to answer data-specific questions, meaning what you call entities in your workbook is important!
+## Preparar un libro para preguntas y respuestas  
+Preguntas y respuestas se basa en los nombres de tablas, columnas, y campos calculados para responder a preguntas específicas de datos, lo que significa que lo que se llama a las entidades en el libro es importante!
 
-Here are some tips for making the most of Q&amp;A in your workbook.
+Estas son algunas sugerencias para realizar la mayoría de las preguntas y respuestas en el libro.
 
--   Make sure your data is in an Excel table. Here's <bpt id="p1">[</bpt>how to create an Excel table<ept id="p1">](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&amp;rs=en-US&amp;ad=US)</ept>.
+-   Asegúrese de que los datos están en una tabla de Excel. Aquí es [cómo crear una tabla de Excel](https://support.office.com/article/Create-an-Excel-table-in-a-worksheet-e81aa349-b006-4f8a-9806-5af9df0ac664?ui=en-US&rs=en-US&ad=US).
 
--   Make sure the names of your tables, columns, and calculated field make sense in English.
+-   Asegúrese de que los nombres de sus tablas, columnas y campos calculados tienen sentido en inglés.
 
-    For example, if you have a table with sales data, call the table “Sales”. Column names like “Year”, “Product”, “Sales Rep”, and “Amount” will work well with Q&amp;A.
+    Por ejemplo, si tiene una tabla con datos de ventas, llame a la tabla "Ventas". Nombres de columna como "Year", "Producto", "Representante de ventas" y "Cantidad" funcionarán bien con preguntas y respuestas.
 
->[AZURE.NOTE]  If your workbook has a Power Pivot data model, you can do even more optimizations. Read more about <bpt id="p1">[</bpt>Demystifying Power BI Q&amp;A part 2<ept id="p1">](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx)</ept> from our in-house team of natural language experts.
+>[AZURE.NOTE]  Si el libro tiene un modelo de datos de PowerPivot, puede hacer incluso más optimizaciones. Obtenga más información sobre [Desmitificación de Power BI Q & A parte 2](http://blogs.msdn.com/b/powerbi/archive/2014/02/27/demystifying-power-bi-q-amp-a-part-2.aspx) de nuestro equipo interno de expertos en lenguaje natural.
 
 ## Consulte también  
-[Q&amp;A in Power BI](powerbi-service-q-and-a.md)  
-[Tutorial: Introduction to Power BI Q&amp;A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
-[Get data (for Power BI)](powerbi-service-get-data.md)  
-[Power BI - Basic Concepts](powerbi-service-basic-concepts.md)
+[Preguntas y respuestas en Power BI](powerbi-service-q-and-a.md)  
+[Tutorial: Introducción a Power BI Q & A](powerbi-service-tutorial-introduction-to-q-and-a.md)  
+[Obtener datos (Power BI)](powerbi-service-get-data.md)  
+[Power BI: conceptos básicos](powerbi-service-basic-concepts.md)
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

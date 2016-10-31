@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Create Calculated Columns"
-   description="Calculated columns let you create unique keys, and more"
+   pageTitle="Crear columnas calculadas"
+   description="Las columnas calculadas permiten crear claves únicas etc."
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,32 +23,32 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Create Calculated Columns
+# Crear columnas calculadas
 
-Creating calculated columns is a simple way to enrich and enhance your data. A <bpt id="p1">**</bpt>calculated column<ept id="p1">**</ept> is a new column that you create by defining a calculation that transforms or combines two or more elements of existing data. For example, you can create a new column by combining two columns into one.
+Crear columnas calculadas es una manera sencilla para enriquecer y mejorar los datos. Un **columna calculada** es una columna nueva que se crea definiendo un cálculo que transforma o combina dos o más elementos de datos existentes. Por ejemplo, puede crear una nueva columna mediante la combinación de dos columnas en uno.
 
-One useful reason for creating a calculated column is to establish a relationship between tables, when no unique fields exist that can be used to establish a relationship. The lack of a relationship becomes apparent when you create a simple table visual in Power BI Desktop, and you get the same value for all entries, yet you know the underlying data is different.
+Un motivo útil para crear una columna calculada es establecer una relación entre tablas, cuando no existe ningún campo único que se puede utilizar para establecer una relación. La falta de una relación se hace evidente cuando crea una tabla simple visual en Power BI Desktop y obtendrá el mismo valor para todas las entradas, pero sabe que los datos subyacentes son diferentes.
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_1.png)
 
-To create a relationship with unique fields in data, you can, for example, create a new calculated column for "Full Phone Number" by combining the values from the "Area Code" and "Local Number" columns when those values exist in your data. Calculated columns are a useful tool for quickly creating models and visualizations.
+Para crear una relación con campos únicos en los datos, puede, por ejemplo, crear una nueva columna calculada para "Número de teléfono completo" combinando los valores de "Código de área" y "Número Local" columnas cuando existen esos valores en los datos. Las columnas calculadas son una herramienta útil para crear rápidamente modelos y visualizaciones.
 
-To create a calculated column, select the <bpt id="p1">**</bpt>Data view<ept id="p1">**</ept> in Power BI Desktop from the left side of the report canvas.
+Para crear una columna calculada, seleccione la **vista datos** en Power BI Desktop desde el lado izquierdo del lienzo del informe.
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_2.png)
 
-From the Modeling tab, select <bpt id="p1">**</bpt>New Column<ept id="p1">**</ept>. This will enable the formula bar where you can enter calculations using DAX (Data Analysis Expressions) language. DAX is a powerful formula language, also found in Excel, that lets you build robust calculations. As you type a formula, Power BI Desktop displays matching formulas or data elements to assist and accelerate the creation of your formula.
+En la ficha de modelado, seleccione **nueva columna**. Esto permitirá que la barra de fórmulas donde puede especificar cálculos mediante el lenguaje DAX (expresiones de análisis de datos). DAX es un eficaz lenguaje de fórmulas, que también se encuentran en Excel, que le permite crear cálculos sólidas. A medida que escribe una fórmula, Power BI Desktop muestra fórmulas coincidentes o elementos de datos para ayudar a y acelerar la creación de la fórmula.
 
-The Power BI formula bar will suggest specific DAX functions and related data columns as you enter your expression.
+La barra de fórmulas de Power BI le sugerirá determinadas funciones DAX y relacionados con las columnas de datos a medida que escribe la expresión.
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_3.png)
 
-Once the calculated columns are created in each table, they can be used as a unique key to establish a relationship between them. Going to <bpt id="p1">**</bpt>Relationship<ept id="p1">**</ept> view, you can then drag the field from one table to the other to create the relationship.
+Una vez creadas las columnas calculadas en cada tabla, puede utilizarse como clave única para establecer una relación entre ellos. Vaya a **relación** vista, puede, a continuación, arrastre el campo de una tabla a otra para crear la relación.
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_4.png)
 
-Returning to <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, you now see a different value for each district.
+Volver a **informe** ahora puede ver un valor diferente para cada distrito.
 
 ![](media/powerbi-learning-2-3-create-calculated-columns/2-3_5.png)
 
-There are all sorts of other things you can do by creating calculated columns, too.
+Hay todo tipo de cosas que puede hacer mediante la creación de columnas calculadas, demasiado.

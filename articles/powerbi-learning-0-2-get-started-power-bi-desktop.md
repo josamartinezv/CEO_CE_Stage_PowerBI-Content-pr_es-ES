@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Getting Started with Power BI Desktop"
-   description="Get a tour of Power BI Desktop"
+   pageTitle="Introducción a Power BI Desktop"
+   description="Dé un paseo por de Power BI Desktop"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -22,71 +22,71 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Getting Started With Power BI Desktop
+# Introducción a Power BI Desktop
 
-In this topic, we take a closer look at how the first two parts of Power BI fit together:
+En este tema, echamos un vistazo cómo encajan las dos primeras partes de Power BI:
 
--   Create a report in <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>
--   Publish the report in the <bpt id="p1">**</bpt>Power BI service<ept id="p1">**</ept>
+-   Crear un informe en **Power BI Desktop**
+-   Publicar el informe en el **servicio Power BI**
 
-We’ll start in Power BI Desktop, and select <bpt id="p1">**</bpt>Get Data<ept id="p1">**</ept>. The collection of data sources appears, allowing you to choose a data source. The following image shows selecting a Web page as the source, in the video above, Will selected an <bpt id="p1">**</bpt>Excel<ept id="p1">**</ept> workbook.
+Comenzaremos en Power BI Desktop y seleccione **obtener datos**. Aparece la colección de orígenes de datos, que le permite elegir un origen de datos. La siguiente imagen muestra al seleccionar una página Web como el origen en el vídeo anterior, se seleccionará un **Excel** libro.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_1.png)
 
-Regardless of which data source you choose, Power BI connects to that data source, and shows you the data available from that source. The following image is another example, this one is from a Web page that analyzes different states and some interesting retirement statistics.
+Independientemente de qué origen de datos que elija, Power BI se conecta a ese origen de datos y muestra los datos disponibles de ese origen. La imagen siguiente es otro ejemplo, esta es desde una página Web que analiza los diferentes Estados y algunas estadísticas interesantes de retirada.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_2.png)
 
-In Power BI Desktop <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, you can begin to build reports.
+En Power BI Desktop **informe** vista, puede empezar a generar informes.
 
-The <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view has five main areas:
+El **informe** vista tiene cinco áreas principales:
 
-1.  The ribbon, which displays common tasks associated with reports and visualizations
-2.  The <bpt id="p1">**</bpt>Report<ept id="p1">**</ept> view, or canvas, where visualizations are created and arranged
-3.  The <bpt id="p1">**</bpt>Pages<ept id="p1">**</ept> tab area along the bottom, which lets you select or add a report page
-4.  The <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> pane, where you can change visualizations, customize colors or axes, apply filters, drag fields, and more
-5.  The <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> pane, where query elements and filters can be dragged onto the <bpt id="p2">**</bpt>Report<ept id="p2">**</ept> view, or dragged to the <bpt id="p3">**</bpt>Filters<ept id="p3">**</ept> area of the <bpt id="p4">**</bpt>Visualizations<ept id="p4">**</ept> pane
+1.  La cinta de opciones, que muestra las tareas comunes asociadas con los informes y visualizaciones
+2.  El **informe** vista o lienzo, donde se crean y se organizan visualizaciones
+3.  El **páginas** ficha área a lo largo de la parte inferior, lo que le permite seleccionar o agregar una página de informe
+4.  El **visualizaciones** panel, donde puede cambiar visualizaciones, personalizar los colores o ejes, aplicar filtros, arrastre los campos etc.
+5.  El **campos** panel, donde se pueden arrastrar elementos de consulta y filtros hasta el **informe** Ver, o bien, para el **filtros** área de la **visualizaciones** panel
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_3.png)
 
-The <bpt id="p1">**</bpt>Visualizations<ept id="p1">**</ept> and <bpt id="p2">**</bpt>Fields<ept id="p2">**</ept> pane can be collapsed by selecting the small arrow along the edge, providing more space in the <bpt id="p3">**</bpt>Report<ept id="p3">**</ept> view to build cool visualizations. When modifying visualizations, you'll also see these arrows pointing up or down, which means you can expand or collapse that section, accordingly.
+El **visualizaciones** y **campos** se puede contraer el panel, seleccione la flecha pequeña situada a lo largo del borde, lo que proporciona más espacio en el **informe** vista para crear visualizaciones interesantes. Cuando se modifica visualizaciones, también verá estas flechas hacia arriba o hacia abajo, lo que significa que se puede expandir o contraer esa sección, según corresponda.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_4.png)
 
-To create a visualization, just drag a field from the <bpt id="p1">**</bpt>Fields<ept id="p1">**</ept> list onto the <bpt id="p2">**</bpt>Report<ept id="p2">**</ept> view. In this case, let’s drag the State field from <bpt id="p1">*</bpt>RetirementStats<ept id="p1">*</ept>, and see what happens.
+Para crear una visualización, basta con arrastrar un campo desde la **campos** lista hasta el **informe** vista. En este caso, vamos a arrastrar el campo de estado de *RetirementStats*, y vea Qué sucede.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_5.png)
 
- 
+Observe que... Power BI Desktop crea automáticamente una visualización de mapa, ya que reconoce que el campo estado contiene datos de ubicación geográfica.
 
-Now let’s fast-forward a bit, and after creating a report with a few visualizations, we’re ready to publish this to the Power BI service. On the <bpt id="p1">**</bpt>Home<ept id="p1">**</ept> ribbon in Power BI Desktop, select <bpt id="p2">**</bpt>Publish<ept id="p2">**</ept>.
+Ahora vamos a avanzar un poco y después de crear un informe con unas visualizaciones, estamos listos para publicar esto en el servicio Power BI. En la **Inicio** la cinta de opciones en Power BI Desktop, seleccione **publicar**.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_6.png)
 
-You’ll be prompted to sign in to Power BI.
+Se solicitará que inicie sesión en Power BI.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_7.png)
 
-When you've signed in and the publish process is complete, you see the following dialog. You can select the link (below <bpt id="p1">**</bpt>Success!<ept id="p1">**</ept>) to be taken to the Power BI service, where you can see the report you just published.
+Cuando haya iniciado sesión y el proceso de publicación, verá el siguiente cuadro de diálogo. Puede seleccionar el vínculo (a continuación **éxito!**) para que se realice en el servicio Power BI, donde puede ver el informe que acaba de publicar.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_8.png)
 
-When you sign in to Power BI, you'll see Power BI Desktop file you just published in the service. In the image below, the report created in Power BI Desktop is shown in the <bpt id="p1">**</bpt>Reports<ept id="p1">**</ept> section.
+Cuando inicie sesión en Power BI, verá el archivo que recién publicado en el servicio Power BI Desktop. En la imagen siguiente, se muestra el informe creado en Power BI Desktop en el **informes** sección.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_9.png)
 
-In that report, I can choose the <bpt id="p1">**</bpt>Pin<ept id="p1">**</ept> icon to pin that visual to a dashboard. The following image shows the pin icon highlighted with a bright box and arrow.
+En ese informe, puedo elegir el **Pin** icono de pin que visual a un panel. La siguiente imagen muestra el icono de pin resaltado con un cuadro brillante y la flecha.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_10.png)
 
-When I select that, the following dialog appears, letting me pin the visual to an existing dashboard, or to create a new dashboard.
+Al seleccionar que, aparece el cuadro de diálogo siguiente permitirme anclar la visualización a un panel existente o crear un nuevo panel.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_11.png)
 
-When we pin a couple of visuals from our report, we can see them in the dashboard.
+Cuando se ancla un par de elementos visuales de nuestro informe, los podemos ver en el panel.
 
 ![](media/powerbi-learning-0-2-get-started-power-bi-desktop/c0a2_12.png)
 
-There’s a lot more you can do with Power BI, of course, such as sharing the dashboards you create. We'll discuss sharing later on in this course.
+Hay mucho más que puede hacer con Power BI, por supuesto, como compartir los paneles que se crea. Trataremos compartida más adelante en este curso.
 
-Next, we look at a feature that can automatically create dashboards for you, just by connecting to a cloud service like Facebook, Salesforce, and many others.
+A continuación, veremos una característica que automáticamente para usted, puede crear paneles simplemente mediante la conexión a un servicio de nube como Facebook, Salesforce y muchos otros.

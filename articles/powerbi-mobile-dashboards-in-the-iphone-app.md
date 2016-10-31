@@ -1,6 +1,6 @@
 <properties 
-   pageTitle="Dashboards in the iPhone app"
-   description="Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI for iOS  app on the iPhone." 
+   pageTitle="Paneles de la aplicación de iPhone"
+   description="Los paneles son un portal para el ciclo de vida de su empresa. Obtenga información acerca de cómo ver, explorar y compartir sus paneles en la aplicación Power BI para iOS en el iPhone." 
    services="powerbi" 
    documentationCenter="" 
    authors="maggiesMSFT" 
@@ -20,69 +20,73 @@
    ms.date="09/30/2016"
    ms.author="maggies"/>
 
-# Dashboards in the iPhone app (Power BI for iOS)  
+# Paneles de la aplicación de iPhone (Power BI para iOS)  
 
-Dashboards are a portal to your company's life cycle. Learn how you can view, explore, and share your dashboards in the Power BI for iOS  app on the iPhone.  
+Los paneles son un portal para el ciclo de vida de su empresa. Obtenga información acerca de cómo ver, explorar y compartir sus paneles en la aplicación Power BI para iOS en el iPhone.  
 
-You don't create dashboards in the Power BI app on your iPhone. You <bpt id="p1">[</bpt>create dashboards<ept id="p1">](powerbi-service-dashboards.md)</ept> or <bpt id="p2">[</bpt>connect to built-in dashboards for services<ept id="p2">](powerbi-content-packs-services.md)</ept> such as Salesforce in the Power BI service (<bpt id="p3">[</bpt>https://www.powerbi.com<ept id="p3">](https://www.powerbi.com)</ept>) on your computer.
+No cree paneles en la aplicación Power BI en su iPhone. Se [crear paneles](powerbi-service-dashboards.md) o [conectarse a los paneles de información para servicios](powerbi-content-packs-services.md) como Salesforce en el servicio Power BI ([https://www.powerbi.com](https://www.powerbi.com)) en el equipo.
 
-Then in the iPhone app for Microsoft Power BI for iOS, you can explore these same dashboards. Dashboards refresh in real time, automatically, so you don't need to manually refresh them.
+A continuación, en la aplicación de iPhone para Microsoft Power BI para iOS, puede explorar estos paneles de la mismos. Los paneles se actualización en tiempo real, automáticamente, por lo que no es necesario actualizarlos manualmente.
 
-## View dashboards on your iPhone  
-1.  Open the Power BI app on your iPhone and sign in.
+## Paneles de la vista en su iPhone  
+1.  Abra la aplicación de Power BI en su iPhone e inicie sesión.
 
-    Need to <bpt id="p1">[</bpt>download the iPhone app<ept id="p1">](http://go.microsoft.com/fwlink/?LinkId=522062)</ept> from the Apple App Store?
+    ¿Necesita [Descargar la aplicación de iPhone](http://go.microsoft.com/fwlink/?LinkId=522062) de Apple App Store?
 
-3.  Tap a dashboard to open it.  
+3.  Puntee en un panel para abrirlo.  
 
      ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-home.png)
 
-    By default, Power BI dashboards look a little different on your iPhone. All the tiles appear the same size, and they're arranged one after another from top to bottom.
+    De forma predeterminada, paneles de Power BI parecer un poco diferentes en su iPhone. Todos los mosaicos aparecen el mismo tamaño y que estén organizadas uno tras otro de arriba a abajo.
 
      ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-portrait.png)
 
-    ><bpt id="p1">**</bpt>Tip<ept id="p1">**</ept>: If you're the dashboard owner, in the Power BI service you can <bpt id="p2">[</bpt>create a view of the dashboard specifically for phones<ept id="p2">](powerbi-service-create-dashboard-phone-view.md)</ept> in portrait mode. 
+    >
+            **Sugerencia**: si es el propietario del panel, en el servicio Power BI puede [crear una vista del panel específicamente para teléfonos](powerbi-service-create-dashboard-phone-view.md) en modo vertical. 
 
-     Or just turn your phone sideways to <bpt id="p1">[</bpt>view the dashboard in landscape mode<ept id="p1">](#view-dashboards-in-landscape-mode)</ept> on your phone.
+     O simplemente activar el teléfono lateralmente [Ver el panel en modo horizontal](#view-dashboards-in-landscape-mode) en su teléfono.
 
      ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-landscape.png)
 
 
-4.  Swipe up and down to see all the tiles in the dashboard. Puede:
+4.  Deslice el dedo hacia arriba y hacia abajo para ver todos los iconos en el panel. Puede:
 
-    -   <bpt id="p1">[</bpt>Tap a tile<ept id="p1">](powerbi-mobile-tiles-in-the-iphone-app.md)</ept> to open it in focus mode and interact with it.
+    -   
+            [Puntee en un mosaico](powerbi-mobile-tiles-in-the-iphone-app.md) para abrirlo en modo de enfoque e interactuar con él.
 
-    -   <bpt id="p1">[</bpt>Interact with a report page tile<ept id="p1">](powerbi-mobile-report-page-tiles-in-the-iphone-app.md)</ept> in the iPhone app.
+    -   
+            [Interactuar con un icono de página de informe](powerbi-mobile-report-page-tiles-in-the-iphone-app.md) en la aplicación de iPhone.
 
-    -   Tap the star <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-mobile-not-favorite-icon.png)</ph> to <bpt id="p1">[</bpt>make it a favorite<ept id="p1">](powerbi-mobile-favorites.md)</ept>.
+    -   Toque la estrella ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-mobile-not-favorite-icon.png) a [convertir favorita](powerbi-mobile-favorites.md).
 
-    -  Tap <bpt id="p1">**</bpt>Invite<ept id="p1">**</ept> <ph id="ph1">![](media/powerbi-mobile-dashboards-in-the-iphone-app/pbi_ipad_shareiconblk.png)</ph> to <bpt id="p2">[</bpt>invite a colleague<ept id="p2">](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md)</ept> to view your dashboard.
+    -  Puntee en **Invitar a** ![](media/powerbi-mobile-dashboards-in-the-iphone-app/pbi_ipad_shareiconblk.png) a [Invitar a un colega](powerbi-mobile-share-a-dashboard-from-the-iphone-app.md) para ver el panel.
 
-    -  Tap the ellipsis to open the dashboard menu...
+    -  Puntee en el botón de puntos suspensivos para abrir el menú panel...
 
         ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-ellipsis-menu.png)
 
-        Then tap to <bpt id="p1">[</bpt>add a picture tile<ept id="p1">](powerbi-mobile-picture-tiles-in-the-iphone-app.md)</ept> to your dashboard.
+        A continuación, puntee en [Agregar un icono de imagen](powerbi-mobile-picture-tiles-in-the-iphone-app.md) al panel.
 
         ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-picture-tile-menu.png)
 
-    -  <bpt id="p1">[</bpt>Sync the dashboard with your Apple Watch<ept id="p1">](powerbi-mobile-apple-watch.md)</ept>.
+    -  
+            [Sincronizar el panel con sus Apple Watch](powerbi-mobile-apple-watch.md).
 
-6.  To get back to the list of dashboards, tap the arrow next to the dashboard title, then tap <bpt id="p1">**</bpt>My Workspace<ept id="p1">**</ept>.
+6.  Para volver a la lista de paneles, puntee en la flecha situada junto al título del panel y, a continuación, puntee en **Mi área de trabajo**.
 
     ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-breadcrumb.png)
 
 
-## View dashboards in landscape mode
+## Paneles de la vista en modo horizontal
 
-Just turn your phone sideways to view dashboards in landscape mode. The dashboard layout changes from a series of tiles to a view of the whole dashboard&amp;#151;you see all of the dashboard’s tiles just as they are in the Power BI service.
+Simplemente activar su teléfono lateralmente para ver los paneles en modo horizontal. El diseño del panel cambia de una serie de mosaicos a una vista de todo el panel & #151; ver todos los iconos del escritorio tal como aparecen en el servicio Power BI.
 
 ![](media/powerbi-mobile-dashboards-in-the-iphone-app/power-bi-iphone-dashboard-landscape.png)
 
-You can use the “pinch” gesture to zoom in and out on different areas of your dashboard, pan to navigate it. And you can still <bpt id="p1">[</bpt>tap a tile<ept id="p1">](powerbi-mobile-tiles-in-the-win10phone-app.md)</ept> to open the tile in focus mode and interact with your data.
+Puede usar el gesto de "alejar" para acercar y alejar en distintas áreas de su escritorio, panorámica para navegar en él. Y aún así puede [toque un icono](powerbi-mobile-tiles-in-the-win10phone-app.md) para abrir el mosaico en el modo de enfoque e interactuar con los datos.
 
 ### Consulte también  
-- [Get started with the iPhone app for Power BI](powerbi-mobile-iphone-app-get-started.md)  
-- [Get started with Power BI](powerbi-service-get-started.md) 
-- [Create a phone view of a dashboard in Power BI](powerbi-service-create-dashboard-phone-view.md) 
-- Questions? [Try asking the Power BI Community](http://community.powerbi.com/)
+- [Introducción a la aplicación de iPhone para Power BI](powerbi-mobile-iphone-app-get-started.md)  
+- [Introducción a Power BI](powerbi-service-get-started.md) 
+- [Crear una vista de teléfono de un panel en Power BI](powerbi-service-create-dashboard-phone-view.md) 
+- ¿Tiene preguntas? [Pruebe a formular a la Comunidad de Power BI](http://community.powerbi.com/)

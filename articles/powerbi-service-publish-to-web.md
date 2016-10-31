@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Publish to web from Power BI"
-   description="With Power BI Publish to web, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device."
+   pageTitle="Publicar en web de Power BI"
+   description="Con Power BI publicar en web, puede incrustar fácilmente visualizaciones interactivas de Power BI en línea, como blogs, sitios Web, a través de mensajes de correo electrónico o medios sociales, en cualquier dispositivo."
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,163 +20,168 @@
    ms.date="10/10/2016"
    ms.author="asaxton"/>
 
-# Publish to web from Power BI
+# Publicar en web de Power BI
 
-With Power BI <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>, you can easily embed interactive Power BI visualizations online, such as in blog posts, websites, through emails or social media, on any device.
+Con Power BI **publicar en web**, se pueden incrustar fácilmente visualizaciones de Power BI interactivas en línea, como se muestra en el blog de publicaciones, sitios Web, a través de mensajes de correo electrónico o medios sociales, en cualquier dispositivo.
 
-You can also easily edit, update, refresh or un-share your published visuals.
+También puede editar, actualización, actualización o dejar de compartir los objetos visuales publicados.
 
-> [AZURE.WARNING] When you use <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>, the report or visual you publish can be viewed by anyone on the Internet. There is no authentication used when viewing these reports. Only use Publish to web with reports and data that the anyone on the Internet (unauthenticated members of the public) should be able to see. Before publishing this report, ensure you have the right to share the data and visualizations publicly. Do not publish confidential or proprietary information. If in doubt, check your organization's policies before publishing.
+> [AZURE.WARNING] Al usar **publicar en web**, se puede ver el informe o visual publicar cualquier usuario de Internet. No hay ninguna autenticación que se utilizan al ver estos informes. Sólo puede utilizar publicación en web con informes y datos que cualquier persona en Internet (no autenticados miembros del público) debe ser capaz de ver. Antes de publicar este informe, asegúrese de que tiene el derecho a compartir los datos y visualizaciones públicamente. No publique información confidencial o propia. En caso de duda, compruebe las directivas de su organización antes de la publicación.
 
-## How to use Publish to Web
+## Cómo utilizar la publicación en Web
 
-<bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> is available on reports in your personal or group workspaces that you can edit.  You cannot use Publish to web with reports that were shared with you, or reports that rely on row level security to secure the data. See the <bpt id="p1">**</bpt>Limitations<ept id="p1">**</ept> section below for a complete list of cases where Publish to web is not supported. Please review the <bpt id="p1">**</bpt>Warning<ept id="p1">**</ept> earlier in this article before using Publish to web.
 
-You can watch how this feature works in the following <bpt id="p1">*</bpt>short video<ept id="p1">*</ept>. Then, follow the steps below to try it yourself.
+            **Publicar en web** está disponible en los informes en las áreas de trabajo personales o de grupo que puede editar.  No puede utilizar la publicación en web con informes que se han compartido con usted o informes que se basan en la seguridad de nivel de fila para proteger los datos. Consulte la **limitaciones** sección para obtener una lista completa de los casos donde no se admite la publicación en web. Revise el **Advertencia** anteriormente en este artículo antes de usar la publicación en web.
+
+Puede ver cómo funciona esta característica en la siguiente *breve vídeo*. A continuación, siga los pasos siguientes para probarlo.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UF9QtqE7s4Y" frameborder="0" allowfullscreen></iframe>
 
 
-The following steps describe how to use <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>.
+Los pasos siguientes describen cómo usar **publicar en web**.
 
 
-1.  On a report in your workspace that you can edit, select <bpt id="p1">**</bpt>File  &gt; Publish to web<ept id="p1">**</ept>.
+1.  En un informe en el área de trabajo que puede editar, seleccione **archivo > Publicar en web**.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web1.png)
 
-2.  Review the content on the dialog, and select <bpt id="p1">**</bpt>Create embed code<ept id="p1">**</ept> as shown in the following dialog.
+2.  Revise el contenido del cuadro de diálogo y seleccione **crear incrustar código** como se muestra en el siguiente cuadro de diálogo.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web2_GA.PNG)
 
-3.  Review the warning, shown in the following dialog, and confirm that the data is okay to embed in a public website. If so, select <bpt id="p1">**</bpt>Publish<ept id="p1">**</ept>.
+3.  Revise la advertencia se muestra en el cuadro de diálogo siguiente y comprobar que los datos se puede incrustar en un sitio Web público. Si es así, seleccione **publicar**.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web3_GA.PNG)
 
-4.  A dialog appears that provides a link that can be sent in email, embedded in code (such as an iFrame), or that you can paste directly into your web page or blog.
+4.  Aparece un cuadro de diálogo que proporciona un vínculo que se puede enviar por correo electrónico, incrustado en el código (como un iFrame), o que puede pegar directamente en la página web o blog.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web4.png)
 
-5.  If you’ve previously created an embed code for the report, the embed code quickly appears. You can only create one embed code for each report.
+5.  Si previamente ha creado un código de incrustación para el informe, el código para insertar aparece rápidamente. Sólo se puede crear uno incrustar código para cada informe.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web5.png)
 
 
-## Tips and Tricks for View modes
+## Sugerencias y trucos para los modos de vista
 
-When you embed content within a blog post, you typically need to fit it within a specific size of the screen.  You can also adjust the height and the width in the iFrame tag as needed, but you may also need to ensure your report fits within the given area of the iFrame, so you also need to set an appropriate View Mode when editing the report.
+Al incrustar contenido dentro de una entrada de blog, normalmente necesario para que quepa en un tamaño específico de la pantalla.  También puede ajustar el alto y el ancho de la etiqueta de iFrame según sea necesario, pero también debe asegurarse de que el informe quepa en el área determinado de iFrame, por lo que también necesite establecer un modo de vista adecuado al editar el informe.
 
-The following table provides guidance about the View Mode, and how it will appear when embedded.
+En la tabla siguiente se proporciona instrucciones sobre el modo de vista y cómo va a aparecer cuando se incrusta.
 
 
-|View Mode|How it looks when embedded|
+|Modo de vista|Aspecto cuando incrustado|
 |---|---|
-|![](media/powerbi-service-publish-to-web/Publish_To_Web6b.png)| <bpt id="p1">**</bpt>Fit to page<ept id="p1">**</ept> will respect the page height and width of your report. If you set your page to 'Dynamic' ratios like 16:9 or 4:3 your content will scale to fit within the iFrame you provided. When embedded in an iFrame, using <bpt id="p1">**</bpt>Fit to page<ept id="p1">**</ept> can result in <bpt id="p2">**</bpt>letterboxing<ept id="p2">**</ept>, where a gray background is shown in areas of the iFrame after the content as scaled to fit within the iFrame. To minimize letterboxing, set your iFrame height/width appropriately.|
-|![](media/powerbi-service-publish-to-web/Publish_To_Web6d.png)| <bpt id="p1">**</bpt>Actual size<ept id="p1">**</ept> will ensure the report preserves its size as set on the report page. This can result in scrollbars being present in your iFrame. Set the iFrame height and width to avoid the scrollbars. |
-|![](media/powerbi-service-publish-to-web/Publish_To_Web6c.png)| <bpt id="p1">**</bpt>Fit to width<ept id="p1">**</ept> ensures the content fits within the horizontal area for your iFrame. A border will still be shown, but the content will scale to use all the horizontal space available.  |
+|![](media/powerbi-service-publish-to-web/Publish_To_Web6b.png)| 
+            **Ajustar a la página** respetará el alto y el ancho del informe. Si establece la página 'Dynamic' proporciones como 16:9 o 4:3 el contenido se escala para ajustarse el iFrame proporcionada. Cuando se incrustan en un iFrame, utilizando **Ajustar a la página** puede dar lugar a **panorámica**, donde un fondo gris se muestra en las áreas de iFrame después del contenido como escala para que quepa en el iFrame. Para minimizar la panorámica, establezca el alto y ancho del iFrame adecuadamente.|
+|![](media/powerbi-service-publish-to-web/Publish_To_Web6d.png)| 
+            **Tamaño real** se asegurará de que el informe conserva su tamaño como está establecido en la página del informe. Esto puede dar lugar a barras de desplazamiento estén presentes en el iFrame. Establecer el iFrame alto y ancho para evitar las barras de desplazamiento. |
+|![](media/powerbi-service-publish-to-web/Publish_To_Web6c.png)| 
+            **Ajustar a ancho** garantiza que el contenido se ajusta dentro del área horizontal para el iFrame. Se seguirán mostrando un borde, pero el contenido se escala para usar todo el espacio horizontal disponible.  |
 
-## Tips and tricks for iFrame height and width
+## Sugerencias y trucos para el ancho y el alto de iFrame
 
-The embed code you receive after you Publish to web will look like the following:
+El código para insertar que aparece después de publicar en web tendrá un aspecto similar al siguiente:
 
 ![](media/powerbi-service-publish-to-web/Publish_To_Web7.png)
 
-You can edit the width and height manually to ensure it is precisely how you want it to fit onto the page into which you're embedding it.
+Puede modificar el ancho y alto manualmente para asegurarse de que es precisamente cómo desea para ajustarla a la página en la que está incrustarlo.
 
-To achieve a more perfect fit, you can try adding 56 pixels to the height dimension of the iFrame. This accomodates the current size of the bottom bar. If your report page uses the Dynamic size, the table below provides some sizes you can use to achieve a fit without letterboxing.
+Para obtener un ajuste perfecto más, puede intentar agregar 56 píxeles en el alto de iFrame. Este incluye el tamaño actual de la barra inferior. Si la página de informes utiliza el tamaño dinámico, la tabla siguiente proporciona algunos tamaños que puede usar para obtener un ajuste sin panorámica.
 
-|Ratio|Tamaño|Dimension (Width x Height)|
+|Relación|Tamaño|Dimensiones (anchura x altura)|
 |---|---|---|
 |16:9|Pequeña|640 x 416 px|
-|16:9|Mediana|800 x 506 px|
+|16:9|Mediana|506 x 800 px|
 |16:9|Grande|960 x 596 px|
 |4:3|Pequeña|640 x 536 px|
 |4:3|Mediana|800 x 656 px|
 |4:3|Grande|960 x 776 px|
 
 
-## Managing embed codes
+## Administración de incrustar códigos
 
-Once you create a <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed code, you can manage the codes you create from the <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> menu of the Power BI service. Managing embed codes includes the ability to remove the destination visual or report for a code (rendering the embed code unusable), or getting the embed code again.
+Una vez creado un **publicar en web** incrustar el código, puede administrar los códigos que se crea a partir de la **configuración** menú del servicio Power BI. Insertar códigos de administración incluye la capacidad de quitar el destino visual o informe para un código (que deja inutilizable el código para insertar), o recibir el código para insertar el nuevo.
 
-1.  To manage your <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed codes, open the <bpt id="p2">**</bpt>Settings<ept id="p2">**</ept> gear and select <bpt id="p3">**</bpt>Manage embed codes<ept id="p3">**</ept>.
+1.  Para administrar su **publicar en web** incrustar códigos, abra el **configuración** de engranaje y seleccione **Administrar incrustar códigos**.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web8.png)
 
-2.  The list of embed codes you’ve created appears, as shown in the following image.
+2.  Aparece la lista de códigos embed que haya creado, como se muestra en la siguiente imagen.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web9.png)
 
-3.  For each <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed code in the list, you can either retrieve the embed code, or delete the embed code and thus make any links to that report or visual no longer work.
+3.  Para cada **publicar en web** incrustar código en la lista, puede recuperar el código para insertar, o eliminar el código de incrustación y crear así todos los vínculos a ese informe o visual dejarán de funcionar.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web10.png)
 
-4.  If you select <bpt id="p1">**</bpt>Delete<ept id="p1">**</ept>, you’re asked if you’re sure you want to delete the embed code.
+4.  Si selecciona **Eliminar**, se le pregunta si está seguro de que desea eliminar el código para insertar.
 
     ![](media/powerbi-service-publish-to-web/Publish_To_Web11.png)
 
 
-## Updates to reports, and data refresh
+## Actualizaciones de informes y la actualización de datos
 
-After you create your <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed code and share it, the report is updated with any changes you make. However, it’s important to know that it can take a while for update to be visible to your users. Updates to a report or visual take approximately one hour to be reflected in Publish to web embed codes.
+Después de crear su **publicar en web** incrustar código y compartirlo, el informe se actualiza con los cambios que realice. Sin embargo, es importante saber que se puede tardar un rato para actualización esté visible para los usuarios. Las actualizaciones a un informe o visual dura aproximadamente una hora para que se reflejen en publicar en web incrustar códigos.
 
-When you initially use <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> to get an embed code, the embed code link is immediately active and can be viewed by anyone who opens the link.  After the initial Publish to web action, subsequent updates to reports or visuals to which a Publish to web link points can take approximately one hour to be visible to your users.
+Cuando se utiliza inicialmente **publicar en web** para obtener un código de incrustación, el vínculo del código embed activa inmediatamente y se puede ver cualquier persona que abra el vínculo.  Después de la publicación inicial a la acción de web, las actualizaciones posteriores a los informes o elementos visuales a los que una publicación a los puntos de vínculo web puede tardar aproximadamente una hora sea visible para los usuarios.
 
-To learn more, see the <bpt id="p1">**</bpt>How it works<ept id="p1">**</ept> section later in this article. If you need your updates to be immediately available, you can delete the embed code and create a new one.
+Para obtener más información, consulte el **cómo funciona** sección más adelante en este artículo. Si necesita que las actualizaciones estén disponibles inmediatamente, puede eliminar el código de incrustación y crear uno nuevo.
 
-## Data refresh
+## Actualización de datos
 
-Data refreshes are automatically reflected in your embedded report or visual. It can take approximately 1 hour for refreshed data to be visible from embed codes. You can disable automatic refresh by selecting <bpt id="p1">**</bpt>do not refresh<ept id="p1">**</ept> on the schedule for the dataset used by the report.  
+Las actualizaciones de datos son automáticamente reflejados en el informe incrustado o visual. Puede tardar aproximadamente 1 hora para los datos actualizados estarán visibles los códigos de incrustar. Puede desactivar la actualización automática seleccionando **no actualizar** en la programación para el conjunto de datos utilizado por el informe.  
 
-## Custom visuals
+## Elementos visuales personalizados
 
-Custom visuals are supported in <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>. When you use Publish to web, users with whom you share your published visual do not need to enable custom visuals to view the report.
+Se admiten elementos visuales personalizados en **publicar en web**. Cuando se utiliza la publicación en web, los usuarios con los que comparta su visual publicado no es necesario habilitar elementos visuales personalizados ver el informe.
 
 ## Limitaciones
 
-<bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> is supported for the vast majority of data sources and reports in the Power BI service, however, the following are not currently supported or available with Publish to web:
+
+            **Publicar en web** se admite para la mayoría de los orígenes de datos e informes en el servicio Power BI, sin embargo, lo siguiente no es actualmente compatibles o disponible con la publicación en web:
 
 
-1.  Reports using real-time data sources.
+1.  Informes con orígenes de datos en tiempo real.
 
-2.  Reports using row level security.
+2.  Informes con seguridad de nivel de fila.
 
-3.  Reports using Analysis Services Tablular hosted on premises.
+3.  Informes con Analysis Services Tablular hospedado de forma local.
 
-4.  Reports shared to you directly or through an organizational content pack.
+4.  Informes compartidos a usted directamente o a través de un paquete de contenido de organización.
 
-5.  Reports in a group in which you are not an edit member.
+5.  Informes en un grupo en el que no es un miembro de la edición.
 
-6.  "R" Visuals are not currently supported in Publish to web reports.
+6.  "R" elementos visuales no se admiten actualmente en publicar informes web.
 
 
-## Understanding the embed code status column
+## Descripción de la columna de estado de insertar código
 
-When viewing the <bpt id="p1">**</bpt>Manage embed codes<ept id="p1">**</ept> page for your <bpt id="p2">**</bpt>Publish to web<ept id="p2">**</ept> embed codes, a status column is provided. Embed codes are active by default, but you may encounter any of the states listed below.  
+Al ver el **Administrar incrustar códigos** página para su **publicar en web** incrustar códigos, se proporciona una columna de estado. Incrustar códigos activos de forma predeterminada, pero puede encontrar uno de los Estados que se muestran a continuación.  
 
 |Estado|Descripción|
 |---|---|
-|**Activo**|The report is available for Internet users to view and interact with.|
-|**Bloqueado**|The content of the report violates the <bpt id="p1">[</bpt>Power BI Terms of Service<ept id="p1">](https://powerbi.microsoft.com/terms-of-service)</ept>. It has been blocked by Microsoft. Contact support if you believe the content was blocked in error.|
-|**No compatible**|The report's data set is using row level security, or another unsupported configuration. See the <bpt id="p1">**</bpt>Limitations<ept id="p1">**</ept> section for a complete list.|
+|**Activo**|El informe está disponible para ver e interactuar con los usuarios de Internet.|
+|**Bloqueado**|El contenido del informe infringe el [Power BI condiciones de servicio](https://powerbi.microsoft.com/terms-of-service). Se bloqueó por Microsoft. Si cree que el contenido se bloqueó por error, póngase en contacto con soporte técnico.|
+|**No compatible**|Conjunto de datos del informe está utilizando seguridad de nivel de fila o en otra configuración no admitida. Consulte la **limitaciones** sección para obtener una lista completa.|
 
 
-## How to report a concern with Publish to web content
+## Cómo informar de un problema con la publicación a contenido web
 
-To report a concern related to <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> content embedded in a website or blog, use the <bpt id="p2">**</bpt>Flag<ept id="p2">**</ept> icon in the bottom bar, shown in the following image. You’ll be asked to send an email to Microsoft explaining the concern. Microsoft will evaluate the content based on the Power BI Terms of Service, and take appropriate action.
+Informe de un problema relacionado con **publicar en web** contenido incrustado en un sitio Web o blog, use la **marca** icono en la barra inferior, se muestra en la siguiente imagen. Se le preguntará para enviar un correo electrónico a Microsoft que explica el problema. Microsoft evaluará el contenido basándose en las condiciones de servicio de Power BI y tomar las medidas adecuadas.
 
-To report a concern, select the <bpt id="p1">**</bpt>flag<ept id="p1">**</ept> icon in the bottom bar of the Publish to web report you see.
+Para notificar un problema, seleccione la **marca** icono en la parte inferior de la publicación para informes web verá.
 
 ![](media/powerbi-service-publish-to-web/Publish_To_Web12_GA.PNG)
 
-## Licensing and Pricing
+## Precios y licencias
 
-You need to be a Microsoft Power BI user to use <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>. The consumers of your report (the readers, viewers) do not need to be Power BI users.
+Debe ser un usuario de Microsoft Power BI para usar **publicar en web**. Los consumidores del informe (lectores, visores) no es necesario que los usuarios de Power BI.
 
-## How it works (technical details)
+## Cómo funciona (detalles técnicos)
 
-When you create an embed code using <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept>, the report is made visible to users on the Internet. It’s publicly available so you can expect viewers to easily share the report through social media in the future. As users view the report, either by opening the direct public URL or viewing it embedded in a web page or blog, Power BI caches the report definition and the results of the queries required to view the report. This approach ensures the report can be viewed by thousands of concurrent users without any impact on performance.  
+Cuando se crea un código de incrustar mediante **publicar en web**, el informe se hace visible a los usuarios en Internet. Está disponible públicamente por lo que puede esperar visores para compartir con facilidad el informe a través de redes sociales en el futuro. Cuando los usuarios vean el informe, ya sea abriendo la dirección URL pública directa o verlo incrustado en una página web o blog, Power BI almacena la definición de informe y los resultados de las consultas necesarias para ver el informe. Este enfoque garantiza que miles de usuarios simultáneos sin ningún impacto en el rendimiento puede verse el informe.  
 
-The cache is long-lived, so if you update the report definition (for example, if you change its View mode) or refresh the report data, it can take approximately one hour before changes are reflected in the version of the report viewed by your users. It is therefore recommended that you stage your work ahead of time, and create the <bpt id="p1">**</bpt>Publish to web<ept id="p1">**</ept> embed code only when you’re satisfied with the settings.
+La memoria caché es de larga duración, por lo que si se actualiza la definición de informe (por ejemplo, si cambia el modo de vista) o actualización los datos del informe, puede tardar aproximadamente una hora antes de cambios se reflejan en la versión del informe que ven los usuarios. Por lo tanto, se recomienda que organizar su trabajo por adelantado y cree el **publicar en web** incrustar código solo cuando esté satisfecho con la configuración.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Push data into a dashboard"
-   description="Push data into a Power BI dashboard"
+   pageTitle="Insertar datos en un panel"
+   description="Insertar datos en un panel de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,40 +20,40 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Push data into a Power BI dashboard
+# Insertar datos en un panel de Power BI
 
-With the Power BI API, you can push data into a Power BI dashboard. For example, you want to extend an existing business workflow to push key data into your dashboard. In this case, you want to push a Sales Marketing dataset which has a Product table into a dashboard.
+Con la API de Power BI, puede insertar datos en un panel de Power BI. Por ejemplo, desea ampliar un flujo de trabajo existente para insertar datos de la clave en el panel. En este caso, desea insertar un conjunto de datos de Marketing de ventas que tiene una tabla de productos en un panel.
 
-Before you get started pushing data into a dashboard, you need an Azure Active Directory (Azure AD) and a <bpt id="p1">[</bpt>Power BI account<ept id="p1">](powerbi-admin-free-with-custom-azure-directory.md)</ept>.
+Antes de empezar a insertar datos en un panel, necesita un Azure Active Directory (Azure AD) y un [cuenta de Power BI](powerbi-admin-free-with-custom-azure-directory.md).
 
-To learn how to push a dataset into a dashboard, follow these steps. In the example, you push a Sales Marketing dataset with a Product table into a dashboard.
+Para obtener información sobre cómo insertar un conjunto de datos en un panel, siga estos pasos. En el ejemplo, inserte un conjunto de datos de Marketing de ventas con una tabla de productos en un panel.
 
-## Steps to push a dataset into a dashboard
+## Pasos para insertar un conjunto de datos en un panel
 
-- Step 1: <bpt id="p1">[</bpt>Register an app with Azure AD<ept id="p1">](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)</ept>
-- Step 2: <bpt id="p1">[</bpt>Get an authentication access token<ept id="p1">](powerbi-developer-walkthrough-push-data-get-token.md)</ept>
-- Step 3: <bpt id="p1">[</bpt>Create a dataset in a Power BI dashboard<ept id="p1">](powerbi-developer-walkthrough-push-data-create-dataset.md)</ept>
-- Step 4: <bpt id="p1">[</bpt>Get a dataset to add rows into a Power BI table<ept id="p1">](powerbi-developer-walkthrough-push-data-get-datasets.md)</ept>
-- Step 5: <bpt id="p1">[</bpt>Add rows to a Power BI table<ept id="p1">](powerbi-developer-walkthrough-push-data-add-rows.md)</ept>
+- Paso 1: [registrar una aplicación con Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
+- Paso 2: [obtener un acceso de autenticación token](powerbi-developer-walkthrough-push-data-get-token.md)
+- Paso 3: [crear un conjunto de datos en un panel de Power BI](powerbi-developer-walkthrough-push-data-create-dataset.md)
+- Paso 4: [obtener un conjunto de datos para agregar filas a una tabla de Power BI](powerbi-developer-walkthrough-push-data-get-datasets.md)
+- Paso 5: [Agregar filas a una tabla de Power BI](powerbi-developer-walkthrough-push-data-add-rows.md)
 
-The next section is a general discussion of Power BI API operations that push data.
+La siguiente sección es una discusión general de las operaciones de API de Power BI que insertar los datos.
 
-## Power BI API operations to push data
+## Operaciones de API de BI de energía para insertar datos
 
-With the Power BI REST API, you can push data sources to Power BI. When an app adds rows to a dataset, tiles on the dashboard are updated automatically with the updated data. To push data, you use the <bpt id="p1">[</bpt>Create Dataset<ept id="p1">](https://msdn.microsoft.com/library/mt203562.aspx)</ept> operation along with the <bpt id="p2">[</bpt>Add Rows<ept id="p2">](https://msdn.microsoft.com/library/mt203561.aspx)</ept> operation. To find a dataset, you use the <bpt id="p1">[</bpt>Get Datasets<ept id="p1">](https://msdn.microsoft.com/library/mt203567.aspx)</ept> operation. For any of these operations, you can pass a group id to work with a group. Use the <bpt id="p1">[</bpt>Get Groups<ept id="p1">](https://msdn.microsoft.com/library/mt243842.aspx)</ept> operation to get a list of group id's.
+Con la API de REST de Power BI, puede insertar los orígenes de datos a Power BI. Cuando una aplicación agrega filas a un conjunto de datos, los iconos del panel se actualizan automáticamente con los datos actualizados. Para insertar datos, utiliza la [Crear conjunto de datos](https://msdn.microsoft.com/library/mt203562.aspx) operación junto con el [Agregar filas](https://msdn.microsoft.com/library/mt203561.aspx) operación. Para buscar un conjunto de datos, puede utilizar el [obtener conjuntos de datos](https://msdn.microsoft.com/library/mt203567.aspx) operación. Para cualquiera de estas operaciones, puede pasar un identificador de grupo para trabajar con un grupo. Utilice la [obtener grupos](https://msdn.microsoft.com/library/mt243842.aspx) operación para obtener una lista de identificadores de grupo
 
-Here are the operations to push data into a dashboard:
+Estas son las operaciones para insertar datos en un panel:
 
-- [Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)
-- [Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)
+- [Crear conjunto de datos](https://msdn.microsoft.com/library/mt203562.aspx)
+- [Obtener conjuntos de datos](https://msdn.microsoft.com/library/mt203567.aspx)
 - [Agregar filas](https://msdn.microsoft.com/library/mt203561.aspx)
-- [Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)
+- [Obtener grupos](https://msdn.microsoft.com/library/mt243842.aspx)
 
-You create a dataset in Power BI by passing a JavaScript Object Notation (JSON) string to the Power BI service. To learn more about JSON, see <bpt id="p1">[</bpt>Introducing JSON<ept id="p1">](http://json.org/)</ept>.
+Crear un conjunto de datos en Power BI pasando una cadena de JavaScript Object Notation (JSON) para el servicio Power BI. Para obtener más información sobre JSON, vea [Introducing JSON](http://json.org/).
 
-The JSON string for a dataset has the following format:
+La cadena JSON para un conjunto de datos tiene el formato siguiente:
 
-**Power BI Dataset JSON object**
+**Objeto JSON del conjunto de datos de BI de energía**
 
     {"name": "dataset_name", "tables":
         [{"name": "", "columns":
@@ -65,9 +65,9 @@ The JSON string for a dataset has the following format:
         ]
     }
 
-So, for our Sales Marketing dataset example, you would pass a JSON string such as the example below. In this example, <bpt id="p1">**</bpt>SalesMarketing<ept id="p1">**</ept> is the name of the dataset, and <bpt id="p2">**</bpt>Product<ept id="p2">**</ept> is the name of the table. After you define the table, you define the table schema. For the <bpt id="p1">**</bpt>SalesMarketing<ept id="p1">**</ept> dataset, the table schema has these columns: ProductID, Manufacturer, Category, Segment, Product, and IsCompete.
+Por lo tanto, en nuestro ejemplo de conjunto de datos de Marketing de ventas, deberá pasar una cadena JSON como en el ejemplo siguiente. En este ejemplo, **SalesMarketing** es el nombre del conjunto de datos, y **producto** es el nombre de la tabla. Después de definir la tabla, definir el esquema de tabla. Para el **SalesMarketing** conjunto de datos, el esquema de tabla tiene las siguientes columnas: ProductID, fabricante, categoría, segmento, producto y IsCompete.
 
-**Example dataset object JSON**
+**Objeto de conjunto de datos de ejemplo JSON**
 
     {
         "name": "SalesMarketing",
@@ -104,32 +104,32 @@ So, for our Sales Marketing dataset example, you would pass a JSON string such a
         ]
     }
 
-For a Power BI table schema, you can use the following data types.
+Para un esquema de tabla Power BI, puede usar los siguientes tipos de datos.
 
-## Power BI table data types
+## Tipos de datos de tabla de Power BI
 
 |**Tipo de datos**|**Restricciones**
 |---|---
-|Int64|Int64.MaxValue and Int64.MinValue not allowed.
-|Double|Double.MaxValue and Double.MinValue values not allowed. NaN not supported.+Infinity and -Infinity not supported in some functions (e.g. Min, Max).
+|Int64|Int64.MaxValue e Int64.MinValue no están permitidos.
+|Double|Double.MaxValue y Double.MinValue no permitido. NaN no se admite. + Infinity y - Infinity no se admiten en algunas funciones (por ejemplo, Min, Max).
 |Boolean|Ninguno
-|Datetime|During data loading we quantize values with day fractions to whole multiples of 1/300 seconds (3.33ms).
-|String|Currently allows up to 128K characters.
+|Datetime|Durante la carga de datos se cuantifican valores con fracciones de día a múltiplos enteros de 1/300 segundos (3,33 ms).
+|String|Actualmente permite hasta 128 K caracteres.
 
 
-## Learn more about pushing data into Power BI
+## Más información acerca de cómo insertar datos en Power BI
 
-To get started pushing data into a dashboard, see <bpt id="p1">[</bpt>Step 1: Register an app with Azure AD<ept id="p1">](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)</ept> in the left navigation pane.
+Para comenzar a insertar datos en un panel, consulte [paso 1: registrar una aplicación con Azure AD](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md) en el panel de navegación izquierdo.
 
-[Next Step &gt;](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
+[Siguiente paso >](powerbi-developer-walkthrough-push-data-register-app-with-azure-ad.md)
 
 ## Consulte también
 
-[Sign up for Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
-[Create Dataset](https://msdn.microsoft.com/library/mt203562.aspx)  
-[Get Datasets](https://msdn.microsoft.com/library/mt203567.aspx)  
+[Registrarse para Power BI](powerbi-admin-free-with-custom-azure-directory.md)  
+[Crear conjunto de datos](https://msdn.microsoft.com/library/mt203562.aspx)  
+[Obtener conjuntos de datos](https://msdn.microsoft.com/library/mt203567.aspx)  
 [Agregar filas](https://msdn.microsoft.com/library/mt203561.aspx)  
-[Get Groups](https://msdn.microsoft.com/library/mt243842.aspx)  
-[Introducing JSON](http://json.org/)  
-[Overview of Power BI REST API](powerbi-developer-overview-of-power-bi-rest-api.md)  
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+[Obtener grupos](https://msdn.microsoft.com/library/mt243842.aspx)  
+[Introducción a JSON](http://json.org/)  
+[Información general sobre la API de REST de Power BI](powerbi-developer-overview-of-power-bi-rest-api.md)  
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

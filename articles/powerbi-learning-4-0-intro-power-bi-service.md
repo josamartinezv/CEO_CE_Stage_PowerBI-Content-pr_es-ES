@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Introduction to the Power BI Service"
-   description="Explore data and collaborate with the Power BI service"
+   pageTitle="Introducción al servicio de Power BI"
+   description="Explorar datos y colaborar con el servicio Power BI"
    services="powerbi"
    documentationCenter=""
    authors="davidiseminger"
@@ -23,21 +23,21 @@
    ms.date="09/29/2016"
    ms.author="davidi"/>
 
-# Exploring Data
+# Exploración de datos
 
-Welcome to the <bpt id="p1">**</bpt>Exploring Data<ept id="p1">**</ept> section of the <bpt id="p2">**</bpt>Guided Learning<ept id="p2">**</ept> course for Power BI. Now that you know about Power BI Desktop, and how to get and visualize data, you're ready to explore data in the Power BI service.
+Bienvenido a la **Explorar los datos** sección de la **aprendizaje guiado** curso para Power BI. Ahora que ya conoce de Power BI Desktop y cómo obtener y visualizar datos, está listo para explorar los datos en el servicio Power BI.
 
 ![](media/powerbi-learning-4-0-intro-power-bi-service/4-0_2.png)
 
-There are all sorts of things to learn in this section, and the compelling  interactivity and sharing of Power BI really shines here. So get ready for an engaging and interesting section.
+Hay todo tipo de cosas que puede obtener en esta sección y la interactividad de atractivas y el uso compartido de Power BI aquí destaca realmente. Así que Prepárese para una sección interesante y atractiva.
 
 
-## Introduction to the Power BI Service
+## Introducción al servicio de Power BI
 
-*See what the Power BI service can do for your organization*
+*Ver qué puede hacer el servicio Power BI para su organización*
 
-The Power BI service is the natural extension of <bpt id="p1">**</bpt>Power BI Desktop<ept id="p1">**</ept>, and its features include uploading reports, creating dashboards, and asking questions of your data using natural language. You can use the service to set data refresh times, share data with your organization, and create customized service packs.
+El servicio Power BI es la extensión natural de **Power BI Desktop**, y sus características incluyen la carga de informes, creación de paneles y preguntas de los datos con lenguaje natural. Puede utilizar el servicio para establecer los tiempos de actualización de datos, compartir datos con su organización y crear módulos de servicio personalizado.
 
-In the following topics, we'll explore the Power BI service, and show you how it can turn your business intelligence data into data insights and a collaborative decision-driving envrionment.
+En los temas siguientes, se podrá explorar el servicio Power BI y mostrarle cómo puede convertir los datos de business intelligence en la información sobre los datos y un entorno de colaboración conducir a la toma de decisiones.
 
 ![](media/powerbi-learning-4-0-intro-power-bi-service/4-0_1.png)

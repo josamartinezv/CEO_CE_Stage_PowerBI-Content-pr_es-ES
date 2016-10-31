@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Power BI permissions"
-   description="Power BI permissions"
+   pageTitle="Permisos de Power BI"
+   description="Permisos de Power BI"
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,28 +20,32 @@
    ms.date="08/23/2016"
    ms.author="asaxton"/>
 
-# Power BI permissions
+# Permisos de Power BI
 
 ## Ámbitos de permiso
-Power BI permissions give an application the ability to take certain actions on a user's behalf. All permissions must be approved by a user in order to be valid.
+Permisos de Power BI proporcionan a una aplicación la capacidad de realizar ciertas acciones en nombre de un usuario. Todos los permisos deben estar aprobados por el usuario para que sean válidos.
 
-|Nombre para mostrar|Descripción|Scope Value|
+|Nombre para mostrar|Descripción|Valor de ámbito|
 |---|---|---|
-|View all Datasets|The app can view all datasets for the signed in user and datasets that the user has access to.|Dataset.Read.All|
-|Read and Write all Datasets|The app can view and write to all datasets for the signed in user and datasets that the user has access to.|Dataset.ReadWrite.All|
-|View users Groups|The app can view all groups that the signed in user belongs to.|Group.Read.All|
-|View all Dashboards (preview)|The app can view all dashboards for the signed in user and dashboards that the user has access to.|Dashboard.Read.All|
-|View all Reports (preview)|The app can view all reports for the signed in user and reports that the user has access to. The app can also see the data within the reports as well as its structure.|Report.Read.All|
+|Ver todos los conjuntos de datos|La aplicación puede ver todos los conjuntos de datos para el usuario ha iniciado sesión y que el usuario tiene acceso a los conjuntos de datos.|Dataset.Read.All|
+|Leer y escribir todos los conjuntos de datos|La aplicación puede ver y escribir en todos los conjuntos de datos para el usuario que inicia sesión y conjuntos de datos que el usuario tiene acceso a.|Dataset.ReadWrite.All|
+|Ver grupos de usuarios|La aplicación puede ver todos los grupos a los que pertenece el usuario ha iniciado sesión.|Group.Read.All|
+|Ver todos los paneles (vista previa)|La aplicación puede ver todos los paneles para el usuario ha iniciado sesión y paneles que el usuario tiene acceso.|Dashboard.Read.All|
+|Ver todos los informes (vista previa)|La aplicación puede ver todos los informes para que el usuario ha iniciado sesión y que el usuario tenga acceso a. La aplicación también puede ver los datos de los informes, así como su estructura.|Report.Read.All|
 
-An application can request permissions when it first attempts to log in to a user's page by passing in the requested permissions in the scope parameter of the call. If the permissions are granted, an access token will be returned to the app which can be used on future API calls. The access can only be used by a specific application.
+Una aplicación puede solicitar permisos cuando primero intenta iniciar sesión en la página de un usuario pasando los permisos solicitados en el parámetro de ámbito de la llamada. Si se conceden los permisos, se devolverá un token de acceso a la aplicación que se puede usar en futuras llamadas API. Sólo puede utilizarse el acceso mediante una aplicación específica.
 
-## Requesting Permissions
-While you can call the API to authenticate with a username and password, in order to take actions on behalf of another user, they will need to request permissions that the user then approves and then send the resulting access token on all future calls. For this process, we will follow the standard <bpt id="p1">[</bpt>OAuth 2.0<ept id="p1">](http://oauth.net/2/)</ept> protocol. While the actual implementation may vary, the OAuth flow for Power BI has the following elements:
+## Solicitar permisos
+Aunque puede llamar a la API para autenticarse con un nombre de usuario y una contraseña, para realizar acciones en nombre de otro usuario, necesitará solicitar permisos que el usuario aprobará posteriormente y, a continuación, enviar el token de acceso resultante en todas las futuras llamadas. En este proceso, se sigue el estándar [OAuth 2.0](http://oauth.net/2/) protocolo. Aunque la implementación real puede variar, el flujo de OAuth de Power BI tiene los siguientes elementos:
 
-- <bpt id="p1">**</bpt>Login UI<ept id="p1">**</ept> - This is a UI that the developer can evoke to request permissions. It would require the user to log in if not already. The user would also need to approve the permissions that the application is requesting. The login window will post back either an access code or an error message to a redirect URL that is supplied.
-    - A standard redirect URL should be supplied by Power BI for use by native applications.
-- <bpt id="p1">**</bpt>Authorization Code<ept id="p1">**</ept> - Authorization Codes are returned to web applications after login via URL parameters in the redirect URL. Since they are in parameters there is some security risk. Web applications will have to exchange the authorization code for an Authorization Token
-- <bpt id="p1">**</bpt>Authorization Token<ept id="p1">**</ept> - Are used to authenticate API calls on another user's behalf. They will be scoped to a specific application. Tokens have a set lifespan and when they expire they will need to be refreshed.
-- <bpt id="p1">**</bpt>Refresh Token<ept id="p1">**</ept> - When tokens expire there will be a process of refreshing them.
+- 
+            **Interfaz de Usuario de inicio de sesión** : se trata de una interfaz de Usuario que el desarrollador puede evocar para solicitar permisos. Requeriría que el usuario inicie sesión en si aún no está. El usuario también necesitaría aprobar los permisos que solicita la aplicación. La ventana de inicio de sesión contabilizará un código de acceso o un mensaje de error en una dirección URL de redireccionamiento proporcionado.
+    - Una dirección URL de redireccionamiento estándar debe proporcionar Power BI para su uso por las aplicaciones nativas.
+- 
+            **Código de autorización** -devuelve códigos de autorización para aplicaciones web después de iniciar sesión a través de los parámetros de URL en la dirección URL de redireccionamiento. Puesto que están en parámetros hay algunos riesgos de seguridad. Aplicaciones Web tendrán que intercambiar el código de autorización para un Token de autorización
+- 
+            **Token de autorización** -se utilizan para autenticar las llamadas de API en nombre de otro usuario. Se limitarán a una aplicación específica. Los tokens tienen una duración establecida y cuando caducan necesitan actualizarse.
+- 
+            **Token de actualización** : cuando expiren los tokens será un proceso de actualización de estos.
 
-More questions? [Try the Power BI Community](http://community.powerbi.com/)
+¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)
