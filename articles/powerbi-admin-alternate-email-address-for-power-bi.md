@@ -1,6 +1,6 @@
 <properties
-   pageTitle="Dirección de correo electrónico alternativa para Power BI"
-   description="Dirección de correo electrónico alternativa para Power BI"
+   pageTitle=""
+   description=""
    services="powerbi"
    documentationCenter=""
    authors="guyinacube"
@@ -20,7 +20,7 @@
    ms.date="09/21/2016"
    ms.author="asaxton"/>
 
-# Dirección de correo electrónico alternativa para Power BI
+# <a name="alternate-email-address-for-power-bi"></a>Dirección de correo electrónico alternativa para Power BI
 
 De forma predeterminada, la dirección de correo electrónico que usó para suscribirse a Power BI con se utiliza para enviar actualizaciones acerca de la actividad en Power BI.  Por ejemplo, cuando alguien le envía una invitación para compartir, vaya a esta dirección.
 
@@ -40,4 +40,5 @@ Aquí se muestra cómo hacerlo:
 
 > [AZURE.NOTE] Cambiar esta configuración no afectará a la dirección de correo electrónico se usa para enviar las actualizaciones del servicio, boletines y otras comunicaciones promocionales.  Los que siempre se enviará a la dirección de correo electrónico que utilizó originalmente al registrarse en Power BI.
 
-¿Preguntas más frecuentes? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)
+¿Preguntas más frecuentes? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)

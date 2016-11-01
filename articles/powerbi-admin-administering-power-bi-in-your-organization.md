@@ -20,70 +20,94 @@
    ms.date="09/16/2016"
    ms.author="asaxton"/>
 
-# Administración de Power BI en su organización
+# <a name="administering-power-bi-in-your-organization"></a>Administración de Power BI en su organización
 
 Microsoft Power BI permite a los usuarios visualizar datos, detecciones de compartir y colaborar de forma intuitiva de nueva. Para obtener más información, consulte [Introducción a Power BI](powerbi-service-get-started.md).
 
 Administración de Power BI puede producirse en diversas ubicaciones. Presentamos dos ubicaciones comunes.
 
-> [AZURE.NOTE] La cuenta debe estar marcada como un **Administrador Global**, dentro de Office 365 o Azure Active Directory, para obtener acceso al portal de administración de Power BI.
+> [AZURE.NOTE] La cuenta debe estar marcada como un **Administrador Global*, dentro de Office 365 o Azure Active Directory, para obtener acceso al portal de administración de Power BI.
 
-- [Portal de administración de BI de energía](https://app.powerbi.com/admin-portal)
-- [Centro de administración de Office 365](https://portal.office.com/adminportal/home)
+- 
+            [Portal de administración de BI de energía](https://app.powerbi.com/admin-portal)
+- 
+            [Centro de administración de Office 365](https://portal.office.com/adminportal/home)
 
-## ¿Qué es en este artículo
+## <a name="whats-in-this-article"></a>¿Qué es en este artículo
 
-**Registrarse para Power BI**
 
-- [¿Cómo los usuarios suscribirse a Power BI?](#how-do-users-sign-up-for-power-bi)
+            **Registrarse para Power BI**
 
-- [¿Cómo se registran a usuarios individuales en mi organización?](#how-do-individual-users-in-my-organization-sign-up)
+- 
+            [¿Cómo los usuarios suscribirse a Power BI?](#how-do-users-sign-up-for-power-bi)
 
-- [¿Cómo puedo evitar que los usuarios unirse a mi inquilino de Office 365 existente?](#how-can-i-prevent-users-from-joining-my-existing-office-365-tenant)
+- 
+            [¿Cómo se registran a usuarios individuales en mi organización?](#how-do-individual-users-in-my-organization-sign-up)
 
-- [¿Cómo se puede permitir a los usuarios unirse a mi inquilino de Office 365 existente?](#how-can-i-allow-users-to-join-my-existing-office-365-tenant)
+- 
+            [¿Cómo puedo evitar que los usuarios unirse a mi inquilino de Office 365 existente?](#how-can-i-prevent-users-from-joining-my-existing-office-365-tenant)
 
-- [¿Cómo se puede comprobar si tiene el bloque el inquilino?](#how-do-i-verify-if-i-have-the-block-on-in-the-tenant)
+- 
+            [¿Cómo se puede permitir a los usuarios unirse a mi inquilino de Office 365 existente?](#how-can-i-allow-users-to-join-my-existing-office-365-tenant)
 
-- [¿Cómo puedo evitar que los usuarios existentes comenzando a utilizar Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
+- 
+            [¿Cómo se puede comprobar si tiene el bloque el inquilino?](#how-do-i-verify-if-i-have-the-block-on-in-the-tenant)
 
-- [¿Cómo puedo permitir Mis usuarios inicien sesión en Power BI existentes?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
+- 
+            [¿Cómo puedo evitar que los usuarios existentes comenzando a utilizar Power BI?](#how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi)
 
-**Administración de Power BI**
+- 
+            [¿Cómo puedo permitir Mis usuarios inicien sesión en Power BI existentes?](#how-can-i-allow-my-existing-users-to-sign-up-for-power-bi)
 
-- [¿Cómo se cambia la manera de que administrar las identidades de los usuarios de mi organización hoy?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
 
-- [¿Cómo se administran Power BI?](#how-do-we-manage-power-bi)
+            **Administración de Power BI**
 
-- [¿Qué es el proceso para administrar a un inquilino creado por Microsoft para Mis usuarios?](#what-is-the-process-to-manage-a-tenant-created-by-Microsoft-for-my-users)
+- 
+            [¿Cómo se cambia la manera de que administrar las identidades de los usuarios de mi organización hoy?](#how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today)
+
+- 
+            [¿Cómo se administran Power BI?](#how-do-we-manage-power-bi)
+
+- 
+            [¿Qué es el proceso para administrar a un inquilino creado por Microsoft para Mis usuarios?](#what-is-the-process-to-manage-a-tenant-created-by-Microsoft-for-my-users)
    
-- [¿Si dispone de varios dominios, puedo controlar al inquilino de Office 365 se agregan usuarios a?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to)
+- 
+            [¿Si dispone de varios dominios, puedo controlar al inquilino de Office 365 se agregan usuarios a?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to)
 
-- [¿Cómo quito Power BI para los usuarios que ya está suscrito?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
+- 
+            [¿Cómo quito Power BI para los usuarios que ya está suscrito?](#how-do-i-remove-power-bi-for-users-that-already-signed-up)
 
-- [¿Cómo se puede saber cuando nuevos usuarios han unido a mi inquilino?](#how-do-i-know-when-new-users-have-joined-my-tenant)
+- 
+            [¿Cómo se puede saber cuando nuevos usuarios han unido a mi inquilino?](#how-do-i-know-when-new-users-have-joined-my-tenant)
 
-- [¿Hay aspectos adicionales que debería estar preparado para?](#are-there-any-additional-things-i-should-be-prepared-for)
+- 
+            [¿Hay aspectos adicionales que debería estar preparado para?](#are-there-any-additional-things-i-should-be-prepared-for)
 
-- [¿Es este gratuito? ¿Aplicarán cargos por estas licencias?](#is-this-free-will-i-be-charged-for-these-licenses)
+- 
+            [¿Es este gratuito? ¿Aplicarán cargos por estas licencias?](#is-this-free-will-i-be-charged-for-these-licenses)
 
-- [¿Dónde se encuentra mi inquilino de Power BI?](#where-is-my-power-bi-tenant-located)
+- 
+            [¿Dónde se encuentra mi inquilino de Power BI?](#where-is-my-power-bi-tenant-located)
 
-**Seguridad en Power BI**
 
-- [¿Power BI cumple los requisitos de cumplimiento nacional, regional y específicas del sector?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
+            **Seguridad en Power BI**
 
-- [¿Cómo funciona la seguridad en Power BI?](#how-does-security-work-in-power-bi?)
+- 
+            [¿Power BI cumple los requisitos de cumplimiento nacional, regional y específicas del sector?](#does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements)
 
-## Registrarse para Power BI
+- 
+            [¿Cómo funciona la seguridad en Power BI?](#how-does-security-work-in-power-bi?)
 
-### ¿Cómo los usuarios suscribirse a Power BI?
+## <a name="sign-up-for-power-bi"></a>Registrarse para Power BI
+
+### <a name="how-do-users-sign-up-for-power-bi"></a>¿Cómo los usuarios suscribirse a Power BI?
 
 Puede registrarse para Power BI a través de la [sitio web de Power BI](https://powerbi.microsoft.com). También puede registrarse a través de la página de servicios de compra en el centro de administración de Office 365. Cuando un administrador se suscribe a Power BI, pueden asignar licencias de usuario a los usuarios que deben tener acceso.
 
-Además, los usuarios individuales de la organización puede registrarse para Power BI a través de la [sitio web de Power BI](https://powerbi.microsoft.com). Cuando un usuario de la organización se suscribe a Power BI, ese usuario se asigna automáticamente una licencia de Power BI. [Obtener más información](powerbi-service-self-service-signup-for-power-bi.md)
+Además, los usuarios individuales de la organización puede registrarse para Power BI a través de la [sitio web de Power BI](https://powerbi.microsoft.com). Cuando un usuario de la organización se suscribe a Power BI, ese usuario se asigna automáticamente una licencia de Power BI. 
+            [Aprende más](powerbi-service-self-service-signup-for-power-bi.md)
 
-### ¿Cómo se registran a usuarios individuales en mi organización?
+### <a name="how-do-individual-users-in-my-organization-sign-up"></a>¿Cómo se registran a usuarios individuales en mi organización?
 
 Hay tres escenarios que se pueden aplicar a los usuarios de su organización:
 
@@ -91,14 +115,14 @@ Escenario 1: Su organización ya tiene un entorno de Office 365 existente y el u
 En este escenario, si un usuario ya tiene un trabajo o cuenta de school en el inquilino (por ejemplo, contoso.com) pero no lo hace aún tiene Power BI, Microsoft simplemente activará el plan para esa cuenta y automáticamente se notificará al usuario sobre cómo utilizar el servicio Power BI.
 
 Escenario 2: Su organización tiene un entorno de Office 365 existente y el usuario al registrarse para Power BI no tiene una cuenta de Office 365.
-En este escenario, el usuario tiene una dirección de correo electrónico en el dominio de su organización (por ejemplo, contoso.com), pero todavía no tiene una cuenta de Office 365. En este caso, el usuario puede registrarse para Power BI y automáticamente se dará una cuenta. Esto permite al usuario acceso al servicio Power BI. Por ejemplo, si un empleado denominado a Nancy utiliza su dirección de correo electrónico de trabajo (por ejemplo, Nancy@contoso.com) para iniciar sesión, Microsoft se agrego a Nancy como un usuario en el entorno de Contoso Office 365 automáticamente y activar Power BI para esa cuenta.
+En este escenario, el usuario tiene una dirección de correo electrónico en el dominio de su organización (por ejemplo, contoso.com), pero todavía no tiene una cuenta de Office 365. En este caso, el usuario puede registrarse para Power BI y automáticamente se dará una cuenta. Esto permite al usuario acceso al servicio Power BI. Por ejemplo, si un empleado denominado Nancy usa su trabajo dirección de correo electrónico (por ejemplo, Nancy@contoso.com) para suscribirse, Microsoft automáticamente Agregar Nancy como un usuario en el entorno de Contoso Office 365 y activar Power BI para esa cuenta.
 
 Escenario 3: Su organización no tiene un entorno de Office 365 conectado a su dominio de correo electrónico.
 No hay ninguna acción administrativa su organización debe tomar para aprovechar las ventajas de Power BI. Los usuarios se agregará a un nuevo directorio usuario solo en la nube y, tendrá la opción de elegir tomar como el Administrador de inquilinos y administrarlos.
 
 > [AZURE.IMPORTANT] Si su organización tiene varios dominios de correo electrónico y prefiere que todas las extensiones de dirección de correo electrónico en el mismo inquilino, agregue todos los dominios de dirección de correo electrónico a un inquilino de Azure Active Directory antes de registran los usuarios. No hay ningún mecanismo automático para mover los usuarios a través de los inquilinos después de haber creado. Para obtener más información acerca de este proceso, consulte [Si dispone de varios dominios, puedo controlar el inquilino de Office 365 se agregan usuarios a?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to) más adelante en este artículo y [Agregue su dominio a Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611) en línea.
 
-### ¿Cómo puedo evitar que los usuarios unirse a mi inquilino de Office 365 existente?
+### <a name="how-can-i-prevent-users-from-joining-my-existing-office-365-tenant"></a>¿Cómo puedo evitar que los usuarios unirse a mi inquilino de Office 365 existente?
 
 Hay pasos que puede realizar, como administrador, para impedir que los usuarios unirse a su inquilino de Office 365 existente. Si se bloquea, se producirá un error en los intentos de los usuarios para iniciar sesión y se dirigirá a ponerse en contacto con el Administrador de. su organización No es necesario repetir este proceso si ya ha deshabilitado la distribución automática de licencias (por ejemplo, Office 365 para educación para estudiantes, profesores y personal).
 
@@ -121,31 +145,33 @@ Después de seleccionar el vínculo, seleccione **ejecutar** para ejecutar el pa
 
 > [AZURE.NOTE] Este bloqueo impide que nuevos usuarios de su organización de registrarse para Power BI. Los usuarios que se suscriben para Power BI antes de desactivar las suscripciones nuevas para su organización aún conserva sus licencias. Consulte la [¿Cómo puedo quitar licencias?] sección para obtener instrucciones sobre cómo quitar el acceso a Power BI para los usuarios que había registrado anteriormente en el servicio.
 
-### ¿Cómo se puede permitir a los usuarios unirse a mi inquilino de Office 365 existente?
+### <a name="how-can-i-allow-users-to-join-my-existing-office-365-tenant"></a>¿Cómo se puede permitir a los usuarios unirse a mi inquilino de Office 365 existente?
 
-Para permitir que los usuarios a participar en el inquilino, ejecute el comando opuesto como se describe en la pregunta anterior:
+Para permitir que los usuarios a participar en el inquilino, ejecute el comando opuesto, como se describe en la pregunta anterior:
 
     Set-MsolCompanySettings -AllowEmailVerifiedUsers $true
 
-### ¿Cómo se puede comprobar si tiene el bloque el inquilino?
+### <a name="how-do-i-verify-if-i-have-the-block-on-in-the-tenant"></a>¿Cómo se puede comprobar si tiene el bloque el inquilino?
 
 Use el siguiente script de PowerShell:
 
     Get-MsolCompanyInformation | fl allow*
 
-### ¿Cómo puedo evitar que los usuarios existentes comenzando a utilizar Power BI?
+### <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>¿Cómo puedo evitar que los usuarios existentes comenzando a utilizar Power BI?
 
-Hay pasos que puede realizar, como administrador, para impedir que los usuarios suscribirse a Power BI. Si se bloquea, se producirá un error en los intentos de los usuarios para iniciar sesión y se dirigirá a ponerse en contacto con el Administrador de. su organización No es necesario repetir este proceso si ya ha deshabilitado la distribución automática de licencias (por ejemplo, Office 365 para educación para estudiantes, profesores y personal). [Obtener más información](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-Azure-Active-Directory)
+Hay pasos que puede realizar, como administrador, para impedir que los usuarios suscribirse a Power BI. Si se bloquea, se producirá un error en los intentos de los usuarios para iniciar sesión y se dirigirá a ponerse en contacto con el Administrador de. su organización No es necesario repetir este proceso si ya ha deshabilitado la distribución automática de licencias (por ejemplo, Office 365 para educación para estudiantes, profesores y personal). 
+            [Aprende más](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-Azure-Active-Directory)
 
 > [AZURE.NOTE] El indicador AllowAdHocSubscriptions se utiliza para controlar varias funciones de usuario de su organización, incluida la capacidad para que los usuarios inicien sesión en el servicio de administración de derechos de Azure. Cambiando este marcador afectará a todas estas capacidades.
 
-### ¿Cómo puedo permitir Mis usuarios inicien sesión en Power BI existentes?
+### <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>¿Cómo puedo permitir Mis usuarios inicien sesión en Power BI existentes?
 
-Para permitir que los usuarios inicien sesión en Power BI existentes, ejecute el comando enumerado para la pregunta anterior, pero pasa true en lugar de false. [Obtener más información](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-Azure-Active-Directory)
+Para permitir que los usuarios inicien sesión en Power BI existentes, ejecute el comando enumerado para la pregunta anterior, pero pasa true en lugar de false. 
+            [Aprende más](powerbi-admin-powerbi-free-in-your-organization.md#enable-or-disable-individual-user-sign-up-in-Azure-Active-Directory)
 
-## Administración de Power BI
+## <a name="administration-of-power-bi"></a>Administración de Power BI
 
-### ¿Cómo se cambia la manera de que administrar las identidades de los usuarios de mi organización hoy?
+### <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>¿Cómo se cambia la manera de que administrar las identidades de los usuarios de mi organización hoy?
 
 Si su organización ya tiene un entorno de Office 365 existente y todos los usuarios de su organización tienen cuentas de Office 365, la administración de identidades no cambiará.
 
@@ -155,7 +181,7 @@ Si está administrando su directorio local y usar los servicios de federación d
 
 Si su organización no tiene un entorno de Office 365 conectado a su dominio de correo electrónico, no habrá ningún cambio en la forma de administrar identidades. Los usuarios se agregará a un nuevo directorio usuario solo en la nube y, tendrá la opción de elegir tomar como el Administrador de inquilinos y administrarlos.
 
-### ¿Cómo se administran Power BI?
+### <a name="how-do-we-manage-power-bi"></a>¿Cómo se administran Power BI?
 
 Power BI proporciona un portal de administración que le permite ver las estadísticas de uso, proporciona un vínculo al centro de administración de Office 365 para administrar usuarios y grupos y la capacidad de controlar la configuración de todo el inquilino. 
 
@@ -163,7 +189,7 @@ Power BI proporciona un portal de administración que le permite ver las estadí
 
 Para obtener más información, consulte [Portal de administración de energía BI](powerbi-admin-portal.md).
 
-### ¿Qué es el proceso para administrar a un inquilino creado por Microsoft para Mis usuarios?
+### <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>¿Qué es el proceso para administrar a un inquilino creado por Microsoft para Mis usuarios?
 
 Si se ha creado un inquilino de Microsoft, puede reclamar y administrar ese inquilino siguiendo estos pasos:
 
@@ -179,7 +205,7 @@ Si se ha creado un inquilino de Microsoft, puede reclamar y administrar ese inqu
 
     > [AZURE.NOTE] Si no aparece esta opción, ya hay un administrador de Office 365 en su lugar.
     
-### ¿Si dispone de varios dominios, puedo controlar al inquilino de Office 365 se agregan usuarios a?
+### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>¿Si dispone de varios dominios, puedo controlar al inquilino de Office 365 se agregan usuarios a?
 
 Si no hace nada, se creará un inquilino para cada dominio de correo electrónico del usuario y el subdominio.
 
@@ -189,7 +215,7 @@ Si desea que todos los usuarios en el mismo inquilino independientemente de sus 
 
 > [AZURE.IMPORTANT] No hay ningún mecanismo automatizado admitido para mover los usuarios a través de los inquilinos una vez que se han creado. Para obtener información acerca de cómo agregar dominios a un solo inquilino de Office 365, consulte [Agregar los usuarios y el dominio a Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
 
-### ¿Cómo quito Power BI para los usuarios que ya está suscrito?
+### <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>¿Cómo quito Power BI para los usuarios que ya está suscrito?
 
 Si un usuario registrado en Power BI, pero ya no desea que tengan acceso a Power BI, puede quitar la licencia de Power BI para ese usuario.
 
@@ -207,43 +233,50 @@ Si un usuario registrado en Power BI, pero ya no desea que tengan acceso a Power
 
 > [AZURE.NOTE] Puede realizar la administración masiva de licencia para los usuarios. Para ello, seleccione varios usuarios y seleccione **Editar**.
 
-### ¿Cómo se puede saber cuando nuevos usuarios han unido a mi inquilino?
+### <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>¿Cómo se puede saber cuando nuevos usuarios han unido a mi inquilino?
 
 Los usuarios que han participado en el inquilino como parte de este programa se asignan una licencia única que se puede filtrar en el panel de usuario activo en el panel de administración.
 
 Para crear esta nueva vista, en el centro de administración de Office 365, vaya a **usuarios** > **usuarios activos**, y en la **Seleccionar una vista** menú, seleccione **nueva vista**. El nombre de la nueva vista y en **licencia asignada**, seleccione **Power BI (gratuito)** o **Power BI Pro**. Sólo puede tener una licencia seleccionada por vista. Si has **Power BI (gratuito)** y **Power BI Pro** licencias de su organización, deberá crear dos vistas. Una vez creada la nueva vista, podrá ver todos los usuarios en el inquilino que han inscrito en este programa.
 
-### ¿Hay aspectos adicionales que debería estar preparado para?
+### <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>¿Hay aspectos adicionales que debería estar preparado para?
 
 Es posible que experimente un aumento de las solicitudes de restablecimiento de contraseña. Para obtener información acerca de este proceso, consulte [Restablecer una contraseña de usuario](https://support.office.com/article/Reset-a-users-password-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c).
 
 Puede quitar un usuario de su inquilino mediante el proceso estándar en el centro de administración de Office 365. Sin embargo, si el usuario todavía tiene una dirección de correo de su organización, podrán unirse a menos que bloquee todos los usuarios de la combinación.
 
-### ¿Es este gratuito? ¿Aplicarán cargos por estas licencias?
+### <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>¿Es este gratis? ¿Aplicarán cargos por estas licencias?
 
 El **Power BI (gratuito)** licencias son para la versión gratuita de Power BI. Si está interesado en capacidades adicionales, eche un vistazo a la [Power BI Pro versión](powerbi-power-bi-pro-content-what-is-it.md).
 
-### ¿Dónde se encuentra mi inquilino de Power BI?
+### <a name="where-is-my-power-bi-tenant-located"></a>¿Dónde se encuentra mi inquilino de Power BI?
 
 ¿Para obtener información sobre cómo averiguar dónde se encuentra el inquilino de Power BI, también conocido como una región de datos, consulte [donde se encuentra mi inquilino de Power BI?](powerbi-admin-where-is-my-tenant-located.md)
 
-## Seguridad en Power BI
+## <a name="security-in-power-bi"></a>Seguridad en Power BI
 
-### ¿Power BI cumple los requisitos de cumplimiento nacional, regional y específicas del sector?
+### <a name="does-power-bi-meet-national-regional-and-industryspecific-compliance-requirements"></a>¿Power BI cumple los requisitos de cumplimiento nacional, regional y específicas del sector?
 
 Para obtener más información acerca de la compatibilidad de Power BI, consulte el [Microsoft Trust Center](http://go.microsoft.com/fwlink/?LinkId=785324).
 
-### ¿Cómo funciona la seguridad en Power BI?
+### <a name="how-does-security-work-in-power-bi"></a>¿Cómo funciona la seguridad en Power BI?
 
 Power BI se basa en la base de Office 365, que a su vez se basa en los servicios de Azure como Azure Active Directory. Para obtener información general de arquitectura de Power BI, consulte [Power BI seguridad](powerbi-admin-power-bi-security.md). 
 
-## Consulte también
+## <a name="see-also"></a>Consulte también
 
-[Portal de administración de Power BI](powerbi-admin-portal.md)  
-[Suscripción de autoservicio para Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
-[Power BI (gratuito) de su organización](powerbi-admin-powerbi-free-in-your-organization.md)  
-[Poder adquisitivo BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
-[Administración de cuentas de usuario de Office 365](https://technet.microsoft.com/library/office-365-user-account-management.aspx)  
-[Administración de grupo de Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1)  
 
-            [¿Administrar el grupo en Power BI y Office 365](powerbi-service-manage-your-group-in-power-bi-and-office-365.md) más preguntas? [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)
+            [Portal de administración de Power BI](powerbi-admin-portal.md)  
+
+            [Suscripción de autoservicio para Power BI](powerbi-service-self-service-signup-for-power-bi.md)  
+
+            [Power BI (gratuito) de su organización](powerbi-admin-powerbi-free-in-your-organization.md)  
+
+            [Poder adquisitivo BI Pro](powerbi-admin-purchasing-power-bi-pro.md)  
+
+            [Administración de cuentas de usuario de Office 365](https://technet.microsoft.com/library/office-365-user-account-management.aspx)  
+
+            [Administración de grupo de Office 365](https://support.office.com/Article/Find-help-about-Groups-in-Office-365-7a9b321f-b76a-4d53-b98b-a2b0b7946de1)  
+
+            [¿Administrar el grupo en Power BI y Office 365](powerbi-service-manage-your-group-in-power-bi-and-office-365.md) más preguntas? 
+            [Pruebe la Comunidad de Power BI](http://community.powerbi.com/)
